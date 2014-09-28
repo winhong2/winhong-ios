@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Ctrip-iPhone/Ctrip-iPhone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WinHelper-iPhone/WinHelper-iPhone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Zkuyun-iPhone/Zkuyun-iPhone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightApp-iPhone/LightApp-iPhone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WinCenter-iPad/WinCenter-iPad.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WinCenter-iPhone/WinCenter-iPhone.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

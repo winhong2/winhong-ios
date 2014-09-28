@@ -1,0 +1,19 @@
+response = Unirest.post "https://kmvpn.ctrip.com/dana-na/auth/url_default/login.cgi", parameters:{:username=>'cn3\gtli', :password=>'13579.24680lili',:realm=>"Users", :tz_offset=>"480"}, headers:{"Host"=>"kmvpn.ctrip.com", "Origin"=>"https://kmvpn.ctrip.com", "Referer"=>"https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi", "Cookie"=>"lastRealm=Users; DSSIGNIN=url_default; DSLastAccess=1409717046; DSSignInURL=/"}
+
+response = Unirest.get "https://kmvpn.ctrip.com/dana-na/auth/logout.cgi", headers:{"Host"=>"kmvpn.ctrip.com", "Origin"=>"https://kmvpn.ctrip.com", "Referer"=>"https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi", "Cookie"=>"lastRealm=Users; DSSIGNIN=url_default; DSLastAccess=1409717046; DSSignInURL=/"}
+
+response = Unirest.post "https://kmvpn.ctrip.com/dana-na/auth/url_default/login.cgi", parameters:{:btnContinue=>"%E7%BB%A7%E7%BB%AD%E4%BC%9A%E8%AF%9D",:FormDataStr=>"157%3B252%3BeqoGVN9NAwABAAAAVcD6gkUzqcKcfFlNhfMaFEESgViSXfoWtf9nQzTTFdRQ1A8r1YHf06X%2Bxc8%2Bq2AZC89o1Q4YzEyt0t6aYksi%2BH6UIRFg%2Bf7%2FH8Wx%2Fi2ehg9caTQxTpfrZUEjL%2BWs7u8QlJC%2FNKeBqnIJLgQ%2Fkw4%2Bi2jZWs5OleeHz5X89wXum2A9X1eED8jco4AVSRESzcpmgzipqcF8k%2BvQP%2BReIRPEfuebiKSWHwBR3iC2GnW8zws%3D"}, headers:{"Host"=>"kmvpn.ctrip.com", "Origin"=>"https://kmvpn.ctrip.com", "Referer"=>"https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi?p=user-confirm&id=state_a29ad1dfc9d5ac37d574df9b68f17f7a", "Cookie"=>"lastRealm=Users; DSSIGNIN=url_default; DSLastAccess=1409722506; DSSignInURL=/","Set-Cookie"=>"DSASSERTREF=x; path=/; expires=Thu, 01 Jan 1970 22:00:00 GMT; secure","Set-Cookie"=>"DSID=a236935a784853d58f7c87226815ecfa; path=/; secure", "Set-Cookie"=>"DSFirstAccess=1409727821; path=/; secure"}
+
+response2 = Unirest.get "https://kmvpn.ctrip.com/dana/home/index.cgi", headers:{"Cookie"=>"DSLastAccess=1409728771; DSSignInURL=/; DSID=40a0c1b8b09d64662fc5ff72bde0182f; DSFirstAccess=1409729072","Host"=>"kmvpn.ctrip.com", "Origin"=>"https://kmvpn.ctrip.com", "Referer"=>"https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi"}
+
+response3 = Unirest.get "https://kmvpn.ctrip.com/sh_service/,DanaInfo=server.sh.ctriptravel.com,SSO=U+default.htm", headers:{"Cookie"=>"DSLastAccess=1409728771; DSSignInURL=/; DSID=3b4c5850678e2ac8b8e9774d1916dd50; DSFirstAccess=1409729366","Host"=>"kmvpn.ctrip.com", "Origin"=>"https://kmvpn.ctrip.com", "Referer"=>"https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi"}
+
+
+
+response4 = Unirest.get "https://kmvpn.ctrip.com/CII/share/,DanaInfo=service.sh.ctriptravel.com+home.asp", headers:{"Cookie"=>"DSLastAccess=1409728771; DSSignInURL=/; DSID=3b4c5850678e2ac8b8e9774d1916dd50; DSFirstAccess=1409729366","Host"=>"kmvpn.ctrip.com", "Origin"=>"https://kmvpn.ctrip.com", "Referer"=>"https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi"}
+
+
+
+
+
+https://kmvpn.ctrip.com/CII/share/,DanaInfo=service.sh.ctriptravel.com+home.asp

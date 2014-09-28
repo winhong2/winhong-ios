@@ -1,0 +1,22 @@
+//
+//  BusinessVO.h
+//  wincenterDemo01
+//
+//  Created by 黄茂坚 on 14-8-28.
+//  Copyright (c) 2014年 黄茂坚. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface BusinessVO : BaseObject
+
+@property int busId;
+@property NSString *name;
+@property NSString *managerId;
+@property NSString *createTime;
+@property NSString *createUser;
+
+@property int vmNum;
+@property NSArray *wceBusVms;
+
+@end

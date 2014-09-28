@@ -1,0 +1,143 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+typedef NS_ENUM(NSInteger, MasterPageType) {
+    MasterPageType_DATACENTER = 0,
+    MasterPageType_POOL,
+    MasterPageType_POOL_MORE,
+    MasterPageType_HOST,
+    MasterPageType_HOST_MORE,
+    MasterPageType_STORAGE,
+    MasterPageType_STORAGE_MORE,
+    MasterPageType_VM,
+    MasterPageType_VM_MORE,
+    MasterPageType_BUSINESS,
+    MasterPageType_BUSINESS_MORE,
+    MasterPageType_Network
+};
+
+typedef NS_ENUM(NSInteger, MasterCollectionType) {
+    MasterCollectionType_POOL_BY_DATACENTER = 0,
+    MasterCollectionType_POOL_BY_DATACENTER_MORE,
+    
+    MasterCollectionType_HOST_BY_DATACENTER,
+    MasterCollectionType_HOST_BY_DATACENTER_MORE,
+    MasterCollectionType_HOST_BY_POOL,
+    MasterCollectionType_HostNetwork,
+    MasterCollectionType_HostNic,
+    
+    MasterCollectionType_STORAGE_BY_DATACENTER,
+    MasterCollectionType_STORAGE_BY_DATACENTER_MORE,
+    MasterCollectionType_STORAGE_BY_POOL,
+    MasterCollectionType_STORAGE_BY_HOST,
+    
+    MasterCollectionType_VM_BY_DATACENTER,
+    MasterCollectionType_VM_BY_DATACENTER_MORE,
+    MasterCollectionType_VM_BY_POOL,
+    MasterCollectionType_VM_BY_HOST,
+    MasterCollectionType_VMDisk,
+    MasterCollectionType_VMNetwork,
+    
+    MasterCollectionType_BUSINESS_BY_DATACENTER,
+    MasterCollectionType_BUSINESS_BY_DATACENTER_MORE
+};
+
+#define getLoginSessionUrl      @"https://192.168.100.146:8090/pc/login.jsp"
+#define postLoginUrl            @"https://192.168.100.146:8090/loginServlet"
+#define getUserInfoUrl          @"https://192.168.100.146:8090/pc/sys/users?account=admin&password=WTHtk1eyckFZUs3vFKsDAdiscP16uTGA"
+#define getDatacenterListUrl    @"https://192.168.100.146:8090/pc/rm/dataCenters"
+#define getDatacenterStatUrl    @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.api.dataCenter.getDataCenterResource"
+
+#define getPoolListUrl_all      @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePools"
+#define getPoolListUrl          @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePools&params=firstResult%%3D0%%26maxResult%%3D%d"
+
+#define getPoolDetailUrl @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePool&placeholder=%d"
+#define getPoolElasticUrl @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.wlb.getInfo&placeholder=%d"
+
+
+#define getHostListUrl_byPool           @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.host.queryHostByPool&placeholder=%d&params=resourcePoolId%%3D%d"
+#define getHostListUrl_byPool_all       @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.host.queryHostByPool&placeholder=%d"
+
+
+#define getHostDetailUrl @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.host.getHostById&placeholder=%d"
+#define getHostStatUrl @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.host.getHostResourceStats&placeholder=%d"
+
+#define getHostNetwork_external @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.network.getNetWorksList&params=hostId%%3D%d%%26type%%3DEXTERNAL"
+#define getHostNetwork_internal @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.network.getNetWorksList&params=hostId%%3D%d%%26type%%3DINTERNAL"
+#define getHostNic_isNull    @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.network.getnetWorkAdaptersList&params=hostId%%3D%d%%26isNull%%3DbondModel"
+#define getHostNic_isNotNull    @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.network.getnetWorkAdaptersList&params=hostId%%3D%d%%26isNotNull%%3DbondModel"
+
+#define getStorageListUrl_byPool        @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.storage.storagePools&params=resourcePoolId%%3D%d%%26firstResult%%3D0%%26maxResult%%3D%d"
+#define getStorageListUrl_byPool_all    @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.storage.storagePools&params=resourcePoolId%%3D%d"
+#define getStorageListUrl_byHost        @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.host.storages&placeholder=%d"
+#define getStorageVolumn                @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.volumn.getVolumns&params=storagePoolId%%3D%d"
+
+#define getStorageDetailUrl  @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.storage.storageDetail&placeholder=%d"
+
+
+
+#define getVmListUrl_byPool             @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.vm.getList&params=poolId%%3D%d%%26firstResult%%3D0%%26maxResult%%3D%d"
+#define getVmListUrl_byPool_all         @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.vm.getList&params=poolId%%3D%d"
+#define getVmListUrl_byHost             @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.vm.getList&params=ownerHostId%%3D%d"
+
+#define getVmDetailUrl @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.vm.vminfo&placeholder=%d"
+
+#define getVmVolumn @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.vm.getVolumes&placeholder=%d"
+#define getVmNic @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.vm.getNics&placeholder=%d"
+
+#define getBusinessListUrl_all  @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.wce.vApp.getVApps"
+#define getBusinessListUrl      @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.wce.vApp.getVApps&params=firstResult%%3D0%%26maxResult%%3D%d"
+#define getBusinessVM           @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.wce.vApp.getVApp&placeholder=%d"
+
+#define getNetworkListUrl_all   @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.network.getNetWorksList&params=type%%3DEXTERNAL"
+#define getNetworkListUrl       @"https://192.168.100.146:8090/restServlet?connectorId=%d&apiKey=pc.winserver.network.getNetWorksList&params=firstResult%%3D0%%26maxResult%%3D%d%%26type%%3DEXTERNAL"
+
+#import <NSObject+ObjectMap.h>
+#import <UNIRest.h>
+#import <ASIHTTPRequest.h>
+#import <ASIFormDataRequest.h>
+
+#import "BaseObject.h"
+#import "LoginResult.h"
+#import "UserVO.h"
+#import "DatacenterListResult.h"
+#import "DatacenterVO.h"
+#import "DatacenterStatWinserver.h"
+#import "DatacenterStatVO.h"
+#import "PoolListResult.h"
+#import "PoolVO.h"
+#import "PoolElasticInfo.h"
+#import "HostListResult.h"
+#import "HostVO.h"
+#import "HostStatVO.h"
+#import "HostNetworkListResult.h"
+#import "HostNetworkVO.h"
+#import "HostNicListResult.h"
+#import "HostNicVO.h"
+#import "StorageListResult.h"
+#import "StorageVO.h"
+#import "StorageVolumnListResult.h"
+#import "StorageVolumnVO.h"
+#import "VmListResult.h"
+#import "VmVO.h"
+#import "VmNetworkListResult.h"
+#import "VmNetworkVO.h"
+#import "VmDiskListResult.h"
+#import "VmDiskVO.h"
+#import "BusinessListResult.h"
+#import "BusinessVO.h"
+#import "BusinessVmVO.h"

@@ -1,0 +1,39 @@
+//
+//  ipSetVC.m
+//  wincenterDemo01
+//
+//  Created by 黄茂坚 on 14-8-27.
+//  Copyright (c) 2014年 黄茂坚. All rights reserved.
+//
+
+#import "LoginSettingVC.h"
+
+@interface LoginSettingVC ()
+@property (weak, nonatomic) IBOutlet UITextField *ipAddress;
+
+@end
+
+@implementation LoginSettingVC
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.ipAddress becomeFirstResponder];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (IBAction)close:(id)sender {
+    [self.ipAddress resignFirstResponder];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)done:(id)sender {
+    [self.ipAddress resignFirstResponder];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+@end

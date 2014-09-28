@@ -1,0 +1,16 @@
+require 'net/http'
+
+url = URI("https://kmvpn.ctrip.com/dana-na/auth/url_default/login.cgi")
+
+Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+
+request = Net::HTTP::Post.new(uri)
+request.set_form_data(:username=>'cn3\gtli', :password=>'13579.24680lili',:realm=>"Users", :tz_offset=>"480")
+request["Host"] = "kmvpn.ctrip.com"
+request["Origin"] = "https://kmvpn.ctrip.com"
+request["Referer"] = "https://kmvpn.ctrip.com/dana-na/auth/url_default/welcome.cgi"
+request["Cookie"] = "lastRealm=Users; DSSIGNIN=url_default; DSLastAccess=1409717046; DSSignInURL=/"
+
+response = http.request request
+
+end

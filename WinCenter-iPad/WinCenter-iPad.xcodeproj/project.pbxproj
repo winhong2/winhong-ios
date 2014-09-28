@@ -1,0 +1,926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A4D32019B556BA00415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D31F19B556BA00415896 /* Foundation.framework */; };
+		18A4D32219B556BA00415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D32119B556BA00415896 /* CoreGraphics.framework */; };
+		18A4D32419B556BA00415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D32319B556BA00415896 /* UIKit.framework */; };
+		18A4D32A19B556BA00415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D32819B556BA00415896 /* InfoPlist.strings */; };
+		18A4D32C19B556BA00415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D32B19B556BA00415896 /* main.m */; };
+		18A4D33019B556BA00415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D32F19B556BA00415896 /* AppDelegate.m */; };
+		18A4D33819B556BA00415896 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D33719B556BA00415896 /* Images.xcassets */; };
+		18A4D33F19B556BA00415896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D33E19B556BA00415896 /* XCTest.framework */; };
+		18A4D34019B556BA00415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D31F19B556BA00415896 /* Foundation.framework */; };
+		18A4D34119B556BA00415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D32319B556BA00415896 /* UIKit.framework */; };
+		18A4D34919B556BA00415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D34719B556BA00415896 /* InfoPlist.strings */; };
+		18A4D34B19B556BA00415896 /* WinCenter_iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D34A19B556BA00415896 /* WinCenter_iPadTests.m */; };
+		18A4D35719B557F400415896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D35619B557F400415896 /* Main.storyboard */; };
+		18A4D3B719B558E500415896 /* BusinessDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D35D19B558E500415896 /* BusinessDetailInfoVC.m */; };
+		18A4D3B819B558E500415896 /* DatacenterDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D35F19B558E500415896 /* DatacenterDetailInfoVC.m */; };
+		18A4D3B919B558E500415896 /* DatacenterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36119B558E500415896 /* DatacenterTableVC.m */; };
+		18A4D3BA19B558E500415896 /* HostDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36319B558E500415896 /* HostDetailInfoVC.m */; };
+		18A4D3BB19B558E500415896 /* HostDetailPerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36519B558E500415896 /* HostDetailPerformanceVC.m */; };
+		18A4D3BC19B558E500415896 /* LoginSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36719B558E500415896 /* LoginSettingVC.m */; };
+		18A4D3BD19B558E500415896 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36919B558E500415896 /* LoginVC.m */; };
+		18A4D3BE19B558E500415896 /* MasterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36B19B558E500415896 /* MasterCollectionCell.m */; };
+		18A4D3BF19B558E500415896 /* MasterCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36D19B558E500415896 /* MasterCollectionHeader.m */; };
+		18A4D3C019B558E500415896 /* MasterCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D36F19B558E500415896 /* MasterCollectionVC.m */; };
+		18A4D3C119B558E500415896 /* MasterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37119B558E500415896 /* MasterContainerVC.m */; };
+		18A4D3C319B558E500415896 /* NetworkCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37519B558E500415896 /* NetworkCollectionCell.m */; };
+		18A4D3C419B558E500415896 /* NetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37719B558E500415896 /* NetworkCollectionVC.m */; };
+		18A4D3C519B558E500415896 /* NetworkContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37919B558E500415896 /* NetworkContainerVC.m */; };
+		18A4D3C619B558E500415896 /* PoolDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37B19B558E500415896 /* PoolDetailInfoVC.m */; };
+		18A4D3C719B558E500415896 /* PopControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37D19B558E500415896 /* PopControlRecordCell.m */; };
+		18A4D3C819B558E500415896 /* PopControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D37F19B558E500415896 /* PopControlRecordCellForTime.m */; };
+		18A4D3C919B558E500415896 /* PopControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38119B558E500415896 /* PopControlRecordVC.m */; };
+		18A4D3CA19B558E500415896 /* PopOptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38319B558E500415896 /* PopOptionsVC.m */; };
+		18A4D3CB19B558E500415896 /* PopWarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38519B558E500415896 /* PopWarningInfoCell.m */; };
+		18A4D3CC19B558E500415896 /* PopWarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38719B558E500415896 /* PopWarningInfoCellForTime.m */; };
+		18A4D3CD19B558E500415896 /* PopWarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38919B558E500415896 /* PopWarningInfoVC.m */; };
+		18A4D3CE19B558E500415896 /* StorageDetailDiskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38B19B558E500415896 /* StorageDetailDiskCell.m */; };
+		18A4D3CF19B558E500415896 /* StorageDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38D19B558E500415896 /* StorageDetailInfoVC.m */; };
+		18A4D3D019B558E500415896 /* VmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D38F19B558E500415896 /* VmCollectionCell.m */; };
+		18A4D3D119B558E500415896 /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39119B558E500415896 /* VmDetailCPUConfigVC.m */; };
+		18A4D3D219B558E500415896 /* VmDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39319B558E500415896 /* VmDetailInfoVC.m */; };
+		18A4D3D319B558E500415896 /* VmDetailMemryConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39519B558E500415896 /* VmDetailMemryConfigVC.m */; };
+		18A4D3D419B558E500415896 /* VmDetailSnapshootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39719B558E500415896 /* VmDetailSnapshootVC.m */; };
+		18A4D3D519B558E500415896 /* VmMigrateSelectHostListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39919B558E500415896 /* VmMigrateSelectHostListCell.m */; };
+		18A4D3D619B558E500415896 /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39B19B558E500415896 /* VmMigrateSelectHostListVC.m */; };
+		18A4D3D719B558E500415896 /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39D19B558E500415896 /* VmMigrateVC.m */; };
+		18A4D3D819B558E500415896 /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39F19B558E500415896 /* VmNewVC.m */; };
+		18A4D3D919B558E500415896 /* BusinessVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3A219B558E500415896 /* BusinessVO.m */; };
+		18A4D3DA19B558E500415896 /* DatacenterVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3A419B558E500415896 /* DatacenterVO.m */; };
+		18A4D3DB19B558E500415896 /* HostNetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3A619B558E500415896 /* HostNetworkVO.m */; };
+		18A4D3DC19B558E500415896 /* HostNicVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3A819B558E500415896 /* HostNicVO.m */; };
+		18A4D3DD19B558E500415896 /* HostVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AA19B558E500415896 /* HostVO.m */; };
+		18A4D3DE19B558E500415896 /* NetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AC19B558E500415896 /* NetworkVO.m */; };
+		18A4D3DF19B558E500415896 /* PoolVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AE19B558E500415896 /* PoolVO.m */; };
+		50CA1EB865704A568353668C /* libPods-WinCenter-iPad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */; };
+		841B5C3619D002B300A35D2D /* StorageListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3319D002B300A35D2D /* StorageListResult.m */; };
+		841B5C3719D002B300A35D2D /* StorageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3519D002B300A35D2D /* StorageVO.m */; };
+		841B5C4019D00EA100A35D2D /* VmDiskVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3919D00EA100A35D2D /* VmDiskVO.m */; };
+		841B5C4119D00EA100A35D2D /* VmListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3B19D00EA100A35D2D /* VmListResult.m */; };
+		841B5C4219D00EA100A35D2D /* VmNetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3D19D00EA100A35D2D /* VmNetworkVO.m */; };
+		841B5C4319D00EA100A35D2D /* VmVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3F19D00EA100A35D2D /* VmVO.m */; };
+		843012BC19D56AE500DB0658 /* HostNetworkListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012BB19D56AE500DB0658 /* HostNetworkListResult.m */; };
+		843012BF19D56AF300DB0658 /* HostNicListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012BE19D56AF300DB0658 /* HostNicListResult.m */; };
+		843012C219D5768900DB0658 /* StorageVolumnListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012C119D5768900DB0658 /* StorageVolumnListResult.m */; };
+		843012C519D576B100DB0658 /* StorageVolumnVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012C419D576B100DB0658 /* StorageVolumnVO.m */; };
+		843012C819D5799500DB0658 /* BusinessVmVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012C719D5799500DB0658 /* BusinessVmVO.m */; };
+		843012CB19D584A800DB0658 /* VmNetworkListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012CA19D584A800DB0658 /* VmNetworkListResult.m */; };
+		843012CE19D584C400DB0658 /* VmDiskListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843012CD19D584C400DB0658 /* VmDiskListResult.m */; };
+		843292D119C944E800DBE31C /* DatacenterListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292D019C944E800DBE31C /* DatacenterListResult.m */; };
+		843292D419C9522400DBE31C /* DatacenterStatVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292D319C9522400DBE31C /* DatacenterStatVO.m */; };
+		843292D719C98A8E00DBE31C /* PoolListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292D619C98A8E00DBE31C /* PoolListResult.m */; };
+		843292DA19C9900800DBE31C /* HostListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292D919C9900800DBE31C /* HostListResult.m */; };
+		844A5FB419D7D7510061D23B /* PoolElasticInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A5FB319D7D7510061D23B /* PoolElasticInfo.m */; };
+		844A5FB719D7ED9F0061D23B /* HostStatVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A5FB619D7ED9F0061D23B /* HostStatVO.m */; };
+		845747EA19CAC9A200672E9A /* NetworkListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 845747E919CAC9A200672E9A /* NetworkListResult.m */; };
+		845747ED19CACAEE00672E9A /* BusinessListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 845747EC19CACAEE00672E9A /* BusinessListResult.m */; };
+		8468FFA519D50BA100225CA7 /* DatacenterStatWinserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468FFA419D50BA100225CA7 /* DatacenterStatWinserver.m */; };
+		84D4589019D3EFB0006706B8 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4588F19D3EFB0006706B8 /* BaseObject.m */; };
+		84EBB5A019D8123500A7C82E /* PopOptionsUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EBB59F19D8123500A7C82E /* PopOptionsUserInfoVC.m */; };
+		84F3989B19C940CC00F6F5AF /* UserVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3989A19C940CC00F6F5AF /* UserVO.m */; };
+		84F70FB519C93CAC00523AB0 /* LoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F70FB419C93CAC00523AB0 /* LoginResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A4D34219B556BA00415896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A4D31419B556BA00415896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A4D31B19B556BA00415896;
+			remoteInfo = "WinCenter-iPad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A4D31C19B556BA00415896 /* WinCenter-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A4D31F19B556BA00415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18A4D32119B556BA00415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18A4D32319B556BA00415896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18A4D32719B556BA00415896 /* WinCenter-iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinCenter-iPad-Info.plist"; sourceTree = "<group>"; };
+		18A4D32919B556BA00415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18A4D32B19B556BA00415896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18A4D32D19B556BA00415896 /* WinCenter-iPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPad-Prefix.pch"; sourceTree = "<group>"; };
+		18A4D32E19B556BA00415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A4D32F19B556BA00415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A4D33719B556BA00415896 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18A4D33D19B556BA00415896 /* WinCenter-iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WinCenter-iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A4D33E19B556BA00415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18A4D34619B556BA00415896 /* WinCenter-iPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinCenter-iPadTests-Info.plist"; sourceTree = "<group>"; };
+		18A4D34819B556BA00415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18A4D34A19B556BA00415896 /* WinCenter_iPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinCenter_iPadTests.m; sourceTree = "<group>"; };
+		18A4D35619B557F400415896 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18A4D35C19B558E500415896 /* BusinessDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailInfoVC.h; sourceTree = "<group>"; };
+		18A4D35D19B558E500415896 /* BusinessDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailInfoVC.m; sourceTree = "<group>"; };
+		18A4D35E19B558E500415896 /* DatacenterDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailInfoVC.h; sourceTree = "<group>"; };
+		18A4D35F19B558E500415896 /* DatacenterDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailInfoVC.m; sourceTree = "<group>"; };
+		18A4D36019B558E500415896 /* DatacenterTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterTableVC.h; sourceTree = "<group>"; };
+		18A4D36119B558E500415896 /* DatacenterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterTableVC.m; sourceTree = "<group>"; };
+		18A4D36219B558E500415896 /* HostDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailInfoVC.h; sourceTree = "<group>"; };
+		18A4D36319B558E500415896 /* HostDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailInfoVC.m; sourceTree = "<group>"; };
+		18A4D36419B558E500415896 /* HostDetailPerformanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailPerformanceVC.h; sourceTree = "<group>"; };
+		18A4D36519B558E500415896 /* HostDetailPerformanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailPerformanceVC.m; sourceTree = "<group>"; };
+		18A4D36619B558E500415896 /* LoginSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSettingVC.h; sourceTree = "<group>"; };
+		18A4D36719B558E500415896 /* LoginSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSettingVC.m; sourceTree = "<group>"; };
+		18A4D36819B558E500415896 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		18A4D36919B558E500415896 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		18A4D36A19B558E500415896 /* MasterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionCell.h; sourceTree = "<group>"; };
+		18A4D36B19B558E500415896 /* MasterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionCell.m; sourceTree = "<group>"; };
+		18A4D36C19B558E500415896 /* MasterCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionHeader.h; sourceTree = "<group>"; };
+		18A4D36D19B558E500415896 /* MasterCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionHeader.m; sourceTree = "<group>"; };
+		18A4D36E19B558E500415896 /* MasterCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionVC.h; sourceTree = "<group>"; };
+		18A4D36F19B558E500415896 /* MasterCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionVC.m; sourceTree = "<group>"; };
+		18A4D37019B558E500415896 /* MasterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterContainerVC.h; sourceTree = "<group>"; };
+		18A4D37119B558E500415896 /* MasterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterContainerVC.m; sourceTree = "<group>"; };
+		18A4D37419B558E500415896 /* NetworkCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionCell.h; sourceTree = "<group>"; };
+		18A4D37519B558E500415896 /* NetworkCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionCell.m; sourceTree = "<group>"; };
+		18A4D37619B558E500415896 /* NetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionVC.h; sourceTree = "<group>"; };
+		18A4D37719B558E500415896 /* NetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionVC.m; sourceTree = "<group>"; };
+		18A4D37819B558E500415896 /* NetworkContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkContainerVC.h; sourceTree = "<group>"; };
+		18A4D37919B558E500415896 /* NetworkContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkContainerVC.m; sourceTree = "<group>"; };
+		18A4D37A19B558E500415896 /* PoolDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolDetailInfoVC.h; sourceTree = "<group>"; };
+		18A4D37B19B558E500415896 /* PoolDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolDetailInfoVC.m; sourceTree = "<group>"; };
+		18A4D37C19B558E500415896 /* PopControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCell.h; sourceTree = "<group>"; };
+		18A4D37D19B558E500415896 /* PopControlRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCell.m; sourceTree = "<group>"; };
+		18A4D37E19B558E500415896 /* PopControlRecordCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCellForTime.h; sourceTree = "<group>"; };
+		18A4D37F19B558E500415896 /* PopControlRecordCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCellForTime.m; sourceTree = "<group>"; };
+		18A4D38019B558E500415896 /* PopControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordVC.h; sourceTree = "<group>"; };
+		18A4D38119B558E500415896 /* PopControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordVC.m; sourceTree = "<group>"; };
+		18A4D38219B558E500415896 /* PopOptionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsVC.h; sourceTree = "<group>"; };
+		18A4D38319B558E500415896 /* PopOptionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsVC.m; sourceTree = "<group>"; };
+		18A4D38419B558E500415896 /* PopWarningInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCell.h; sourceTree = "<group>"; };
+		18A4D38519B558E500415896 /* PopWarningInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCell.m; sourceTree = "<group>"; };
+		18A4D38619B558E500415896 /* PopWarningInfoCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCellForTime.h; sourceTree = "<group>"; };
+		18A4D38719B558E500415896 /* PopWarningInfoCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCellForTime.m; sourceTree = "<group>"; };
+		18A4D38819B558E500415896 /* PopWarningInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoVC.h; sourceTree = "<group>"; };
+		18A4D38919B558E500415896 /* PopWarningInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoVC.m; sourceTree = "<group>"; };
+		18A4D38A19B558E500415896 /* StorageDetailDiskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailDiskCell.h; sourceTree = "<group>"; };
+		18A4D38B19B558E500415896 /* StorageDetailDiskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailDiskCell.m; sourceTree = "<group>"; };
+		18A4D38C19B558E500415896 /* StorageDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailInfoVC.h; sourceTree = "<group>"; };
+		18A4D38D19B558E500415896 /* StorageDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailInfoVC.m; sourceTree = "<group>"; };
+		18A4D38E19B558E500415896 /* VmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionCell.h; sourceTree = "<group>"; };
+		18A4D38F19B558E500415896 /* VmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionCell.m; sourceTree = "<group>"; };
+		18A4D39019B558E500415896 /* VmDetailCPUConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailCPUConfigVC.h; sourceTree = "<group>"; };
+		18A4D39119B558E500415896 /* VmDetailCPUConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailCPUConfigVC.m; sourceTree = "<group>"; };
+		18A4D39219B558E500415896 /* VmDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailInfoVC.h; sourceTree = "<group>"; };
+		18A4D39319B558E500415896 /* VmDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailInfoVC.m; sourceTree = "<group>"; };
+		18A4D39419B558E500415896 /* VmDetailMemryConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailMemryConfigVC.h; sourceTree = "<group>"; };
+		18A4D39519B558E500415896 /* VmDetailMemryConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailMemryConfigVC.m; sourceTree = "<group>"; };
+		18A4D39619B558E500415896 /* VmDetailSnapshootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailSnapshootVC.h; sourceTree = "<group>"; };
+		18A4D39719B558E500415896 /* VmDetailSnapshootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailSnapshootVC.m; sourceTree = "<group>"; };
+		18A4D39819B558E500415896 /* VmMigrateSelectHostListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListCell.h; sourceTree = "<group>"; };
+		18A4D39919B558E500415896 /* VmMigrateSelectHostListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListCell.m; sourceTree = "<group>"; };
+		18A4D39A19B558E500415896 /* VmMigrateSelectHostListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListVC.h; sourceTree = "<group>"; };
+		18A4D39B19B558E500415896 /* VmMigrateSelectHostListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListVC.m; sourceTree = "<group>"; };
+		18A4D39C19B558E500415896 /* VmMigrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateVC.h; sourceTree = "<group>"; };
+		18A4D39D19B558E500415896 /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
+		18A4D39E19B558E500415896 /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
+		18A4D39F19B558E500415896 /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
+		18A4D3A119B558E500415896 /* BusinessVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVO.h; sourceTree = "<group>"; };
+		18A4D3A219B558E500415896 /* BusinessVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVO.m; sourceTree = "<group>"; };
+		18A4D3A319B558E500415896 /* DatacenterVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterVO.h; sourceTree = "<group>"; };
+		18A4D3A419B558E500415896 /* DatacenterVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterVO.m; sourceTree = "<group>"; };
+		18A4D3A519B558E500415896 /* HostNetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkVO.h; sourceTree = "<group>"; };
+		18A4D3A619B558E500415896 /* HostNetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkVO.m; sourceTree = "<group>"; };
+		18A4D3A719B558E500415896 /* HostNicVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicVO.h; sourceTree = "<group>"; };
+		18A4D3A819B558E500415896 /* HostNicVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicVO.m; sourceTree = "<group>"; };
+		18A4D3A919B558E500415896 /* HostVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostVO.h; sourceTree = "<group>"; };
+		18A4D3AA19B558E500415896 /* HostVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostVO.m; sourceTree = "<group>"; };
+		18A4D3AB19B558E500415896 /* NetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkVO.h; sourceTree = "<group>"; };
+		18A4D3AC19B558E500415896 /* NetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkVO.m; sourceTree = "<group>"; };
+		18A4D3AD19B558E500415896 /* PoolVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolVO.h; sourceTree = "<group>"; };
+		18A4D3AE19B558E500415896 /* PoolVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolVO.m; sourceTree = "<group>"; };
+		3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPad.xcconfig"; path = "../Pods/Pods-WinCenter-iPad.xcconfig"; sourceTree = "<group>"; };
+		841B5C3219D002B300A35D2D /* StorageListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageListResult.h; sourceTree = "<group>"; };
+		841B5C3319D002B300A35D2D /* StorageListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageListResult.m; sourceTree = "<group>"; };
+		841B5C3419D002B300A35D2D /* StorageVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVO.h; sourceTree = "<group>"; };
+		841B5C3519D002B300A35D2D /* StorageVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageVO.m; sourceTree = "<group>"; };
+		841B5C3819D00EA100A35D2D /* VmDiskVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskVO.h; sourceTree = "<group>"; };
+		841B5C3919D00EA100A35D2D /* VmDiskVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskVO.m; sourceTree = "<group>"; };
+		841B5C3A19D00EA100A35D2D /* VmListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmListResult.h; sourceTree = "<group>"; };
+		841B5C3B19D00EA100A35D2D /* VmListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmListResult.m; sourceTree = "<group>"; };
+		841B5C3C19D00EA100A35D2D /* VmNetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkVO.h; sourceTree = "<group>"; };
+		841B5C3D19D00EA100A35D2D /* VmNetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkVO.m; sourceTree = "<group>"; };
+		841B5C3E19D00EA100A35D2D /* VmVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmVO.h; sourceTree = "<group>"; };
+		841B5C3F19D00EA100A35D2D /* VmVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmVO.m; sourceTree = "<group>"; };
+		843012BA19D56AE500DB0658 /* HostNetworkListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkListResult.h; sourceTree = "<group>"; };
+		843012BB19D56AE500DB0658 /* HostNetworkListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkListResult.m; sourceTree = "<group>"; };
+		843012BD19D56AF300DB0658 /* HostNicListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicListResult.h; sourceTree = "<group>"; };
+		843012BE19D56AF300DB0658 /* HostNicListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicListResult.m; sourceTree = "<group>"; };
+		843012C019D5768900DB0658 /* StorageVolumnListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVolumnListResult.h; sourceTree = "<group>"; };
+		843012C119D5768900DB0658 /* StorageVolumnListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageVolumnListResult.m; sourceTree = "<group>"; };
+		843012C319D576B100DB0658 /* StorageVolumnVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVolumnVO.h; sourceTree = "<group>"; };
+		843012C419D576B100DB0658 /* StorageVolumnVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageVolumnVO.m; sourceTree = "<group>"; };
+		843012C619D5799500DB0658 /* BusinessVmVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmVO.h; sourceTree = "<group>"; };
+		843012C719D5799500DB0658 /* BusinessVmVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmVO.m; sourceTree = "<group>"; };
+		843012C919D584A800DB0658 /* VmNetworkListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkListResult.h; sourceTree = "<group>"; };
+		843012CA19D584A800DB0658 /* VmNetworkListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkListResult.m; sourceTree = "<group>"; };
+		843012CC19D584C400DB0658 /* VmDiskListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskListResult.h; sourceTree = "<group>"; };
+		843012CD19D584C400DB0658 /* VmDiskListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskListResult.m; sourceTree = "<group>"; };
+		843292CF19C944E800DBE31C /* DatacenterListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterListResult.h; sourceTree = "<group>"; };
+		843292D019C944E800DBE31C /* DatacenterListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterListResult.m; sourceTree = "<group>"; };
+		843292D219C9522400DBE31C /* DatacenterStatVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterStatVO.h; sourceTree = "<group>"; };
+		843292D319C9522400DBE31C /* DatacenterStatVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterStatVO.m; sourceTree = "<group>"; };
+		843292D519C98A8E00DBE31C /* PoolListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolListResult.h; sourceTree = "<group>"; };
+		843292D619C98A8E00DBE31C /* PoolListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolListResult.m; sourceTree = "<group>"; };
+		843292D819C9900800DBE31C /* HostListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostListResult.h; sourceTree = "<group>"; };
+		843292D919C9900800DBE31C /* HostListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostListResult.m; sourceTree = "<group>"; };
+		844A5FB219D7D7510061D23B /* PoolElasticInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolElasticInfo.h; sourceTree = "<group>"; };
+		844A5FB319D7D7510061D23B /* PoolElasticInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolElasticInfo.m; sourceTree = "<group>"; };
+		844A5FB519D7ED9F0061D23B /* HostStatVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostStatVO.h; sourceTree = "<group>"; };
+		844A5FB619D7ED9F0061D23B /* HostStatVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostStatVO.m; sourceTree = "<group>"; };
+		845747E819CAC9A200672E9A /* NetworkListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkListResult.h; sourceTree = "<group>"; };
+		845747E919CAC9A200672E9A /* NetworkListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkListResult.m; sourceTree = "<group>"; };
+		845747EB19CACAEE00672E9A /* BusinessListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessListResult.h; sourceTree = "<group>"; };
+		845747EC19CACAEE00672E9A /* BusinessListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessListResult.m; sourceTree = "<group>"; };
+		8468FFA319D50BA100225CA7 /* DatacenterStatWinserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterStatWinserver.h; sourceTree = "<group>"; };
+		8468FFA419D50BA100225CA7 /* DatacenterStatWinserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterStatWinserver.m; sourceTree = "<group>"; };
+		84D4588E19D3EFB0006706B8 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		84D4588F19D3EFB0006706B8 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		84EBB59E19D8123500A7C82E /* PopOptionsUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsUserInfoVC.h; sourceTree = "<group>"; };
+		84EBB59F19D8123500A7C82E /* PopOptionsUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsUserInfoVC.m; sourceTree = "<group>"; };
+		84F3989919C940CC00F6F5AF /* UserVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVO.h; sourceTree = "<group>"; };
+		84F3989A19C940CC00F6F5AF /* UserVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVO.m; sourceTree = "<group>"; };
+		84F70FB319C93CAC00523AB0 /* LoginResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResult.h; sourceTree = "<group>"; };
+		84F70FB419C93CAC00523AB0 /* LoginResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResult.m; sourceTree = "<group>"; };
+		9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A4D31919B556BA00415896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4D32219B556BA00415896 /* CoreGraphics.framework in Frameworks */,
+				18A4D32419B556BA00415896 /* UIKit.framework in Frameworks */,
+				18A4D32019B556BA00415896 /* Foundation.framework in Frameworks */,
+				50CA1EB865704A568353668C /* libPods-WinCenter-iPad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A4D33A19B556BA00415896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4D33F19B556BA00415896 /* XCTest.framework in Frameworks */,
+				18A4D34119B556BA00415896 /* UIKit.framework in Frameworks */,
+				18A4D34019B556BA00415896 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A4D31319B556BA00415896 = {
+			isa = PBXGroup;
+			children = (
+				18A4D32519B556BA00415896 /* WinCenter-iPad */,
+				18A4D34419B556BA00415896 /* WinCenter-iPadTests */,
+				18A4D31E19B556BA00415896 /* Frameworks */,
+				18A4D31D19B556BA00415896 /* Products */,
+				3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		18A4D31D19B556BA00415896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D31C19B556BA00415896 /* WinCenter-iPad.app */,
+				18A4D33D19B556BA00415896 /* WinCenter-iPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A4D31E19B556BA00415896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D31F19B556BA00415896 /* Foundation.framework */,
+				18A4D32119B556BA00415896 /* CoreGraphics.framework */,
+				18A4D32319B556BA00415896 /* UIKit.framework */,
+				18A4D33E19B556BA00415896 /* XCTest.framework */,
+				9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18A4D32519B556BA00415896 /* WinCenter-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D35A19B558E500415896 /* views */,
+				18A4D32E19B556BA00415896 /* AppDelegate.h */,
+				18A4D32F19B556BA00415896 /* AppDelegate.m */,
+				18A4D35619B557F400415896 /* Main.storyboard */,
+				18A4D33719B556BA00415896 /* Images.xcassets */,
+				18A4D32619B556BA00415896 /* Supporting Files */,
+			);
+			path = "WinCenter-iPad";
+			sourceTree = "<group>";
+		};
+		18A4D32619B556BA00415896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D32719B556BA00415896 /* WinCenter-iPad-Info.plist */,
+				18A4D32819B556BA00415896 /* InfoPlist.strings */,
+				18A4D32B19B556BA00415896 /* main.m */,
+				18A4D32D19B556BA00415896 /* WinCenter-iPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A4D34419B556BA00415896 /* WinCenter-iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D34A19B556BA00415896 /* WinCenter_iPadTests.m */,
+				18A4D34519B556BA00415896 /* Supporting Files */,
+			);
+			path = "WinCenter-iPadTests";
+			sourceTree = "<group>";
+		};
+		18A4D34519B556BA00415896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D34619B556BA00415896 /* WinCenter-iPadTests-Info.plist */,
+				18A4D34719B556BA00415896 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A4D35A19B558E500415896 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D35B19B558E500415896 /* controllers */,
+				18A4D3A019B558E500415896 /* models */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		18A4D35B19B558E500415896 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18A4D35C19B558E500415896 /* BusinessDetailInfoVC.h */,
+				18A4D35D19B558E500415896 /* BusinessDetailInfoVC.m */,
+				18A4D35E19B558E500415896 /* DatacenterDetailInfoVC.h */,
+				18A4D35F19B558E500415896 /* DatacenterDetailInfoVC.m */,
+				18A4D36019B558E500415896 /* DatacenterTableVC.h */,
+				18A4D36119B558E500415896 /* DatacenterTableVC.m */,
+				18A4D36219B558E500415896 /* HostDetailInfoVC.h */,
+				18A4D36319B558E500415896 /* HostDetailInfoVC.m */,
+				18A4D36419B558E500415896 /* HostDetailPerformanceVC.h */,
+				18A4D36519B558E500415896 /* HostDetailPerformanceVC.m */,
+				18A4D36619B558E500415896 /* LoginSettingVC.h */,
+				18A4D36719B558E500415896 /* LoginSettingVC.m */,
+				18A4D36819B558E500415896 /* LoginVC.h */,
+				18A4D36919B558E500415896 /* LoginVC.m */,
+				18A4D36A19B558E500415896 /* MasterCollectionCell.h */,
+				18A4D36B19B558E500415896 /* MasterCollectionCell.m */,
+				18A4D36C19B558E500415896 /* MasterCollectionHeader.h */,
+				18A4D36D19B558E500415896 /* MasterCollectionHeader.m */,
+				18A4D36E19B558E500415896 /* MasterCollectionVC.h */,
+				18A4D36F19B558E500415896 /* MasterCollectionVC.m */,
+				18A4D37019B558E500415896 /* MasterContainerVC.h */,
+				18A4D37119B558E500415896 /* MasterContainerVC.m */,
+				18A4D37419B558E500415896 /* NetworkCollectionCell.h */,
+				18A4D37519B558E500415896 /* NetworkCollectionCell.m */,
+				18A4D37619B558E500415896 /* NetworkCollectionVC.h */,
+				18A4D37719B558E500415896 /* NetworkCollectionVC.m */,
+				18A4D37819B558E500415896 /* NetworkContainerVC.h */,
+				18A4D37919B558E500415896 /* NetworkContainerVC.m */,
+				18A4D37A19B558E500415896 /* PoolDetailInfoVC.h */,
+				18A4D37B19B558E500415896 /* PoolDetailInfoVC.m */,
+				18A4D37C19B558E500415896 /* PopControlRecordCell.h */,
+				18A4D37D19B558E500415896 /* PopControlRecordCell.m */,
+				18A4D37E19B558E500415896 /* PopControlRecordCellForTime.h */,
+				18A4D37F19B558E500415896 /* PopControlRecordCellForTime.m */,
+				18A4D38019B558E500415896 /* PopControlRecordVC.h */,
+				18A4D38119B558E500415896 /* PopControlRecordVC.m */,
+				18A4D38219B558E500415896 /* PopOptionsVC.h */,
+				18A4D38319B558E500415896 /* PopOptionsVC.m */,
+				84EBB59E19D8123500A7C82E /* PopOptionsUserInfoVC.h */,
+				84EBB59F19D8123500A7C82E /* PopOptionsUserInfoVC.m */,
+				18A4D38419B558E500415896 /* PopWarningInfoCell.h */,
+				18A4D38519B558E500415896 /* PopWarningInfoCell.m */,
+				18A4D38619B558E500415896 /* PopWarningInfoCellForTime.h */,
+				18A4D38719B558E500415896 /* PopWarningInfoCellForTime.m */,
+				18A4D38819B558E500415896 /* PopWarningInfoVC.h */,
+				18A4D38919B558E500415896 /* PopWarningInfoVC.m */,
+				18A4D38A19B558E500415896 /* StorageDetailDiskCell.h */,
+				18A4D38B19B558E500415896 /* StorageDetailDiskCell.m */,
+				18A4D38C19B558E500415896 /* StorageDetailInfoVC.h */,
+				18A4D38D19B558E500415896 /* StorageDetailInfoVC.m */,
+				18A4D38E19B558E500415896 /* VmCollectionCell.h */,
+				18A4D38F19B558E500415896 /* VmCollectionCell.m */,
+				18A4D39019B558E500415896 /* VmDetailCPUConfigVC.h */,
+				18A4D39119B558E500415896 /* VmDetailCPUConfigVC.m */,
+				18A4D39219B558E500415896 /* VmDetailInfoVC.h */,
+				18A4D39319B558E500415896 /* VmDetailInfoVC.m */,
+				18A4D39419B558E500415896 /* VmDetailMemryConfigVC.h */,
+				18A4D39519B558E500415896 /* VmDetailMemryConfigVC.m */,
+				18A4D39619B558E500415896 /* VmDetailSnapshootVC.h */,
+				18A4D39719B558E500415896 /* VmDetailSnapshootVC.m */,
+				18A4D39819B558E500415896 /* VmMigrateSelectHostListCell.h */,
+				18A4D39919B558E500415896 /* VmMigrateSelectHostListCell.m */,
+				18A4D39A19B558E500415896 /* VmMigrateSelectHostListVC.h */,
+				18A4D39B19B558E500415896 /* VmMigrateSelectHostListVC.m */,
+				18A4D39C19B558E500415896 /* VmMigrateVC.h */,
+				18A4D39D19B558E500415896 /* VmMigrateVC.m */,
+				18A4D39E19B558E500415896 /* VmNewVC.h */,
+				18A4D39F19B558E500415896 /* VmNewVC.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		18A4D3A019B558E500415896 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				843012C619D5799500DB0658 /* BusinessVmVO.h */,
+				843012C719D5799500DB0658 /* BusinessVmVO.m */,
+				18A4D3A119B558E500415896 /* BusinessVO.h */,
+				18A4D3A219B558E500415896 /* BusinessVO.m */,
+				845747EB19CACAEE00672E9A /* BusinessListResult.h */,
+				845747EC19CACAEE00672E9A /* BusinessListResult.m */,
+				18A4D3A319B558E500415896 /* DatacenterVO.h */,
+				18A4D3A419B558E500415896 /* DatacenterVO.m */,
+				843292D219C9522400DBE31C /* DatacenterStatVO.h */,
+				843292D319C9522400DBE31C /* DatacenterStatVO.m */,
+				8468FFA319D50BA100225CA7 /* DatacenterStatWinserver.h */,
+				8468FFA419D50BA100225CA7 /* DatacenterStatWinserver.m */,
+				843292CF19C944E800DBE31C /* DatacenterListResult.h */,
+				843292D019C944E800DBE31C /* DatacenterListResult.m */,
+				843012BA19D56AE500DB0658 /* HostNetworkListResult.h */,
+				843012BB19D56AE500DB0658 /* HostNetworkListResult.m */,
+				18A4D3A519B558E500415896 /* HostNetworkVO.h */,
+				18A4D3A619B558E500415896 /* HostNetworkVO.m */,
+				843012BD19D56AF300DB0658 /* HostNicListResult.h */,
+				843012BE19D56AF300DB0658 /* HostNicListResult.m */,
+				18A4D3A719B558E500415896 /* HostNicVO.h */,
+				18A4D3A819B558E500415896 /* HostNicVO.m */,
+				18A4D3A919B558E500415896 /* HostVO.h */,
+				18A4D3AA19B558E500415896 /* HostVO.m */,
+				844A5FB519D7ED9F0061D23B /* HostStatVO.h */,
+				844A5FB619D7ED9F0061D23B /* HostStatVO.m */,
+				843292D819C9900800DBE31C /* HostListResult.h */,
+				843292D919C9900800DBE31C /* HostListResult.m */,
+				18A4D3AB19B558E500415896 /* NetworkVO.h */,
+				18A4D3AC19B558E500415896 /* NetworkVO.m */,
+				845747E819CAC9A200672E9A /* NetworkListResult.h */,
+				845747E919CAC9A200672E9A /* NetworkListResult.m */,
+				18A4D3AD19B558E500415896 /* PoolVO.h */,
+				18A4D3AE19B558E500415896 /* PoolVO.m */,
+				844A5FB219D7D7510061D23B /* PoolElasticInfo.h */,
+				844A5FB319D7D7510061D23B /* PoolElasticInfo.m */,
+				843292D519C98A8E00DBE31C /* PoolListResult.h */,
+				843292D619C98A8E00DBE31C /* PoolListResult.m */,
+				841B5C3219D002B300A35D2D /* StorageListResult.h */,
+				841B5C3319D002B300A35D2D /* StorageListResult.m */,
+				841B5C3419D002B300A35D2D /* StorageVO.h */,
+				841B5C3519D002B300A35D2D /* StorageVO.m */,
+				843012C019D5768900DB0658 /* StorageVolumnListResult.h */,
+				843012C119D5768900DB0658 /* StorageVolumnListResult.m */,
+				843012C319D576B100DB0658 /* StorageVolumnVO.h */,
+				843012C419D576B100DB0658 /* StorageVolumnVO.m */,
+				843012CC19D584C400DB0658 /* VmDiskListResult.h */,
+				843012CD19D584C400DB0658 /* VmDiskListResult.m */,
+				841B5C3819D00EA100A35D2D /* VmDiskVO.h */,
+				841B5C3919D00EA100A35D2D /* VmDiskVO.m */,
+				843012C919D584A800DB0658 /* VmNetworkListResult.h */,
+				843012CA19D584A800DB0658 /* VmNetworkListResult.m */,
+				841B5C3C19D00EA100A35D2D /* VmNetworkVO.h */,
+				841B5C3D19D00EA100A35D2D /* VmNetworkVO.m */,
+				841B5C3A19D00EA100A35D2D /* VmListResult.h */,
+				841B5C3B19D00EA100A35D2D /* VmListResult.m */,
+				841B5C3E19D00EA100A35D2D /* VmVO.h */,
+				841B5C3F19D00EA100A35D2D /* VmVO.m */,
+				84F70FB319C93CAC00523AB0 /* LoginResult.h */,
+				84F70FB419C93CAC00523AB0 /* LoginResult.m */,
+				84F3989919C940CC00F6F5AF /* UserVO.h */,
+				84F3989A19C940CC00F6F5AF /* UserVO.m */,
+				84D4588E19D3EFB0006706B8 /* BaseObject.h */,
+				84D4588F19D3EFB0006706B8 /* BaseObject.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A4D31B19B556BA00415896 /* WinCenter-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A4D34E19B556BA00415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPad" */;
+			buildPhases = (
+				91F789CFA9774B7EBEB499C5 /* Check Pods Manifest.lock */,
+				18A4D31819B556BA00415896 /* Sources */,
+				18A4D31919B556BA00415896 /* Frameworks */,
+				18A4D31A19B556BA00415896 /* Resources */,
+				A837DA59B96042838036942B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WinCenter-iPad";
+			productName = "WinCenter-iPad";
+			productReference = 18A4D31C19B556BA00415896 /* WinCenter-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A4D33C19B556BA00415896 /* WinCenter-iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A4D35119B556BA00415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPadTests" */;
+			buildPhases = (
+				18A4D33919B556BA00415896 /* Sources */,
+				18A4D33A19B556BA00415896 /* Frameworks */,
+				18A4D33B19B556BA00415896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A4D34319B556BA00415896 /* PBXTargetDependency */,
+			);
+			name = "WinCenter-iPadTests";
+			productName = "WinCenter-iPadTests";
+			productReference = 18A4D33D19B556BA00415896 /* WinCenter-iPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A4D31419B556BA00415896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = huadi;
+				TargetAttributes = {
+					18A4D33C19B556BA00415896 = {
+						TestTargetID = 18A4D31B19B556BA00415896;
+					};
+				};
+			};
+			buildConfigurationList = 18A4D31719B556BA00415896 /* Build configuration list for PBXProject "WinCenter-iPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A4D31319B556BA00415896;
+			productRefGroup = 18A4D31D19B556BA00415896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A4D31B19B556BA00415896 /* WinCenter-iPad */,
+				18A4D33C19B556BA00415896 /* WinCenter-iPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A4D31A19B556BA00415896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4D33819B556BA00415896 /* Images.xcassets in Resources */,
+				18A4D32A19B556BA00415896 /* InfoPlist.strings in Resources */,
+				18A4D35719B557F400415896 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A4D33B19B556BA00415896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4D34919B556BA00415896 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91F789CFA9774B7EBEB499C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A837DA59B96042838036942B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-WinCenter-iPad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A4D31819B556BA00415896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4D33019B556BA00415896 /* AppDelegate.m in Sources */,
+				18A4D3DE19B558E500415896 /* NetworkVO.m in Sources */,
+				84F70FB519C93CAC00523AB0 /* LoginResult.m in Sources */,
+				84D4589019D3EFB0006706B8 /* BaseObject.m in Sources */,
+				84EBB5A019D8123500A7C82E /* PopOptionsUserInfoVC.m in Sources */,
+				18A4D3D619B558E500415896 /* VmMigrateSelectHostListVC.m in Sources */,
+				18A4D3D819B558E500415896 /* VmNewVC.m in Sources */,
+				845747ED19CACAEE00672E9A /* BusinessListResult.m in Sources */,
+				841B5C4119D00EA100A35D2D /* VmListResult.m in Sources */,
+				841B5C4219D00EA100A35D2D /* VmNetworkVO.m in Sources */,
+				84F3989B19C940CC00F6F5AF /* UserVO.m in Sources */,
+				18A4D32C19B556BA00415896 /* main.m in Sources */,
+				18A4D3BD19B558E500415896 /* LoginVC.m in Sources */,
+				18A4D3BE19B558E500415896 /* MasterCollectionCell.m in Sources */,
+				841B5C4319D00EA100A35D2D /* VmVO.m in Sources */,
+				18A4D3D519B558E500415896 /* VmMigrateSelectHostListCell.m in Sources */,
+				18A4D3DB19B558E500415896 /* HostNetworkVO.m in Sources */,
+				18A4D3D719B558E500415896 /* VmMigrateVC.m in Sources */,
+				843012BF19D56AF300DB0658 /* HostNicListResult.m in Sources */,
+				843012C219D5768900DB0658 /* StorageVolumnListResult.m in Sources */,
+				18A4D3DA19B558E500415896 /* DatacenterVO.m in Sources */,
+				18A4D3DC19B558E500415896 /* HostNicVO.m in Sources */,
+				843012BC19D56AE500DB0658 /* HostNetworkListResult.m in Sources */,
+				18A4D3C019B558E500415896 /* MasterCollectionVC.m in Sources */,
+				18A4D3CD19B558E500415896 /* PopWarningInfoVC.m in Sources */,
+				18A4D3C719B558E500415896 /* PopControlRecordCell.m in Sources */,
+				18A4D3D119B558E500415896 /* VmDetailCPUConfigVC.m in Sources */,
+				18A4D3D019B558E500415896 /* VmCollectionCell.m in Sources */,
+				18A4D3CB19B558E500415896 /* PopWarningInfoCell.m in Sources */,
+				18A4D3CA19B558E500415896 /* PopOptionsVC.m in Sources */,
+				18A4D3B819B558E500415896 /* DatacenterDetailInfoVC.m in Sources */,
+				18A4D3C319B558E500415896 /* NetworkCollectionCell.m in Sources */,
+				18A4D3C919B558E500415896 /* PopControlRecordVC.m in Sources */,
+				843012C819D5799500DB0658 /* BusinessVmVO.m in Sources */,
+				844A5FB419D7D7510061D23B /* PoolElasticInfo.m in Sources */,
+				18A4D3C819B558E500415896 /* PopControlRecordCellForTime.m in Sources */,
+				843292DA19C9900800DBE31C /* HostListResult.m in Sources */,
+				18A4D3CC19B558E500415896 /* PopWarningInfoCellForTime.m in Sources */,
+				18A4D3D919B558E500415896 /* BusinessVO.m in Sources */,
+				843012CE19D584C400DB0658 /* VmDiskListResult.m in Sources */,
+				843292D419C9522400DBE31C /* DatacenterStatVO.m in Sources */,
+				18A4D3BF19B558E500415896 /* MasterCollectionHeader.m in Sources */,
+				845747EA19CAC9A200672E9A /* NetworkListResult.m in Sources */,
+				18A4D3BC19B558E500415896 /* LoginSettingVC.m in Sources */,
+				18A4D3DF19B558E500415896 /* PoolVO.m in Sources */,
+				8468FFA519D50BA100225CA7 /* DatacenterStatWinserver.m in Sources */,
+				844A5FB719D7ED9F0061D23B /* HostStatVO.m in Sources */,
+				18A4D3C519B558E500415896 /* NetworkContainerVC.m in Sources */,
+				18A4D3D219B558E500415896 /* VmDetailInfoVC.m in Sources */,
+				18A4D3B719B558E500415896 /* BusinessDetailInfoVC.m in Sources */,
+				18A4D3B919B558E500415896 /* DatacenterTableVC.m in Sources */,
+				18A4D3D319B558E500415896 /* VmDetailMemryConfigVC.m in Sources */,
+				843012C519D576B100DB0658 /* StorageVolumnVO.m in Sources */,
+				18A4D3DD19B558E500415896 /* HostVO.m in Sources */,
+				18A4D3C619B558E500415896 /* PoolDetailInfoVC.m in Sources */,
+				18A4D3CF19B558E500415896 /* StorageDetailInfoVC.m in Sources */,
+				18A4D3CE19B558E500415896 /* StorageDetailDiskCell.m in Sources */,
+				843292D119C944E800DBE31C /* DatacenterListResult.m in Sources */,
+				18A4D3BA19B558E500415896 /* HostDetailInfoVC.m in Sources */,
+				841B5C3719D002B300A35D2D /* StorageVO.m in Sources */,
+				843012CB19D584A800DB0658 /* VmNetworkListResult.m in Sources */,
+				18A4D3BB19B558E500415896 /* HostDetailPerformanceVC.m in Sources */,
+				843292D719C98A8E00DBE31C /* PoolListResult.m in Sources */,
+				18A4D3C119B558E500415896 /* MasterContainerVC.m in Sources */,
+				18A4D3D419B558E500415896 /* VmDetailSnapshootVC.m in Sources */,
+				841B5C3619D002B300A35D2D /* StorageListResult.m in Sources */,
+				841B5C4019D00EA100A35D2D /* VmDiskVO.m in Sources */,
+				18A4D3C419B558E500415896 /* NetworkCollectionVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A4D33919B556BA00415896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4D34B19B556BA00415896 /* WinCenter_iPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A4D34319B556BA00415896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A4D31B19B556BA00415896 /* WinCenter-iPad */;
+			targetProxy = 18A4D34219B556BA00415896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A4D32819B556BA00415896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A4D32919B556BA00415896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18A4D34719B556BA00415896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A4D34819B556BA00415896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A4D34C19B556BA00415896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		18A4D34D19B556BA00415896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A4D34F19B556BA00415896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinCenter-iPad/WinCenter-iPad-Prefix.pch";
+				INFOPLIST_FILE = "WinCenter-iPad/WinCenter-iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18A4D35019B556BA00415896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinCenter-iPad/WinCenter-iPad-Prefix.pch";
+				INFOPLIST_FILE = "WinCenter-iPad/WinCenter-iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18A4D35219B556BA00415896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WinCenter-iPad.app/WinCenter-iPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinCenter-iPad/WinCenter-iPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WinCenter-iPadTests/WinCenter-iPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18A4D35319B556BA00415896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WinCenter-iPad.app/WinCenter-iPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinCenter-iPad/WinCenter-iPad-Prefix.pch";
+				INFOPLIST_FILE = "WinCenter-iPadTests/WinCenter-iPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A4D31719B556BA00415896 /* Build configuration list for PBXProject "WinCenter-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4D34C19B556BA00415896 /* Debug */,
+				18A4D34D19B556BA00415896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A4D34E19B556BA00415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4D34F19B556BA00415896 /* Debug */,
+				18A4D35019B556BA00415896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A4D35119B556BA00415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4D35219B556BA00415896 /* Debug */,
+				18A4D35319B556BA00415896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A4D31419B556BA00415896 /* Project object */;
+}

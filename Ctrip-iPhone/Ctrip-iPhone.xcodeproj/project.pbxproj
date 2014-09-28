@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E159F619C0525D005A7566 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E159F519C0525D005A7566 /* Foundation.framework */; };
+		18E159F819C0525D005A7566 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E159F719C0525D005A7566 /* CoreGraphics.framework */; };
+		18E159FA19C0525D005A7566 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E159F919C0525D005A7566 /* UIKit.framework */; };
+		18E15A0019C0525E005A7566 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E159FE19C0525E005A7566 /* InfoPlist.strings */; };
+		18E15A0219C0525E005A7566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E15A0119C0525E005A7566 /* main.m */; };
+		18E15A0619C0525F005A7566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E15A0519C0525F005A7566 /* AppDelegate.m */; };
+		18E15A0919C0525F005A7566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E15A0719C0525F005A7566 /* Main.storyboard */; };
+		18E15A0C19C0525F005A7566 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E15A0B19C0525F005A7566 /* ViewController.m */; };
+		18E15A0E19C05260005A7566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E15A0D19C05260005A7566 /* Images.xcassets */; };
+		18E15A1519C05260005A7566 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E15A1419C05260005A7566 /* XCTest.framework */; };
+		18E15A1619C05260005A7566 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E159F519C0525D005A7566 /* Foundation.framework */; };
+		18E15A1719C05260005A7566 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E159F919C0525D005A7566 /* UIKit.framework */; };
+		18E15A1F19C05260005A7566 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E15A1D19C05260005A7566 /* InfoPlist.strings */; };
+		18E15A2119C05261005A7566 /* Ctrip_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E15A2019C05261005A7566 /* Ctrip_iPhoneTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E15A1819C05260005A7566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E159EA19C0525D005A7566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E159F119C0525D005A7566;
+			remoteInfo = "Ctrip-iPhone";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18E159F219C0525D005A7566 /* Ctrip-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ctrip-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E159F519C0525D005A7566 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18E159F719C0525D005A7566 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18E159F919C0525D005A7566 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18E159FD19C0525E005A7566 /* Ctrip-iPhone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ctrip-iPhone-Info.plist"; sourceTree = "<group>"; };
+		18E159FF19C0525E005A7566 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E15A0119C0525E005A7566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E15A0319C0525E005A7566 /* Ctrip-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ctrip-iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		18E15A0419C0525E005A7566 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E15A0519C0525F005A7566 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E15A0819C0525F005A7566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E15A0A19C0525F005A7566 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18E15A0B19C0525F005A7566 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E15A0D19C05260005A7566 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18E15A1319C05260005A7566 /* Ctrip-iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ctrip-iPhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E15A1419C05260005A7566 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18E15A1C19C05260005A7566 /* Ctrip-iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ctrip-iPhoneTests-Info.plist"; sourceTree = "<group>"; };
+		18E15A1E19C05260005A7566 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E15A2019C05261005A7566 /* Ctrip_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ctrip_iPhoneTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E159EF19C0525D005A7566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E159F819C0525D005A7566 /* CoreGraphics.framework in Frameworks */,
+				18E159FA19C0525D005A7566 /* UIKit.framework in Frameworks */,
+				18E159F619C0525D005A7566 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E15A1019C05260005A7566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E15A1519C05260005A7566 /* XCTest.framework in Frameworks */,
+				18E15A1719C05260005A7566 /* UIKit.framework in Frameworks */,
+				18E15A1619C05260005A7566 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E159E919C0525D005A7566 = {
+			isa = PBXGroup;
+			children = (
+				18E159FB19C0525D005A7566 /* Ctrip-iPhone */,
+				18E15A1A19C05260005A7566 /* Ctrip-iPhoneTests */,
+				18E159F419C0525D005A7566 /* Frameworks */,
+				18E159F319C0525D005A7566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E159F319C0525D005A7566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E159F219C0525D005A7566 /* Ctrip-iPhone.app */,
+				18E15A1319C05260005A7566 /* Ctrip-iPhoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E159F419C0525D005A7566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E159F519C0525D005A7566 /* Foundation.framework */,
+				18E159F719C0525D005A7566 /* CoreGraphics.framework */,
+				18E159F919C0525D005A7566 /* UIKit.framework */,
+				18E15A1419C05260005A7566 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18E159FB19C0525D005A7566 /* Ctrip-iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				18E15A0419C0525E005A7566 /* AppDelegate.h */,
+				18E15A0519C0525F005A7566 /* AppDelegate.m */,
+				18E15A0719C0525F005A7566 /* Main.storyboard */,
+				18E15A0A19C0525F005A7566 /* ViewController.h */,
+				18E15A0B19C0525F005A7566 /* ViewController.m */,
+				18E15A0D19C05260005A7566 /* Images.xcassets */,
+				18E159FC19C0525E005A7566 /* Supporting Files */,
+			);
+			path = "Ctrip-iPhone";
+			sourceTree = "<group>";
+		};
+		18E159FC19C0525E005A7566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E159FD19C0525E005A7566 /* Ctrip-iPhone-Info.plist */,
+				18E159FE19C0525E005A7566 /* InfoPlist.strings */,
+				18E15A0119C0525E005A7566 /* main.m */,
+				18E15A0319C0525E005A7566 /* Ctrip-iPhone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E15A1A19C05260005A7566 /* Ctrip-iPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E15A2019C05261005A7566 /* Ctrip_iPhoneTests.m */,
+				18E15A1B19C05260005A7566 /* Supporting Files */,
+			);
+			path = "Ctrip-iPhoneTests";
+			sourceTree = "<group>";
+		};
+		18E15A1B19C05260005A7566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E15A1C19C05260005A7566 /* Ctrip-iPhoneTests-Info.plist */,
+				18E15A1D19C05260005A7566 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E159F119C0525D005A7566 /* Ctrip-iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E15A2419C05261005A7566 /* Build configuration list for PBXNativeTarget "Ctrip-iPhone" */;
+			buildPhases = (
+				18E159EE19C0525D005A7566 /* Sources */,
+				18E159EF19C0525D005A7566 /* Frameworks */,
+				18E159F019C0525D005A7566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ctrip-iPhone";
+			productName = "Ctrip-iPhone";
+			productReference = 18E159F219C0525D005A7566 /* Ctrip-iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E15A1219C05260005A7566 /* Ctrip-iPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E15A2719C05261005A7566 /* Build configuration list for PBXNativeTarget "Ctrip-iPhoneTests" */;
+			buildPhases = (
+				18E15A0F19C05260005A7566 /* Sources */,
+				18E15A1019C05260005A7566 /* Frameworks */,
+				18E15A1119C05260005A7566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E15A1919C05260005A7566 /* PBXTargetDependency */,
+			);
+			name = "Ctrip-iPhoneTests";
+			productName = "Ctrip-iPhoneTests";
+			productReference = 18E15A1319C05260005A7566 /* Ctrip-iPhoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E159EA19C0525D005A7566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = huadi;
+				TargetAttributes = {
+					18E15A1219C05260005A7566 = {
+						TestTargetID = 18E159F119C0525D005A7566;
+					};
+				};
+			};
+			buildConfigurationList = 18E159ED19C0525D005A7566 /* Build configuration list for PBXProject "Ctrip-iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E159E919C0525D005A7566;
+			productRefGroup = 18E159F319C0525D005A7566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E159F119C0525D005A7566 /* Ctrip-iPhone */,
+				18E15A1219C05260005A7566 /* Ctrip-iPhoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E159F019C0525D005A7566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E15A0E19C05260005A7566 /* Images.xcassets in Resources */,
+				18E15A0019C0525E005A7566 /* InfoPlist.strings in Resources */,
+				18E15A0919C0525F005A7566 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E15A1119C05260005A7566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E15A1F19C05260005A7566 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E159EE19C0525D005A7566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E15A0C19C0525F005A7566 /* ViewController.m in Sources */,
+				18E15A0619C0525F005A7566 /* AppDelegate.m in Sources */,
+				18E15A0219C0525E005A7566 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E15A0F19C05260005A7566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E15A2119C05261005A7566 /* Ctrip_iPhoneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E15A1919C05260005A7566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E159F119C0525D005A7566 /* Ctrip-iPhone */;
+			targetProxy = 18E15A1819C05260005A7566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E159FE19C0525E005A7566 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E159FF19C0525E005A7566 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18E15A0719C0525F005A7566 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E15A0819C0525F005A7566 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E15A1D19C05260005A7566 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E15A1E19C05260005A7566 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E15A2219C05261005A7566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E15A2319C05261005A7566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E15A2519C05261005A7566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ctrip-iPhone/Ctrip-iPhone-Prefix.pch";
+				INFOPLIST_FILE = "Ctrip-iPhone/Ctrip-iPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18E15A2619C05261005A7566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ctrip-iPhone/Ctrip-iPhone-Prefix.pch";
+				INFOPLIST_FILE = "Ctrip-iPhone/Ctrip-iPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18E15A2819C05261005A7566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ctrip-iPhone.app/Ctrip-iPhone";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ctrip-iPhone/Ctrip-iPhone-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ctrip-iPhoneTests/Ctrip-iPhoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18E15A2919C05261005A7566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ctrip-iPhone.app/Ctrip-iPhone";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ctrip-iPhone/Ctrip-iPhone-Prefix.pch";
+				INFOPLIST_FILE = "Ctrip-iPhoneTests/Ctrip-iPhoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E159ED19C0525D005A7566 /* Build configuration list for PBXProject "Ctrip-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E15A2219C05261005A7566 /* Debug */,
+				18E15A2319C05261005A7566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E15A2419C05261005A7566 /* Build configuration list for PBXNativeTarget "Ctrip-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E15A2519C05261005A7566 /* Debug */,
+				18E15A2619C05261005A7566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18E15A2719C05261005A7566 /* Build configuration list for PBXNativeTarget "Ctrip-iPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E15A2819C05261005A7566 /* Debug */,
+				18E15A2919C05261005A7566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E159EA19C0525D005A7566 /* Project object */;
+}

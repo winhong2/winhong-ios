@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__23-[LoginVC loginAction:]_block_invoke_6:LoginVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MasterCollectionVC viewDidLoad]_block_invoke52:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginVC loginAction]:LoginVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "response2">
+            </PersistentString>
+            <PersistentString
+               value = "response">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MasterCollectionVC viewDidLoad]_block_invoke274:MasterCollectionVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[VmDiskListResult alloc] initWithJSONData:jsonResponse.rawBody].volumes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MasterCollectionVC viewDidLoad]_block_invoke104:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MasterCollectionVC refreshPage]_block_invoke54:MasterCollectionVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonResponse.body">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginVC URLSession:task:didReceiveChallenge:completionHandler:]:LoginVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MasterCollectionVC collectionView:viewForSupplementaryElementOfKind:atIndexPath:]:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MasterCollectionVC viewDidLoad]_block_invoke238:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MasterCollectionVC prepareForSegue:sender:]:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MasterCollectionVC viewDidLoad]:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "__33-[MasterCollectionVC viewDidLoad]_block_invoke24:MasterCollectionVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MasterCollectionVC collectionView:cellForItemAtIndexPath:]:MasterCollectionVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate application:didFinishLaunchingWithOptions:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BusinessDetailInfoVC prepareForSegue:sender:]:BusinessDetailInfoVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "__37-[DatacenterDetailInfoVC viewDidLoad]_block_invoke_2:DatacenterDetailInfoVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "[jsonResponse.rawBody valueForKey:@&quot;hosts&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate connection:didReceiveAuthenticationChallenge:]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__23-[LoginVC loginAction:]_block_invoke:LoginVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "__23-[LoginVC loginAction:]_block_invoke_4:LoginVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[UNIHTTPClientHelper prepareRequest:]:UNIHTTPClientHelper.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
