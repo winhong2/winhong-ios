@@ -73,12 +73,14 @@
     
     cell.textLabel.text = vo.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@:%d", vo.wceIpAddress, vo.wcePort];
-    
+    if([self.datacenterVO.name isEqualToString:vo.name]){
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //[((UIPopoverController*)self.parentViewController) dismissPopoverAnimated:YES];
+    [self.delegate didFinished:self];
 }
 
 

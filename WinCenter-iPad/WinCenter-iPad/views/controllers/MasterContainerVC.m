@@ -35,13 +35,30 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonTask;
 @property (weak, nonatomic) IBOutlet UIButton *buttonWarning;
 
+@property UIPopoverController *popoverVC;
+
 @end
 
 @implementation MasterContainerVC
 
+- (void)didFinished:(DatacenterTableVC *)controller{
+    if(self.popoverVC){
+        [self.popoverVC dismissPopoverAnimated:YES];
+        [self.infoVC refresh];
+        [self refresh];
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([segue.identifier isEqualToString:@"toInfoVC"]){
+    if([segue.identifier isEqualToString:@"toSelect"]){
+        self.popoverVC = [(UIStoryboardPopoverSegue*)segue popoverController];
+        UINavigationController *nav = segue.destinationViewController;
+        DatacenterTableVC *vc = [[nav viewControllers] firstObject];
+        vc.delegate = self;
+        vc.datacenterVO = self.datacenterVO;
+        
+    }else if([segue.identifier isEqualToString:@"toInfoVC"]){
         self.infoVC = segue.destinationViewController;
         self.infoVC.datacenterVO = self.datacenterVO;
     }
@@ -60,7 +77,10 @@
     self.view.backgroundColor = [UIColor clearColor];
     
     [super viewDidLoad];
-    
+    [self refresh];
+}
+
+- (void)refresh{
     switch (self.pageType) {
         case MasterPageType_DATACENTER:{
             self.titleLabel.text = self.datacenterVO.name;
@@ -341,6 +361,9 @@
     
     self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:nil];
     [self addChildViewController:self.pageVC];
+    for(UIView *subView in self.pageVCContainer.subviews){
+        [subView removeFromSuperview];
+    }
     [self.pageVCContainer addSubview:self.pageVC.view];
     self.pageVC.view.frame = self.pageVCContainer.bounds;
     [self.pageVC didMoveToParentViewController:self];

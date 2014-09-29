@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class DatacenterTableVC;
+
+@protocol DatacenterTableVCDelegate
+- (void)didFinished:(DatacenterTableVC *)controller;
+@end
+
 @interface DatacenterTableVC : UITableViewController
+
+@property (weak, nonatomic) id <DatacenterTableVCDelegate> delegate;
+@property DatacenterVO *datacenterVO;
 
 @end

@@ -39,6 +39,7 @@
 
 @property DatacenterVO *datacenterVO;
 
+- (void)refresh;
 - (void)switchButtonSelected:(NSInteger)index;
 
 @end

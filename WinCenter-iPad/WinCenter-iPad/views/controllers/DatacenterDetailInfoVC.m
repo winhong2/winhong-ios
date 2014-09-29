@@ -30,23 +30,28 @@
     self.scrollView.contentSize = CGSizeMake(275, 420);
 }
 - (void)viewDidLoad{
+    [self refresh];
+}
+- (void)refresh{
     [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
         [simpleRequest setUrl:[NSString stringWithFormat:getDatacenterStatUrl, self.datacenterVO.id]];
     }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
         self.datacenterStatWinserver = [[DatacenterStatVO alloc] initWithJSONData:jsonResponse.rawBody].winserver;
-        [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
         
         [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
             [simpleRequest setUrl:[NSString stringWithFormat:getBusinessListUrl_all, self.datacenterVO.id]];
         }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
             self.datacenterStatWinserver.appNumber = [[BusinessListResult alloc] initWithJSONData:jsonResponse.rawBody].recordTotal;
-            [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
+            [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
         }];
     }];
     
 }
 
-- (void)refresh{
+- (void)refreshMainInfo{
+    [self switchButtonSelected:0];
+    
     self.poolCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.resPoolNumber];
     self.hostCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.hostNubmer];
     self.vmCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.vmNumber];

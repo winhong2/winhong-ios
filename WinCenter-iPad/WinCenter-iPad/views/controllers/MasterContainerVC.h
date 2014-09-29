@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "DatacenterDetailInfoVC.h"
+#import "DatacenterTableVC.h"
 
 @class DatacenterDetailInfoVC;
 
-@interface MasterContainerVC : UIViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+@interface MasterContainerVC : UIViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate, DatacenterTableVCDelegate>
 
 @property DatacenterDetailInfoVC *infoVC;
 
