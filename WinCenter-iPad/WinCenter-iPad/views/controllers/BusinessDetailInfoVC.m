@@ -47,7 +47,7 @@
 
 - (void)refresh{
     self.managerId.text = self.baseObject.managerId;
-    //self.platform
+    self.platform.text = self.baseObject.sysSrc;
     self.createTime.text = self.baseObject.createTime;
     self.createUser.text = self.baseObject.createUser;
     self.desc.text = self.baseObject.desc;
