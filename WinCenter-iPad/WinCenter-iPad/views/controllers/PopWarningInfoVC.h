@@ -10,4 +10,10 @@
 
 @interface PopWarningInfoVC : UITableViewController
 
+@property NSArray *dataList;
+
+
+
+
+
 @end

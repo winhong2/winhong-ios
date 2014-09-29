@@ -198,6 +198,8 @@
             
             self.segmentView_host.hidden = NO;
             
+            self.btnCreateVM.hidden = NO;
+            
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:5];
             
             HostDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailInfoVC"];
@@ -258,7 +260,7 @@
         }
         case MasterPageType_STORAGE:{
             
-            if([((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
+            if((((StorageVO *) self.baseObject).hostName ==nil) || [((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName];
             }else{
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
@@ -293,6 +295,8 @@
             self.statusLabel.text = [((VmVO*) self.baseObject) state_text];
             
             self.segmentView_vm.hidden = NO;
+            
+            self.btnOperation.hidden = NO;
             
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
             

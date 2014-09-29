@@ -18,5 +18,6 @@
 @property NSString *desc;
 @property int vmNum;
 @property NSArray *wceBusVms;
+@property NSString *sysSrc;
 
 @end
