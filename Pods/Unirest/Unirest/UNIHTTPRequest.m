@@ -22,7 +22,7 @@
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-
+#import "UNIRest.h"
 #import "UNIHTTPRequest.h"
 #import "UNIHTTPClientHelper.h"
 
@@ -102,7 +102,13 @@
         if (error != nil) {
             response(nil, error);
         } else {
-            response([[UNIHTTPJsonResponse alloc] initWithSimpleResponse:res], error);
+            UNIHTTPJsonResponse *jsonResponse = [[UNIHTTPJsonResponse alloc] initWithSimpleResponse:res];
+            NSString *cookieStr = [jsonResponse.headers valueForKey:@"Set-Cookie"];
+            if(cookieStr!=nil){
+                cookieStr = [cookieStr componentsSeparatedByString:@";"][0];
+                [UNIRest defaultHeader:@"Cookie" value:cookieStr];
+            }
+            response(jsonResponse, error);
         }
     }];
 }

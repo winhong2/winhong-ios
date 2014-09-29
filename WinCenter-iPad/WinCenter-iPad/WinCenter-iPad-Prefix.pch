@@ -56,7 +56,6 @@ typedef NS_ENUM(NSInteger, MasterCollectionType) {
     MasterCollectionType_BUSINESS_BY_DATACENTER_MORE
 };
 
-#define getLoginSessionUrl      @"/pc/login.jsp"
 #define postLoginUrl            @"/loginServlet"
 #define getUserInfoUrl          @"/pc/sys/users?account=admin&password=WTHtk1eyckFZUs3vFKsDAdiscP16uTGA"
 #define getDatacenterListUrl    @"/pc/rm/dataCenters"

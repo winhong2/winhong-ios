@@ -106,4 +106,15 @@
     [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];    
 }
 
+- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)local_request redirectResponse:(NSURLResponse *)local_response{
+
+    if([local_request.URL.path isEqualToString:@"/pc/index.jsp"] && [local_response.URL.path isEqualToString:@"/loginServlet"]){
+        [[NSUserDefaults standardUserDefaults] setValue:@"SUCCESS" forKey:@"LOGIN_STATE"];
+    }
+    
+    return local_request;
+}
+
+
+
 @end
