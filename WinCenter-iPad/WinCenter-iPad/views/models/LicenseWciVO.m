@@ -10,4 +10,17 @@
 
 @implementation LicenseWciVO
 
+-(NSString*) IcType_text{
+    NSDictionary *stateDict = @{@"0":@"试用", @"1":@"永久"};
+    
+    NSString *result = [stateDict valueForKey:self.IcType];
+    if((result==nil) || [result isEqualToString:@""]){
+        result = self.IcType;
+    }
+    return result;
+    
+//    return [stateDict valueForKey:self.IcType];
+}
+
+
 @end

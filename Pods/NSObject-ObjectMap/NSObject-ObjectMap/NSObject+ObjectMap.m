@@ -312,6 +312,9 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     NSDictionary *mapDictionary = [newObject propertyDictionary];
     
     for (NSString *key in [dict allKeys]) {
+        if([key isEqualToString:@"version"]){
+            continue;
+        }
         if([key isEqualToString:@"description"]){
             objc_property_t property = class_getProperty([newObject class], [@"desc" UTF8String]);
             if(property){
@@ -427,6 +430,9 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
             // Iterate through each key, create objects for each
             for (NSString *newKey in [nestedArray[xx] allKeys]) {
                 // If it's null, move on
+                if([newKey isEqualToString:@"version"]){
+                    continue;
+                }
                 if([newKey isEqualToString:@"description"]){
                     objc_property_t property = class_getProperty([NSClassFromString(propertyName) class], [@"desc" UTF8String]);
                     if(property){

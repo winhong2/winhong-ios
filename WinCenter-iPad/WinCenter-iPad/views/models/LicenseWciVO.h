@@ -15,4 +15,7 @@
 @property NSString *phone;
 @property NSString *IcType;
 @property int IcNum;
+
+-(NSString*) IcType_text;
+
 @end
