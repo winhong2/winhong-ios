@@ -402,6 +402,13 @@
             cell.status.text = [storageVO state_text];
             cell.share.text = [storageVO shared_text];
             cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
+            if(cell.progress.progress>0.8){
+                cell.progress.progressTintColor = [UIColor redColor];
+            }else if(cell.progress.progress>0.6){
+                cell.progress.progressTintColor = [UIColor yellowColor];
+            }else{
+                cell.progress.progressTintColor = [UIColor greenColor];
+            }
             return cell;
         }
         case MasterCollectionType_STORAGE_BY_POOL:
@@ -415,6 +422,13 @@
             cell.status.text = [storageVO state_text];
             cell.share.text = [storageVO shared_text];
             cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
+            if(cell.progress.progress>0.8){
+                cell.progress.progressTintColor = [UIColor redColor];
+            }else if(cell.progress.progress>0.6){
+                cell.progress.progressTintColor = [UIColor yellowColor];
+            }else{
+                cell.progress.progressTintColor = [UIColor greenColor];
+            }
             return cell;
         }
         case MasterCollectionType_VM_BY_DATACENTER:
