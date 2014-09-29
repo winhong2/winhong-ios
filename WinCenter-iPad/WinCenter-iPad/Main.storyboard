@@ -5640,7 +5640,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="11:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DL6-VR-ivM">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DL6-VR-ivM">
                                             <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -5658,13 +5658,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1t-Tz-VmK">
-                                            <rect key="frame" x="253" y="8" width="47" height="21"/>
+                                            <rect key="frame" x="167" y="9" width="133" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="创建虚拟机" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJL-ER-Y5N">
-                                            <rect key="frame" x="20" y="8" width="204" height="21"/>
+                                            <rect key="frame" x="20" y="9" width="124" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -5693,6 +5693,14 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label1" destination="sJL-ER-Y5N" id="bsz-zm-RIN"/>
+                                    <outlet property="label2" destination="a1t-Tz-VmK" id="Ugq-Fd-xcC"/>
+                                    <outlet property="label3" destination="9Qf-cX-UPr" id="DsO-NZ-eSB"/>
+                                    <outlet property="label4" destination="kcX-QN-Yeu" id="AGs-RE-oBQ"/>
+                                    <outlet property="label5" destination="Qfn-nV-RYW" id="hU6-eI-TZ7"/>
+                                    <outlet property="label6" destination="hKK-H7-AjQ" id="190-z8-6NJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -5704,7 +5712,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWK-eY-aDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5583" y="2440"/>
+            <point key="canvasLocation" x="-5583" y="2438"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hHr-DW-ugw">
@@ -5762,7 +5770,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="11:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ejG-kz-zxe">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ejG-kz-zxe">
                                             <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -5771,6 +5779,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label1" destination="ejG-kz-zxe" id="VQn-sN-WBG"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WarningInfoCell" rowHeight="120" id="aQQ-BP-nWC" customClass="PopWarningInfoCell">
                                 <rect key="frame" x="0.0" y="66" width="320" height="120"/>
@@ -5779,33 +5790,38 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内存使用率警报" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deK-4Y-heN">
-                                            <rect key="frame" x="20" y="11" width="98" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deK-4Y-heN">
+                                            <rect key="frame" x="20" y="13" width="125" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xenserver-26" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6D-Bc-BR0">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6D-Bc-BR0">
                                             <rect key="frame" x="20" y="34" width="280" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:45" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD3-pJ-3ev">
-                                            <rect key="frame" x="258" y="11" width="43" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD3-pJ-3ev">
+                                            <rect key="frame" x="163" y="13" width="138" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="xenserver-26的主机上内存使用率达到80％,该主机设置为使用率超过70％触发告警。" translatesAutoresizingMaskIntoConstraints="NO" id="bwM-B6-ore">
-                                            <rect key="frame" x="15" y="47" width="293" height="67"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muI-1r-6RL">
+                                            <rect key="frame" x="20" y="56" width="281" height="56"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label1" destination="deK-4Y-heN" id="RXs-g6-4By"/>
+                                    <outlet property="label2" destination="iD3-pJ-3ev" id="QtP-FC-iOH"/>
+                                    <outlet property="label3" destination="p6D-Bc-BR0" id="yUv-e0-7AV"/>
+                                    <outlet property="label4" destination="muI-1r-6RL" id="FlD-ns-slT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -5817,7 +5833,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4M-sm-tJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4713" y="2440"/>
+            <point key="canvasLocation" x="-4626" y="2440"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eBu-or-4oQ">

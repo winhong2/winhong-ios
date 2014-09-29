@@ -56,6 +56,10 @@
 		18A4D3DE19B558E500415896 /* NetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AC19B558E500415896 /* NetworkVO.m */; };
 		18A4D3DF19B558E500415896 /* PoolVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AE19B558E500415896 /* PoolVO.m */; };
 		50CA1EB865704A568353668C /* libPods-WinCenter-iPad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */; };
+		68A8845219D9326100BBF764 /* WarningInfoVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A8845119D9326100BBF764 /* WarningInfoVO.m */; };
+		68A8845519D933B800BBF764 /* WarningInfoListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A8845419D933B800BBF764 /* WarningInfoListResult.m */; };
+		68A8845819D9523D00BBF764 /* ControlRecordVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A8845719D9523D00BBF764 /* ControlRecordVO.m */; };
+		68A8845B19D9526400BBF764 /* ControlRecordListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A8845A19D9526400BBF764 /* ControlRecordListResult.m */; };
 		841B5C3619D002B300A35D2D /* StorageListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3319D002B300A35D2D /* StorageListResult.m */; };
 		841B5C3719D002B300A35D2D /* StorageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3519D002B300A35D2D /* StorageVO.m */; };
 		841B5C4019D00EA100A35D2D /* VmDiskVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3919D00EA100A35D2D /* VmDiskVO.m */; };
@@ -182,6 +186,14 @@
 		18A4D3AD19B558E500415896 /* PoolVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolVO.h; sourceTree = "<group>"; };
 		18A4D3AE19B558E500415896 /* PoolVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolVO.m; sourceTree = "<group>"; };
 		3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPad.xcconfig"; path = "../Pods/Pods-WinCenter-iPad.xcconfig"; sourceTree = "<group>"; };
+		68A8845019D9326100BBF764 /* WarningInfoVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoVO.h; sourceTree = "<group>"; };
+		68A8845119D9326100BBF764 /* WarningInfoVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoVO.m; sourceTree = "<group>"; };
+		68A8845319D933B800BBF764 /* WarningInfoListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoListResult.h; sourceTree = "<group>"; };
+		68A8845419D933B800BBF764 /* WarningInfoListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoListResult.m; sourceTree = "<group>"; };
+		68A8845619D9523D00BBF764 /* ControlRecordVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordVO.h; sourceTree = "<group>"; };
+		68A8845719D9523D00BBF764 /* ControlRecordVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordVO.m; sourceTree = "<group>"; };
+		68A8845919D9526400BBF764 /* ControlRecordListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordListResult.h; sourceTree = "<group>"; };
+		68A8845A19D9526400BBF764 /* ControlRecordListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordListResult.m; sourceTree = "<group>"; };
 		841B5C3219D002B300A35D2D /* StorageListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageListResult.h; sourceTree = "<group>"; };
 		841B5C3319D002B300A35D2D /* StorageListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageListResult.m; sourceTree = "<group>"; };
 		841B5C3419D002B300A35D2D /* StorageVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVO.h; sourceTree = "<group>"; };
@@ -476,6 +488,14 @@
 				84F3989A19C940CC00F6F5AF /* UserVO.m */,
 				84D4588E19D3EFB0006706B8 /* BaseObject.h */,
 				84D4588F19D3EFB0006706B8 /* BaseObject.m */,
+				68A8845019D9326100BBF764 /* WarningInfoVO.h */,
+				68A8845119D9326100BBF764 /* WarningInfoVO.m */,
+				68A8845319D933B800BBF764 /* WarningInfoListResult.h */,
+				68A8845419D933B800BBF764 /* WarningInfoListResult.m */,
+				68A8845619D9523D00BBF764 /* ControlRecordVO.h */,
+				68A8845719D9523D00BBF764 /* ControlRecordVO.m */,
+				68A8845919D9526400BBF764 /* ControlRecordListResult.h */,
+				68A8845A19D9526400BBF764 /* ControlRecordListResult.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -619,6 +639,7 @@
 				843292DA19C9900800DBE31C /* HostListResult.m in Sources */,
 				18A4D3CC19B558E500415896 /* PopWarningInfoCellForTime.m in Sources */,
 				18A4D3D919B558E500415896 /* BusinessVO.m in Sources */,
+				68A8845219D9326100BBF764 /* WarningInfoVO.m in Sources */,
 				843012CE19D584C400DB0658 /* VmDiskListResult.m in Sources */,
 				843292D419C9522400DBE31C /* DatacenterStatVO.m in Sources */,
 				18A4D3BF19B558E500415896 /* MasterCollectionHeader.m in Sources */,
@@ -626,12 +647,14 @@
 				18A4D3BC19B558E500415896 /* LoginSettingVC.m in Sources */,
 				18A4D3DF19B558E500415896 /* PoolVO.m in Sources */,
 				8468FFA519D50BA100225CA7 /* DatacenterStatWinserver.m in Sources */,
+				68A8845819D9523D00BBF764 /* ControlRecordVO.m in Sources */,
 				844A5FB719D7ED9F0061D23B /* HostStatVO.m in Sources */,
 				18A4D3C519B558E500415896 /* NetworkContainerVC.m in Sources */,
 				18A4D3D219B558E500415896 /* VmDetailInfoVC.m in Sources */,
 				18A4D3B719B558E500415896 /* BusinessDetailInfoVC.m in Sources */,
 				18A4D3B919B558E500415896 /* DatacenterTableVC.m in Sources */,
 				18A4D3D319B558E500415896 /* VmDetailMemryConfigVC.m in Sources */,
+				68A8845519D933B800BBF764 /* WarningInfoListResult.m in Sources */,
 				843012C519D576B100DB0658 /* StorageVolumnVO.m in Sources */,
 				18A4D3DD19B558E500415896 /* HostVO.m in Sources */,
 				18A4D3C619B558E500415896 /* PoolDetailInfoVC.m in Sources */,
@@ -648,6 +671,7 @@
 				841B5C3619D002B300A35D2D /* StorageListResult.m in Sources */,
 				841B5C4019D00EA100A35D2D /* VmDiskVO.m in Sources */,
 				18A4D3C419B558E500415896 /* NetworkCollectionVC.m in Sources */,
+				68A8845B19D9526400BBF764 /* ControlRecordListResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
