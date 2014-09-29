@@ -260,7 +260,7 @@
         }
         case MasterPageType_STORAGE:{
             
-            if([((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
+            if((((StorageVO *) self.baseObject).hostName ==nil) || [((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName];
             }else{
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
