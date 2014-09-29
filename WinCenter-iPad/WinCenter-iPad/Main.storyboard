@@ -2768,7 +2768,6 @@
                                         <state key="selected" image="tab-摘要-selected"/>
                                         <connections>
                                             <action selector="showPageButtonClick:" destination="Ad0-Ro-76i" eventType="touchUpInside" id="kRF-wE-knN"/>
-                                            <action selector="switchPage:" destination="Ad0-Ro-76i" eventType="touchUpInside" id="fsp-bp-arO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1A0-ai-N5s">
@@ -2779,7 +2778,6 @@
                                         <state key="selected" image="tab-性能-selected"/>
                                         <connections>
                                             <action selector="showPageButtonClick:" destination="Ad0-Ro-76i" eventType="touchUpInside" id="oj9-eH-VWq"/>
-                                            <action selector="switchPage:" destination="Ad0-Ro-76i" eventType="touchUpInside" id="SXU-oq-vDm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYr-Ym-AON">
@@ -2790,7 +2788,6 @@
                                         <state key="selected" image="tab-快照-selected"/>
                                         <connections>
                                             <action selector="showPageButtonClick:" destination="Ad0-Ro-76i" eventType="touchUpInside" id="Xzh-WP-TLA"/>
-                                            <action selector="switchPage:" destination="Ad0-Ro-76i" eventType="touchUpInside" id="L2U-KS-yHB"/>
                                         </connections>
                                     </button>
                                 </subviews>
