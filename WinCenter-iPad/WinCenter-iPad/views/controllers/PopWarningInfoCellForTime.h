@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PopWarningInfoCellForTime : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *label1;
 
 @end

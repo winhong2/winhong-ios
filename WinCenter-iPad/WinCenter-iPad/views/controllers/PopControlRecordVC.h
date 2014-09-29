@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PopControlRecordVC : UITableViewController
-
+@property NSArray *dataList;
 @end
