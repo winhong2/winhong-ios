@@ -27,7 +27,9 @@
 
 - (void)viewDidLoad
 {
-    [[NSUserDefaults standardUserDefaults] setValue:@"https://192.168.100.146:8090" forKey:@"SERVER_ROOT"];
+    if([[[NSUserDefaults standardUserDefaults] stringForKey:@"SERVER_ROOT"] isEqualToString:@""]){
+        [[NSUserDefaults standardUserDefaults] setValue:@"https://192.168.100.146:8090" forKey:@"SERVER_ROOT"];
+    }
 
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"login%d", rand()%2+1]]];
     imageView.frame = [[UIScreen mainScreen] bounds];

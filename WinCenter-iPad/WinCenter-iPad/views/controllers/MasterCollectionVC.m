@@ -25,6 +25,7 @@
 
 @interface MasterCollectionVC ()
 @property NSMutableDictionary *pools;
+@property NSMutableDictionary *pools_needMoreButton;
 @property NSMutableDictionary *dataList;
 @end
 
@@ -38,6 +39,7 @@
     [super viewDidLoad];
     
     self.pools = [[NSMutableDictionary alloc] initWithDictionary:@{}];
+    self.pools_needMoreButton = [[NSMutableDictionary alloc] initWithDictionary:@{}];
     self.dataList = [[NSMutableDictionary alloc] initWithDictionary:@{}];
     
     switch (self.pageType) {
@@ -71,10 +73,19 @@
                 NSArray *pools = [[PoolListResult alloc] initWithJSONData:jsonResponse.rawBody].resourcePools;
                 for(PoolVO *poolVO in pools){
                     UNIHTTPJsonResponse *jsonResponse = [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-                        [simpleRequest setUrl:[NSString stringWithFormat:getHostListUrl_byPool, self.datacenterVO.id, poolVO.resourcePoolId, 3]];
+                        [simpleRequest setUrl:[NSString stringWithFormat:getHostListUrl_byPool, self.datacenterVO.id, poolVO.resourcePoolId, 7]];
                     }] asJson:nil];
                     [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                    [self.dataList setValue:[[HostListResult alloc] initWithJSONData:jsonResponse.rawBody].hosts forKey:poolVO.resourcePoolName];
+                    NSMutableArray *hosts = [[NSMutableArray alloc] initWithArray:[[HostListResult alloc] initWithJSONData:jsonResponse.rawBody].hosts];
+                    NSString *needMoreButton = @"FALSE";
+                    
+                    if(hosts.count==7){
+                        needMoreButton = @"TRUE";
+                        [hosts removeObjectAtIndex:6];
+                    }
+                    
+                    [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                    [self.dataList setValue:hosts forKey:poolVO.resourcePoolName];
                 }
                 [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
             }];
@@ -144,18 +155,21 @@
                     }] asJson:nil];
                     NSArray *storageList = [[StorageListResult alloc] initWithJSONData:jsonResponse.rawBody].resultList;
                     NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
+                    NSString *needMoreButton = @"FALSE";
                     int count = 0;
                     for(StorageVO *item in storageList){
                         if([item.shared isEqualToString:@"true"]){
-                            [shareList addObject:item];
                             count++;
-                            if(count==3){
+                            if(count==7){
+                                needMoreButton = @"TRUE";
                                 break;
                             }
+                            [shareList addObject:item];
                         }
                     }
                     //if(shareList.count>0){
                         [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
                         [self.dataList setValue:shareList forKey:poolVO.resourcePoolName];
                     //}
                 }
@@ -226,11 +240,21 @@
                 NSArray *pools = [[PoolListResult alloc] initWithJSONData:jsonResponse.rawBody].resourcePools;
                 for(PoolVO *poolVO in pools){
                     UNIHTTPJsonResponse *jsonResponse = [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-                        [simpleRequest setUrl:[NSString stringWithFormat:getVmListUrl_byPool, self.datacenterVO.id, poolVO.resourcePoolId, 3]];
+                        [simpleRequest setUrl:[NSString stringWithFormat:getVmListUrl_byPool, self.datacenterVO.id, poolVO.resourcePoolId, 7]];
                     }] asJson:nil];
                     
                     [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                    [self.dataList setValue:[[VmListResult alloc] initWithJSONData:jsonResponse.rawBody].vms forKey:poolVO.resourcePoolName];
+                    
+                    NSMutableArray *vms = [[NSMutableArray alloc] initWithArray:[[VmListResult alloc] initWithJSONData:jsonResponse.rawBody].vms];
+                    NSString *needMoreButton = @"FALSE";
+                    
+                    if(vms.count==7){
+                        needMoreButton = @"TRUE";
+                        [vms removeObjectAtIndex:6];
+                    }
+                    
+                    [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                    [self.dataList setValue:vms forKey:poolVO.resourcePoolName];
                 }
                 [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
             }];
@@ -402,6 +426,13 @@
             cell.status.text = [storageVO state_text];
             cell.share.text = [storageVO shared_text];
             cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
+            if(cell.progress.progress>0.8){
+                cell.progress.progressTintColor = [UIColor redColor];
+            }else if(cell.progress.progress>0.6){
+                cell.progress.progressTintColor = [UIColor yellowColor];
+            }else{
+                cell.progress.progressTintColor = [UIColor greenColor];
+            }
             return cell;
         }
         case MasterCollectionType_STORAGE_BY_POOL:
@@ -415,6 +446,13 @@
             cell.status.text = [storageVO state_text];
             cell.share.text = [storageVO shared_text];
             cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
+            if(cell.progress.progress>0.8){
+                cell.progress.progressTintColor = [UIColor redColor];
+            }else if(cell.progress.progress>0.6){
+                cell.progress.progressTintColor = [UIColor yellowColor];
+            }else{
+                cell.progress.progressTintColor = [UIColor greenColor];
+            }
             return cell;
         }
         case MasterCollectionType_VM_BY_DATACENTER:
@@ -495,7 +533,7 @@
         }
         case MasterCollectionType_HOST_BY_DATACENTER:{
             header.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.dataList.allKeys[indexPath.section]];
-            header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<3);
+            header.moreButton.hidden = [[self.pools_needMoreButton valueForKey:self.pools_needMoreButton.allKeys[indexPath.section]] isEqualToString:@"FALSE"];
             header.moreButton.tag = indexPath.section;
             break;
         }

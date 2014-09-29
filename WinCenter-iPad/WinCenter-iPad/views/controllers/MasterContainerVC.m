@@ -139,6 +139,8 @@
             self.pathLabel.text = self.datacenterVO.name;
             self.titleLabel.text = ((PoolVO *) self.baseObject).resourcePoolName;
             
+            self.segmentView_pool.hidden = NO;
+            
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
             
             PoolDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PoolDetailInfoVC"];
@@ -193,6 +195,10 @@
             self.titleLabel.text = ((HostVO *) self.baseObject).hostName;
             self.ipLabel.text = ((HostVO *) self.baseObject).ip;
             self.statusLabel.text = [((HostVO*) self.baseObject) state_text];
+            
+            self.segmentView_host.hidden = NO;
+            
+            self.btnCreateVM.hidden = NO;
             
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:5];
             
@@ -254,7 +260,7 @@
         }
         case MasterPageType_STORAGE:{
             
-            if([((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
+            if((((StorageVO *) self.baseObject).hostName ==nil) || [((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName];
             }else{
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
@@ -287,6 +293,10 @@
             self.titleLabel.text = ((VmVO *) self.baseObject).name;
             self.ipLabel.text = ((VmVO *) self.baseObject).ip;
             self.statusLabel.text = [((VmVO*) self.baseObject) state_text];
+            
+            self.segmentView_vm.hidden = NO;
+            
+            self.btnOperation.hidden = NO;
             
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
             
@@ -366,7 +376,14 @@
     self.previousIndex = 0;
     self.showIndex = 0;
     
-    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:nil];
+    NSDictionary *options;
+    if(self.pageType == MasterPageType_DATACENTER){
+        options = @{UIPageViewControllerOptionInterPageSpacingKey: @500};
+    }else{
+        options = @{UIPageViewControllerOptionInterPageSpacingKey: @150};
+    }
+    
+    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:options];
     [self addChildViewController:self.pageVC];
     for(UIView *subView in self.pageVCContainer.subviews){
         [subView removeFromSuperview];
@@ -380,6 +397,7 @@
     
     self.pageVC.dataSource = self;
     self.pageVC.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -389,11 +407,33 @@
 }
 - (void)switchPageVC:(NSInteger)index {
     self.showIndex = index;
-    [self.pageVC setViewControllers:@[self.pages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:NO completion:nil];
+    [self.pageVC setViewControllers:@[self.pages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:(self.pageType != MasterPageType_DATACENTER) completion:nil];
     self.previousIndex = index;
     
 }
-
+- (void)setPageButtonSelected:(NSInteger)index{
+    UIView *view = self.segmentView_pool;
+    if(view.hidden){
+        view = self.segmentView_host;
+        if(view.hidden){
+            view = self.segmentView_vm;
+        }
+    }
+    for(UIView *subView in view.subviews){
+        UIButton *subButton = (UIButton*)subView;
+        subButton.selected = (subButton.tag == index);
+    }
+}
+- (IBAction)showPageButtonClick:(id)sender{
+    UIButton *button = sender;
+    UIView *button_container = [button superview];
+    for(UIView *subView in button_container.subviews){
+        UIButton *subButton = (UIButton*)subView;
+        subButton.selected = NO;
+    }
+    button.selected = true;
+    [self switchPageVC:((UIButton*)sender).tag];
+}
 - (IBAction)showControlBtns:(id)sender {
     BOOL isHide = self.vmControlButtons.hidden;
     self.vmControlButtons.hidden = isHide == YES ? NO : YES;
@@ -495,6 +535,7 @@
         if(self.infoVC!=nil){
             [self.infoVC switchButtonSelected:self.showIndex];
         }
+        [self setPageButtonSelected:self.showIndex];
     }
 }
 
