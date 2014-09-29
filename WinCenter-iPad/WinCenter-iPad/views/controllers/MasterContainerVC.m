@@ -366,7 +366,14 @@
     self.previousIndex = 0;
     self.showIndex = 0;
     
-    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:nil];
+    NSDictionary *options;
+    if(self.pageType == MasterPageType_DATACENTER){
+        options = @{UIPageViewControllerOptionInterPageSpacingKey: @500};
+    }else{
+        options = @{UIPageViewControllerOptionInterPageSpacingKey: @150};
+    }
+    
+    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:options];
     [self addChildViewController:self.pageVC];
     for(UIView *subView in self.pageVCContainer.subviews){
         [subView removeFromSuperview];
@@ -380,6 +387,7 @@
     
     self.pageVC.dataSource = self;
     self.pageVC.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
