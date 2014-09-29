@@ -14,11 +14,6 @@
 		18A4D32C19B556BA00415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D32B19B556BA00415896 /* main.m */; };
 		18A4D33019B556BA00415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D32F19B556BA00415896 /* AppDelegate.m */; };
 		18A4D33819B556BA00415896 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D33719B556BA00415896 /* Images.xcassets */; };
-		18A4D33F19B556BA00415896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D33E19B556BA00415896 /* XCTest.framework */; };
-		18A4D34019B556BA00415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D31F19B556BA00415896 /* Foundation.framework */; };
-		18A4D34119B556BA00415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D32319B556BA00415896 /* UIKit.framework */; };
-		18A4D34919B556BA00415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D34719B556BA00415896 /* InfoPlist.strings */; };
-		18A4D34B19B556BA00415896 /* WinCenter_iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D34A19B556BA00415896 /* WinCenter_iPadTests.m */; };
 		18A4D35719B557F400415896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D35619B557F400415896 /* Main.storyboard */; };
 		18A4D3B719B558E500415896 /* BusinessDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D35D19B558E500415896 /* BusinessDetailInfoVC.m */; };
 		18A4D3B819B558E500415896 /* DatacenterDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D35F19B558E500415896 /* DatacenterDetailInfoVC.m */; };
@@ -89,16 +84,6 @@
 		84F70FB519C93CAC00523AB0 /* LoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F70FB419C93CAC00523AB0 /* LoginResult.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		18A4D34219B556BA00415896 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18A4D31419B556BA00415896 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18A4D31B19B556BA00415896;
-			remoteInfo = "WinCenter-iPad";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		18A4D31C19B556BA00415896 /* WinCenter-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D31F19B556BA00415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,7 +96,6 @@
 		18A4D32E19B556BA00415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D32F19B556BA00415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18A4D33719B556BA00415896 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		18A4D33D19B556BA00415896 /* WinCenter-iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WinCenter-iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D33E19B556BA00415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		18A4D34619B556BA00415896 /* WinCenter-iPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinCenter-iPadTests-Info.plist"; sourceTree = "<group>"; };
 		18A4D34819B556BA00415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -265,16 +249,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18A4D33A19B556BA00415896 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4D33F19B556BA00415896 /* XCTest.framework in Frameworks */,
-				18A4D34119B556BA00415896 /* UIKit.framework in Frameworks */,
-				18A4D34019B556BA00415896 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -293,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				18A4D31C19B556BA00415896 /* WinCenter-iPad.app */,
-				18A4D33D19B556BA00415896 /* WinCenter-iPadTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -529,24 +502,6 @@
 			productReference = 18A4D31C19B556BA00415896 /* WinCenter-iPad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18A4D33C19B556BA00415896 /* WinCenter-iPadTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18A4D35119B556BA00415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPadTests" */;
-			buildPhases = (
-				18A4D33919B556BA00415896 /* Sources */,
-				18A4D33A19B556BA00415896 /* Frameworks */,
-				18A4D33B19B556BA00415896 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18A4D34319B556BA00415896 /* PBXTargetDependency */,
-			);
-			name = "WinCenter-iPadTests";
-			productName = "WinCenter-iPadTests";
-			productReference = 18A4D33D19B556BA00415896 /* WinCenter-iPadTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -555,11 +510,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = huadi;
-				TargetAttributes = {
-					18A4D33C19B556BA00415896 = {
-						TestTargetID = 18A4D31B19B556BA00415896;
-					};
-				};
 			};
 			buildConfigurationList = 18A4D31719B556BA00415896 /* Build configuration list for PBXProject "WinCenter-iPad" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -575,7 +525,6 @@
 			projectRoot = "";
 			targets = (
 				18A4D31B19B556BA00415896 /* WinCenter-iPad */,
-				18A4D33C19B556BA00415896 /* WinCenter-iPadTests */,
 			);
 		};
 /* End PBXProject section */
@@ -588,14 +537,6 @@
 				18A4D33819B556BA00415896 /* Images.xcassets in Resources */,
 				18A4D32A19B556BA00415896 /* InfoPlist.strings in Resources */,
 				18A4D35719B557F400415896 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A4D33B19B556BA00415896 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4D34919B556BA00415896 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,23 +651,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18A4D33919B556BA00415896 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4D34B19B556BA00415896 /* WinCenter_iPadTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18A4D34319B556BA00415896 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18A4D31B19B556BA00415896 /* WinCenter-iPad */;
-			targetProxy = 18A4D34219B556BA00415896 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18A4D32819B556BA00415896 /* InfoPlist.strings */ = {
@@ -850,46 +775,6 @@
 			};
 			name = Release;
 		};
-		18A4D35219B556BA00415896 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WinCenter-iPad.app/WinCenter-iPad";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WinCenter-iPad/WinCenter-iPad-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WinCenter-iPadTests/WinCenter-iPadTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		18A4D35319B556BA00415896 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WinCenter-iPad.app/WinCenter-iPad";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WinCenter-iPad/WinCenter-iPad-Prefix.pch";
-				INFOPLIST_FILE = "WinCenter-iPadTests/WinCenter-iPadTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -907,15 +792,6 @@
 			buildConfigurations = (
 				18A4D34F19B556BA00415896 /* Debug */,
 				18A4D35019B556BA00415896 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18A4D35119B556BA00415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPadTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18A4D35219B556BA00415896 /* Debug */,
-				18A4D35319B556BA00415896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
