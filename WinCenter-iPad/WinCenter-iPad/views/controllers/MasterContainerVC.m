@@ -191,6 +191,8 @@
         case MasterPageType_HOST:{
             self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@", self.datacenterVO.name, ((HostVO *) self.baseObject).resourcePoolName];
             self.titleLabel.text = ((HostVO *) self.baseObject).hostName;
+            self.ipLabel.text = ((HostVO *) self.baseObject).ip;
+            self.statusLabel.text = [((HostVO*) self.baseObject) state_text];
             
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:5];
             
@@ -283,6 +285,8 @@
         case MasterPageType_VM:{
             self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", self.datacenterVO.name, ((VmVO *) self.baseObject).poolName, ((VmVO *) self.baseObject).ownerHostName];
             self.titleLabel.text = ((VmVO *) self.baseObject).name;
+            self.ipLabel.text = ((VmVO *) self.baseObject).ip;
+            self.statusLabel.text = [((VmVO*) self.baseObject) state_text];
             
             NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
             
@@ -331,6 +335,9 @@
             break;
         }
         case MasterPageType_BUSINESS:{
+            self.pathLabel.text = self.datacenterVO.name;
+            self.titleLabel.text = ((BusinessVO *)self.baseObject).name;
+            
             BusinessDetailInfoVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"BusinessDetailInfoVC"];
             vc.datacenterVO = self.datacenterVO;
             vc.baseObject = (BusinessVO *)self.baseObject;
