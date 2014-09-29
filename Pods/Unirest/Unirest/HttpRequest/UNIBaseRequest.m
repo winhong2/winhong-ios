@@ -25,6 +25,17 @@
 
 #import "UNIBaseRequest.h"
 
-@implementation UNIBaseRequest
+@implementation UNIBaseRequest{
+    NSString *_url;
+}
+
+@synthesize url;
+
+- (void)setUrl:(NSString *)__url{
+    _url = __url;
+}
+- (NSString*)url{
+    return [NSString stringWithFormat:@"%@%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"SERVER_ROOT"] , _url];
+}
 
 @end

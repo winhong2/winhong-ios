@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.ipAddress.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"SERVER_ROOT"];
     [self.ipAddress becomeFirstResponder];
 }
 
@@ -31,6 +32,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)done:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setValue:self.ipAddress.text forKey:@"SERVER_ROOT"];
     [self.ipAddress resignFirstResponder];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
