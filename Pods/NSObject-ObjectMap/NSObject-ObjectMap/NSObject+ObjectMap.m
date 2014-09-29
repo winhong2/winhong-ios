@@ -312,15 +312,20 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     NSDictionary *mapDictionary = [newObject propertyDictionary];
     
     for (NSString *key in [dict allKeys]) {
+        if([key isEqualToString:@"description"]){
+            objc_property_t property = class_getProperty([newObject class], [@"desc" UTF8String]);
+            if(property){
+                [newObject setValue:[dict objectForKey:key] forKey:@"desc"];
+            }
+            continue;
+        }
+        
         NSString *propertyName = [mapDictionary objectForKey:key];
         
         if (!propertyName) {
             continue;
         }
         
-        if([key isEqualToString:@"description"]){
-            continue;
-        }
         
         // If it's null, set to nil and continue
         if ([dict objectForKey:key] == [NSNull null]) {
@@ -423,6 +428,10 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
             for (NSString *newKey in [nestedArray[xx] allKeys]) {
                 // If it's null, move on
                 if([newKey isEqualToString:@"description"]){
+                    objc_property_t property = class_getProperty([NSClassFromString(propertyName) class], [@"desc" UTF8String]);
+                    if(property){
+                        [nestedObj setValue:[nestedArray[xx] objectForKey:newKey] forKey:@"desc"];
+                    }
                     continue;
                 }
                 if ([nestedArray[xx] objectForKey:newKey] == [NSNull null]) {

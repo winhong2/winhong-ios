@@ -15,7 +15,7 @@
 @property NSString *managerId;
 @property NSString *createTime;
 @property NSString *createUser;
-
+@property NSString *desc;
 @property int vmNum;
 @property NSArray *wceBusVms;
 

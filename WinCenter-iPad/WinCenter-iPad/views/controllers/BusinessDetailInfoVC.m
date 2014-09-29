@@ -50,7 +50,7 @@
     //self.platform
     self.createTime.text = self.baseObject.createTime;
     self.createUser.text = self.baseObject.createUser;
-    //self.desc
+    self.desc.text = self.baseObject.desc;
     self.vmNum.text = [NSString stringWithFormat:@"%d", self.baseObject.vmNum];
     
     self.collectionHeader.text = [NSString stringWithFormat:@"虚拟机(%li)", self.dataList.count];

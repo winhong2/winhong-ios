@@ -68,49 +68,34 @@
     
     if ([msg isEqualToString:@""]) {
 
-        [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-            [simpleRequest setUrl:getLoginSessionUrl];
+        [[NSUserDefaults standardUserDefaults] setValue:@"FAILED" forKey:@"LOGIN_STATE"];
+        
+        [[UNIRest post:^(UNISimpleRequest *simpleRequest) {
+            [simpleRequest setUrl:postLoginUrl];
+            [simpleRequest setParameters:@{@"userName":self.userName.text, @"password":self.password.text}];
         }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-            NSString *cookieStr = [jsonResponse.headers valueForKey:@"Set-Cookie"];
-            if(cookieStr!=nil){
-                cookieStr = [cookieStr componentsSeparatedByString:@";"][0];
-                [UNIRest defaultHeader:@"Cookie" value:cookieStr];
-            }
+
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                if([[[NSUserDefaults standardUserDefaults] stringForKey:@"LOGIN_STATE"] isEqualToString:@"SUCCESS"]){
+                    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
+                        [simpleRequest setUrl:getDatacenterListUrl];
+                    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
+                        DatacenterListResult *result = [[DatacenterListResult alloc] initWithJSONData:jsonResponse.rawBody];
+                        self.datacenters = result.dataCenters;
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self performSegueWithIdentifier:@"toLogin" sender:self];
+                        });
+                        
+                    }];
+                }else{
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:@"用户名或密码错误！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                    [alert show];
+                }
+            });
             
-            [[UNIRest post:^(UNISimpleRequest *simpleRequest) {
-                [simpleRequest setUrl:postLoginUrl];
-                [simpleRequest setParameters:@{@"userName":@"admin", @"password":@"passw0rd"}];
-            }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-                
-                [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-                    [simpleRequest setUrl:getUserInfoUrl];
-                }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-                    
-                    LoginResult *loginResult = [[LoginResult alloc] initWithJSONData:jsonResponse.rawBody];
-                    
-                    dispatch_sync(dispatch_get_main_queue(), ^{
-                        if(loginResult.totalNum>0){
-                            [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-                                [simpleRequest setUrl:getDatacenterListUrl];
-                            }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-                                DatacenterListResult *result = [[DatacenterListResult alloc] initWithJSONData:jsonResponse.rawBody];
-                                self.datacenters = result.dataCenters;
-                                
-                                dispatch_async(dispatch_get_main_queue(), ^{
-                                    [self performSegueWithIdentifier:@"toLogin" sender:self];
-                                });
-                                
-                            }];
-                        }else{
-                            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:@"用户名或密码错误！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-                            [alert show];
-                        }
-                    });
-                    
-                }];
-                
-            }];
         }];
+  
     }else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
