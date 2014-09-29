@@ -8,82 +8,33 @@
 	<string>FC617D0B-01CA-47AD-9C41-00892FD6F794</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Winhong</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3411C2D104577BF0727A1033CE78E5F17890B33A</key>
+		<string>https://github.com/winhong2/winhong-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Winhong.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>275F5BBD-A610-4CA7-96F9-2D47F4FBED06</key>
-		<string>../LightApp-iPhone</string>
-		<key>4C2FDFAD-A695-4BE9-A4A0-65BA3CF167E4</key>
-		<string>../WinHelper-iPhone</string>
-		<key>8B530046-1297-42D5-91B6-BC67E5A7A419</key>
-		<string>../Zkuyun-iPhone</string>
-		<key>A04D29C9-570E-42C9-A9D2-F106B27E1EBC</key>
-		<string>../WinCenter-iPhone</string>
-		<key>AEBF50FA-BF03-4264-BCD4-F5466B7828A2</key>
-		<string>../Ctrip</string>
-		<key>B4263EC9-4EB0-4263-93FA-53765F46F4B6</key>
-		<string>../Ctrip-iPhone</string>
-		<key>D24CDF93-5198-4E22-8F3C-2F7CF878C77F</key>
-		<string>../WinCenter-iPad</string>
+		<key>3411C2D104577BF0727A1033CE78E5F17890B33A</key>
+		<string>..</string>
 	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/winhong2/winhong-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3411C2D104577BF0727A1033CE78E5F17890B33A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AEBF50FA-BF03-4264-BCD4-F5466B7828A2</string>
+			<string>3411C2D104577BF0727A1033CE78E5F17890B33A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Ctrip</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B4263EC9-4EB0-4263-93FA-53765F46F4B6</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Ctrip-iPhone</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>275F5BBD-A610-4CA7-96F9-2D47F4FBED06</string>
-			<key>IDESourceControlWCCName</key>
-			<string>LightApp-iPhone</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D24CDF93-5198-4E22-8F3C-2F7CF878C77F</string>
-			<key>IDESourceControlWCCName</key>
-			<string>WinCenter-iPad</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A04D29C9-570E-42C9-A9D2-F106B27E1EBC</string>
-			<key>IDESourceControlWCCName</key>
-			<string>WinCenter-iPhone</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4C2FDFAD-A695-4BE9-A4A0-65BA3CF167E4</string>
-			<key>IDESourceControlWCCName</key>
-			<string>WinHelper-iPhone</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8B530046-1297-42D5-91B6-BC67E5A7A419</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Zkuyun-iPhone</string>
+			<string>winhong-ios</string>
 		</dict>
 	</array>
 </dict>

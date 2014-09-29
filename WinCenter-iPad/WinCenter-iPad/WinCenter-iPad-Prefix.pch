@@ -59,6 +59,7 @@ typedef NS_ENUM(NSInteger, MasterCollectionType) {
 #define postLoginUrl            @"/loginServlet"
 #define getUserInfoUrl          @"/pc/sys/users?account=admin&password=WTHtk1eyckFZUs3vFKsDAdiscP16uTGA"
 #define getDatacenterListUrl    @"/pc/rm/dataCenters"
+#define getLicenseUrl           @"/pc/licServlet?action=query"
 #define getDatacenterStatUrl    @"/restServlet?connectorId=%d&apiKey=pc.api.dataCenter.getDataCenterResource"
 
 #define getPoolListUrl_all      @"/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePools"
@@ -140,3 +141,5 @@ typedef NS_ENUM(NSInteger, MasterCollectionType) {
 #import "BusinessListResult.h"
 #import "BusinessVO.h"
 #import "BusinessVmVO.h"
+#import "LicenseWciVO.h"
+#import "LicenseVO.h"

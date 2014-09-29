@@ -56,6 +56,9 @@
 		18A4D3DE19B558E500415896 /* NetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AC19B558E500415896 /* NetworkVO.m */; };
 		18A4D3DF19B558E500415896 /* PoolVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D3AE19B558E500415896 /* PoolVO.m */; };
 		50CA1EB865704A568353668C /* libPods-WinCenter-iPad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */; };
+		8410322919D92D1200698086 /* LicenseVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410322819D92D1200698086 /* LicenseVO.m */; };
+		8410322C19D92D7200698086 /* PopOptionLicenseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410322B19D92D7200698086 /* PopOptionLicenseVC.m */; };
+		8410322F19D9392E00698086 /* LicenseWciVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410322E19D9392E00698086 /* LicenseWciVO.m */; };
 		841B5C3619D002B300A35D2D /* StorageListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3319D002B300A35D2D /* StorageListResult.m */; };
 		841B5C3719D002B300A35D2D /* StorageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3519D002B300A35D2D /* StorageVO.m */; };
 		841B5C4019D00EA100A35D2D /* VmDiskVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B5C3919D00EA100A35D2D /* VmDiskVO.m */; };
@@ -182,6 +185,12 @@
 		18A4D3AD19B558E500415896 /* PoolVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolVO.h; sourceTree = "<group>"; };
 		18A4D3AE19B558E500415896 /* PoolVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolVO.m; sourceTree = "<group>"; };
 		3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPad.xcconfig"; path = "../Pods/Pods-WinCenter-iPad.xcconfig"; sourceTree = "<group>"; };
+		8410322719D92D1200698086 /* LicenseVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseVO.h; sourceTree = "<group>"; };
+		8410322819D92D1200698086 /* LicenseVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseVO.m; sourceTree = "<group>"; };
+		8410322A19D92D7200698086 /* PopOptionLicenseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionLicenseVC.h; sourceTree = "<group>"; };
+		8410322B19D92D7200698086 /* PopOptionLicenseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionLicenseVC.m; sourceTree = "<group>"; };
+		8410322D19D9392E00698086 /* LicenseWciVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseWciVO.h; sourceTree = "<group>"; };
+		8410322E19D9392E00698086 /* LicenseWciVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseWciVO.m; sourceTree = "<group>"; };
 		841B5C3219D002B300A35D2D /* StorageListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageListResult.h; sourceTree = "<group>"; };
 		841B5C3319D002B300A35D2D /* StorageListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageListResult.m; sourceTree = "<group>"; };
 		841B5C3419D002B300A35D2D /* StorageVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVO.h; sourceTree = "<group>"; };
@@ -377,6 +386,8 @@
 				18A4D38319B558E500415896 /* PopOptionsVC.m */,
 				84EBB59E19D8123500A7C82E /* PopOptionsUserInfoVC.h */,
 				84EBB59F19D8123500A7C82E /* PopOptionsUserInfoVC.m */,
+				8410322A19D92D7200698086 /* PopOptionLicenseVC.h */,
+				8410322B19D92D7200698086 /* PopOptionLicenseVC.m */,
 				18A4D38419B558E500415896 /* PopWarningInfoCell.h */,
 				18A4D38519B558E500415896 /* PopWarningInfoCell.m */,
 				18A4D38619B558E500415896 /* PopWarningInfoCellForTime.h */,
@@ -476,6 +487,10 @@
 				84F3989A19C940CC00F6F5AF /* UserVO.m */,
 				84D4588E19D3EFB0006706B8 /* BaseObject.h */,
 				84D4588F19D3EFB0006706B8 /* BaseObject.m */,
+				8410322719D92D1200698086 /* LicenseVO.h */,
+				8410322819D92D1200698086 /* LicenseVO.m */,
+				8410322D19D9392E00698086 /* LicenseWciVO.h */,
+				8410322E19D9392E00698086 /* LicenseWciVO.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -592,6 +607,7 @@
 				841B5C4219D00EA100A35D2D /* VmNetworkVO.m in Sources */,
 				84F3989B19C940CC00F6F5AF /* UserVO.m in Sources */,
 				18A4D32C19B556BA00415896 /* main.m in Sources */,
+				8410322F19D9392E00698086 /* LicenseWciVO.m in Sources */,
 				18A4D3BD19B558E500415896 /* LoginVC.m in Sources */,
 				18A4D3BE19B558E500415896 /* MasterCollectionCell.m in Sources */,
 				841B5C4319D00EA100A35D2D /* VmVO.m in Sources */,
@@ -636,10 +652,12 @@
 				18A4D3DD19B558E500415896 /* HostVO.m in Sources */,
 				18A4D3C619B558E500415896 /* PoolDetailInfoVC.m in Sources */,
 				18A4D3CF19B558E500415896 /* StorageDetailInfoVC.m in Sources */,
+				8410322919D92D1200698086 /* LicenseVO.m in Sources */,
 				18A4D3CE19B558E500415896 /* StorageDetailDiskCell.m in Sources */,
 				843292D119C944E800DBE31C /* DatacenterListResult.m in Sources */,
 				18A4D3BA19B558E500415896 /* HostDetailInfoVC.m in Sources */,
 				841B5C3719D002B300A35D2D /* StorageVO.m in Sources */,
+				8410322C19D92D7200698086 /* PopOptionLicenseVC.m in Sources */,
 				843012CB19D584A800DB0658 /* VmNetworkListResult.m in Sources */,
 				18A4D3BB19B558E500415896 /* HostDetailPerformanceVC.m in Sources */,
 				843292D719C98A8E00DBE31C /* PoolListResult.m in Sources */,
