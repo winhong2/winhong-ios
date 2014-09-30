@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ckY-OR-jaX">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -195,7 +194,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="虚拟机卡片框" translatesAutoresizingMaskIntoConstraints="NO" id="0SS-EE-qZo">
-                                            <rect key="frame" x="0.0" y="0.0" width="243" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFQ-v5-A7w">
                                             <rect key="frame" x="11" y="12" width="212" height="21"/>
@@ -300,7 +299,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="虚拟机卡片框" translatesAutoresizingMaskIntoConstraints="NO" id="r5d-DE-xUY">
-                                            <rect key="frame" x="-2" y="0.0" width="243" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="163" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-d8-iBy">
@@ -6083,7 +6082,7 @@
         <image name="网络连接-断开链接" width="15" height="15"/>
         <image name="网络连接-链接" width="15" height="15"/>
         <image name="虚拟机" width="15" height="15"/>
-        <image name="虚拟机卡片框" width="243" height="151"/>
+        <image name="虚拟机卡片框" width="243" height="150"/>
         <image name="虚拟机图标" width="50" height="52"/>
         <image name="虚拟机左上角图标" width="128" height="128"/>
         <image name="虚拟磁盘-卡片" width="166" height="119"/>
