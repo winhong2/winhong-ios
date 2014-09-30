@@ -9,6 +9,7 @@
 #import "PoolDetailInfoVC.h"
 #import "PoolVO.h"
 
+
 @interface PoolDetailInfoVC ()
 
 @property (weak, nonatomic) IBOutlet UILabel *hostCount;
@@ -37,6 +38,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *memeryLoadBalancing;
 @property (weak, nonatomic) IBOutlet UILabel *intervalTime;
 @property (weak, nonatomic) IBOutlet UILabel *nextCheckTime;
+@property (weak, nonatomic) IBOutlet UIView *cpuChartGroup;
+@property (weak, nonatomic) IBOutlet UIImageView *cpuChart;
+@property (weak, nonatomic) IBOutlet UIView *memoryChartGroup;
+@property (weak, nonatomic) IBOutlet UIImageView *memeryChart;
+@property (weak, nonatomic) IBOutlet UIView *storageChartGroup;
+@property (weak, nonatomic) IBOutlet UIImageView *storageChart;
 
 @end
 
@@ -80,7 +87,7 @@
     self.cpuUnitCount.text = [NSString stringWithFormat:@"%.2fGHz", self.baseObject.totalCpu/1000.0];
     self.cpuUnitUsedCount.text = [NSString stringWithFormat:@"%.2fGHz", (self.baseObject.totalCpu-self.baseObject.availCpu)/1000.0];
     self.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz", self.baseObject.availCpu/1000.0];
-    self.cpuRatio.text = [NSString stringWithFormat:@"%.0f%%", (self.baseObject.totalCpu-self.baseObject.availCpu)/self.baseObject.totalCpu*100];
+    self.cpuRatio.text = [NSString stringWithFormat:@"%.0f%%", [self.baseObject cpuRatio]];
     
     self.memorySize.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalMemory/1024.0];
     self.memoryUsedSize.text = [NSString stringWithFormat:@"%.2fGB", (self.baseObject.totalMemory-self.baseObject.availMemory)/1024.0];
@@ -95,6 +102,29 @@
     //self.haErrorHostCount.text = self.baseObject.haErrorHostCount;
     //self.haSignalNetwork.text = self.baseObject.haSignalNetwork;
     //self.haSignalPool.text = self.baseObject.haSignalPool;
+    //圈图
+    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject cpuRatio]] andClockwise:YES andShadow:YES];
+    circleChart.backgroundColor = [UIColor clearColor];
+    circleChart.labelColor = [UIColor clearColor];
+    [circleChart setStrokeColor:[self.baseObject cpuRatioColor]];
+    [circleChart strokeChart];
+    [self.cpuChartGroup addSubview:circleChart];
+    
+    
+    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject memoryRatio]] andClockwise:YES andShadow:YES];
+    circleChart2.backgroundColor = [UIColor clearColor];
+    circleChart2.labelColor = [UIColor clearColor];
+    [circleChart2 setStrokeColor:[self.baseObject memoryRatioColor]];
+    [circleChart2 strokeChart];
+    [self.memoryChartGroup addSubview:circleChart2];
+    
+    PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:self.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject storageRatio]] andClockwise:YES andShadow:YES];
+    circleChart3.backgroundColor = [UIColor clearColor];
+    circleChart3.labelColor = [UIColor clearColor];
+    [circleChart3 setStrokeColor:[self.baseObject storageRatioColor]];
+    [circleChart3 strokeChart];
+    [self.storageChartGroup addSubview:circleChart3];
+    
 }
 - (void)refreshElasticInfo{
     self.elasticModel.text = self.elasticInfo.balancingMode;

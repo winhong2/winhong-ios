@@ -1714,11 +1714,7 @@
                                         <color key="textColor" red="0.247202168" green="0.95686274510000002" blue="0.40855485139999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="灰色圈" translatesAutoresizingMaskIntoConstraints="NO" id="geV-gZ-Ypo">
-                                        <rect key="frame" x="40" y="38" width="123" height="123"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="绿色圈" translatesAutoresizingMaskIntoConstraints="NO" id="KXW-6E-A3A">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="绿色圈" translatesAutoresizingMaskIntoConstraints="NO" id="KXW-6E-A3A">
                                         <rect key="frame" x="39" y="37" width="65" height="61"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -1728,6 +1724,16 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORe-of-QhT">
+                                        <rect key="frame" x="39" y="36" width="124" height="125"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="灰色圈" translatesAutoresizingMaskIntoConstraints="NO" id="geV-gZ-Ypo">
+                                                <rect key="frame" x="1" y="2" width="123" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1776,11 +1782,7 @@
                                         <color key="textColor" red="0.247202168" green="0.95686274510000002" blue="0.40855485139999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="灰色圈" translatesAutoresizingMaskIntoConstraints="NO" id="W4g-UE-m1v">
-                                        <rect key="frame" x="47" y="38" width="123" height="123"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="绿色圈" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-wO-oDS">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="绿色圈" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-wO-oDS">
                                         <rect key="frame" x="46" y="37" width="65" height="61"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -1790,6 +1792,16 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nw5-5t-pd3">
+                                        <rect key="frame" x="46" y="36" width="124" height="125"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="灰色圈" translatesAutoresizingMaskIntoConstraints="NO" id="W4g-UE-m1v">
+                                                <rect key="frame" x="1" y="2" width="123" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1820,11 +1832,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="灰色圈" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-SV-nPs">
-                                        <rect key="frame" x="61" y="36" width="123" height="123"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="绿色圈" translatesAutoresizingMaskIntoConstraints="NO" id="Y6G-Jd-Cv1">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="绿色圈" translatesAutoresizingMaskIntoConstraints="NO" id="Y6G-Jd-Cv1">
                                         <rect key="frame" x="60" y="35" width="65" height="61"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -1840,16 +1848,26 @@
                                         <color key="textColor" red="1" green="0.78276588380000001" blue="0.1563612127" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-Fz-YCU">
-                                        <rect key="frame" x="139" y="241" width="80" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" red="0.247202168" green="0.95686274510000002" blue="0.40855485139999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQu-Gq-ls2">
                                         <rect key="frame" x="87" y="77" width="71" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9MA-6l-sa5">
+                                        <rect key="frame" x="60" y="35" width="124" height="124"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="灰色圈" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-SV-nPs">
+                                                <rect key="frame" x="1" y="1" width="123" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-Fz-YCU">
+                                        <rect key="frame" x="139" y="241" width="80" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.247202168" green="0.95686274510000002" blue="0.40855485139999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -2006,6 +2024,8 @@
                     <navigationItem key="navigationItem" id="3dz-gD-yAe"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="cpuChart" destination="qQG-SV-nPs" id="deK-BB-tcd"/>
+                        <outlet property="cpuChartGroup" destination="9MA-6l-sa5" id="wy8-Ol-tX7"/>
                         <outlet property="cpuLoadBalancing" destination="tfN-Ve-0ie" id="OSx-ga-uM3"/>
                         <outlet property="cpuRatio" destination="zQu-Gq-ls2" id="N4r-Qb-plR"/>
                         <outlet property="cpuUnitCount" destination="JAt-s7-pIB" id="p18-kn-fEV"/>
@@ -2017,11 +2037,15 @@
                         <outlet property="haSignalPool" destination="kuw-cZ-qlo" id="RWi-t5-Buo"/>
                         <outlet property="hostCount" destination="5wo-WD-z26" id="qL3-TC-cZ4"/>
                         <outlet property="intervalTime" destination="UWW-kt-E0d" id="dmh-L7-U4P"/>
+                        <outlet property="memeryChart" destination="W4g-UE-m1v" id="07F-wN-xGF"/>
+                        <outlet property="memoryChartGroup" destination="nw5-5t-pd3" id="GDd-NV-uLs"/>
                         <outlet property="memoryRatio" destination="d7g-03-llS" id="73G-UM-EhE"/>
                         <outlet property="memorySize" destination="tE4-CY-BrT" id="jLX-YQ-Qlu"/>
                         <outlet property="memoryUnusedSize" destination="nry-BB-vKC" id="uXn-Yr-306"/>
                         <outlet property="memoryUsedSize" destination="pPI-dY-X4j" id="Cle-sO-M6S"/>
                         <outlet property="nextCheckTime" destination="8pk-tr-Ac7" id="ZvS-Rk-ea0"/>
+                        <outlet property="storageChart" destination="geV-gZ-Ypo" id="d4m-1Z-Npg"/>
+                        <outlet property="storageChartGroup" destination="ORe-of-QhT" id="zfq-aB-t0y"/>
                         <outlet property="storageRatio" destination="u9l-BO-B0V" id="C6b-xW-sf4"/>
                         <outlet property="storageSize" destination="bbC-gf-lh7" id="T9b-22-j7d"/>
                         <outlet property="storageUnusedSize" destination="rsG-5e-lXS" id="2Fq-bF-v7Q"/>
@@ -5697,7 +5721,7 @@
         <scene sceneID="p2z-2s-SfR">
             <objects>
                 <tableViewController id="qs0-BP-cLp" customClass="PopControlRecordVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fG4-DI-IXl">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fG4-DI-IXl">
                         <rect key="frame" x="0.0" y="64" width="320" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -5719,7 +5743,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ControlRecordCell" rowHeight="90" id="ZVo-Nf-68G" customClass="PopControlRecordCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ControlRecordCell" rowHeight="76" id="ZVo-Nf-68G" customClass="PopControlRecordCell">
                                 <rect key="frame" x="0.0" y="66" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZVo-Nf-68G" id="3Hh-OZ-jqL">
@@ -5827,7 +5851,7 @@
         <scene sceneID="41a-YY-FXk">
             <objects>
                 <tableViewController id="aGL-JU-WIC" customClass="PopWarningInfoVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EX6-kU-0hE">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EX6-kU-0hE">
                         <rect key="frame" x="0.0" y="64" width="320" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

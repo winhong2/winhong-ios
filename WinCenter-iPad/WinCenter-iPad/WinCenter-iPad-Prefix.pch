@@ -111,6 +111,7 @@ typedef NS_ENUM(NSInteger, MasterCollectionType) {
 
 #import <NSObject+ObjectMap.h>
 #import <UNIRest.h>
+#import <PNChart.h>
 #import <ASIHTTPRequest.h>
 #import <ASIFormDataRequest.h>
 
