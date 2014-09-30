@@ -21,5 +21,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *label5;
 @property (weak, nonatomic) IBOutlet UILabel *label6;
 @property (weak, nonatomic) IBOutlet UILabel *osType;
+@property (weak, nonatomic) IBOutlet UIImageView *osType_image;
 
 @end

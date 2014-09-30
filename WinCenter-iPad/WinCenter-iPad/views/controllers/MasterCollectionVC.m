@@ -466,6 +466,7 @@
             cell.label4.text = [NSString stringWithFormat:@"%dGB", vmVO.storage];
             cell.status.text = [vmVO state_text];
             cell.status.textColor = [vmVO state_color];
+            cell.osType_image.image = [UIImage imageNamed:[vmVO osType_imageName]];
             return cell;
         }
         case MasterCollectionType_VM_BY_POOL:

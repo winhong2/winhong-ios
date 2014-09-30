@@ -10,6 +10,21 @@
 
 @implementation VmVO
 
+- (NSString*)osType_imageName{
+
+    if([self.osType rangeOfString:@"window" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-win";
+    }else if([self.osType rangeOfString:@"cent" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-centos";
+    }else if([self.osType rangeOfString:@"suse" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-suse";
+    }else if([self.osType rangeOfString:@"hat" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-redhat";
+    }else{
+        return @"按键";
+    }
+    
+}
 
 - (NSString*)state_text{
     NSDictionary *stateDict = @{

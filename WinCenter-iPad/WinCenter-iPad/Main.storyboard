@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ckY-OR-jaX">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -526,6 +525,7 @@
                                     <outlet property="label2" destination="dX1-Y6-IP0" id="cuV-z1-eZ5"/>
                                     <outlet property="label3" destination="ZUP-nf-fAW" id="vOz-Ur-5XZ"/>
                                     <outlet property="label4" destination="aDG-RG-HhB" id="4hS-uN-XdF"/>
+                                    <outlet property="osType_image" destination="N13-U5-RjH" id="cME-Jc-ffb"/>
                                     <outlet property="status" destination="epP-bv-fit" id="bKe-8c-Vfv"/>
                                     <outlet property="title" destination="rcN-K5-4Qx" id="DKC-KD-Jrx"/>
                                     <segue destination="Ad0-Ro-76i" kind="modal" id="9JA-Df-r0X"/>
