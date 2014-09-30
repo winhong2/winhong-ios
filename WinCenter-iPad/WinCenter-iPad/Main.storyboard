@@ -195,7 +195,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="虚拟机卡片框" translatesAutoresizingMaskIntoConstraints="NO" id="0SS-EE-qZo">
-                                            <rect key="frame" x="0.0" y="0.0" width="243" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFQ-v5-A7w">
                                             <rect key="frame" x="11" y="12" width="212" height="21"/>
