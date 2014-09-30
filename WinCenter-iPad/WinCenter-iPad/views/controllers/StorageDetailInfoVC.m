@@ -20,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalStorageLabel2;
 @property (weak, nonatomic) IBOutlet UILabel *usedStorageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *allocatedStorageLabel;
+@property (weak, nonatomic) IBOutlet UIView *usedStorageGroup;
+@property (weak, nonatomic) IBOutlet UIView *allocatedStorageGroup;
+@property (weak, nonatomic) IBOutlet UILabel *usedRatio;
+@property (weak, nonatomic) IBOutlet UILabel *allocatedRatio;
 
 
 @end
@@ -64,6 +68,23 @@
     self.totalStorageLabel2.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalStorage];
     self.usedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", (self.baseObject.totalStorage-self.baseObject.availStorage)];
     self.allocatedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.allocatedStorage];
+    
+    self.usedRatio.text = [NSString stringWithFormat:@"%.0f %%", [self.baseObject usedRatio]];
+    self.allocatedRatio.text = [NSString stringWithFormat:@"%.0f %%", [self.baseObject allocatedRatio]];
+    
+    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.usedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject usedRatio]] andClockwise:YES andShadow:YES];
+    circleChart.backgroundColor = [UIColor clearColor];
+    circleChart.labelColor = [UIColor clearColor];
+    [circleChart setStrokeColor:[self.baseObject usedRatioColor]];
+    [circleChart strokeChart];
+    [self.usedStorageGroup addSubview:circleChart];
+    
+    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.allocatedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject allocatedRatio]] andClockwise:YES andShadow:YES];
+    circleChart2.backgroundColor = [UIColor clearColor];
+    circleChart2.labelColor = [UIColor clearColor];
+    [circleChart2 setStrokeColor:[self.baseObject allocatedRatioColor]];
+    [circleChart2 strokeChart];
+    [self.allocatedStorageGroup addSubview:circleChart2];
 }
 - (void)refresh{
     self.collectionHeader.text = [NSString stringWithFormat:@"虚拟磁盘(%li)", self.dataList.count];

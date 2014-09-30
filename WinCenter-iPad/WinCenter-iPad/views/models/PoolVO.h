@@ -25,4 +25,16 @@
 @property float availStorage;
 @property NSString *haEnabled;
 
+-(float)cpuRatio;
+
+-(UIColor *)cpuRatioColor;
+
+-(float)memoryRatio;
+
+-(UIColor *)memoryRatioColor;
+
+-(float)storageRatio;
+
+-(UIColor *)storageRatioColor;
+
 @end

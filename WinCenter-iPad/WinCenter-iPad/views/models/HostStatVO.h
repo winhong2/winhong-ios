@@ -23,4 +23,16 @@
 @property float usedStorage;
 @property float storageUsedPer;
 
+-(float)cpuRatio;
+
+-(UIColor *)cpuRatioColor;
+
+-(float)memoryRatio;
+
+-(UIColor *)memoryRatioColor;
+
+-(float)storageRatio;
+
+-(UIColor *)storageRatioColor;
+
 @end

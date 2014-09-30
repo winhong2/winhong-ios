@@ -24,16 +24,21 @@
 @property (weak, nonatomic) IBOutlet UILabel *cpuUnitUsedCount;
 @property (weak, nonatomic) IBOutlet UILabel *cpuUnitUnusedCount;
 @property (weak, nonatomic) IBOutlet UILabel *cpuRatio;
+@property (weak, nonatomic) IBOutlet UIView *cpuChartGroup;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *memorySize;
 @property (weak, nonatomic) IBOutlet UILabel *memoryUsedSize;
 @property (weak, nonatomic) IBOutlet UILabel *memoryUnusedSize;
 @property (weak, nonatomic) IBOutlet UILabel *memoryRatio;
+@property (weak, nonatomic) IBOutlet UIView *memoryChartGroup;
 
 @property (weak, nonatomic) IBOutlet UILabel *storageSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageUsedSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageUnusedSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageRatio;
+@property (weak, nonatomic) IBOutlet UIView *storageChartGroup;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *osType;
 
@@ -98,6 +103,28 @@
     self.storageUsedSize.text = [NSString stringWithFormat:@"%.2fTB", self.statVO.usedStorage/1024.0];
     self.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fTB", (self.statVO.totalStorage-self.statVO.usedStorage)/1024.0];
     self.storageRatio.text = [NSString stringWithFormat:@"%.0f%%", self.statVO.usedStorage/self.statVO.totalStorage*100];
+    
+    //圈图
+    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO cpuRatio]] andClockwise:YES andShadow:YES];
+    circleChart.backgroundColor = [UIColor clearColor];
+    circleChart.labelColor = [UIColor clearColor];
+    [circleChart setStrokeColor:[self.statVO cpuRatioColor]];
+    [circleChart strokeChart];
+    [self.cpuChartGroup addSubview:circleChart];
+    
+    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO memoryRatio]] andClockwise:YES andShadow:YES];
+    circleChart2.backgroundColor = [UIColor clearColor];
+    circleChart2.labelColor = [UIColor clearColor];
+    [circleChart2 setStrokeColor:[self.statVO memoryRatioColor]];
+    [circleChart2 strokeChart];
+    [self.memoryChartGroup addSubview:circleChart2];
+    
+    PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:self.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO storageRatio]] andClockwise:YES andShadow:YES];
+    circleChart3.backgroundColor = [UIColor clearColor];
+    circleChart3.labelColor = [UIColor clearColor];
+    [circleChart3 setStrokeColor:[self.statVO storageRatioColor]];
+    [circleChart3 strokeChart];
+    [self.storageChartGroup addSubview:circleChart3];
 }
 
 - (void)didReceiveMemoryWarning
