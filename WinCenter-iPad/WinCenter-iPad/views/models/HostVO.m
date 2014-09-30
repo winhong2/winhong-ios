@@ -23,4 +23,14 @@
     }
     return result;
 }
+
+- (UIColor *)state_color{
+    if([self.state isEqualToString:@"OK"]){
+        return [UIColor greenColor];
+    }else if([self.state isEqualToString:@"DISCONNECT"]){
+        return [UIColor lightGrayColor];
+    }else{
+        return [UIColor yellowColor];
+    }
+}
 @end
