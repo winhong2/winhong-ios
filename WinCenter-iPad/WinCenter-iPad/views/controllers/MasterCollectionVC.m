@@ -481,7 +481,7 @@
         case MasterCollectionType_VMDisk:{
             VmDiskVO *vmDiskVO = (VmDiskVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
             cell.title.text = vmDiskVO.name;
-            cell.label1.text = vmDiskVO.type;
+            cell.label1.text = [vmDiskVO type_text];
             cell.label2.text = vmDiskVO.storagePoolName;
             cell.label3.text = [NSString stringWithFormat:@"%dGB", vmDiskVO.size];
             return cell;
