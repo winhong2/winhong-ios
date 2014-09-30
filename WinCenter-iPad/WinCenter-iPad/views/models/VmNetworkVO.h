@@ -19,4 +19,6 @@
 
 @property NSString *state;
 
+- (NSString*)type_text;
+
 @end

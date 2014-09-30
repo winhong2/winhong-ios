@@ -18,6 +18,9 @@
 @property int mtu;//Byte
 @property NSString *vendor;
 @property NSString *device;
-@property NSString *linkeState;
+@property NSString *linkState;
+
+-(NSString*)duplex_text;
+-(NSString*) linkState_image;
 
 @end

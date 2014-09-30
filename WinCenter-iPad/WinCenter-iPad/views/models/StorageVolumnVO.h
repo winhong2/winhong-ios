@@ -16,5 +16,10 @@
 @property NSString *state;
 @property NSString *isASnapshot;
 @property NSString *type;
+@property NSString *vmNames;
 
+- (NSString*)vmNames_text;
+- (NSString*)isASnapshot_text;
+- (NSString*)state_text;
+- (NSString*)type_text;
 @end

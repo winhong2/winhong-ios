@@ -402,8 +402,13 @@
             cell.label4.text = @"";
             cell.label5.text = hostNetworkVO.vlanId;
             cell.label6.text = hostNetworkVO.pniName;
-            cell.status.text = hostNetworkVO.state;
-            //连接状态 linkeState
+            cell.status.text = [hostNetworkVO state_text];
+            cell.linkState.image = [UIImage imageNamed:[hostNetworkVO linkState_image]];
+            if(indexPath.section==0){
+                cell.type_image.image = [UIImage imageNamed:@"Network_internal"];
+            }else{
+                cell.type_image.image = [UIImage imageNamed:@"Network_External"];
+            }
             return cell;
         }
         case MasterCollectionType_HostNic:{
@@ -414,7 +419,8 @@
             cell.label3.text = [NSString stringWithFormat:@"%dByte",hostNicVO.mtu];
             cell.label4.text = hostNicVO.vendor;
             cell.label5.text = hostNicVO.device;
-            cell.type.text = hostNicVO.duplex;
+            cell.type.text = [hostNicVO duplex_text];
+            cell.linkState.image = [UIImage imageNamed:[hostNicVO linkState_image]];
             //连接状态 linkeState
             return cell;
         }
@@ -446,6 +452,7 @@
             cell.label3.text = [NSString stringWithFormat:@"%d个", storageVO.volumeNum];
             cell.label4.text = [NSString stringWithFormat:@"%.2fGB剩余,共%.2fGB", storageVO.availStorage, storageVO.totalStorage];
             cell.status.text = [storageVO state_text];
+            cell.status.textColor = [storageVO state_color];
             cell.share.text = [storageVO shared_text];
             cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
             if(cell.progress.progress>0.8){
@@ -495,7 +502,7 @@
         case MasterCollectionType_VMNetwork:{
             VmNetworkVO *vmNetworkVO = (VmNetworkVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
             cell.title.text = vmNetworkVO.name;
-            cell.label1.text = vmNetworkVO.type;
+            cell.label1.text = [vmNetworkVO type_text];
             cell.label2.text = vmNetworkVO.ip;
             cell.label3.text = vmNetworkVO.macAddr;
             cell.label4.text = [NSString stringWithFormat:@"%d", vmNetworkVO.vlanId];

@@ -195,6 +195,7 @@
             self.titleLabel.text = ((HostVO *) self.baseObject).hostName;
             self.ipLabel.text = ((HostVO *) self.baseObject).ip;
             self.statusLabel.text = [((HostVO*) self.baseObject) state_text];
+            self.statusLabel.textColor = [((HostVO*) self.baseObject) state_color];
             
             self.segmentView_host.hidden = NO;
             
@@ -206,6 +207,10 @@
             detailVC.datacenterVO = self.datacenterVO;
             detailVC.baseObject = (HostVO*)self.baseObject;
             [pages addObject:detailVC];
+            
+            
+            UIViewController *performVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailPerformanceVC"];
+            [pages addObject:performVC];
             
             MasterCollectionVC *vc;
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
@@ -266,6 +271,8 @@
                 self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
             }
             self.titleLabel.text = ((StorageVO *) self.baseObject).storagePoolName;
+            self.statusLabel.text = [((StorageVO*) self.baseObject) state_text];
+            self.statusLabel.textColor = [((StorageVO*) self.baseObject) state_color];
             
             StorageDetailInfoVC *vc;
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDetailInfoVC"];
@@ -293,6 +300,7 @@
             self.titleLabel.text = ((VmVO *) self.baseObject).name;
             self.ipLabel.text = ((VmVO *) self.baseObject).ip;
             self.statusLabel.text = [((VmVO*) self.baseObject) state_text];
+            self.statusLabel.textColor = [((VmVO*) self.baseObject) state_color];
             
             self.segmentView_vm.hidden = NO;
             

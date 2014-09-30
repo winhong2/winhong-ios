@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *hostNum;
 @property (weak, nonatomic) IBOutlet UILabel *vmNum;
 @property (weak, nonatomic) IBOutlet UIImageView *shared;
+@property (weak, nonatomic) IBOutlet UILabel *defaulted_label;
 @property (weak, nonatomic) IBOutlet UIImageView *defaulted;
 @property (weak, nonatomic) IBOutlet UILabel *totalStorageLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *totalStorageLabel2;
@@ -62,8 +63,10 @@
     self.volumeNum.text = [NSString stringWithFormat:@"%d", self.baseObject.volumeNum];
     self.hostNum.text = [NSString stringWithFormat:@"%d", self.baseObject.hostNum];
     self.vmNum.text = [NSString stringWithFormat:@"%d", self.baseObject.vmNum];
-    //共享
-    //默认
+    self.shared.hidden = [self.baseObject.shared isEqualToString:@"false"];
+    self.defaulted.hidden = [self.baseObject.defaulted isEqualToString:@"false"];
+    self.defaulted_label.hidden = [self.baseObject.defaulted isEqualToString:@"false"];
+    
     self.totalStorageLabel1.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalStorage];
     self.totalStorageLabel2.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalStorage];
     self.usedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", (self.baseObject.totalStorage-self.baseObject.availStorage)];
@@ -107,11 +110,11 @@
     
     StorageVolumnVO *volumnVO = self.dataList[indexPath.row];
     cell.name.text = volumnVO.name;
-    cell.state.text = volumnVO.state;
-    cell.isASnapshot.text = volumnVO.isASnapshot;
+    cell.state.text = [volumnVO state_text];
+    cell.isASnapshot.text = [volumnVO isASnapshot_text];
     cell.size.text = [NSString stringWithFormat:@"%dGB", volumnVO.size];
-    //cell.belongsVM.text
-    cell.type.text = volumnVO.type;
+    cell.belongsVM.text = [volumnVO vmNames_text];
+    cell.type.text = [volumnVO type_text];
     return cell;
 }
 

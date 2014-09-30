@@ -22,6 +22,15 @@
     }
     return result;
 }
+- (UIColor *)state_color{
+    if([self.state isEqualToString:@"OK"]){
+        return [UIColor greenColor];
+    }else if([self.state isEqualToString:@"unPlug"]){
+        return [UIColor lightGrayColor];
+    }else{
+        return [UIColor yellowColor];
+    }
+}
 -(NSString *)shared_text{
     NSDictionary *shared_dict = @{
                                  @"false":@"非共享",
