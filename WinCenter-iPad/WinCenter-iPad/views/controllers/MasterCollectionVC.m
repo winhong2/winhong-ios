@@ -425,7 +425,8 @@
             cell.label1.text = [NSString stringWithFormat:@"%.2fGB剩余,共%.2fGB", storageVO.availStorage, storageVO.totalStorage];
             cell.label2.text = [NSString stringWithFormat:@"%d个", storageVO.volumeNum];
             cell.status.text = [storageVO state_text];
-            cell.share.text = [storageVO shared_text];
+            //cell.share.text = [storageVO shared_text];
+            cell.share_image.hidden = [storageVO.shared isEqualToString:@"false"];
             cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
             if(cell.progress.progress>0.8){
                 cell.progress.progressTintColor = [UIColor redColor];
@@ -480,6 +481,7 @@
             cell.status.text = [vmVO state_text];
             cell.status.textColor = [vmVO state_color];
             cell.osType.text = vmVO.osType;
+            cell.osType_image.image = [UIImage imageNamed:[vmVO osType_imageName]];
             return cell;
         }
         case MasterCollectionType_VMDisk:{

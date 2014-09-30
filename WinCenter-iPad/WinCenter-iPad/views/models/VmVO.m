@@ -10,6 +10,9 @@
 
 @implementation VmVO
 
+- (NSString *) isInstallTools_text{
+    return ([self.isInstallTools isEqualToString:@"true"] ? @"已安装" : @"未安装");
+}
 - (NSString*)osType_imageName{
 
     if([self.osType rangeOfString:@"window" options:NSCaseInsensitiveSearch].length>0){

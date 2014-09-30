@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *createTime;
 @property (weak, nonatomic) IBOutlet UILabel *createUser;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
-@property (weak, nonatomic) IBOutlet UILabel *vmNum;
 
 @end
 
@@ -48,10 +47,9 @@
 - (void)refresh{
     self.managerId.text = self.baseObject.managerId;
     self.platform.text = self.baseObject.sysSrc;
-    self.createTime.text = self.baseObject.createTime;
+    self.createTime.text = [self.baseObject.createTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
     self.createUser.text = self.baseObject.createUser;
     self.desc.text = self.baseObject.desc;
-    self.vmNum.text = [NSString stringWithFormat:@"%d", self.baseObject.vmNum];
     
     self.collectionHeader.text = [NSString stringWithFormat:@"虚拟机(%li)", self.dataList.count];
     [self.collectionView reloadData];
@@ -72,7 +70,7 @@
     cell.name.text = vmvo.name;
     cell.startOrder.text = [NSString stringWithFormat:@"%d", vmvo.startOrder];
     cell.delayInterval.text = [NSString stringWithFormat:@"%d", vmvo.delayInterval];
-    cell.state.text = vmvo.state;
+    cell.state.text = [vmvo state_text];
     
     return cell;
 }

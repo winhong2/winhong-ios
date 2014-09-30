@@ -31,6 +31,7 @@
 @property int ownerHostId;
 @property NSString *ownerHostName;
 
+- (NSString *) isInstallTools_text;
 - (NSString*)osType_imageName;
 - (NSString*)state_text;
 - (UIColor *)state_color;

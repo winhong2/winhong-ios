@@ -35,6 +35,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *storageUnusedSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageRatio;
 
+@property (weak, nonatomic) IBOutlet UIImageView *osType;
+
 @end
 
 @implementation HostDetailInfoVC

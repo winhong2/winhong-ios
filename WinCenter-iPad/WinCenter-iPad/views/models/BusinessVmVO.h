@@ -15,4 +15,6 @@
 @property int delayInterval;
 @property NSString *state;
 
+- (NSString*)state_text;
+
 @end

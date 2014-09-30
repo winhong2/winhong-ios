@@ -191,7 +191,7 @@
             break;
         }
         case MasterPageType_HOST:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@", self.datacenterVO.name, ((HostVO *) self.baseObject).resourcePoolName];
+            self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@", self.datacenterVO.name, ((HostVO *) self.baseObject).resourcePoolName];
             self.titleLabel.text = ((HostVO *) self.baseObject).hostName;
             self.ipLabel.text = ((HostVO *) self.baseObject).ip;
             self.statusLabel.text = [((HostVO*) self.baseObject) state_text];
@@ -261,9 +261,9 @@
         case MasterPageType_STORAGE:{
             
             if((((StorageVO *) self.baseObject).hostName ==nil) || [((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
-                self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName];
+                self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName];
             }else{
-                self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
+                self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
             }
             self.titleLabel.text = ((StorageVO *) self.baseObject).storagePoolName;
             
@@ -289,7 +289,7 @@
             break;
         }
         case MasterPageType_VM:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", self.datacenterVO.name, ((VmVO *) self.baseObject).poolName, ((VmVO *) self.baseObject).ownerHostName];
+            self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", self.datacenterVO.name, ((VmVO *) self.baseObject).poolName, ((VmVO *) self.baseObject).ownerHostName];
             self.titleLabel.text = ((VmVO *) self.baseObject).name;
             self.ipLabel.text = ((VmVO *) self.baseObject).ip;
             self.statusLabel.text = [((VmVO*) self.baseObject) state_text];

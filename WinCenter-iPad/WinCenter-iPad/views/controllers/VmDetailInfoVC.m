@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *isDynamicMemWce;
 @property (weak, nonatomic) IBOutlet UILabel *memory;
 @property (weak, nonatomic) IBOutlet UILabel *snopshotNum;
+@property (weak, nonatomic) IBOutlet UIImageView *osType_image;
 
 @end
 
@@ -45,7 +46,7 @@
 }
 - (void)refresh{
     self.osType.text = self.baseObject.osType;
-    self.isInstalledTool.text = self.baseObject.isInstallTools;
+    self.isInstalledTool.text = [self.baseObject isInstallTools_text];
     self.runningTime.text = [NSString stringWithFormat:@"%d", self.baseObject.runTime];
     self.vcpu.text = [NSString stringWithFormat:@"%d", self.baseObject.vcpu];
     //self.isDynamicCPU
@@ -53,6 +54,7 @@
     //self.isDynamicMemWce
     self.memory.text = [NSString stringWithFormat:@"%d", self.baseObject.memory];
     //self.snopshotNum.text
+    self.osType_image.image = [UIImage imageNamed:[self.baseObject osType_imageName]];
     
 }
 - (void)didReceiveMemoryWarning

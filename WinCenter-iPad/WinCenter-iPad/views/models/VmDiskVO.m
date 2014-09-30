@@ -19,7 +19,7 @@
     
     NSString *result = [dict valueForKey:self.type];
     if((result==nil) || [result isEqualToString:@""]){
-        result = self.type;
+        result = @"其他";
     }
     return result;
 }
