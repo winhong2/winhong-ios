@@ -10,9 +10,7 @@
 
 @interface HostDetailInfoVC ()
 @property (weak, nonatomic) IBOutlet UILabel *virtualMachineNum;
-@property (weak, nonatomic) IBOutlet UILabel *activeMachineNum;
 @property (weak, nonatomic) IBOutlet UILabel *networkNum;
-@property (weak, nonatomic) IBOutlet UILabel *storage;
 @property (weak, nonatomic) IBOutlet UILabel *startRunTime;
 @property (weak, nonatomic) IBOutlet UILabel *virtualInfo;
 @property (weak, nonatomic) IBOutlet UILabel *virtualDate;
@@ -73,7 +71,6 @@
     self.virtualMachineNum.text = [NSString stringWithFormat:@"%d", self.baseObject.virtualMachineNum];
     //self.activeMachineNum.text = [NSString stringWithFormat:@"%d", 0];
     self.networkNum.text = [NSString stringWithFormat:@"%d", self.baseObject.networkNum];
-    self.storage.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.storage/1024.0];
     self.startRunTime.text = [NSString stringWithFormat:@"%d", self.baseObject.startRunTime];
     self.virtualInfo.text = [NSString stringWithFormat:@"%@ %@", self.baseObject.virtualSoftware, self.baseObject.virtualVersion];
     self.virtualDate.text = [NSString stringWithFormat:@"%@", self.baseObject.versionDate];
