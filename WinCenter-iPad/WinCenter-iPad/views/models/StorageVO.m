@@ -34,4 +34,35 @@
     }
     return result;
 }
+
+
+-(float)usedRatio{
+    return (self.totalStorage - self.availStorage)/self.totalStorage*100;
+}
+
+-(UIColor *)usedRatioColor{
+    float ratio = [self usedRatio];
+    if(ratio>80){
+        return PNRed;
+    }else if(ratio>60){
+        return PNYellow;
+    }else{
+        return PNGreen;
+    }
+}
+
+-(float)allocatedRatio{
+    return self.allocatedStorage/self.totalStorage*100;
+}
+
+-(UIColor *)allocatedRatioColor{
+    float ratio = [self allocatedRatio];
+    if(ratio>80){
+        return PNRed;
+    }else if(ratio>60){
+        return PNYellow;
+    }else{
+        return PNGreen;
+    }
+}
 @end

@@ -34,5 +34,12 @@
 -(NSString *)state_text;
 -(NSString *)shared_text;
 
+-(float)usedRatio;
+
+-(UIColor *)usedRatioColor;
+
+-(float)allocatedRatio;
+
+-(UIColor *)allocatedRatioColor;
 
 @end

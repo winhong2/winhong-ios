@@ -1357,10 +1357,6 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHs-NZ-fI7">
                                 <rect key="frame" x="269" y="17" width="300" height="168"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU、内存-圆形图表" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-l3-Dob">
-                                        <rect key="frame" x="20" y="48" width="112" height="112"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="总容量：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYG-fp-CMZ">
                                         <rect key="frame" x="149" y="64" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1391,16 +1387,28 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svd-Zr-hg1">
+                                        <rect key="frame" x="18" y="45" width="114" height="115"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU、内存-圆形图表" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-l3-Dob">
+                                                <rect key="frame" x="2" y="3" width="112" height="112"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oi-Ue-IKy">
+                                        <rect key="frame" x="50" y="91" width="50" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiA-bv-FoZ">
                                 <rect key="frame" x="594" y="17" width="300" height="168"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU、内存-圆形图表" translatesAutoresizingMaskIntoConstraints="NO" id="8HF-JU-jeP">
-                                        <rect key="frame" x="20" y="48" width="112" height="112"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已分配容量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ley-AI-3Ka">
                                         <rect key="frame" x="38" y="10" width="112" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1429,6 +1437,22 @@
                                         <rect key="frame" x="207" y="100" width="85" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ut-jd-fA0">
+                                        <rect key="frame" x="18" y="44" width="114" height="116"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU、内存-圆形图表" translatesAutoresizingMaskIntoConstraints="NO" id="8HF-JU-jeP">
+                                                <rect key="frame" x="2" y="4" width="112" height="112"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96f-mR-Xoy">
+                                        <rect key="frame" x="50" y="90" width="50" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1642,6 +1666,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="668"/>
                     <connections>
+                        <outlet property="allocatedRatio" destination="96f-mR-Xoy" id="WYD-Er-olj"/>
+                        <outlet property="allocatedStorageGroup" destination="1Ut-jd-fA0" id="EIS-al-AUo"/>
                         <outlet property="allocatedStorageLabel" destination="G5X-yo-Efx" id="XW9-u0-n5r"/>
                         <outlet property="collectionHeader" destination="20p-g7-hs3" id="iKY-mJ-EjQ"/>
                         <outlet property="collectionView" destination="fVF-eL-L3I" id="a5w-6D-iZ2"/>
@@ -1651,6 +1677,8 @@
                         <outlet property="totalStorage" destination="OUI-V3-vqZ" id="Iqo-Rf-fNi"/>
                         <outlet property="totalStorageLabel1" destination="jmn-08-NRs" id="dya-A1-Eok"/>
                         <outlet property="totalStorageLabel2" destination="Of7-CG-fgd" id="WX2-07-Flc"/>
+                        <outlet property="usedRatio" destination="5Oi-Ue-IKy" id="hLd-hA-hgp"/>
+                        <outlet property="usedStorageGroup" destination="svd-Zr-hg1" id="hZV-nu-lde"/>
                         <outlet property="usedStorageLabel" destination="sDT-2J-e9n" id="Xag-wT-M8b"/>
                         <outlet property="vmNum" destination="uM4-Lg-Lco" id="lM7-B6-Qcz"/>
                         <outlet property="volumeNum" destination="Zju-0k-HhU" id="Ijg-Ce-IVg"/>
