@@ -15,4 +15,6 @@
 @property NSString *storagePoolName;
 @property int size;
 
+- (NSString*)type_text;
+
 @end

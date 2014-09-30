@@ -11,6 +11,17 @@
 
 @implementation VmDiskVO
 
-
+- (NSString*)type_text{
+    NSDictionary *dict = @{
+                                @"SYSTEM":@"系统盘",
+                                @"USER":@"数据盘"
+                                };
+    
+    NSString *result = [dict valueForKey:self.type];
+    if((result==nil) || [result isEqualToString:@""]){
+        result = self.type;
+    }
+    return result;
+}
 
 @end

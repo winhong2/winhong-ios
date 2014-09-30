@@ -63,10 +63,10 @@ typedef NS_ENUM(NSInteger, MasterCollectionType) {
 #define getDatacenterStatUrl    @"/restServlet?connectorId=%d&apiKey=pc.api.dataCenter.getDataCenterResource"
 
 #define getWarningInfoUrl @"/restServlet?connectorId=1&apiKey=pc.winserver.warning.getVmWarningList&params=firstResult%%3D0%%26maxResult%%3D12"
-#define getControlRecordUrl @"/restServlet?connectorId=1&apiKey=pc.winserver.task.getList&params=firstResult%3D0%26maxResult%3D12"
+#define getControlRecordUrl @"/restServlet?connectorId=1&apiKey=pc.winserver.task.getList&params=firstResult%%3D0%%26maxResult%%3D12"
 
 #define getPoolListUrl_all      @"/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePools"
-#define getPoolListUrl          @"/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePools&params=firstResult%%3D0%26maxResult%%3D%d"
+#define getPoolListUrl          @"/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePools&params=firstResult%%3D0%%26maxResult%%3D%d"
 
 #define getPoolDetailUrl @"/restServlet?connectorId=%d&apiKey=pc.winserver.resourcePool.getResourcePool&placeholder=%d"
 #define getPoolElasticUrl @"/restServlet?connectorId=%d&apiKey=pc.winserver.wlb.getInfo&placeholder=%d"
