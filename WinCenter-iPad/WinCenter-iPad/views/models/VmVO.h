@@ -32,5 +32,6 @@
 @property NSString *ownerHostName;
 
 - (NSString*)state_text;
+- (UIColor *)state_color;
 
 @end

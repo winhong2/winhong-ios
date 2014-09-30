@@ -25,13 +25,36 @@
         @"CONVERTING":@"转换中",
         @"RESUMEING":@"恢复中",
         @"SUSPENDING":@"挂起中",
-        @"SUSPENDED":@"挂起"
+        @"SUSPENDED":@"挂起",
+        @"UNKNOWN":@"未知",
+        @"CONVERTING":@"转换中",
+        @"RELOCATING":@"迁移中",
+        @"BACKUPING":@"备份中",
+        @"RESTORING":@"还原中",
+        @"SNAPSHOT_ADDING":@"创建快照中",
+        @"SNAPSHOT_DELING":@"删除快照中",
+        @"SNAPSHOT_RECOVERING":@"快照还原中",
+        @"RENAMEING":@"修改名称中",
+        @"EXPORTING":@"导出中",
+        @"UN_MOUNTING_ISO":@"弹出iso中",
+        @"MOUNTING_ISO":@"挂载iso中"
     };
+    
     
     NSString *result = [stateDict valueForKey:self.state];
     if((result==nil) || [result isEqualToString:@""]){
         result = self.state;
     }
     return result;
+}
+
+- (UIColor *)state_color{
+    if([self.state isEqualToString:@"OK"]){
+        return [UIColor greenColor];
+    }else if([self.state isEqualToString:@"STOPPED"]){
+        return [UIColor lightGrayColor];
+    }else{
+        return [UIColor yellowColor];
+    }
 }
 @end

@@ -377,7 +377,7 @@
             cell.label2.text = [NSString stringWithFormat:@"%d",hostVO.virtualMachineNum ];
             cell.label3.text = [NSString stringWithFormat:@"%.2fGB",hostVO.storage];
             cell.status.text = [hostVO state_text];
-        
+            cell.status.textColor = [hostVO state_color];
             return cell;
         }
         case MasterCollectionType_HOST_BY_POOL:{
@@ -389,6 +389,7 @@
             cell.label4.text = [NSString stringWithFormat:@"%d",hostVO.cpu];
             cell.label5.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory/1024.0];
             cell.status.text = [hostVO state_text];
+            cell.status.textColor = [hostVO state_color];
 
             return cell;
         }
@@ -464,6 +465,7 @@
             cell.label3.text = [NSString stringWithFormat:@"%.2fGB", vmVO.memory/1024.0];
             cell.label4.text = [NSString stringWithFormat:@"%dGB", vmVO.storage];
             cell.status.text = [vmVO state_text];
+            cell.status.textColor = [vmVO state_color];
             return cell;
         }
         case MasterCollectionType_VM_BY_POOL:
@@ -475,6 +477,7 @@
             cell.label3.text = [NSString stringWithFormat:@"%.2fGB", vmVO.memory/1024.0];
             cell.label4.text = [NSString stringWithFormat:@"%dGB", vmVO.storage];
             cell.status.text = [vmVO state_text];
+            cell.status.textColor = [vmVO state_color];
             cell.osType.text = vmVO.osType;
             return cell;
         }
@@ -500,7 +503,7 @@
             BusinessVO *businessVO = (BusinessVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
             cell.title.text = businessVO.name;
             cell.label1.text = businessVO.managerId;
-            cell.label2.text = businessVO.createTime;
+            cell.label2.text = [businessVO.createTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
             cell.label3.text = [NSString stringWithFormat:@"%d", businessVO.vmNum];
             return cell;
         }
