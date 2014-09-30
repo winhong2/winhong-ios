@@ -16,4 +16,5 @@
 @property NSString *intervalTime;
 @property NSString *nextStartTime;
 
+- (NSString*)intervalTime_text;
 @end

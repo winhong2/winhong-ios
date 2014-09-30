@@ -97,11 +97,11 @@
     //self.haSignalPool.text = self.baseObject.haSignalPool;
 }
 - (void)refreshElasticInfo{
-    self.elasticModel.text = self.elasticInfo.balancingMode;
+    //self.elasticModel.text = self.elasticInfo.balancingMode;
     self.cpuLoadBalancing.text = [NSString stringWithFormat:@"%.0f%%", self.elasticInfo.cpuThreshold*100];
     self.memeryLoadBalancing.text = [NSString stringWithFormat:@"%.0f%%", self.elasticInfo.memThreshold*100];
-    self.intervalTime.text = self.elasticInfo.intervalTime;
-    self.nextCheckTime.text = self.elasticInfo.nextStartTime;
+    self.intervalTime.text = [self.elasticInfo intervalTime_text];
+    self.nextCheckTime.text = [self.elasticInfo.nextStartTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
 }
 
 - (void)didReceiveMemoryWarning

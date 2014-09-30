@@ -503,7 +503,7 @@
             BusinessVO *businessVO = (BusinessVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
             cell.title.text = businessVO.name;
             cell.label1.text = businessVO.managerId;
-            cell.label2.text = businessVO.createTime;
+            cell.label2.text = [businessVO.createTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
             cell.label3.text = [NSString stringWithFormat:@"%d", businessVO.vmNum];
             return cell;
         }
