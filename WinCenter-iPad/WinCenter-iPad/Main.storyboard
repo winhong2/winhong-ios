@@ -572,6 +572,15 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-user1" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-rl-L1U">
+                                            <rect key="frame" x="21" y="62" width="15" height="15"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-clock" translatesAutoresizingMaskIntoConstraints="NO" id="rBT-M9-kGP">
+                                            <rect key="frame" x="20" y="86" width="15" height="15"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-vm1" translatesAutoresizingMaskIntoConstraints="NO" id="NJt-qT-MNr">
+                                            <rect key="frame" x="20" y="112" width="16" height="15"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -5933,8 +5942,11 @@
         <image name="CPU线程" width="15" height="15"/>
         <image name="CPU颗数" width="15" height="15"/>
         <image name="i 图标" width="32" height="26"/>
+        <image name="icon-clock" width="15" height="15"/>
         <image name="icon-cpu线程" width="20" height="22"/>
         <image name="icon-ip" width="16" height="24"/>
+        <image name="icon-user1" width="15" height="15"/>
+        <image name="icon-vm1" width="16" height="15"/>
         <image name="icon-内存" width="111" height="79"/>
         <image name="icon-存储" width="20" height="23"/>
         <image name="icon-虚拟机数" width="19" height="18"/>
@@ -6015,6 +6027,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tAC-xx-P6S"/>
+        <segue reference="xh3-tG-ZRd"/>
     </inferredMetricsTieBreakers>
 </document>
