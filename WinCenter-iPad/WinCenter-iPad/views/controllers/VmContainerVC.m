@@ -15,6 +15,7 @@
 
 @implementation VmContainerVC
 
+
 -(void)refresh{
     self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", [RemoteObject getCurrentDatacenterVO].name, self.vmVO.poolName, self.vmVO.ownerHostName];
     self.titleLabel.text = self.vmVO.name;
@@ -42,6 +43,13 @@
     self.pages = pages;
     
     [super refresh];
+    
+    if ([self.vmVO.state isEqualToString:@"OK"]) {
+        self.btnStart.enabled = true;
+        self.btnStop.enabled = false;
+        self.btnRestart.enabled = false;
+    }
+    
 }
 
 - (IBAction)showControlBtns:(id)sender {

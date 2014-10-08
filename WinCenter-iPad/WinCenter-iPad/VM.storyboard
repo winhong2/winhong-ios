@@ -819,6 +819,9 @@
                                         <state key="normal" title="开机" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="disabled" title="开机">
+                                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="openVm:" destination="rda-j3-bYj" eventType="touchUpInside" id="k2N-tM-yZp"/>
                                         </connections>
@@ -829,6 +832,9 @@
                                         <size key="titleShadowOffset" width="4" height="10"/>
                                         <state key="normal" title="关机" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" title="关机">
+                                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="shutdownVm:" destination="rda-j3-bYj" eventType="touchUpInside" id="Ega-JU-nYf"/>
@@ -841,6 +847,9 @@
                                         <state key="normal" title="重启" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="disabled" title="重启">
+                                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="restartVm:" destination="rda-j3-bYj" eventType="touchUpInside" id="fe9-RE-oys"/>
                                         </connections>
@@ -851,6 +860,9 @@
                                         <size key="titleShadowOffset" width="4" height="10"/>
                                         <state key="normal" title="迁移" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" title="迁移">
+                                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="migrateVm:" destination="rda-j3-bYj" eventType="touchUpInside" id="aCT-cR-53y"/>
@@ -942,7 +954,11 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="btnMigrate" destination="4tD-Tm-kMS" id="mh7-AN-rWG"/>
                         <outlet property="btnOperation" destination="L0f-RE-LYa" id="0kw-ZS-UwR"/>
+                        <outlet property="btnRestart" destination="tbm-Cr-deO" id="Kux-aO-ANW"/>
+                        <outlet property="btnStart" destination="1XU-do-vA2" id="a6a-tz-RLp"/>
+                        <outlet property="btnStop" destination="79b-oq-8hX" id="65A-e0-E7P"/>
                         <outlet property="buttonTask" destination="7Ss-8v-voB" id="vFq-kE-CH5"/>
                         <outlet property="buttonWarning" destination="vnc-Rt-hPW" id="jEH-Ss-4fd"/>
                         <outlet property="ipLabel" destination="UY2-yD-Vax" id="wri-MY-SIm"/>

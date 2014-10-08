@@ -12,5 +12,9 @@
 
 @property VmVO *vmVO;
 @property (weak, nonatomic) IBOutlet UIView *vmControlButtons;
+@property (weak, nonatomic) IBOutlet UIButton *btnStart;
+@property (weak, nonatomic) IBOutlet UIButton *btnStop;
+@property (weak, nonatomic) IBOutlet UIButton *btnRestart;
+@property (weak, nonatomic) IBOutlet UIButton *btnMigrate;
 
 @end
