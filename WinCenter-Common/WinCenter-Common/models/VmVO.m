@@ -131,6 +131,15 @@
     }];
 }
 
+- (void) VmOperation:(NSString*)state async:(BasicCompletionBlock)completionBlock{
+    [[UNIRest postEntity:^(UNIBodyRequest *unibodyRequest) {
+        [unibodyRequest setUrl:[NSString stringWithFormat:@"/restServlet?connectorId=%d&apiKey=pc.winserver.vm.vminfo&placeholder=%d", [RemoteObject getCurrentDatacenterVO].id, self.vmId]];
+        [unibodyRequest setHeaders:@{@"accept": @"application/json"}];
+        [unibodyRequest setBody:[NSJSONSerialization dataWithJSONObject:@{@"state": state} options:0 error:nil]];
+    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
+            completionBlock(error);
+    }];
+}
 
 
 @end
