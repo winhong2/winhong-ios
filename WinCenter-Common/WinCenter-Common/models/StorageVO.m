@@ -24,11 +24,11 @@
 }
 - (UIColor *)state_color{
     if([self.state isEqualToString:@"OK"]){
-        return [UIColor greenColor];
+        return PNGreen;
     }else if([self.state isEqualToString:@"unPlug"]){
         return [UIColor lightGrayColor];
     }else{
-        return [UIColor yellowColor];
+        return PNYellow;
     }
 }
 -(NSString *)shared_text{
