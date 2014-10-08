@@ -9,8 +9,8 @@
 #import "HostContainerVC.h"
 #import "HostDetailInfoVC.h"
 #import "MasterCollectionVC.h"
-#import "HostVmCollectionVC.h"
-#import "HostStorageCollectionVC.h"
+#import "VmCollectionVC.h"
+#import "StorageCollectionVC.h"
 #import "HostNetworkCollectionVC.h"
 #import "HostNicCollectionVC.h"
 
@@ -33,11 +33,11 @@
     UIViewController *performVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailPerformanceVC"];
     [pages addObject:performVC];
     
-    HostVmCollectionVC *hostVmCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostVmCollectionVC"];
+    VmCollectionVC *hostVmCollectionVC = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateViewControllerWithIdentifier:@"VmCollectionVC"];
     hostVmCollectionVC.hostVO = self.hostVO;
     [pages addObject:hostVmCollectionVC];
     
-    HostStorageCollectionVC *hostStorageCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostStorageCollectionVC"];
+    StorageCollectionVC *hostStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
     hostStorageCollectionVC.hostVO = self.hostVO;
     [pages addObject:hostStorageCollectionVC];
     

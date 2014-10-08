@@ -25,11 +25,9 @@
 		187C404519E1183B000D1500 /* DatacenterStorageMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C404419E1183B000D1500 /* DatacenterStorageMore.m */; };
 		187C404819E11846000D1500 /* DatacenterVmMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C404719E11846000D1500 /* DatacenterVmMore.m */; };
 		187C404B19E11852000D1500 /* DatacenterBusinessMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C404A19E11852000D1500 /* DatacenterBusinessMore.m */; };
-		187C404E19E11978000D1500 /* PoolHostCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C404D19E11978000D1500 /* PoolHostCollectionVC.m */; };
-		187C405119E11990000D1500 /* PoolStorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405019E11990000D1500 /* PoolStorageCollectionVC.m */; };
-		187C405419E119BB000D1500 /* PoolVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405319E119BB000D1500 /* PoolVmCollectionVC.m */; };
-		187C405719E119E0000D1500 /* HostStorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405619E119E0000D1500 /* HostStorageCollectionVC.m */; };
-		187C405A19E119EC000D1500 /* HostVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405919E119EC000D1500 /* HostVmCollectionVC.m */; };
+		187C404E19E11978000D1500 /* HostCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C404D19E11978000D1500 /* HostCollectionVC.m */; };
+		187C405119E11990000D1500 /* StorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405019E11990000D1500 /* StorageCollectionVC.m */; };
+		187C405419E119BB000D1500 /* VmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405319E119BB000D1500 /* VmCollectionVC.m */; };
 		187C405D19E11A2C000D1500 /* VmNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405C19E11A2C000D1500 /* VmNetworkCollectionVC.m */; };
 		187C406019E11A3C000D1500 /* VmDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C405F19E11A3C000D1500 /* VmDiskCollectionVC.m */; };
 		187C407219E17E74000D1500 /* DatacenterMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C407119E17E74000D1500 /* DatacenterMoreVC.m */; };
@@ -152,16 +150,12 @@
 		187C404719E11846000D1500 /* DatacenterVmMore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterVmMore.m; sourceTree = "<group>"; };
 		187C404919E11852000D1500 /* DatacenterBusinessMore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterBusinessMore.h; sourceTree = "<group>"; };
 		187C404A19E11852000D1500 /* DatacenterBusinessMore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterBusinessMore.m; sourceTree = "<group>"; };
-		187C404C19E11978000D1500 /* PoolHostCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolHostCollectionVC.h; sourceTree = "<group>"; };
-		187C404D19E11978000D1500 /* PoolHostCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolHostCollectionVC.m; sourceTree = "<group>"; };
-		187C404F19E11990000D1500 /* PoolStorageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolStorageCollectionVC.h; sourceTree = "<group>"; };
-		187C405019E11990000D1500 /* PoolStorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolStorageCollectionVC.m; sourceTree = "<group>"; };
-		187C405219E119BB000D1500 /* PoolVmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolVmCollectionVC.h; sourceTree = "<group>"; };
-		187C405319E119BB000D1500 /* PoolVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolVmCollectionVC.m; sourceTree = "<group>"; };
-		187C405519E119E0000D1500 /* HostStorageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostStorageCollectionVC.h; sourceTree = "<group>"; };
-		187C405619E119E0000D1500 /* HostStorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostStorageCollectionVC.m; sourceTree = "<group>"; };
-		187C405819E119EC000D1500 /* HostVmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostVmCollectionVC.h; sourceTree = "<group>"; };
-		187C405919E119EC000D1500 /* HostVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostVmCollectionVC.m; sourceTree = "<group>"; };
+		187C404C19E11978000D1500 /* HostCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostCollectionVC.h; sourceTree = "<group>"; };
+		187C404D19E11978000D1500 /* HostCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostCollectionVC.m; sourceTree = "<group>"; };
+		187C404F19E11990000D1500 /* StorageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageCollectionVC.h; sourceTree = "<group>"; };
+		187C405019E11990000D1500 /* StorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageCollectionVC.m; sourceTree = "<group>"; };
+		187C405219E119BB000D1500 /* VmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionVC.h; sourceTree = "<group>"; };
+		187C405319E119BB000D1500 /* VmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionVC.m; sourceTree = "<group>"; };
 		187C405B19E11A2C000D1500 /* VmNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkCollectionVC.h; sourceTree = "<group>"; };
 		187C405C19E11A2C000D1500 /* VmNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkCollectionVC.m; sourceTree = "<group>"; };
 		187C405E19E11A3C000D1500 /* VmDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskCollectionVC.h; sourceTree = "<group>"; };
@@ -505,16 +499,14 @@
 		18B3BF9819DAE39400E68AC3 /* host */ = {
 			isa = PBXGroup;
 			children = (
+				187C404C19E11978000D1500 /* HostCollectionVC.h */,
+				187C404D19E11978000D1500 /* HostCollectionVC.m */,
 				18A4D36219B558E500415896 /* HostDetailInfoVC.h */,
 				18A4D36319B558E500415896 /* HostDetailInfoVC.m */,
 				18A4D36419B558E500415896 /* HostDetailPerformanceVC.h */,
 				18A4D36519B558E500415896 /* HostDetailPerformanceVC.m */,
 				187C403319E111D3000D1500 /* HostContainerVC.h */,
 				187C403419E111D3000D1500 /* HostContainerVC.m */,
-				187C405519E119E0000D1500 /* HostStorageCollectionVC.h */,
-				187C405619E119E0000D1500 /* HostStorageCollectionVC.m */,
-				187C405819E119EC000D1500 /* HostVmCollectionVC.h */,
-				187C405919E119EC000D1500 /* HostVmCollectionVC.m */,
 				187C402719E11156000D1500 /* HostNicCollectionVC.h */,
 				187C402819E11156000D1500 /* HostNicCollectionVC.m */,
 				187C402A19E11184000D1500 /* HostNetworkCollectionVC.h */,
@@ -554,12 +546,6 @@
 				18A4D37B19B558E500415896 /* PoolDetailInfoVC.m */,
 				187C403019E111C2000D1500 /* PoolContainerVC.h */,
 				187C403119E111C2000D1500 /* PoolContainerVC.m */,
-				187C404C19E11978000D1500 /* PoolHostCollectionVC.h */,
-				187C404D19E11978000D1500 /* PoolHostCollectionVC.m */,
-				187C404F19E11990000D1500 /* PoolStorageCollectionVC.h */,
-				187C405019E11990000D1500 /* PoolStorageCollectionVC.m */,
-				187C405219E119BB000D1500 /* PoolVmCollectionVC.h */,
-				187C405319E119BB000D1500 /* PoolVmCollectionVC.m */,
 			);
 			name = pool;
 			sourceTree = "<group>";
@@ -604,6 +590,8 @@
 		18B3BF9F19DAE40300E68AC3 /* storage */ = {
 			isa = PBXGroup;
 			children = (
+				187C404F19E11990000D1500 /* StorageCollectionVC.h */,
+				187C405019E11990000D1500 /* StorageCollectionVC.m */,
 				18A4D38A19B558E500415896 /* StorageDetailDiskCell.h */,
 				18A4D38B19B558E500415896 /* StorageDetailDiskCell.m */,
 				18A4D38C19B558E500415896 /* StorageDetailInfoVC.h */,
@@ -617,6 +605,8 @@
 		18B3BFA019DAE40900E68AC3 /* vm */ = {
 			isa = PBXGroup;
 			children = (
+				187C405219E119BB000D1500 /* VmCollectionVC.h */,
+				187C405319E119BB000D1500 /* VmCollectionVC.m */,
 				187C401519E110CF000D1500 /* VmContainerVC.h */,
 				187C401619E110CF000D1500 /* VmContainerVC.m */,
 				187C405E19E11A3C000D1500 /* VmDiskCollectionVC.h */,
@@ -813,12 +803,12 @@
 				187C402F19E111AF000D1500 /* StorageContainerVC.m in Sources */,
 				187C403519E111D3000D1500 /* HostContainerVC.m in Sources */,
 				18A4D3D819B558E500415896 /* VmNewVC.m in Sources */,
-				187C404E19E11978000D1500 /* PoolHostCollectionVC.m in Sources */,
+				187C404E19E11978000D1500 /* HostCollectionVC.m in Sources */,
 				187C403819E111EE000D1500 /* BusinessContainerVC.m in Sources */,
 				187C402019E11118000D1500 /* DatacenterPoolCollectionVC.m in Sources */,
 				18A4D32C19B556BA00415896 /* main.m in Sources */,
 				18A4D3BD19B558E500415896 /* LoginVC.m in Sources */,
-				187C405419E119BB000D1500 /* PoolVmCollectionVC.m in Sources */,
+				187C405419E119BB000D1500 /* VmCollectionVC.m in Sources */,
 				18A4D3BE19B558E500415896 /* MasterCollectionCell.m in Sources */,
 				187C404519E1183B000D1500 /* DatacenterStorageMore.m in Sources */,
 				18A4D3D519B558E500415896 /* VmMigrateSelectHostListCell.m in Sources */,
@@ -831,7 +821,6 @@
 				18A4D3D019B558E500415896 /* VmCollectionCell.m in Sources */,
 				18A4D3CB19B558E500415896 /* PopWarningInfoCell.m in Sources */,
 				18A4D3CA19B558E500415896 /* PopOptionsVC.m in Sources */,
-				187C405719E119E0000D1500 /* HostStorageCollectionVC.m in Sources */,
 				187C403219E111C2000D1500 /* PoolContainerVC.m in Sources */,
 				18A4D3B819B558E500415896 /* DatacenterDetailInfoVC.m in Sources */,
 				18A4D3C319B558E500415896 /* NetworkCollectionCell.m in Sources */,
@@ -848,7 +837,7 @@
 				18A4D3D219B558E500415896 /* VmDetailInfoVC.m in Sources */,
 				18A4D3B719B558E500415896 /* BusinessDetailInfoVC.m in Sources */,
 				187C404219E11830000D1500 /* DatacenterHostMore.m in Sources */,
-				187C405119E11990000D1500 /* PoolStorageCollectionVC.m in Sources */,
+				187C405119E11990000D1500 /* StorageCollectionVC.m in Sources */,
 				18A4D3B919B558E500415896 /* DatacenterTableVC.m in Sources */,
 				187C405D19E11A2C000D1500 /* VmNetworkCollectionVC.m in Sources */,
 				187C404819E11846000D1500 /* DatacenterVmMore.m in Sources */,
@@ -856,7 +845,6 @@
 				18A4D3D319B558E500415896 /* VmDetailMemryConfigVC.m in Sources */,
 				187C402619E1113D000D1500 /* DatacenterBusinessCollectionVC.m in Sources */,
 				18A4D3C619B558E500415896 /* PoolDetailInfoVC.m in Sources */,
-				187C405A19E119EC000D1500 /* HostVmCollectionVC.m in Sources */,
 				18A4D3CF19B558E500415896 /* StorageDetailInfoVC.m in Sources */,
 				18A4D3CE19B558E500415896 /* StorageDetailDiskCell.m in Sources */,
 				187C401719E110CF000D1500 /* VmContainerVC.m in Sources */,

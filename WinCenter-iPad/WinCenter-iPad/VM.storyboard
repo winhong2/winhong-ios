@@ -1167,9 +1167,167 @@
             </objects>
             <point key="canvasLocation" x="8589" y="78"/>
         </scene>
+        <!--Vm CollectionVC-->
+        <scene sceneID="66i-PZ-fVS">
+            <objects>
+                <collectionViewController storyboardIdentifier="VmCollectionVC" autoresizesArchivedViewToFullSize="NO" id="SMm-bI-ssM" customClass="VmCollectionVC" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="sVH-FV-hSt">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="CZr-jN-dza">
+                            <size key="itemSize" width="300" height="190"/>
+                            <size key="headerReferenceSize" width="50" height="40"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="40" minY="5" maxX="40" maxY="5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VmCollectionCell" id="yow-ip-ceL" customClass="MasterCollectionCell">
+                                <rect key="frame" x="684" y="45" width="300" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="190"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-I1-vFB">
+                                            <rect key="frame" x="9" y="0.0" width="283" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="物理机1" translatesAutoresizingMaskIntoConstraints="NO" id="ozw-pU-pWh">
+                                            <rect key="frame" x="150" y="64" width="115" height="106"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="109" translatesAutoresizingMaskIntoConstraints="NO" id="5z3-P9-1WT">
+                                            <rect key="frame" x="129" y="129" width="156" height="41"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4e-7E-Zjm">
+                                            <rect key="frame" x="28" y="55" width="110" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vCPU：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2q-AF-5Gc">
+                                            <rect key="frame" x="28" y="77" width="48" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内存：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieV-lq-Trm">
+                                            <rect key="frame" x="28" y="98" width="48" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存储：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-Mo-aUL">
+                                            <rect key="frame" x="28" y="116" width="48" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMD-fh-15s">
+                                            <rect key="frame" x="74" y="98" width="69" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1N-Hy-fYB">
+                                            <rect key="frame" x="74" y="77" width="59" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="定点" translatesAutoresizingMaskIntoConstraints="NO" id="PoN-kM-yho">
+                                            <rect key="frame" x="9" y="58" width="16" height="16"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU颗数" translatesAutoresizingMaskIntoConstraints="NO" id="FEI-tr-Q7e">
+                                            <rect key="frame" x="9" y="80" width="16" height="16"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="内存" translatesAutoresizingMaskIntoConstraints="NO" id="fqZ-KR-vim">
+                                            <rect key="frame" x="9" y="101" width="16" height="16"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="内存" translatesAutoresizingMaskIntoConstraints="NO" id="34c-ap-cYD">
+                                            <rect key="frame" x="9" y="119" width="16" height="16"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbJ-nC-dAD">
+                                            <rect key="frame" x="74" y="116" width="69" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vh-OD-q1c">
+                                            <rect key="frame" x="9" y="150" width="134" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.36581819830000001" green="0.75707509569999998" blue="0.30308653149999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <size key="customSize" width="300" height="190"/>
+                                <connections>
+                                    <outlet property="label1" destination="c4e-7E-Zjm" id="mdM-IB-eEz"/>
+                                    <outlet property="label2" destination="t1N-Hy-fYB" id="rbu-fR-stN"/>
+                                    <outlet property="label3" destination="TMD-fh-15s" id="YGm-Wn-FY5"/>
+                                    <outlet property="label4" destination="FbJ-nC-dAD" id="OjN-xe-n0c"/>
+                                    <outlet property="osType" destination="5z3-P9-1WT" id="zVg-9l-ds8"/>
+                                    <outlet property="osType_image" destination="ozw-pU-pWh" id="sPF-tG-u7n"/>
+                                    <outlet property="status" destination="7vh-OD-q1c" id="0FD-F2-lNg"/>
+                                    <outlet property="title" destination="CAe-I1-vFB" id="kct-MF-Mbh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterCollectionHeader" id="rfD-gr-CfN" customClass="MasterCollectionHeader">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="40"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-t7-mN9">
+                                    <rect key="frame" x="0.0" y="10" width="1024" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分组标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMt-ep-11W">
+                                            <rect key="frame" x="53" y="-7" width="275" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8P-bh-tVD">
+                                            <rect key="frame" x="40" y="-2" width="5" height="25"/>
+                                            <color key="backgroundColor" red="0.16667238810000001" green="1" blue="0.24229795500000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <connections>
+                                <outlet property="titleLabel" destination="oMt-ep-11W" id="ZDH-4P-MfQ"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="SMm-bI-ssM" id="kXx-Rg-8E5"/>
+                            <outlet property="delegate" destination="SMm-bI-ssM" id="6ri-9R-kVG"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="ufN-u3-oRl"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHh-wC-GFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3373" y="-870"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CPU使用率图表" width="918" height="119"/>
+        <image name="CPU颗数" width="15" height="15"/>
         <image name="Network_virtual" width="36" height="36"/>
         <image name="disk_card" width="36" height="36"/>
         <image name="i 图标" width="32" height="26"/>
@@ -1180,12 +1338,15 @@
         <image name="tab-摘要" width="39" height="69"/>
         <image name="tab-摘要-selected" width="39" height="69"/>
         <image name="允许开机调整打勾" width="54" height="41"/>
+        <image name="内存" width="15" height="15"/>
         <image name="内存使用率图表" width="943" height="123"/>
         <image name="安全警报图标" width="32" height="26"/>
+        <image name="定点" width="15" height="15"/>
         <image name="工具图标" width="19" height="20"/>
         <image name="快照" width="51" height="46"/>
         <image name="快照箭头" width="17" height="32"/>
         <image name="新建虚拟机基础" width="64" height="58"/>
+        <image name="物理机1" width="115" height="106"/>
         <image name="磁盘吞吐率" width="945" height="124"/>
         <image name="空白按键" width="81" height="35"/>
         <image name="网络使用率图表" width="963" height="123"/>
