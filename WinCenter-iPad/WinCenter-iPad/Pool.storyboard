@@ -620,10 +620,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvR-2L-HaR">
-                                <rect key="frame" x="970" y="235" width="39" height="299"/>
+                                <rect key="frame" x="970" y="235" width="54" height="299"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8X-2F-azn">
-                                        <rect key="frame" x="0.0" y="0.0" width="39" height="69"/>
+                                        <rect key="frame" x="10" y="0.0" width="39" height="69"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="tab-摘要">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -635,9 +635,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azz-PF-JTq">
-                                        <rect key="frame" x="0.0" y="68" width="39" height="82"/>
+                                        <rect key="frame" x="10" y="68" width="39" height="82"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="物理机" image="tab-物理机">
+                                        <state key="normal" image="tab-物理机">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
@@ -647,25 +647,25 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oya-B9-1cR">
-                                        <rect key="frame" x="0.0" y="149" width="39" height="69"/>
+                                        <rect key="frame" x="10" y="149" width="39" height="82"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="存储池" image="tab-存储">
+                                        <state key="normal" image="tab-虚拟机">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="tab-存储-selected"/>
+                                        <state key="selected" image="tab-虚拟机-selected"/>
                                         <connections>
                                             <action selector="showPageButtonClick:" destination="4Ve-tC-ML6" eventType="touchUpInside" id="iSb-Oz-kNs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-if-V1Z">
-                                        <rect key="frame" x="0.0" y="217" width="39" height="82"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-if-V1Z" userLabel="存储">
+                                        <rect key="frame" x="10" y="230" width="39" height="69"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="物理机" image="tab-物理机">
+                                        <state key="normal" image="tab-存储">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="tab-物理机-selected"/>
+                                        <state key="selected" image="tab-存储-selected"/>
                                         <connections>
                                             <action selector="showPageButtonClick:" destination="4Ve-tC-ML6" eventType="touchUpInside" id="lsK-Rc-DPs"/>
                                         </connections>
@@ -1073,6 +1073,8 @@
         <image name="tab-摘要-selected" width="39" height="69"/>
         <image name="tab-物理机" width="39" height="82"/>
         <image name="tab-物理机-selected" width="39" height="82"/>
+        <image name="tab-虚拟机" width="39" height="82"/>
+        <image name="tab-虚拟机-selected" width="39" height="82"/>
         <image name="内存" width="15" height="15"/>
         <image name="安全警报图标" width="32" height="26"/>
         <image name="定点" width="15" height="15"/>

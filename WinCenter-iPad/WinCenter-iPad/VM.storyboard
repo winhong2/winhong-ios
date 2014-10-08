@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rda-j3-bYj">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -763,10 +764,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Co-wm-dHp">
-                                <rect key="frame" x="970" y="282" width="39" height="205"/>
+                                <rect key="frame" x="970" y="282" width="54" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbt-8z-5mB">
-                                        <rect key="frame" x="0.0" y="0.0" width="39" height="69"/>
+                                        <rect key="frame" x="10" y="0.0" width="39" height="69"/>
                                         <state key="normal" image="tab-摘要">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -776,17 +777,27 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Iw-lo-4J5">
-                                        <rect key="frame" x="0.0" y="68" width="39" height="69"/>
-                                        <state key="normal" image="tab-性能">
+                                        <rect key="frame" x="10" y="68" width="39" height="104"/>
+                                        <state key="normal" image="tab-网络连接">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="tab-性能-selected"/>
+                                        <state key="selected" image="tab-网络连接-selected"/>
                                         <connections>
                                             <action selector="showPageButtonClick:" destination="rda-j3-bYj" eventType="touchUpInside" id="tzZ-uD-PRY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-La-F4w">
-                                        <rect key="frame" x="0.0" y="136" width="39" height="69"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALl-HM-Qtd">
+                                        <rect key="frame" x="10" y="171" width="39" height="69"/>
+                                        <state key="normal" image="tab-存储">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-存储-selected"/>
+                                        <connections>
+                                            <action selector="showPageButtonClick:" destination="rda-j3-bYj" eventType="touchUpInside" id="URl-L8-Vqk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-La-F4w">
+                                        <rect key="frame" x="10" y="239" width="39" height="69"/>
                                         <state key="normal" image="tab-快照">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -835,7 +846,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tD-Tm-kMS">
-                                        <rect key="frame" x="5" y="137" width="81" height="36"/>
+                                        <rect key="frame" x="5" y="137" width="82" height="36"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <size key="titleShadowOffset" width="4" height="10"/>
                                         <state key="normal" title="迁移" backgroundImage="空白按键">
@@ -1173,12 +1184,14 @@
         <image name="Network_virtual" width="36" height="36"/>
         <image name="disk_card" width="36" height="36"/>
         <image name="i 图标" width="32" height="26"/>
+        <image name="tab-存储" width="39" height="69"/>
+        <image name="tab-存储-selected" width="39" height="69"/>
         <image name="tab-快照" width="39" height="69"/>
         <image name="tab-快照-selected" width="39" height="69"/>
-        <image name="tab-性能" width="39" height="69"/>
-        <image name="tab-性能-selected" width="39" height="69"/>
         <image name="tab-摘要" width="39" height="69"/>
         <image name="tab-摘要-selected" width="39" height="69"/>
+        <image name="tab-网络连接" width="39" height="104"/>
+        <image name="tab-网络连接-selected" width="39" height="104"/>
         <image name="允许开机调整打勾" width="54" height="41"/>
         <image name="内存使用率图表" width="943" height="123"/>
         <image name="安全警报图标" width="32" height="26"/>
