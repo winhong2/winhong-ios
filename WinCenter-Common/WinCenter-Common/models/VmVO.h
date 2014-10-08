@@ -12,6 +12,7 @@
 
 @property NSString *isInstallTools;
 @property int runTime;
+@property NSString *createDate;
 
 @property BOOL isDynamicCpu;
 @property BOOL isDynamicMemWce;
