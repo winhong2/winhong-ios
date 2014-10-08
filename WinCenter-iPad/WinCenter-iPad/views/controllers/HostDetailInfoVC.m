@@ -24,16 +24,23 @@
 @property (weak, nonatomic) IBOutlet UILabel *cpuUnitUsedCount;
 @property (weak, nonatomic) IBOutlet UILabel *cpuUnitUnusedCount;
 @property (weak, nonatomic) IBOutlet UILabel *cpuRatio;
+@property (weak, nonatomic) IBOutlet UIView *cpuChartGroup;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *memorySize;
 @property (weak, nonatomic) IBOutlet UILabel *memoryUsedSize;
 @property (weak, nonatomic) IBOutlet UILabel *memoryUnusedSize;
 @property (weak, nonatomic) IBOutlet UILabel *memoryRatio;
+@property (weak, nonatomic) IBOutlet UIView *memoryChartGroup;
 
 @property (weak, nonatomic) IBOutlet UILabel *storageSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageUsedSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageUnusedSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageRatio;
+@property (weak, nonatomic) IBOutlet UIView *storageChartGroup;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *osType;
 
 @end
 
@@ -52,33 +59,30 @@
 {
     self.view.backgroundColor = [UIColor clearColor];
     [super viewDidLoad];
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getHostDetailUrl, self.datacenterVO.id, self.baseObject.hostId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.baseObject = [[HostVO alloc] initWithJSONData:jsonResponse.rawBody];
-        [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
+    
+    [self.hostVO getHostVOAsync:^(id object, NSError *error) {
+        self.hostVO = object;
+        [self refreshMainInfo];
     }];
     
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getHostStatUrl, self.datacenterVO.id, self.baseObject.hostId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.statVO = [[HostStatVO alloc] initWithJSONData:jsonResponse.rawBody];
-        [self performSelectorOnMainThread:@selector(refreshStatInfo) withObject:nil waitUntilDone:NO];
+    [self.hostVO getHostStatVOAsync:^(id object, NSError *error) {
+        self.statVO = object;
+        [self refreshStatInfo];
     }];
 }
 
 - (void)refreshMainInfo{
-    self.virtualMachineNum.text = [NSString stringWithFormat:@"%d", self.baseObject.virtualMachineNum];
+    self.virtualMachineNum.text = [NSString stringWithFormat:@"%d", self.hostVO.virtualMachineNum];
     //self.activeMachineNum.text = [NSString stringWithFormat:@"%d", 0];
-    self.networkNum.text = [NSString stringWithFormat:@"%d", self.baseObject.networkNum];
-    self.startRunTime.text = [NSString stringWithFormat:@"%d", self.baseObject.startRunTime];
-    self.virtualInfo.text = [NSString stringWithFormat:@"%@ %@", self.baseObject.virtualSoftware, self.baseObject.virtualVersion];
-    self.virtualDate.text = [NSString stringWithFormat:@"%@", self.baseObject.versionDate];
-    self.cpuSpeed.text = [NSString stringWithFormat:@"%dMHz", self.baseObject.cpuSpeed];
-    self.model.text = [NSString stringWithFormat:@"%@", self.baseObject.model];
-    self.vendor.text = [NSString stringWithFormat:@"%@", self.baseObject.vendor];
-    self.cpuSlots.text = [NSString stringWithFormat:@"%d颗", self.baseObject.cpuSlots];
-    self.cpu.text = [NSString stringWithFormat:@"%d个", self.baseObject.cpu];
+    self.networkNum.text = [NSString stringWithFormat:@"%d", self.hostVO.networkNum];
+    self.startRunTime.text = [NSString stringWithFormat:@"%d", self.hostVO.startRunTime];
+    self.virtualInfo.text = [NSString stringWithFormat:@"%@ %@", self.hostVO.virtualSoftware, self.hostVO.virtualVersion];
+    self.virtualDate.text = [NSString stringWithFormat:@"%@", self.hostVO.versionDate];
+    self.cpuSpeed.text = [NSString stringWithFormat:@"%dMHz", self.hostVO.cpuSpeed];
+    self.model.text = [NSString stringWithFormat:@"%@", self.hostVO.model];
+    self.vendor.text = [NSString stringWithFormat:@"%@", self.hostVO.vendor];
+    self.cpuSlots.text = [NSString stringWithFormat:@"%d颗", self.hostVO.cpuSlots];
+    self.cpu.text = [NSString stringWithFormat:@"%d个", self.hostVO.cpu];
     
 }
 - (void)refreshStatInfo{
@@ -96,23 +100,29 @@
     self.storageUsedSize.text = [NSString stringWithFormat:@"%.2fTB", self.statVO.usedStorage/1024.0];
     self.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fTB", (self.statVO.totalStorage-self.statVO.usedStorage)/1024.0];
     self.storageRatio.text = [NSString stringWithFormat:@"%.0f%%", self.statVO.usedStorage/self.statVO.totalStorage*100];
+    
+    //圈图
+    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO cpuRatio]] andClockwise:YES andShadow:YES];
+    circleChart.backgroundColor = [UIColor clearColor];
+    circleChart.labelColor = [UIColor clearColor];
+    [circleChart setStrokeColor:[self.statVO cpuRatioColor]];
+    [circleChart strokeChart];
+    [self.cpuChartGroup addSubview:circleChart];
+    
+    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO memoryRatio]] andClockwise:YES andShadow:YES];
+    circleChart2.backgroundColor = [UIColor clearColor];
+    circleChart2.labelColor = [UIColor clearColor];
+    [circleChart2 setStrokeColor:[self.statVO memoryRatioColor]];
+    [circleChart2 strokeChart];
+    [self.memoryChartGroup addSubview:circleChart2];
+    
+    PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:self.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO storageRatio]] andClockwise:YES andShadow:YES];
+    circleChart3.backgroundColor = [UIColor clearColor];
+    circleChart3.labelColor = [UIColor clearColor];
+    [circleChart3 setStrokeColor:[self.statVO storageRatioColor]];
+    [circleChart3 strokeChart];
+    [self.storageChartGroup addSubview:circleChart3];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

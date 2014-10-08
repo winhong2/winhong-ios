@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *type;
 @property (weak, nonatomic) IBOutlet UILabel *status;
 @property (weak, nonatomic) IBOutlet UILabel *share;
+@property (weak, nonatomic) IBOutlet UIImageView *share_image;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
 @property (weak, nonatomic) IBOutlet UILabel *label3;
@@ -21,5 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *label5;
 @property (weak, nonatomic) IBOutlet UILabel *label6;
 @property (weak, nonatomic) IBOutlet UILabel *osType;
+@property (weak, nonatomic) IBOutlet UIImageView *osType_image;
+@property (weak, nonatomic) IBOutlet UIImageView *linkState;
+@property (weak, nonatomic) IBOutlet UIImageView *type_image;
 
 @end

@@ -10,8 +10,7 @@
 
 @interface VmDetailInfoVC : UIViewController
 
-@property DatacenterVO *datacenterVO;
-@property VmVO *baseObject;
+@property VmVO *vmVO;
 
 
 @end

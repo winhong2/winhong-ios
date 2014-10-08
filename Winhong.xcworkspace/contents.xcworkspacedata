@@ -14,6 +14,9 @@
       location = "group:LightApp-iPhone/LightApp-iPhone.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:WinCenter-Common/WinCenter-Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:WinCenter-iPad/WinCenter-iPad.xcodeproj">
    </FileRef>
    <FileRef

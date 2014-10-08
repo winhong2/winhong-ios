@@ -10,8 +10,7 @@
 
 @interface StorageDetailInfoVC : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property DatacenterVO *datacenterVO;
-@property StorageVO *baseObject;
+@property StorageVO *storageVO;
 @property NSArray *dataList;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UILabel *collectionHeader;

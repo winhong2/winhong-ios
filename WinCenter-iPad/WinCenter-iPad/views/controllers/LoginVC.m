@@ -7,7 +7,7 @@
 //
 
 #import "LoginVC.h"
-#import "LoginResult.h"
+#import "UserListResult.h"
 #import "MasterContainerVC.h"
 
 @interface LoginVC ()
@@ -16,21 +16,8 @@
 
 @implementation LoginVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initializationeryteryt
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
-    if([[[NSUserDefaults standardUserDefaults] stringForKey:@"SERVER_ROOT"] isEqualToString:@""]){
-        [[NSUserDefaults standardUserDefaults] setValue:@"https://192.168.100.146:8090" forKey:@"SERVER_ROOT"];
-    }
-
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"login%d", rand()%2+1]]];
     imageView.frame = [[UIScreen mainScreen] bounds];
     
@@ -46,15 +33,17 @@
     [self.password resignFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
+}
+- (IBAction)enjoyAction:(id)sender {
+    [self.userName resignFirstResponder];
+    [self.password resignFirstResponder];
+    
+    [[NSUserDefaults standardUserDefaults] setValue:@"true" forKey:@"isDemo"];
+    [[NSUserDefaults standardUserDefaults] setValue:@"SUCCESS" forKey:@"LOGIN_STATE"];
+    [self toLogin];
 }
 
 - (IBAction)loginAction:(id)sender {
@@ -69,57 +58,24 @@
     }
     
     if ([msg isEqualToString:@""]) {
-
-        [[NSUserDefaults standardUserDefaults] setValue:@"FAILED" forKey:@"LOGIN_STATE"];
+        [[NSUserDefaults standardUserDefaults] setValue:@"false" forKey:@"isDemo"];
         
-        [[UNIRest post:^(UNISimpleRequest *simpleRequest) {
-            [simpleRequest setUrl:postLoginUrl];
-            [simpleRequest setParameters:@{@"userName":self.userName.text, @"password":self.password.text}];
-        }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                if([[[NSUserDefaults standardUserDefaults] stringForKey:@"LOGIN_STATE"] isEqualToString:@"SUCCESS"]){
-                    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-                        [simpleRequest setUrl:getDatacenterListUrl];
-                    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-                        DatacenterListResult *result = [[DatacenterListResult alloc] initWithJSONData:jsonResponse.rawBody];
-                        self.datacenters = result.dataCenters;
-                        
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            [self performSegueWithIdentifier:@"toLogin" sender:self];
-                        });
-                        
-                    }];
-                }else{
-                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:@"用户名或密码错误！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-                    [alert show];
-                }
-            });
-            
+        [LoginVO login:self.userName.text withPassword:self.password.text withSucceedBlock:^(NSError *error){
+            [self toLogin];
+        } withFailedBlock:^(NSError *error){
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:@"用户名或密码错误！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
         }];
-  
     }else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
     }
 }
 
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    [self.userName resignFirstResponder];
-    [self.password resignFirstResponder];
-    
-    if([segue.identifier isEqualToString:@"toLogin"]){
-        MasterContainerVC *vc = ((UINavigationController *)segue.destinationViewController).viewControllers[0];
-        if(self.datacenters.count>0){
-            vc.datacenterVO = [self.datacenters firstObject];
-            vc.baseObject = [self.datacenters firstObject];
-        }
-    }
+- (void) toLogin{
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateInitialViewController];
+    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (IBAction)backToLogin:(UIStoryboardSegue*)segue{

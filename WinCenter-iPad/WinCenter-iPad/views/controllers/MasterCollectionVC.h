@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterCollectionVC : UICollectionViewController
-@property DatacenterVO *datacenterVO;
-@property PoolVO *poolVO;
-@property BaseObject *baseObject;
 
-@property MasterCollectionType pageType;
-@property NSString *cellIdentifier;
-@property NSString *cellHeader;
+@property NSMutableDictionary *pools;
+@property NSMutableDictionary *pools_needMoreButton;
+@property NSMutableDictionary *dataList;
+
+-(void)reloadData;
 
 @end

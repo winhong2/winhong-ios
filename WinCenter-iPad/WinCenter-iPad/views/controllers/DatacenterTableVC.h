@@ -17,6 +17,5 @@
 @interface DatacenterTableVC : UITableViewController
 
 @property (weak, nonatomic) id <DatacenterTableVCDelegate> delegate;
-@property DatacenterVO *datacenterVO;
 
 @end

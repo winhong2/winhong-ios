@@ -37,7 +37,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getControlRecordUrl]];
+        [simpleRequest setUrl:[NSString stringWithFormat:@"/restServlet?connectorId=1&apiKey=pc.winserver.task.getList&params=firstResult%%3D0%%26maxResult%%3D12"]];
     }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
         self.dataList = [[ControlRecordListResult alloc] initWithJSONData:jsonResponse.rawBody].tasks;
         [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
@@ -155,7 +155,7 @@
 //        default:
 //            break;
 //    }
-    return 90;
+    return 75;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return @"";
