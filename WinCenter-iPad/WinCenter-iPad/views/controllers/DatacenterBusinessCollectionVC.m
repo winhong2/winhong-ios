@@ -47,7 +47,7 @@
     if(header){
         header.titleHintView.hidden = YES;
         header.titleLabel.hidden = YES;
-        //header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
     }
     
     return header;
