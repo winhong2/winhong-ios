@@ -8,9 +8,9 @@
 
 #import "PoolContainerVC.h"
 #import "PoolDetailInfoVC.h"
-#import "PoolHostCollectionVC.h"
-#import "PoolVmCollectionVC.h"
-#import "PoolStorageCollectionVC.h"
+#import "HostCollectionVC.h"
+#import "VmCollectionVC.h"
+#import "StorageCollectionVC.h"
 
 @implementation PoolContainerVC
 
@@ -24,15 +24,15 @@
     detailVC.poolVO = self.poolVO;
     [pages addObject:detailVC];
     
-    PoolHostCollectionVC *poolHostCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PoolHostCollectionVC"];
+    HostCollectionVC *poolHostCollectionVC = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateViewControllerWithIdentifier:@"HostCollectionVC"];
     poolHostCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolHostCollectionVC];
     
-    PoolVmCollectionVC *poolVmCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PoolVmCollectionVC"];
+    VmCollectionVC *poolVmCollectionVC = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateViewControllerWithIdentifier:@"VmCollectionVC"];
     poolVmCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolVmCollectionVC];
     
-    PoolStorageCollectionVC *poolStorageCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PoolStorageCollectionVC"];
+    StorageCollectionVC *poolStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
     poolStorageCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolStorageCollectionVC];
     

@@ -1,15 +1,16 @@
 //
-//  HostStorageCollectionVC.h
+//  PoolStorageCollectionVC.h
 //  WinCenter-iPad
 //
 //  Created by apple on 14-10-5.
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "PoolStorageCollectionVC.h"
+#import "MasterCollectionVC.h"
 
-@interface HostStorageCollectionVC : PoolStorageCollectionVC
+@interface StorageCollectionVC : MasterCollectionVC
 
+@property PoolVO *poolVO;
 @property HostVO *hostVO;
 
 @end

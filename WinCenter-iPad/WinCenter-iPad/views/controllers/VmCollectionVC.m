@@ -6,28 +6,30 @@
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "PoolVmCollectionVC.h"
+#import "VmCollectionVC.h"
 #import "MasterCollectionCell.h"
 #import "MasterCollectionHeader.h"
 #import "VmContainerVC.h"
 
-@implementation PoolVmCollectionVC
-
--(void)viewDidLoad{
-    [super viewDidLoad];
-    self.cellIdentifier = @"PoolVmCollectionCell";    
-}
+@implementation VmCollectionVC
 
 -(void)reloadData{
-    [self.poolVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
-        [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
-        [self.collectionView reloadData];
-    }];
+    if(self.poolVO){
+        [self.poolVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
+            [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
+            [self.collectionView reloadData];
+        }];
+    }else{
+        [self.hostVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
+            [self.dataList setValue:allRemote forKey:self.hostVO.hostName];
+            [self.collectionView reloadData];
+        }];
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    MasterCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.cellIdentifier forIndexPath:indexPath];
+    MasterCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"VmCollectionCell" forIndexPath:indexPath];
     
     VmVO *vmVO = (VmVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
     cell.title.text = vmVO.name;

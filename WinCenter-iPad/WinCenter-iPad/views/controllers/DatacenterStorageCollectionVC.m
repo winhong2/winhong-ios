@@ -64,15 +64,15 @@
     cell.label1.text = [NSString stringWithFormat:@"%.2fGB剩余,共%.2fGB", storageVO.availStorage, storageVO.totalStorage];
     cell.label2.text = [NSString stringWithFormat:@"%d个", storageVO.volumeNum];
     cell.status.text = [storageVO state_text];
-    //cell.share.text = [storageVO shared_text];
+    cell.status.textColor = [storageVO state_color];
     cell.share_image.hidden = [storageVO.shared isEqualToString:@"false"];
     cell.progress.progress = (storageVO.totalStorage-storageVO.availStorage)/storageVO.totalStorage;
     if(cell.progress.progress>0.8){
-        cell.progress.progressTintColor = [UIColor redColor];
+        cell.progress.progressTintColor = PNRed;
     }else if(cell.progress.progress>0.6){
-        cell.progress.progressTintColor = [UIColor yellowColor];
+        cell.progress.progressTintColor = PNYellow;
     }else{
-        cell.progress.progressTintColor = [UIColor greenColor];
+        cell.progress.progressTintColor = PNGreen;
     }
     return cell;
 }

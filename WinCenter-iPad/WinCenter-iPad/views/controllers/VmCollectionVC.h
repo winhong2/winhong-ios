@@ -8,9 +8,9 @@
 
 #import "MasterCollectionVC.h"
 
-@interface PoolVmCollectionVC : MasterCollectionVC
+@interface VmCollectionVC : MasterCollectionVC
 
 @property PoolVO *poolVO;
-@property NSString *cellIdentifier;
+@property HostVO *hostVO;
 
 @end

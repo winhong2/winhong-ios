@@ -10,12 +10,29 @@
 
 @interface DatacenterStatWinserver : NSObject
 
-@property int resPoolNumber;//from json
-@property int hostNubmer;//from json
-@property int vmNumber;//from json
-@property int physicalCpuNumber;//from json
-@property float memorySize;//from json
-@property float storageSize;//from json
+@property int resPoolNumber;
+@property int hostNubmer;
+@property int vmNumber;
 @property int appNumber;
+
+@property float totalCpu;
+@property float totalMemory;
+@property float totalStorage;
+@property float availCpu;
+@property float availMemory;
+@property float availStorage;
+
+
+-(float)cpuRatio;
+
+-(UIColor *)cpuRatioColor;
+
+-(float)memoryRatio;
+
+-(UIColor *)memoryRatioColor;
+
+-(float)storageRatio;
+
+-(UIColor *)storageRatioColor;
 
 @end

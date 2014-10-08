@@ -6,12 +6,12 @@
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "PoolHostCollectionVC.h"
+#import "HostCollectionVC.h"
 #import "MasterCollectionCell.h"
 #import "MasterCollectionHeader.h"
 #import "HostContainerVC.h"
 
-@implementation PoolHostCollectionVC
+@implementation HostCollectionVC
 
 -(void)reloadData{
     [self.poolVO getHostListAsync:^(NSArray *allRemote, NSError *error) {
@@ -22,7 +22,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    MasterCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PoolHostCollectionCell" forIndexPath:indexPath];
+    MasterCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HostCollectionCell" forIndexPath:indexPath];
     
     HostVO *hostVO = (HostVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
     cell.title.text = hostVO.hostName;

@@ -1,5 +1,5 @@
 //
-//  PoolStorageCollectionVC.h
+//  PoolHostCollectionVC.h
 //  WinCenter-iPad
 //
 //  Created by apple on 14-10-5.
@@ -8,9 +8,8 @@
 
 #import "MasterCollectionVC.h"
 
-@interface PoolStorageCollectionVC : MasterCollectionVC
+@interface HostCollectionVC : MasterCollectionVC
 
 @property PoolVO *poolVO;
-@property NSString *cellIdentifier;
 
 @end

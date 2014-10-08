@@ -68,11 +68,11 @@
 
 - (UIColor *)state_color{
     if([self.state isEqualToString:@"OK"]){
-        return [UIColor greenColor];
+        return PNGreen;
     }else if([self.state isEqualToString:@"STOPPED"]){
         return [UIColor lightGrayColor];
     }else{
-        return [UIColor yellowColor];
+        return PNYellow;
     }
 }
 
