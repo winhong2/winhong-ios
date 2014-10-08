@@ -10,8 +10,7 @@
 
 @interface PoolDetailInfoVC : UIViewController
 
-@property DatacenterVO *datacenterVO;
-@property PoolVO *baseObject;
+@property PoolVO *poolVO;
 @property PoolElasticInfo *elasticInfo;
 
 @end

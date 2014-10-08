@@ -64,64 +64,60 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getPoolDetailUrl, self.datacenterVO.id, self.baseObject.resourcePoolId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.baseObject = [[PoolVO alloc] initWithJSONData:jsonResponse.rawBody];
-        [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
+    [self.poolVO getPoolVOAsync:^(id object, NSError *error) {
+        self.poolVO = object;
+        [self refreshMainInfo];
     }];
     
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getPoolElasticUrl, self.datacenterVO.id, self.baseObject.resourcePoolId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.elasticInfo = [[PoolElasticInfo alloc] initWithJSONData:jsonResponse.rawBody];
-        [self performSelectorOnMainThread:@selector(refreshElasticInfo) withObject:nil waitUntilDone:NO];
+    [self.poolVO getPoolElasticAsync:^(id object, NSError *error) {
+        self.elasticInfo = object;
+        [self refreshElasticInfo];
     }];
     
 }
 
 - (void)refreshMainInfo{
-    self.hostCount.text = [NSString stringWithFormat:@"%d", self.baseObject.hostNumber];
-    self.vmCount.text = [NSString stringWithFormat:@"%d", self.baseObject.vmNumber];
+    self.hostCount.text = [NSString stringWithFormat:@"%d", self.poolVO.hostNumber];
+    self.vmCount.text = [NSString stringWithFormat:@"%d", self.poolVO.vmNumber];
     
-    self.cpuUnitCount.text = [NSString stringWithFormat:@"%.2fGHz", self.baseObject.totalCpu/1000.0];
-    self.cpuUnitUsedCount.text = [NSString stringWithFormat:@"%.2fGHz", (self.baseObject.totalCpu-self.baseObject.availCpu)/1000.0];
-    self.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz", self.baseObject.availCpu/1000.0];
-    self.cpuRatio.text = [NSString stringWithFormat:@"%.0f%%", [self.baseObject cpuRatio]];
+    self.cpuUnitCount.text = [NSString stringWithFormat:@"%.2fGHz", self.poolVO.totalCpu/1000.0];
+    self.cpuUnitUsedCount.text = [NSString stringWithFormat:@"%.2fGHz", (self.poolVO.totalCpu-self.poolVO.availCpu)/1000.0];
+    self.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz", self.poolVO.availCpu/1000.0];
+    self.cpuRatio.text = [NSString stringWithFormat:@"%.0f%%", [self.poolVO cpuRatio]];
     
-    self.memorySize.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalMemory/1024.0];
-    self.memoryUsedSize.text = [NSString stringWithFormat:@"%.2fGB", (self.baseObject.totalMemory-self.baseObject.availMemory)/1024.0];
-    self.memoryUnusedSize.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.availMemory/1024.0];
-    self.memoryRatio.text = [NSString stringWithFormat:@"%.0f%%", (self.baseObject.totalMemory-self.baseObject.availMemory)/self.baseObject.totalMemory*100];
+    self.memorySize.text = [NSString stringWithFormat:@"%.2fGB", self.poolVO.totalMemory/1024.0];
+    self.memoryUsedSize.text = [NSString stringWithFormat:@"%.2fGB", (self.poolVO.totalMemory-self.poolVO.availMemory)/1024.0];
+    self.memoryUnusedSize.text = [NSString stringWithFormat:@"%.2fGB", self.poolVO.availMemory/1024.0];
+    self.memoryRatio.text = [NSString stringWithFormat:@"%.0f%%", (self.poolVO.totalMemory-self.poolVO.availMemory)/self.poolVO.totalMemory*100];
     
-    self.storageSize.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalStorage/1024.0];
-    self.storageUsedSize.text = [NSString stringWithFormat:@"%.2fGB", (self.baseObject.totalStorage - self.baseObject.availStorage)/1024.0];
-    self.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.availStorage/1024.0];
-    self.storageRatio.text = [NSString stringWithFormat:@"%.0f%%", (self.baseObject.totalStorage-self.baseObject.availStorage)/self.baseObject.totalStorage*100];
+    self.storageSize.text = [NSString stringWithFormat:@"%.2fGB", self.poolVO.totalStorage/1024.0];
+    self.storageUsedSize.text = [NSString stringWithFormat:@"%.2fGB", (self.poolVO.totalStorage - self.poolVO.availStorage)/1024.0];
+    self.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fGB", self.poolVO.availStorage/1024.0];
+    self.storageRatio.text = [NSString stringWithFormat:@"%.0f%%", (self.poolVO.totalStorage-self.poolVO.availStorage)/self.poolVO.totalStorage*100];
     
-    //self.haErrorHostCount.text = self.baseObject.haErrorHostCount;
-    //self.haSignalNetwork.text = self.baseObject.haSignalNetwork;
-    //self.haSignalPool.text = self.baseObject.haSignalPool;
+    //self.haErrorHostCount.text = self.poolVO.haErrorHostCount;
+    //self.haSignalNetwork.text = self.poolVO.haSignalNetwork;
+    //self.haSignalPool.text = self.poolVO.haSignalPool;
     //圈图
-    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject cpuRatio]] andClockwise:YES andShadow:YES];
+    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.poolVO cpuRatio]] andClockwise:YES andShadow:YES];
     circleChart.backgroundColor = [UIColor clearColor];
     circleChart.labelColor = [UIColor clearColor];
-    [circleChart setStrokeColor:[self.baseObject cpuRatioColor]];
+    [circleChart setStrokeColor:[self.poolVO cpuRatioColor]];
     [circleChart strokeChart];
     [self.cpuChartGroup addSubview:circleChart];
     
     
-    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject memoryRatio]] andClockwise:YES andShadow:YES];
+    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.poolVO memoryRatio]] andClockwise:YES andShadow:YES];
     circleChart2.backgroundColor = [UIColor clearColor];
     circleChart2.labelColor = [UIColor clearColor];
-    [circleChart2 setStrokeColor:[self.baseObject memoryRatioColor]];
+    [circleChart2 setStrokeColor:[self.poolVO memoryRatioColor]];
     [circleChart2 strokeChart];
     [self.memoryChartGroup addSubview:circleChart2];
     
-    PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:self.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject storageRatio]] andClockwise:YES andShadow:YES];
+    PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:self.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.poolVO storageRatio]] andClockwise:YES andShadow:YES];
     circleChart3.backgroundColor = [UIColor clearColor];
     circleChart3.labelColor = [UIColor clearColor];
-    [circleChart3 setStrokeColor:[self.baseObject storageRatioColor]];
+    [circleChart3 setStrokeColor:[self.poolVO storageRatioColor]];
     [circleChart3 strokeChart];
     [self.storageChartGroup addSubview:circleChart3];
     
@@ -133,24 +129,5 @@
     self.intervalTime.text = [self.elasticInfo intervalTime_text];
     self.nextCheckTime.text = [self.elasticInfo.nextStartTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 
 @end

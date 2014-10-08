@@ -42,33 +42,9 @@
 #define COCOAPODS_VERSION_MINOR_CocoaSecurity 2
 #define COCOAPODS_VERSION_PATCH_CocoaSecurity 4
 
-// NSObject-ObjectMap
-#define COCOAPODS_POD_AVAILABLE_NSObject_ObjectMap
-#define COCOAPODS_VERSION_MAJOR_NSObject_ObjectMap 2
-#define COCOAPODS_VERSION_MINOR_NSObject_ObjectMap 3
-#define COCOAPODS_VERSION_PATCH_NSObject_ObjectMap 1
-
-// PNChart
-#define COCOAPODS_POD_AVAILABLE_PNChart
-#define COCOAPODS_VERSION_MAJOR_PNChart 0
-#define COCOAPODS_VERSION_MINOR_PNChart 5
-#define COCOAPODS_VERSION_PATCH_PNChart 0
-
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3
 #define COCOAPODS_VERSION_MINOR_Reachability 1
 #define COCOAPODS_VERSION_PATCH_Reachability 1
-
-// UICountingLabel
-#define COCOAPODS_POD_AVAILABLE_UICountingLabel
-#define COCOAPODS_VERSION_MAJOR_UICountingLabel 1
-#define COCOAPODS_VERSION_MINOR_UICountingLabel 0
-#define COCOAPODS_VERSION_PATCH_UICountingLabel 0
-
-// Unirest
-#define COCOAPODS_POD_AVAILABLE_Unirest
-#define COCOAPODS_VERSION_MAJOR_Unirest 1
-#define COCOAPODS_VERSION_MINOR_Unirest 1
-#define COCOAPODS_VERSION_PATCH_Unirest 3
 

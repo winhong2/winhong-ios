@@ -11,7 +11,6 @@
 @interface BusinessDetailInfoVC : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *collectionHeader;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property DatacenterVO *datacenterVO;
-@property BusinessVO *baseObject;
+@property BusinessVO *businessVO;
 @property NSArray *dataList;
 @end

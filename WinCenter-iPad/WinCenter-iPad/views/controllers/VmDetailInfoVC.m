@@ -24,54 +24,27 @@
 
 @implementation VmDetailInfoVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor clearColor];
     [super viewDidLoad];
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getVmDetailUrl, self.datacenterVO.id, self.baseObject.vmId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.baseObject = [[VmVO alloc] initWithJSONData:jsonResponse.rawBody];
-        [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
+    
+    [self.vmVO getVmVOAsync:^(id object, NSError *error) {
+        self.vmVO = object;
+        [self refresh];
     }];
 }
 - (void)refresh{
-    self.osType.text = self.baseObject.osType;
-    self.isInstalledTool.text = [self.baseObject isInstallTools_text];
-    self.runningTime.text = [NSString stringWithFormat:@"%d", self.baseObject.runTime];
-    self.vcpu.text = [NSString stringWithFormat:@"%d", self.baseObject.vcpu];
+    self.osType.text = self.vmVO.osType;
+    self.isInstalledTool.text = [self.vmVO isInstallTools_text];
+    self.runningTime.text = [NSString stringWithFormat:@"%d", self.vmVO.runTime];
+    self.vcpu.text = [NSString stringWithFormat:@"%d", self.vmVO.vcpu];
     //self.isDynamicCPU
-    self.memoryType.text = self.baseObject.memoryType;
+    self.memoryType.text = self.vmVO.memoryType;
     //self.isDynamicMemWce
-    self.memory.text = [NSString stringWithFormat:@"%d", self.baseObject.memory];
+    self.memory.text = [NSString stringWithFormat:@"%d", self.vmVO.memory];
     //self.snopshotNum.text
-    self.osType_image.image = [UIImage imageNamed:[self.baseObject osType_imageName]];
-    
+    self.osType_image.image = [UIImage imageNamed:[self.vmVO osType_imageName]];
 }
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

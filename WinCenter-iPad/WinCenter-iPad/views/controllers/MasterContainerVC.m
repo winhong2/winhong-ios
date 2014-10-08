@@ -17,57 +17,13 @@
 #import "VmDetailInfoVC.h"
 #import "VmDetailSnapshootVC.h"
 @interface MasterContainerVC ()
-@property UIPopoverController *popover;
-
-@property (weak, nonatomic) IBOutlet UIImageView *bgImage;
-
-@property (weak, nonatomic) IBOutlet UIView *vmControlButtons;
-@property (weak, nonatomic) IBOutlet UILabel *pathLabel;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *ipLabel;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property (weak, nonatomic) IBOutlet UIButton *btnCreateVM;
-@property (weak, nonatomic) IBOutlet UIButton *btnOperation;
-@property (weak, nonatomic) IBOutlet UIView *segmentView_pool;
-@property (weak, nonatomic) IBOutlet UIView *segmentView_host;
-@property (weak, nonatomic) IBOutlet UIView *segmentView_vm;
-@property (weak, nonatomic) IBOutlet UIButton *buttonConfig;
-@property (weak, nonatomic) IBOutlet UIButton *buttonTask;
-@property (weak, nonatomic) IBOutlet UIButton *buttonWarning;
-
-@property UIPopoverController *popoverVC;
 
 @end
 
 @implementation MasterContainerVC
 
-- (void)didFinished:(DatacenterTableVC *)controller{
-    if(self.popoverVC){
-        [self.popoverVC dismissPopoverAnimated:YES];
-        [self.infoVC refresh];
-        [self refresh];
-    }
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([segue.identifier isEqualToString:@"toSelect"]){
-        self.popoverVC = [(UIStoryboardPopoverSegue*)segue popoverController];
-        UINavigationController *nav = segue.destinationViewController;
-        DatacenterTableVC *vc = [[nav viewControllers] firstObject];
-        vc.delegate = self;
-        vc.datacenterVO = self.datacenterVO;
-        
-    }else if([segue.identifier isEqualToString:@"toInfoVC"]){
-        self.infoVC = segue.destinationViewController;
-        self.infoVC.datacenterVO = self.datacenterVO;
-    }
-    
-}
-
 - (void)viewDidLoad
 {
-    //self.view.backgroundColor = [UIColor colorWithRed:arc4random()%25/255.0 green:arc4random()%25/255.0 blue:arc4random()%25/255.0 alpha:1];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"背景"]];
     imageView.frame = [[UIScreen mainScreen] bounds];
     
@@ -77,319 +33,17 @@
     self.view.backgroundColor = [UIColor clearColor];
     
     [super viewDidLoad];
+    
     [self refresh];
 }
 
 - (void)refresh{
-    switch (self.pageType) {
-        case MasterPageType_DATACENTER:{
-            self.titleLabel.text = self.datacenterVO.name;
-            
-            NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:5];
-            
-            MasterCollectionVC *vc;
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_POOL_BY_DATACENTER;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Pool";
-            vc.cellHeader = @"某某数据中心下的资源池列表";
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_HOST_BY_DATACENTER;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Host";
-            vc.cellHeader = @"某某资源池下的物理机列表";
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_STORAGE_BY_DATACENTER;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Storage";
-            vc.cellHeader = @"某某资源池下的存储池列表";
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_VM_BY_DATACENTER;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_VM";
-            vc.cellHeader = @"某某资源池下的虚拟机列表";
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_BUSINESS_BY_DATACENTER;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Business";
-            vc.cellHeader = @"某某业务域下的业务系统列表";
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"NetworkContainerVC"];
-            [pages addObject:vc];
-            
-            self.pages = pages;
-            break;
-        }
-        case MasterPageType_POOL:{
-            self.pathLabel.text = self.datacenterVO.name;
-            self.titleLabel.text = ((PoolVO *) self.baseObject).resourcePoolName;
-            
-            self.segmentView_pool.hidden = NO;
-            
-            NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
-            
-            PoolDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PoolDetailInfoVC"];
-            detailVC.datacenterVO = self.datacenterVO;
-            detailVC.baseObject = (PoolVO *)self.baseObject;
-            [pages addObject:detailVC];
-            
-            MasterCollectionVC *vc;
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_Host";
-            vc.cellHeader = @"物理机列表";
-            vc.pageType = MasterCollectionType_HOST_BY_POOL;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_VM";
-            vc.cellHeader = @"虚拟机列表";
-            vc.pageType = MasterCollectionType_VM_BY_POOL;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_Storage";
-            vc.cellHeader = @"存储池列表";
-            vc.pageType = MasterCollectionType_STORAGE_BY_POOL;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            self.pages = pages;
-            break;
-        }
-        case MasterPageType_POOL_MORE:{
-            self.titleLabel.text = [NSString stringWithFormat:@"%@下的资源池列表", self.datacenterVO.name];
-            
-            MasterCollectionVC *vc;
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_POOL_BY_DATACENTER_MORE;
-            vc.datacenterVO = self.datacenterVO;
-            vc.poolVO = self.poolVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Pool";
-            self.pages = @[vc];
-            break;
-        }
-        case MasterPageType_HOST:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@", self.datacenterVO.name, ((HostVO *) self.baseObject).resourcePoolName];
-            self.titleLabel.text = ((HostVO *) self.baseObject).hostName;
-            self.ipLabel.text = ((HostVO *) self.baseObject).ip;
-            self.statusLabel.text = [((HostVO*) self.baseObject) state_text];
-            self.statusLabel.textColor = [((HostVO*) self.baseObject) state_color];
-            
-            self.segmentView_host.hidden = NO;
-            
-            self.btnCreateVM.hidden = NO;
-            
-            NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:5];
-            
-            HostDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailInfoVC"];
-            detailVC.datacenterVO = self.datacenterVO;
-            detailVC.baseObject = (HostVO*)self.baseObject;
-            [pages addObject:detailVC];
-            
-            
-            UIViewController *performVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailPerformanceVC"];
-            [pages addObject:performVC];
-            
-            MasterCollectionVC *vc;
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_VM";
-            vc.cellHeader = @"虚拟机列表";
-            vc.pageType = MasterCollectionType_VM_BY_HOST;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_Storage";
-            vc.cellHeader = @"存储池列表";
-            vc.pageType = MasterCollectionType_STORAGE_BY_HOST;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_HostNetwork";
-            vc.cellHeader = @"虚拟网络列表";
-            vc.pageType = MasterCollectionType_HostNetwork;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_HostNic";
-            vc.cellHeader = @"网络适配器列表";
-            vc.pageType = MasterCollectionType_HostNic;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            self.pages = pages;
-            break;
-        }
-        case MasterPageType_HOST_MORE:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@", self.datacenterVO.name];
-            self.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.poolVO.resourcePoolName];
-            
-            MasterCollectionVC *vc;
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_HOST_BY_DATACENTER_MORE;
-            vc.datacenterVO = self.datacenterVO;
-            vc.poolVO = self.poolVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Host";
-            self.pages = @[vc];
-            break;
-        }
-        case MasterPageType_STORAGE:{
-            
-            if((((StorageVO *) self.baseObject).hostName ==nil) || [((StorageVO *) self.baseObject).hostName isEqualToString:@""]){
-                self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName];
-            }else{
-                self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", self.datacenterVO.name, ((StorageVO *) self.baseObject).resourcePoolName, ((StorageVO *) self.baseObject).hostName];
-            }
-            self.titleLabel.text = ((StorageVO *) self.baseObject).storagePoolName;
-            self.statusLabel.text = [((StorageVO*) self.baseObject) state_text];
-            self.statusLabel.textColor = [((StorageVO*) self.baseObject) state_color];
-            
-            StorageDetailInfoVC *vc;
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDetailInfoVC"];
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = (StorageVO *)self.baseObject;
-            self.pages = @[vc];
-            break;
-        }
-        case MasterPageType_STORAGE_MORE:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@", self.datacenterVO.name];
-            self.titleLabel.text = [NSString stringWithFormat:@"%@下的共享存储列表", self.poolVO.resourcePoolName];
-            
-            MasterCollectionVC *vc;
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_STORAGE_BY_DATACENTER_MORE;
-            vc.datacenterVO = self.datacenterVO;
-            vc.poolVO = self.poolVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Storage";
-            self.pages = @[vc];
-            break;
-        }
-        case MasterPageType_VM:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", self.datacenterVO.name, ((VmVO *) self.baseObject).poolName, ((VmVO *) self.baseObject).ownerHostName];
-            self.titleLabel.text = ((VmVO *) self.baseObject).name;
-            self.ipLabel.text = ((VmVO *) self.baseObject).ip;
-            self.statusLabel.text = [((VmVO*) self.baseObject) state_text];
-            self.statusLabel.textColor = [((VmVO*) self.baseObject) state_color];
-            
-            self.segmentView_vm.hidden = NO;
-            
-            self.btnOperation.hidden = NO;
-            
-            NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
-            
-            VmDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"VmDetailInfoVC"];
-            detailVC.datacenterVO = self.datacenterVO;
-            detailVC.baseObject = (VmVO *) self.baseObject;
-            [pages addObject:detailVC];
-            
-            MasterCollectionVC *vc;
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_VMDisk";
-            vc.cellHeader = @"虚拟磁盘列表";
-            vc.pageType = MasterCollectionType_VMDisk;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailCollectionVC"];
-            vc.cellIdentifier = @"MasterCollectionCell_VMNetwork";
-            vc.cellHeader = @"虚拟网络列表";
-            vc.pageType = MasterCollectionType_VMNetwork;
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = self.baseObject;
-            [pages addObject:vc];
-            
-            VmDetailSnapshootVC *snapshot = [self.storyboard instantiateViewControllerWithIdentifier:@"VmDetailSnapshootVC"];
-            [pages addObject:snapshot];
-            
-            self.pages = pages;
-            break;
-        }
-        case MasterPageType_VM_MORE:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@", self.datacenterVO.name];
-            self.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.poolVO.resourcePoolName];
-            
-            MasterCollectionVC *vc;
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_VM_BY_DATACENTER_MORE;
-            vc.datacenterVO = self.datacenterVO;
-            vc.poolVO = self.poolVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_VM";
-            
-            self.pages = @[vc];
-            break;
-        }
-        case MasterPageType_BUSINESS:{
-            self.pathLabel.text = self.datacenterVO.name;
-            self.titleLabel.text = ((BusinessVO *)self.baseObject).name;
-            
-            BusinessDetailInfoVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"BusinessDetailInfoVC"];
-            vc.datacenterVO = self.datacenterVO;
-            vc.baseObject = (BusinessVO *)self.baseObject;
-            self.pages = @[vc];
-            break;
-        }
-        case MasterPageType_BUSINESS_MORE:{
-            self.pathLabel.text = [NSString stringWithFormat:@"%@", self.datacenterVO.name];
-            self.titleLabel.text = [NSString stringWithFormat:@"%@下的业务系统列表", self.poolVO.resourcePoolName];
-            
-            MasterCollectionVC *vc;
-            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterCollectionVC"];
-            vc.pageType = MasterCollectionType_BUSINESS_BY_DATACENTER_MORE;
-            vc.datacenterVO = self.datacenterVO;
-            vc.poolVO = self.poolVO;
-            vc.baseObject = self.baseObject;
-            vc.cellIdentifier = @"MasterCollectionCell_Business";
-            self.pages = @[vc];
-            break;
-        }
-        default:
-            break;
-    }
-    
-    
     self.previousIndex = 0;
     self.showIndex = 0;
     
     NSDictionary *options;
-    if(self.pageType == MasterPageType_DATACENTER){
-        options = @{UIPageViewControllerOptionInterPageSpacingKey: @500};
-    }else{
-        options = @{UIPageViewControllerOptionInterPageSpacingKey: @150};
-    }
+    
+    options = @{UIPageViewControllerOptionInterPageSpacingKey: @200};
     
     self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:options];
     [self addChildViewController:self.pageVC];
@@ -408,28 +62,19 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (void)switchPageVC:(NSInteger)index {
     self.showIndex = index;
-    [self.pageVC setViewControllers:@[self.pages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:(self.pageType != MasterPageType_DATACENTER) completion:nil];
+    [self.pageVC setViewControllers:@[self.pages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:YES completion:nil];
     self.previousIndex = index;
     
 }
 - (void)setPageButtonSelected:(NSInteger)index{
-    UIView *view = self.segmentView_pool;
-    if(view.hidden){
-        view = self.segmentView_host;
-        if(view.hidden){
-            view = self.segmentView_vm;
+    UIView *view = self.segmentView;
+    if(view){
+        for(UIView *subView in view.subviews){
+            UIButton *subButton = (UIButton*)subView;
+            subButton.selected = (subButton.tag == index);
         }
-    }
-    for(UIView *subView in view.subviews){
-        UIButton *subButton = (UIButton*)subView;
-        subButton.selected = (subButton.tag == index);
     }
 }
 - (IBAction)showPageButtonClick:(id)sender{
@@ -442,34 +87,7 @@
     button.selected = true;
     [self switchPageVC:((UIButton*)sender).tag];
 }
-- (IBAction)showControlBtns:(id)sender {
-    BOOL isHide = self.vmControlButtons.hidden;
-    self.vmControlButtons.hidden = isHide == YES ? NO : YES;
-    //   [self.view addSubview:self.vmControlBtns];
-    //    self.vmControlBtns.frame.origin.x = 922;
-    //    self.vmControlBtns.frame.origin.y = 22;
-}
--(void)hideControlBtn{
-    self.vmControlButtons.hidden = YES;
-}
-- (IBAction)openVm:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
-    [self hideControlBtn];
-}
-- (IBAction)shutdownVm:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在关机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
-    [self hideControlBtn];
-}
-- (IBAction)restartVm:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在重启..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
-    [self hideControlBtn];
-}
-- (IBAction)migrateVm:(id)sender {
-    [self hideControlBtn];
-}
+
 
 -(IBAction)backToContainVC:(UIStoryboardSegue*)segue{
     
@@ -479,7 +97,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(IBAction)showOptionsVC:(id)sender{
-    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"OptionsVCNav"];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]  instantiateViewControllerWithIdentifier:@"OptionsVCNav"];
     vc.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:vc animated:YES completion:nil];
     
@@ -488,7 +106,7 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
     UIButton *button = (UIButton*)sender;
     self.popover.passthroughViews=@[self.buttonWarning];
@@ -498,7 +116,7 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"WarningInfoVCNav"];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"WarningInfoVCNav"];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
     UIButton *button = (UIButton*)sender;
     self.popover.passthroughViews=@[self.buttonTask];
@@ -540,9 +158,6 @@
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed{
     if(completed){
         self.showIndex = self._selectedIndex;
-        if(self.infoVC!=nil){
-            [self.infoVC switchButtonSelected:self.showIndex];
-        }
         [self setPageButtonSelected:self.showIndex];
     }
 }

@@ -25,15 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:getUserInfoUrl];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        
-        LoginResult *loginResult = [[LoginResult alloc] initWithJSONData:jsonResponse.rawBody];
-        self.userVO = loginResult.users[0];
-        
-        [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
-        
+    [UserVO getUserVOAsync:^(id object, NSError *error) {
+        self.userVO = object;
+        [self refresh];
     }];
 }
 

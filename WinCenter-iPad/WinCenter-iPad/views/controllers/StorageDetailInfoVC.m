@@ -31,61 +31,49 @@
 
 @implementation StorageDetailInfoVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor clearColor];
     [super viewDidLoad];
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getStorageDetailUrl, self.datacenterVO.id, self.baseObject.storagePoolId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.baseObject = [[StorageVO alloc] initWithJSONData:jsonResponse.rawBody];
-        [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
+    
+    [self.storageVO getStorageVOAsync:^(id object, NSError *error) {
+        self.storageVO = object;
+        [self refreshMainInfo];
     }];
     
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getStorageVolumn, self.datacenterVO.id, self.baseObject.storagePoolId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.dataList = [[StorageVolumnListResult alloc] initWithJSONData:jsonResponse.rawBody].resultList;
-        [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
+    [self.storageVO getStorageVolumnListAsync:^(NSArray *allRemote, NSError *error) {
+        self.dataList = allRemote;
+        [self refresh];
     }];
 }
 - (void)refreshMainInfo{
-    self.totalStorage.text = [NSString stringWithFormat:@"%.2f", self.baseObject.totalStorage];
-    self.volumeNum.text = [NSString stringWithFormat:@"%d", self.baseObject.volumeNum];
-    self.hostNum.text = [NSString stringWithFormat:@"%d", self.baseObject.hostNum];
-    self.vmNum.text = [NSString stringWithFormat:@"%d", self.baseObject.vmNum];
-    self.shared.hidden = [self.baseObject.shared isEqualToString:@"false"];
-    self.defaulted.hidden = [self.baseObject.defaulted isEqualToString:@"false"];
-    self.defaulted_label.hidden = [self.baseObject.defaulted isEqualToString:@"false"];
+    self.totalStorage.text = [NSString stringWithFormat:@"%.2f", self.storageVO.totalStorage];
+    self.volumeNum.text = [NSString stringWithFormat:@"%d", self.storageVO.volumeNum];
+    self.hostNum.text = [NSString stringWithFormat:@"%d", self.storageVO.hostNum];
+    self.vmNum.text = [NSString stringWithFormat:@"%d", self.storageVO.vmNum];
+    self.shared.hidden = [self.storageVO.shared isEqualToString:@"false"];
+    self.defaulted.hidden = [self.storageVO.defaulted isEqualToString:@"false"];
+    self.defaulted_label.hidden = [self.storageVO.defaulted isEqualToString:@"false"];
     
-    self.totalStorageLabel1.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalStorage];
-    self.totalStorageLabel2.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.totalStorage];
-    self.usedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", (self.baseObject.totalStorage-self.baseObject.availStorage)];
-    self.allocatedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", self.baseObject.allocatedStorage];
+    self.totalStorageLabel1.text = [NSString stringWithFormat:@"%.2fGB", self.storageVO.totalStorage];
+    self.totalStorageLabel2.text = [NSString stringWithFormat:@"%.2fGB", self.storageVO.totalStorage];
+    self.usedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", (self.storageVO.totalStorage-self.storageVO.availStorage)];
+    self.allocatedStorageLabel.text = [NSString stringWithFormat:@"%.2fGB", self.storageVO.allocatedStorage];
     
-    self.usedRatio.text = [NSString stringWithFormat:@"%.0f %%", [self.baseObject usedRatio]];
-    self.allocatedRatio.text = [NSString stringWithFormat:@"%.0f %%", [self.baseObject allocatedRatio]];
+    self.usedRatio.text = [NSString stringWithFormat:@"%.0f %%", [self.storageVO usedRatio]];
+    self.allocatedRatio.text = [NSString stringWithFormat:@"%.0f %%", [self.storageVO allocatedRatio]];
     
-    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.usedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject usedRatio]] andClockwise:YES andShadow:YES];
+    PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.usedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.storageVO usedRatio]] andClockwise:YES andShadow:YES];
     circleChart.backgroundColor = [UIColor clearColor];
     circleChart.labelColor = [UIColor clearColor];
-    [circleChart setStrokeColor:[self.baseObject usedRatioColor]];
+    [circleChart setStrokeColor:[self.storageVO usedRatioColor]];
     [circleChart strokeChart];
     [self.usedStorageGroup addSubview:circleChart];
     
-    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.allocatedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.baseObject allocatedRatio]] andClockwise:YES andShadow:YES];
+    PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.allocatedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.storageVO allocatedRatio]] andClockwise:YES andShadow:YES];
     circleChart2.backgroundColor = [UIColor clearColor];
     circleChart2.labelColor = [UIColor clearColor];
-    [circleChart2 setStrokeColor:[self.baseObject allocatedRatioColor]];
+    [circleChart2 setStrokeColor:[self.storageVO allocatedRatioColor]];
     [circleChart2 strokeChart];
     [self.allocatedStorageGroup addSubview:circleChart2];
 }
@@ -94,11 +82,6 @@
     [self.collectionView reloadData];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.dataList.count;
@@ -118,16 +101,5 @@
     return cell;
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -8,7 +8,7 @@
 
 #import "BusinessDetailInfoVC.h"
 #import "VmCollectionCell.h"
-#import "MasterContainerVC.h"
+#import "VmContainerVC.h"
 
 @interface BusinessDetailInfoVC ()
 @property (weak, nonatomic) IBOutlet UILabel *managerId;
@@ -34,22 +34,21 @@
 {
     self.view.backgroundColor = [UIColor clearColor];
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getBusinessVM, self.datacenterVO.id, self.baseObject.busId]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.baseObject = [[BusinessVO alloc] initWithJSONData:jsonResponse.rawBody];
-        self.dataList = self.baseObject.wceBusVms;
-        [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
+    
+    [self.businessVO getBusinessVOAsync:^(id object, NSError *error) {
+        self.businessVO = object;
+        self.dataList = self.businessVO.wceBusVms;
+        [self refresh];
+        
     }];
 }
 
 - (void)refresh{
-    self.managerId.text = self.baseObject.managerId;
-    self.platform.text = self.baseObject.sysSrc;
-    self.createTime.text = [self.baseObject.createTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
-    self.createUser.text = self.baseObject.createUser;
-    self.desc.text = self.baseObject.desc;
+    self.managerId.text = self.businessVO.managerId;
+    self.platform.text = self.businessVO.sysSrc;
+    self.createTime.text = [self.businessVO.createTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];
+    self.createUser.text = self.businessVO.createUser;
+    self.desc.text = self.businessVO.desc;
     
     self.collectionHeader.text = [NSString stringWithFormat:@"虚拟机(%li)", self.dataList.count];
     [self.collectionView reloadData];
@@ -75,21 +74,14 @@
     return cell;
 }
 
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    MasterContainerVC *vc = segue.destinationViewController;
-    vc.datacenterVO = self.datacenterVO;
-    NSIndexPath *indexPath = [self.collectionView indexPathsForSelectedItems][0];
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    VmContainerVC *vc = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
     BusinessVmVO *businessVmvo = (BusinessVmVO*)self.dataList[indexPath.row];
     VmVO *vmvo = [[VmVO alloc] init];
     vmvo.vmId = businessVmvo.vmId;
     vmvo.name = businessVmvo.name;
-    vc.baseObject = vmvo;
-    vc.pageType = MasterPageType_VM;
+    vc.vmVO = vmvo;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 

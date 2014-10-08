@@ -59,11 +59,13 @@
 
 -(UNIUrlConnection*) asStringAsync:(UNIHTTPStringResponseBlock) response {
     return [UNIHTTPClientHelper requestAsync:self handler:^(UNIHTTPResponse * res, NSError * error) {
-        if (error != nil) {
-            response(nil, error);
-        } else {
-            response([[UNIHTTPStringResponse alloc] initWithSimpleResponse:res], error);
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error != nil) {
+                response(nil, error);
+            } else {
+                response([[UNIHTTPStringResponse alloc] initWithSimpleResponse:res], error);
+            }
+        });
     }];
 }
 
@@ -79,11 +81,13 @@
 
 -(UNIUrlConnection*) asBinaryAsync:(UNIHTTPBinaryResponseBlock) response {
     return [UNIHTTPClientHelper requestAsync:self handler:^(UNIHTTPResponse * res, NSError * error) {
-        if (error != nil) {
-            response(nil, error);
-        } else {
-            response([[UNIHTTPBinaryResponse alloc] initWithSimpleResponse:res], error);
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error != nil) {
+                response(nil, error);
+            } else {
+                response([[UNIHTTPBinaryResponse alloc] initWithSimpleResponse:res], error);
+            }
+        });
     }];
 }
 
@@ -99,17 +103,19 @@
 
 -(UNIUrlConnection*) asJsonAsync:(UNIHTTPJsonResponseBlock) response {
     return [UNIHTTPClientHelper requestAsync:self handler:^(UNIHTTPResponse * res, NSError * error) {
-        if (error != nil) {
-            response(nil, error);
-        } else {
-            UNIHTTPJsonResponse *jsonResponse = [[UNIHTTPJsonResponse alloc] initWithSimpleResponse:res];
-            NSString *cookieStr = [jsonResponse.headers valueForKey:@"Set-Cookie"];
-            if(cookieStr!=nil){
-                cookieStr = [cookieStr componentsSeparatedByString:@";"][0];
-                [UNIRest defaultHeader:@"Cookie" value:cookieStr];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error != nil) {
+                response(nil, error);
+            } else {
+                UNIHTTPJsonResponse *jsonResponse = [[UNIHTTPJsonResponse alloc] initWithSimpleResponse:res];
+                NSString *cookieStr = [jsonResponse.headers valueForKey:@"Set-Cookie"];
+                if(cookieStr!=nil){
+                    cookieStr = [cookieStr componentsSeparatedByString:@";"][0];
+                    [UNIRest defaultHeader:@"Cookie" value:cookieStr];
+                }
+                response(jsonResponse, error);
             }
-            response(jsonResponse, error);
-        }
+        });
     }];
 }
 

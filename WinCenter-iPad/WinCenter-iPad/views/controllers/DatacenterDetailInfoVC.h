@@ -37,8 +37,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *button5;
 @property (weak, nonatomic) IBOutlet UIButton *button6;
 
-@property DatacenterVO *datacenterVO;
-
 - (void)refresh;
 - (void)switchButtonSelected:(NSInteger)index;
 

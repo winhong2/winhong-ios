@@ -17,45 +17,31 @@
 
 @implementation DatacenterDetailInfoVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLayoutSubviews{
     self.scrollView.contentSize = CGSizeMake(275, 420);
 }
-- (void)viewDidLoad{
-    [self refresh];
-}
-- (void)refresh{
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:[NSString stringWithFormat:getDatacenterStatUrl, self.datacenterVO.id]];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        self.datacenterStatWinserver = [[DatacenterStatVO alloc] initWithJSONData:jsonResponse.rawBody].winserver;
-        [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
-        
-        [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-            [simpleRequest setUrl:[NSString stringWithFormat:getBusinessListUrl_all, self.datacenterVO.id]];
-        }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-            self.datacenterStatWinserver.appNumber = [[BusinessListResult alloc] initWithJSONData:jsonResponse.rawBody].recordTotal;
-            [self performSelectorOnMainThread:@selector(refreshMainInfo) withObject:nil waitUntilDone:NO];
-        }];
-    }];
-    
-}
 
-- (void)refreshMainInfo{
+- (void)refresh{
     [self switchButtonSelected:0];
     
+    [[RemoteObject getCurrentDatacenterVO] getDatacenterStatWinserverVOAsync:^(id object, NSError *error) {
+        self.datacenterStatWinserver = object;
+        [self refreshMainInfo];
+        
+        [[RemoteObject getCurrentDatacenterVO] getBusinessListAsync:^(NSArray *allRemote, NSError *error) {
+            self.datacenterStatWinserver.appNumber = (int) allRemote.count;
+            [self refreshMainInfo2];
+        }];
+    }];
+}
+- (void)refreshMainInfo2{
+    self.businessCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.appNumber];
+
+}
+- (void)refreshMainInfo{
     self.poolCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.resPoolNumber];
     self.hostCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.hostNubmer];
     self.vmCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.vmNumber];
-    self.businessCount.text = [NSString stringWithFormat:@"%d",self.datacenterStatWinserver.appNumber];
     
     self.cpuUnitCount.text = [NSString stringWithFormat:@"%d核",self.datacenterStatWinserver.physicalCpuNumber];
 //    self.cpuUsedInfo.text = [NSString stringWithFormat:@"已用%@核  还剩%@核",self.datacenterVO.cpuUnitUsedCount,self.datacenterVO.cpuUnitUnusedCount];
@@ -72,12 +58,6 @@
 //    self.networkIpCount.text = [NSString stringWithFormat:@"%@个",self.datacenterVO.networkIpCount];
 //    self.networkIpUsedInfo.text = [NSString stringWithFormat:@"已用%@个  还剩%@个",self.datacenterVO.networkIpUsedCount,self.datacenterVO.networkIpUnusedCount];
 //    self.networkProgress.progress = self.datacenterVO.networkRatio;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)switchPageVC:(id)sender {
@@ -103,16 +83,5 @@
         case 5: self.button6.selected = YES; break;
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

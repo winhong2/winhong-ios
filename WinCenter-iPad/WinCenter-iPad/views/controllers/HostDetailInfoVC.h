@@ -10,8 +10,7 @@
 
 @interface HostDetailInfoVC : UIViewController
 
-@property DatacenterVO *datacenterVO;
-@property HostVO *baseObject;
+@property HostVO *hostVO;
 @property HostStatVO *statVO;
 
 @end
