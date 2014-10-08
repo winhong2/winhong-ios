@@ -12,4 +12,6 @@
 
 @property StorageVO *storageVO;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonTask;
+
 @end

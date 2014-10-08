@@ -36,7 +36,7 @@
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
     UIButton *button = (UIButton*)sender;
-    self.popover.passthroughViews=@[self.buttonWarning];
+    self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
 

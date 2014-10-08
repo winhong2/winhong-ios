@@ -13,4 +13,8 @@
 @property UIPopoverController *popoverVC;
 @property DatacenterDetailInfoVC *infoVC;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonConfig;
+@property (weak, nonatomic) IBOutlet UIButton *buttonTask;
+@property (weak, nonatomic) IBOutlet UIButton *buttonWarning;
+
 @end

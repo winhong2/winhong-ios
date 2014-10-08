@@ -12,4 +12,6 @@
 
 @property PoolVO *poolVO;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonTask;
+
 @end
