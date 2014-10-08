@@ -388,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				18A4D35A19B558E500415896 /* views */,
+				187C409519E2C95A000D1500 /* datas */,
 				18A4D32E19B556BA00415896 /* AppDelegate.h */,
 				18A4D32F19B556BA00415896 /* AppDelegate.m */,
 				18DCAE5119E3819B00F878AF /* Setting.storyboard */,
@@ -407,7 +408,6 @@
 		18A4D32619B556BA00415896 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				187C409519E2C95A000D1500 /* datas */,
 				18A4D32719B556BA00415896 /* WinCenter-iPad-Info.plist */,
 				18A4D32819B556BA00415896 /* InfoPlist.strings */,
 				18A4D32B19B556BA00415896 /* main.m */,
