@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VAz-Ew-tWJ">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -69,7 +70,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="WinCenter" id="cOH-tF-MKd">
-                        <barButtonItem key="leftBarButtonItem" title="配置" id="jCG-1Q-KJW"/>
+                        <barButtonItem key="leftBarButtonItem" title="配置" id="jCG-1Q-KJW">
+                            <connections>
+                                <segue destination="0Or-n6-MBI" kind="modal" id="Zaa-2H-KqP"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="体验" id="J90-bD-fJu"/>
                     </navigationItem>
                 </tableViewController>
@@ -111,7 +116,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74o-pZ-m9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5391" y="1184"/>
+            <point key="canvasLocation" x="537" y="-626"/>
         </scene>
         <!--服务器IP设置-->
         <scene sceneID="7KK-Bj-BGg">
@@ -170,7 +175,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4O-ht-yf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4516" y="1184"/>
+            <point key="canvasLocation" x="1092" y="-626"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
