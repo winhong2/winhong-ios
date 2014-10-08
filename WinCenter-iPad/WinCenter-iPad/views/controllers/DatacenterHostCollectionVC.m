@@ -60,7 +60,7 @@
     
     if(header){
         header.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.dataList.allKeys[indexPath.section]];
-        //header.moreButton.hidden = [[self.pools_needMoreButton valueForKey:self.pools_needMoreButton.allKeys[indexPath.section]] isEqualToString:@"FALSE"];
+        header.moreButton.hidden = [[self.pools_needMoreButton valueForKey:self.pools_needMoreButton.allKeys[indexPath.section]] isEqualToString:@"FALSE"];
         header.moreButton.tag = indexPath.section;
     }
     

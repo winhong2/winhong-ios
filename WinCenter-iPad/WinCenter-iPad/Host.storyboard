@@ -954,21 +954,12 @@
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha1-GX-9xP">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
                                                 <state key="normal" image="i 图标">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="showControlRecordVC:" destination="SdQ-oO-Giu" eventType="touchUpInside" id="J8T-1W-9js"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oda-o2-NVB">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="SdQ-oO-Giu" eventType="touchUpInside" id="3Am-SB-7Ex"/>
+                                                    <action selector="showControlRecordVC:" destination="SdQ-oO-Giu" eventType="touchUpInside" id="Jjn-ul-FOF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1014,7 +1005,6 @@
                     <connections>
                         <outlet property="btnCreateVM" destination="eku-sN-u80" id="qKZ-HW-vbF"/>
                         <outlet property="buttonTask" destination="Ha1-GX-9xP" id="m0o-9S-roN"/>
-                        <outlet property="buttonWarning" destination="Oda-o2-NVB" id="xrL-KM-cSt"/>
                         <outlet property="ipLabel" destination="JNY-39-HeN" id="wJf-Ps-bks"/>
                         <outlet property="pageVCContainer" destination="CEO-rG-YsG" id="pPI-hm-TUi"/>
                         <outlet property="pathLabel" destination="HKb-Yx-7Y7" id="ZcE-EK-y7V"/>
@@ -1519,7 +1509,6 @@
         <image name="tab-虚拟机-selected" width="39" height="82"/>
         <image name="内存" width="15" height="15"/>
         <image name="内存使用率图表" width="943" height="123"/>
-        <image name="安全警报图标" width="32" height="26"/>
         <image name="定点" width="15" height="15"/>
         <image name="灰色圈" width="123" height="123"/>
         <image name="物理机1" width="115" height="106"/>

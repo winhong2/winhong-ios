@@ -12,4 +12,7 @@
 
 @property HostVO *hostVO;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnCreateVM;
+@property (weak, nonatomic) IBOutlet UIButton *buttonTask;
+
 @end

@@ -37,7 +37,7 @@
 		187C40B719E2C95A000D1500 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409919E2C95A000D1500 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */; };
 		187C40B819E2C95A000D1500 /* DatacenterVO.getPoolListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409A19E2C95A000D1500 /* DatacenterVO.getPoolListAsync.json */; };
 		187C40B919E2C95A000D1500 /* DatacenterVO.getPoolListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409B19E2C95A000D1500 /* DatacenterVO.getPoolListAsync.limit.json */; };
-		187C40BA19E2C95A000D1500 /* DatacenterVO.ggetBusinessListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409C19E2C95A000D1500 /* DatacenterVO.ggetBusinessListAsync.limit.json */; };
+		187C40BA19E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409C19E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.limit.json */; };
 		187C40BB19E2C95A000D1500 /* HostVO.getHostNetworkExternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409D19E2C95A000D1500 /* HostVO.getHostNetworkExternalListAsync.json */; };
 		187C40BC19E2C95A000D1500 /* HostVO.getHostNetworkInternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409E19E2C95A000D1500 /* HostVO.getHostNetworkInternalListAsync.json */; };
 		187C40BD19E2C95A000D1500 /* HostVO.getHostNicGroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409F19E2C95A000D1500 /* HostVO.getHostNicGroupedListAsync.json */; };
@@ -102,6 +102,8 @@
 		18A4D3D619B558E500415896 /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39B19B558E500415896 /* VmMigrateSelectHostListVC.m */; };
 		18A4D3D719B558E500415896 /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39D19B558E500415896 /* VmMigrateVC.m */; };
 		18A4D3D819B558E500415896 /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D39F19B558E500415896 /* VmNewVC.m */; };
+		18B2324919E50695000A1FA1 /* PopOptionLicenseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2324819E50695000A1FA1 /* PopOptionLicenseVC.m */; };
+		18B2324B19E50745000A1FA1 /* LicenseVO.getLicenseVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2324A19E50745000A1FA1 /* LicenseVO.getLicenseVOAsync.json */; };
 		18B3BEF919DAD42F00E68AC3 /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */; };
 		18DCAE5219E3819B00F878AF /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCAE5119E3819B00F878AF /* Setting.storyboard */; };
 		18DCAE5419E3823300F878AF /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCAE5319E3823300F878AF /* Business.storyboard */; };
@@ -168,7 +170,7 @@
 		187C409919E2C95A000D1500 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterStatWinserverVOAsync.json; sourceTree = "<group>"; };
 		187C409A19E2C95A000D1500 /* DatacenterVO.getPoolListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.json; sourceTree = "<group>"; };
 		187C409B19E2C95A000D1500 /* DatacenterVO.getPoolListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.limit.json; sourceTree = "<group>"; };
-		187C409C19E2C95A000D1500 /* DatacenterVO.ggetBusinessListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.ggetBusinessListAsync.limit.json; sourceTree = "<group>"; };
+		187C409C19E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.limit.json; sourceTree = "<group>"; };
 		187C409D19E2C95A000D1500 /* HostVO.getHostNetworkExternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkExternalListAsync.json; sourceTree = "<group>"; };
 		187C409E19E2C95A000D1500 /* HostVO.getHostNetworkInternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkInternalListAsync.json; sourceTree = "<group>"; };
 		187C409F19E2C95A000D1500 /* HostVO.getHostNicGroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicGroupedListAsync.json; sourceTree = "<group>"; };
@@ -274,6 +276,9 @@
 		18A4D39D19B558E500415896 /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
 		18A4D39E19B558E500415896 /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
 		18A4D39F19B558E500415896 /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
+		18B2324719E50695000A1FA1 /* PopOptionLicenseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionLicenseVC.h; sourceTree = "<group>"; };
+		18B2324819E50695000A1FA1 /* PopOptionLicenseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionLicenseVC.m; sourceTree = "<group>"; };
+		18B2324A19E50745000A1FA1 /* LicenseVO.getLicenseVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LicenseVO.getLicenseVOAsync.json; sourceTree = "<group>"; };
 		18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../WinCenter-Common/build/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		18DCAE5119E3819B00F878AF /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		18DCAE5319E3823300F878AF /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
@@ -312,7 +317,7 @@
 				187C409919E2C95A000D1500 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */,
 				187C409A19E2C95A000D1500 /* DatacenterVO.getPoolListAsync.json */,
 				187C409B19E2C95A000D1500 /* DatacenterVO.getPoolListAsync.limit.json */,
-				187C409C19E2C95A000D1500 /* DatacenterVO.ggetBusinessListAsync.limit.json */,
+				187C409C19E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.limit.json */,
 				187C409D19E2C95A000D1500 /* HostVO.getHostNetworkExternalListAsync.json */,
 				187C409E19E2C95A000D1500 /* HostVO.getHostNetworkInternalListAsync.json */,
 				187C409F19E2C95A000D1500 /* HostVO.getHostNicGroupedListAsync.json */,
@@ -333,6 +338,7 @@
 				187C40AE19E2C95A000D1500 /* StorageVO.getStorageVolumnListAsync.json */,
 				187C40AF19E2C95A000D1500 /* TemplateIcon2x.png */,
 				187C40B019E2C95A000D1500 /* UserVO.getUserVOAsync.json */,
+				18B2324A19E50745000A1FA1 /* LicenseVO.getLicenseVOAsync.json */,
 				187C40B119E2C95A000D1500 /* VmVO.getVmNicListAsync.json */,
 				187C40B219E2C95A000D1500 /* VmVO.getVmVOAsync.json */,
 				187C40B319E2C95A000D1500 /* VmVO.getVmVolumnListAsync.json */,
@@ -553,6 +559,8 @@
 		18B3BF9C19DAE3D100E68AC3 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				18B2324719E50695000A1FA1 /* PopOptionLicenseVC.h */,
+				18B2324819E50695000A1FA1 /* PopOptionLicenseVC.m */,
 				18A4D38219B558E500415896 /* PopOptionsVC.h */,
 				18A4D38319B558E500415896 /* PopOptionsVC.m */,
 				84EBB59E19D8123500A7C82E /* PopOptionsUserInfoVC.h */,
@@ -716,6 +724,7 @@
 				187C40B919E2C95A000D1500 /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
 				187C40B419E2C95A000D1500 /* BusinessVO.getBusinessVOAsync.json in Resources */,
 				187C40C319E2C95A000D1500 /* PoolVO.getHostListAsync.json in Resources */,
+				18B2324B19E50745000A1FA1 /* LicenseVO.getLicenseVOAsync.json in Resources */,
 				18DCAE5C19E384C000F878AF /* Pool.storyboard in Resources */,
 				18A4D33819B556BA00415896 /* Images.xcassets in Resources */,
 				187C40C519E2C95A000D1500 /* PoolVO.getPoolElasticAsync.json in Resources */,
@@ -740,7 +749,7 @@
 				187C40BC19E2C95A000D1500 /* HostVO.getHostNetworkInternalListAsync.json in Resources */,
 				18DCAE5A19E3841900F878AF /* Host.storyboard in Resources */,
 				187C40C719E2C95A000D1500 /* PoolVO.getStorageList.json in Resources */,
-				187C40BA19E2C95A000D1500 /* DatacenterVO.ggetBusinessListAsync.limit.json in Resources */,
+				187C40BA19E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.limit.json in Resources */,
 				187C40CA19E2C95A000D1500 /* PoolVO.getVmListWithlimit.json in Resources */,
 				18A4D32A19B556BA00415896 /* InfoPlist.strings in Resources */,
 				187C40C819E2C95A000D1500 /* PoolVO.getStorageListAsync.json in Resources */,
@@ -818,6 +827,7 @@
 				18A4D3C719B558E500415896 /* PopControlRecordCell.m in Sources */,
 				187C404B19E11852000D1500 /* DatacenterBusinessMore.m in Sources */,
 				18A4D3D119B558E500415896 /* VmDetailCPUConfigVC.m in Sources */,
+				18B2324919E50695000A1FA1 /* PopOptionLicenseVC.m in Sources */,
 				18A4D3D019B558E500415896 /* VmCollectionCell.m in Sources */,
 				18A4D3CB19B558E500415896 /* PopWarningInfoCell.m in Sources */,
 				18A4D3CA19B558E500415896 /* PopOptionsVC.m in Sources */,

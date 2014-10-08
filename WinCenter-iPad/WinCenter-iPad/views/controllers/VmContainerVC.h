@@ -17,4 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnRestart;
 @property (weak, nonatomic) IBOutlet UIButton *btnMigrate;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnOperation;
+@property (weak, nonatomic) IBOutlet UIButton *buttonTask;
+
 @end

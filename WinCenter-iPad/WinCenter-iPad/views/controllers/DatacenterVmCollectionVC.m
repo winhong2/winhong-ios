@@ -48,6 +48,9 @@
     VmVO *vmVO = (VmVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
     cell.title.text = vmVO.name;
     cell.label1.text = vmVO.ip;
+    if(vmVO.ip == nil){
+        cell.label1.text = @"(尚未配置ip)";
+    }
     cell.label2.text = [NSString stringWithFormat:@"%d", vmVO.vcpu];
     cell.label3.text = [NSString stringWithFormat:@"%.2fGB", vmVO.memory/1024.0];
     cell.label4.text = [NSString stringWithFormat:@"%dGB", vmVO.storage];
@@ -63,7 +66,7 @@
     
     if(header){
         header.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.dataList.allKeys[indexPath.section]];
-        //header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<3);
+        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<3);
         header.moreButton.tag = indexPath.section;
     }
     

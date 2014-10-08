@@ -37,7 +37,7 @@
     cell.title.text = poolVO.resourcePoolName;
     cell.label1.text = [NSString stringWithFormat:@"%d台", poolVO.hostNumber];
     cell.label2.text = [NSString stringWithFormat:@"%d台", poolVO.activeVmNumber];
-    cell.label3.text = [NSString stringWithFormat:@"%.0f", poolVO.totalLogicalCpu];
+    cell.label3.text = [NSString stringWithFormat:@"%.2fGHz", poolVO.totalCpu/1000.0];
     cell.label4.text = [NSString stringWithFormat:@"%.2fGB", poolVO.totalMemory/1024.0];
     cell.label5.text = [NSString stringWithFormat:@"%.2fGB", poolVO.totalStorage];
     return cell;
@@ -50,7 +50,7 @@
     if(header){
         header.titleHintView.hidden = YES;
         header.titleLabel.hidden = YES;
-        //header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
     }
     
     return header;

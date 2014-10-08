@@ -82,7 +82,7 @@
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaW-tG-Qdr">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
                                                 <state key="normal" image="i 图标">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -100,7 +100,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPv-Ds-CdX">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
+                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
                                                 <state key="normal" image="安全警报图标">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1051,8 +1051,8 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPU逻辑单元：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOA-nf-fig">
-                                            <rect key="frame" x="110" y="72" width="86" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPU：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOA-nf-fig">
+                                            <rect key="frame" x="110" y="72" width="41" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -1082,7 +1082,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke3-gL-fdi">
-                                            <rect key="frame" x="198" y="72" width="31" height="21"/>
+                                            <rect key="frame" x="153" y="72" width="76" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -1183,7 +1183,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYc-ta-bkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-332.16000000000003" y="-4215.4666666666672"/>
+            <point key="canvasLocation" x="-333" y="-4216"/>
         </scene>
         <!--Datacenter Host CollectionVC-->
         <scene sceneID="nII-kT-ZqH">
@@ -1658,35 +1658,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZC-cw-mta">
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
-                                        <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U41-A9-QDE">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="设置图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showOptionsVC:" destination="6eF-Fx-Zmc" eventType="touchUpInside" id="HsJ-5U-wNl"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-eq-nu5">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="i 图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showControlRecordVC:" destination="6eF-Fx-Zmc" eventType="touchUpInside" id="nTT-DF-U6N"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ow-Lo-flP">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="6eF-Fx-Zmc" eventType="touchUpInside" id="0K9-EY-00r"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-xP-agk">
@@ -1717,9 +1688,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="buttonConfig" destination="U41-A9-QDE" id="PEg-1w-jy6"/>
-                        <outlet property="buttonTask" destination="fZy-eq-nu5" id="Qca-J4-Kya"/>
-                        <outlet property="buttonWarning" destination="8ow-Lo-flP" id="2gb-K2-Qo1"/>
                         <outlet property="ipLabel" destination="DFO-WD-vd2" id="ys2-AB-Uhh"/>
                         <outlet property="pageVCContainer" destination="q8y-EI-FNP" id="0Ba-JS-cw2"/>
                         <outlet property="pathLabel" destination="MBy-xP-agk" id="buW-6o-3f5"/>
@@ -1770,35 +1738,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KyQ-be-LAO">
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
-                                        <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3D-Kd-OhX">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="设置图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showOptionsVC:" destination="WbY-Iq-F4K" eventType="touchUpInside" id="HsB-HS-nEg"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMT-0l-Trz">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="i 图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showControlRecordVC:" destination="WbY-Iq-F4K" eventType="touchUpInside" id="RYu-YH-jIL"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avW-4c-c4P">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="WbY-Iq-F4K" eventType="touchUpInside" id="DI5-vp-mXs"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDo-mV-ljb">
@@ -1829,9 +1768,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="buttonConfig" destination="q3D-Kd-OhX" id="HFr-7j-ied"/>
-                        <outlet property="buttonTask" destination="HMT-0l-Trz" id="vNM-g8-82s"/>
-                        <outlet property="buttonWarning" destination="avW-4c-c4P" id="oWv-B1-8FV"/>
                         <outlet property="ipLabel" destination="mFb-xt-ekv" id="0K6-aR-rgM"/>
                         <outlet property="pageVCContainer" destination="HWz-YR-Jth" id="LPn-MN-QLe"/>
                         <outlet property="pathLabel" destination="YDo-mV-ljb" id="Giq-6D-8oV"/>
@@ -1882,35 +1818,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIt-KL-jhc">
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
-                                        <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-Sg-dtX">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="设置图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showOptionsVC:" destination="hu3-YK-z7e" eventType="touchUpInside" id="vYo-rG-A3S"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ida-iw-ZJc">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="i 图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showControlRecordVC:" destination="hu3-YK-z7e" eventType="touchUpInside" id="Zas-RJ-EOe"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45C-Z0-Rsr">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="hu3-YK-z7e" eventType="touchUpInside" id="XEP-fp-0JI"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMG-ir-AYI">
@@ -1941,9 +1848,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="buttonConfig" destination="GYh-Sg-dtX" id="RQb-k8-FFW"/>
-                        <outlet property="buttonTask" destination="ida-iw-ZJc" id="S1c-vI-tpR"/>
-                        <outlet property="buttonWarning" destination="45C-Z0-Rsr" id="BKp-Pt-3Zq"/>
                         <outlet property="ipLabel" destination="msz-y7-MFj" id="w9M-52-Tr9"/>
                         <outlet property="pageVCContainer" destination="7PQ-gc-qlT" id="NNu-bH-4mO"/>
                         <outlet property="pathLabel" destination="fMG-ir-AYI" id="Njy-qa-HWm"/>
@@ -1994,35 +1898,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-GC-fBV">
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
-                                        <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q84-hl-xfm">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="设置图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showOptionsVC:" destination="zBZ-Nf-Kpq" eventType="touchUpInside" id="GGY-0J-RSO"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuE-Xs-hAY">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="i 图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showControlRecordVC:" destination="zBZ-Nf-Kpq" eventType="touchUpInside" id="XAO-5f-kBx"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQY-tS-9Gv">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="zBZ-Nf-Kpq" eventType="touchUpInside" id="f2K-hf-FOh"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-3c-MbV">
@@ -2053,9 +1928,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="buttonConfig" destination="q84-hl-xfm" id="USO-Zw-bPd"/>
-                        <outlet property="buttonTask" destination="VuE-Xs-hAY" id="Z1H-pO-5dQ"/>
-                        <outlet property="buttonWarning" destination="CQY-tS-9Gv" id="EmN-uk-HVx"/>
                         <outlet property="ipLabel" destination="tnO-cd-u8Z" id="O39-fO-O0u"/>
                         <outlet property="pageVCContainer" destination="SfD-cf-zcS" id="MCg-Gc-hbR"/>
                         <outlet property="pathLabel" destination="rIh-3c-MbV" id="0vu-Tv-DyA"/>
@@ -2106,35 +1978,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-V0-qLm">
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
-                                        <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWY-CE-b88">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="设置图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showOptionsVC:" destination="34U-rz-nca" eventType="touchUpInside" id="yCj-rP-YZ3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-sI-9Hn">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="i 图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showControlRecordVC:" destination="34U-rz-nca" eventType="touchUpInside" id="6yj-B9-m6Y"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY9-7a-gAr">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="34U-rz-nca" eventType="touchUpInside" id="2BF-fk-Vz4"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeM-sO-mhy">
@@ -2165,9 +2008,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="buttonConfig" destination="PWY-CE-b88" id="PZa-RQ-6n8"/>
-                        <outlet property="buttonTask" destination="gIh-sI-9Hn" id="0zO-ws-4ZN"/>
-                        <outlet property="buttonWarning" destination="cY9-7a-gAr" id="vdS-P3-Uxd"/>
                         <outlet property="ipLabel" destination="dzw-It-B6L" id="wo4-Ft-Vd8"/>
                         <outlet property="pageVCContainer" destination="OCX-NQ-Sz6" id="lbj-jK-OPh"/>
                         <outlet property="pathLabel" destination="QeM-sO-mhy" id="AgU-Sx-4Jk"/>

@@ -65,7 +65,7 @@
 
 - (void) getBusinessListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count{
     if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"] isEqualToString:@"true"]){
-        completionBlock([[BusinessListResult alloc] initWithJSONData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DatacenterVO.ggetBusinessListAsync.limit" ofType:@"json"]]].resultList, nil);
+        completionBlock([[BusinessListResult alloc] initWithJSONData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DatacenterVO.getBusinessListAsync.limit" ofType:@"json"]]].resultList, nil);
         return;
     }
     
@@ -100,6 +100,7 @@
         completionBlock([[PoolListResult alloc] initWithJSONData:jsonResponse.rawBody].resourcePools, error);
     }];
 }
+
 
 
 @end
