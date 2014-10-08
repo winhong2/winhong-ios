@@ -27,14 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
-        [simpleRequest setUrl:getLicenseUrl];
-    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
-        
-        self.licenseVO = [[LicenseVO alloc] initWithJSONData:jsonResponse.rawBody];
-        
-        [self performSelectorOnMainThread:@selector(refresh) withObject:nil waitUntilDone:NO];
-        
+    [LicenseVO getLicenseVOAsync:^(id object, NSError *error) {
+        self.licenseVO = object;
+        [self refresh];
     }];
 }
 

@@ -66,4 +66,33 @@
 - (void)setPageButtonSelected:(NSInteger)index{
     [self.infoVC switchButtonSelected:self.showIndex];
 }
+
+-(IBAction)showOptionsVC:(id)sender{
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]  instantiateViewControllerWithIdentifier:@"OptionsVCNav"];
+    vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
+
+-(IBAction)showWarningInfoVC:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"WarningInfoVCNav"];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UIButton *button = (UIButton*)sender;
+    self.popover.passthroughViews=@[self.buttonTask];
+    [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+}
+
+-(IBAction)showControlRecordVC:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UIButton *button = (UIButton*)sender;
+    self.popover.passthroughViews=@[self.buttonWarning];
+    [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+}
 @end

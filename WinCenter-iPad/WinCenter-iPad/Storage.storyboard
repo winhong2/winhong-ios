@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EG6-mW-MKn">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -331,7 +332,7 @@
                         <outlet property="defaulted" destination="qNL-NI-IvF" id="zsb-fg-pIo"/>
                         <outlet property="defaulted_label" destination="0m9-32-aSY" id="F7G-kq-yjL"/>
                         <outlet property="hostNum" destination="H1N-37-k6y" id="YnF-je-66C"/>
-                        <outlet property="shared" destination="0Gy-Q2-ymv" id="bp7-OT-NfB"/>
+                        <outlet property="shared" destination="Lk1-qu-NG2" id="Dfx-Qv-YGm"/>
                         <outlet property="totalStorage" destination="nnK-t5-dKe" id="N9Z-UJ-edD"/>
                         <outlet property="totalStorageLabel1" destination="h0q-7I-5HZ" id="jIg-Th-wuT"/>
                         <outlet property="totalStorageLabel2" destination="ISG-Xt-EwJ" id="vcA-hE-igT"/>
@@ -386,21 +387,12 @@
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTf-aQ-aTs">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
                                                 <state key="normal" image="i 图标">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="showControlRecordVC:" destination="EG6-mW-MKn" eventType="touchUpInside" id="ElJ-pN-t42"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXz-3d-iz0">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="EG6-mW-MKn" eventType="touchUpInside" id="Fqw-Uk-Cea"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -435,7 +427,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="buttonTask" destination="PTf-aQ-aTs" id="SVv-J2-dsD"/>
-                        <outlet property="buttonWarning" destination="nXz-3d-iz0" id="5To-4t-wW8"/>
                         <outlet property="ipLabel" destination="E1B-Wk-Yk5" id="MvL-i1-u7Z"/>
                         <outlet property="pageVCContainer" destination="8Xh-kD-J3a" id="e7h-d2-H0g"/>
                         <outlet property="pathLabel" destination="FhU-vb-gV3" id="NgJ-Cu-hZz"/>
@@ -596,7 +587,6 @@
         <image name="i 图标" width="32" height="26"/>
         <image name="share" width="29" height="13"/>
         <image name="存储图标" width="36" height="36"/>
-        <image name="安全警报图标" width="32" height="26"/>
         <image name="数据盘卡片框" width="246" height="100"/>
         <image name="灰色卡片框" width="250" height="176"/>
         <image name="白线框" width="228" height="185"/>

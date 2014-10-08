@@ -873,21 +873,12 @@
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ss-8v-voB">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
                                                 <state key="normal" image="i 图标">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="showControlRecordVC:" destination="rda-j3-bYj" eventType="touchUpInside" id="Ddn-KP-JDN"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-Rt-hPW">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="rda-j3-bYj" eventType="touchUpInside" id="hYc-Pj-cdJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -933,7 +924,6 @@
                     <connections>
                         <outlet property="btnOperation" destination="L0f-RE-LYa" id="0kw-ZS-UwR"/>
                         <outlet property="buttonTask" destination="7Ss-8v-voB" id="vFq-kE-CH5"/>
-                        <outlet property="buttonWarning" destination="vnc-Rt-hPW" id="jEH-Ss-4fd"/>
                         <outlet property="ipLabel" destination="UY2-yD-Vax" id="wri-MY-SIm"/>
                         <outlet property="pageVCContainer" destination="9R9-1v-QAk" id="S3p-BO-yIB"/>
                         <outlet property="pathLabel" destination="Eqv-ZI-xXY" id="teb-oC-TQo"/>
@@ -1340,7 +1330,6 @@
         <image name="允许开机调整打勾" width="54" height="41"/>
         <image name="内存" width="15" height="15"/>
         <image name="内存使用率图表" width="943" height="123"/>
-        <image name="安全警报图标" width="32" height="26"/>
         <image name="定点" width="15" height="15"/>
         <image name="工具图标" width="19" height="20"/>
         <image name="快照" width="51" height="46"/>

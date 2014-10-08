@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LicenseVO : NSObject
+@interface LicenseVO : RemoteObject
 
 @property LicenseWciVO *wci;
 @property int useedCount;
 @property int remianDays;
+
++ (void) getLicenseVOAsync:(FetchObjectCompletionBlock)completeBlock;
 
 @end
 

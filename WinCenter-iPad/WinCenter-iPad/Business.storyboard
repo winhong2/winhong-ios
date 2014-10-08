@@ -221,26 +221,6 @@
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tVI-Id-aqb">
                                         <rect key="frame" x="820" y="0.0" width="180" height="80"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp2-2s-ieA">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="i 图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showControlRecordVC:" destination="5Kv-z6-o09" eventType="touchUpInside" id="onc-mp-DHC"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmM-o8-88I">
-                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
-                                                <state key="normal" image="安全警报图标">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showWarningInfoVC:" destination="5Kv-z6-o09" eventType="touchUpInside" id="zr0-yr-fPc"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plk-xn-45K">
@@ -271,8 +251,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="buttonTask" destination="Mp2-2s-ieA" id="Ao0-Lt-TJu"/>
-                        <outlet property="buttonWarning" destination="CmM-o8-88I" id="p6v-Lo-urA"/>
                         <outlet property="ipLabel" destination="oKy-OH-bvk" id="kU7-ww-7Dl"/>
                         <outlet property="pageVCContainer" destination="LBv-hy-79D" id="eXx-Tk-3xF"/>
                         <outlet property="pathLabel" destination="plk-xn-45K" id="l9X-ur-hlx"/>
@@ -287,10 +265,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="i 图标" width="32" height="26"/>
         <image name="业务icon" width="138" height="137"/>
         <image name="业务虚拟机卡片框" width="246" height="100"/>
-        <image name="安全警报图标" width="32" height="26"/>
         <image name="白色线框3" width="234" height="107"/>
     </resources>
 </document>

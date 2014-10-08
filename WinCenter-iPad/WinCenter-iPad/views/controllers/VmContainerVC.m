@@ -19,6 +19,9 @@
     self.pathLabel.text = [NSString stringWithFormat:@"%@ → %@ → %@", [RemoteObject getCurrentDatacenterVO].name, self.vmVO.poolName, self.vmVO.ownerHostName];
     self.titleLabel.text = self.vmVO.name;
     self.ipLabel.text = self.vmVO.ip;
+    if(self.vmVO.ip == nil){
+        self.ipLabel.text = @"(尚未配置ip)";
+    }
     self.statusLabel.text = [self.vmVO state_text];
     self.statusLabel.textColor = [self.vmVO state_color];
     
@@ -68,5 +71,16 @@
 }
 - (IBAction)migrateVm:(id)sender {
     [self hideControlBtn];
+}
+
+-(IBAction)showControlRecordVC:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UIButton *button = (UIButton*)sender;
+    self.popover.passthroughViews=@[self.buttonWarning];
+    [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
 @end
