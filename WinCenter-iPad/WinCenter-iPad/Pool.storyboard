@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Ve-tC-ML6">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -703,7 +702,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="showControlRecordVC:" destination="4Ve-tC-ML6" eventType="touchUpInside" id="7OF-8m-4O1"/>
+                                                    <action selector="showControlRecordVC:" destination="4Ve-tC-ML6" eventType="touchUpInside" id="Rux-H7-Eyu"/>
                                                 </connections>
                                             </button>
                                         </subviews>

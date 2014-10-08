@@ -889,7 +889,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="showControlRecordVC:" destination="rda-j3-bYj" eventType="touchUpInside" id="Ddn-KP-JDN"/>
+                                                    <action selector="showControlRecordVC:" destination="rda-j3-bYj" eventType="touchUpInside" id="3Oq-XU-5mZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
