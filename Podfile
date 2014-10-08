@@ -8,7 +8,7 @@ xcodeproj 'WinHelper-iPhone/WinHelper-iPhone.xcodeproj'
 xcodeproj 'LightApp-iPhone/LightApp-iPhone.xcodeproj'
 xcodeproj 'Zkuyun-iPhone/Zkuyun-iPhone.xcodeproj'
 
-platform :ios, '8.0'
+platform :ios, '7.1'
 
 target 'WinCenter-Common' do
     pod 'PNChart', '~> 0.5'
@@ -19,12 +19,10 @@ target 'WinCenter-Common' do
 end
 
 target 'WinCenter-iPad' do
- 
  xcodeproj 'WinCenter-iPad/WinCenter-iPad.xcodeproj'
 end
 
 target 'WinCenter-iPhone' do
-
  xcodeproj 'WinCenter-iPhone/WinCenter-iPhone.xcodeproj'
 end
 

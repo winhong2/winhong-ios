@@ -14,14 +14,13 @@
 		18A4D43E19B560D400415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D43D19B560D400415896 /* main.m */; };
 		18A4D44219B560D400415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44119B560D400415896 /* AppDelegate.m */; };
 		18A4D44519B560D400415896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D44319B560D400415896 /* Main.storyboard */; };
-		18A4D44819B560D400415896 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44719B560D400415896 /* ViewController.m */; };
 		18A4D44A19B560D400415896 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D44919B560D400415896 /* Images.xcassets */; };
 		18A4D45119B560D400415896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D45019B560D400415896 /* XCTest.framework */; };
 		18A4D45219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D45319B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
 		18A4D45B19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D45919B560D400415896 /* InfoPlist.strings */; };
 		18A4D45D19B560D400415896 /* WinCenter_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D45C19B560D400415896 /* WinCenter_iPhoneTests.m */; };
-		6181FBFBE1CB4DBC854E65FE /* libPods-WinCenter-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */; };
+		18B2325719E57462000A1FA1 /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		174F9DA5293145C5A4DD32BE /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 		18A4D42E19B560D400415896 /* WinCenter-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D43119B560D400415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18A4D43319B560D400415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,14 +46,14 @@
 		18A4D44019B560D400415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D44119B560D400415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18A4D44419B560D400415896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18A4D44619B560D400415896 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18A4D44719B560D400415896 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18A4D44919B560D400415896 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18A4D44F19B560D400415896 /* WinCenter-iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WinCenter-iPhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D45019B560D400415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		18A4D45819B560D400415896 /* WinCenter-iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinCenter-iPhoneTests-Info.plist"; sourceTree = "<group>"; };
 		18A4D45A19B560D400415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A4D45C19B560D400415896 /* WinCenter_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinCenter_iPhoneTests.m; sourceTree = "<group>"; };
+		18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
+		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B2325719E57462000A1FA1 /* libWinCenter-Common.a in Frameworks */,
 				18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */,
 				18A4D43619B560D400415896 /* UIKit.framework in Frameworks */,
 				18A4D43219B560D400415896 /* Foundation.framework in Frameworks */,
-				6181FBFBE1CB4DBC854E65FE /* libPods-WinCenter-iPhone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +88,7 @@
 				18A4D45619B560D400415896 /* WinCenter-iPhoneTests */,
 				18A4D43019B560D400415896 /* Frameworks */,
 				18A4D42F19B560D400415896 /* Products */,
-				174F9DA5293145C5A4DD32BE /* Pods-WinCenter-iPhone.xcconfig */,
+				A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +104,7 @@
 		18A4D43019B560D400415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */,
 				18A4D43119B560D400415896 /* Foundation.framework */,
 				18A4D43319B560D400415896 /* CoreGraphics.framework */,
 				18A4D43519B560D400415896 /* UIKit.framework */,
@@ -122,8 +121,6 @@
 				18A4D44019B560D400415896 /* AppDelegate.h */,
 				18A4D44119B560D400415896 /* AppDelegate.m */,
 				18A4D44319B560D400415896 /* Main.storyboard */,
-				18A4D44619B560D400415896 /* ViewController.h */,
-				18A4D44719B560D400415896 /* ViewController.m */,
 				18A4D44919B560D400415896 /* Images.xcassets */,
 				18A4D43819B560D400415896 /* Supporting Files */,
 			);
@@ -314,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A4D44819B560D400415896 /* ViewController.m in Sources */,
 				18A4D44219B560D400415896 /* AppDelegate.m in Sources */,
 				18A4D43E19B560D400415896 /* main.m in Sources */,
 			);
@@ -438,28 +434,38 @@
 		};
 		18A4D46119B560D400415896 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 174F9DA5293145C5A4DD32BE /* Pods-WinCenter-iPhone.xcconfig */;
+			baseConfigurationReference = A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WinCenter-iPhone/WinCenter-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "WinCenter-iPhone/WinCenter-iPhone-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../WinCenter-Common/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		18A4D46219B560D400415896 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 174F9DA5293145C5A4DD32BE /* Pods-WinCenter-iPhone.xcconfig */;
+			baseConfigurationReference = A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WinCenter-iPhone/WinCenter-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "WinCenter-iPhone/WinCenter-iPhone-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../WinCenter-Common/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
