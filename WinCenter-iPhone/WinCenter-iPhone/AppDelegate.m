@@ -12,7 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    if([[NSUserDefaults standardUserDefaults] stringForKey:@"SERVER_ROOT"] == nil){
+        [[NSUserDefaults standardUserDefaults] setValue:@"https://192.168.100.146:8090" forKey:@"SERVER_ROOT"];
+    }
+    
     return YES;
 }
 							

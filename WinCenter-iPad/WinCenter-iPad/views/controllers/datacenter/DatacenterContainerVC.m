@@ -9,6 +9,7 @@
 #import "DatacenterContainerVC.h"
 #import "MasterCollectionVC.h"
 #import "NetworkContainerVC.h"
+#import "DatacenterDetailCollectionVC.h"
 
 @implementation DatacenterContainerVC
 
@@ -52,13 +53,19 @@
     self.titleLabel.text = [RemoteObject getCurrentDatacenterVO].name;
     
     self.pages = @[
-        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterPoolCollectionVC"],
-        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterHostCollectionVC"],
-        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterStorageCollectionVC"],
-        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterVmCollectionVC"],
-        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterBusinessCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
         [self.storyboard instantiateViewControllerWithIdentifier:@"NetworkContainerVC"]
     ];
+    
+    ((DatacenterDetailCollectionVC*)self.pages[0]).pageType = Page_Pool;
+    ((DatacenterDetailCollectionVC*)self.pages[1]).pageType = Page_Host;
+    ((DatacenterDetailCollectionVC*)self.pages[2]).pageType = Page_Storage;
+    ((DatacenterDetailCollectionVC*)self.pages[3]).pageType = Page_VM;
+    ((DatacenterDetailCollectionVC*)self.pages[4]).pageType = Page_Business;
     
     [super refresh];
 }
@@ -68,7 +75,7 @@
 }
 
 -(IBAction)showOptionsVC:(id)sender{
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]  instantiateViewControllerWithIdentifier:@"OptionsVCNav"];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]  instantiateInitialViewController];
     vc.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:vc animated:YES completion:nil];
     
@@ -78,10 +85,10 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"WarningInfoVCNav"];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning" bundle:nil] instantiateInitialViewController];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
     UIButton *button = (UIButton*)sender;
-    self.popover.passthroughViews=@[self.buttonWarning];
+    self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
 
@@ -89,10 +96,10 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
-    self.popover.passthroughViews=@[self.buttonTask];
+    self.popover.passthroughViews=@[self.buttonWarning];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
 @end

@@ -14,6 +14,14 @@
 #ifndef WinCenter_Common_Models_h
 #define WinCenter_Common_Models_h
 
+typedef NS_ENUM(NSInteger, DatacenterDetailPageType) {
+    Page_Pool,
+    Page_Host,
+    Page_Storage,
+    Page_VM,
+    Page_Business
+};
+
 #import "RemoteObject.h"
 #import "UserListResult.h"
 #import "UserVO.h"

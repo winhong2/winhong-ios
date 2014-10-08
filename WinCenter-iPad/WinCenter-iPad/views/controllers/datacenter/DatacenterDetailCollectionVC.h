@@ -1,5 +1,5 @@
 //
-//  HostCollectionVC.h
+//  PoolCollectionVC.h
 //  WinCenter-iPad
 //
 //  Created by apple on 14-10-5.
@@ -8,10 +8,10 @@
 
 #import "MasterCollectionVC.h"
 
-@interface DatacenterHostCollectionVC : MasterCollectionVC
+@interface DatacenterDetailCollectionVC : MasterCollectionVC
 
 @property BOOL isMore;
-
 @property PoolVO *poolVO;
+@property DatacenterDetailPageType pageType;
 
 @end

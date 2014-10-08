@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginVC : UITableViewController<UITextFieldDelegate, NSURLSessionDelegate>
+@interface LoginVC : UIViewController<UITextFieldDelegate, NSURLSessionDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 - (IBAction)backToLogin:(UIStoryboardSegue*)segue;

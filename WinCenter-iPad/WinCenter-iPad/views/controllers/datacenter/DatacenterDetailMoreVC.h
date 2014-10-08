@@ -1,5 +1,5 @@
 //
-//  DatacenterMoreVC.h
+//  DatacenterPoolMore.h
 //  WinCenter-iPad
 //
 //  Created by apple on 14-10-5.
@@ -8,8 +8,9 @@
 
 #import "MasterContainerVC.h"
 
-@interface DatacenterMoreVC : MasterContainerVC
+@interface DatacenterDetailMoreVC : MasterContainerVC
 
 @property PoolVO *poolVO;
+@property DatacenterDetailPageType pageType;
 
 @end

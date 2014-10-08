@@ -64,6 +64,10 @@
 }
 
 - (void) getBusinessListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count{
+    if(count==0){
+        return [self getBusinessListAsync:completionBlock];
+    }
+    
     if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"] isEqualToString:@"true"]){
         completionBlock([[BusinessListResult alloc] initWithJSONData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DatacenterVO.getBusinessListAsync.limit" ofType:@"json"]]].resultList, nil);
         return;
@@ -89,6 +93,11 @@
     }];
 }
 - (void) getPoolListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count{
+    
+    if(count==0){
+        return [self getPoolListAsync:completionBlock];
+    }
+    
     if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"] isEqualToString:@"true"]){
         completionBlock([[PoolListResult alloc] initWithJSONData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DatacenterVO.getPoolListAsync.limit" ofType:@"json"]]].resourcePools, nil);
         return;
