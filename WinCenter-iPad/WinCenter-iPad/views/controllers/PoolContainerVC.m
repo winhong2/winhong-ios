@@ -11,6 +11,7 @@
 #import "HostCollectionVC.h"
 #import "VmCollectionVC.h"
 #import "StorageCollectionVC.h"
+#import "PopControlRecordVC.h"
 
 @implementation PoolContainerVC
 
@@ -45,8 +46,10 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
-    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
+    PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
+    controlVC.remoteObject = self.poolVO;
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
     self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];

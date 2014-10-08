@@ -13,6 +13,7 @@
 #import "StorageCollectionVC.h"
 #import "HostNetworkCollectionVC.h"
 #import "HostNicCollectionVC.h"
+#import "PopControlRecordVC.h"
 
 @implementation HostContainerVC
 
@@ -58,8 +59,10 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
-    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateViewControllerWithIdentifier:@"ControlRecordVCNav"];
+    PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
+    controlVC.remoteObject = self.hostVO;
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
     self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];

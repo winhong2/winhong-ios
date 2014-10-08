@@ -390,6 +390,7 @@
                         <outlet property="hostCount" destination="8mf-aC-2no" id="QGz-P3-Hmz"/>
                         <outlet property="intervalTime" destination="T1X-Cr-pGe" id="7QF-5T-8Y1"/>
                         <outlet property="memeryChart" destination="ilu-EJ-OKU" id="mbc-fO-uTa"/>
+                        <outlet property="memeryLoadBalancing" destination="fw2-bh-RNZ" id="N9x-hl-6mY"/>
                         <outlet property="memoryChartGroup" destination="iwJ-Sd-KhU" id="7lp-rP-06t"/>
                         <outlet property="memoryRatio" destination="uIw-Dc-xhJ" id="U0n-fo-OR0"/>
                         <outlet property="memorySize" destination="nQz-QG-Ffn" id="K56-Lv-Hed"/>

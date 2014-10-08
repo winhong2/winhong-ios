@@ -17,7 +17,7 @@
                                 @"CREATED":@"待部署",
                                 @"STARTING":@"正在启动",
                                 @"STOPPED":@"已关机",
-                                @"STOPPEING":@"关机中",
+                                @"STOPPING":@"关机中",
                                 @"DELETEING":@"删除中",
                                 @"RESIZEING":@"调整中",
                                 @"RESTARTING":@"重启中",
