@@ -34,6 +34,7 @@
 - (NSString*)osType_imageName;
 - (NSString*)state_text;
 - (UIColor *)state_color;
+- (NSString *)memoryType_text;
 
 - (void) getVmVOAsync:(FetchObjectCompletionBlock)completeBlock;
 - (void) getVmVolumnListAsync:(FetchAllCompletionBlock)completionBlock;

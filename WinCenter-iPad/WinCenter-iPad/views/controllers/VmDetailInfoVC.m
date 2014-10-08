@@ -40,7 +40,7 @@
     self.runningTime.text = [NSString stringWithFormat:@"%d", self.vmVO.runTime];
     self.vcpu.text = [NSString stringWithFormat:@"%d", self.vmVO.vcpu];
     //self.isDynamicCPU
-    self.memoryType.text = self.vmVO.memoryType;
+    self.memoryType.text = [self.vmVO memoryType_text];
     //self.isDynamicMemWce
     self.memory.text = [NSString stringWithFormat:@"%d", self.vmVO.memory];
     //self.snopshotNum.text

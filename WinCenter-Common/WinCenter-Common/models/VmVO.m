@@ -76,6 +76,22 @@
     }
 }
 
+- (NSString *)memoryType_text{
+    NSDictionary *dict = @{
+                                @"shared":@"共享",
+                                @"privilege":@"专享",
+                                @"reservation":@"预留",
+                                @"custom":@"自定义调整"
+                                };
+    
+    
+    NSString *result = [dict valueForKey:self.memoryType];
+    if((result==nil) || [result isEqualToString:@""]){
+        result = self.memoryType;
+    }
+    return result;
+}
+
 - (void) getVmVOAsync:(FetchObjectCompletionBlock)completeBlock{
     if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"] isEqualToString:@"true"]){
         completeBlock([[VmVO alloc] initWithJSONData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"VmVO.getVmVOAsync" ofType:@"json"]]], nil);
