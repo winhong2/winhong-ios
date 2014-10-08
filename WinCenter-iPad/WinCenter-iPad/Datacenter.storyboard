@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="qIm-ao-Ald">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -325,72 +326,72 @@
                                 <rect key="frame" x="4" y="8" width="239" height="410"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="uBN-Gv-s4H">
-                                <rect key="frame" x="17" y="419" width="95" height="85"/>
+                                <rect key="frame" x="17" y="415" width="102" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="按键4">
+                                <state key="normal" image="按键-资源池">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="按键10"/>
+                                <state key="selected" image="按键-资源池-selected"/>
                                 <connections>
                                     <action selector="switchPageVC:" destination="hb4-50-gaJ" eventType="touchUpInside" id="2tJ-gc-egu"/>
                                     <action selector="switchPageVC:" destination="Fo4-Ab-7wu" eventType="touchUpInside" id="YyX-ZV-uEQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXV-ip-DdE">
-                                <rect key="frame" x="139" y="419" width="95" height="85"/>
+                                <rect key="frame" x="139" y="415" width="102" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="按键5">
+                                <state key="normal" image="按键-物理机">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="按键7"/>
+                                <state key="selected" image="按键-物理机-selected"/>
                                 <connections>
                                     <action selector="switchPageVC:" destination="hb4-50-gaJ" eventType="touchUpInside" id="Oc9-1m-2rw"/>
                                     <action selector="switchPageVC:" destination="Fo4-Ab-7wu" eventType="touchUpInside" id="Oge-6g-rWS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlr-gC-Mmb">
-                                <rect key="frame" x="17" y="511" width="95" height="85"/>
+                                <rect key="frame" x="17" y="511" width="102" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="按键2">
+                                <state key="normal" image="按键-存储">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="按键8"/>
+                                <state key="selected" image="按键-存储-selected"/>
                                 <connections>
                                     <action selector="switchPageVC:" destination="Fo4-Ab-7wu" eventType="touchUpInside" id="fRs-zq-pdO"/>
                                     <action selector="switchPageVC:" destination="hb4-50-gaJ" eventType="touchUpInside" id="qdc-RX-Go2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zj-fj-Vfh">
-                                <rect key="frame" x="139" y="511" width="95" height="85"/>
+                                <rect key="frame" x="139" y="511" width="102" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="按键">
+                                <state key="normal" image="按键-虚拟机">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="按键6"/>
+                                <state key="selected" image="按键-虚拟机-selected"/>
                                 <connections>
                                     <action selector="switchPageVC:" destination="Fo4-Ab-7wu" eventType="touchUpInside" id="85t-GI-315"/>
                                     <action selector="switchPageVC:" destination="hb4-50-gaJ" eventType="touchUpInside" id="UoO-eP-axV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySe-aL-tjs">
-                                <rect key="frame" x="20" y="601" width="95" height="85"/>
+                                <rect key="frame" x="20" y="601" width="102" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="按键1">
+                                <state key="normal" image="按键-业务">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="按键11"/>
+                                <state key="selected" image="按键-业务-selected"/>
                                 <connections>
                                     <action selector="switchPageVC:" destination="hb4-50-gaJ" eventType="touchUpInside" id="3p8-Vm-Bee"/>
                                     <action selector="switchPageVC:" destination="Fo4-Ab-7wu" eventType="touchUpInside" id="j0C-ky-gRb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z0-Jf-eEu">
-                                <rect key="frame" x="139" y="601" width="95" height="85"/>
+                                <rect key="frame" x="139" y="601" width="102" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="按键3">
+                                <state key="normal" image="按键-网络">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="按键9"/>
+                                <state key="selected" image="按键-网络-selected"/>
                                 <connections>
                                     <action selector="switchPageVC:" destination="Fo4-Ab-7wu" eventType="touchUpInside" id="Vah-Aq-rvA"/>
                                     <action selector="switchPageVC:" destination="hb4-50-gaJ" eventType="touchUpInside" id="rqi-n8-CcU"/>
@@ -2194,18 +2195,18 @@
         <image name="存储图标" width="36" height="36"/>
         <image name="安全警报图标" width="32" height="26"/>
         <image name="左侧内陷框" width="242" height="410"/>
-        <image name="按键" width="102" height="92"/>
-        <image name="按键1" width="102" height="92"/>
-        <image name="按键10" width="102" height="92"/>
-        <image name="按键11" width="102" height="92"/>
-        <image name="按键2" width="102" height="92"/>
-        <image name="按键3" width="102" height="92"/>
-        <image name="按键4" width="102" height="92"/>
-        <image name="按键5" width="102" height="92"/>
-        <image name="按键6" width="102" height="92"/>
-        <image name="按键7" width="102" height="92"/>
-        <image name="按键8" width="102" height="92"/>
-        <image name="按键9" width="102" height="92"/>
+        <image name="按键-业务" width="102" height="92"/>
+        <image name="按键-业务-selected" width="102" height="92"/>
+        <image name="按键-存储" width="102" height="92"/>
+        <image name="按键-存储-selected" width="102" height="92"/>
+        <image name="按键-物理机" width="102" height="92"/>
+        <image name="按键-物理机-selected" width="102" height="92"/>
+        <image name="按键-网络" width="102" height="92"/>
+        <image name="按键-网络-selected" width="102" height="92"/>
+        <image name="按键-虚拟机" width="102" height="92"/>
+        <image name="按键-虚拟机-selected" width="102" height="92"/>
+        <image name="按键-资源池" width="102" height="92"/>
+        <image name="按键-资源池-selected" width="102" height="92"/>
         <image name="物理机icon" width="64" height="64"/>
         <image name="箭头图标" width="32" height="26"/>
         <image name="虚拟机卡片框" width="243" height="151"/>
