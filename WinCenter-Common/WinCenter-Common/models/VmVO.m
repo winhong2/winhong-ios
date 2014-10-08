@@ -115,6 +115,14 @@
     }];
 }
 
+- (void) VmOperation:(NSString*)state async:(BasicCompletionBlock)completionBlock{
+    [[UNIRest put:^(UNISimpleRequest *simpleRequest) {
+        [simpleRequest setUrl:[NSString stringWithFormat:@"/restServlet?connectorId=%d&apiKey=pc.winserver.vm.vminfo&placeholder=%d", [RemoteObject getCurrentDatacenterVO].id, self.vmId]];
+        [simpleRequest setParameters:@{@"state":state}];
+    }] asJsonAsync:^(UNIHTTPJsonResponse *jsonResponse, NSError *error) {
+            completionBlock(error);
+    }];
+}
 
 
 @end

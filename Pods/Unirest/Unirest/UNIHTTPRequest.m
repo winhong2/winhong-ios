@@ -107,13 +107,20 @@
             if (error != nil) {
                 response(nil, error);
             } else {
-                UNIHTTPJsonResponse *jsonResponse = [[UNIHTTPJsonResponse alloc] initWithSimpleResponse:res];
-                NSString *cookieStr = [jsonResponse.headers valueForKey:@"Set-Cookie"];
-                if(cookieStr!=nil){
-                    cookieStr = [cookieStr componentsSeparatedByString:@";"][0];
-                    [UNIRest defaultHeader:@"Cookie" value:cookieStr];
+                if(res==nil){
+                    response(nil, error);
+                }else{
+                    UNIHTTPJsonResponse *jsonResponse = [[UNIHTTPJsonResponse alloc] initWithSimpleResponse:res];
+                    if(jsonResponse){
+                        NSString *cookieStr = [jsonResponse.headers valueForKey:@"Set-Cookie"];
+                        if(cookieStr!=nil){
+                            cookieStr = [cookieStr componentsSeparatedByString:@";"][0];
+                            [UNIRest defaultHeader:@"Cookie" value:cookieStr];
+                        }
+                    }
+                    response(jsonResponse, error);
                 }
-                response(jsonResponse, error);
+                
             }
         });
     }];

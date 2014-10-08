@@ -48,11 +48,16 @@
     [super refresh];
     
     if ([self.vmVO.state isEqualToString:@"OK"]) {
+        self.btnStart.enabled = false;
+        self.btnStop.enabled = true;
+        self.btnRestart.enabled = true;
+        self.btnMigrate.enabled = true;
+    }else if([self.vmVO.state isEqualToString:@"STOPPED"]){
         self.btnStart.enabled = true;
         self.btnStop.enabled = false;
         self.btnRestart.enabled = false;
+        self.btnMigrate.enabled = true;
     }
-    
 }
 
 - (IBAction)showControlBtns:(id)sender {
@@ -63,19 +68,25 @@
     self.vmControlButtons.hidden = YES;
 }
 - (IBAction)openVm:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
-    [self hideControlBtn];
+    [self.vmVO VmOperation:@"OK" async:^(NSError *error) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+        [self hideControlBtn];
+    }];
 }
 - (IBAction)shutdownVm:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在关机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
-    [self hideControlBtn];
+    [self.vmVO VmOperation:@"STOPPED" async:^(NSError *error) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在关机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+        [self hideControlBtn];
+    }];
 }
 - (IBAction)restartVm:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在重启..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
-    [self hideControlBtn];
+    [self.vmVO VmOperation:@"RESTART" async:^(NSError *error) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在重启..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+        [self hideControlBtn];
+    }];
 }
 - (IBAction)migrateVm:(id)sender {
     [self hideControlBtn];
