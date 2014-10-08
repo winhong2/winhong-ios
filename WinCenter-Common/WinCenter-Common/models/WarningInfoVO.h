@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WarningInfoVO : NSObject
+@interface WarningInfoVO : RemoteObject
 
 @property int warningId;
 @property int warningUuid;
@@ -27,4 +27,6 @@
 @property NSString *poolOriginalId;
 @property NSString *uri;
 
++ (void) getWarningInfoListAsync:(FetchAllCompletionBlock)completeBlock;
+    
 @end

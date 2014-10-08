@@ -21,19 +21,6 @@
 @property int hostId;
 @property int vmId;
 
-
++ (void) getControlRecordListViaObject:(RemoteObject*)remoteObject async:(FetchAllCompletionBlock)completeBlock;
 
 @end
-//"tasks": [
-//          {
-//              "taskName": "收集存储池",//名称
-//              "executeTime": 1407738165000,//开始时间
-//              "endTime": 1407738171000,//结束时间
-//              "progress": 100,//进度
-//              "state": "completedAndError",//状态
-//              "user": "admin",//操作用户
-//              "targetName": "168nfs",//目标名称
-//              "resPoolId": 1,
-//              "hostId": null,
-//              "vmId": null,
-//          }]

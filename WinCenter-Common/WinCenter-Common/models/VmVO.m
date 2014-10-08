@@ -36,7 +36,7 @@
         @"CREATED":@"待部署",
         @"STARTING":@"正在启动",
         @"STOPPED":@"已关机",
-        @"STOPPEING":@"关机中",
+        @"STOPPING":@"关机中",
         @"DELETEING":@"删除中",
         @"RESIZEING":@"调整中",
         @"RESTARTING":@"重启中",
@@ -74,6 +74,22 @@
     }else{
         return PNYellow;
     }
+}
+
+- (NSString *)memoryType_text{
+    NSDictionary *dict = @{
+                                @"shared":@"共享",
+                                @"privilege":@"专享",
+                                @"reservation":@"预留",
+                                @"custom":@"自定义调整"
+                                };
+    
+    
+    NSString *result = [dict valueForKey:self.memoryType];
+    if((result==nil) || [result isEqualToString:@""]){
+        result = self.memoryType;
+    }
+    return result;
 }
 
 - (void) getVmVOAsync:(FetchObjectCompletionBlock)completeBlock{

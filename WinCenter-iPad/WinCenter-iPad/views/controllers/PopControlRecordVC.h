@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PopControlRecordVC : UITableViewController
+@property RemoteObject *remoteObject;
 @property NSArray *dataList;
 @end
