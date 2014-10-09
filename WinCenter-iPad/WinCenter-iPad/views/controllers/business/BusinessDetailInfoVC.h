@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusinessDetailInfoVC : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *collectionHeader;
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@interface BusinessDetailInfoVC : UIViewController
+
 @property BusinessVO *businessVO;
-@property NSArray *dataList;
+
 @end

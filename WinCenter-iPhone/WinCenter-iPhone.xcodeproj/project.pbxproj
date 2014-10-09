@@ -13,6 +13,10 @@
 		1809A7B419E62BD30034052C /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7B319E62BD30034052C /* Warning.storyboard */; };
 		1809A7EC19E63BDF0034052C /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7EB19E63BDF0034052C /* LoginTableVC.m */; };
 		1809A7F119E677D80034052C /* MasterCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7F019E677D80034052C /* MasterCollectionFooter.m */; };
+		1809A7FC19E6CD450034052C /* StorageDiskCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7F919E6CD450034052C /* StorageDiskCollectionCell.m */; };
+		1809A7FD19E6CD450034052C /* StorageDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */; };
+		1858129219E6D62D0047C078 /* BusinessVmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */; };
+		1858129519E6D6340047C078 /* BusinessVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */; };
 		18A4D43219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43319B560D400415896 /* CoreGraphics.framework */; };
 		18A4D43619B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
@@ -84,12 +88,10 @@
 		18B2340519E57D3C000A1FA1 /* PopOptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338E19E57D3C000A1FA1 /* PopOptionsVC.m */; };
 		18B2340619E57D3C000A1FA1 /* StorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339119E57D3C000A1FA1 /* StorageCollectionVC.m */; };
 		18B2340719E57D3C000A1FA1 /* StorageContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339319E57D3C000A1FA1 /* StorageContainerVC.m */; };
-		18B2340819E57D3C000A1FA1 /* StorageDetailDiskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339519E57D3C000A1FA1 /* StorageDetailDiskCell.m */; };
 		18B2340919E57D3C000A1FA1 /* StorageDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339719E57D3C000A1FA1 /* StorageDetailInfoVC.m */; };
 		18B2340A19E57D3C000A1FA1 /* PopControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339A19E57D3C000A1FA1 /* PopControlRecordCell.m */; };
 		18B2340B19E57D3C000A1FA1 /* PopControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339C19E57D3C000A1FA1 /* PopControlRecordCellForTime.m */; };
 		18B2340C19E57D3C000A1FA1 /* PopControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339E19E57D3C000A1FA1 /* PopControlRecordVC.m */; };
-		18B2340D19E57D3C000A1FA1 /* VmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A119E57D3C000A1FA1 /* VmCollectionCell.m */; };
 		18B2340E19E57D3C000A1FA1 /* VmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A319E57D3C000A1FA1 /* VmCollectionVC.m */; };
 		18B2340F19E57D3C000A1FA1 /* VmContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A519E57D3C000A1FA1 /* VmContainerVC.m */; };
 		18B2341019E57D3C000A1FA1 /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A719E57D3C000A1FA1 /* VmDetailCPUConfigVC.m */; };
@@ -140,6 +142,14 @@
 		1809A7EB19E63BDF0034052C /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
 		1809A7EF19E677D80034052C /* MasterCollectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionFooter.h; sourceTree = "<group>"; };
 		1809A7F019E677D80034052C /* MasterCollectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionFooter.m; sourceTree = "<group>"; };
+		1809A7F819E6CD450034052C /* StorageDiskCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionCell.h; sourceTree = "<group>"; };
+		1809A7F919E6CD450034052C /* StorageDiskCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionCell.m; sourceTree = "<group>"; };
+		1809A7FA19E6CD450034052C /* StorageDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionVC.h; sourceTree = "<group>"; };
+		1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionVC.m; sourceTree = "<group>"; };
+		1858129019E6D62D0047C078 /* BusinessVmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionCell.h; sourceTree = "<group>"; };
+		1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionCell.m; sourceTree = "<group>"; };
+		1858129319E6D6340047C078 /* BusinessVmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionVC.h; sourceTree = "<group>"; };
+		1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionVC.m; sourceTree = "<group>"; };
 		18A4D42E19B560D400415896 /* WinCenter-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D43119B560D400415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18A4D43319B560D400415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -239,8 +249,6 @@
 		18B2339119E57D3C000A1FA1 /* StorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageCollectionVC.m; sourceTree = "<group>"; };
 		18B2339219E57D3C000A1FA1 /* StorageContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageContainerVC.h; sourceTree = "<group>"; };
 		18B2339319E57D3C000A1FA1 /* StorageContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageContainerVC.m; sourceTree = "<group>"; };
-		18B2339419E57D3C000A1FA1 /* StorageDetailDiskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailDiskCell.h; sourceTree = "<group>"; };
-		18B2339519E57D3C000A1FA1 /* StorageDetailDiskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailDiskCell.m; sourceTree = "<group>"; };
 		18B2339619E57D3C000A1FA1 /* StorageDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailInfoVC.h; sourceTree = "<group>"; };
 		18B2339719E57D3C000A1FA1 /* StorageDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailInfoVC.m; sourceTree = "<group>"; };
 		18B2339919E57D3C000A1FA1 /* PopControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCell.h; sourceTree = "<group>"; };
@@ -249,8 +257,6 @@
 		18B2339C19E57D3C000A1FA1 /* PopControlRecordCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCellForTime.m; sourceTree = "<group>"; };
 		18B2339D19E57D3C000A1FA1 /* PopControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordVC.h; sourceTree = "<group>"; };
 		18B2339E19E57D3C000A1FA1 /* PopControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordVC.m; sourceTree = "<group>"; };
-		18B233A019E57D3C000A1FA1 /* VmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionCell.h; sourceTree = "<group>"; };
-		18B233A119E57D3C000A1FA1 /* VmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionCell.m; sourceTree = "<group>"; };
 		18B233A219E57D3C000A1FA1 /* VmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionVC.h; sourceTree = "<group>"; };
 		18B233A319E57D3C000A1FA1 /* VmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionVC.m; sourceTree = "<group>"; };
 		18B233A419E57D3C000A1FA1 /* VmContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmContainerVC.h; sourceTree = "<group>"; };
@@ -485,6 +491,10 @@
 		18B2333E19E57D3B000A1FA1 /* business */ = {
 			isa = PBXGroup;
 			children = (
+				1858129019E6D62D0047C078 /* BusinessVmCollectionCell.h */,
+				1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */,
+				1858129319E6D6340047C078 /* BusinessVmCollectionVC.h */,
+				1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */,
 				18B2333F19E57D3B000A1FA1 /* BusinessContainerVC.h */,
 				18B2334019E57D3B000A1FA1 /* BusinessContainerVC.m */,
 				18B2334119E57D3B000A1FA1 /* BusinessDetailInfoVC.h */,
@@ -593,10 +603,12 @@
 				18B2339119E57D3C000A1FA1 /* StorageCollectionVC.m */,
 				18B2339219E57D3C000A1FA1 /* StorageContainerVC.h */,
 				18B2339319E57D3C000A1FA1 /* StorageContainerVC.m */,
-				18B2339419E57D3C000A1FA1 /* StorageDetailDiskCell.h */,
-				18B2339519E57D3C000A1FA1 /* StorageDetailDiskCell.m */,
 				18B2339619E57D3C000A1FA1 /* StorageDetailInfoVC.h */,
 				18B2339719E57D3C000A1FA1 /* StorageDetailInfoVC.m */,
+				1809A7F819E6CD450034052C /* StorageDiskCollectionCell.h */,
+				1809A7F919E6CD450034052C /* StorageDiskCollectionCell.m */,
+				1809A7FA19E6CD450034052C /* StorageDiskCollectionVC.h */,
+				1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */,
 			);
 			path = storage;
 			sourceTree = "<group>";
@@ -617,8 +629,6 @@
 		18B2339F19E57D3C000A1FA1 /* vm */ = {
 			isa = PBXGroup;
 			children = (
-				18B233A019E57D3C000A1FA1 /* VmCollectionCell.h */,
-				18B233A119E57D3C000A1FA1 /* VmCollectionCell.m */,
 				18B233A219E57D3C000A1FA1 /* VmCollectionVC.h */,
 				18B233A319E57D3C000A1FA1 /* VmCollectionVC.m */,
 				18B233A419E57D3C000A1FA1 /* VmContainerVC.h */,
@@ -854,24 +864,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1858129519E6D6340047C078 /* BusinessVmCollectionVC.m in Sources */,
 				18B2340719E57D3C000A1FA1 /* StorageContainerVC.m in Sources */,
 				18B2341C19E57D3C000A1FA1 /* PopWarningInfoVC.m in Sources */,
 				18B233F819E57D3C000A1FA1 /* HostDetailInfoVC.m in Sources */,
 				18B2340219E57D3C000A1FA1 /* PoolDetailInfoVC.m in Sources */,
 				18C8467419E5A15F005FD404 /* DatacenterDetailMoreVC.m in Sources */,
 				18B233FD19E57D3C000A1FA1 /* LoginVC.m in Sources */,
+				1809A7FC19E6CD450034052C /* StorageDiskCollectionCell.m in Sources */,
 				18B233FA19E57D3C000A1FA1 /* HostNetworkCollectionVC.m in Sources */,
 				18B233E619E57D3C000A1FA1 /* MasterCollectionVC.m in Sources */,
 				18B2340F19E57D3C000A1FA1 /* VmContainerVC.m in Sources */,
 				18B2340E19E57D3C000A1FA1 /* VmCollectionVC.m in Sources */,
 				18B2340B19E57D3C000A1FA1 /* PopControlRecordCellForTime.m in Sources */,
-				18B2340D19E57D3C000A1FA1 /* VmCollectionCell.m in Sources */,
 				18B2340119E57D3C000A1FA1 /* PoolContainerVC.m in Sources */,
 				1809A7AE19E6281E0034052C /* DatacenterContainerTableVC.m in Sources */,
 				18B233FC19E57D3C000A1FA1 /* LoginSettingVC.m in Sources */,
 				18B233F719E57D3C000A1FA1 /* HostContainerVC.m in Sources */,
 				18B233FB19E57D3C000A1FA1 /* HostNicCollectionVC.m in Sources */,
-				18B2340819E57D3C000A1FA1 /* StorageDetailDiskCell.m in Sources */,
 				18B2341919E57D3C000A1FA1 /* VmNewVC.m in Sources */,
 				18B2341619E57D3C000A1FA1 /* VmMigrateSelectHostListVC.m in Sources */,
 				18B2341719E57D3C000A1FA1 /* VmMigrateVC.m in Sources */,
@@ -879,6 +889,7 @@
 				18B2341219E57D3C000A1FA1 /* VmDetailMemryConfigVC.m in Sources */,
 				1809A7EC19E63BDF0034052C /* LoginTableVC.m in Sources */,
 				18C8467219E5A15F005FD404 /* DatacenterDetailCollectionVC.m in Sources */,
+				1858129219E6D62D0047C078 /* BusinessVmCollectionCell.m in Sources */,
 				18B2341319E57D3C000A1FA1 /* VmDetailSnapshootVC.m in Sources */,
 				18B2340319E57D3C000A1FA1 /* PopOptionLicenseVC.m in Sources */,
 				18B233F619E57D3C000A1FA1 /* HostCollectionVC.m in Sources */,
@@ -895,6 +906,7 @@
 				18B2340519E57D3C000A1FA1 /* PopOptionsVC.m in Sources */,
 				18C8467319E5A15F005FD404 /* DatacenterDetailInfoVC.m in Sources */,
 				18C8467519E5A15F005FD404 /* DatacenterTableVC.m in Sources */,
+				1809A7FD19E6CD450034052C /* StorageDiskCollectionVC.m in Sources */,
 				18B2340C19E57D3C000A1FA1 /* PopControlRecordVC.m in Sources */,
 				18B2341A19E57D3C000A1FA1 /* PopWarningInfoCell.m in Sources */,
 				18B2340919E57D3C000A1FA1 /* StorageDetailInfoVC.m in Sources */,

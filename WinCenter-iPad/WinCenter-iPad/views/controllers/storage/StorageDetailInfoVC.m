@@ -7,7 +7,7 @@
 //
 
 #import "StorageDetailInfoVC.h"
-#import "StorageDetailDiskCell.h"
+#import "StorageDiskCollectionCell.h"
 
 @interface StorageDetailInfoVC ()
 @property (weak, nonatomic) IBOutlet UILabel *totalStorage;
@@ -26,10 +26,25 @@
 @property (weak, nonatomic) IBOutlet UILabel *usedRatio;
 @property (weak, nonatomic) IBOutlet UILabel *allocatedRatio;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
 @implementation StorageDetailInfoVC
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"toDiskCollection"]){
+        StorageDiskCollectionVC *diskCollectionVC = segue.destinationViewController;
+        diskCollectionVC.storageVO = self.storageVO;
+    }
+}
+
+- (void)viewDidLayoutSubviews{
+    if(self.scrollView){
+        self.scrollView.contentSize = CGSizeMake(320, 1100);
+    }
+}
+
 
 - (void)viewDidLoad
 {
@@ -39,11 +54,6 @@
     [self.storageVO getStorageVOAsync:^(id object, NSError *error) {
         self.storageVO = object;
         [self refreshMainInfo];
-    }];
-    
-    [self.storageVO getStorageVolumnListAsync:^(NSArray *allRemote, NSError *error) {
-        self.dataList = allRemote;
-        [self refresh];
     }];
 }
 - (void)refreshMainInfo{
@@ -77,29 +87,8 @@
     [circleChart2 strokeChart];
     [self.allocatedStorageGroup addSubview:circleChart2];
 }
-- (void)refresh{
-    self.collectionHeader.text = [NSString stringWithFormat:@"虚拟磁盘(%li)", self.dataList.count];
-    [self.collectionView reloadData];
-}
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.dataList.count;
-}
-
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    StorageDetailDiskCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"StorageDetailDiskCell" forIndexPath:indexPath];
-    
-    StorageVolumnVO *volumnVO = self.dataList[indexPath.row];
-    cell.name.text = volumnVO.name;
-    cell.state.text = [volumnVO state_text];
-    cell.isASnapshot.text = [volumnVO isASnapshot_text];
-    cell.size.text = [NSString stringWithFormat:@"%dGB", volumnVO.size];
-    cell.belongsVM.text = [volumnVO vmNames_text];
-    cell.type.text = [volumnVO type_text];
-    return cell;
-}
 
 
 @end

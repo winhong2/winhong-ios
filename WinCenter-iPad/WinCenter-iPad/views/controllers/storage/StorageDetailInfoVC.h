@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StorageDiskCollectionVC.h"
 
-@interface StorageDetailInfoVC : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface StorageDetailInfoVC : UIViewController
 
 @property StorageVO *storageVO;
-@property NSArray *dataList;
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UILabel *collectionHeader;
 
 @end

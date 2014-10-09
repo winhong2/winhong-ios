@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VmCollectionCell : UICollectionViewCell
+@interface BusinessVmCollectionCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *state;
 @property (weak, nonatomic) IBOutlet UILabel *startOrder;

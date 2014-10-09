@@ -1,14 +1,14 @@
 //
-//  VmCollectionCell.m
+//  StorageDetailCell.m
 //  wincenterDemo01
 //
 //  Created by huadi on 14-8-18.
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "VmCollectionCell.h"
+#import "StorageDiskCollectionCell.h"
 
-@implementation VmCollectionCell
+@implementation StorageDiskCollectionCell
 
 - (id)initWithFrame:(CGRect)frame
 {

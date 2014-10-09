@@ -157,7 +157,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterCollectionHeader" id="gLF-XR-y9x" customClass="MasterCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzN-zi-Opk">
@@ -913,7 +913,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="物理机详情" id="ymU-GK-gQI">
-                        <barButtonItem key="leftBarButtonItem" title="返回" id="Xdh-2w-Clm"/>
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="Xdh-2w-Clm">
+                            <connections>
+                                <segue destination="pdq-OM-kSd" kind="unwind" unwindAction="backToCollectionVC:" id="fcf-M1-bp7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="创建虚拟机" id="mAc-Xv-ASb">
                             <connections>
                                 <segue destination="vuf-1S-kSX" kind="modal" id="7h5-tM-mFB"/>
@@ -925,6 +929,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jue-2y-Tqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pdq-OM-kSd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3920" y="-1414"/>
         </scene>
@@ -1040,7 +1045,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterCollectionHeader" id="lm0-3c-1sj" customClass="MasterCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mni-YL-08c">
@@ -1152,7 +1157,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterCollectionHeader" id="0Fk-pm-MiZ" customClass="MasterCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-FJ-5SM">

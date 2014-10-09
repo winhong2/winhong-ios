@@ -8,7 +8,7 @@
 
 #import "MasterContainerVC.h"
 
-@interface VmContainerVC : MasterContainerVC
+@interface VmContainerVC : MasterContainerVC<UIActionSheetDelegate>
 
 @property VmVO *vmVO;
 @property (weak, nonatomic) IBOutlet UIView *vmControlButtons;

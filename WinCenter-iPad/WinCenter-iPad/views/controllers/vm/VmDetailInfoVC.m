@@ -20,9 +20,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *snopshotNum;
 @property (weak, nonatomic) IBOutlet UIImageView *osType_image;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
 
 @implementation VmDetailInfoVC
+
+- (void)viewDidLayoutSubviews{
+    if(self.scrollView){
+        self.scrollView.contentSize = CGSizeMake(320, 800);
+    }
+}
 
 - (void)viewDidLoad
 {

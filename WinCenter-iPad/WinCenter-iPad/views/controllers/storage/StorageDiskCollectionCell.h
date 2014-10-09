@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StorageDetailDiskCell : UICollectionViewCell
+@interface StorageDiskCollectionCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *state;
 @property (weak, nonatomic) IBOutlet UILabel *isASnapshot;

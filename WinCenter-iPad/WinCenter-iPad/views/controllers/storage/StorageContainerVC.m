@@ -22,10 +22,26 @@
     self.statusLabel.text = [self.storageVO state_text];
     self.statusLabel.textColor = [self.storageVO state_color];
     
+    self.title = self.storageVO.storagePoolName;
+    
+    NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:1];
+    
     StorageDetailInfoVC *vc;
     vc = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDetailInfoVC"];
     vc.storageVO = self.storageVO;
-    self.pages = @[vc];
+    [pages addObject:vc];
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        StorageDiskCollectionVC *diskCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDiskCollectionVC"];
+        diskCollectionVC.storageVO = self.storageVO;
+        [pages addObject:diskCollectionVC];
+        
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        controlVC.remoteObject = self.storageVO;
+        [pages addObject:controlVC];
+    }
+    
+    self.pages = pages;
     
     [super refresh];
 }

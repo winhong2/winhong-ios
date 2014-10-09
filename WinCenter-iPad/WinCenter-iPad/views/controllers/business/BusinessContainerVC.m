@@ -7,6 +7,7 @@
 //
 
 #import "BusinessContainerVC.h"
+#import "BusinessVmCollectionVC.h"
 #import "BusinessDetailInfoVC.h"
 
 @implementation BusinessContainerVC
@@ -15,9 +16,21 @@
     self.pathLabel.text = [RemoteObject getCurrentDatacenterVO].name;
     self.titleLabel.text = self.businessVO.name;
     
+    self.title = self.businessVO.name;
+    
+    NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:1];
+    
     BusinessDetailInfoVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"BusinessDetailInfoVC"];
     vc.businessVO = self.businessVO;
-    self.pages = @[vc];
+    [pages addObject:vc];
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        BusinessVmCollectionVC *vmCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BusinessVmCollectionVC"];
+        vmCollectionVC.businessVO = self.businessVO;
+        [pages addObject:vmCollectionVC];
+    }
+    
+    self.pages = pages;
     
     [super refresh];
 }

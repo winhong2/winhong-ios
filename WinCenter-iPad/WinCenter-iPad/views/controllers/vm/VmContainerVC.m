@@ -27,6 +27,8 @@
     self.statusLabel.text = [self.vmVO state_text];
     self.statusLabel.textColor = [self.vmVO state_color];
     
+    self.title = self.vmVO.name;
+    
     NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
     
     VmDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"VmDetailInfoVC"];
@@ -44,6 +46,12 @@
     VmDetailSnapshootVC *snapshot = [self.storyboard instantiateViewControllerWithIdentifier:@"VmDetailSnapshootVC"];
     [pages addObject:snapshot];
     
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        controlVC.remoteObject = self.vmVO;
+        [pages addObject:controlVC];
+    }
+    
     self.pages = pages;
     
     [super refresh];
@@ -60,13 +68,40 @@
         self.btnMigrate.enabled = true;
     }
 }
+- (IBAction)operateAction:(id)sender {
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"操作提示" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"开机",@"关机",@"重启",@"迁移", nil];
+    [sheet showInView:self.view];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            [self openVm:nil];
+            break;
+        case 1:
+            [self shutdownVm:nil];
+            break;
+        case 2:
+            [self restartVm:nil];
+            break;
+        case 3:
+            [self migrateVm:nil];
+            break;
+        default:
+            break;
+    }
+}
 
 - (IBAction)showControlBtns:(id)sender {
-    BOOL isHide = self.vmControlButtons.hidden;
-    self.vmControlButtons.hidden = isHide == YES ? NO : YES;
+    if(self.vmControlButtons){
+        BOOL isHide = self.vmControlButtons.hidden;
+        self.vmControlButtons.hidden = isHide == YES ? NO : YES;
+    }
 }
 -(void)hideControlBtn{
-    self.vmControlButtons.hidden = YES;
+    if(self.vmControlButtons){
+        self.vmControlButtons.hidden = YES;
+    }
 }
 - (IBAction)openVm:(id)sender {
     [self.vmVO VmOperation:@"OK" async:^(NSError *error) {
@@ -91,6 +126,9 @@
 }
 - (IBAction)migrateVm:(id)sender {
     [self hideControlBtn];
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        [self performSegueWithIdentifier:@"toMigrate" sender:self];
+    }
 }
 
 -(IBAction)showControlRecordVC:(id)sender{
