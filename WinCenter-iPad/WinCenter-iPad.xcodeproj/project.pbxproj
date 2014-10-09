@@ -101,6 +101,7 @@
 		18B3BEF919DAD42F00E68AC3 /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */; };
 		18C8466319E5875C005FD404 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8466219E5875C005FD404 /* Task.storyboard */; };
 		18C8466519E587AC005FD404 /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8466419E587AC005FD404 /* Warning.storyboard */; };
+		18C8468319E61DBD005FD404 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8468219E61DBD005FD404 /* Network.storyboard */; };
 		18DCAE5219E3819B00F878AF /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCAE5119E3819B00F878AF /* Setting.storyboard */; };
 		18DCAE5419E3823300F878AF /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCAE5319E3823300F878AF /* Business.storyboard */; };
 		18DCAE5619E382DC00F878AF /* VM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCAE5519E382DA00F878AF /* VM.storyboard */; };
@@ -263,6 +264,7 @@
 		18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../WinCenter-Common/build/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		18C8466219E5875C005FD404 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		18C8466419E587AC005FD404 /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
+		18C8468219E61DBD005FD404 /* Network.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		18DCAE5119E3819B00F878AF /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		18DCAE5319E3823300F878AF /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
 		18DCAE5519E382DA00F878AF /* VM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VM.storyboard; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				18DCAE5919E3841900F878AF /* Host.storyboard */,
 				18DCAE5519E382DA00F878AF /* VM.storyboard */,
 				18DCAE5D19E3855C00F878AF /* Datacenter.storyboard */,
+				18C8468219E61DBD005FD404 /* Network.storyboard */,
 				18A4D35619B557F400415896 /* Main.storyboard */,
 				18C8466219E5875C005FD404 /* Task.storyboard */,
 				18C8466419E587AC005FD404 /* Warning.storyboard */,
@@ -691,6 +694,7 @@
 				187C40B919E2C95A000D1500 /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
 				187C40B419E2C95A000D1500 /* BusinessVO.getBusinessVOAsync.json in Resources */,
 				187C40C319E2C95A000D1500 /* PoolVO.getHostListAsync.json in Resources */,
+				18C8468319E61DBD005FD404 /* Network.storyboard in Resources */,
 				18B2324B19E50745000A1FA1 /* LicenseVO.getLicenseVOAsync.json in Resources */,
 				18C8466519E587AC005FD404 /* Warning.storyboard in Resources */,
 				18DCAE5C19E384C000F878AF /* Pool.storyboard in Resources */,

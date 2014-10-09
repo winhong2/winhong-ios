@@ -23,7 +23,9 @@
     self.ipLabel.text = self.hostVO.ip;
     self.statusLabel.text = [self.hostVO state_text];
     self.statusLabel.textColor = [self.hostVO state_color];
-        
+    
+    self.title = self.hostVO.hostName;
+    
     NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:5];
     
     HostDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailInfoVC"];
@@ -49,6 +51,12 @@
     HostNicCollectionVC *hostNicCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostNicCollectionVC"];
     hostNicCollectionVC.hostVO = self.hostVO;
     [pages addObject:hostNicCollectionVC];
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        controlVC.remoteObject = self.hostVO;
+        [pages addObject:controlVC];
+    }
     
     self.pages = pages;
     

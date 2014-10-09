@@ -58,7 +58,7 @@
         [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
         [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
         [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-        [self.storyboard instantiateViewControllerWithIdentifier:@"NetworkContainerVC"]
+        [[UIStoryboard storyboardWithName:@"Network" bundle:nil] instantiateInitialViewController]
     ];
     
     ((DatacenterDetailCollectionVC*)self.pages[0]).pageType = Page_Pool;

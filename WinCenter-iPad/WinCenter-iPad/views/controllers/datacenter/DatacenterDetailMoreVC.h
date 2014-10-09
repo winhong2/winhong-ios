@@ -12,5 +12,6 @@
 
 @property PoolVO *poolVO;
 @property DatacenterDetailPageType pageType;
+@property (weak, nonatomic) IBOutlet UINavigationItem *titleItem;
 
 @end

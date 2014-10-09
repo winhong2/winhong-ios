@@ -16,4 +16,6 @@
 
 -(void)reloadData;
 
+-(IBAction)backToCollectionVC:(UIStoryboardSegue*)segue;
+
 @end

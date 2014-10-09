@@ -23,16 +23,14 @@
 @implementation MasterContainerVC
 
 - (void)viewDidLoad
-{
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"背景"]];
-    imageView.frame = [[UIScreen mainScreen] bounds];
-    
-    [self.view addSubview:imageView];
-    [self.view sendSubviewToBack:imageView];
-    
-    self.view.backgroundColor = [UIColor clearColor];
-    
+{    
     [super viewDidLoad];
+        
+    //for change the bullets color
+    [UIPageControl appearance].pageIndicatorTintColor = [UIColor colorWithRed:(129.0/255) green:(129.0/255) blue:(129.0/255) alpha:1.0];
+    [UIPageControl appearance].currentPageIndicatorTintColor = [UIColor colorWithRed:(06.0/255) green:(122.0/255) blue:(145.0/255) alpha:1.0];
+    
+    [UIPageControl appearance].backgroundColor = [UIColor clearColor];
     
     [self refresh];
 }
@@ -45,7 +43,7 @@
     
     options = @{UIPageViewControllerOptionInterPageSpacingKey: @200};
     
-    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:options];
+    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:(([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) ?UIPageViewControllerNavigationOrientationVertical : UIPageViewControllerNavigationOrientationHorizontal) options:options];
     [self addChildViewController:self.pageVC];
     for(UIView *subView in self.pageVCContainer.subviews){
         [subView removeFromSuperview];

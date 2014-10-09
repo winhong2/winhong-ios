@@ -18,6 +18,8 @@
 -(void)refresh{
     self.pathLabel.text = [RemoteObject getCurrentDatacenterVO].name;
     self.titleLabel.text = self.poolVO.resourcePoolName;
+    
+    self.title = self.poolVO.resourcePoolName;
         
     NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:4];
     
@@ -36,6 +38,12 @@
     StorageCollectionVC *poolStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
     poolStorageCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolStorageCollectionVC];
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        controlVC.remoteObject = self.poolVO;
+        [pages addObject:controlVC];
+    }
     
     self.pages = pages;
     

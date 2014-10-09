@@ -14,8 +14,8 @@
 @property int runTime;
 @property NSString *createDate;
 
-@property BOOL isDynamicCpu;
-@property BOOL isDynamicMemWce;
+@property NSString *isDynamicCpu;
+@property NSString *isDynamicMemWce;
 @property NSString *memoryType;
 
 @property int vmId;

@@ -59,9 +59,15 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    VmContainerVC *vc = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+    UIViewController *root = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+    VmContainerVC *vc;
+    if([root isKindOfClass:[VmContainerVC class]]){
+        vc = (VmContainerVC*) root;
+    }else{
+        vc = [[root childViewControllers] firstObject];
+    }
     vc.vmVO = (VmVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-    [self presentViewController:vc animated:YES completion:nil];
+    [self presentViewController:root animated:YES completion:nil];
 }
 
 @end

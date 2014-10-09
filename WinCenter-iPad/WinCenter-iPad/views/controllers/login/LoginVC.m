@@ -18,11 +18,6 @@
 
 - (void)viewDidLoad
 {
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"login%d", rand()%2+1]]];
-    imageView.frame = [[UIScreen mainScreen] bounds];
-    
-    [self.view addSubview:imageView];
-    [self.view sendSubviewToBack:imageView];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     

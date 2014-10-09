@@ -16,6 +16,7 @@
 #import "StorageContainerVC.h"
 #import "VmContainerVC.h"
 #import "BusinessContainerVC.h"
+#import "MasterCollectionFooter.h"
 
 @implementation DatacenterDetailCollectionVC
 
@@ -217,84 +218,156 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     
-    MasterCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MasterCollectionHeader" forIndexPath:indexPath];
-    
-    if(header){
-        switch (self.pageType) {
-            case Page_Pool:{
-                header.titleHintView.hidden = YES;
-                header.titleLabel.hidden = YES;
-                header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
-                break;
+    if([kind isEqualToString:UICollectionElementKindSectionHeader]){
+        MasterCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MasterCollectionHeader" forIndexPath:indexPath];
+        
+        if(header){
+            switch (self.pageType) {
+                case Page_Pool:{
+                    header.titleHintView.hidden = YES;
+                    header.titleLabel.hidden = YES;
+                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+                    break;
+                }
+                case Page_Host:{
+                    header.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.dataList.allKeys[indexPath.section]];
+                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                    header.moreButton.tag = indexPath.section;
+                    break;
+                }
+                case Page_Storage:{
+                    header.titleLabel.text = [NSString stringWithFormat:@"%@下的共享存储列表", self.dataList.allKeys[indexPath.section]];
+                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                    header.moreButton.tag = indexPath.section;
+                    break;
+                }
+                case Page_VM:{
+                    header.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.dataList.allKeys[indexPath.section]];
+                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                    header.moreButton.tag = indexPath.section;
+                    break;
+                }
+                case Page_Business:{
+                    header.titleHintView.hidden = YES;
+                    header.titleLabel.hidden = YES;
+                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+                    break;
+                }
+                default:
+                    break;
             }
-            case Page_Host:{
-                header.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.dataList.allKeys[indexPath.section]];
-                header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
-                header.moreButton.tag = indexPath.section;
-                break;
-            }
-            case Page_Storage:{
-                header.titleLabel.text = [NSString stringWithFormat:@"%@下的共享存储列表", self.dataList.allKeys[indexPath.section]];
-                header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
-                header.moreButton.tag = indexPath.section;
-                break;
-            }
-            case Page_VM:{
-                header.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.dataList.allKeys[indexPath.section]];
-                header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
-                header.moreButton.tag = indexPath.section;
-                break;
-            }
-            case Page_Business:{
-                header.titleHintView.hidden = YES;
-                header.titleLabel.hidden = YES;
-                header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
-                break;
-            }
-            default:
-                break;
         }
+        
+        if (self.isMore) {
+            header.hidden = YES;
+        }else if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"]isEqualToString:@"true"]){
+            header.moreButton.hidden = NO;
+        }
+        
+        return header;
+    }else{
+        MasterCollectionFooter *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"MasterCollectionFooter" forIndexPath:indexPath];
+        
+        if(footer){
+            switch (self.pageType) {
+                case Page_Pool:{
+                    footer.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+                    break;
+                }
+                case Page_Host:{
+                    footer.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                    footer.moreButton.tag = indexPath.section;
+                    break;
+                }
+                case Page_Storage:{
+                    footer.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                    footer.moreButton.tag = indexPath.section;
+                    break;
+                }
+                case Page_VM:{
+                    footer.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                    footer.moreButton.tag = indexPath.section;
+                    break;
+                }
+                case Page_Business:{
+                    footer.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+                    break;
+                }
+                default:
+                    break;
+            }
+        }
+        
+        if (self.isMore) {
+            footer.hidden = YES;
+        }else if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"]isEqualToString:@"true"]){
+            footer.moreButton.hidden = NO;
+        }
+        
+        return footer;
     }
-    
-    if (self.isMore) {
-        header.moreButton.hidden = YES;
-    }else if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"]isEqualToString:@"true"]){
-        header.moreButton.hidden = NO;
-    }
-    
-    return header;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     switch (self.pageType) {
         case Page_Pool:{
-            PoolContainerVC *vc = [[UIStoryboard storyboardWithName:@"Pool" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Pool" bundle:nil] instantiateInitialViewController];
+            PoolContainerVC *vc;
+            if([root isKindOfClass:[PoolContainerVC class]]){
+                vc = (PoolContainerVC*) root;
+            }else{
+                vc = [[root childViewControllers] firstObject];
+            }
             vc.poolVO = (PoolVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:vc animated:YES completion:nil];
+            [self presentViewController:root animated:YES completion:nil];
             break;
         }
         case Page_Host:{
-            HostContainerVC *vc = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateInitialViewController];
+            HostContainerVC *vc;
+            if([root isKindOfClass:[HostContainerVC class]]){
+                vc = (HostContainerVC*) root;
+            }else{
+                vc = [[root childViewControllers] firstObject];
+            }
             vc.hostVO = (HostVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:vc animated:YES completion:nil];
+            [self presentViewController:root animated:YES completion:nil];
             break;
         }
         case Page_Storage:{
-            StorageContainerVC *vc = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateInitialViewController];
+            StorageContainerVC *vc;
+            if([root isKindOfClass:[StorageContainerVC class]]){
+                vc = (StorageContainerVC*) root;
+            }else{
+                vc = [[root childViewControllers] firstObject];
+            }
             vc.storageVO = (StorageVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:vc animated:YES completion:nil];
+            [self presentViewController:root animated:YES completion:nil];
             break;
         }
         case Page_VM:{
-            VmContainerVC *vc = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+            VmContainerVC *vc;
+            if([root isKindOfClass:[VmContainerVC class]]){
+                vc = (VmContainerVC*) root;
+            }else{
+                vc = [[root childViewControllers] firstObject];
+            }
             vc.vmVO = (VmVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:vc animated:YES completion:nil];
+            [self presentViewController:root animated:YES completion:nil];
             break;
         }
         case Page_Business:{
-            BusinessContainerVC *vc = [[UIStoryboard storyboardWithName:@"Business" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Business" bundle:nil] instantiateInitialViewController];
+            BusinessContainerVC *vc;
+            if([root isKindOfClass:[BusinessContainerVC class]]){
+                vc = (BusinessContainerVC*) root;
+            }else{
+                vc = [[root childViewControllers] firstObject];
+            }
             vc.businessVO = (BusinessVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:vc animated:YES completion:nil];
+            [self presentViewController:root animated:YES completion:nil];
             break;
         }
         default:

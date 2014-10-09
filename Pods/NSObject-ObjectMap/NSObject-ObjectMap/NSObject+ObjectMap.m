@@ -461,6 +461,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
                 }
                 // Else, it is an object
                 else {
+                    //NSLog(@"%@", newKey);
                     objc_property_t property = class_getProperty([NSClassFromString(propertyName) class], [newKey UTF8String]);
                     
                     if (property) {

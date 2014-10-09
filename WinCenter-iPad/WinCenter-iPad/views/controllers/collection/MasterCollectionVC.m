@@ -30,7 +30,9 @@
 }
 - (void)viewDidLoad
 {
-    self.collectionView.backgroundColor = [UIColor clearColor];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        self.collectionView.backgroundColor = [UIColor clearColor];
+    }
     
     self.pools = [[NSMutableDictionary alloc] initWithDictionary:@{}];
     self.pools_needMoreButton = [[NSMutableDictionary alloc] initWithDictionary:@{}];
@@ -46,6 +48,10 @@
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return ((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[section]]).count;
+}
+
+-(IBAction)backToCollectionVC:(UIStoryboardSegue*)segue{
+    
 }
 
 @end

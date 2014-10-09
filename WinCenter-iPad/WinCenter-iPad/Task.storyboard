@@ -7,7 +7,7 @@
         <!--操作记录-->
         <scene sceneID="EbM-c2-HGL">
             <objects>
-                <tableViewController id="6DV-FZ-lTb" customClass="PopControlRecordVC" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PopControlRecordVC" id="6DV-FZ-lTb" customClass="PopControlRecordVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tTf-rw-isT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,13 @@
                             <outlet property="delegate" destination="6DV-FZ-lTb" id="Nt1-bX-Etm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="操作记录" id="XUP-Bf-IjF"/>
+                    <navigationItem key="navigationItem" title="操作记录" id="XUP-Bf-IjF">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="Kyh-G5-993">
+                            <connections>
+                                <action selector="backAction:" destination="6DV-FZ-lTb" id="A0P-uv-Ifu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haa-B9-IE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

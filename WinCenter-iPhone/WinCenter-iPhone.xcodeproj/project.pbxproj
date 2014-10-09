@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1809A7AE19E6281E0034052C /* DatacenterContainerTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7AD19E6281E0034052C /* DatacenterContainerTableVC.m */; };
+		1809A7B019E62B4D0034052C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7AF19E62B4D0034052C /* Setting.storyboard */; };
+		1809A7B219E62BCC0034052C /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7B119E62BCC0034052C /* Task.storyboard */; };
+		1809A7B419E62BD30034052C /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7B319E62BD30034052C /* Warning.storyboard */; };
+		1809A7EC19E63BDF0034052C /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7EB19E63BDF0034052C /* LoginTableVC.m */; };
+		1809A7F119E677D80034052C /* MasterCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7F019E677D80034052C /* MasterCollectionFooter.m */; };
 		18A4D43219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43319B560D400415896 /* CoreGraphics.framework */; };
 		18A4D43619B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
@@ -104,6 +110,13 @@
 		18C8467319E5A15F005FD404 /* DatacenterDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8466C19E5A15F005FD404 /* DatacenterDetailInfoVC.m */; };
 		18C8467419E5A15F005FD404 /* DatacenterDetailMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8466E19E5A15F005FD404 /* DatacenterDetailMoreVC.m */; };
 		18C8467519E5A15F005FD404 /* DatacenterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8467019E5A15F005FD404 /* DatacenterTableVC.m */; };
+		18C8467719E61CEC005FD404 /* Datacenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467619E61CEC005FD404 /* Datacenter.storyboard */; };
+		18C8467919E61CF8005FD404 /* VM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467819E61CF8005FD404 /* VM.storyboard */; };
+		18C8467B19E61D0A005FD404 /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467A19E61D0A005FD404 /* Host.storyboard */; };
+		18C8467D19E61D12005FD404 /* Storage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467C19E61D12005FD404 /* Storage.storyboard */; };
+		18C8467F19E61D1A005FD404 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467E19E61D1A005FD404 /* Business.storyboard */; };
+		18C8468119E61D23005FD404 /* Pool.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8468019E61D23005FD404 /* Pool.storyboard */; };
+		18C8468519E61EA3005FD404 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8468419E61EA3005FD404 /* Network.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +131,15 @@
 
 /* Begin PBXFileReference section */
 		13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1809A7AC19E6281E0034052C /* DatacenterContainerTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerTableVC.h; sourceTree = "<group>"; };
+		1809A7AD19E6281E0034052C /* DatacenterContainerTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerTableVC.m; sourceTree = "<group>"; };
+		1809A7AF19E62B4D0034052C /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = "../../WinCenter-iPad/WinCenter-iPad/Setting.storyboard"; sourceTree = "<group>"; };
+		1809A7B119E62BCC0034052C /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Task.storyboard; path = "../../WinCenter-iPad/WinCenter-iPad/Task.storyboard"; sourceTree = "<group>"; };
+		1809A7B319E62BD30034052C /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Warning.storyboard; path = "../../WinCenter-iPad/WinCenter-iPad/Warning.storyboard"; sourceTree = "<group>"; };
+		1809A7EA19E63BDF0034052C /* LoginTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableVC.h; sourceTree = "<group>"; };
+		1809A7EB19E63BDF0034052C /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
+		1809A7EF19E677D80034052C /* MasterCollectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionFooter.h; sourceTree = "<group>"; };
+		1809A7F019E677D80034052C /* MasterCollectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionFooter.m; sourceTree = "<group>"; };
 		18A4D42E19B560D400415896 /* WinCenter-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D43119B560D400415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18A4D43319B560D400415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -269,6 +291,13 @@
 		18C8466E19E5A15F005FD404 /* DatacenterDetailMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailMoreVC.m; sourceTree = "<group>"; };
 		18C8466F19E5A15F005FD404 /* DatacenterTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterTableVC.h; sourceTree = "<group>"; };
 		18C8467019E5A15F005FD404 /* DatacenterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterTableVC.m; sourceTree = "<group>"; };
+		18C8467619E61CEC005FD404 /* Datacenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Datacenter.storyboard; sourceTree = "<group>"; };
+		18C8467819E61CF8005FD404 /* VM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VM.storyboard; sourceTree = "<group>"; };
+		18C8467A19E61D0A005FD404 /* Host.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
+		18C8467C19E61D12005FD404 /* Storage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storage.storyboard; sourceTree = "<group>"; };
+		18C8467E19E61D1A005FD404 /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		18C8468019E61D23005FD404 /* Pool.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pool.storyboard; sourceTree = "<group>"; };
+		18C8468419E61EA3005FD404 /* Network.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,7 +366,17 @@
 				18B2333C19E57D3B000A1FA1 /* views */,
 				18A4D44019B560D400415896 /* AppDelegate.h */,
 				18A4D44119B560D400415896 /* AppDelegate.m */,
+				1809A7AF19E62B4D0034052C /* Setting.storyboard */,
+				18C8467E19E61D1A005FD404 /* Business.storyboard */,
+				18C8467C19E61D12005FD404 /* Storage.storyboard */,
+				18C8468019E61D23005FD404 /* Pool.storyboard */,
+				18C8467A19E61D0A005FD404 /* Host.storyboard */,
+				18C8467819E61CF8005FD404 /* VM.storyboard */,
+				18C8467619E61CEC005FD404 /* Datacenter.storyboard */,
+				18C8468419E61EA3005FD404 /* Network.storyboard */,
 				18A4D44319B560D400415896 /* Main.storyboard */,
+				1809A7B119E62BCC0034052C /* Task.storyboard */,
+				1809A7B319E62BD30034052C /* Warning.storyboard */,
 				18A4D44919B560D400415896 /* Images.xcassets */,
 				18A4D43819B560D400415896 /* Supporting Files */,
 			);
@@ -461,6 +500,8 @@
 				18B2334519E57D3B000A1FA1 /* MasterCollectionCell.m */,
 				18B2334619E57D3B000A1FA1 /* MasterCollectionHeader.h */,
 				18B2334719E57D3B000A1FA1 /* MasterCollectionHeader.m */,
+				1809A7EF19E677D80034052C /* MasterCollectionFooter.h */,
+				1809A7F019E677D80034052C /* MasterCollectionFooter.m */,
 				18B2334819E57D3B000A1FA1 /* MasterCollectionVC.h */,
 				18B2334919E57D3B000A1FA1 /* MasterCollectionVC.m */,
 			);
@@ -502,6 +543,8 @@
 				18B2337919E57D3C000A1FA1 /* LoginSettingVC.m */,
 				18B2337A19E57D3C000A1FA1 /* LoginVC.h */,
 				18B2337B19E57D3C000A1FA1 /* LoginVC.m */,
+				1809A7EA19E63BDF0034052C /* LoginTableVC.h */,
+				1809A7EB19E63BDF0034052C /* LoginTableVC.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -622,6 +665,8 @@
 			children = (
 				18C8466719E5A15F005FD404 /* DatacenterContainerVC.h */,
 				18C8466819E5A15F005FD404 /* DatacenterContainerVC.m */,
+				1809A7AC19E6281E0034052C /* DatacenterContainerTableVC.h */,
+				1809A7AD19E6281E0034052C /* DatacenterContainerTableVC.m */,
 				18C8466919E5A15F005FD404 /* DatacenterDetailCollectionVC.h */,
 				18C8466A19E5A15F005FD404 /* DatacenterDetailCollectionVC.m */,
 				18C8466B19E5A15F005FD404 /* DatacenterDetailInfoVC.h */,
@@ -715,15 +760,20 @@
 				18B233C819E57D3C000A1FA1 /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
 				18B233CB19E57D3C000A1FA1 /* HostVO.getHostNicGroupedListAsync.json in Resources */,
 				18B233C119E57D3C000A1FA1 /* BusinessVO.getBusinessVOAsync.json in Resources */,
+				1809A7B419E62BD30034052C /* Warning.storyboard in Resources */,
 				18A4D44A19B560D400415896 /* Images.xcassets in Resources */,
+				18C8467B19E61D0A005FD404 /* Host.storyboard in Resources */,
 				18B233E019E57D3C000A1FA1 /* VmVO.getVmVolumnListAsync.json in Resources */,
+				18C8467D19E61D12005FD404 /* Storage.storyboard in Resources */,
 				18B233D519E57D3C000A1FA1 /* PoolVO.getPoolVOAsync.json in Resources */,
 				18B233D419E57D3C000A1FA1 /* PoolVO.getPoolElasticAsync.json in Resources */,
+				18C8468519E61EA3005FD404 /* Network.storyboard in Resources */,
 				18B233CD19E57D3C000A1FA1 /* HostVO.getHostStatVOAsync.json in Resources */,
 				18B233D019E57D3C000A1FA1 /* HostVO.getVmListAsync.json in Resources */,
 				18B233C319E57D3C000A1FA1 /* DatacenterVO.getBusinessListAsync.json in Resources */,
 				18B233D919E57D3C000A1FA1 /* PoolVO.getVmListWithlimit.json in Resources */,
 				18B233E119E57D3C000A1FA1 /* WarningInfoVO.getWarningInfoListAsync.json in Resources */,
+				18C8468119E61D23005FD404 /* Pool.storyboard in Resources */,
 				18B233DB19E57D3C000A1FA1 /* StorageVO.getStorageVolumnListAsync.json in Resources */,
 				18B233C619E57D3C000A1FA1 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */,
 				18B233D119E57D3C000A1FA1 /* LicenseVO.getLicenseVOAsync.json in Resources */,
@@ -739,12 +789,17 @@
 				18B233C219E57D3C000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json in Resources */,
 				18B233DD19E57D3C000A1FA1 /* UserVO.getUserVOAsync.json in Resources */,
 				18A4D44519B560D400415896 /* Main.storyboard in Resources */,
+				1809A7B019E62B4D0034052C /* Setting.storyboard in Resources */,
 				18B233CA19E57D3C000A1FA1 /* HostVO.getHostNetworkInternalListAsync.json in Resources */,
 				18B233D719E57D3C000A1FA1 /* PoolVO.getStorageListAsync.json in Resources */,
+				18C8467919E61CF8005FD404 /* VM.storyboard in Resources */,
 				18B233DC19E57D3C000A1FA1 /* TemplateIcon2x.png in Resources */,
 				18B233CC19E57D3C000A1FA1 /* HostVO.getHostNicUngroupedListAsync.json in Resources */,
 				18B233D319E57D3C000A1FA1 /* PoolVO.getHostLisWithlimit.json in Resources */,
+				18C8467719E61CEC005FD404 /* Datacenter.storyboard in Resources */,
 				18B233CE19E57D3C000A1FA1 /* HostVO.getHostVOAsync.json in Resources */,
+				1809A7B219E62BCC0034052C /* Task.storyboard in Resources */,
+				18C8467F19E61D1A005FD404 /* Business.storyboard in Resources */,
 				18B233D819E57D3C000A1FA1 /* PoolVO.getVmListAsync.json in Resources */,
 				18B233DE19E57D3C000A1FA1 /* VmVO.getVmNicListAsync.json in Resources */,
 				18B233CF19E57D3C000A1FA1 /* HostVO.getStorageListAsync.json in Resources */,
@@ -812,6 +867,7 @@
 				18B2340B19E57D3C000A1FA1 /* PopControlRecordCellForTime.m in Sources */,
 				18B2340D19E57D3C000A1FA1 /* VmCollectionCell.m in Sources */,
 				18B2340119E57D3C000A1FA1 /* PoolContainerVC.m in Sources */,
+				1809A7AE19E6281E0034052C /* DatacenterContainerTableVC.m in Sources */,
 				18B233FC19E57D3C000A1FA1 /* LoginSettingVC.m in Sources */,
 				18B233F719E57D3C000A1FA1 /* HostContainerVC.m in Sources */,
 				18B233FB19E57D3C000A1FA1 /* HostNicCollectionVC.m in Sources */,
@@ -821,6 +877,7 @@
 				18B2341719E57D3C000A1FA1 /* VmMigrateVC.m in Sources */,
 				18B2341419E57D3C000A1FA1 /* VmDiskCollectionVC.m in Sources */,
 				18B2341219E57D3C000A1FA1 /* VmDetailMemryConfigVC.m in Sources */,
+				1809A7EC19E63BDF0034052C /* LoginTableVC.m in Sources */,
 				18C8467219E5A15F005FD404 /* DatacenterDetailCollectionVC.m in Sources */,
 				18B2341319E57D3C000A1FA1 /* VmDetailSnapshootVC.m in Sources */,
 				18B2340319E57D3C000A1FA1 /* PopOptionLicenseVC.m in Sources */,
@@ -850,6 +907,7 @@
 				18B233E719E57D3C000A1FA1 /* MasterContainerVC.m in Sources */,
 				18B2340019E57D3C000A1FA1 /* NetworkContainerVC.m in Sources */,
 				18B233E219E57D3C000A1FA1 /* BusinessContainerVC.m in Sources */,
+				1809A7F119E677D80034052C /* MasterCollectionFooter.m in Sources */,
 				18B233FF19E57D3C000A1FA1 /* NetworkCollectionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

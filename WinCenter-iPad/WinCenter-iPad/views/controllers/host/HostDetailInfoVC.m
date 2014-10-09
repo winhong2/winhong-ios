@@ -42,18 +42,17 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *osType;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
 
 @implementation HostDetailInfoVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+- (void)viewDidLayoutSubviews{
+    if(self.scrollView){
+        self.scrollView.contentSize = CGSizeMake(320, 1450);
     }
-    return self;
 }
+
 
 - (void)viewDidLoad
 {

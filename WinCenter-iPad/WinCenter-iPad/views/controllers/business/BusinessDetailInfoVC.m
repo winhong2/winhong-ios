@@ -75,13 +75,19 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    VmContainerVC *vc = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+    UIViewController *root = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+    VmContainerVC *vc;
+    if([root isKindOfClass:[VmContainerVC class]]){
+        vc = (VmContainerVC*) root;
+    }else{
+        vc = [[root childViewControllers] firstObject];
+    }
     BusinessVmVO *businessVmvo = (BusinessVmVO*)self.dataList[indexPath.row];
     VmVO *vmvo = [[VmVO alloc] init];
     vmvo.vmId = businessVmvo.vmId;
     vmvo.name = businessVmvo.name;
     vc.vmVO = vmvo;
-    [self presentViewController:vc animated:YES completion:nil];
+    [self presentViewController:root animated:YES completion:nil];
 }
 
 

@@ -131,9 +131,9 @@
 }
 
 - (NSArray *) getVmListWithlimit:(int)count error:(NSError **)error{
-    if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"] isEqualToString:@"true"]){
+    //if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"] isEqualToString:@"true"]){
         return [[VmListResult alloc] initWithJSONData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PoolVO.getVmListWithlimit" ofType:@"json"]]].vms;
-    }
+    //}
     
     UNIHTTPJsonResponse *jsonResponse = [[UNIRest get:^(UNISimpleRequest *simpleRequest) {
         [simpleRequest setUrl:[NSString stringWithFormat:@"/restServlet?connectorId=%d&apiKey=pc.winserver.vm.getList&params=poolId%%3D%d%%26firstResult%%3D0%%26maxResult%%3D%d", [RemoteObject getCurrentDatacenterVO].id, self.resourcePoolId, 7]];

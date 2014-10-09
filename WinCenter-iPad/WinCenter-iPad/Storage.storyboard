@@ -358,6 +358,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="背景" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-9g-6iM">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Xh-kD-J3a">
                                 <rect key="frame" x="0.0" y="100" width="1024" height="668"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -590,6 +593,7 @@
         <image name="灰色卡片框" width="250" height="176"/>
         <image name="白线框" width="228" height="185"/>
         <image name="白色线框2" width="234" height="107"/>
+        <image name="背景" width="1024" height="768"/>
         <image name="默认图标" width="38" height="33"/>
     </resources>
 </document>

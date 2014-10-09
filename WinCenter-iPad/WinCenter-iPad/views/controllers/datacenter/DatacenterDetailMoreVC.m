@@ -15,26 +15,41 @@
     switch (self.pageType) {
         case Page_Pool:{
             self.titleLabel.text = [NSString stringWithFormat:@"%@下的资源池列表", [RemoteObject getCurrentDatacenterVO].name];
+            if(self.titleItem){
+                self.titleItem.title = [NSString stringWithFormat:@"%@下的资源池列表", [RemoteObject getCurrentDatacenterVO].name];
+            }
             break;
         }
         case Page_Host:{
             self.pathLabel.text = [NSString stringWithFormat:@"%@", [RemoteObject getCurrentDatacenterVO].name];
             self.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.poolVO.resourcePoolName];
+            if(self.titleItem){
+                self.titleItem.title = [NSString stringWithFormat:@"%@下的物理机列表", self.poolVO.resourcePoolName];
+            }
             break;
         }
         case Page_Storage:{
             self.pathLabel.text = [NSString stringWithFormat:@"%@", [RemoteObject getCurrentDatacenterVO].name];
             self.titleLabel.text = [NSString stringWithFormat:@"%@下的共享存储列表", self.poolVO.resourcePoolName];
+            if(self.titleItem){
+                self.titleItem.title = [NSString stringWithFormat:@"%@下的共享存储列表", self.poolVO.resourcePoolName];
+            }
             break;
         }
         case Page_VM:{
             self.pathLabel.text = [NSString stringWithFormat:@"%@", [RemoteObject getCurrentDatacenterVO].name];
             self.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.poolVO.resourcePoolName];
+            if(self.titleItem){
+                self.titleItem.title = [NSString stringWithFormat:@"%@下的虚拟机列表", self.poolVO.resourcePoolName];
+            }
             break;
         }
         case Page_Business:{
             self.pathLabel.text = [NSString stringWithFormat:@"%@", [RemoteObject getCurrentDatacenterVO].name];
             self.titleLabel.text = [NSString stringWithFormat:@"%@下的业务系统列表", self.poolVO.resourcePoolName];
+            if(self.titleItem){
+                self.titleItem.title = [NSString stringWithFormat:@"%@下的业务系统列表", self.poolVO.resourcePoolName];
+            }
             break;
         }
         default:
