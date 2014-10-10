@@ -108,7 +108,6 @@
 		185CB32D19E7794200DC8E8A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB32A19E7794200DC8E8A /* Setting.storyboard */; };
 		185CB32E19E7794200DC8E8A /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB32B19E7794200DC8E8A /* Task.storyboard */; };
 		185CB32F19E7794200DC8E8A /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB32C19E7794200DC8E8A /* Warning.storyboard */; };
-		185CB44019E7904B00DC8E8A /* Datacenter_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43F19E7904A00DC8E8A /* Datacenter_Theme.storyboard */; };
 		185CB44619E7AAB400DC8E8A /* DatacenterMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB44519E7AAB400DC8E8A /* DatacenterMenuVC.m */; };
 		185CB44819E7D6CF00DC8E8A /* DatacenterVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB44719E7D6CF00DC8E8A /* DatacenterVO.getVmListAsync.json */; };
 		185CB44A19E7D6D900DC8E8A /* DatacenterVO.getVmListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB44919E7D6D900DC8E8A /* DatacenterVO.getVmListAsync.limit.json */; };
@@ -117,6 +116,16 @@
 		185CB45019E7D70700DC8E8A /* DatacenterVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB44F19E7D70700DC8E8A /* DatacenterVO.getStorageListAsync.json */; };
 		185CB45219E7D71300DC8E8A /* DatacenterVO.getStorageListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45119E7D71300DC8E8A /* DatacenterVO.getStorageListAsync.limit.json */; };
 		185CB45519E7E2ED00DC8E8A /* UIStoryboard+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB45419E7E2ED00DC8E8A /* UIStoryboard+Theme.m */; };
+		185CB47119E8286000DC8E8A /* Business_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46619E8286000DC8E8A /* Business_Theme.storyboard */; };
+		185CB47219E8286000DC8E8A /* Datacenter_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46719E8286000DC8E8A /* Datacenter_Theme.storyboard */; };
+		185CB47319E8286000DC8E8A /* Host_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46819E8286000DC8E8A /* Host_Theme.storyboard */; };
+		185CB47519E8286000DC8E8A /* Network_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46A19E8286000DC8E8A /* Network_Theme.storyboard */; };
+		185CB47619E8286000DC8E8A /* Pool_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46B19E8286000DC8E8A /* Pool_Theme.storyboard */; };
+		185CB47719E8286000DC8E8A /* Setting_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46C19E8286000DC8E8A /* Setting_Theme.storyboard */; };
+		185CB47819E8286000DC8E8A /* Storage_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46D19E8286000DC8E8A /* Storage_Theme.storyboard */; };
+		185CB47919E8286000DC8E8A /* Task_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46E19E8286000DC8E8A /* Task_Theme.storyboard */; };
+		185CB47A19E8286000DC8E8A /* VM_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB46F19E8286000DC8E8A /* VM_Theme.storyboard */; };
+		185CB47B19E8286000DC8E8A /* Warning_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB47019E8286000DC8E8A /* Warning_Theme.storyboard */; };
 		18A4D32019B556BA00415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D31F19B556BA00415896 /* Foundation.framework */; };
 		18A4D32219B556BA00415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D32119B556BA00415896 /* CoreGraphics.framework */; };
 		18A4D32419B556BA00415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D32319B556BA00415896 /* UIKit.framework */; };
@@ -282,7 +291,6 @@
 		185CB32A19E7794200DC8E8A /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Setting.storyboard"; sourceTree = "<group>"; };
 		185CB32B19E7794200DC8E8A /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Task.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Task.storyboard"; sourceTree = "<group>"; };
 		185CB32C19E7794200DC8E8A /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Warning.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Warning.storyboard"; sourceTree = "<group>"; };
-		185CB43F19E7904A00DC8E8A /* Datacenter_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Datacenter_Theme.storyboard; sourceTree = "<group>"; };
 		185CB44419E7AAB300DC8E8A /* DatacenterMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterMenuVC.h; sourceTree = "<group>"; };
 		185CB44519E7AAB400DC8E8A /* DatacenterMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterMenuVC.m; sourceTree = "<group>"; };
 		185CB44719E7D6CF00DC8E8A /* DatacenterVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getVmListAsync.json; sourceTree = "<group>"; };
@@ -293,6 +301,16 @@
 		185CB45119E7D71300DC8E8A /* DatacenterVO.getStorageListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getStorageListAsync.limit.json; sourceTree = "<group>"; };
 		185CB45319E7E2ED00DC8E8A /* UIStoryboard+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Theme.h"; sourceTree = "<group>"; };
 		185CB45419E7E2ED00DC8E8A /* UIStoryboard+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Theme.m"; sourceTree = "<group>"; };
+		185CB46619E8286000DC8E8A /* Business_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46719E8286000DC8E8A /* Datacenter_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Datacenter_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46819E8286000DC8E8A /* Host_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46A19E8286000DC8E8A /* Network_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Network_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46B19E8286000DC8E8A /* Pool_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pool_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46C19E8286000DC8E8A /* Setting_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46D19E8286000DC8E8A /* Storage_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storage_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46E19E8286000DC8E8A /* Task_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task_Theme.storyboard; sourceTree = "<group>"; };
+		185CB46F19E8286000DC8E8A /* VM_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VM_Theme.storyboard; sourceTree = "<group>"; };
+		185CB47019E8286000DC8E8A /* Warning_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning_Theme.storyboard; sourceTree = "<group>"; };
 		18A4D31C19B556BA00415896 /* WinCenter-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D31F19B556BA00415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18A4D32119B556BA00415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -605,7 +623,6 @@
 			children = (
 				185CB31A19E7793900DC8E8A /* Business.storyboard */,
 				185CB31B19E7793900DC8E8A /* Datacenter.storyboard */,
-				185CB43F19E7904A00DC8E8A /* Datacenter_Theme.storyboard */,
 				185CB31C19E7793900DC8E8A /* Host.storyboard */,
 				185CB31D19E7793900DC8E8A /* Main.storyboard */,
 				185CB31E19E7793900DC8E8A /* Network.storyboard */,
@@ -617,6 +634,24 @@
 				185CB32C19E7794200DC8E8A /* Warning.storyboard */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		185CB46519E8286000DC8E8A /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				185CB46619E8286000DC8E8A /* Business_Theme.storyboard */,
+				185CB46719E8286000DC8E8A /* Datacenter_Theme.storyboard */,
+				185CB46819E8286000DC8E8A /* Host_Theme.storyboard */,
+				185CB46A19E8286000DC8E8A /* Network_Theme.storyboard */,
+				185CB46B19E8286000DC8E8A /* Pool_Theme.storyboard */,
+				185CB46C19E8286000DC8E8A /* Setting_Theme.storyboard */,
+				185CB46D19E8286000DC8E8A /* Storage_Theme.storyboard */,
+				185CB46E19E8286000DC8E8A /* Task_Theme.storyboard */,
+				185CB46F19E8286000DC8E8A /* VM_Theme.storyboard */,
+				185CB47019E8286000DC8E8A /* Warning_Theme.storyboard */,
+			);
+			name = theme;
+			path = "../../WinCenter-Common/WinCenter-Common/views/theme";
 			sourceTree = "<group>";
 		};
 		18A4D31319B556BA00415896 = {
@@ -655,6 +690,7 @@
 		18A4D32519B556BA00415896 /* WinCenter-iPad */ = {
 			isa = PBXGroup;
 			children = (
+				185CB46519E8286000DC8E8A /* theme */,
 				185CB31919E7792D00DC8E8A /* views */,
 				185CB22119E778FD00DC8E8A /* controllers */,
 				185CB29D19E778FD00DC8E8A /* datas */,
@@ -749,6 +785,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185CB47119E8286000DC8E8A /* Business_Theme.storyboard in Resources */,
 				185CB45219E7D71300DC8E8A /* DatacenterVO.getStorageListAsync.limit.json in Resources */,
 				185CB2FE19E778FD00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
 				185CB2F719E778FD00DC8E8A /* BusinessVO.getBusinessVOAsync.json in Resources */,
@@ -763,10 +800,12 @@
 				185CB32919E7793900DC8E8A /* VM.storyboard in Resources */,
 				185CB30A19E778FD00DC8E8A /* PoolVO.getPoolElasticAsync.json in Resources */,
 				185CB2FC19E778FD00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */,
-				185CB44019E7904B00DC8E8A /* Datacenter_Theme.storyboard in Resources */,
+				185CB47819E8286000DC8E8A /* Storage_Theme.storyboard in Resources */,
+				185CB47619E8286000DC8E8A /* Pool_Theme.storyboard in Resources */,
 				185CB30219E778FD00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json in Resources */,
 				185CB30519E778FD00DC8E8A /* HostVO.getStorageListAsync.json in Resources */,
 				185CB31619E778FD00DC8E8A /* VmVO.getVmVolumnListAsync.json in Resources */,
+				185CB47519E8286000DC8E8A /* Network_Theme.storyboard in Resources */,
 				185CB31319E778FD00DC8E8A /* UserVO.getUserVOAsync.json in Resources */,
 				185CB31219E778FD00DC8E8A /* TemplateIcon2x.png in Resources */,
 				185CB30919E778FD00DC8E8A /* PoolVO.getHostLisWithlimit.json in Resources */,
@@ -776,6 +815,7 @@
 				185CB31819E778FD00DC8E8A /* Images.xcassets in Resources */,
 				185CB30419E778FD00DC8E8A /* HostVO.getHostVOAsync.json in Resources */,
 				185CB30E19E778FD00DC8E8A /* PoolVO.getVmListAsync.json in Resources */,
+				185CB47319E8286000DC8E8A /* Host_Theme.storyboard in Resources */,
 				185CB2FF19E778FD00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json in Resources */,
 				185CB30719E778FD00DC8E8A /* LicenseVO.getLicenseVOAsync.json in Resources */,
 				185CB31119E778FD00DC8E8A /* StorageVO.getStorageVolumnListAsync.json in Resources */,
@@ -783,11 +823,13 @@
 				185CB2FD19E778FD00DC8E8A /* DatacenterVO.getPoolListAsync.json in Resources */,
 				185CB2FB19E778FD00DC8E8A /* DatacenterVO.getDatacenterListAsync.json in Resources */,
 				185CB30C19E778FD00DC8E8A /* PoolVO.getStorageList.json in Resources */,
+				185CB47219E8286000DC8E8A /* Datacenter_Theme.storyboard in Resources */,
 				185CB32419E7793900DC8E8A /* Host.storyboard in Resources */,
 				185CB30319E778FD00DC8E8A /* HostVO.getHostStatVOAsync.json in Resources */,
 				185CB30F19E778FD00DC8E8A /* PoolVO.getVmListWithlimit.json in Resources */,
 				185CB2F919E778FD00DC8E8A /* DatacenterVO.getBusinessListAsync.json in Resources */,
 				185CB32D19E7794200DC8E8A /* Setting.storyboard in Resources */,
+				185CB47A19E8286000DC8E8A /* VM_Theme.storyboard in Resources */,
 				185CB30D19E778FD00DC8E8A /* PoolVO.getStorageListAsync.json in Resources */,
 				185CB31519E778FD00DC8E8A /* VmVO.getVmVOAsync.json in Resources */,
 				185CB32819E7793900DC8E8A /* Storage.storyboard in Resources */,
@@ -795,9 +837,12 @@
 				185CB44819E7D6CF00DC8E8A /* DatacenterVO.getVmListAsync.json in Resources */,
 				185CB32519E7793900DC8E8A /* Main.storyboard in Resources */,
 				185CB32319E7793900DC8E8A /* Datacenter.storyboard in Resources */,
+				185CB47919E8286000DC8E8A /* Task_Theme.storyboard in Resources */,
+				185CB47B19E8286000DC8E8A /* Warning_Theme.storyboard in Resources */,
 				185CB32619E7793900DC8E8A /* Network.storyboard in Resources */,
 				185CB31419E778FD00DC8E8A /* VmVO.getVmNicListAsync.json in Resources */,
 				185CB32E19E7794200DC8E8A /* Task.storyboard in Resources */,
+				185CB47719E8286000DC8E8A /* Setting_Theme.storyboard in Resources */,
 				185CB32719E7793900DC8E8A /* Pool.storyboard in Resources */,
 				185CB2F819E778FD00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json in Resources */,
 				185CB30B19E778FD00DC8E8A /* PoolVO.getPoolVOAsync.json in Resources */,
