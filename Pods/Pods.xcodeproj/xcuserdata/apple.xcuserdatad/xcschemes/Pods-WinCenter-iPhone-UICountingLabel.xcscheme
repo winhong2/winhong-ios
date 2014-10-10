@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A08A64686BCF414B9C3040CF"
-               BuildableName = "libPods-Zkuyun-iPhone-RATreeView.a"
-               BlueprintName = "Pods-Zkuyun-iPhone-RATreeView"
+               BlueprintIdentifier = "EB82B850FA8C42C286648997"
+               BuildableName = "libPods-WinCenter-iPhone-UICountingLabel.a"
+               BlueprintName = "Pods-WinCenter-iPhone-UICountingLabel"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

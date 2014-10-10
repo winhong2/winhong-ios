@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A08A64686BCF414B9C3040CF"
-               BuildableName = "libPods-Zkuyun-iPhone-RATreeView.a"
-               BlueprintName = "Pods-Zkuyun-iPhone-RATreeView"
+               BlueprintIdentifier = "190B5586DBC84C04AC7E621B"
+               BuildableName = "libPods-WinCenter-iPhone-NSObject-ObjectMap.a"
+               BlueprintName = "Pods-WinCenter-iPhone-NSObject-ObjectMap"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

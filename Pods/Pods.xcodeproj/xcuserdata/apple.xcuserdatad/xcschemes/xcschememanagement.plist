@@ -29,6 +29,31 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-WinCenter-iPhone-NSObject-ObjectMap.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WinCenter-iPhone-PNChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WinCenter-iPhone-UICountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WinCenter-iPhone-Unirest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WinCenter-iPhone.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Zkuyun-iPhone-ObjQREncoder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +72,67 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>056F86E88F004298B428EC68</key>
+		<key>023EB7CB99914D9881BA9084</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0CEF4C93B81C407886EF4FBA</key>
+		<key>190B5586DBC84C04AC7E621B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3FE0FBF4C3A74C2FACE9AE3C</key>
+		<key>2E01C0283846444AABBF1A26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C3AC5FBFF4B4FE589A0E2CD</key>
+		<key>5C16FF470C85424CB537A619</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7469E85CCA84C67A9DD26F5</key>
+		<key>972DA603EBC34A199FA2FC63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE82605B43A3463C8438A8E4</key>
+		<key>9C68574518AE461FA463A31C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C27D1F941E6D40B2AF265879</key>
+		<key>A08A64686BCF414B9C3040CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F9B99213888649EEAFD8A442</key>
+		<key>AFD44816F5D0420DB17303A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C12F62C63DA44AE1AB3B40D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C786CBB170C84FCBAA73332A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4E7246730F340649A13F193</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB82B850FA8C42C286648997</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3C27967F9464C52BE378C0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
