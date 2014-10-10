@@ -170,7 +170,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgx-ej-yKI">
                                         <rect key="frame" x="109" y="465" width="19" height="22"/>
-                                        <state key="normal" image="工具图标">
+                                        <state key="normal" image="工具图标-black">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -179,7 +179,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUK-0m-UWY">
                                         <rect key="frame" x="109" y="331" width="19" height="22"/>
-                                        <state key="normal" image="工具图标">
+                                        <state key="normal" image="工具图标-black">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -295,11 +295,11 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="允许开机调整打勾" translatesAutoresizingMaskIntoConstraints="NO" id="1yV-lk-Nfe">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="允许开机调整打勾-black" translatesAutoresizingMaskIntoConstraints="NO" id="1yV-lk-Nfe">
                                         <rect key="frame" x="187" y="368" width="55" height="41"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="允许开机调整打勾" translatesAutoresizingMaskIntoConstraints="NO" id="djh-bb-Dlb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="允许开机调整打勾-black" translatesAutoresizingMaskIntoConstraints="NO" id="djh-bb-Dlb">
                                         <rect key="frame" x="191" y="495" width="55" height="41"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -972,14 +972,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CPU颗数-black" width="31" height="30"/>
+        <image name="CPU颗数-black" width="15" height="15"/>
         <image name="Network_virtual" width="36" height="36"/>
         <image name="disk_card" width="36" height="36"/>
-        <image name="允许开机调整打勾" width="54" height="41"/>
-        <image name="内存-black" width="31" height="30"/>
-        <image name="存储-black" width="31" height="30"/>
-        <image name="定点-black" width="31" height="30"/>
-        <image name="工具图标" width="19" height="20"/>
+        <image name="允许开机调整打勾-black" width="54" height="41"/>
+        <image name="内存-black" width="15" height="15"/>
+        <image name="存储-black" width="15" height="15"/>
+        <image name="定点-black" width="15" height="15"/>
+        <image name="工具图标-black" width="19" height="20"/>
         <image name="物理机1" width="115" height="106"/>
         <image name="虚拟机左上角图标" width="128" height="128"/>
     </resources>
