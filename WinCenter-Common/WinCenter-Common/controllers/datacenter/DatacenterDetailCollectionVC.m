@@ -399,7 +399,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"toMore"]){
-        DatacenterDetailMoreVC *vc = segue.destinationViewController;
+        UIViewController *root = segue.destinationViewController;
+        DatacenterDetailMoreVC *vc;
+        if([root isKindOfClass:[DatacenterDetailMoreVC class]]){
+            vc = (DatacenterDetailMoreVC*)root;
+        }else{
+            vc = (DatacenterDetailMoreVC*) [[root childViewControllers] firstObject];
+        }
         if(self.pools && self.pools.allKeys.count>0){
             vc.poolVO = [self.pools valueForKey:self.pools.allKeys[((UIButton*)sender).tag]];
         }

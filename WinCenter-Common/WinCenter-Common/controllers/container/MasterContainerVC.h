@@ -27,6 +27,7 @@
 
 @property UIPopoverController *popover;
 @property BOOL switchPageVC_withoutAnimation;
+@property BOOL isPageVCDataSourceNil;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 

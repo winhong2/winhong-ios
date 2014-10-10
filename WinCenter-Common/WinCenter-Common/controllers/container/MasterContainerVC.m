@@ -58,8 +58,7 @@
     self.pageVC.dataSource = self;
     self.pageVC.delegate = self;
     
-    NSString *theme = [[NSUserDefaults standardUserDefaults] stringForKey:@"Storyboard_Theme"];
-    if((theme!=nil) && [theme isEqualToString:@"Theme"]){
+    if(self.isPageVCDataSourceNil){
         self.pageVC.dataSource = nil;
     }
     

@@ -21,6 +21,8 @@
     [super viewDidLoad];
     if(self.themeName!=nil){
         [[NSUserDefaults standardUserDefaults] setObject:self.themeName forKey:@"Storyboard_Theme"];
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"Storyboard_Theme"];
     }
     // Do any additional setup after loading the view.
     

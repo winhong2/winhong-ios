@@ -15,10 +15,6 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    NSString *theme = [[NSUserDefaults standardUserDefaults] stringForKey:@"Storyboard_Theme"];
-    if((theme!=nil) && [theme isEqualToString:@"Theme"]){
-        self.switchPageVC_withoutAnimation = YES;
-    }
     
     [DatacenterVO getDatacenterListAsync:^(NSArray *allRemote, NSError *error) {
         if(allRemote.count>0){
