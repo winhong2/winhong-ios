@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIView *segmentView;
 
 @property UIPopoverController *popover;
+@property BOOL switchPageVC_withoutAnimation;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 

@@ -47,7 +47,7 @@
     [pages addObject:snapshot];
     
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task"] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
         controlVC.remoteObject = self.vmVO;
         [pages addObject:controlVC];
     }
@@ -135,7 +135,7 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
     controlVC.remoteObject = self.vmVO;
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];

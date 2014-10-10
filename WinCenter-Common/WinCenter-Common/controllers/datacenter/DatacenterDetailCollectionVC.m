@@ -30,94 +30,115 @@
             break;
         }
         case Page_Host:{
-            if(self.isMore){
-                [self.poolVO getHostListAsync:^(NSArray *allRemote, NSError *error) {
-                    [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
-                    [self.collectionView reloadData];
-                }];
-            }else{
-                [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
-                    for(PoolVO *poolVO in allRemote){
-                        [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                        NSMutableArray *hosts = [[NSMutableArray alloc] initWithArray:[poolVO getHostLisWithlimit:7 error:nil]];
-                        NSString *needMoreButton = @"FALSE";
-                        
-                        if(hosts.count==7){
-                            needMoreButton = @"TRUE";
-                            [hosts removeObjectAtIndex:6];
+            if(self.poolVO){
+                if(self.isMore){
+                    [self.poolVO getHostListAsync:^(NSArray *allRemote, NSError *error) {
+                        [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
+                        [self.collectionView reloadData];
+                    }];
+                }else{
+                    [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
+                        for(PoolVO *poolVO in allRemote){
+                            [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                            NSMutableArray *hosts = [[NSMutableArray alloc] initWithArray:[poolVO getHostLisWithlimit:7 error:nil]];
+                            NSString *needMoreButton = @"FALSE";
+                            
+                            if(hosts.count==7){
+                                needMoreButton = @"TRUE";
+                                [hosts removeObjectAtIndex:6];
+                            }
+                            
+                            [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                            [self.dataList setValue:hosts forKey:poolVO.resourcePoolName];
                         }
-                        
-                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
-                        [self.dataList setValue:hosts forKey:poolVO.resourcePoolName];
-                    }
+                        [self.collectionView reloadData];
+                    }];
+                }
+            }else{
+                [[RemoteObject getCurrentDatacenterVO] getHostListAsync:^(NSArray *allRemote, NSError *error) {
+                    [self.dataList setValue:allRemote forKey:[RemoteObject getCurrentDatacenterVO].name];
                     [self.collectionView reloadData];
                 }];
             }
             break;
         }
         case Page_Storage:{
-            if(self.isMore){
-                [self.poolVO getStorageListAsync:^(NSArray *allRemote, NSError *error) {
-                    NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
-                    for(StorageVO *item in allRemote){
-                        if([item.shared isEqualToString:@"true"]){
-                            [shareList addObject:item];
-                        }
-                    }
-                    [self.dataList setValue:shareList forKey:self.poolVO.resourcePoolName];
-                    [self.collectionView reloadData];
-                }];
-                
-            }else{
-                [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
-                    for(PoolVO *poolVO in allRemote){
-                        NSArray *storageList = [poolVO getStorageList:nil];
+            if(self.poolVO){
+                if(self.isMore){
+                    [self.poolVO getStorageListAsync:^(NSArray *allRemote, NSError *error) {
                         NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
-                        NSString *needMoreButton = @"FALSE";
-                        int count = 0;
-                        for(StorageVO *item in storageList){
+                        for(StorageVO *item in allRemote){
                             if([item.shared isEqualToString:@"true"]){
-                                count++;
-                                if(count==7){
-                                    needMoreButton = @"TRUE";
-                                    break;
-                                }
                                 [shareList addObject:item];
                             }
                         }
-                        //if(shareList.count>0){
-                        [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
-                        [self.dataList setValue:shareList forKey:poolVO.resourcePoolName];
-                        //}
-                    }
+                        [self.dataList setValue:shareList forKey:self.poolVO.resourcePoolName];
+                        [self.collectionView reloadData];
+                    }];
+                    
+                }else{
+                    [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
+                        for(PoolVO *poolVO in allRemote){
+                            NSArray *storageList = [poolVO getStorageList:nil];
+                            NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
+                            NSString *needMoreButton = @"FALSE";
+                            int count = 0;
+                            for(StorageVO *item in storageList){
+                                if([item.shared isEqualToString:@"true"]){
+                                    count++;
+                                    if(count==7){
+                                        needMoreButton = @"TRUE";
+                                        break;
+                                    }
+                                    [shareList addObject:item];
+                                }
+                            }
+                            //if(shareList.count>0){
+                            [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                            [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                            [self.dataList setValue:shareList forKey:poolVO.resourcePoolName];
+                            //}
+                        }
+                        [self.collectionView reloadData];
+                    }];
+                }
+            }else{
+                [[RemoteObject getCurrentDatacenterVO] getStorageListAsync:^(NSArray *allRemote, NSError *error) {
+                    [self.dataList setValue:allRemote forKey:[RemoteObject getCurrentDatacenterVO].name];
                     [self.collectionView reloadData];
                 }];
             }
             break;
         }
         case Page_VM:{
-            if(self.isMore){
-                [self.poolVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
-                    [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
-                    [self.collectionView reloadData];
-                }];
-            }else{
-                [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
-                    for(PoolVO *poolVO in allRemote){
-                        [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                        
-                        NSMutableArray *vms = [[NSMutableArray alloc] initWithArray:[poolVO getVmListWithlimit:7 error:nil]];
-                        NSString *needMoreButton = @"FALSE";
-                        
-                        if(vms.count==7){
-                            needMoreButton = @"TRUE";
-                            [vms removeObjectAtIndex:6];
+            if(self.poolVO){
+                if(self.isMore){
+                    [self.poolVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
+                        [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
+                        [self.collectionView reloadData];
+                    }];
+                }else{
+                    [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
+                        for(PoolVO *poolVO in allRemote){
+                            [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                            
+                            NSMutableArray *vms = [[NSMutableArray alloc] initWithArray:[poolVO getVmListWithlimit:7 error:nil]];
+                            NSString *needMoreButton = @"FALSE";
+                            
+                            if(vms.count==7){
+                                needMoreButton = @"TRUE";
+                                [vms removeObjectAtIndex:6];
+                            }
+                            
+                            [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                            [self.dataList setValue:vms forKey:poolVO.resourcePoolName];
                         }
-                        
-                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
-                        [self.dataList setValue:vms forKey:poolVO.resourcePoolName];
-                    }
+                        [self.collectionView reloadData];
+                    }];
+                }
+            }else{
+                [[RemoteObject getCurrentDatacenterVO] getVmListAsync:^(NSArray *allRemote, NSError *error) {
+                    [self.dataList setValue:allRemote forKey:[RemoteObject getCurrentDatacenterVO].name];
                     [self.collectionView reloadData];
                 }];
             }
@@ -311,7 +332,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     switch (self.pageType) {
         case Page_Pool:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Pool" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Pool"] instantiateInitialViewController];
             PoolContainerVC *vc;
             if([root isKindOfClass:[PoolContainerVC class]]){
                 vc = (PoolContainerVC*) root;
@@ -323,7 +344,7 @@
             break;
         }
         case Page_Host:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Host"] instantiateInitialViewController];
             HostContainerVC *vc;
             if([root isKindOfClass:[HostContainerVC class]]){
                 vc = (HostContainerVC*) root;
@@ -335,7 +356,7 @@
             break;
         }
         case Page_Storage:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Storage"] instantiateInitialViewController];
             StorageContainerVC *vc;
             if([root isKindOfClass:[StorageContainerVC class]]){
                 vc = (StorageContainerVC*) root;
@@ -347,7 +368,7 @@
             break;
         }
         case Page_VM:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"VM"] instantiateInitialViewController];
             VmContainerVC *vc;
             if([root isKindOfClass:[VmContainerVC class]]){
                 vc = (VmContainerVC*) root;
@@ -359,7 +380,7 @@
             break;
         }
         case Page_Business:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Business" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Business"] instantiateInitialViewController];
             BusinessContainerVC *vc;
             if([root isKindOfClass:[BusinessContainerVC class]]){
                 vc = (BusinessContainerVC*) root;

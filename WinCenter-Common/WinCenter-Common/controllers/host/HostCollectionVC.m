@@ -49,7 +49,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    UIViewController *root = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateInitialViewController];
+    UIViewController *root = [[UIStoryboard storyboardWithName:@"Host"] instantiateInitialViewController];
     HostContainerVC *vc;
     if([root isKindOfClass:[HostContainerVC class]]){
         vc = (HostContainerVC*) root;

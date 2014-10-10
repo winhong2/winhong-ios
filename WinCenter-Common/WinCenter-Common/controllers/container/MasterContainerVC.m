@@ -58,11 +58,20 @@
     self.pageVC.dataSource = self;
     self.pageVC.delegate = self;
     
+    NSString *theme = [[NSUserDefaults standardUserDefaults] stringForKey:@"Storyboard_Theme"];
+    if((theme!=nil) && [theme isEqualToString:@"Theme"]){
+        self.pageVC.dataSource = nil;
+    }
+    
+    if(self.pages.count==1){
+        self.pageVC.dataSource = nil;
+    }
+    
 }
 
 - (void)switchPageVC:(NSInteger)index {
     self.showIndex = index;
-    [self.pageVC setViewControllers:@[self.pages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:YES completion:nil];
+    [self.pageVC setViewControllers:@[self.pages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:!self.switchPageVC_withoutAnimation completion:nil];
     self.previousIndex = index;
     
 }

@@ -36,11 +36,11 @@
     UIViewController *performVC = [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailPerformanceVC"];
     [pages addObject:performVC];
     
-    VmCollectionVC *hostVmCollectionVC = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateViewControllerWithIdentifier:@"VmCollectionVC"];
+    VmCollectionVC *hostVmCollectionVC = [[UIStoryboard storyboardWithName:@"VM"] instantiateViewControllerWithIdentifier:@"VmCollectionVC"];
     hostVmCollectionVC.hostVO = self.hostVO;
     [pages addObject:hostVmCollectionVC];
     
-    StorageCollectionVC *hostStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
+    StorageCollectionVC *hostStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage"] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
     hostStorageCollectionVC.hostVO = self.hostVO;
     [pages addObject:hostStorageCollectionVC];
     
@@ -53,7 +53,7 @@
     [pages addObject:hostNicCollectionVC];
     
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task"] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
         controlVC.remoteObject = self.hostVO;
         [pages addObject:controlVC];
     }
@@ -67,7 +67,7 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
     controlVC.remoteObject = self.hostVO;
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];

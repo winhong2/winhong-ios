@@ -108,6 +108,13 @@
 		185CB43C19E7799800DC8E8A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43919E7799800DC8E8A /* Setting.storyboard */; };
 		185CB43D19E7799800DC8E8A /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43A19E7799800DC8E8A /* Task.storyboard */; };
 		185CB43E19E7799800DC8E8A /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43B19E7799800DC8E8A /* Warning.storyboard */; };
+		185CB45819E7E50800DC8E8A /* UIStoryboard+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB45719E7E50800DC8E8A /* UIStoryboard+Theme.m */; };
+		185CB45F19E8139A00DC8E8A /* DatacenterVO.getHostListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45919E8139A00DC8E8A /* DatacenterVO.getHostListAsync.json */; };
+		185CB46019E8139A00DC8E8A /* DatacenterVO.getHostListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45A19E8139A00DC8E8A /* DatacenterVO.getHostListAsync.limit.json */; };
+		185CB46119E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45B19E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.json */; };
+		185CB46219E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45C19E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.limit.json */; };
+		185CB46319E8139A00DC8E8A /* DatacenterVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45D19E8139A00DC8E8A /* DatacenterVO.getVmListAsync.json */; };
+		185CB46419E8139A00DC8E8A /* DatacenterVO.getVmListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB45E19E8139A00DC8E8A /* DatacenterVO.getVmListAsync.limit.json */; };
 		18A4D43219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43319B560D400415896 /* CoreGraphics.framework */; };
 		18A4D43619B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
@@ -273,6 +280,14 @@
 		185CB43919E7799800DC8E8A /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Setting.storyboard"; sourceTree = "<group>"; };
 		185CB43A19E7799800DC8E8A /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Task.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Task.storyboard"; sourceTree = "<group>"; };
 		185CB43B19E7799800DC8E8A /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Warning.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Warning.storyboard"; sourceTree = "<group>"; };
+		185CB45619E7E50800DC8E8A /* UIStoryboard+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Theme.h"; sourceTree = "<group>"; };
+		185CB45719E7E50800DC8E8A /* UIStoryboard+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Theme.m"; sourceTree = "<group>"; };
+		185CB45919E8139A00DC8E8A /* DatacenterVO.getHostListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getHostListAsync.json; sourceTree = "<group>"; };
+		185CB45A19E8139A00DC8E8A /* DatacenterVO.getHostListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getHostListAsync.limit.json; sourceTree = "<group>"; };
+		185CB45B19E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getStorageListAsync.json; sourceTree = "<group>"; };
+		185CB45C19E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getStorageListAsync.limit.json; sourceTree = "<group>"; };
+		185CB45D19E8139A00DC8E8A /* DatacenterVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getVmListAsync.json; sourceTree = "<group>"; };
+		185CB45E19E8139A00DC8E8A /* DatacenterVO.getVmListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getVmListAsync.limit.json; sourceTree = "<group>"; };
 		18A4D42E19B560D400415896 /* WinCenter-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D43119B560D400415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18A4D43319B560D400415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -309,6 +324,8 @@
 		185CB33019E7796F00DC8E8A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				185CB45619E7E50800DC8E8A /* UIStoryboard+Theme.h */,
+				185CB45719E7E50800DC8E8A /* UIStoryboard+Theme.m */,
 				185CB33119E7796F00DC8E8A /* business */,
 				185CB33A19E7796F00DC8E8A /* collection */,
 				185CB34319E7796F00DC8E8A /* container */,
@@ -539,6 +556,12 @@
 				185CB3B219E7796F00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */,
 				185CB3B319E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json */,
 				185CB3B419E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json */,
+				185CB45919E8139A00DC8E8A /* DatacenterVO.getHostListAsync.json */,
+				185CB45A19E8139A00DC8E8A /* DatacenterVO.getHostListAsync.limit.json */,
+				185CB45B19E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.json */,
+				185CB45C19E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.limit.json */,
+				185CB45D19E8139A00DC8E8A /* DatacenterVO.getVmListAsync.json */,
+				185CB45E19E8139A00DC8E8A /* DatacenterVO.getVmListAsync.limit.json */,
 				185CB3B519E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json */,
 				185CB3B619E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json */,
 				185CB3B719E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json */,
@@ -718,6 +741,7 @@
 			files = (
 				185CB40D19E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
 				185CB40619E7796F00DC8E8A /* BusinessVO.getBusinessVOAsync.json in Resources */,
+				185CB46419E8139A00DC8E8A /* DatacenterVO.getVmListAsync.limit.json in Resources */,
 				185CB40919E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.limit.json in Resources */,
 				185CB43E19E7799800DC8E8A /* Warning.storyboard in Resources */,
 				185CB40F19E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json in Resources */,
@@ -729,16 +753,21 @@
 				185CB41119E7796F00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json in Resources */,
 				185CB41419E7796F00DC8E8A /* HostVO.getStorageListAsync.json in Resources */,
 				185CB42519E7796F00DC8E8A /* VmVO.getVmVolumnListAsync.json in Resources */,
+				185CB46219E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.limit.json in Resources */,
 				185CB42219E7796F00DC8E8A /* UserVO.getUserVOAsync.json in Resources */,
 				185CB42119E7796F00DC8E8A /* TemplateIcon2x.png in Resources */,
 				185CB41819E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json in Resources */,
+				185CB46319E8139A00DC8E8A /* DatacenterVO.getVmListAsync.json in Resources */,
+				185CB46119E8139A00DC8E8A /* DatacenterVO.getStorageListAsync.json in Resources */,
 				185CB41F19E7796F00DC8E8A /* StorageVO.getStorageVOAsync.json in Resources */,
 				185CB42619E7796F00DC8E8A /* WarningInfoVO.getWarningInfoListAsync.json in Resources */,
 				185CB42719E7796F00DC8E8A /* Images.xcassets in Resources */,
+				185CB46019E8139A00DC8E8A /* DatacenterVO.getHostListAsync.limit.json in Resources */,
 				185CB41319E7796F00DC8E8A /* HostVO.getHostVOAsync.json in Resources */,
 				185CB41D19E7796F00DC8E8A /* PoolVO.getVmListAsync.json in Resources */,
 				185CB40E19E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json in Resources */,
 				185CB41619E7796F00DC8E8A /* LicenseVO.getLicenseVOAsync.json in Resources */,
+				185CB45F19E8139A00DC8E8A /* DatacenterVO.getHostListAsync.json in Resources */,
 				185CB42019E7796F00DC8E8A /* StorageVO.getStorageVolumnListAsync.json in Resources */,
 				185CB43119E7798900DC8E8A /* Business.storyboard in Resources */,
 				185CB40C19E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json in Resources */,
@@ -841,6 +870,7 @@
 				18A4D44219B560D400415896 /* AppDelegate.m in Sources */,
 				185CB3E619E7796F00DC8E8A /* LoginVC.m in Sources */,
 				185CB3D019E7796F00DC8E8A /* BusinessDetailInfoVC.m in Sources */,
+				185CB45819E7E50800DC8E8A /* UIStoryboard+Theme.m in Sources */,
 				185CB3E019E7796F00DC8E8A /* HostDetailInfoVC.m in Sources */,
 				185CB3EC19E7796F00DC8E8A /* PopOptionLicenseVC.m in Sources */,
 				185CB3F419E7796F00DC8E8A /* PopControlRecordCell.m in Sources */,

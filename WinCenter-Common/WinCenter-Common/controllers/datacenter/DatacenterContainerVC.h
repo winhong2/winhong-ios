@@ -7,11 +7,13 @@
 //
 
 #import "MasterContainerVC.h"
+#import "DatacenterMenuVC.h"
 
 @interface DatacenterContainerVC : MasterContainerVC<DatacenterTableVCDelegate>
 
 @property UIPopoverController *popoverVC;
 @property DatacenterDetailInfoVC *infoVC;
+@property DatacenterMenuVC *menuVC;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonConfig;
 @property (weak, nonatomic) IBOutlet UIButton *buttonTask;
