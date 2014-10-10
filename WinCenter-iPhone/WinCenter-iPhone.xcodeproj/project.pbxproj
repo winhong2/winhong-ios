@@ -7,118 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1809A7AE19E6281E0034052C /* DatacenterContainerTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7AD19E6281E0034052C /* DatacenterContainerTableVC.m */; };
-		1809A7B019E62B4D0034052C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7AF19E62B4D0034052C /* Setting.storyboard */; };
-		1809A7B219E62BCC0034052C /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7B119E62BCC0034052C /* Task.storyboard */; };
-		1809A7B419E62BD30034052C /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A7B319E62BD30034052C /* Warning.storyboard */; };
-		1809A7EC19E63BDF0034052C /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7EB19E63BDF0034052C /* LoginTableVC.m */; };
-		1809A7F119E677D80034052C /* MasterCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7F019E677D80034052C /* MasterCollectionFooter.m */; };
-		1809A7FC19E6CD450034052C /* StorageDiskCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7F919E6CD450034052C /* StorageDiskCollectionCell.m */; };
-		1809A7FD19E6CD450034052C /* StorageDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */; };
-		1858129219E6D62D0047C078 /* BusinessVmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */; };
-		1858129519E6D6340047C078 /* BusinessVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */; };
 		185CB21E19E7740100DC8E8A /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */; };
+		185CB3CF19E7796F00DC8E8A /* BusinessContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB33319E7796F00DC8E8A /* BusinessContainerVC.m */; };
+		185CB3D019E7796F00DC8E8A /* BusinessDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB33519E7796F00DC8E8A /* BusinessDetailInfoVC.m */; };
+		185CB3D119E7796F00DC8E8A /* BusinessVmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB33719E7796F00DC8E8A /* BusinessVmCollectionCell.m */; };
+		185CB3D219E7796F00DC8E8A /* BusinessVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB33919E7796F00DC8E8A /* BusinessVmCollectionVC.m */; };
+		185CB3D319E7796F00DC8E8A /* MasterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB33C19E7796F00DC8E8A /* MasterCollectionCell.m */; };
+		185CB3D419E7796F00DC8E8A /* MasterCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB33E19E7796F00DC8E8A /* MasterCollectionFooter.m */; };
+		185CB3D519E7796F00DC8E8A /* MasterCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34019E7796F00DC8E8A /* MasterCollectionHeader.m */; };
+		185CB3D619E7796F00DC8E8A /* MasterCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34219E7796F00DC8E8A /* MasterCollectionVC.m */; };
+		185CB3D719E7796F00DC8E8A /* MasterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34519E7796F00DC8E8A /* MasterContainerVC.m */; };
+		185CB3D819E7796F00DC8E8A /* DatacenterContainerTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34819E7796F00DC8E8A /* DatacenterContainerTableVC.m */; };
+		185CB3D919E7796F00DC8E8A /* DatacenterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34A19E7796F00DC8E8A /* DatacenterContainerVC.m */; };
+		185CB3DA19E7796F00DC8E8A /* DatacenterDetailCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34C19E7796F00DC8E8A /* DatacenterDetailCollectionVC.m */; };
+		185CB3DB19E7796F00DC8E8A /* DatacenterDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB34E19E7796F00DC8E8A /* DatacenterDetailInfoVC.m */; };
+		185CB3DC19E7796F00DC8E8A /* DatacenterDetailMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35019E7796F00DC8E8A /* DatacenterDetailMoreVC.m */; };
+		185CB3DD19E7796F00DC8E8A /* DatacenterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35219E7796F00DC8E8A /* DatacenterTableVC.m */; };
+		185CB3DE19E7796F00DC8E8A /* HostCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35519E7796F00DC8E8A /* HostCollectionVC.m */; };
+		185CB3DF19E7796F00DC8E8A /* HostContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35719E7796F00DC8E8A /* HostContainerVC.m */; };
+		185CB3E019E7796F00DC8E8A /* HostDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35919E7796F00DC8E8A /* HostDetailInfoVC.m */; };
+		185CB3E119E7796F00DC8E8A /* HostDetailPerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35B19E7796F00DC8E8A /* HostDetailPerformanceVC.m */; };
+		185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35D19E7796F00DC8E8A /* HostNetworkCollectionVC.m */; };
+		185CB3E319E7796F00DC8E8A /* HostNicCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB35F19E7796F00DC8E8A /* HostNicCollectionVC.m */; };
+		185CB3E419E7796F00DC8E8A /* LoginSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB36219E7796F00DC8E8A /* LoginSettingVC.m */; };
+		185CB3E519E7796F00DC8E8A /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB36419E7796F00DC8E8A /* LoginTableVC.m */; };
+		185CB3E619E7796F00DC8E8A /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB36619E7796F00DC8E8A /* LoginVC.m */; };
+		185CB3E719E7796F00DC8E8A /* NetworkCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB36919E7796F00DC8E8A /* NetworkCollectionCell.m */; };
+		185CB3E819E7796F00DC8E8A /* NetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB36B19E7796F00DC8E8A /* NetworkCollectionVC.m */; };
+		185CB3E919E7796F00DC8E8A /* NetworkContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB36D19E7796F00DC8E8A /* NetworkContainerVC.m */; };
+		185CB3EA19E7796F00DC8E8A /* PoolContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37019E7796F00DC8E8A /* PoolContainerVC.m */; };
+		185CB3EB19E7796F00DC8E8A /* PoolDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37219E7796F00DC8E8A /* PoolDetailInfoVC.m */; };
+		185CB3EC19E7796F00DC8E8A /* PopOptionLicenseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37519E7796F00DC8E8A /* PopOptionLicenseVC.m */; };
+		185CB3ED19E7796F00DC8E8A /* PopOptionsUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37719E7796F00DC8E8A /* PopOptionsUserInfoVC.m */; };
+		185CB3EE19E7796F00DC8E8A /* PopOptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37919E7796F00DC8E8A /* PopOptionsVC.m */; };
+		185CB3EF19E7796F00DC8E8A /* StorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37C19E7796F00DC8E8A /* StorageCollectionVC.m */; };
+		185CB3F019E7796F00DC8E8A /* StorageContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB37E19E7796F00DC8E8A /* StorageContainerVC.m */; };
+		185CB3F119E7796F00DC8E8A /* StorageDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38019E7796F00DC8E8A /* StorageDetailInfoVC.m */; };
+		185CB3F219E7796F00DC8E8A /* StorageDiskCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38219E7796F00DC8E8A /* StorageDiskCollectionCell.m */; };
+		185CB3F319E7796F00DC8E8A /* StorageDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38419E7796F00DC8E8A /* StorageDiskCollectionVC.m */; };
+		185CB3F419E7796F00DC8E8A /* PopControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38719E7796F00DC8E8A /* PopControlRecordCell.m */; };
+		185CB3F519E7796F00DC8E8A /* PopControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38919E7796F00DC8E8A /* PopControlRecordCellForTime.m */; };
+		185CB3F619E7796F00DC8E8A /* PopControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38B19E7796F00DC8E8A /* PopControlRecordVC.m */; };
+		185CB3F719E7796F00DC8E8A /* VmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB38E19E7796F00DC8E8A /* VmCollectionVC.m */; };
+		185CB3F819E7796F00DC8E8A /* VmContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39019E7796F00DC8E8A /* VmContainerVC.m */; };
+		185CB3F919E7796F00DC8E8A /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39219E7796F00DC8E8A /* VmDetailCPUConfigVC.m */; };
+		185CB3FA19E7796F00DC8E8A /* VmDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39419E7796F00DC8E8A /* VmDetailInfoVC.m */; };
+		185CB3FB19E7796F00DC8E8A /* VmDetailMemryConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39619E7796F00DC8E8A /* VmDetailMemryConfigVC.m */; };
+		185CB3FC19E7796F00DC8E8A /* VmDetailSnapshootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39819E7796F00DC8E8A /* VmDetailSnapshootVC.m */; };
+		185CB3FD19E7796F00DC8E8A /* VmDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39A19E7796F00DC8E8A /* VmDiskCollectionVC.m */; };
+		185CB3FE19E7796F00DC8E8A /* VmMigrateSelectHostListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39C19E7796F00DC8E8A /* VmMigrateSelectHostListCell.m */; };
+		185CB3FF19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB39E19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m */; };
+		185CB40019E7796F00DC8E8A /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB3A019E7796F00DC8E8A /* VmMigrateVC.m */; };
+		185CB40119E7796F00DC8E8A /* VmNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB3A219E7796F00DC8E8A /* VmNetworkCollectionVC.m */; };
+		185CB40219E7796F00DC8E8A /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB3A419E7796F00DC8E8A /* VmNewVC.m */; };
+		185CB40319E7796F00DC8E8A /* PopWarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB3A719E7796F00DC8E8A /* PopWarningInfoCell.m */; };
+		185CB40419E7796F00DC8E8A /* PopWarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB3A919E7796F00DC8E8A /* PopWarningInfoCellForTime.m */; };
+		185CB40519E7796F00DC8E8A /* PopWarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CB3AB19E7796F00DC8E8A /* PopWarningInfoVC.m */; };
+		185CB40619E7796F00DC8E8A /* BusinessVO.getBusinessVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3AD19E7796F00DC8E8A /* BusinessVO.getBusinessVOAsync.json */; };
+		185CB40719E7796F00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3AE19E7796F00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json */; };
+		185CB40819E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3AF19E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.json */; };
+		185CB40919E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B019E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.limit.json */; };
+		185CB40A19E7796F00DC8E8A /* DatacenterVO.getDatacenterListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B119E7796F00DC8E8A /* DatacenterVO.getDatacenterListAsync.json */; };
+		185CB40B19E7796F00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B219E7796F00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */; };
+		185CB40C19E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B319E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json */; };
+		185CB40D19E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B419E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json */; };
+		185CB40E19E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B519E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json */; };
+		185CB40F19E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B619E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json */; };
+		185CB41019E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B719E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json */; };
+		185CB41119E7796F00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B819E7796F00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json */; };
+		185CB41219E7796F00DC8E8A /* HostVO.getHostStatVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3B919E7796F00DC8E8A /* HostVO.getHostStatVOAsync.json */; };
+		185CB41319E7796F00DC8E8A /* HostVO.getHostVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3BA19E7796F00DC8E8A /* HostVO.getHostVOAsync.json */; };
+		185CB41419E7796F00DC8E8A /* HostVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3BB19E7796F00DC8E8A /* HostVO.getStorageListAsync.json */; };
+		185CB41519E7796F00DC8E8A /* HostVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3BC19E7796F00DC8E8A /* HostVO.getVmListAsync.json */; };
+		185CB41619E7796F00DC8E8A /* LicenseVO.getLicenseVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3BD19E7796F00DC8E8A /* LicenseVO.getLicenseVOAsync.json */; };
+		185CB41719E7796F00DC8E8A /* PoolVO.getHostListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3BE19E7796F00DC8E8A /* PoolVO.getHostListAsync.json */; };
+		185CB41819E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3BF19E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json */; };
+		185CB41919E7796F00DC8E8A /* PoolVO.getPoolElasticAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C019E7796F00DC8E8A /* PoolVO.getPoolElasticAsync.json */; };
+		185CB41A19E7796F00DC8E8A /* PoolVO.getPoolVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C119E7796F00DC8E8A /* PoolVO.getPoolVOAsync.json */; };
+		185CB41B19E7796F00DC8E8A /* PoolVO.getStorageList.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C219E7796F00DC8E8A /* PoolVO.getStorageList.json */; };
+		185CB41C19E7796F00DC8E8A /* PoolVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C319E7796F00DC8E8A /* PoolVO.getStorageListAsync.json */; };
+		185CB41D19E7796F00DC8E8A /* PoolVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C419E7796F00DC8E8A /* PoolVO.getVmListAsync.json */; };
+		185CB41E19E7796F00DC8E8A /* PoolVO.getVmListWithlimit.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C519E7796F00DC8E8A /* PoolVO.getVmListWithlimit.json */; };
+		185CB41F19E7796F00DC8E8A /* StorageVO.getStorageVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C619E7796F00DC8E8A /* StorageVO.getStorageVOAsync.json */; };
+		185CB42019E7796F00DC8E8A /* StorageVO.getStorageVolumnListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C719E7796F00DC8E8A /* StorageVO.getStorageVolumnListAsync.json */; };
+		185CB42119E7796F00DC8E8A /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C819E7796F00DC8E8A /* TemplateIcon2x.png */; };
+		185CB42219E7796F00DC8E8A /* UserVO.getUserVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3C919E7796F00DC8E8A /* UserVO.getUserVOAsync.json */; };
+		185CB42319E7796F00DC8E8A /* VmVO.getVmNicListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3CA19E7796F00DC8E8A /* VmVO.getVmNicListAsync.json */; };
+		185CB42419E7796F00DC8E8A /* VmVO.getVmVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3CB19E7796F00DC8E8A /* VmVO.getVmVOAsync.json */; };
+		185CB42519E7796F00DC8E8A /* VmVO.getVmVolumnListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3CC19E7796F00DC8E8A /* VmVO.getVmVolumnListAsync.json */; };
+		185CB42619E7796F00DC8E8A /* WarningInfoVO.getWarningInfoListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3CD19E7796F00DC8E8A /* WarningInfoVO.getWarningInfoListAsync.json */; };
+		185CB42719E7796F00DC8E8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB3CE19E7796F00DC8E8A /* Images.xcassets */; };
+		185CB43119E7798900DC8E8A /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42919E7798900DC8E8A /* Business.storyboard */; };
+		185CB43219E7798900DC8E8A /* Datacenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42A19E7798900DC8E8A /* Datacenter.storyboard */; };
+		185CB43319E7798900DC8E8A /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42B19E7798900DC8E8A /* Host.storyboard */; };
+		185CB43419E7798900DC8E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42C19E7798900DC8E8A /* Main.storyboard */; };
+		185CB43519E7798900DC8E8A /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42D19E7798900DC8E8A /* Network.storyboard */; };
+		185CB43619E7798900DC8E8A /* Pool.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42E19E7798900DC8E8A /* Pool.storyboard */; };
+		185CB43719E7798900DC8E8A /* Storage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB42F19E7798900DC8E8A /* Storage.storyboard */; };
+		185CB43819E7798900DC8E8A /* VM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43019E7798900DC8E8A /* VM.storyboard */; };
+		185CB43C19E7799800DC8E8A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43919E7799800DC8E8A /* Setting.storyboard */; };
+		185CB43D19E7799800DC8E8A /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43A19E7799800DC8E8A /* Task.storyboard */; };
+		185CB43E19E7799800DC8E8A /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB43B19E7799800DC8E8A /* Warning.storyboard */; };
 		18A4D43219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43319B560D400415896 /* CoreGraphics.framework */; };
 		18A4D43619B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
 		18A4D43C19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D43A19B560D400415896 /* InfoPlist.strings */; };
 		18A4D43E19B560D400415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D43D19B560D400415896 /* main.m */; };
 		18A4D44219B560D400415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44119B560D400415896 /* AppDelegate.m */; };
-		18A4D44519B560D400415896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D44319B560D400415896 /* Main.storyboard */; };
-		18A4D44A19B560D400415896 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D44919B560D400415896 /* Images.xcassets */; };
 		18A4D45119B560D400415896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D45019B560D400415896 /* XCTest.framework */; };
 		18A4D45219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D45319B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
 		18A4D45B19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D45919B560D400415896 /* InfoPlist.strings */; };
 		18A4D45D19B560D400415896 /* WinCenter_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D45C19B560D400415896 /* WinCenter_iPhoneTests.m */; };
-		18B233C119E57D3C000A1FA1 /* BusinessVO.getBusinessVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331B19E57D3B000A1FA1 /* BusinessVO.getBusinessVOAsync.json */; };
-		18B233C219E57D3C000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331C19E57D3B000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json */; };
-		18B233C319E57D3C000A1FA1 /* DatacenterVO.getBusinessListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331D19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.json */; };
-		18B233C419E57D3C000A1FA1 /* DatacenterVO.getBusinessListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331E19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.limit.json */; };
-		18B233C519E57D3C000A1FA1 /* DatacenterVO.getDatacenterListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331F19E57D3B000A1FA1 /* DatacenterVO.getDatacenterListAsync.json */; };
-		18B233C619E57D3C000A1FA1 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332019E57D3B000A1FA1 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */; };
-		18B233C719E57D3C000A1FA1 /* DatacenterVO.getPoolListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332119E57D3B000A1FA1 /* DatacenterVO.getPoolListAsync.json */; };
-		18B233C819E57D3C000A1FA1 /* DatacenterVO.getPoolListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332219E57D3B000A1FA1 /* DatacenterVO.getPoolListAsync.limit.json */; };
-		18B233C919E57D3C000A1FA1 /* HostVO.getHostNetworkExternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332319E57D3B000A1FA1 /* HostVO.getHostNetworkExternalListAsync.json */; };
-		18B233CA19E57D3C000A1FA1 /* HostVO.getHostNetworkInternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332419E57D3B000A1FA1 /* HostVO.getHostNetworkInternalListAsync.json */; };
-		18B233CB19E57D3C000A1FA1 /* HostVO.getHostNicGroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332519E57D3B000A1FA1 /* HostVO.getHostNicGroupedListAsync.json */; };
-		18B233CC19E57D3C000A1FA1 /* HostVO.getHostNicUngroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332619E57D3B000A1FA1 /* HostVO.getHostNicUngroupedListAsync.json */; };
-		18B233CD19E57D3C000A1FA1 /* HostVO.getHostStatVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332719E57D3B000A1FA1 /* HostVO.getHostStatVOAsync.json */; };
-		18B233CE19E57D3C000A1FA1 /* HostVO.getHostVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332819E57D3B000A1FA1 /* HostVO.getHostVOAsync.json */; };
-		18B233CF19E57D3C000A1FA1 /* HostVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332919E57D3B000A1FA1 /* HostVO.getStorageListAsync.json */; };
-		18B233D019E57D3C000A1FA1 /* HostVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332A19E57D3B000A1FA1 /* HostVO.getVmListAsync.json */; };
-		18B233D119E57D3C000A1FA1 /* LicenseVO.getLicenseVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332B19E57D3B000A1FA1 /* LicenseVO.getLicenseVOAsync.json */; };
-		18B233D219E57D3C000A1FA1 /* PoolVO.getHostListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332C19E57D3B000A1FA1 /* PoolVO.getHostListAsync.json */; };
-		18B233D319E57D3C000A1FA1 /* PoolVO.getHostLisWithlimit.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332D19E57D3B000A1FA1 /* PoolVO.getHostLisWithlimit.json */; };
-		18B233D419E57D3C000A1FA1 /* PoolVO.getPoolElasticAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332E19E57D3B000A1FA1 /* PoolVO.getPoolElasticAsync.json */; };
-		18B233D519E57D3C000A1FA1 /* PoolVO.getPoolVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2332F19E57D3B000A1FA1 /* PoolVO.getPoolVOAsync.json */; };
-		18B233D619E57D3C000A1FA1 /* PoolVO.getStorageList.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333019E57D3B000A1FA1 /* PoolVO.getStorageList.json */; };
-		18B233D719E57D3C000A1FA1 /* PoolVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333119E57D3B000A1FA1 /* PoolVO.getStorageListAsync.json */; };
-		18B233D819E57D3C000A1FA1 /* PoolVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333219E57D3B000A1FA1 /* PoolVO.getVmListAsync.json */; };
-		18B233D919E57D3C000A1FA1 /* PoolVO.getVmListWithlimit.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333319E57D3B000A1FA1 /* PoolVO.getVmListWithlimit.json */; };
-		18B233DA19E57D3C000A1FA1 /* StorageVO.getStorageVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333419E57D3B000A1FA1 /* StorageVO.getStorageVOAsync.json */; };
-		18B233DB19E57D3C000A1FA1 /* StorageVO.getStorageVolumnListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333519E57D3B000A1FA1 /* StorageVO.getStorageVolumnListAsync.json */; };
-		18B233DC19E57D3C000A1FA1 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333619E57D3B000A1FA1 /* TemplateIcon2x.png */; };
-		18B233DD19E57D3C000A1FA1 /* UserVO.getUserVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333719E57D3B000A1FA1 /* UserVO.getUserVOAsync.json */; };
-		18B233DE19E57D3C000A1FA1 /* VmVO.getVmNicListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333819E57D3B000A1FA1 /* VmVO.getVmNicListAsync.json */; };
-		18B233DF19E57D3C000A1FA1 /* VmVO.getVmVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333919E57D3B000A1FA1 /* VmVO.getVmVOAsync.json */; };
-		18B233E019E57D3C000A1FA1 /* VmVO.getVmVolumnListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333A19E57D3B000A1FA1 /* VmVO.getVmVolumnListAsync.json */; };
-		18B233E119E57D3C000A1FA1 /* WarningInfoVO.getWarningInfoListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2333B19E57D3B000A1FA1 /* WarningInfoVO.getWarningInfoListAsync.json */; };
-		18B233E219E57D3C000A1FA1 /* BusinessContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2334019E57D3B000A1FA1 /* BusinessContainerVC.m */; };
-		18B233E319E57D3C000A1FA1 /* BusinessDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2334219E57D3B000A1FA1 /* BusinessDetailInfoVC.m */; };
-		18B233E419E57D3C000A1FA1 /* MasterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2334519E57D3B000A1FA1 /* MasterCollectionCell.m */; };
-		18B233E519E57D3C000A1FA1 /* MasterCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2334719E57D3B000A1FA1 /* MasterCollectionHeader.m */; };
-		18B233E619E57D3C000A1FA1 /* MasterCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2334919E57D3B000A1FA1 /* MasterCollectionVC.m */; };
-		18B233E719E57D3C000A1FA1 /* MasterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2334C19E57D3B000A1FA1 /* MasterContainerVC.m */; };
-		18B233F619E57D3C000A1FA1 /* HostCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2336C19E57D3C000A1FA1 /* HostCollectionVC.m */; };
-		18B233F719E57D3C000A1FA1 /* HostContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2336E19E57D3C000A1FA1 /* HostContainerVC.m */; };
-		18B233F819E57D3C000A1FA1 /* HostDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337019E57D3C000A1FA1 /* HostDetailInfoVC.m */; };
-		18B233F919E57D3C000A1FA1 /* HostDetailPerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337219E57D3C000A1FA1 /* HostDetailPerformanceVC.m */; };
-		18B233FA19E57D3C000A1FA1 /* HostNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337419E57D3C000A1FA1 /* HostNetworkCollectionVC.m */; };
-		18B233FB19E57D3C000A1FA1 /* HostNicCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337619E57D3C000A1FA1 /* HostNicCollectionVC.m */; };
-		18B233FC19E57D3C000A1FA1 /* LoginSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337919E57D3C000A1FA1 /* LoginSettingVC.m */; };
-		18B233FD19E57D3C000A1FA1 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337B19E57D3C000A1FA1 /* LoginVC.m */; };
-		18B233FE19E57D3C000A1FA1 /* NetworkCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2337E19E57D3C000A1FA1 /* NetworkCollectionCell.m */; };
-		18B233FF19E57D3C000A1FA1 /* NetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338019E57D3C000A1FA1 /* NetworkCollectionVC.m */; };
-		18B2340019E57D3C000A1FA1 /* NetworkContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338219E57D3C000A1FA1 /* NetworkContainerVC.m */; };
-		18B2340119E57D3C000A1FA1 /* PoolContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338519E57D3C000A1FA1 /* PoolContainerVC.m */; };
-		18B2340219E57D3C000A1FA1 /* PoolDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338719E57D3C000A1FA1 /* PoolDetailInfoVC.m */; };
-		18B2340319E57D3C000A1FA1 /* PopOptionLicenseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338A19E57D3C000A1FA1 /* PopOptionLicenseVC.m */; };
-		18B2340419E57D3C000A1FA1 /* PopOptionsUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338C19E57D3C000A1FA1 /* PopOptionsUserInfoVC.m */; };
-		18B2340519E57D3C000A1FA1 /* PopOptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2338E19E57D3C000A1FA1 /* PopOptionsVC.m */; };
-		18B2340619E57D3C000A1FA1 /* StorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339119E57D3C000A1FA1 /* StorageCollectionVC.m */; };
-		18B2340719E57D3C000A1FA1 /* StorageContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339319E57D3C000A1FA1 /* StorageContainerVC.m */; };
-		18B2340919E57D3C000A1FA1 /* StorageDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339719E57D3C000A1FA1 /* StorageDetailInfoVC.m */; };
-		18B2340A19E57D3C000A1FA1 /* PopControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339A19E57D3C000A1FA1 /* PopControlRecordCell.m */; };
-		18B2340B19E57D3C000A1FA1 /* PopControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339C19E57D3C000A1FA1 /* PopControlRecordCellForTime.m */; };
-		18B2340C19E57D3C000A1FA1 /* PopControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2339E19E57D3C000A1FA1 /* PopControlRecordVC.m */; };
-		18B2340E19E57D3C000A1FA1 /* VmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A319E57D3C000A1FA1 /* VmCollectionVC.m */; };
-		18B2340F19E57D3C000A1FA1 /* VmContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A519E57D3C000A1FA1 /* VmContainerVC.m */; };
-		18B2341019E57D3C000A1FA1 /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A719E57D3C000A1FA1 /* VmDetailCPUConfigVC.m */; };
-		18B2341119E57D3C000A1FA1 /* VmDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233A919E57D3C000A1FA1 /* VmDetailInfoVC.m */; };
-		18B2341219E57D3C000A1FA1 /* VmDetailMemryConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233AB19E57D3C000A1FA1 /* VmDetailMemryConfigVC.m */; };
-		18B2341319E57D3C000A1FA1 /* VmDetailSnapshootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233AD19E57D3C000A1FA1 /* VmDetailSnapshootVC.m */; };
-		18B2341419E57D3C000A1FA1 /* VmDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233AF19E57D3C000A1FA1 /* VmDiskCollectionVC.m */; };
-		18B2341519E57D3C000A1FA1 /* VmMigrateSelectHostListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233B119E57D3C000A1FA1 /* VmMigrateSelectHostListCell.m */; };
-		18B2341619E57D3C000A1FA1 /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233B319E57D3C000A1FA1 /* VmMigrateSelectHostListVC.m */; };
-		18B2341719E57D3C000A1FA1 /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233B519E57D3C000A1FA1 /* VmMigrateVC.m */; };
-		18B2341819E57D3C000A1FA1 /* VmNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233B719E57D3C000A1FA1 /* VmNetworkCollectionVC.m */; };
-		18B2341919E57D3C000A1FA1 /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233B919E57D3C000A1FA1 /* VmNewVC.m */; };
-		18B2341A19E57D3C000A1FA1 /* PopWarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233BC19E57D3C000A1FA1 /* PopWarningInfoCell.m */; };
-		18B2341B19E57D3C000A1FA1 /* PopWarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233BE19E57D3C000A1FA1 /* PopWarningInfoCellForTime.m */; };
-		18B2341C19E57D3C000A1FA1 /* PopWarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B233C019E57D3C000A1FA1 /* PopWarningInfoVC.m */; };
-		18C8467119E5A15F005FD404 /* DatacenterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8466819E5A15F005FD404 /* DatacenterContainerVC.m */; };
-		18C8467219E5A15F005FD404 /* DatacenterDetailCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8466A19E5A15F005FD404 /* DatacenterDetailCollectionVC.m */; };
-		18C8467319E5A15F005FD404 /* DatacenterDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8466C19E5A15F005FD404 /* DatacenterDetailInfoVC.m */; };
-		18C8467419E5A15F005FD404 /* DatacenterDetailMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8466E19E5A15F005FD404 /* DatacenterDetailMoreVC.m */; };
-		18C8467519E5A15F005FD404 /* DatacenterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8467019E5A15F005FD404 /* DatacenterTableVC.m */; };
-		18C8467719E61CEC005FD404 /* Datacenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467619E61CEC005FD404 /* Datacenter.storyboard */; };
-		18C8467919E61CF8005FD404 /* VM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467819E61CF8005FD404 /* VM.storyboard */; };
-		18C8467B19E61D0A005FD404 /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467A19E61D0A005FD404 /* Host.storyboard */; };
-		18C8467D19E61D12005FD404 /* Storage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467C19E61D12005FD404 /* Storage.storyboard */; };
-		18C8467F19E61D1A005FD404 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8467E19E61D1A005FD404 /* Business.storyboard */; };
-		18C8468119E61D23005FD404 /* Pool.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8468019E61D23005FD404 /* Pool.storyboard */; };
-		18C8468519E61EA3005FD404 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8468419E61EA3005FD404 /* Network.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,23 +133,161 @@
 
 /* Begin PBXFileReference section */
 		13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1809A7AC19E6281E0034052C /* DatacenterContainerTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerTableVC.h; sourceTree = "<group>"; };
-		1809A7AD19E6281E0034052C /* DatacenterContainerTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerTableVC.m; sourceTree = "<group>"; };
-		1809A7AF19E62B4D0034052C /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = "../../WinCenter-iPad/WinCenter-iPad/Setting.storyboard"; sourceTree = "<group>"; };
-		1809A7B119E62BCC0034052C /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Task.storyboard; path = "../../WinCenter-iPad/WinCenter-iPad/Task.storyboard"; sourceTree = "<group>"; };
-		1809A7B319E62BD30034052C /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Warning.storyboard; path = "../../WinCenter-iPad/WinCenter-iPad/Warning.storyboard"; sourceTree = "<group>"; };
-		1809A7EA19E63BDF0034052C /* LoginTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableVC.h; sourceTree = "<group>"; };
-		1809A7EB19E63BDF0034052C /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
-		1809A7EF19E677D80034052C /* MasterCollectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionFooter.h; sourceTree = "<group>"; };
-		1809A7F019E677D80034052C /* MasterCollectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionFooter.m; sourceTree = "<group>"; };
-		1809A7F819E6CD450034052C /* StorageDiskCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionCell.h; sourceTree = "<group>"; };
-		1809A7F919E6CD450034052C /* StorageDiskCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionCell.m; sourceTree = "<group>"; };
-		1809A7FA19E6CD450034052C /* StorageDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionVC.h; sourceTree = "<group>"; };
-		1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionVC.m; sourceTree = "<group>"; };
-		1858129019E6D62D0047C078 /* BusinessVmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionCell.h; sourceTree = "<group>"; };
-		1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionCell.m; sourceTree = "<group>"; };
-		1858129319E6D6340047C078 /* BusinessVmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionVC.h; sourceTree = "<group>"; };
-		1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionVC.m; sourceTree = "<group>"; };
+		185CB33219E7796F00DC8E8A /* BusinessContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessContainerVC.h; sourceTree = "<group>"; };
+		185CB33319E7796F00DC8E8A /* BusinessContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessContainerVC.m; sourceTree = "<group>"; };
+		185CB33419E7796F00DC8E8A /* BusinessDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailInfoVC.h; sourceTree = "<group>"; };
+		185CB33519E7796F00DC8E8A /* BusinessDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailInfoVC.m; sourceTree = "<group>"; };
+		185CB33619E7796F00DC8E8A /* BusinessVmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionCell.h; sourceTree = "<group>"; };
+		185CB33719E7796F00DC8E8A /* BusinessVmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionCell.m; sourceTree = "<group>"; };
+		185CB33819E7796F00DC8E8A /* BusinessVmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionVC.h; sourceTree = "<group>"; };
+		185CB33919E7796F00DC8E8A /* BusinessVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionVC.m; sourceTree = "<group>"; };
+		185CB33B19E7796F00DC8E8A /* MasterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionCell.h; sourceTree = "<group>"; };
+		185CB33C19E7796F00DC8E8A /* MasterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionCell.m; sourceTree = "<group>"; };
+		185CB33D19E7796F00DC8E8A /* MasterCollectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionFooter.h; sourceTree = "<group>"; };
+		185CB33E19E7796F00DC8E8A /* MasterCollectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionFooter.m; sourceTree = "<group>"; };
+		185CB33F19E7796F00DC8E8A /* MasterCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionHeader.h; sourceTree = "<group>"; };
+		185CB34019E7796F00DC8E8A /* MasterCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionHeader.m; sourceTree = "<group>"; };
+		185CB34119E7796F00DC8E8A /* MasterCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionVC.h; sourceTree = "<group>"; };
+		185CB34219E7796F00DC8E8A /* MasterCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionVC.m; sourceTree = "<group>"; };
+		185CB34419E7796F00DC8E8A /* MasterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterContainerVC.h; sourceTree = "<group>"; };
+		185CB34519E7796F00DC8E8A /* MasterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterContainerVC.m; sourceTree = "<group>"; };
+		185CB34719E7796F00DC8E8A /* DatacenterContainerTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerTableVC.h; sourceTree = "<group>"; };
+		185CB34819E7796F00DC8E8A /* DatacenterContainerTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerTableVC.m; sourceTree = "<group>"; };
+		185CB34919E7796F00DC8E8A /* DatacenterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerVC.h; sourceTree = "<group>"; };
+		185CB34A19E7796F00DC8E8A /* DatacenterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerVC.m; sourceTree = "<group>"; };
+		185CB34B19E7796F00DC8E8A /* DatacenterDetailCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailCollectionVC.h; sourceTree = "<group>"; };
+		185CB34C19E7796F00DC8E8A /* DatacenterDetailCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailCollectionVC.m; sourceTree = "<group>"; };
+		185CB34D19E7796F00DC8E8A /* DatacenterDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailInfoVC.h; sourceTree = "<group>"; };
+		185CB34E19E7796F00DC8E8A /* DatacenterDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailInfoVC.m; sourceTree = "<group>"; };
+		185CB34F19E7796F00DC8E8A /* DatacenterDetailMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailMoreVC.h; sourceTree = "<group>"; };
+		185CB35019E7796F00DC8E8A /* DatacenterDetailMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailMoreVC.m; sourceTree = "<group>"; };
+		185CB35119E7796F00DC8E8A /* DatacenterTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterTableVC.h; sourceTree = "<group>"; };
+		185CB35219E7796F00DC8E8A /* DatacenterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterTableVC.m; sourceTree = "<group>"; };
+		185CB35419E7796F00DC8E8A /* HostCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostCollectionVC.h; sourceTree = "<group>"; };
+		185CB35519E7796F00DC8E8A /* HostCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostCollectionVC.m; sourceTree = "<group>"; };
+		185CB35619E7796F00DC8E8A /* HostContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostContainerVC.h; sourceTree = "<group>"; };
+		185CB35719E7796F00DC8E8A /* HostContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostContainerVC.m; sourceTree = "<group>"; };
+		185CB35819E7796F00DC8E8A /* HostDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailInfoVC.h; sourceTree = "<group>"; };
+		185CB35919E7796F00DC8E8A /* HostDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailInfoVC.m; sourceTree = "<group>"; };
+		185CB35A19E7796F00DC8E8A /* HostDetailPerformanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailPerformanceVC.h; sourceTree = "<group>"; };
+		185CB35B19E7796F00DC8E8A /* HostDetailPerformanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailPerformanceVC.m; sourceTree = "<group>"; };
+		185CB35C19E7796F00DC8E8A /* HostNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkCollectionVC.h; sourceTree = "<group>"; };
+		185CB35D19E7796F00DC8E8A /* HostNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkCollectionVC.m; sourceTree = "<group>"; };
+		185CB35E19E7796F00DC8E8A /* HostNicCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicCollectionVC.h; sourceTree = "<group>"; };
+		185CB35F19E7796F00DC8E8A /* HostNicCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicCollectionVC.m; sourceTree = "<group>"; };
+		185CB36119E7796F00DC8E8A /* LoginSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSettingVC.h; sourceTree = "<group>"; };
+		185CB36219E7796F00DC8E8A /* LoginSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSettingVC.m; sourceTree = "<group>"; };
+		185CB36319E7796F00DC8E8A /* LoginTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableVC.h; sourceTree = "<group>"; };
+		185CB36419E7796F00DC8E8A /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
+		185CB36519E7796F00DC8E8A /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		185CB36619E7796F00DC8E8A /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		185CB36819E7796F00DC8E8A /* NetworkCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionCell.h; sourceTree = "<group>"; };
+		185CB36919E7796F00DC8E8A /* NetworkCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionCell.m; sourceTree = "<group>"; };
+		185CB36A19E7796F00DC8E8A /* NetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionVC.h; sourceTree = "<group>"; };
+		185CB36B19E7796F00DC8E8A /* NetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionVC.m; sourceTree = "<group>"; };
+		185CB36C19E7796F00DC8E8A /* NetworkContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkContainerVC.h; sourceTree = "<group>"; };
+		185CB36D19E7796F00DC8E8A /* NetworkContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkContainerVC.m; sourceTree = "<group>"; };
+		185CB36F19E7796F00DC8E8A /* PoolContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolContainerVC.h; sourceTree = "<group>"; };
+		185CB37019E7796F00DC8E8A /* PoolContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolContainerVC.m; sourceTree = "<group>"; };
+		185CB37119E7796F00DC8E8A /* PoolDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolDetailInfoVC.h; sourceTree = "<group>"; };
+		185CB37219E7796F00DC8E8A /* PoolDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolDetailInfoVC.m; sourceTree = "<group>"; };
+		185CB37419E7796F00DC8E8A /* PopOptionLicenseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionLicenseVC.h; sourceTree = "<group>"; };
+		185CB37519E7796F00DC8E8A /* PopOptionLicenseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionLicenseVC.m; sourceTree = "<group>"; };
+		185CB37619E7796F00DC8E8A /* PopOptionsUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsUserInfoVC.h; sourceTree = "<group>"; };
+		185CB37719E7796F00DC8E8A /* PopOptionsUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsUserInfoVC.m; sourceTree = "<group>"; };
+		185CB37819E7796F00DC8E8A /* PopOptionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsVC.h; sourceTree = "<group>"; };
+		185CB37919E7796F00DC8E8A /* PopOptionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsVC.m; sourceTree = "<group>"; };
+		185CB37B19E7796F00DC8E8A /* StorageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageCollectionVC.h; sourceTree = "<group>"; };
+		185CB37C19E7796F00DC8E8A /* StorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageCollectionVC.m; sourceTree = "<group>"; };
+		185CB37D19E7796F00DC8E8A /* StorageContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageContainerVC.h; sourceTree = "<group>"; };
+		185CB37E19E7796F00DC8E8A /* StorageContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageContainerVC.m; sourceTree = "<group>"; };
+		185CB37F19E7796F00DC8E8A /* StorageDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailInfoVC.h; sourceTree = "<group>"; };
+		185CB38019E7796F00DC8E8A /* StorageDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailInfoVC.m; sourceTree = "<group>"; };
+		185CB38119E7796F00DC8E8A /* StorageDiskCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionCell.h; sourceTree = "<group>"; };
+		185CB38219E7796F00DC8E8A /* StorageDiskCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionCell.m; sourceTree = "<group>"; };
+		185CB38319E7796F00DC8E8A /* StorageDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionVC.h; sourceTree = "<group>"; };
+		185CB38419E7796F00DC8E8A /* StorageDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionVC.m; sourceTree = "<group>"; };
+		185CB38619E7796F00DC8E8A /* PopControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCell.h; sourceTree = "<group>"; };
+		185CB38719E7796F00DC8E8A /* PopControlRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCell.m; sourceTree = "<group>"; };
+		185CB38819E7796F00DC8E8A /* PopControlRecordCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCellForTime.h; sourceTree = "<group>"; };
+		185CB38919E7796F00DC8E8A /* PopControlRecordCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCellForTime.m; sourceTree = "<group>"; };
+		185CB38A19E7796F00DC8E8A /* PopControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordVC.h; sourceTree = "<group>"; };
+		185CB38B19E7796F00DC8E8A /* PopControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordVC.m; sourceTree = "<group>"; };
+		185CB38D19E7796F00DC8E8A /* VmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionVC.h; sourceTree = "<group>"; };
+		185CB38E19E7796F00DC8E8A /* VmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionVC.m; sourceTree = "<group>"; };
+		185CB38F19E7796F00DC8E8A /* VmContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmContainerVC.h; sourceTree = "<group>"; };
+		185CB39019E7796F00DC8E8A /* VmContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmContainerVC.m; sourceTree = "<group>"; };
+		185CB39119E7796F00DC8E8A /* VmDetailCPUConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailCPUConfigVC.h; sourceTree = "<group>"; };
+		185CB39219E7796F00DC8E8A /* VmDetailCPUConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailCPUConfigVC.m; sourceTree = "<group>"; };
+		185CB39319E7796F00DC8E8A /* VmDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailInfoVC.h; sourceTree = "<group>"; };
+		185CB39419E7796F00DC8E8A /* VmDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailInfoVC.m; sourceTree = "<group>"; };
+		185CB39519E7796F00DC8E8A /* VmDetailMemryConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailMemryConfigVC.h; sourceTree = "<group>"; };
+		185CB39619E7796F00DC8E8A /* VmDetailMemryConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailMemryConfigVC.m; sourceTree = "<group>"; };
+		185CB39719E7796F00DC8E8A /* VmDetailSnapshootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailSnapshootVC.h; sourceTree = "<group>"; };
+		185CB39819E7796F00DC8E8A /* VmDetailSnapshootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailSnapshootVC.m; sourceTree = "<group>"; };
+		185CB39919E7796F00DC8E8A /* VmDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskCollectionVC.h; sourceTree = "<group>"; };
+		185CB39A19E7796F00DC8E8A /* VmDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskCollectionVC.m; sourceTree = "<group>"; };
+		185CB39B19E7796F00DC8E8A /* VmMigrateSelectHostListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListCell.h; sourceTree = "<group>"; };
+		185CB39C19E7796F00DC8E8A /* VmMigrateSelectHostListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListCell.m; sourceTree = "<group>"; };
+		185CB39D19E7796F00DC8E8A /* VmMigrateSelectHostListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListVC.h; sourceTree = "<group>"; };
+		185CB39E19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListVC.m; sourceTree = "<group>"; };
+		185CB39F19E7796F00DC8E8A /* VmMigrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateVC.h; sourceTree = "<group>"; };
+		185CB3A019E7796F00DC8E8A /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
+		185CB3A119E7796F00DC8E8A /* VmNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkCollectionVC.h; sourceTree = "<group>"; };
+		185CB3A219E7796F00DC8E8A /* VmNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkCollectionVC.m; sourceTree = "<group>"; };
+		185CB3A319E7796F00DC8E8A /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
+		185CB3A419E7796F00DC8E8A /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
+		185CB3A619E7796F00DC8E8A /* PopWarningInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCell.h; sourceTree = "<group>"; };
+		185CB3A719E7796F00DC8E8A /* PopWarningInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCell.m; sourceTree = "<group>"; };
+		185CB3A819E7796F00DC8E8A /* PopWarningInfoCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCellForTime.h; sourceTree = "<group>"; };
+		185CB3A919E7796F00DC8E8A /* PopWarningInfoCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCellForTime.m; sourceTree = "<group>"; };
+		185CB3AA19E7796F00DC8E8A /* PopWarningInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoVC.h; sourceTree = "<group>"; };
+		185CB3AB19E7796F00DC8E8A /* PopWarningInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoVC.m; sourceTree = "<group>"; };
+		185CB3AD19E7796F00DC8E8A /* BusinessVO.getBusinessVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessVO.getBusinessVOAsync.json; sourceTree = "<group>"; };
+		185CB3AE19E7796F00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ControlRecordVO.getControlRecordListViaObject.json; sourceTree = "<group>"; };
+		185CB3AF19E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.json; sourceTree = "<group>"; };
+		185CB3B019E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.limit.json; sourceTree = "<group>"; };
+		185CB3B119E7796F00DC8E8A /* DatacenterVO.getDatacenterListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterListAsync.json; sourceTree = "<group>"; };
+		185CB3B219E7796F00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterStatWinserverVOAsync.json; sourceTree = "<group>"; };
+		185CB3B319E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.json; sourceTree = "<group>"; };
+		185CB3B419E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.limit.json; sourceTree = "<group>"; };
+		185CB3B519E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkExternalListAsync.json; sourceTree = "<group>"; };
+		185CB3B619E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkInternalListAsync.json; sourceTree = "<group>"; };
+		185CB3B719E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicGroupedListAsync.json; sourceTree = "<group>"; };
+		185CB3B819E7796F00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicUngroupedListAsync.json; sourceTree = "<group>"; };
+		185CB3B919E7796F00DC8E8A /* HostVO.getHostStatVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostStatVOAsync.json; sourceTree = "<group>"; };
+		185CB3BA19E7796F00DC8E8A /* HostVO.getHostVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostVOAsync.json; sourceTree = "<group>"; };
+		185CB3BB19E7796F00DC8E8A /* HostVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getStorageListAsync.json; sourceTree = "<group>"; };
+		185CB3BC19E7796F00DC8E8A /* HostVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getVmListAsync.json; sourceTree = "<group>"; };
+		185CB3BD19E7796F00DC8E8A /* LicenseVO.getLicenseVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LicenseVO.getLicenseVOAsync.json; sourceTree = "<group>"; };
+		185CB3BE19E7796F00DC8E8A /* PoolVO.getHostListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getHostListAsync.json; sourceTree = "<group>"; };
+		185CB3BF19E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getHostLisWithlimit.json; sourceTree = "<group>"; };
+		185CB3C019E7796F00DC8E8A /* PoolVO.getPoolElasticAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getPoolElasticAsync.json; sourceTree = "<group>"; };
+		185CB3C119E7796F00DC8E8A /* PoolVO.getPoolVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getPoolVOAsync.json; sourceTree = "<group>"; };
+		185CB3C219E7796F00DC8E8A /* PoolVO.getStorageList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getStorageList.json; sourceTree = "<group>"; };
+		185CB3C319E7796F00DC8E8A /* PoolVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getStorageListAsync.json; sourceTree = "<group>"; };
+		185CB3C419E7796F00DC8E8A /* PoolVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getVmListAsync.json; sourceTree = "<group>"; };
+		185CB3C519E7796F00DC8E8A /* PoolVO.getVmListWithlimit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getVmListWithlimit.json; sourceTree = "<group>"; };
+		185CB3C619E7796F00DC8E8A /* StorageVO.getStorageVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StorageVO.getStorageVOAsync.json; sourceTree = "<group>"; };
+		185CB3C719E7796F00DC8E8A /* StorageVO.getStorageVolumnListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StorageVO.getStorageVolumnListAsync.json; sourceTree = "<group>"; };
+		185CB3C819E7796F00DC8E8A /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		185CB3C919E7796F00DC8E8A /* UserVO.getUserVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserVO.getUserVOAsync.json; sourceTree = "<group>"; };
+		185CB3CA19E7796F00DC8E8A /* VmVO.getVmNicListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmNicListAsync.json; sourceTree = "<group>"; };
+		185CB3CB19E7796F00DC8E8A /* VmVO.getVmVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmVOAsync.json; sourceTree = "<group>"; };
+		185CB3CC19E7796F00DC8E8A /* VmVO.getVmVolumnListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmVolumnListAsync.json; sourceTree = "<group>"; };
+		185CB3CD19E7796F00DC8E8A /* WarningInfoVO.getWarningInfoListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WarningInfoVO.getWarningInfoListAsync.json; sourceTree = "<group>"; };
+		185CB3CE19E7796F00DC8E8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../WinCenter-Common/WinCenter-Common/Images.xcassets"; sourceTree = "<group>"; };
+		185CB42919E7798900DC8E8A /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Business.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Business.storyboard"; sourceTree = "<group>"; };
+		185CB42A19E7798900DC8E8A /* Datacenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Datacenter.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Datacenter.storyboard"; sourceTree = "<group>"; };
+		185CB42B19E7798900DC8E8A /* Host.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Host.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Host.storyboard"; sourceTree = "<group>"; };
+		185CB42C19E7798900DC8E8A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Main.storyboard"; sourceTree = "<group>"; };
+		185CB42D19E7798900DC8E8A /* Network.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Network.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Network.storyboard"; sourceTree = "<group>"; };
+		185CB42E19E7798900DC8E8A /* Pool.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Pool.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Pool.storyboard"; sourceTree = "<group>"; };
+		185CB42F19E7798900DC8E8A /* Storage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storage.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/Storage.storyboard"; sourceTree = "<group>"; };
+		185CB43019E7798900DC8E8A /* VM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = VM.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/iphone/VM.storyboard"; sourceTree = "<group>"; };
+		185CB43919E7799800DC8E8A /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Setting.storyboard"; sourceTree = "<group>"; };
+		185CB43A19E7799800DC8E8A /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Task.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Task.storyboard"; sourceTree = "<group>"; };
+		185CB43B19E7799800DC8E8A /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Warning.storyboard; path = "../../WinCenter-Common/WinCenter-Common/views/Warning.storyboard"; sourceTree = "<group>"; };
 		18A4D42E19B560D400415896 /* WinCenter-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D43119B560D400415896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18A4D43319B560D400415896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,150 +298,12 @@
 		18A4D43F19B560D400415896 /* WinCenter-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		18A4D44019B560D400415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D44119B560D400415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18A4D44419B560D400415896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18A4D44919B560D400415896 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18A4D44F19B560D400415896 /* WinCenter-iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WinCenter-iPhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D45019B560D400415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		18A4D45819B560D400415896 /* WinCenter-iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinCenter-iPhoneTests-Info.plist"; sourceTree = "<group>"; };
 		18A4D45A19B560D400415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A4D45C19B560D400415896 /* WinCenter_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinCenter_iPhoneTests.m; sourceTree = "<group>"; };
 		18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
-		18B2331B19E57D3B000A1FA1 /* BusinessVO.getBusinessVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessVO.getBusinessVOAsync.json; sourceTree = "<group>"; };
-		18B2331C19E57D3B000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ControlRecordVO.getControlRecordListViaObject.json; sourceTree = "<group>"; };
-		18B2331D19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.json; sourceTree = "<group>"; };
-		18B2331E19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.limit.json; sourceTree = "<group>"; };
-		18B2331F19E57D3B000A1FA1 /* DatacenterVO.getDatacenterListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterListAsync.json; sourceTree = "<group>"; };
-		18B2332019E57D3B000A1FA1 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterStatWinserverVOAsync.json; sourceTree = "<group>"; };
-		18B2332119E57D3B000A1FA1 /* DatacenterVO.getPoolListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.json; sourceTree = "<group>"; };
-		18B2332219E57D3B000A1FA1 /* DatacenterVO.getPoolListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.limit.json; sourceTree = "<group>"; };
-		18B2332319E57D3B000A1FA1 /* HostVO.getHostNetworkExternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkExternalListAsync.json; sourceTree = "<group>"; };
-		18B2332419E57D3B000A1FA1 /* HostVO.getHostNetworkInternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkInternalListAsync.json; sourceTree = "<group>"; };
-		18B2332519E57D3B000A1FA1 /* HostVO.getHostNicGroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicGroupedListAsync.json; sourceTree = "<group>"; };
-		18B2332619E57D3B000A1FA1 /* HostVO.getHostNicUngroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicUngroupedListAsync.json; sourceTree = "<group>"; };
-		18B2332719E57D3B000A1FA1 /* HostVO.getHostStatVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostStatVOAsync.json; sourceTree = "<group>"; };
-		18B2332819E57D3B000A1FA1 /* HostVO.getHostVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostVOAsync.json; sourceTree = "<group>"; };
-		18B2332919E57D3B000A1FA1 /* HostVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getStorageListAsync.json; sourceTree = "<group>"; };
-		18B2332A19E57D3B000A1FA1 /* HostVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getVmListAsync.json; sourceTree = "<group>"; };
-		18B2332B19E57D3B000A1FA1 /* LicenseVO.getLicenseVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LicenseVO.getLicenseVOAsync.json; sourceTree = "<group>"; };
-		18B2332C19E57D3B000A1FA1 /* PoolVO.getHostListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getHostListAsync.json; sourceTree = "<group>"; };
-		18B2332D19E57D3B000A1FA1 /* PoolVO.getHostLisWithlimit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getHostLisWithlimit.json; sourceTree = "<group>"; };
-		18B2332E19E57D3B000A1FA1 /* PoolVO.getPoolElasticAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getPoolElasticAsync.json; sourceTree = "<group>"; };
-		18B2332F19E57D3B000A1FA1 /* PoolVO.getPoolVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getPoolVOAsync.json; sourceTree = "<group>"; };
-		18B2333019E57D3B000A1FA1 /* PoolVO.getStorageList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getStorageList.json; sourceTree = "<group>"; };
-		18B2333119E57D3B000A1FA1 /* PoolVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getStorageListAsync.json; sourceTree = "<group>"; };
-		18B2333219E57D3B000A1FA1 /* PoolVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getVmListAsync.json; sourceTree = "<group>"; };
-		18B2333319E57D3B000A1FA1 /* PoolVO.getVmListWithlimit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getVmListWithlimit.json; sourceTree = "<group>"; };
-		18B2333419E57D3B000A1FA1 /* StorageVO.getStorageVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StorageVO.getStorageVOAsync.json; sourceTree = "<group>"; };
-		18B2333519E57D3B000A1FA1 /* StorageVO.getStorageVolumnListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StorageVO.getStorageVolumnListAsync.json; sourceTree = "<group>"; };
-		18B2333619E57D3B000A1FA1 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
-		18B2333719E57D3B000A1FA1 /* UserVO.getUserVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserVO.getUserVOAsync.json; sourceTree = "<group>"; };
-		18B2333819E57D3B000A1FA1 /* VmVO.getVmNicListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmNicListAsync.json; sourceTree = "<group>"; };
-		18B2333919E57D3B000A1FA1 /* VmVO.getVmVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmVOAsync.json; sourceTree = "<group>"; };
-		18B2333A19E57D3B000A1FA1 /* VmVO.getVmVolumnListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmVolumnListAsync.json; sourceTree = "<group>"; };
-		18B2333B19E57D3B000A1FA1 /* WarningInfoVO.getWarningInfoListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WarningInfoVO.getWarningInfoListAsync.json; sourceTree = "<group>"; };
-		18B2333F19E57D3B000A1FA1 /* BusinessContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessContainerVC.h; sourceTree = "<group>"; };
-		18B2334019E57D3B000A1FA1 /* BusinessContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessContainerVC.m; sourceTree = "<group>"; };
-		18B2334119E57D3B000A1FA1 /* BusinessDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailInfoVC.h; sourceTree = "<group>"; };
-		18B2334219E57D3B000A1FA1 /* BusinessDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailInfoVC.m; sourceTree = "<group>"; };
-		18B2334419E57D3B000A1FA1 /* MasterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionCell.h; sourceTree = "<group>"; };
-		18B2334519E57D3B000A1FA1 /* MasterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionCell.m; sourceTree = "<group>"; };
-		18B2334619E57D3B000A1FA1 /* MasterCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionHeader.h; sourceTree = "<group>"; };
-		18B2334719E57D3B000A1FA1 /* MasterCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionHeader.m; sourceTree = "<group>"; };
-		18B2334819E57D3B000A1FA1 /* MasterCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionVC.h; sourceTree = "<group>"; };
-		18B2334919E57D3B000A1FA1 /* MasterCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionVC.m; sourceTree = "<group>"; };
-		18B2334B19E57D3B000A1FA1 /* MasterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterContainerVC.h; sourceTree = "<group>"; };
-		18B2334C19E57D3B000A1FA1 /* MasterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterContainerVC.m; sourceTree = "<group>"; };
-		18B2336B19E57D3C000A1FA1 /* HostCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostCollectionVC.h; sourceTree = "<group>"; };
-		18B2336C19E57D3C000A1FA1 /* HostCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostCollectionVC.m; sourceTree = "<group>"; };
-		18B2336D19E57D3C000A1FA1 /* HostContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostContainerVC.h; sourceTree = "<group>"; };
-		18B2336E19E57D3C000A1FA1 /* HostContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostContainerVC.m; sourceTree = "<group>"; };
-		18B2336F19E57D3C000A1FA1 /* HostDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailInfoVC.h; sourceTree = "<group>"; };
-		18B2337019E57D3C000A1FA1 /* HostDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailInfoVC.m; sourceTree = "<group>"; };
-		18B2337119E57D3C000A1FA1 /* HostDetailPerformanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailPerformanceVC.h; sourceTree = "<group>"; };
-		18B2337219E57D3C000A1FA1 /* HostDetailPerformanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailPerformanceVC.m; sourceTree = "<group>"; };
-		18B2337319E57D3C000A1FA1 /* HostNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkCollectionVC.h; sourceTree = "<group>"; };
-		18B2337419E57D3C000A1FA1 /* HostNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkCollectionVC.m; sourceTree = "<group>"; };
-		18B2337519E57D3C000A1FA1 /* HostNicCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicCollectionVC.h; sourceTree = "<group>"; };
-		18B2337619E57D3C000A1FA1 /* HostNicCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicCollectionVC.m; sourceTree = "<group>"; };
-		18B2337819E57D3C000A1FA1 /* LoginSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSettingVC.h; sourceTree = "<group>"; };
-		18B2337919E57D3C000A1FA1 /* LoginSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSettingVC.m; sourceTree = "<group>"; };
-		18B2337A19E57D3C000A1FA1 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
-		18B2337B19E57D3C000A1FA1 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
-		18B2337D19E57D3C000A1FA1 /* NetworkCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionCell.h; sourceTree = "<group>"; };
-		18B2337E19E57D3C000A1FA1 /* NetworkCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionCell.m; sourceTree = "<group>"; };
-		18B2337F19E57D3C000A1FA1 /* NetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionVC.h; sourceTree = "<group>"; };
-		18B2338019E57D3C000A1FA1 /* NetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionVC.m; sourceTree = "<group>"; };
-		18B2338119E57D3C000A1FA1 /* NetworkContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkContainerVC.h; sourceTree = "<group>"; };
-		18B2338219E57D3C000A1FA1 /* NetworkContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkContainerVC.m; sourceTree = "<group>"; };
-		18B2338419E57D3C000A1FA1 /* PoolContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolContainerVC.h; sourceTree = "<group>"; };
-		18B2338519E57D3C000A1FA1 /* PoolContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolContainerVC.m; sourceTree = "<group>"; };
-		18B2338619E57D3C000A1FA1 /* PoolDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolDetailInfoVC.h; sourceTree = "<group>"; };
-		18B2338719E57D3C000A1FA1 /* PoolDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolDetailInfoVC.m; sourceTree = "<group>"; };
-		18B2338919E57D3C000A1FA1 /* PopOptionLicenseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionLicenseVC.h; sourceTree = "<group>"; };
-		18B2338A19E57D3C000A1FA1 /* PopOptionLicenseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionLicenseVC.m; sourceTree = "<group>"; };
-		18B2338B19E57D3C000A1FA1 /* PopOptionsUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsUserInfoVC.h; sourceTree = "<group>"; };
-		18B2338C19E57D3C000A1FA1 /* PopOptionsUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsUserInfoVC.m; sourceTree = "<group>"; };
-		18B2338D19E57D3C000A1FA1 /* PopOptionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsVC.h; sourceTree = "<group>"; };
-		18B2338E19E57D3C000A1FA1 /* PopOptionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsVC.m; sourceTree = "<group>"; };
-		18B2339019E57D3C000A1FA1 /* StorageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageCollectionVC.h; sourceTree = "<group>"; };
-		18B2339119E57D3C000A1FA1 /* StorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageCollectionVC.m; sourceTree = "<group>"; };
-		18B2339219E57D3C000A1FA1 /* StorageContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageContainerVC.h; sourceTree = "<group>"; };
-		18B2339319E57D3C000A1FA1 /* StorageContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageContainerVC.m; sourceTree = "<group>"; };
-		18B2339619E57D3C000A1FA1 /* StorageDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailInfoVC.h; sourceTree = "<group>"; };
-		18B2339719E57D3C000A1FA1 /* StorageDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailInfoVC.m; sourceTree = "<group>"; };
-		18B2339919E57D3C000A1FA1 /* PopControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCell.h; sourceTree = "<group>"; };
-		18B2339A19E57D3C000A1FA1 /* PopControlRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCell.m; sourceTree = "<group>"; };
-		18B2339B19E57D3C000A1FA1 /* PopControlRecordCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCellForTime.h; sourceTree = "<group>"; };
-		18B2339C19E57D3C000A1FA1 /* PopControlRecordCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCellForTime.m; sourceTree = "<group>"; };
-		18B2339D19E57D3C000A1FA1 /* PopControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordVC.h; sourceTree = "<group>"; };
-		18B2339E19E57D3C000A1FA1 /* PopControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordVC.m; sourceTree = "<group>"; };
-		18B233A219E57D3C000A1FA1 /* VmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionVC.h; sourceTree = "<group>"; };
-		18B233A319E57D3C000A1FA1 /* VmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionVC.m; sourceTree = "<group>"; };
-		18B233A419E57D3C000A1FA1 /* VmContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmContainerVC.h; sourceTree = "<group>"; };
-		18B233A519E57D3C000A1FA1 /* VmContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmContainerVC.m; sourceTree = "<group>"; };
-		18B233A619E57D3C000A1FA1 /* VmDetailCPUConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailCPUConfigVC.h; sourceTree = "<group>"; };
-		18B233A719E57D3C000A1FA1 /* VmDetailCPUConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailCPUConfigVC.m; sourceTree = "<group>"; };
-		18B233A819E57D3C000A1FA1 /* VmDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailInfoVC.h; sourceTree = "<group>"; };
-		18B233A919E57D3C000A1FA1 /* VmDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailInfoVC.m; sourceTree = "<group>"; };
-		18B233AA19E57D3C000A1FA1 /* VmDetailMemryConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailMemryConfigVC.h; sourceTree = "<group>"; };
-		18B233AB19E57D3C000A1FA1 /* VmDetailMemryConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailMemryConfigVC.m; sourceTree = "<group>"; };
-		18B233AC19E57D3C000A1FA1 /* VmDetailSnapshootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailSnapshootVC.h; sourceTree = "<group>"; };
-		18B233AD19E57D3C000A1FA1 /* VmDetailSnapshootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailSnapshootVC.m; sourceTree = "<group>"; };
-		18B233AE19E57D3C000A1FA1 /* VmDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskCollectionVC.h; sourceTree = "<group>"; };
-		18B233AF19E57D3C000A1FA1 /* VmDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskCollectionVC.m; sourceTree = "<group>"; };
-		18B233B019E57D3C000A1FA1 /* VmMigrateSelectHostListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListCell.h; sourceTree = "<group>"; };
-		18B233B119E57D3C000A1FA1 /* VmMigrateSelectHostListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListCell.m; sourceTree = "<group>"; };
-		18B233B219E57D3C000A1FA1 /* VmMigrateSelectHostListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListVC.h; sourceTree = "<group>"; };
-		18B233B319E57D3C000A1FA1 /* VmMigrateSelectHostListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListVC.m; sourceTree = "<group>"; };
-		18B233B419E57D3C000A1FA1 /* VmMigrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateVC.h; sourceTree = "<group>"; };
-		18B233B519E57D3C000A1FA1 /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
-		18B233B619E57D3C000A1FA1 /* VmNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkCollectionVC.h; sourceTree = "<group>"; };
-		18B233B719E57D3C000A1FA1 /* VmNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkCollectionVC.m; sourceTree = "<group>"; };
-		18B233B819E57D3C000A1FA1 /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
-		18B233B919E57D3C000A1FA1 /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
-		18B233BB19E57D3C000A1FA1 /* PopWarningInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCell.h; sourceTree = "<group>"; };
-		18B233BC19E57D3C000A1FA1 /* PopWarningInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCell.m; sourceTree = "<group>"; };
-		18B233BD19E57D3C000A1FA1 /* PopWarningInfoCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCellForTime.h; sourceTree = "<group>"; };
-		18B233BE19E57D3C000A1FA1 /* PopWarningInfoCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCellForTime.m; sourceTree = "<group>"; };
-		18B233BF19E57D3C000A1FA1 /* PopWarningInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoVC.h; sourceTree = "<group>"; };
-		18B233C019E57D3C000A1FA1 /* PopWarningInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoVC.m; sourceTree = "<group>"; };
-		18C8466719E5A15F005FD404 /* DatacenterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerVC.h; sourceTree = "<group>"; };
-		18C8466819E5A15F005FD404 /* DatacenterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerVC.m; sourceTree = "<group>"; };
-		18C8466919E5A15F005FD404 /* DatacenterDetailCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailCollectionVC.h; sourceTree = "<group>"; };
-		18C8466A19E5A15F005FD404 /* DatacenterDetailCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailCollectionVC.m; sourceTree = "<group>"; };
-		18C8466B19E5A15F005FD404 /* DatacenterDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailInfoVC.h; sourceTree = "<group>"; };
-		18C8466C19E5A15F005FD404 /* DatacenterDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailInfoVC.m; sourceTree = "<group>"; };
-		18C8466D19E5A15F005FD404 /* DatacenterDetailMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailMoreVC.h; sourceTree = "<group>"; };
-		18C8466E19E5A15F005FD404 /* DatacenterDetailMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailMoreVC.m; sourceTree = "<group>"; };
-		18C8466F19E5A15F005FD404 /* DatacenterTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterTableVC.h; sourceTree = "<group>"; };
-		18C8467019E5A15F005FD404 /* DatacenterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterTableVC.m; sourceTree = "<group>"; };
-		18C8467619E61CEC005FD404 /* Datacenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Datacenter.storyboard; sourceTree = "<group>"; };
-		18C8467819E61CF8005FD404 /* VM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VM.storyboard; sourceTree = "<group>"; };
-		18C8467A19E61D0A005FD404 /* Host.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
-		18C8467C19E61D12005FD404 /* Storage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storage.storyboard; sourceTree = "<group>"; };
-		18C8467E19E61D1A005FD404 /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
-		18C8468019E61D23005FD404 /* Pool.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pool.storyboard; sourceTree = "<group>"; };
-		18C8468419E61EA3005FD404 /* Network.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -332,6 +332,287 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185CB33019E7796F00DC8E8A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				185CB33119E7796F00DC8E8A /* business */,
+				185CB33A19E7796F00DC8E8A /* collection */,
+				185CB34319E7796F00DC8E8A /* container */,
+				185CB34619E7796F00DC8E8A /* datacenter */,
+				185CB35319E7796F00DC8E8A /* host */,
+				185CB36019E7796F00DC8E8A /* login */,
+				185CB36719E7796F00DC8E8A /* network */,
+				185CB36E19E7796F00DC8E8A /* pool */,
+				185CB37319E7796F00DC8E8A /* setting */,
+				185CB37A19E7796F00DC8E8A /* storage */,
+				185CB38519E7796F00DC8E8A /* task */,
+				185CB38C19E7796F00DC8E8A /* vm */,
+				185CB3A519E7796F00DC8E8A /* warning */,
+			);
+			name = controllers;
+			path = "../../WinCenter-Common/WinCenter-Common/controllers";
+			sourceTree = "<group>";
+		};
+		185CB33119E7796F00DC8E8A /* business */ = {
+			isa = PBXGroup;
+			children = (
+				185CB33219E7796F00DC8E8A /* BusinessContainerVC.h */,
+				185CB33319E7796F00DC8E8A /* BusinessContainerVC.m */,
+				185CB33419E7796F00DC8E8A /* BusinessDetailInfoVC.h */,
+				185CB33519E7796F00DC8E8A /* BusinessDetailInfoVC.m */,
+				185CB33619E7796F00DC8E8A /* BusinessVmCollectionCell.h */,
+				185CB33719E7796F00DC8E8A /* BusinessVmCollectionCell.m */,
+				185CB33819E7796F00DC8E8A /* BusinessVmCollectionVC.h */,
+				185CB33919E7796F00DC8E8A /* BusinessVmCollectionVC.m */,
+			);
+			path = business;
+			sourceTree = "<group>";
+		};
+		185CB33A19E7796F00DC8E8A /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				185CB33B19E7796F00DC8E8A /* MasterCollectionCell.h */,
+				185CB33C19E7796F00DC8E8A /* MasterCollectionCell.m */,
+				185CB33D19E7796F00DC8E8A /* MasterCollectionFooter.h */,
+				185CB33E19E7796F00DC8E8A /* MasterCollectionFooter.m */,
+				185CB33F19E7796F00DC8E8A /* MasterCollectionHeader.h */,
+				185CB34019E7796F00DC8E8A /* MasterCollectionHeader.m */,
+				185CB34119E7796F00DC8E8A /* MasterCollectionVC.h */,
+				185CB34219E7796F00DC8E8A /* MasterCollectionVC.m */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		185CB34319E7796F00DC8E8A /* container */ = {
+			isa = PBXGroup;
+			children = (
+				185CB34419E7796F00DC8E8A /* MasterContainerVC.h */,
+				185CB34519E7796F00DC8E8A /* MasterContainerVC.m */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
+		185CB34619E7796F00DC8E8A /* datacenter */ = {
+			isa = PBXGroup;
+			children = (
+				185CB34719E7796F00DC8E8A /* DatacenterContainerTableVC.h */,
+				185CB34819E7796F00DC8E8A /* DatacenterContainerTableVC.m */,
+				185CB34919E7796F00DC8E8A /* DatacenterContainerVC.h */,
+				185CB34A19E7796F00DC8E8A /* DatacenterContainerVC.m */,
+				185CB34B19E7796F00DC8E8A /* DatacenterDetailCollectionVC.h */,
+				185CB34C19E7796F00DC8E8A /* DatacenterDetailCollectionVC.m */,
+				185CB34D19E7796F00DC8E8A /* DatacenterDetailInfoVC.h */,
+				185CB34E19E7796F00DC8E8A /* DatacenterDetailInfoVC.m */,
+				185CB34F19E7796F00DC8E8A /* DatacenterDetailMoreVC.h */,
+				185CB35019E7796F00DC8E8A /* DatacenterDetailMoreVC.m */,
+				185CB35119E7796F00DC8E8A /* DatacenterTableVC.h */,
+				185CB35219E7796F00DC8E8A /* DatacenterTableVC.m */,
+			);
+			path = datacenter;
+			sourceTree = "<group>";
+		};
+		185CB35319E7796F00DC8E8A /* host */ = {
+			isa = PBXGroup;
+			children = (
+				185CB35419E7796F00DC8E8A /* HostCollectionVC.h */,
+				185CB35519E7796F00DC8E8A /* HostCollectionVC.m */,
+				185CB35619E7796F00DC8E8A /* HostContainerVC.h */,
+				185CB35719E7796F00DC8E8A /* HostContainerVC.m */,
+				185CB35819E7796F00DC8E8A /* HostDetailInfoVC.h */,
+				185CB35919E7796F00DC8E8A /* HostDetailInfoVC.m */,
+				185CB35A19E7796F00DC8E8A /* HostDetailPerformanceVC.h */,
+				185CB35B19E7796F00DC8E8A /* HostDetailPerformanceVC.m */,
+				185CB35C19E7796F00DC8E8A /* HostNetworkCollectionVC.h */,
+				185CB35D19E7796F00DC8E8A /* HostNetworkCollectionVC.m */,
+				185CB35E19E7796F00DC8E8A /* HostNicCollectionVC.h */,
+				185CB35F19E7796F00DC8E8A /* HostNicCollectionVC.m */,
+			);
+			path = host;
+			sourceTree = "<group>";
+		};
+		185CB36019E7796F00DC8E8A /* login */ = {
+			isa = PBXGroup;
+			children = (
+				185CB36119E7796F00DC8E8A /* LoginSettingVC.h */,
+				185CB36219E7796F00DC8E8A /* LoginSettingVC.m */,
+				185CB36319E7796F00DC8E8A /* LoginTableVC.h */,
+				185CB36419E7796F00DC8E8A /* LoginTableVC.m */,
+				185CB36519E7796F00DC8E8A /* LoginVC.h */,
+				185CB36619E7796F00DC8E8A /* LoginVC.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		185CB36719E7796F00DC8E8A /* network */ = {
+			isa = PBXGroup;
+			children = (
+				185CB36819E7796F00DC8E8A /* NetworkCollectionCell.h */,
+				185CB36919E7796F00DC8E8A /* NetworkCollectionCell.m */,
+				185CB36A19E7796F00DC8E8A /* NetworkCollectionVC.h */,
+				185CB36B19E7796F00DC8E8A /* NetworkCollectionVC.m */,
+				185CB36C19E7796F00DC8E8A /* NetworkContainerVC.h */,
+				185CB36D19E7796F00DC8E8A /* NetworkContainerVC.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		185CB36E19E7796F00DC8E8A /* pool */ = {
+			isa = PBXGroup;
+			children = (
+				185CB36F19E7796F00DC8E8A /* PoolContainerVC.h */,
+				185CB37019E7796F00DC8E8A /* PoolContainerVC.m */,
+				185CB37119E7796F00DC8E8A /* PoolDetailInfoVC.h */,
+				185CB37219E7796F00DC8E8A /* PoolDetailInfoVC.m */,
+			);
+			path = pool;
+			sourceTree = "<group>";
+		};
+		185CB37319E7796F00DC8E8A /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				185CB37419E7796F00DC8E8A /* PopOptionLicenseVC.h */,
+				185CB37519E7796F00DC8E8A /* PopOptionLicenseVC.m */,
+				185CB37619E7796F00DC8E8A /* PopOptionsUserInfoVC.h */,
+				185CB37719E7796F00DC8E8A /* PopOptionsUserInfoVC.m */,
+				185CB37819E7796F00DC8E8A /* PopOptionsVC.h */,
+				185CB37919E7796F00DC8E8A /* PopOptionsVC.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		185CB37A19E7796F00DC8E8A /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				185CB37B19E7796F00DC8E8A /* StorageCollectionVC.h */,
+				185CB37C19E7796F00DC8E8A /* StorageCollectionVC.m */,
+				185CB37D19E7796F00DC8E8A /* StorageContainerVC.h */,
+				185CB37E19E7796F00DC8E8A /* StorageContainerVC.m */,
+				185CB37F19E7796F00DC8E8A /* StorageDetailInfoVC.h */,
+				185CB38019E7796F00DC8E8A /* StorageDetailInfoVC.m */,
+				185CB38119E7796F00DC8E8A /* StorageDiskCollectionCell.h */,
+				185CB38219E7796F00DC8E8A /* StorageDiskCollectionCell.m */,
+				185CB38319E7796F00DC8E8A /* StorageDiskCollectionVC.h */,
+				185CB38419E7796F00DC8E8A /* StorageDiskCollectionVC.m */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		185CB38519E7796F00DC8E8A /* task */ = {
+			isa = PBXGroup;
+			children = (
+				185CB38619E7796F00DC8E8A /* PopControlRecordCell.h */,
+				185CB38719E7796F00DC8E8A /* PopControlRecordCell.m */,
+				185CB38819E7796F00DC8E8A /* PopControlRecordCellForTime.h */,
+				185CB38919E7796F00DC8E8A /* PopControlRecordCellForTime.m */,
+				185CB38A19E7796F00DC8E8A /* PopControlRecordVC.h */,
+				185CB38B19E7796F00DC8E8A /* PopControlRecordVC.m */,
+			);
+			path = task;
+			sourceTree = "<group>";
+		};
+		185CB38C19E7796F00DC8E8A /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				185CB38D19E7796F00DC8E8A /* VmCollectionVC.h */,
+				185CB38E19E7796F00DC8E8A /* VmCollectionVC.m */,
+				185CB38F19E7796F00DC8E8A /* VmContainerVC.h */,
+				185CB39019E7796F00DC8E8A /* VmContainerVC.m */,
+				185CB39119E7796F00DC8E8A /* VmDetailCPUConfigVC.h */,
+				185CB39219E7796F00DC8E8A /* VmDetailCPUConfigVC.m */,
+				185CB39319E7796F00DC8E8A /* VmDetailInfoVC.h */,
+				185CB39419E7796F00DC8E8A /* VmDetailInfoVC.m */,
+				185CB39519E7796F00DC8E8A /* VmDetailMemryConfigVC.h */,
+				185CB39619E7796F00DC8E8A /* VmDetailMemryConfigVC.m */,
+				185CB39719E7796F00DC8E8A /* VmDetailSnapshootVC.h */,
+				185CB39819E7796F00DC8E8A /* VmDetailSnapshootVC.m */,
+				185CB39919E7796F00DC8E8A /* VmDiskCollectionVC.h */,
+				185CB39A19E7796F00DC8E8A /* VmDiskCollectionVC.m */,
+				185CB39B19E7796F00DC8E8A /* VmMigrateSelectHostListCell.h */,
+				185CB39C19E7796F00DC8E8A /* VmMigrateSelectHostListCell.m */,
+				185CB39D19E7796F00DC8E8A /* VmMigrateSelectHostListVC.h */,
+				185CB39E19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m */,
+				185CB39F19E7796F00DC8E8A /* VmMigrateVC.h */,
+				185CB3A019E7796F00DC8E8A /* VmMigrateVC.m */,
+				185CB3A119E7796F00DC8E8A /* VmNetworkCollectionVC.h */,
+				185CB3A219E7796F00DC8E8A /* VmNetworkCollectionVC.m */,
+				185CB3A319E7796F00DC8E8A /* VmNewVC.h */,
+				185CB3A419E7796F00DC8E8A /* VmNewVC.m */,
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		185CB3A519E7796F00DC8E8A /* warning */ = {
+			isa = PBXGroup;
+			children = (
+				185CB3A619E7796F00DC8E8A /* PopWarningInfoCell.h */,
+				185CB3A719E7796F00DC8E8A /* PopWarningInfoCell.m */,
+				185CB3A819E7796F00DC8E8A /* PopWarningInfoCellForTime.h */,
+				185CB3A919E7796F00DC8E8A /* PopWarningInfoCellForTime.m */,
+				185CB3AA19E7796F00DC8E8A /* PopWarningInfoVC.h */,
+				185CB3AB19E7796F00DC8E8A /* PopWarningInfoVC.m */,
+			);
+			path = warning;
+			sourceTree = "<group>";
+		};
+		185CB3AC19E7796F00DC8E8A /* datas */ = {
+			isa = PBXGroup;
+			children = (
+				185CB3AD19E7796F00DC8E8A /* BusinessVO.getBusinessVOAsync.json */,
+				185CB3AE19E7796F00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json */,
+				185CB3AF19E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.json */,
+				185CB3B019E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.limit.json */,
+				185CB3B119E7796F00DC8E8A /* DatacenterVO.getDatacenterListAsync.json */,
+				185CB3B219E7796F00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */,
+				185CB3B319E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json */,
+				185CB3B419E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json */,
+				185CB3B519E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json */,
+				185CB3B619E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json */,
+				185CB3B719E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json */,
+				185CB3B819E7796F00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json */,
+				185CB3B919E7796F00DC8E8A /* HostVO.getHostStatVOAsync.json */,
+				185CB3BA19E7796F00DC8E8A /* HostVO.getHostVOAsync.json */,
+				185CB3BB19E7796F00DC8E8A /* HostVO.getStorageListAsync.json */,
+				185CB3BC19E7796F00DC8E8A /* HostVO.getVmListAsync.json */,
+				185CB3BD19E7796F00DC8E8A /* LicenseVO.getLicenseVOAsync.json */,
+				185CB3BE19E7796F00DC8E8A /* PoolVO.getHostListAsync.json */,
+				185CB3BF19E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json */,
+				185CB3C019E7796F00DC8E8A /* PoolVO.getPoolElasticAsync.json */,
+				185CB3C119E7796F00DC8E8A /* PoolVO.getPoolVOAsync.json */,
+				185CB3C219E7796F00DC8E8A /* PoolVO.getStorageList.json */,
+				185CB3C319E7796F00DC8E8A /* PoolVO.getStorageListAsync.json */,
+				185CB3C419E7796F00DC8E8A /* PoolVO.getVmListAsync.json */,
+				185CB3C519E7796F00DC8E8A /* PoolVO.getVmListWithlimit.json */,
+				185CB3C619E7796F00DC8E8A /* StorageVO.getStorageVOAsync.json */,
+				185CB3C719E7796F00DC8E8A /* StorageVO.getStorageVolumnListAsync.json */,
+				185CB3C819E7796F00DC8E8A /* TemplateIcon2x.png */,
+				185CB3C919E7796F00DC8E8A /* UserVO.getUserVOAsync.json */,
+				185CB3CA19E7796F00DC8E8A /* VmVO.getVmNicListAsync.json */,
+				185CB3CB19E7796F00DC8E8A /* VmVO.getVmVOAsync.json */,
+				185CB3CC19E7796F00DC8E8A /* VmVO.getVmVolumnListAsync.json */,
+				185CB3CD19E7796F00DC8E8A /* WarningInfoVO.getWarningInfoListAsync.json */,
+			);
+			name = datas;
+			path = "../../WinCenter-Common/WinCenter-Common/datas";
+			sourceTree = "<group>";
+		};
+		185CB42819E7797F00DC8E8A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				185CB42919E7798900DC8E8A /* Business.storyboard */,
+				185CB42A19E7798900DC8E8A /* Datacenter.storyboard */,
+				185CB42B19E7798900DC8E8A /* Host.storyboard */,
+				185CB42C19E7798900DC8E8A /* Main.storyboard */,
+				185CB42D19E7798900DC8E8A /* Network.storyboard */,
+				185CB42E19E7798900DC8E8A /* Pool.storyboard */,
+				185CB42F19E7798900DC8E8A /* Storage.storyboard */,
+				185CB43019E7798900DC8E8A /* VM.storyboard */,
+				185CB43919E7799800DC8E8A /* Setting.storyboard */,
+				185CB43A19E7799800DC8E8A /* Task.storyboard */,
+				185CB43B19E7799800DC8E8A /* Warning.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		18A4D42519B560D400415896 = {
 			isa = PBXGroup;
 			children = (
@@ -368,22 +649,12 @@
 		18A4D43719B560D400415896 /* WinCenter-iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				18B2331A19E57D3B000A1FA1 /* datas */,
-				18B2333C19E57D3B000A1FA1 /* views */,
+				185CB42819E7797F00DC8E8A /* views */,
+				185CB33019E7796F00DC8E8A /* controllers */,
+				185CB3AC19E7796F00DC8E8A /* datas */,
+				185CB3CE19E7796F00DC8E8A /* Images.xcassets */,
 				18A4D44019B560D400415896 /* AppDelegate.h */,
 				18A4D44119B560D400415896 /* AppDelegate.m */,
-				1809A7AF19E62B4D0034052C /* Setting.storyboard */,
-				18C8467E19E61D1A005FD404 /* Business.storyboard */,
-				18C8467C19E61D12005FD404 /* Storage.storyboard */,
-				18C8468019E61D23005FD404 /* Pool.storyboard */,
-				18C8467A19E61D0A005FD404 /* Host.storyboard */,
-				18C8467819E61CF8005FD404 /* VM.storyboard */,
-				18C8467619E61CEC005FD404 /* Datacenter.storyboard */,
-				18C8468419E61EA3005FD404 /* Network.storyboard */,
-				18A4D44319B560D400415896 /* Main.storyboard */,
-				1809A7B119E62BCC0034052C /* Task.storyboard */,
-				1809A7B319E62BD30034052C /* Warning.storyboard */,
-				18A4D44919B560D400415896 /* Images.xcassets */,
 				18A4D43819B560D400415896 /* Supporting Files */,
 			);
 			path = "WinCenter-iPhone";
@@ -416,277 +687,6 @@
 				18A4D45919B560D400415896 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		18B2331A19E57D3B000A1FA1 /* datas */ = {
-			isa = PBXGroup;
-			children = (
-				18B2331B19E57D3B000A1FA1 /* BusinessVO.getBusinessVOAsync.json */,
-				18B2331C19E57D3B000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json */,
-				18B2331D19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.json */,
-				18B2331E19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.limit.json */,
-				18B2331F19E57D3B000A1FA1 /* DatacenterVO.getDatacenterListAsync.json */,
-				18B2332019E57D3B000A1FA1 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */,
-				18B2332119E57D3B000A1FA1 /* DatacenterVO.getPoolListAsync.json */,
-				18B2332219E57D3B000A1FA1 /* DatacenterVO.getPoolListAsync.limit.json */,
-				18B2332319E57D3B000A1FA1 /* HostVO.getHostNetworkExternalListAsync.json */,
-				18B2332419E57D3B000A1FA1 /* HostVO.getHostNetworkInternalListAsync.json */,
-				18B2332519E57D3B000A1FA1 /* HostVO.getHostNicGroupedListAsync.json */,
-				18B2332619E57D3B000A1FA1 /* HostVO.getHostNicUngroupedListAsync.json */,
-				18B2332719E57D3B000A1FA1 /* HostVO.getHostStatVOAsync.json */,
-				18B2332819E57D3B000A1FA1 /* HostVO.getHostVOAsync.json */,
-				18B2332919E57D3B000A1FA1 /* HostVO.getStorageListAsync.json */,
-				18B2332A19E57D3B000A1FA1 /* HostVO.getVmListAsync.json */,
-				18B2332B19E57D3B000A1FA1 /* LicenseVO.getLicenseVOAsync.json */,
-				18B2332C19E57D3B000A1FA1 /* PoolVO.getHostListAsync.json */,
-				18B2332D19E57D3B000A1FA1 /* PoolVO.getHostLisWithlimit.json */,
-				18B2332E19E57D3B000A1FA1 /* PoolVO.getPoolElasticAsync.json */,
-				18B2332F19E57D3B000A1FA1 /* PoolVO.getPoolVOAsync.json */,
-				18B2333019E57D3B000A1FA1 /* PoolVO.getStorageList.json */,
-				18B2333119E57D3B000A1FA1 /* PoolVO.getStorageListAsync.json */,
-				18B2333219E57D3B000A1FA1 /* PoolVO.getVmListAsync.json */,
-				18B2333319E57D3B000A1FA1 /* PoolVO.getVmListWithlimit.json */,
-				18B2333419E57D3B000A1FA1 /* StorageVO.getStorageVOAsync.json */,
-				18B2333519E57D3B000A1FA1 /* StorageVO.getStorageVolumnListAsync.json */,
-				18B2333619E57D3B000A1FA1 /* TemplateIcon2x.png */,
-				18B2333719E57D3B000A1FA1 /* UserVO.getUserVOAsync.json */,
-				18B2333819E57D3B000A1FA1 /* VmVO.getVmNicListAsync.json */,
-				18B2333919E57D3B000A1FA1 /* VmVO.getVmVOAsync.json */,
-				18B2333A19E57D3B000A1FA1 /* VmVO.getVmVolumnListAsync.json */,
-				18B2333B19E57D3B000A1FA1 /* WarningInfoVO.getWarningInfoListAsync.json */,
-			);
-			name = datas;
-			path = "../../WinCenter-iPad/WinCenter-iPad/datas";
-			sourceTree = "<group>";
-		};
-		18B2333C19E57D3B000A1FA1 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				18B2333D19E57D3B000A1FA1 /* controllers */,
-			);
-			name = views;
-			path = "../../WinCenter-iPad/WinCenter-iPad/views";
-			sourceTree = "<group>";
-		};
-		18B2333D19E57D3B000A1FA1 /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				18B2333E19E57D3B000A1FA1 /* business */,
-				18B2334319E57D3B000A1FA1 /* collection */,
-				18B2334A19E57D3B000A1FA1 /* container */,
-				18C8466619E5A15F005FD404 /* datacenter */,
-				18B2336A19E57D3C000A1FA1 /* host */,
-				18B2337719E57D3C000A1FA1 /* login */,
-				18B2337C19E57D3C000A1FA1 /* network */,
-				18B2338319E57D3C000A1FA1 /* pool */,
-				18B2338819E57D3C000A1FA1 /* setting */,
-				18B2338F19E57D3C000A1FA1 /* storage */,
-				18B2339819E57D3C000A1FA1 /* task */,
-				18B2339F19E57D3C000A1FA1 /* vm */,
-				18B233BA19E57D3C000A1FA1 /* warning */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		18B2333E19E57D3B000A1FA1 /* business */ = {
-			isa = PBXGroup;
-			children = (
-				1858129019E6D62D0047C078 /* BusinessVmCollectionCell.h */,
-				1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */,
-				1858129319E6D6340047C078 /* BusinessVmCollectionVC.h */,
-				1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */,
-				18B2333F19E57D3B000A1FA1 /* BusinessContainerVC.h */,
-				18B2334019E57D3B000A1FA1 /* BusinessContainerVC.m */,
-				18B2334119E57D3B000A1FA1 /* BusinessDetailInfoVC.h */,
-				18B2334219E57D3B000A1FA1 /* BusinessDetailInfoVC.m */,
-			);
-			path = business;
-			sourceTree = "<group>";
-		};
-		18B2334319E57D3B000A1FA1 /* collection */ = {
-			isa = PBXGroup;
-			children = (
-				18B2334419E57D3B000A1FA1 /* MasterCollectionCell.h */,
-				18B2334519E57D3B000A1FA1 /* MasterCollectionCell.m */,
-				18B2334619E57D3B000A1FA1 /* MasterCollectionHeader.h */,
-				18B2334719E57D3B000A1FA1 /* MasterCollectionHeader.m */,
-				1809A7EF19E677D80034052C /* MasterCollectionFooter.h */,
-				1809A7F019E677D80034052C /* MasterCollectionFooter.m */,
-				18B2334819E57D3B000A1FA1 /* MasterCollectionVC.h */,
-				18B2334919E57D3B000A1FA1 /* MasterCollectionVC.m */,
-			);
-			path = collection;
-			sourceTree = "<group>";
-		};
-		18B2334A19E57D3B000A1FA1 /* container */ = {
-			isa = PBXGroup;
-			children = (
-				18B2334B19E57D3B000A1FA1 /* MasterContainerVC.h */,
-				18B2334C19E57D3B000A1FA1 /* MasterContainerVC.m */,
-			);
-			path = container;
-			sourceTree = "<group>";
-		};
-		18B2336A19E57D3C000A1FA1 /* host */ = {
-			isa = PBXGroup;
-			children = (
-				18B2336B19E57D3C000A1FA1 /* HostCollectionVC.h */,
-				18B2336C19E57D3C000A1FA1 /* HostCollectionVC.m */,
-				18B2336D19E57D3C000A1FA1 /* HostContainerVC.h */,
-				18B2336E19E57D3C000A1FA1 /* HostContainerVC.m */,
-				18B2336F19E57D3C000A1FA1 /* HostDetailInfoVC.h */,
-				18B2337019E57D3C000A1FA1 /* HostDetailInfoVC.m */,
-				18B2337119E57D3C000A1FA1 /* HostDetailPerformanceVC.h */,
-				18B2337219E57D3C000A1FA1 /* HostDetailPerformanceVC.m */,
-				18B2337319E57D3C000A1FA1 /* HostNetworkCollectionVC.h */,
-				18B2337419E57D3C000A1FA1 /* HostNetworkCollectionVC.m */,
-				18B2337519E57D3C000A1FA1 /* HostNicCollectionVC.h */,
-				18B2337619E57D3C000A1FA1 /* HostNicCollectionVC.m */,
-			);
-			path = host;
-			sourceTree = "<group>";
-		};
-		18B2337719E57D3C000A1FA1 /* login */ = {
-			isa = PBXGroup;
-			children = (
-				18B2337819E57D3C000A1FA1 /* LoginSettingVC.h */,
-				18B2337919E57D3C000A1FA1 /* LoginSettingVC.m */,
-				18B2337A19E57D3C000A1FA1 /* LoginVC.h */,
-				18B2337B19E57D3C000A1FA1 /* LoginVC.m */,
-				1809A7EA19E63BDF0034052C /* LoginTableVC.h */,
-				1809A7EB19E63BDF0034052C /* LoginTableVC.m */,
-			);
-			path = login;
-			sourceTree = "<group>";
-		};
-		18B2337C19E57D3C000A1FA1 /* network */ = {
-			isa = PBXGroup;
-			children = (
-				18B2337D19E57D3C000A1FA1 /* NetworkCollectionCell.h */,
-				18B2337E19E57D3C000A1FA1 /* NetworkCollectionCell.m */,
-				18B2337F19E57D3C000A1FA1 /* NetworkCollectionVC.h */,
-				18B2338019E57D3C000A1FA1 /* NetworkCollectionVC.m */,
-				18B2338119E57D3C000A1FA1 /* NetworkContainerVC.h */,
-				18B2338219E57D3C000A1FA1 /* NetworkContainerVC.m */,
-			);
-			path = network;
-			sourceTree = "<group>";
-		};
-		18B2338319E57D3C000A1FA1 /* pool */ = {
-			isa = PBXGroup;
-			children = (
-				18B2338419E57D3C000A1FA1 /* PoolContainerVC.h */,
-				18B2338519E57D3C000A1FA1 /* PoolContainerVC.m */,
-				18B2338619E57D3C000A1FA1 /* PoolDetailInfoVC.h */,
-				18B2338719E57D3C000A1FA1 /* PoolDetailInfoVC.m */,
-			);
-			path = pool;
-			sourceTree = "<group>";
-		};
-		18B2338819E57D3C000A1FA1 /* setting */ = {
-			isa = PBXGroup;
-			children = (
-				18B2338919E57D3C000A1FA1 /* PopOptionLicenseVC.h */,
-				18B2338A19E57D3C000A1FA1 /* PopOptionLicenseVC.m */,
-				18B2338B19E57D3C000A1FA1 /* PopOptionsUserInfoVC.h */,
-				18B2338C19E57D3C000A1FA1 /* PopOptionsUserInfoVC.m */,
-				18B2338D19E57D3C000A1FA1 /* PopOptionsVC.h */,
-				18B2338E19E57D3C000A1FA1 /* PopOptionsVC.m */,
-			);
-			path = setting;
-			sourceTree = "<group>";
-		};
-		18B2338F19E57D3C000A1FA1 /* storage */ = {
-			isa = PBXGroup;
-			children = (
-				18B2339019E57D3C000A1FA1 /* StorageCollectionVC.h */,
-				18B2339119E57D3C000A1FA1 /* StorageCollectionVC.m */,
-				18B2339219E57D3C000A1FA1 /* StorageContainerVC.h */,
-				18B2339319E57D3C000A1FA1 /* StorageContainerVC.m */,
-				18B2339619E57D3C000A1FA1 /* StorageDetailInfoVC.h */,
-				18B2339719E57D3C000A1FA1 /* StorageDetailInfoVC.m */,
-				1809A7F819E6CD450034052C /* StorageDiskCollectionCell.h */,
-				1809A7F919E6CD450034052C /* StorageDiskCollectionCell.m */,
-				1809A7FA19E6CD450034052C /* StorageDiskCollectionVC.h */,
-				1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */,
-			);
-			path = storage;
-			sourceTree = "<group>";
-		};
-		18B2339819E57D3C000A1FA1 /* task */ = {
-			isa = PBXGroup;
-			children = (
-				18B2339919E57D3C000A1FA1 /* PopControlRecordCell.h */,
-				18B2339A19E57D3C000A1FA1 /* PopControlRecordCell.m */,
-				18B2339B19E57D3C000A1FA1 /* PopControlRecordCellForTime.h */,
-				18B2339C19E57D3C000A1FA1 /* PopControlRecordCellForTime.m */,
-				18B2339D19E57D3C000A1FA1 /* PopControlRecordVC.h */,
-				18B2339E19E57D3C000A1FA1 /* PopControlRecordVC.m */,
-			);
-			path = task;
-			sourceTree = "<group>";
-		};
-		18B2339F19E57D3C000A1FA1 /* vm */ = {
-			isa = PBXGroup;
-			children = (
-				18B233A219E57D3C000A1FA1 /* VmCollectionVC.h */,
-				18B233A319E57D3C000A1FA1 /* VmCollectionVC.m */,
-				18B233A419E57D3C000A1FA1 /* VmContainerVC.h */,
-				18B233A519E57D3C000A1FA1 /* VmContainerVC.m */,
-				18B233A619E57D3C000A1FA1 /* VmDetailCPUConfigVC.h */,
-				18B233A719E57D3C000A1FA1 /* VmDetailCPUConfigVC.m */,
-				18B233A819E57D3C000A1FA1 /* VmDetailInfoVC.h */,
-				18B233A919E57D3C000A1FA1 /* VmDetailInfoVC.m */,
-				18B233AA19E57D3C000A1FA1 /* VmDetailMemryConfigVC.h */,
-				18B233AB19E57D3C000A1FA1 /* VmDetailMemryConfigVC.m */,
-				18B233AC19E57D3C000A1FA1 /* VmDetailSnapshootVC.h */,
-				18B233AD19E57D3C000A1FA1 /* VmDetailSnapshootVC.m */,
-				18B233AE19E57D3C000A1FA1 /* VmDiskCollectionVC.h */,
-				18B233AF19E57D3C000A1FA1 /* VmDiskCollectionVC.m */,
-				18B233B019E57D3C000A1FA1 /* VmMigrateSelectHostListCell.h */,
-				18B233B119E57D3C000A1FA1 /* VmMigrateSelectHostListCell.m */,
-				18B233B219E57D3C000A1FA1 /* VmMigrateSelectHostListVC.h */,
-				18B233B319E57D3C000A1FA1 /* VmMigrateSelectHostListVC.m */,
-				18B233B419E57D3C000A1FA1 /* VmMigrateVC.h */,
-				18B233B519E57D3C000A1FA1 /* VmMigrateVC.m */,
-				18B233B619E57D3C000A1FA1 /* VmNetworkCollectionVC.h */,
-				18B233B719E57D3C000A1FA1 /* VmNetworkCollectionVC.m */,
-				18B233B819E57D3C000A1FA1 /* VmNewVC.h */,
-				18B233B919E57D3C000A1FA1 /* VmNewVC.m */,
-			);
-			path = vm;
-			sourceTree = "<group>";
-		};
-		18B233BA19E57D3C000A1FA1 /* warning */ = {
-			isa = PBXGroup;
-			children = (
-				18B233BB19E57D3C000A1FA1 /* PopWarningInfoCell.h */,
-				18B233BC19E57D3C000A1FA1 /* PopWarningInfoCell.m */,
-				18B233BD19E57D3C000A1FA1 /* PopWarningInfoCellForTime.h */,
-				18B233BE19E57D3C000A1FA1 /* PopWarningInfoCellForTime.m */,
-				18B233BF19E57D3C000A1FA1 /* PopWarningInfoVC.h */,
-				18B233C019E57D3C000A1FA1 /* PopWarningInfoVC.m */,
-			);
-			path = warning;
-			sourceTree = "<group>";
-		};
-		18C8466619E5A15F005FD404 /* datacenter */ = {
-			isa = PBXGroup;
-			children = (
-				18C8466719E5A15F005FD404 /* DatacenterContainerVC.h */,
-				18C8466819E5A15F005FD404 /* DatacenterContainerVC.m */,
-				1809A7AC19E6281E0034052C /* DatacenterContainerTableVC.h */,
-				1809A7AD19E6281E0034052C /* DatacenterContainerTableVC.m */,
-				18C8466919E5A15F005FD404 /* DatacenterDetailCollectionVC.h */,
-				18C8466A19E5A15F005FD404 /* DatacenterDetailCollectionVC.m */,
-				18C8466B19E5A15F005FD404 /* DatacenterDetailInfoVC.h */,
-				18C8466C19E5A15F005FD404 /* DatacenterDetailInfoVC.m */,
-				18C8466D19E5A15F005FD404 /* DatacenterDetailMoreVC.h */,
-				18C8466E19E5A15F005FD404 /* DatacenterDetailMoreVC.m */,
-				18C8466F19E5A15F005FD404 /* DatacenterTableVC.h */,
-				18C8467019E5A15F005FD404 /* DatacenterTableVC.m */,
-			);
-			path = datacenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -767,52 +767,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B233C819E57D3C000A1FA1 /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
-				18B233CB19E57D3C000A1FA1 /* HostVO.getHostNicGroupedListAsync.json in Resources */,
-				18B233C119E57D3C000A1FA1 /* BusinessVO.getBusinessVOAsync.json in Resources */,
-				1809A7B419E62BD30034052C /* Warning.storyboard in Resources */,
-				18A4D44A19B560D400415896 /* Images.xcassets in Resources */,
-				18C8467B19E61D0A005FD404 /* Host.storyboard in Resources */,
-				18B233E019E57D3C000A1FA1 /* VmVO.getVmVolumnListAsync.json in Resources */,
-				18C8467D19E61D12005FD404 /* Storage.storyboard in Resources */,
-				18B233D519E57D3C000A1FA1 /* PoolVO.getPoolVOAsync.json in Resources */,
-				18B233D419E57D3C000A1FA1 /* PoolVO.getPoolElasticAsync.json in Resources */,
-				18C8468519E61EA3005FD404 /* Network.storyboard in Resources */,
-				18B233CD19E57D3C000A1FA1 /* HostVO.getHostStatVOAsync.json in Resources */,
-				18B233D019E57D3C000A1FA1 /* HostVO.getVmListAsync.json in Resources */,
-				18B233C319E57D3C000A1FA1 /* DatacenterVO.getBusinessListAsync.json in Resources */,
-				18B233D919E57D3C000A1FA1 /* PoolVO.getVmListWithlimit.json in Resources */,
-				18B233E119E57D3C000A1FA1 /* WarningInfoVO.getWarningInfoListAsync.json in Resources */,
-				18C8468119E61D23005FD404 /* Pool.storyboard in Resources */,
-				18B233DB19E57D3C000A1FA1 /* StorageVO.getStorageVolumnListAsync.json in Resources */,
-				18B233C619E57D3C000A1FA1 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */,
-				18B233D119E57D3C000A1FA1 /* LicenseVO.getLicenseVOAsync.json in Resources */,
-				18B233C919E57D3C000A1FA1 /* HostVO.getHostNetworkExternalListAsync.json in Resources */,
-				18B233DA19E57D3C000A1FA1 /* StorageVO.getStorageVOAsync.json in Resources */,
-				18B233C519E57D3C000A1FA1 /* DatacenterVO.getDatacenterListAsync.json in Resources */,
-				18B233DF19E57D3C000A1FA1 /* VmVO.getVmVOAsync.json in Resources */,
+				185CB40D19E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
+				185CB40619E7796F00DC8E8A /* BusinessVO.getBusinessVOAsync.json in Resources */,
+				185CB40919E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.limit.json in Resources */,
+				185CB43E19E7799800DC8E8A /* Warning.storyboard in Resources */,
+				185CB40F19E7796F00DC8E8A /* HostVO.getHostNetworkInternalListAsync.json in Resources */,
+				185CB41719E7796F00DC8E8A /* PoolVO.getHostListAsync.json in Resources */,
 				18A4D43C19B560D400415896 /* InfoPlist.strings in Resources */,
-				18B233D219E57D3C000A1FA1 /* PoolVO.getHostListAsync.json in Resources */,
-				18B233C719E57D3C000A1FA1 /* DatacenterVO.getPoolListAsync.json in Resources */,
-				18B233C419E57D3C000A1FA1 /* DatacenterVO.getBusinessListAsync.limit.json in Resources */,
-				18B233D619E57D3C000A1FA1 /* PoolVO.getStorageList.json in Resources */,
-				18B233C219E57D3C000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json in Resources */,
-				18B233DD19E57D3C000A1FA1 /* UserVO.getUserVOAsync.json in Resources */,
-				18A4D44519B560D400415896 /* Main.storyboard in Resources */,
-				1809A7B019E62B4D0034052C /* Setting.storyboard in Resources */,
-				18B233CA19E57D3C000A1FA1 /* HostVO.getHostNetworkInternalListAsync.json in Resources */,
-				18B233D719E57D3C000A1FA1 /* PoolVO.getStorageListAsync.json in Resources */,
-				18C8467919E61CF8005FD404 /* VM.storyboard in Resources */,
-				18B233DC19E57D3C000A1FA1 /* TemplateIcon2x.png in Resources */,
-				18B233CC19E57D3C000A1FA1 /* HostVO.getHostNicUngroupedListAsync.json in Resources */,
-				18B233D319E57D3C000A1FA1 /* PoolVO.getHostLisWithlimit.json in Resources */,
-				18C8467719E61CEC005FD404 /* Datacenter.storyboard in Resources */,
-				18B233CE19E57D3C000A1FA1 /* HostVO.getHostVOAsync.json in Resources */,
-				1809A7B219E62BCC0034052C /* Task.storyboard in Resources */,
-				18C8467F19E61D1A005FD404 /* Business.storyboard in Resources */,
-				18B233D819E57D3C000A1FA1 /* PoolVO.getVmListAsync.json in Resources */,
-				18B233DE19E57D3C000A1FA1 /* VmVO.getVmNicListAsync.json in Resources */,
-				18B233CF19E57D3C000A1FA1 /* HostVO.getStorageListAsync.json in Resources */,
+				185CB43819E7798900DC8E8A /* VM.storyboard in Resources */,
+				185CB41919E7796F00DC8E8A /* PoolVO.getPoolElasticAsync.json in Resources */,
+				185CB40B19E7796F00DC8E8A /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */,
+				185CB41119E7796F00DC8E8A /* HostVO.getHostNicUngroupedListAsync.json in Resources */,
+				185CB41419E7796F00DC8E8A /* HostVO.getStorageListAsync.json in Resources */,
+				185CB42519E7796F00DC8E8A /* VmVO.getVmVolumnListAsync.json in Resources */,
+				185CB42219E7796F00DC8E8A /* UserVO.getUserVOAsync.json in Resources */,
+				185CB42119E7796F00DC8E8A /* TemplateIcon2x.png in Resources */,
+				185CB41819E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json in Resources */,
+				185CB41F19E7796F00DC8E8A /* StorageVO.getStorageVOAsync.json in Resources */,
+				185CB42619E7796F00DC8E8A /* WarningInfoVO.getWarningInfoListAsync.json in Resources */,
+				185CB42719E7796F00DC8E8A /* Images.xcassets in Resources */,
+				185CB41319E7796F00DC8E8A /* HostVO.getHostVOAsync.json in Resources */,
+				185CB41D19E7796F00DC8E8A /* PoolVO.getVmListAsync.json in Resources */,
+				185CB40E19E7796F00DC8E8A /* HostVO.getHostNetworkExternalListAsync.json in Resources */,
+				185CB41619E7796F00DC8E8A /* LicenseVO.getLicenseVOAsync.json in Resources */,
+				185CB42019E7796F00DC8E8A /* StorageVO.getStorageVolumnListAsync.json in Resources */,
+				185CB43119E7798900DC8E8A /* Business.storyboard in Resources */,
+				185CB40C19E7796F00DC8E8A /* DatacenterVO.getPoolListAsync.json in Resources */,
+				185CB40A19E7796F00DC8E8A /* DatacenterVO.getDatacenterListAsync.json in Resources */,
+				185CB41B19E7796F00DC8E8A /* PoolVO.getStorageList.json in Resources */,
+				185CB43319E7798900DC8E8A /* Host.storyboard in Resources */,
+				185CB41219E7796F00DC8E8A /* HostVO.getHostStatVOAsync.json in Resources */,
+				185CB41E19E7796F00DC8E8A /* PoolVO.getVmListWithlimit.json in Resources */,
+				185CB40819E7796F00DC8E8A /* DatacenterVO.getBusinessListAsync.json in Resources */,
+				185CB43C19E7799800DC8E8A /* Setting.storyboard in Resources */,
+				185CB41C19E7796F00DC8E8A /* PoolVO.getStorageListAsync.json in Resources */,
+				185CB42419E7796F00DC8E8A /* VmVO.getVmVOAsync.json in Resources */,
+				185CB43719E7798900DC8E8A /* Storage.storyboard in Resources */,
+				185CB41519E7796F00DC8E8A /* HostVO.getVmListAsync.json in Resources */,
+				185CB43419E7798900DC8E8A /* Main.storyboard in Resources */,
+				185CB43219E7798900DC8E8A /* Datacenter.storyboard in Resources */,
+				185CB43519E7798900DC8E8A /* Network.storyboard in Resources */,
+				185CB42319E7796F00DC8E8A /* VmVO.getVmNicListAsync.json in Resources */,
+				185CB43D19E7799800DC8E8A /* Task.storyboard in Resources */,
+				185CB43619E7798900DC8E8A /* Pool.storyboard in Resources */,
+				185CB40719E7796F00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json in Resources */,
+				185CB41A19E7796F00DC8E8A /* PoolVO.getPoolVOAsync.json in Resources */,
+				185CB41019E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,63 +864,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1858129519E6D6340047C078 /* BusinessVmCollectionVC.m in Sources */,
-				18B2340719E57D3C000A1FA1 /* StorageContainerVC.m in Sources */,
-				18B2341C19E57D3C000A1FA1 /* PopWarningInfoVC.m in Sources */,
-				18B233F819E57D3C000A1FA1 /* HostDetailInfoVC.m in Sources */,
-				18B2340219E57D3C000A1FA1 /* PoolDetailInfoVC.m in Sources */,
-				18C8467419E5A15F005FD404 /* DatacenterDetailMoreVC.m in Sources */,
-				18B233FD19E57D3C000A1FA1 /* LoginVC.m in Sources */,
-				1809A7FC19E6CD450034052C /* StorageDiskCollectionCell.m in Sources */,
-				18B233FA19E57D3C000A1FA1 /* HostNetworkCollectionVC.m in Sources */,
-				18B233E619E57D3C000A1FA1 /* MasterCollectionVC.m in Sources */,
-				18B2340F19E57D3C000A1FA1 /* VmContainerVC.m in Sources */,
-				18B2340E19E57D3C000A1FA1 /* VmCollectionVC.m in Sources */,
-				18B2340B19E57D3C000A1FA1 /* PopControlRecordCellForTime.m in Sources */,
-				18B2340119E57D3C000A1FA1 /* PoolContainerVC.m in Sources */,
-				1809A7AE19E6281E0034052C /* DatacenterContainerTableVC.m in Sources */,
-				18B233FC19E57D3C000A1FA1 /* LoginSettingVC.m in Sources */,
-				18B233F719E57D3C000A1FA1 /* HostContainerVC.m in Sources */,
-				18B233FB19E57D3C000A1FA1 /* HostNicCollectionVC.m in Sources */,
-				18B2341919E57D3C000A1FA1 /* VmNewVC.m in Sources */,
-				18B2341619E57D3C000A1FA1 /* VmMigrateSelectHostListVC.m in Sources */,
-				18B2341719E57D3C000A1FA1 /* VmMigrateVC.m in Sources */,
-				18B2341419E57D3C000A1FA1 /* VmDiskCollectionVC.m in Sources */,
-				18B2341219E57D3C000A1FA1 /* VmDetailMemryConfigVC.m in Sources */,
-				1809A7EC19E63BDF0034052C /* LoginTableVC.m in Sources */,
-				18C8467219E5A15F005FD404 /* DatacenterDetailCollectionVC.m in Sources */,
-				1858129219E6D62D0047C078 /* BusinessVmCollectionCell.m in Sources */,
-				18B2341319E57D3C000A1FA1 /* VmDetailSnapshootVC.m in Sources */,
-				18B2340319E57D3C000A1FA1 /* PopOptionLicenseVC.m in Sources */,
-				18B233F619E57D3C000A1FA1 /* HostCollectionVC.m in Sources */,
+				185CB3EF19E7796F00DC8E8A /* StorageCollectionVC.m in Sources */,
+				185CB40019E7796F00DC8E8A /* VmMigrateVC.m in Sources */,
+				185CB40219E7796F00DC8E8A /* VmNewVC.m in Sources */,
+				185CB3FF19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m in Sources */,
+				185CB3E919E7796F00DC8E8A /* NetworkContainerVC.m in Sources */,
+				185CB3F319E7796F00DC8E8A /* StorageDiskCollectionVC.m in Sources */,
+				185CB3E519E7796F00DC8E8A /* LoginTableVC.m in Sources */,
+				185CB3DA19E7796F00DC8E8A /* DatacenterDetailCollectionVC.m in Sources */,
+				185CB3F719E7796F00DC8E8A /* VmCollectionVC.m in Sources */,
+				185CB3EE19E7796F00DC8E8A /* PopOptionsVC.m in Sources */,
+				185CB3DB19E7796F00DC8E8A /* DatacenterDetailInfoVC.m in Sources */,
+				185CB3D319E7796F00DC8E8A /* MasterCollectionCell.m in Sources */,
+				185CB40119E7796F00DC8E8A /* VmNetworkCollectionVC.m in Sources */,
+				185CB3E419E7796F00DC8E8A /* LoginSettingVC.m in Sources */,
+				185CB3F619E7796F00DC8E8A /* PopControlRecordVC.m in Sources */,
+				185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */,
+				185CB3D519E7796F00DC8E8A /* MasterCollectionHeader.m in Sources */,
+				185CB3D119E7796F00DC8E8A /* BusinessVmCollectionCell.m in Sources */,
+				185CB3FC19E7796F00DC8E8A /* VmDetailSnapshootVC.m in Sources */,
+				185CB3D919E7796F00DC8E8A /* DatacenterContainerVC.m in Sources */,
+				185CB3D419E7796F00DC8E8A /* MasterCollectionFooter.m in Sources */,
+				185CB40419E7796F00DC8E8A /* PopWarningInfoCellForTime.m in Sources */,
+				185CB3F519E7796F00DC8E8A /* PopControlRecordCellForTime.m in Sources */,
+				185CB3F919E7796F00DC8E8A /* VmDetailCPUConfigVC.m in Sources */,
+				185CB3F819E7796F00DC8E8A /* VmContainerVC.m in Sources */,
+				185CB3FB19E7796F00DC8E8A /* VmDetailMemryConfigVC.m in Sources */,
+				185CB3D619E7796F00DC8E8A /* MasterCollectionVC.m in Sources */,
+				185CB40319E7796F00DC8E8A /* PopWarningInfoCell.m in Sources */,
+				185CB3DE19E7796F00DC8E8A /* HostCollectionVC.m in Sources */,
+				185CB3E319E7796F00DC8E8A /* HostNicCollectionVC.m in Sources */,
+				185CB3F219E7796F00DC8E8A /* StorageDiskCollectionCell.m in Sources */,
+				185CB3E719E7796F00DC8E8A /* NetworkCollectionCell.m in Sources */,
+				185CB3FE19E7796F00DC8E8A /* VmMigrateSelectHostListCell.m in Sources */,
 				18A4D44219B560D400415896 /* AppDelegate.m in Sources */,
-				18C8467119E5A15F005FD404 /* DatacenterContainerVC.m in Sources */,
-				18B2341819E57D3C000A1FA1 /* VmNetworkCollectionVC.m in Sources */,
-				18B2340A19E57D3C000A1FA1 /* PopControlRecordCell.m in Sources */,
-				18B233FE19E57D3C000A1FA1 /* NetworkCollectionCell.m in Sources */,
-				18B233E319E57D3C000A1FA1 /* BusinessDetailInfoVC.m in Sources */,
-				18B2340619E57D3C000A1FA1 /* StorageCollectionVC.m in Sources */,
+				185CB3E619E7796F00DC8E8A /* LoginVC.m in Sources */,
+				185CB3D019E7796F00DC8E8A /* BusinessDetailInfoVC.m in Sources */,
+				185CB3E019E7796F00DC8E8A /* HostDetailInfoVC.m in Sources */,
+				185CB3EC19E7796F00DC8E8A /* PopOptionLicenseVC.m in Sources */,
+				185CB3F419E7796F00DC8E8A /* PopControlRecordCell.m in Sources */,
+				185CB40519E7796F00DC8E8A /* PopWarningInfoVC.m in Sources */,
+				185CB3D219E7796F00DC8E8A /* BusinessVmCollectionVC.m in Sources */,
+				185CB3E119E7796F00DC8E8A /* HostDetailPerformanceVC.m in Sources */,
+				185CB3FD19E7796F00DC8E8A /* VmDiskCollectionVC.m in Sources */,
 				18A4D43E19B560D400415896 /* main.m in Sources */,
-				18B2341019E57D3C000A1FA1 /* VmDetailCPUConfigVC.m in Sources */,
-				18B2341B19E57D3C000A1FA1 /* PopWarningInfoCellForTime.m in Sources */,
-				18B2340519E57D3C000A1FA1 /* PopOptionsVC.m in Sources */,
-				18C8467319E5A15F005FD404 /* DatacenterDetailInfoVC.m in Sources */,
-				18C8467519E5A15F005FD404 /* DatacenterTableVC.m in Sources */,
-				1809A7FD19E6CD450034052C /* StorageDiskCollectionVC.m in Sources */,
-				18B2340C19E57D3C000A1FA1 /* PopControlRecordVC.m in Sources */,
-				18B2341A19E57D3C000A1FA1 /* PopWarningInfoCell.m in Sources */,
-				18B2340919E57D3C000A1FA1 /* StorageDetailInfoVC.m in Sources */,
-				18B233E419E57D3C000A1FA1 /* MasterCollectionCell.m in Sources */,
-				18B2341119E57D3C000A1FA1 /* VmDetailInfoVC.m in Sources */,
-				18B2341519E57D3C000A1FA1 /* VmMigrateSelectHostListCell.m in Sources */,
-				18B233E519E57D3C000A1FA1 /* MasterCollectionHeader.m in Sources */,
-				18B233F919E57D3C000A1FA1 /* HostDetailPerformanceVC.m in Sources */,
-				18B2340419E57D3C000A1FA1 /* PopOptionsUserInfoVC.m in Sources */,
-				18B233E719E57D3C000A1FA1 /* MasterContainerVC.m in Sources */,
-				18B2340019E57D3C000A1FA1 /* NetworkContainerVC.m in Sources */,
-				18B233E219E57D3C000A1FA1 /* BusinessContainerVC.m in Sources */,
-				1809A7F119E677D80034052C /* MasterCollectionFooter.m in Sources */,
-				18B233FF19E57D3C000A1FA1 /* NetworkCollectionVC.m in Sources */,
+				185CB3F119E7796F00DC8E8A /* StorageDetailInfoVC.m in Sources */,
+				185CB3FA19E7796F00DC8E8A /* VmDetailInfoVC.m in Sources */,
+				185CB3D719E7796F00DC8E8A /* MasterContainerVC.m in Sources */,
+				185CB3DC19E7796F00DC8E8A /* DatacenterDetailMoreVC.m in Sources */,
+				185CB3ED19E7796F00DC8E8A /* PopOptionsUserInfoVC.m in Sources */,
+				185CB3EB19E7796F00DC8E8A /* PoolDetailInfoVC.m in Sources */,
+				185CB3DD19E7796F00DC8E8A /* DatacenterTableVC.m in Sources */,
+				185CB3D819E7796F00DC8E8A /* DatacenterContainerTableVC.m in Sources */,
+				185CB3EA19E7796F00DC8E8A /* PoolContainerVC.m in Sources */,
+				185CB3F019E7796F00DC8E8A /* StorageContainerVC.m in Sources */,
+				185CB3DF19E7796F00DC8E8A /* HostContainerVC.m in Sources */,
+				185CB3CF19E7796F00DC8E8A /* BusinessContainerVC.m in Sources */,
+				185CB3E819E7796F00DC8E8A /* NetworkCollectionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,14 +949,6 @@
 				18A4D43B19B560D400415896 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		18A4D44319B560D400415896 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A4D44419B560D400415896 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		18A4D45919B560D400415896 /* InfoPlist.strings */ = {
