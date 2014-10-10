@@ -114,22 +114,7 @@
 		18A4D43C19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D43A19B560D400415896 /* InfoPlist.strings */; };
 		18A4D43E19B560D400415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D43D19B560D400415896 /* main.m */; };
 		18A4D44219B560D400415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44119B560D400415896 /* AppDelegate.m */; };
-		18A4D45119B560D400415896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D45019B560D400415896 /* XCTest.framework */; };
-		18A4D45219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
-		18A4D45319B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
-		18A4D45B19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D45919B560D400415896 /* InfoPlist.strings */; };
-		18A4D45D19B560D400415896 /* WinCenter_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D45C19B560D400415896 /* WinCenter_iPhoneTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		18A4D45419B560D400415896 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18A4D42619B560D400415896 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18A4D42D19B560D400415896;
-			remoteInfo = "WinCenter-iPhone";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,7 +283,6 @@
 		18A4D43F19B560D400415896 /* WinCenter-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		18A4D44019B560D400415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D44119B560D400415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18A4D44F19B560D400415896 /* WinCenter-iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WinCenter-iPhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4D45019B560D400415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		18A4D45819B560D400415896 /* WinCenter-iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinCenter-iPhoneTests-Info.plist"; sourceTree = "<group>"; };
 		18A4D45A19B560D400415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -316,16 +300,6 @@
 				18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */,
 				18A4D43619B560D400415896 /* UIKit.framework in Frameworks */,
 				18A4D43219B560D400415896 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A4D44C19B560D400415896 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4D45119B560D400415896 /* XCTest.framework in Frameworks */,
-				18A4D45319B560D400415896 /* UIKit.framework in Frameworks */,
-				18A4D45219B560D400415896 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +602,6 @@
 			isa = PBXGroup;
 			children = (
 				18A4D42E19B560D400415896 /* WinCenter-iPhone.app */,
-				18A4D44F19B560D400415896 /* WinCenter-iPhoneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -711,24 +684,6 @@
 			productReference = 18A4D42E19B560D400415896 /* WinCenter-iPhone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18A4D44E19B560D400415896 /* WinCenter-iPhoneTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18A4D46319B560D400415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPhoneTests" */;
-			buildPhases = (
-				18A4D44B19B560D400415896 /* Sources */,
-				18A4D44C19B560D400415896 /* Frameworks */,
-				18A4D44D19B560D400415896 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18A4D45519B560D400415896 /* PBXTargetDependency */,
-			);
-			name = "WinCenter-iPhoneTests";
-			productName = "WinCenter-iPhoneTests";
-			productReference = 18A4D44F19B560D400415896 /* WinCenter-iPhoneTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -737,11 +692,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = huadi;
-				TargetAttributes = {
-					18A4D44E19B560D400415896 = {
-						TestTargetID = 18A4D42D19B560D400415896;
-					};
-				};
 			};
 			buildConfigurationList = 18A4D42919B560D400415896 /* Build configuration list for PBXProject "WinCenter-iPhone" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -757,7 +707,6 @@
 			projectRoot = "";
 			targets = (
 				18A4D42D19B560D400415896 /* WinCenter-iPhone */,
-				18A4D44E19B560D400415896 /* WinCenter-iPhoneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -813,14 +762,6 @@
 				185CB40719E7796F00DC8E8A /* ControlRecordVO.getControlRecordListViaObject.json in Resources */,
 				185CB41A19E7796F00DC8E8A /* PoolVO.getPoolVOAsync.json in Resources */,
 				185CB41019E7796F00DC8E8A /* HostVO.getHostNicGroupedListAsync.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A4D44D19B560D400415896 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4D45B19B560D400415896 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,23 +865,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18A4D44B19B560D400415896 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4D45D19B560D400415896 /* WinCenter_iPhoneTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18A4D45519B560D400415896 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18A4D42D19B560D400415896 /* WinCenter-iPhone */;
-			targetProxy = 18A4D45419B560D400415896 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18A4D43A19B560D400415896 /* InfoPlist.strings */ = {
@@ -1070,46 +995,6 @@
 			};
 			name = Release;
 		};
-		18A4D46419B560D400415896 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WinCenter-iPhone.app/WinCenter-iPhone";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WinCenter-iPhone/WinCenter-iPhone-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WinCenter-iPhoneTests/WinCenter-iPhoneTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		18A4D46519B560D400415896 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WinCenter-iPhone.app/WinCenter-iPhone";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WinCenter-iPhone/WinCenter-iPhone-Prefix.pch";
-				INFOPLIST_FILE = "WinCenter-iPhoneTests/WinCenter-iPhoneTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1127,15 +1012,6 @@
 			buildConfigurations = (
 				18A4D46119B560D400415896 /* Debug */,
 				18A4D46219B560D400415896 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18A4D46319B560D400415896 /* Build configuration list for PBXNativeTarget "WinCenter-iPhoneTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18A4D46419B560D400415896 /* Debug */,
-				18A4D46519B560D400415896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
