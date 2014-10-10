@@ -17,6 +17,7 @@
 		1809A7FD19E6CD450034052C /* StorageDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7FB19E6CD450034052C /* StorageDiskCollectionVC.m */; };
 		1858129219E6D62D0047C078 /* BusinessVmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858129119E6D62D0047C078 /* BusinessVmCollectionCell.m */; };
 		1858129519E6D6340047C078 /* BusinessVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858129419E6D6340047C078 /* BusinessVmCollectionVC.m */; };
+		185CB21E19E7740100DC8E8A /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */; };
 		18A4D43219B560D400415896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43119B560D400415896 /* Foundation.framework */; };
 		18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43319B560D400415896 /* CoreGraphics.framework */; };
 		18A4D43619B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
@@ -30,7 +31,6 @@
 		18A4D45319B560D400415896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4D43519B560D400415896 /* UIKit.framework */; };
 		18A4D45B19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D45919B560D400415896 /* InfoPlist.strings */; };
 		18A4D45D19B560D400415896 /* WinCenter_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D45C19B560D400415896 /* WinCenter_iPhoneTests.m */; };
-		18B2325719E57462000A1FA1 /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */; };
 		18B233C119E57D3C000A1FA1 /* BusinessVO.getBusinessVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331B19E57D3B000A1FA1 /* BusinessVO.getBusinessVOAsync.json */; };
 		18B233C219E57D3C000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331C19E57D3B000A1FA1 /* ControlRecordVO.getControlRecordListViaObject.json */; };
 		18B233C319E57D3C000A1FA1 /* DatacenterVO.getBusinessListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B2331D19E57D3B000A1FA1 /* DatacenterVO.getBusinessListAsync.json */; };
@@ -312,7 +312,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B2325719E57462000A1FA1 /* libWinCenter-Common.a in Frameworks */,
+				185CB21E19E7740100DC8E8A /* libWinCenter-Common.a in Frameworks */,
 				18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */,
 				18A4D43619B560D400415896 /* UIKit.framework in Frameworks */,
 				18A4D43219B560D400415896 /* Foundation.framework in Frameworks */,

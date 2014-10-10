@@ -11,6 +11,7 @@
 		1809A7F719E6CC7A0034052C /* MasterCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809A7F619E6CC7A0034052C /* MasterCollectionFooter.m */; };
 		1858128C19E6D5DE0047C078 /* BusinessVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858128B19E6D5DE0047C078 /* BusinessVmCollectionVC.m */; };
 		1858128F19E6D6130047C078 /* BusinessVmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858128E19E6D6130047C078 /* BusinessVmCollectionCell.m */; };
+		185CB22019E7740C00DC8E8A /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185CB21F19E7740C00DC8E8A /* libWinCenter-Common.a */; };
 		187C40B419E2C95A000D1500 /* BusinessVO.getBusinessVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409619E2C95A000D1500 /* BusinessVO.getBusinessVOAsync.json */; };
 		187C40B519E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409719E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.json */; };
 		187C40B619E2C95A000D1500 /* DatacenterVO.getDatacenterListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 187C409819E2C95A000D1500 /* DatacenterVO.getDatacenterListAsync.json */; };
@@ -101,7 +102,6 @@
 		18B2331719E57C7C000A1FA1 /* PopWarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B232DA19E57C7C000A1FA1 /* PopWarningInfoCell.m */; };
 		18B2331819E57C7C000A1FA1 /* PopWarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B232DC19E57C7C000A1FA1 /* PopWarningInfoCellForTime.m */; };
 		18B2331919E57C7C000A1FA1 /* PopWarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B232DE19E57C7C000A1FA1 /* PopWarningInfoVC.m */; };
-		18B3BEF919DAD42F00E68AC3 /* libWinCenter-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */; };
 		18C8466319E5875C005FD404 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8466219E5875C005FD404 /* Task.storyboard */; };
 		18C8466519E587AC005FD404 /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8466419E587AC005FD404 /* Warning.storyboard */; };
 		18C8468319E61DBD005FD404 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C8468219E61DBD005FD404 /* Network.storyboard */; };
@@ -123,6 +123,7 @@
 		1858128B19E6D5DE0047C078 /* BusinessVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionVC.m; sourceTree = "<group>"; };
 		1858128D19E6D6130047C078 /* BusinessVmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionCell.h; sourceTree = "<group>"; };
 		1858128E19E6D6130047C078 /* BusinessVmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionCell.m; sourceTree = "<group>"; };
+		185CB21F19E7740C00DC8E8A /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		187C409619E2C95A000D1500 /* BusinessVO.getBusinessVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessVO.getBusinessVOAsync.json; sourceTree = "<group>"; };
 		187C409719E2C95A000D1500 /* DatacenterVO.getBusinessListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.json; sourceTree = "<group>"; };
 		187C409819E2C95A000D1500 /* DatacenterVO.getDatacenterListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterListAsync.json; sourceTree = "<group>"; };
@@ -290,7 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B3BEF919DAD42F00E68AC3 /* libWinCenter-Common.a in Frameworks */,
+				185CB22019E7740C00DC8E8A /* libWinCenter-Common.a in Frameworks */,
 				18A4D32219B556BA00415896 /* CoreGraphics.framework in Frameworks */,
 				18A4D32419B556BA00415896 /* UIKit.framework in Frameworks */,
 				18A4D32019B556BA00415896 /* Foundation.framework in Frameworks */,
@@ -362,6 +363,7 @@
 		18A4D31E19B556BA00415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185CB21F19E7740C00DC8E8A /* libWinCenter-Common.a */,
 				18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */,
 				18A4D31F19B556BA00415896 /* Foundation.framework */,
 				18A4D32119B556BA00415896 /* CoreGraphics.framework */,
@@ -957,6 +959,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/apple/Documents/xcodes/winhong-ios/WinCenter-Common/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -977,6 +980,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/apple/Documents/xcodes/winhong-ios/WinCenter-Common/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;

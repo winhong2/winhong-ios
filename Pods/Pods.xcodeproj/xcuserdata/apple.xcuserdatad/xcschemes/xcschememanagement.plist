@@ -8,97 +8,81 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Pods-WinCenter-Common-PNChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>Pods-WinCenter-Common-UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>Pods-WinCenter-Common-Unirest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>Pods-WinCenter-Common.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Pods-Zkuyun-iPhone-ObjQREncoder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
 		</dict>
 		<key>Pods-Zkuyun-iPhone-RATreeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
 		</dict>
 		<key>Pods-Zkuyun-iPhone.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>19948C1A73D04F9388D5CF55</key>
+		<key>056F86E88F004298B428EC68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2324FEC99543465083F926F7</key>
+		<key>0CEF4C93B81C407886EF4FBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2D16DAF5A5554515A0071B70</key>
+		<key>3FE0FBF4C3A74C2FACE9AE3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49CCEE34EDFB4F7A8F9B964B</key>
+		<key>4C3AC5FBFF4B4FE589A0E2CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59E3721DB3B4453D9E409459</key>
+		<key>A7469E85CCA84C67A9DD26F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F57D6C0DAAE432DA0BDAA0D</key>
+		<key>BE82605B43A3463C8438A8E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B02D21473A9544D6992DE84F</key>
+		<key>C27D1F941E6D40B2AF265879</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0F5702ACD8D46FDB583911F</key>
+		<key>F9B99213888649EEAFD8A442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
