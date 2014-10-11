@@ -16,11 +16,12 @@
 @implementation DatacenterMenuVC
 
 - (void)viewDidLoad {
+    self.tableView.backgroundColor = [UIColor whiteColor];
     [super viewDidLoad];
 }
 
 - (IBAction)switchTabBar:(id)sender {
-    [((MasterContainerVC *)self.parentViewController) switchPageVC:((UIButton*)sender).tag];
+    [self.tabBarVC setSelectedIndex:((UIButton*)sender).tag];
 }
 
 

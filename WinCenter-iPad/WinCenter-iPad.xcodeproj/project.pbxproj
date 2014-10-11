@@ -132,6 +132,8 @@
 		18A4D32A19B556BA00415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D32819B556BA00415896 /* InfoPlist.strings */; };
 		18A4D32C19B556BA00415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D32B19B556BA00415896 /* main.m */; };
 		18A4D33019B556BA00415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D32F19B556BA00415896 /* AppDelegate.m */; };
+		18C24BF319E905EF00F5479D /* DatacenterDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C24BF219E905EF00F5479D /* DatacenterDashboardVC.m */; };
+		18C24BF619E9231800F5479D /* DatacenterDetailCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C24BF519E9231800F5479D /* DatacenterDetailCollectionHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -326,6 +328,10 @@
 		18A4D34819B556BA00415896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A4D34A19B556BA00415896 /* WinCenter_iPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinCenter_iPadTests.m; sourceTree = "<group>"; };
 		18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../WinCenter-Common/build/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
+		18C24BF119E905EF00F5479D /* DatacenterDashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDashboardVC.h; sourceTree = "<group>"; };
+		18C24BF219E905EF00F5479D /* DatacenterDashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDashboardVC.m; sourceTree = "<group>"; };
+		18C24BF419E9231800F5479D /* DatacenterDetailCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailCollectionHeader.h; sourceTree = "<group>"; };
+		18C24BF519E9231800F5479D /* DatacenterDetailCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailCollectionHeader.m; sourceTree = "<group>"; };
 		3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPad.xcconfig"; path = "../Pods/Pods-WinCenter-iPad.xcconfig"; sourceTree = "<group>"; };
 		9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -414,8 +420,12 @@
 				185CB23919E778FD00DC8E8A /* DatacenterContainerTableVC.m */,
 				185CB23A19E778FD00DC8E8A /* DatacenterContainerVC.h */,
 				185CB23B19E778FD00DC8E8A /* DatacenterContainerVC.m */,
+				18C24BF119E905EF00F5479D /* DatacenterDashboardVC.h */,
+				18C24BF219E905EF00F5479D /* DatacenterDashboardVC.m */,
 				185CB23C19E778FD00DC8E8A /* DatacenterDetailCollectionVC.h */,
 				185CB23D19E778FD00DC8E8A /* DatacenterDetailCollectionVC.m */,
+				18C24BF419E9231800F5479D /* DatacenterDetailCollectionHeader.h */,
+				18C24BF519E9231800F5479D /* DatacenterDetailCollectionHeader.m */,
 				185CB23E19E778FD00DC8E8A /* DatacenterDetailInfoVC.h */,
 				185CB23F19E778FD00DC8E8A /* DatacenterDetailInfoVC.m */,
 				185CB24019E778FD00DC8E8A /* DatacenterDetailMoreVC.h */,
@@ -895,6 +905,7 @@
 				185CB2F319E778FD00DC8E8A /* VmNewVC.m in Sources */,
 				185CB2F019E778FD00DC8E8A /* VmMigrateSelectHostListVC.m in Sources */,
 				185CB2DA19E778FD00DC8E8A /* NetworkContainerVC.m in Sources */,
+				18C24BF619E9231800F5479D /* DatacenterDetailCollectionHeader.m in Sources */,
 				185CB2E419E778FD00DC8E8A /* StorageDiskCollectionVC.m in Sources */,
 				185CB44619E7AAB400DC8E8A /* DatacenterMenuVC.m in Sources */,
 				185CB2D619E778FD00DC8E8A /* LoginTableVC.m in Sources */,
@@ -928,6 +939,7 @@
 				18A4D33019B556BA00415896 /* AppDelegate.m in Sources */,
 				185CB2D719E778FD00DC8E8A /* LoginVC.m in Sources */,
 				185CB2C119E778FD00DC8E8A /* BusinessDetailInfoVC.m in Sources */,
+				18C24BF319E905EF00F5479D /* DatacenterDashboardVC.m in Sources */,
 				185CB2D119E778FD00DC8E8A /* HostDetailInfoVC.m in Sources */,
 				185CB2DD19E778FD00DC8E8A /* PopOptionLicenseVC.m in Sources */,
 				185CB2E519E778FD00DC8E8A /* PopControlRecordCell.m in Sources */,

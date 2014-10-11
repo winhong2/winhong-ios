@@ -10,5 +10,6 @@
 
 @interface DatacenterMenuVC : UITableViewController
 
+@property UITabBarController *tabBarVC;
 
 @end

@@ -946,6 +946,9 @@
                     <navigationItem key="navigationItem" id="9MO-uX-sLc"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="btnMigrate" destination="4tD-Tm-kMS" id="mh7-AN-rWG"/>
                         <outlet property="btnOperation" destination="L0f-RE-LYa" id="0kw-ZS-UwR"/>

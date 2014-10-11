@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="qIm-ao-Ald">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -149,6 +150,7 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="switchPageVC_withoutAnimation" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isPageVCDataSourceNil" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="buttonConfig" destination="jij-ed-KYr" id="Aye-dL-RSO"/>
@@ -1049,6 +1051,9 @@
                     <navigationItem key="navigationItem" id="j6W-n7-4Ua"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="ipLabel" destination="DFO-WD-vd2" id="ys2-AB-Uhh"/>
                         <outlet property="pageVCContainer" destination="q8y-EI-FNP" id="0Ba-JS-cw2"/>

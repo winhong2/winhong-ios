@@ -1005,6 +1005,9 @@
                     <navigationItem key="navigationItem" id="bGE-Lo-6zM"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="btnCreateVM" destination="eku-sN-u80" id="qKZ-HW-vbF"/>
                         <outlet property="buttonTask" destination="Ha1-GX-9xP" id="m0o-9S-roN"/>

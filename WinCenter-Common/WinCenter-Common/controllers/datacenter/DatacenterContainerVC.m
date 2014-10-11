@@ -19,7 +19,9 @@
     [DatacenterVO getDatacenterListAsync:^(NSArray *allRemote, NSError *error) {
         if(allRemote.count>0){
             [RemoteObject setCurrentDatacenterVO:[allRemote firstObject]];
-            [self.infoVC refresh];            
+            if(self.infoVC){
+                [self.infoVC refresh];
+            }
             [self refresh];
         }else{
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"友情提示" message:@"尚没有配置任何数据中心，请联系虚拟化平台管理员！" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
@@ -31,7 +33,9 @@
 - (void)didFinished:(DatacenterTableVC *)controller{
     if(self.popoverVC){
         [self.popoverVC dismissPopoverAnimated:YES];
-        [self.infoVC refresh];
+        if(self.infoVC){
+            [self.infoVC refresh];
+        }
         [self refresh];
     }
 }
@@ -46,8 +50,6 @@
         
     }else if([segue.identifier isEqualToString:@"toInfoVC"]){
         self.infoVC = segue.destinationViewController;
-    }else if([segue.identifier isEqualToString:@"toMenuVC"]){
-        self.menuVC = segue.destinationViewController;
     }
     
 }
@@ -55,37 +57,20 @@
 - (void)refresh{
     self.titleLabel.text = [RemoteObject getCurrentDatacenterVO].name;
     
-    if(false){
-        NSMutableArray *pages = [[NSMutableArray alloc] initWithCapacity:1];
-        UINavigationController *homeNav = [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailInfoVCNav"];
-        [pages addObject:homeNav];
-        
-        for(int i=Page_Pool; i<=Page_Business; i++){
-            UINavigationController *nav = [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVCNav"];
-            DatacenterDetailCollectionVC *collectionVC = [[nav childViewControllers] firstObject];
-            collectionVC.pageType = i;
-            collectionVC.isMore = YES;
-            [pages addObject:nav];
-        }
-        
-        self.pages = pages;
-        
-    }else{
-        self.pages = @[
-            [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-            [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-            [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-            [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-            [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-            [[UIStoryboard storyboardWithName:@"Network"] instantiateInitialViewController]
-        ];
-        
-        ((DatacenterDetailCollectionVC*)self.pages[0]).pageType = Page_Pool;
-        ((DatacenterDetailCollectionVC*)self.pages[1]).pageType = Page_Host;
-        ((DatacenterDetailCollectionVC*)self.pages[2]).pageType = Page_Storage;
-        ((DatacenterDetailCollectionVC*)self.pages[3]).pageType = Page_VM;
-        ((DatacenterDetailCollectionVC*)self.pages[4]).pageType = Page_Business;
-    }
+    self.pages = @[
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
+        [[UIStoryboard storyboardWithName:@"Network"] instantiateInitialViewController]
+    ];
+    
+    ((DatacenterDetailCollectionVC*)self.pages[0]).pageType = Page_Pool;
+    ((DatacenterDetailCollectionVC*)self.pages[1]).pageType = Page_Host;
+    ((DatacenterDetailCollectionVC*)self.pages[2]).pageType = Page_Storage;
+    ((DatacenterDetailCollectionVC*)self.pages[3]).pageType = Page_VM;
+    ((DatacenterDetailCollectionVC*)self.pages[4]).pageType = Page_Business;
     
     [super refresh];
 }

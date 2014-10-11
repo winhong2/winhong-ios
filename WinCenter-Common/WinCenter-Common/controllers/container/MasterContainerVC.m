@@ -43,7 +43,7 @@
     
     options = @{UIPageViewControllerOptionInterPageSpacingKey: @200};
     
-    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:(([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) ?UIPageViewControllerNavigationOrientationVertical : UIPageViewControllerNavigationOrientationHorizontal) options:options];
+    self.pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:(self.isOrientationVertical ?UIPageViewControllerNavigationOrientationVertical : UIPageViewControllerNavigationOrientationHorizontal) options:options];
     [self addChildViewController:self.pageVC];
     for(UIView *subView in self.pageVCContainer.subviews){
         [subView removeFromSuperview];
@@ -82,6 +82,9 @@
             subButton.selected = (subButton.tag == index);
         }
     }
+}
+- (IBAction)showPageBarItemClick:(id)sender {
+    [self switchPageVC:((UIBarButtonItem*)sender).tag];
 }
 - (IBAction)showPageButtonClick:(id)sender{
     UIButton *button = sender;
@@ -142,6 +145,15 @@
     }
 }
 
+-(IBAction)showWarningInfoVCWithBarItem:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning"] instantiateInitialViewController];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    [self.popover presentPopoverFromBarButtonItem:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
 
 
 @end
