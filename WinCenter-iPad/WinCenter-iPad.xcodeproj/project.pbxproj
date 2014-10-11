@@ -166,7 +166,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		185CB21F19E7740C00DC8E8A /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		185CB22319E778FD00DC8E8A /* BusinessContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessContainerVC.h; sourceTree = "<group>"; };
 		185CB22419E778FD00DC8E8A /* BusinessContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessContainerVC.m; sourceTree = "<group>"; };
 		185CB22519E778FD00DC8E8A /* BusinessDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailInfoVC.h; sourceTree = "<group>"; };
@@ -421,8 +420,6 @@
 		18A4D32D19B556BA00415896 /* WinCenter-iPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPad-Prefix.pch"; sourceTree = "<group>"; };
 		18A4D32E19B556BA00415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D32F19B556BA00415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18A4D33E19B556BA00415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../WinCenter-Common/build/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		18C24BF119E905EF00F5479D /* DatacenterDashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDashboardVC.h; sourceTree = "<group>"; };
 		18C24BF219E905EF00F5479D /* DatacenterDashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDashboardVC.m; sourceTree = "<group>"; };
 		18C24BF419E9231800F5479D /* DatacenterDetailCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailCollectionHeader.h; sourceTree = "<group>"; };
@@ -848,12 +845,9 @@
 		18A4D31E19B556BA00415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				185CB21F19E7740C00DC8E8A /* libWinCenter-Common.a */,
-				18B3BEF819DAD42F00E68AC3 /* libWinCenter-Common.a */,
 				18A4D31F19B556BA00415896 /* Foundation.framework */,
 				18A4D32119B556BA00415896 /* CoreGraphics.framework */,
 				18A4D32319B556BA00415896 /* UIKit.framework */,
-				18A4D33E19B556BA00415896 /* XCTest.framework */,
 				9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */,
 			);
 			name = Frameworks;

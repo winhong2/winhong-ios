@@ -338,7 +338,6 @@
 		1886D48B19E97AAB005E1645 /* Task_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task_Theme.storyboard; sourceTree = "<group>"; };
 		1886D48C19E97AAB005E1645 /* VM_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VM_Theme.storyboard; sourceTree = "<group>"; };
 		1886D48D19E97AAB005E1645 /* Warning_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning_Theme.storyboard; sourceTree = "<group>"; };
-		1886D4A519E97BF1005E1645 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		1886D4A719E97C29005E1645 /* WinCenter-Theme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-Theme-Prefix.pch"; sourceTree = "<group>"; };
 		1886D4BB19E97F5A005E1645 /* BusinessListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessListResult.h; sourceTree = "<group>"; };
 		1886D4BC19E97F5A005E1645 /* BusinessListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessListResult.m; sourceTree = "<group>"; };
@@ -438,7 +437,6 @@
 		1886D34019E97942005E1645 = {
 			isa = PBXGroup;
 			children = (
-				1886D4A519E97BF1005E1645 /* libWinCenter-Common.a */,
 				1886D34B19E97942005E1645 /* WinCenter-Theme */,
 				1886D34A19E97942005E1645 /* Products */,
 				22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */,

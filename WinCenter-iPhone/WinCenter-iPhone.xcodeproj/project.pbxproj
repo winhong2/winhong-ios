@@ -416,8 +416,6 @@
 		18A4D43F19B560D400415896 /* WinCenter-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		18A4D44019B560D400415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D44119B560D400415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18A4D45019B560D400415896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libWinCenter-Common.a"; path = "../../../../Library/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos/libWinCenter-Common.a"; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -832,11 +830,9 @@
 		18A4D43019B560D400415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18B2325519E5724F000A1FA1 /* libWinCenter-Common.a */,
 				18A4D43119B560D400415896 /* Foundation.framework */,
 				18A4D43319B560D400415896 /* CoreGraphics.framework */,
 				18A4D43519B560D400415896 /* UIKit.framework */,
-				18A4D45019B560D400415896 /* XCTest.framework */,
 				13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */,
 			);
 			name = Frameworks;
