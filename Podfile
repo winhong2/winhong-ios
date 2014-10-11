@@ -1,8 +1,8 @@
 #export LC_CTYPE="en_US.UTF-8"
 
 workspace 'Winhong.xcworkspace'
-xcodeproj 'WinCenter-Common/WinCenter-Common.xcodeproj'
 xcodeproj 'WinCenter-iPad/WinCenter-iPad.xcodeproj'
+xcodeproj 'WinCenter-Theme/WinCenter-Theme.xcodeproj'
 xcodeproj 'WinCenter-iPhone/WinCenter-iPhone.xcodeproj'
 xcodeproj 'WinHelper-iPhone/WinHelper-iPhone.xcodeproj'
 xcodeproj 'LightApp-iPhone/LightApp-iPhone.xcodeproj'
@@ -10,19 +10,24 @@ xcodeproj 'Zkuyun-iPhone/Zkuyun-iPhone.xcodeproj'
 
 platform :ios, '7.1'
 
-target 'WinCenter-Common' do
+target 'WinCenter-iPad' do
     pod 'PNChart', '~> 0.5'
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'
-    
-    xcodeproj 'WinCenter-Common/WinCenter-Common.xcodeproj'
-end
-
-target 'WinCenter-iPad' do
  xcodeproj 'WinCenter-iPad/WinCenter-iPad.xcodeproj'
 end
 
+target 'WinCenter-Theme' do
+    pod 'PNChart', '~> 0.5'
+    pod 'Unirest', '~> 1.1.3'
+    pod 'NSObject-ObjectMap', '~> 2.3.1'
+    xcodeproj 'WinCenter-Theme/WinCenter-Theme.xcodeproj'
+end
+
 target 'WinCenter-iPhone' do
+    pod 'PNChart', '~> 0.5'
+    pod 'Unirest', '~> 1.1.3'
+    pod 'NSObject-ObjectMap', '~> 2.3.1'
  xcodeproj 'WinCenter-iPhone/WinCenter-iPhone.xcodeproj'
 end
 

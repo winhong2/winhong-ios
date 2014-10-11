@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "972DA603EBC34A199FA2FC63"
-               BuildableName = "libPods-WinCenter-Common-NSObject-ObjectMap.a"
-               BlueprintName = "Pods-WinCenter-Common-NSObject-ObjectMap"
+               BlueprintIdentifier = "FDA9A9F263574AA5BB1CE705"
+               BuildableName = "libPods-WinCenter-Theme.a"
+               BlueprintName = "Pods-WinCenter-Theme"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -62,6 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1886D4A819E97E68005E1645 /* libPods-WinCenter-Common-NSObject-ObjectMap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WinCenter-Common-NSObject-ObjectMap.a"; path = "../Pods/build/Debug-iphoneos/libPods-WinCenter-Common-NSObject-ObjectMap.a"; sourceTree = "<group>"; };
+		1886D4A919E97E68005E1645 /* libPods-WinCenter-Common-PNChart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WinCenter-Common-PNChart.a"; path = "../Pods/build/Debug-iphoneos/libPods-WinCenter-Common-PNChart.a"; sourceTree = "<group>"; };
+		1886D4AA19E97E68005E1645 /* libPods-WinCenter-Common-UICountingLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WinCenter-Common-UICountingLabel.a"; path = "../Pods/build/Debug-iphoneos/libPods-WinCenter-Common-UICountingLabel.a"; sourceTree = "<group>"; };
+		1886D4AB19E97E68005E1645 /* libPods-WinCenter-Common-Unirest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WinCenter-Common-Unirest.a"; path = "../Pods/build/Debug-iphoneos/libPods-WinCenter-Common-Unirest.a"; sourceTree = "<group>"; };
 		18B3BEE119DAD3C100E68AC3 /* libWinCenter-Common.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libWinCenter-Common.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B3BEFB19DAD57900E68AC3 /* RemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteObject.h; sourceTree = "<group>"; };
 		18B3BEFC19DAD57900E68AC3 /* RemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteObject.m; sourceTree = "<group>"; };
@@ -283,6 +287,10 @@
 		F01EF6FB2F78482A9CBC953D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1886D4A819E97E68005E1645 /* libPods-WinCenter-Common-NSObject-ObjectMap.a */,
+				1886D4A919E97E68005E1645 /* libPods-WinCenter-Common-PNChart.a */,
+				1886D4AA19E97E68005E1645 /* libPods-WinCenter-Common-UICountingLabel.a */,
+				1886D4AB19E97E68005E1645 /* libPods-WinCenter-Common-Unirest.a */,
 				4D6F873C9E234CD794FFA17C /* libPods-WinCenter-Common.a */,
 			);
 			name = Frameworks;
@@ -503,6 +511,10 @@
 			baseConfigurationReference = B6610C40B6DC4FFAA6BC6214 /* Pods-WinCenter-Common.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "WinCenter-Common/WinCenter-Common-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/apple/Documents/xcodes/winhong-ios/Pods/build/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -514,6 +526,10 @@
 			baseConfigurationReference = B6610C40B6DC4FFAA6BC6214 /* Pods-WinCenter-Common.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "WinCenter-Common/WinCenter-Common-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/apple/Documents/xcodes/winhong-ios/Pods/build/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

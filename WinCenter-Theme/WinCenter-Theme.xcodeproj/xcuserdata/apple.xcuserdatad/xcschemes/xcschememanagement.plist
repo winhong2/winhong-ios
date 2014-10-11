@@ -4,15 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WinCenter-Common.xcscheme</key>
+		<key>WinCenter-Theme.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>18B3BEE019DAD3C100E68AC3</key>
+		<key>1886D34819E97942005E1645</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1886D36119E97943005E1645</key>
 		<dict>
 			<key>primary</key>
 			<true/>
