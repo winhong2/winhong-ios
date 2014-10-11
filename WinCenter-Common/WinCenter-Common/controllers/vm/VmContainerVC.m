@@ -104,12 +104,27 @@
     }
 }
 - (IBAction)openVm:(id)sender {
-    [self.vmVO VmOperation:@"OK" async:^(NSError *error) {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alert show];
-        [self hideControlBtn];
-    }];
+    UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"安全操作" message:@"再次确认操作" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    confirm.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+    [confirm show];
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex==1){
+        if(([[alertView textFieldAtIndex:0].text isEqualToString:@"admin"]) && ([[alertView textFieldAtIndex:1].text isEqualToString:@"passw0rd"])){
+            [self.vmVO VmOperation:@"OK" async:^(NSError *error) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alert show];
+                [self hideControlBtn];
+            }];
+        }else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"错误的用户名或密码！" delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles: nil];
+            [alert show];
+        }
+    }
+}
+
+
 - (IBAction)shutdownVm:(id)sender {
     [self.vmVO VmOperation:@"STOPPED" async:^(NSError *error) {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在关机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
