@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EG6-mW-MKn">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
+        <deployment defaultVersion="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -483,19 +483,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="1K4-QS-dTo">
-                            <size key="itemSize" width="300" height="190"/>
+                            <size key="itemSize" width="288" height="253"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="40" minY="5" maxX="40" maxY="5"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StorageCollectionCell" id="tNX-sn-lNo" customClass="MasterCollectionCell">
                                 <rect key="frame" x="362" y="45" width="300" height="190"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="190"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="253"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池－存储池－面板" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-Ua-G7X">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="253"/>
+                                        </imageView>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EUj-jm-aZp">
                                             <rect key="frame" x="50" y="29" width="189" height="158"/>
                                             <subviews>
@@ -554,7 +557,6 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <size key="customSize" width="300" height="190"/>
                                 <connections>
                                     <outlet property="label1" destination="IlP-GW-gZN" id="uy0-ws-OAh"/>
                                     <outlet property="label2" destination="OYY-Cy-Htx" id="O2L-5s-rzI"/>
@@ -589,6 +591,7 @@
         <image name="数据盘卡片框" width="246" height="100"/>
         <image name="白色线框2" width="234" height="107"/>
         <image name="背景" width="1024" height="768"/>
+        <image name="资源池－存储池－面板" width="288" height="253"/>
         <image name="默认图标" width="38" height="33"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

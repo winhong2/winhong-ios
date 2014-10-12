@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EdM-4a-ek9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--数据中心选择-->
         <scene sceneID="4Ik-YS-bRO">
             <objects>
-                <tableViewController storyboardIdentifier="DatacenterTableVC" id="sQn-Ri-kOh" customClass="DatacenterTableVC" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DatacenterTableVC" hidesBottomBarWhenPushed="YES" id="sQn-Ri-kOh" customClass="DatacenterTableVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TBV-yt-Euz">
                         <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,7 +281,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xer-eL-n7y">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pfY-GC-a2g" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DatacenterTableVCNav" automaticallyAdjustsScrollViewInsets="NO" id="pfY-GC-a2g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="aaE-rp-Yss">
@@ -304,95 +305,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="aDP-R0-IEn">
-                            <size key="itemSize" width="243" height="150"/>
-                            <size key="headerReferenceSize" width="50" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aDP-R0-IEn">
+                            <size key="itemSize" width="288" height="280"/>
+                            <size key="headerReferenceSize" width="50" height="358"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="15" maxX="10" maxY="15"/>
+                            <inset key="sectionInset" minX="20" minY="15" maxX="20" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterPoolCollectionCell" id="ndQ-2U-ITz" customClass="MasterCollectionCell">
                                 <rect key="frame" x="10" y="55" width="243" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="280"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池-摘要-面板" translatesAutoresizingMaskIntoConstraints="NO" id="7QH-Em-d1v">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="280"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRk-ZP-ZoH">
-                                            <rect key="frame" x="11" y="12" width="212" height="21"/>
+                                            <rect key="frame" x="11" y="12" width="269" height="45"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="物理机" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jts-x6-i4N">
-                                            <rect key="frame" x="41" y="108" width="41" height="21"/>
+                                            <rect key="frame" x="37" y="77" width="41" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPU：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-rU-U7u">
-                                            <rect key="frame" x="110" y="72" width="41" height="21"/>
+                                            <rect key="frame" x="37" y="120" width="41" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内存：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAN-lB-Bek">
-                                            <rect key="frame" x="110" y="94" width="48" height="21"/>
+                                            <rect key="frame" x="37" y="142" width="48" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存储：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYF-jA-fYI">
-                                            <rect key="frame" x="110" y="116" width="48" height="21"/>
+                                            <rect key="frame" x="37" y="164" width="48" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="运行虚拟机：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIw-OB-WNG">
-                                            <rect key="frame" x="110" y="50" width="74" height="21"/>
+                                            <rect key="frame" x="37" y="98" width="74" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkz-F1-mPK">
-                                            <rect key="frame" x="190" y="51" width="39" height="21"/>
+                                            <rect key="frame" x="225" y="97" width="39" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-sH-o5D">
-                                            <rect key="frame" x="153" y="72" width="76" height="21"/>
+                                            <rect key="frame" x="204" y="118" width="76" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-Pv-3lb">
-                                            <rect key="frame" x="153" y="116" width="76" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="资源池图标-black" translatesAutoresizingMaskIntoConstraints="NO" id="Lk5-7e-u1a">
-                                            <rect key="frame" x="11" y="65" width="55" height="40"/>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-虚拟机数-black" translatesAutoresizingMaskIntoConstraints="NO" id="PQe-gp-eXV">
-                                            <rect key="frame" x="90" y="56" width="12" height="10"/>
+                                            <rect key="frame" x="17" y="104" width="12" height="10"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-cpu线程-black" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-d3-YNo">
-                                            <rect key="frame" x="90" y="76" width="12" height="12"/>
+                                            <rect key="frame" x="17" y="124" width="12" height="12"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-内存-black" translatesAutoresizingMaskIntoConstraints="NO" id="pkE-3Q-tdW">
-                                            <rect key="frame" x="90" y="98" width="12" height="12"/>
+                                            <rect key="frame" x="17" y="146" width="12" height="12"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-存储-black" translatesAutoresizingMaskIntoConstraints="NO" id="FsX-oc-Yec">
-                                            <rect key="frame" x="90" y="120" width="12" height="12"/>
+                                            <rect key="frame" x="17" y="168" width="12" height="12"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjR-IG-ScA">
-                                            <rect key="frame" x="153" y="95" width="76" height="21"/>
+                                            <rect key="frame" x="204" y="138" width="76" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoU-FF-s3Z">
-                                            <rect key="frame" x="11" y="108" width="30" height="21"/>
+                                            <rect key="frame" x="250" y="71" width="30" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-Pv-3lb">
+                                            <rect key="frame" x="204" y="160" width="76" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-黄色" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-YC-FjV">
+                                            <rect key="frame" x="110" y="80" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-蓝色" translatesAutoresizingMaskIntoConstraints="NO" id="dNh-i2-e2k">
+                                            <rect key="frame" x="110" y="103" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条－绿色" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-cQ-0FW">
+                                            <rect key="frame" x="110" y="124" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-红色" translatesAutoresizingMaskIntoConstraints="NO" id="Nfs-Pq-uST">
+                                            <rect key="frame" x="110" y="145" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条－湖蓝色" translatesAutoresizingMaskIntoConstraints="NO" id="BNX-lb-g6d">
+                                            <rect key="frame" x="110" y="167" width="59" height="10"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -410,7 +426,24 @@
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterDetailCollectionHeader" id="Z7B-fH-gJJ">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <color key="backgroundColor" red="0.67241191730000005" green="0.92045998090000003" blue="0.49891474759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <subviews>
+                                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UnV-5d-cXR">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                    <items>
+                                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="tfN-0d-7yl"/>
+                                        <barButtonItem image="数据中心图标" id="Y4i-uh-Dgk"/>
+                                        <barButtonItem title="广东省数据中心" id="PSP-np-Fnh"/>
+                                    </items>
+                                </toolbar>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池色块" translatesAutoresizingMaskIntoConstraints="NO" id="ox6-6Q-GX9">
+                                    <rect key="frame" x="20" y="64" width="202" height="274"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="UnV-5d-cXR" firstAttribute="leading" secondItem="Z7B-fH-gJJ" secondAttribute="leadingMargin" constant="-8" id="GAL-V2-SY2"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="UnV-5d-cXR" secondAttribute="trailing" constant="-8" id="aGd-Va-h7c"/>
+                            </constraints>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="buB-ce-6JP" id="K5z-Cc-GpB"/>
@@ -422,13 +455,13 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="4aa-aH-K4Q"/>
                         <barButtonItem title="分类选项" id="h2X-wO-pdD"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="tor-TK-1iw"/>
-                        <barButtonItem title="任务" id="Y0L-od-91a">
+                        <barButtonItem image="操作记录" id="Y0L-od-91a">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="buB-ce-6JP" id="xO8-QM-MND"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="o3W-qO-An8"/>
-                        <barButtonItem title="告警" id="LJy-8Y-jgj">
+                        <barButtonItem image="告警信息" id="LJy-8Y-jgj">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="buB-ce-6JP" id="9Nd-fg-6BY"/>
                             </connections>
@@ -493,202 +526,165 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq1-ei-cxf">
-                                <rect key="frame" x="300" y="72" width="320" height="407"/>
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
                                 <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="自源池－首页" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-gh-dTj">
+                                        <rect key="frame" x="0.0" y="0.0" width="969" height="405"/>
+                                    </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="资源池" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8L-R9-a5o">
-                                        <rect key="frame" x="21" y="12" width="51" height="21"/>
+                                        <rect key="frame" x="810" y="244" width="51" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="物理机" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ct-e4-4sM">
-                                        <rect key="frame" x="95" y="12" width="51" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="池内物理机" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ct-e4-4sM">
+                                        <rect key="frame" x="855" y="139" width="70" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="业务系统" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwN-BK-kHZ">
-                                        <rect key="frame" x="244" y="12" width="68" height="21"/>
+                                        <rect key="frame" x="785" y="47" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqY-g2-gCH">
-                                        <rect key="frame" x="20" y="51" width="40" height="27"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06P-ic-AGj">
-                                        <rect key="frame" x="87" y="51" width="51" height="27"/>
+                                        <rect key="frame" x="769" y="129" width="51" height="27"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmT-WW-F0o">
-                                        <rect key="frame" x="8" y="89" width="304" height="76"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPC-gR-9cJ">
-                                                <rect key="frame" x="0.0" y="50" width="296" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQ3-DN-1zJ">
-                                                <rect key="frame" x="8" y="41" width="288" height="2"/>
-                                            </progressView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-U9-Hgg">
-                                                <rect key="frame" x="135" y="14" width="161" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPU：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opl-W0-A0s">
-                                                <rect key="frame" x="8" y="14" width="225" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCJ-7W-ucx">
-                                        <rect key="frame" x="255" y="51" width="40" height="27"/>
+                                        <rect key="frame" x="730" y="44" width="40" height="27"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-eK-ctX">
-                                        <rect key="frame" x="8" y="172" width="304" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBp-Ac-hXF">
-                                                <rect key="frame" x="8" y="41" width="288" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内存：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09W-fA-VGt">
-                                                <rect key="frame" x="8" y="8" width="57" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7Z-kx-5aj">
-                                                <rect key="frame" x="8" y="34" width="288" height="2"/>
-                                            </progressView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-Fw-qNq">
-                                                <rect key="frame" x="163" y="8" width="133" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciq-Ss-87D">
-                                        <rect key="frame" x="8" y="252" width="304" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWg-cC-0V9">
-                                                <rect key="frame" x="8" y="39" width="288" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存储：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDe-6j-pgR">
-                                                <rect key="frame" x="8" y="3" width="58" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOt-zn-cyq">
-                                                <rect key="frame" x="8" y="29" width="288" height="2"/>
-                                            </progressView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poX-NF-ibS">
-                                                <rect key="frame" x="190" y="3" width="106" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIt-iW-q8S">
-                                        <rect key="frame" x="8" y="328" width="304" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBG-p3-mWn">
-                                                <rect key="frame" x="8" y="39" width="288" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="网络IP数：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e1-Ag-hI4">
-                                                <rect key="frame" x="8" y="3" width="84" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToI-eN-SB5">
-                                                <rect key="frame" x="8" y="29" width="288" height="2"/>
-                                            </progressView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-7f-fVW">
-                                                <rect key="frame" x="190" y="3" width="106" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCh-bA-kwV">
-                                        <rect key="frame" x="68" y="64" width="17" height="21"/>
+                                        <rect key="frame" x="793" y="244" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="台" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdf-7G-N1K">
-                                        <rect key="frame" x="137" y="64" width="17" height="21"/>
+                                        <rect key="frame" x="836" y="139" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUB-NM-wfp">
-                                        <rect key="frame" x="287" y="64" width="17" height="21"/>
+                                        <rect key="frame" x="769" y="47" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="虚拟机" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-QA-MCc">
-                                        <rect key="frame" x="171" y="12" width="51" height="21"/>
+                                        <rect key="frame" x="314" y="68" width="51" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGb-Or-sb8">
-                                        <rect key="frame" x="162" y="49" width="60" height="32"/>
+                                        <rect key="frame" x="309" y="36" width="60" height="32"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="台" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwQ-lQ-nWU">
-                                        <rect key="frame" x="213" y="64" width="17" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opl-W0-A0s">
+                                        <rect key="frame" x="161" y="124" width="58" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-U9-Hgg">
+                                        <rect key="frame" x="161" y="95" width="76" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内存" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09W-fA-VGt">
+                                        <rect key="frame" x="113" y="200" width="57" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-Fw-qNq">
+                                        <rect key="frame" x="93" y="165" width="72" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存储" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDe-6j-pgR">
+                                        <rect key="frame" x="187" y="311" width="58" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poX-NF-ibS">
+                                        <rect key="frame" x="155" y="276" width="106" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqY-g2-gCH">
+                                        <rect key="frame" x="745" y="237" width="40" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="游离物理机" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-Gh-Kcx">
+                                        <rect key="frame" x="735" y="327" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUo-ae-urA">
+                                        <rect key="frame" x="649" y="317" width="51" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="台" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEn-PL-agX">
+                                        <rect key="frame" x="716" y="327" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPY-4s-SyM">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <items>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="6Ls-xd-pph"/>
+                                    <barButtonItem image="数据中心图标" id="GJN-tP-6Pq"/>
+                                    <barButtonItem title="广东省数据中心" id="NAy-xc-BHX"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nPY-4s-SyM" firstAttribute="leading" secondItem="Mv1-Wo-8q3" secondAttribute="leadingMargin" constant="-16" id="BWm-DF-68O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nPY-4s-SyM" secondAttribute="trailing" constant="-16" id="TeJ-Na-hbb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fha-aA-CHi"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="businessCount" destination="dCJ-7W-ucx" id="gpM-JB-Xbn"/>
-                        <outlet property="cpuProgress" destination="KQ3-DN-1zJ" id="IGk-Nd-7lU"/>
                         <outlet property="cpuUnitCount" destination="hBg-U9-Hgg" id="sQB-YQ-ORE"/>
-                        <outlet property="cpuUsedInfo" destination="WPC-gR-9cJ" id="PaR-ay-S5P"/>
                         <outlet property="hostCount" destination="06P-ic-AGj" id="jmf-hc-1VS"/>
                         <outlet property="memerySize" destination="ecz-Fw-qNq" id="CQn-Pk-ozl"/>
-                        <outlet property="memeryUsedInfo" destination="zBp-Ac-hXF" id="VbV-qD-ORv"/>
-                        <outlet property="memoryProgress" destination="n7Z-kx-5aj" id="fwU-Od-2Rw"/>
-                        <outlet property="networkIpCount" destination="LPv-7f-fVW" id="LwR-1B-TR4"/>
-                        <outlet property="networkIpUsedInfo" destination="rBG-p3-mWn" id="7Gl-Ou-fXe"/>
-                        <outlet property="networkProgress" destination="ToI-eN-SB5" id="IjM-aa-6SO"/>
                         <outlet property="poolCount" destination="zqY-g2-gCH" id="nrr-Z0-zak"/>
                         <outlet property="scrollView" destination="vq1-ei-cxf" id="fFO-lh-0kc"/>
-                        <outlet property="storageProgress" destination="tOt-zn-cyq" id="uEo-zj-9jG"/>
                         <outlet property="storageSize" destination="poX-NF-ibS" id="r7Q-8j-nSi"/>
-                        <outlet property="storageUsedInfo" destination="NWg-cC-0V9" id="Rrg-zh-rQW"/>
                         <outlet property="vmCount" destination="iGb-Or-sb8" id="Zpv-NQ-NgB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLi-8n-0Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2343" y="1204"/>
+            <point key="canvasLocation" x="-2344" y="1227"/>
         </scene>
         <!--Datacenter DashboardVC-->
         <scene sceneID="aFQ-mh-xG3">
@@ -763,20 +759,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="8SV-wH-gFy">
-                            <size key="itemSize" width="243" height="150"/>
-                            <size key="headerReferenceSize" width="50" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8SV-wH-gFy">
+                            <size key="itemSize" width="288" height="280"/>
+                            <size key="headerReferenceSize" width="50" height="213"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="15" maxX="10" maxY="15"/>
+                            <inset key="sectionInset" minX="20" minY="15" maxX="20" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterHostCollectionCell" id="0TU-DE-Mkd" customClass="MasterCollectionCell">
                                 <rect key="frame" x="265" y="55" width="243" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="280"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池－物理机－面板" translatesAutoresizingMaskIntoConstraints="NO" id="bdQ-OA-BbO">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="280"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="163" translatesAutoresizingMaskIntoConstraints="NO" id="GOP-oW-4Rt">
                                             <rect key="frame" x="20" y="4" width="163" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -826,6 +825,18 @@
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="物理机icon" translatesAutoresizingMaskIntoConstraints="NO" id="Nr0-t7-sCb">
                                             <rect key="frame" x="13" y="66" width="48" height="48"/>
                                         </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-蓝色" translatesAutoresizingMaskIntoConstraints="NO" id="NOj-dq-ur5">
+                                            <rect key="frame" x="114" y="151" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条－绿色" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-hl-skK">
+                                            <rect key="frame" x="114" y="171" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-黄色" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-CF-TSH">
+                                            <rect key="frame" x="114" y="194" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-黄色" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-mh-V9B">
+                                            <rect key="frame" x="114" y="220" width="59" height="10"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -842,7 +853,24 @@
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterDetailCollectionHeader" id="DFn-Lm-RXe" customClass="DatacenterDetailCollectionHeader">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <color key="backgroundColor" red="0.93720545990000004" green="1" blue="0.37681145370000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="物理机－色块" translatesAutoresizingMaskIntoConstraints="NO" id="Rtp-Hp-3tm">
+                                    <rect key="frame" x="20" y="64" width="202" height="129"/>
+                                </imageView>
+                                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9V-tb-obN">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                    <items>
+                                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="swU-TO-Lkm"/>
+                                        <barButtonItem image="数据中心图标" id="BRi-bc-WlT"/>
+                                        <barButtonItem title="广东省数据中心" id="OL7-NI-Ma3"/>
+                                    </items>
+                                </toolbar>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailingMargin" secondItem="p9V-tb-obN" secondAttribute="trailing" constant="-8" id="Dpc-tE-u6d"/>
+                                <constraint firstItem="p9V-tb-obN" firstAttribute="leading" secondItem="DFn-Lm-RXe" secondAttribute="leadingMargin" constant="-8" id="a5C-fB-HlK"/>
+                            </constraints>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="tNF-5l-310" id="4Yb-Wv-Mk1"/>
@@ -908,20 +936,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="isC-wb-2ry">
-                            <size key="itemSize" width="243" height="150"/>
-                            <size key="headerReferenceSize" width="50" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="isC-wb-2ry">
+                            <size key="itemSize" width="288" height="253"/>
+                            <size key="headerReferenceSize" width="50" height="304"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="15" maxX="10" maxY="15"/>
+                            <inset key="sectionInset" minX="20" minY="15" maxX="20" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterStorageCollectionCell" id="dG7-v9-26s" customClass="MasterCollectionCell">
                                 <rect key="frame" x="520" y="55" width="243" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="253"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池－存储池－面板" translatesAutoresizingMaskIntoConstraints="NO" id="K4C-Hq-xDk">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="253"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="uVk-P2-jhP">
                                             <rect key="frame" x="13" y="3" width="145" height="41"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -974,7 +1005,24 @@
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterDetailCollectionHeader" id="q5I-nu-Sla">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <color key="backgroundColor" red="0.0" green="0.58039218189999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                            <subviews>
+                                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ly-Bj-HpU">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                    <items>
+                                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="SR0-Pe-Dee"/>
+                                        <barButtonItem image="数据中心图标" id="mz6-Yk-e12"/>
+                                        <barButtonItem title="广东省数据中心" id="KpP-j0-2Yt"/>
+                                    </items>
+                                </toolbar>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="存储-色块" translatesAutoresizingMaskIntoConstraints="NO" id="64X-qy-SPX">
+                                    <rect key="frame" x="20" y="64" width="198" height="220"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailingMargin" secondItem="5Ly-Bj-HpU" secondAttribute="trailing" constant="-8" id="496-mF-A3C"/>
+                                <constraint firstItem="5Ly-Bj-HpU" firstAttribute="leading" secondItem="q5I-nu-Sla" secondAttribute="leadingMargin" constant="-8" id="wRR-oC-afp"/>
+                            </constraints>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="Vdc-u6-N4C" id="Cqo-wY-bJX"/>
@@ -1041,19 +1089,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="9G2-XK-4zp">
-                            <size key="itemSize" width="243" height="150"/>
-                            <size key="headerReferenceSize" width="50" height="200"/>
+                            <size key="itemSize" width="288" height="253"/>
+                            <size key="headerReferenceSize" width="50" height="209"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="15" maxX="10" maxY="15"/>
+                            <inset key="sectionInset" minX="20" minY="15" maxX="20" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterVmCollectionCell" id="bVt-Tq-FJe" customClass="MasterCollectionCell">
                                 <rect key="frame" x="10" y="275" width="243" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="253"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="虚拟机－面板" translatesAutoresizingMaskIntoConstraints="NO" id="wqP-vO-a1U">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="253"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="EUQ-1V-ozH">
                                             <rect key="frame" x="14" y="-3" width="148" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1117,6 +1168,15 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-蓝色" translatesAutoresizingMaskIntoConstraints="NO" id="zh3-Id-7CZ">
+                                            <rect key="frame" x="116" y="154" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条－绿色" translatesAutoresizingMaskIntoConstraints="NO" id="USM-il-eBl">
+                                            <rect key="frame" x="116" y="178" width="59" height="10"/>
+                                        </imageView>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-黄色" translatesAutoresizingMaskIntoConstraints="NO" id="Gf8-Oi-6o9">
+                                            <rect key="frame" x="116" y="207" width="59" height="10"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -1135,7 +1195,24 @@
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterDetailCollectionHeader" id="WuI-Kl-R28" customClass="DatacenterDetailCollectionHeader">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <color key="backgroundColor" red="1" green="0.45777167959999998" blue="0.49544596029999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <subviews>
+                                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dh8-yx-RWZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                    <items>
+                                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="wqX-Mm-Qru"/>
+                                        <barButtonItem image="数据中心图标" id="8hd-IW-bfn"/>
+                                        <barButtonItem title="广东省数据中心" id="HOR-tp-gmx"/>
+                                    </items>
+                                </toolbar>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="虚拟机-色块" translatesAutoresizingMaskIntoConstraints="NO" id="JkT-ef-jJP">
+                                    <rect key="frame" x="20" y="64" width="198" height="125"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Dh8-yx-RWZ" firstAttribute="leading" secondItem="WuI-Kl-R28" secondAttribute="leadingMargin" constant="-8" id="ASQ-dp-5ag"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="Dh8-yx-RWZ" secondAttribute="trailing" constant="-8" id="PvE-Hr-fY5"/>
+                            </constraints>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="8QM-yF-skn" id="Zx3-5O-3qZ"/>
@@ -1201,20 +1278,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="7RG-Ls-B57">
-                            <size key="itemSize" width="243" height="150"/>
-                            <size key="headerReferenceSize" width="50" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7RG-Ls-B57">
+                            <size key="itemSize" width="288" height="182"/>
+                            <size key="headerReferenceSize" width="50" height="209"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="15" maxX="10" maxY="15"/>
+                            <inset key="sectionInset" minX="20" minY="15" maxX="20" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterBusinessCollectionCell" id="Dd2-se-Zus" customClass="MasterCollectionCell">
                                 <rect key="frame" x="265" y="275" width="243" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="243" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="182"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="业务系统-面板" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-8V-tFU">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="182"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rw-AN-IDZ">
                                             <rect key="frame" x="20" y="13" width="202" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1265,7 +1345,20 @@
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterDetailCollectionHeader" id="XqT-2E-Wk7" customClass="DatacenterDetailCollectionHeader">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <color key="backgroundColor" red="0.34380364271376535" green="0.92045998090000003" blue="0.83707452352548939" alpha="1" colorSpace="calibratedRGB"/>
+                            <subviews>
+                                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMK-kq-SeD">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                    <items>
+                                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="n8l-NC-UGx"/>
+                                        <barButtonItem image="数据中心图标" id="Nnh-oJ-Zdp"/>
+                                        <barButtonItem title="广东省数据中心" id="ROt-1z-Eh0"/>
+                                    </items>
+                                </toolbar>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="业务系统－色块" translatesAutoresizingMaskIntoConstraints="NO" id="jA6-ZA-HFL">
+                                    <rect key="frame" x="20" y="64" width="198" height="125"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="rJv-N2-owX" id="dDG-1E-KZl"/>
@@ -1321,9 +1414,27 @@
         <image name="navIcon-storage" width="55" height="58"/>
         <image name="navIcon-vm" width="55" height="58"/>
         <image name="share" width="29" height="13"/>
+        <image name="业务系统-面板" width="288" height="182"/>
+        <image name="业务系统－色块" width="198" height="125"/>
+        <image name="告警信息" width="32" height="32"/>
+        <image name="存储-色块" width="198" height="220"/>
         <image name="存储图标" width="36" height="36"/>
+        <image name="操作记录" width="29" height="29"/>
+        <image name="数据中心图标" width="18" height="18"/>
         <image name="物理机icon" width="64" height="64"/>
-        <image name="资源池图标-black" width="55" height="39"/>
+        <image name="物理机－色块" width="202" height="129"/>
+        <image name="自源池－首页" width="969" height="405"/>
+        <image name="虚拟机-色块" width="198" height="125"/>
+        <image name="虚拟机－面板" width="288" height="253"/>
+        <image name="资源池-摘要-面板" width="288" height="280"/>
+        <image name="资源池色块" width="202" height="274"/>
+        <image name="资源池－存储池－面板" width="288" height="253"/>
+        <image name="资源池－物理机－面板" width="288" height="280"/>
+        <image name="进度条-红色" width="59" height="10"/>
+        <image name="进度条-蓝色" width="59" height="10"/>
+        <image name="进度条-黄色" width="59" height="10"/>
+        <image name="进度条－湖蓝色" width="59" height="10"/>
+        <image name="进度条－绿色" width="59" height="10"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

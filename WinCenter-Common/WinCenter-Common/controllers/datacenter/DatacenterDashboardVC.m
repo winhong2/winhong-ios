@@ -82,6 +82,15 @@
     collectionVC.isMore = YES;
     [self.tabBarVC addChildViewController:nav];
     
+    //网络
+    [self.tabBarVC addChildViewController:[[UINavigationController alloc] initWithRootViewController:[UIViewController new]]];
+    
+    nav = [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterTableVCNav"];
+    [self.tabBarVC addChildViewController:nav];
+    
+    nav = [[UIStoryboard storyboardWithName:@"Setting"] instantiateViewControllerWithIdentifier:@"PopOptionsVCNav"];
+    [self.tabBarVC addChildViewController:nav];
+    
     
     [self.tabBarVC setSelectedIndex:0];
 }

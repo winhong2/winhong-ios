@@ -18,7 +18,13 @@
 @implementation DatacenterDetailInfoVC
 
 - (void)viewDidLayoutSubviews{
-    self.scrollView.contentSize = CGSizeMake(275, 420);
+    if(self.scrollView){
+        self.scrollView.contentSize = CGSizeMake(275, 420);
+    }
+}
+
+- (void)viewDidLoad{
+    [self refresh];
 }
 
 - (void)refresh{
