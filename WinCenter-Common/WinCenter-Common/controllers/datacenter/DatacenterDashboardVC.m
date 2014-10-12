@@ -93,6 +93,7 @@
     
     
     [self.tabBarVC setSelectedIndex:0];
+    [self.menuVC setSelectedItemIndex:0];
 }
 
 @end

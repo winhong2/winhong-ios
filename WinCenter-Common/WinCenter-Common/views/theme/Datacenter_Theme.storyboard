@@ -66,6 +66,11 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="1gZ-e2-wHy">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
                         <sections>
                             <tableViewSection id="dlm-na-3DR">
                                 <cells>
@@ -100,6 +105,7 @@
                                                     <state key="normal" title="资源池" image="navIcon-pool">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-pool-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="WnT-qv-M3W"/>
                                                     </connections>
@@ -295,7 +301,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vA-HE-7fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5095" y="2071"/>
+            <point key="canvasLocation" x="-5095.5" y="2071"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w3r-Zm-SN4">
@@ -347,7 +353,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aDP-R0-IEn">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="aDP-R0-IEn">
                             <size key="itemSize" width="288" height="280"/>
                             <size key="headerReferenceSize" width="50" height="358"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -801,7 +807,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8SV-wH-gFy">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="8SV-wH-gFy">
                             <size key="itemSize" width="288" height="280"/>
                             <size key="headerReferenceSize" width="50" height="213"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -978,7 +984,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="isC-wb-2ry">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="isC-wb-2ry">
                             <size key="itemSize" width="288" height="253"/>
                             <size key="headerReferenceSize" width="50" height="304"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1130,7 +1136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="9G2-XK-4zp">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="9G2-XK-4zp">
                             <size key="itemSize" width="288" height="253"/>
                             <size key="headerReferenceSize" width="50" height="209"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1320,7 +1326,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7RG-Ls-B57">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="7RG-Ls-B57">
                             <size key="itemSize" width="288" height="182"/>
                             <size key="headerReferenceSize" width="50" height="209"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1456,6 +1462,7 @@
         <image name="navIcon-network" width="55" height="58"/>
         <image name="navIcon-network-white" width="55" height="58"/>
         <image name="navIcon-pool" width="55" height="58"/>
+        <image name="navIcon-pool-white" width="55" height="58"/>
         <image name="navIcon-refresh" width="55" height="58"/>
         <image name="navIcon-refresh-white" width="55" height="58"/>
         <image name="navIcon-settings" width="55" height="58"/>

@@ -46,15 +46,20 @@
 
 - (IBAction)switchTabBar:(id)sender {
     NSInteger currentIndex =  ((UIButton*)sender).tag;
+    [self setSelectedItemIndex:currentIndex];
+    [self.tabBarVC setSelectedIndex:currentIndex];
+}
+
+- (void) setSelectedItemIndex:(NSInteger)index{
     UIButton *previousButton = self.menuItems[self.selectedIndex];
     previousButton.backgroundColor = [UIColor colorWithRed:25/255.0 green:29/255.0 blue:45/255.0 alpha:1];
     previousButton.selected = NO;
-    self.selectedIndex = currentIndex;
+    self.selectedIndex = index;
     UIButton *currentButton = self.menuItems[self.selectedIndex];
     currentButton.backgroundColor = [UIColor colorWithRed:35/255.0 green:72/255.0 blue:113/255.0 alpha:1];
     currentButton.selected = YES;
     
-    [self.tabBarVC setSelectedIndex:self.selectedIndex];
+    
 }
 
 

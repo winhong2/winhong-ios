@@ -12,4 +12,6 @@
 
 @property UITabBarController *tabBarVC;
 
+- (void) setSelectedItemIndex:(NSInteger)index;
+
 @end
