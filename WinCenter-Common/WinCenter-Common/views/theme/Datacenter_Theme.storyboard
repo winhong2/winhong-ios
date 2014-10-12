@@ -62,9 +62,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="50" sectionFooterHeight="50" id="S2a-cH-2QV">
                         <rect key="frame" x="0.0" y="0.0" width="55" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="dlm-na-3DR">
                                 <cells>
@@ -75,15 +76,18 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyb-aS-OTb">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="首页" image="navIcon-home">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-home-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="q3a-ei-ob6"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="9ya-a8-8Rb">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -92,6 +96,7 @@
                                             <subviews>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m68-3y-M3S">
                                                     <rect key="frame" x="0.0" y="0.0" width="109" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="资源池" image="navIcon-pool">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -101,6 +106,7 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="1ge-2l-UTI">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -109,15 +115,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-xW-YPY">
                                                     <rect key="frame" x="0.0" y="0.0" width="109" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="物理机" image="navIcon-host">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-host-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="JW4-ID-kBk"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="jTs-VF-Au2">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -126,15 +135,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrk-FM-kl2">
                                                     <rect key="frame" x="0.0" y="0.0" width="109" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="虚拟机" image="navIcon-vm">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-vm-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="dFB-cl-C4g"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="WW6-HG-Bpo">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -143,15 +155,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-Ac-R0u">
                                                     <rect key="frame" x="0.0" y="0.0" width="109" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="存储池" image="navIcon-storage">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-storage-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="jhz-0Y-KED"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="63Q-xN-VVN">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -159,16 +174,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teG-WG-WvM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="58"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="业务" image="navIcon-business">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-business-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="vjd-Sb-NzA"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="WHi-x7-1RP">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -177,15 +195,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-yL-Iuk">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="网络" image="navIcon-network">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-network-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="1Rp-NW-3ow"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -198,15 +219,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut7-W3-8A8">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="切换" image="navIcon-refresh">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-refresh-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="ecl-2N-0v5"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="ims-5n-ucO">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -215,15 +239,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl2-XT-XYc">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="设置" image="navIcon-settings">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-settings-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="dTh-rv-NXF"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="VON-A0-0nC">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -232,15 +259,18 @@
                                             <subviews>
                                                 <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRV-yn-KP3">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="58"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="展开" image="navIcon-arrRight">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <state key="selected" image="navIcon-arrRight-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="TZ9-KA-dFw"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -250,6 +280,18 @@
                             <outlet property="delegate" destination="teZ-Tc-JZU" id="uBy-vq-eoL"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="menuBusiness" destination="teG-WG-WvM" id="Rrd-5g-edZ"/>
+                        <outlet property="menuExpand" destination="VRV-yn-KP3" id="tea-Xm-zXa"/>
+                        <outlet property="menuHome" destination="iyb-aS-OTb" id="zMQ-ol-X7L"/>
+                        <outlet property="menuHost" destination="S1a-xW-YPY" id="F5g-dA-Tfx"/>
+                        <outlet property="menuNetwork" destination="pR6-yL-Iuk" id="I9s-h1-RBL"/>
+                        <outlet property="menuPool" destination="m68-3y-M3S" id="tSq-C4-ZQb"/>
+                        <outlet property="menuSelect" destination="ut7-W3-8A8" id="pyn-Bp-TDp"/>
+                        <outlet property="menuSetting" destination="Pl2-XT-XYc" id="8yK-rD-qwW"/>
+                        <outlet property="menuStorage" destination="3gc-Ac-R0u" id="OJc-YB-JYY"/>
+                        <outlet property="menuVm" destination="rrk-FM-kl2" id="pJ7-5M-GHt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vA-HE-7fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1404,15 +1446,24 @@
         <image name="icon-存储-black" width="10" height="11"/>
         <image name="icon-虚拟机数-black" width="9" height="9"/>
         <image name="navIcon-arrRight" width="55" height="58"/>
+        <image name="navIcon-arrRight-white" width="55" height="58"/>
         <image name="navIcon-business" width="55" height="58"/>
+        <image name="navIcon-business-white" width="55" height="58"/>
         <image name="navIcon-home" width="55" height="58"/>
+        <image name="navIcon-home-white" width="55" height="58"/>
         <image name="navIcon-host" width="55" height="58"/>
+        <image name="navIcon-host-white" width="55" height="58"/>
         <image name="navIcon-network" width="55" height="58"/>
+        <image name="navIcon-network-white" width="55" height="58"/>
         <image name="navIcon-pool" width="55" height="58"/>
         <image name="navIcon-refresh" width="55" height="58"/>
+        <image name="navIcon-refresh-white" width="55" height="58"/>
         <image name="navIcon-settings" width="55" height="58"/>
+        <image name="navIcon-settings-white" width="55" height="58"/>
         <image name="navIcon-storage" width="55" height="58"/>
+        <image name="navIcon-storage-white" width="55" height="58"/>
         <image name="navIcon-vm" width="55" height="58"/>
+        <image name="navIcon-vm-white" width="55" height="58"/>
         <image name="share" width="29" height="13"/>
         <image name="业务系统-面板" width="288" height="182"/>
         <image name="业务系统－色块" width="198" height="125"/>

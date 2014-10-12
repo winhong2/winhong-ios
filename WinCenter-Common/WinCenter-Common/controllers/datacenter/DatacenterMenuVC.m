@@ -10,18 +10,51 @@
 #import "MasterContainerVC.h"
 
 @interface DatacenterMenuVC ()
+@property (weak, nonatomic) IBOutlet UIButton *menuHome;
+@property (weak, nonatomic) IBOutlet UIButton *menuPool;
+@property (weak, nonatomic) IBOutlet UIButton *menuHost;
+@property (weak, nonatomic) IBOutlet UIButton *menuVm;
+@property (weak, nonatomic) IBOutlet UIButton *menuStorage;
+@property (weak, nonatomic) IBOutlet UIButton *menuBusiness;
+@property (weak, nonatomic) IBOutlet UIButton *menuNetwork;
+@property (weak, nonatomic) IBOutlet UIButton *menuSelect;
+@property (weak, nonatomic) IBOutlet UIButton *menuSetting;
+@property (weak, nonatomic) IBOutlet UIButton *menuExpand;
+
+@property NSArray *menuItems;
+
+@property NSInteger selectedIndex;
 
 @end
 
 @implementation DatacenterMenuVC
 
 - (void)viewDidLoad {
-    self.tableView.backgroundColor = [UIColor whiteColor];
     [super viewDidLoad];
+    
+    self.menuItems = @[self.menuHome,
+                       self.menuPool,
+                       self.menuHost,
+                       self.menuVm,
+                       self.menuStorage,
+                       self.menuBusiness,
+                       self.menuNetwork,
+                       self.menuSelect,
+                       self.menuSetting,
+                       self.menuExpand];
 }
 
 - (IBAction)switchTabBar:(id)sender {
-    [self.tabBarVC setSelectedIndex:((UIButton*)sender).tag];
+    NSInteger currentIndex =  ((UIButton*)sender).tag;
+    UIButton *previousButton = self.menuItems[self.selectedIndex];
+    previousButton.backgroundColor = [UIColor colorWithRed:25/255.0 green:29/255.0 blue:45/255.0 alpha:1];
+    previousButton.selected = NO;
+    self.selectedIndex = currentIndex;
+    UIButton *currentButton = self.menuItems[self.selectedIndex];
+    currentButton.backgroundColor = [UIColor colorWithRed:35/255.0 green:72/255.0 blue:113/255.0 alpha:1];
+    currentButton.selected = YES;
+    
+    [self.tabBarVC setSelectedIndex:self.selectedIndex];
 }
 
 
