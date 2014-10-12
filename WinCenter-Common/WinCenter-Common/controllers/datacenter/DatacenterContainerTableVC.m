@@ -77,18 +77,18 @@
 }
 
 -(IBAction)showOptionsVC:(id)sender{
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]  instantiateInitialViewController];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting"]  instantiateInitialViewController];
     [self presentViewController:vc animated:YES completion:nil];
     
 }
 
 -(IBAction)showWarningInfoVC:(id)sender{
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning" bundle:nil] instantiateInitialViewController];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning"] instantiateInitialViewController];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(IBAction)showControlRecordVC:(id)sender{
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     [self presentViewController:nav animated:YES completion:nil];
 }
 

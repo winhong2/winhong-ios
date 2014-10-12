@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4Og-BS-6jM">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -9,7 +8,7 @@
         <scene sceneID="JJz-8N-d9T">
             <objects>
                 <collectionViewController storyboardIdentifier="HostCollectionVC" autoresizesArchivedViewToFullSize="NO" id="TfU-DQ-fKn" customClass="HostCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="0Qo-Vg-peC">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="0Qo-Vg-peC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -937,7 +936,7 @@
         <scene sceneID="09q-n9-ufp">
             <objects>
                 <collectionViewController storyboardIdentifier="HostNicCollectionVC" autoresizesArchivedViewToFullSize="NO" id="7la-4k-C8P" customClass="HostNicCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="kHb-tV-Sfi">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="kHb-tV-Sfi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1084,7 +1083,7 @@
         <scene sceneID="3mI-GH-QKy">
             <objects>
                 <collectionViewController storyboardIdentifier="HostNetworkCollectionVC" autoresizesArchivedViewToFullSize="NO" id="PnO-Qs-Si0" customClass="HostNetworkCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="wlP-R4-hK5">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="wlP-R4-hK5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1212,12 +1211,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CPU线程-black" width="31" height="30"/>
-        <image name="CPU颗数-black" width="31" height="30"/>
+        <image name="CPU线程-black" width="15" height="15"/>
+        <image name="CPU颗数-black" width="15" height="15"/>
         <image name="Network_internal" width="36" height="36"/>
         <image name="nic" width="36" height="36"/>
-        <image name="内存-black" width="31" height="30"/>
-        <image name="定点-black" width="31" height="30"/>
+        <image name="内存-black" width="15" height="15"/>
+        <image name="定点-black" width="15" height="15"/>
         <image name="灰色圈" width="123" height="123"/>
         <image name="物理机1" width="115" height="106"/>
         <image name="物理机2" width="115" height="106"/>
@@ -1226,7 +1225,7 @@
         <image name="绿色圈" width="65" height="61"/>
         <image name="网络连接-断开链接" width="15" height="15"/>
         <image name="网络连接-链接" width="15" height="15"/>
-        <image name="虚拟机-black" width="31" height="30"/>
+        <image name="虚拟机-black" width="15" height="15"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

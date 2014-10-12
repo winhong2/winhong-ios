@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-ZX-McR">
-                                <rect key="frame" x="258" y="40" width="766" height="628"/>
+                                <rect key="frame" x="258" y="0.0" width="766" height="668"/>
                                 <connections>
                                     <segue destination="vUA-4z-gOj" kind="embed" identifier="toBusinessVm" id="XQK-P8-hGC"/>
                                 </connections>
@@ -108,8 +108,8 @@
         <scene sceneID="jre-O1-Z45">
             <objects>
                 <collectionViewController storyboardIdentifier="BusinessVmCollectionVC" id="vUA-4z-gOj" customClass="BusinessVmCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dIa-Cc-QOz">
-                        <rect key="frame" x="0.0" y="0.0" width="766" height="628"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="dIa-Cc-QOz">
+                        <rect key="frame" x="0.0" y="0.0" width="766" height="668"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="70" minimumInteritemSpacing="0.0" id="yEl-o9-tde">
                             <size key="itemSize" width="235" height="107"/>
@@ -181,7 +181,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterCollectionHeader" id="dkb-pj-iyf" customClass="MasterCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="766" height="50"/>
+                            <rect key="frame" x="0.0" y="0.0" width="766" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZA-dJ-E2U">
@@ -285,6 +285,9 @@
                     <navigationItem key="navigationItem" id="rlA-fb-ME6"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="ipLabel" destination="oKy-OH-bvk" id="kU7-ww-7Dl"/>
                         <outlet property="pageVCContainer" destination="LBv-hy-79D" id="eXx-Tk-3xF"/>

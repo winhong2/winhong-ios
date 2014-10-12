@@ -79,7 +79,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    UIViewController *root= [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateInitialViewController];
+    UIViewController *root= [[UIStoryboard storyboardWithName:@"Storage"] instantiateInitialViewController];
     StorageContainerVC *vc;
     if([root isKindOfClass:[StorageContainerVC class]]){
         vc = (StorageContainerVC*) root;

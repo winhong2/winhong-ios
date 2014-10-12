@@ -27,20 +27,20 @@
     detailVC.poolVO = self.poolVO;
     [pages addObject:detailVC];
     
-    HostCollectionVC *poolHostCollectionVC = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateViewControllerWithIdentifier:@"HostCollectionVC"];
+    HostCollectionVC *poolHostCollectionVC = [[UIStoryboard storyboardWithName:@"Host"] instantiateViewControllerWithIdentifier:@"HostCollectionVC"];
     poolHostCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolHostCollectionVC];
     
-    VmCollectionVC *poolVmCollectionVC = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateViewControllerWithIdentifier:@"VmCollectionVC"];
+    VmCollectionVC *poolVmCollectionVC = [[UIStoryboard storyboardWithName:@"VM"] instantiateViewControllerWithIdentifier:@"VmCollectionVC"];
     poolVmCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolVmCollectionVC];
     
-    StorageCollectionVC *poolStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
+    StorageCollectionVC *poolStorageCollectionVC = [[UIStoryboard storyboardWithName:@"Storage"] instantiateViewControllerWithIdentifier:@"StorageCollectionVC"];
     poolStorageCollectionVC.poolVO = self.poolVO;
     [pages addObject:poolStorageCollectionVC];
     
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task"] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
         controlVC.remoteObject = self.poolVO;
         [pages addObject:controlVC];
     }
@@ -54,13 +54,25 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
     controlVC.remoteObject = self.poolVO;
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
     //self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+}
+
+-(IBAction)showControlRecordVCWithBarItem:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
+    PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
+    controlVC.remoteObject = self.poolVO;
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    [self.popover presentPopoverFromBarButtonItem:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 
 @end

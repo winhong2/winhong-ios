@@ -28,4 +28,11 @@
 - (void) getBusinessListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count;
 - (void) getPoolListAsync:(FetchAllCompletionBlock)completionBlock;
 - (void) getPoolListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count;
+- (void) getHostListAsync:(FetchAllCompletionBlock)completionBlock;
+- (void) getHostListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count;
+- (void) getVmListAsync:(FetchAllCompletionBlock)completionBlock;
+- (void) getVmListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count;
+- (void) getStorageListAsync:(FetchAllCompletionBlock)completionBlock;
+- (void) getStorageListAsync:(FetchAllCompletionBlock)completionBlock limit:(int)count;
+    
 @end

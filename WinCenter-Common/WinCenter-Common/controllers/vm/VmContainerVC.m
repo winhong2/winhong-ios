@@ -47,7 +47,7 @@
     [pages addObject:snapshot];
     
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task"] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
         controlVC.remoteObject = self.vmVO;
         [pages addObject:controlVC];
     }
@@ -104,12 +104,27 @@
     }
 }
 - (IBAction)openVm:(id)sender {
-    [self.vmVO VmOperation:@"OK" async:^(NSError *error) {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alert show];
-        [self hideControlBtn];
-    }];
+    UIAlertView *confirm = [[UIAlertView alloc] initWithTitle:@"安全操作" message:@"再次确认操作" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    confirm.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+    [confirm show];
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex==1){
+        if(([[alertView textFieldAtIndex:0].text isEqualToString:@"admin"]) && ([[alertView textFieldAtIndex:1].text isEqualToString:@"passw0rd"])){
+            [self.vmVO VmOperation:@"OK" async:^(NSError *error) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alert show];
+                [self hideControlBtn];
+            }];
+        }else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"错误的用户名或密码！" delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles: nil];
+            [alert show];
+        }
+    }
+}
+
+
 - (IBAction)shutdownVm:(id)sender {
     [self.vmVO VmOperation:@"STOPPED" async:^(NSError *error) {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在关机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
@@ -135,12 +150,24 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
     controlVC.remoteObject = self.vmVO;
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
     //self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+}
+
+-(IBAction)showControlRecordVCWithBarItem:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
+    PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
+    controlVC.remoteObject = self.vmVO;
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    [self.popover presentPopoverFromBarButtonItem:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 @end

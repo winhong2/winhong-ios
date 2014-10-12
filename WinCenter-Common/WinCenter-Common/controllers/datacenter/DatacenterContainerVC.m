@@ -15,10 +15,13 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
     [DatacenterVO getDatacenterListAsync:^(NSArray *allRemote, NSError *error) {
         if(allRemote.count>0){
             [RemoteObject setCurrentDatacenterVO:[allRemote firstObject]];
-            [self.infoVC refresh];            
+            if(self.infoVC){
+                [self.infoVC refresh];
+            }
             [self refresh];
         }else{
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"友情提示" message:@"尚没有配置任何数据中心，请联系虚拟化平台管理员！" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles: nil];
@@ -30,7 +33,9 @@
 - (void)didFinished:(DatacenterTableVC *)controller{
     if(self.popoverVC){
         [self.popoverVC dismissPopoverAnimated:YES];
-        [self.infoVC refresh];
+        if(self.infoVC){
+            [self.infoVC refresh];
+        }
         [self refresh];
     }
 }
@@ -58,7 +63,7 @@
         [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
         [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
         [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterDetailCollectionVC"],
-        [[UIStoryboard storyboardWithName:@"Network" bundle:nil] instantiateInitialViewController]
+        [[UIStoryboard storyboardWithName:@"Network"] instantiateInitialViewController]
     ];
     
     ((DatacenterDetailCollectionVC*)self.pages[0]).pageType = Page_Pool;
@@ -75,7 +80,7 @@
 }
 
 -(IBAction)showOptionsVC:(id)sender{
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]  instantiateInitialViewController];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Setting"]  instantiateInitialViewController];
     vc.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:vc animated:YES completion:nil];
     
@@ -85,7 +90,7 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning" bundle:nil] instantiateInitialViewController];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning"] instantiateInitialViewController];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
     UIButton *button = (UIButton*)sender;
     self.popover.passthroughViews=@[self.buttonTask];
@@ -96,7 +101,7 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
     self.popover.passthroughViews=@[self.buttonWarning];
