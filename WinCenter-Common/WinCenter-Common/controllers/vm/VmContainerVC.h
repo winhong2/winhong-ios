@@ -20,4 +20,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnOperation;
 @property (weak, nonatomic) IBOutlet UIButton *buttonTask;
 
+@property BOOL hasPerformancePage;
+
 @end

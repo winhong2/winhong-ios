@@ -34,6 +34,10 @@
     VmDetailInfoVC *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"VmDetailInfoVC"];
     detailVC.vmVO = self.vmVO;
     [pages addObject:detailVC];
+    
+    if(self.hasPerformancePage){
+        [pages addObject:[self.storyboard instantiateViewControllerWithIdentifier:@"VmPerformanceVC"]];
+    }
         
     VmNetworkCollectionVC *vmNetworkCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"VmNetworkCollectionVC"];
     vmNetworkCollectionVC.vmVO = self.vmVO;

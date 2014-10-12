@@ -24,6 +24,12 @@
     vc.businessVO = self.businessVO;
     [pages addObject:vc];
     
+    if(self.hasVmPage){
+        BusinessVmCollectionVC *vmCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BusinessVmCollectionVC"];
+        vmCollectionVC.businessVO = self.businessVO;
+        [pages addObject:vmCollectionVC];
+    }
+    
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         BusinessVmCollectionVC *vmCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BusinessVmCollectionVC"];
         vmCollectionVC.businessVO = self.businessVO;

@@ -31,6 +31,12 @@
     vc.storageVO = self.storageVO;
     [pages addObject:vc];
     
+    if(self.hasDiskPage){
+        StorageDiskCollectionVC *diskCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDiskCollectionVC"];
+        diskCollectionVC.storageVO = self.storageVO;
+        [pages addObject:diskCollectionVC];
+    }
+    
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         StorageDiskCollectionVC *diskCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDiskCollectionVC"];
         diskCollectionVC.storageVO = self.storageVO;

@@ -12,4 +12,6 @@
 
 @property BusinessVO *businessVO;
 
+@property BOOL hasVmPage;
+
 @end

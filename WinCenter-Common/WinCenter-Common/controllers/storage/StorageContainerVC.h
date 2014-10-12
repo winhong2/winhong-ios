@@ -13,5 +13,5 @@
 @property StorageVO *storageVO;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonTask;
-
+@property BOOL hasDiskPage;
 @end
