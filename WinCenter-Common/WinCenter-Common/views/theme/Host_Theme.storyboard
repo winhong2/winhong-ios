@@ -560,7 +560,7 @@
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.70196078431372544" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPE-QP-8Fc">
-                                <rect key="frame" x="21" y="119" width="355" height="499"/>
+                                <rect key="frame" x="31" y="118" width="355" height="499"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="物理机-详情摘要-虚拟机总数" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-SB-rjq">
                                         <rect key="frame" x="2" y="40" width="334" height="89"/>
@@ -650,7 +650,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-Aj-xf3">
-                                <rect key="frame" x="389" y="303" width="619" height="166"/>
+                                <rect key="frame" x="445" y="301" width="619" height="166"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-wE-cNl">
                                         <rect key="frame" x="21" y="44" width="389" height="2"/>
@@ -787,7 +787,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Bd-xA-vMs">
-                                <rect key="frame" x="695" y="442" width="184" height="181"/>
+                                <rect key="frame" x="751" y="440" width="184" height="181"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wYV-By-EJt">
                                         <rect key="frame" x="53" y="32" width="71" height="71"/>
@@ -855,7 +855,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apn-cm-bij">
-                                <rect key="frame" x="389" y="132" width="458" height="163"/>
+                                <rect key="frame" x="445" y="130" width="458" height="163"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="供应商：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-rP-VeO">
                                         <rect key="frame" x="202" y="83" width="60" height="21"/>
@@ -864,7 +864,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pW-NQ-I0U">
-                                        <rect key="frame" x="23" y="21" width="64" height="21"/>
+                                        <rect key="frame" x="23" y="25" width="64" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.36470588235294116" green="0.38039215686274508" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -927,7 +927,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mq6-4W-ufl">
-                                <rect key="frame" x="529" y="442" width="164" height="181"/>
+                                <rect key="frame" x="585" y="440" width="164" height="181"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soJ-ea-rEp">
                                         <rect key="frame" x="100" y="131" width="64" height="20"/>
@@ -995,7 +995,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXA-XY-RdA">
-                                <rect key="frame" x="368" y="443" width="205" height="180"/>
+                                <rect key="frame" x="424" y="441" width="205" height="180"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-ma-G6V">
                                         <rect key="frame" x="100" y="110" width="53" height="21"/>
