@@ -39,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *storageRatio;
 @property (weak, nonatomic) IBOutlet UIView *storageChartGroup;
 
+@property (weak, nonatomic) IBOutlet UILabel *name;
 
 @property (weak, nonatomic) IBOutlet UIImageView *osType;
 
@@ -71,6 +72,7 @@
 }
 
 - (void)refreshMainInfo{
+    self.name.text = [NSString stringWithFormat:@"%@", self.hostVO.hostName];
     self.virtualMachineNum.text = [NSString stringWithFormat:@"%d", self.hostVO.virtualMachineNum];
     //self.activeMachineNum.text = [NSString stringWithFormat:@"%d", 0];
     self.networkNum.text = [NSString stringWithFormat:@"%d", self.hostVO.networkNum];

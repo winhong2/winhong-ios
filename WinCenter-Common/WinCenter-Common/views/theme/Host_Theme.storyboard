@@ -502,7 +502,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lls-3y-2oa">
                                 <rect key="frame" x="0.0" y="0.0" width="1032" height="122"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R-Qiuzhongwen dezyci-资源池" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZn-d4-0Sc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="物理机名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZn-d4-0Sc">
                                         <rect key="frame" x="148" y="39" width="779" height="32"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1083,6 +1083,7 @@
                         <outlet property="memoryUnusedSize" destination="4Hy-cu-4F0" id="UuB-hU-wH4"/>
                         <outlet property="memoryUsedSize" destination="soJ-ea-rEp" id="Kwh-tO-gaa"/>
                         <outlet property="model" destination="Vry-Py-BGi" id="CZG-qd-OBy"/>
+                        <outlet property="name" destination="IZn-d4-0Sc" id="XID-PE-qaC"/>
                         <outlet property="networkNum" destination="fgi-Zb-PCa" id="BA3-5A-NMD"/>
                         <outlet property="startRunTime" destination="Utj-93-bxD" id="fhN-LG-IT4"/>
                         <outlet property="storageChartGroup" destination="wYV-By-EJt" id="z4e-gy-Iqk"/>
