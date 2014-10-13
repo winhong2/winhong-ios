@@ -7,6 +7,7 @@
 //
 
 #import "MasterContainerVC.h"
+#import "DatacenterMenuVC.h"
 
 @interface DatacenterContainerVC : MasterContainerVC<DatacenterTableVCDelegate>
 

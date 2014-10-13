@@ -544,6 +544,9 @@
                     <navigationItem key="navigationItem" id="rPP-h3-GZN"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="buttonTask" destination="kBN-Pl-Xaq" id="fjp-oI-Ry1"/>
                         <outlet property="ipLabel" destination="wFo-PJ-jMw" id="1mI-ux-AsK"/>

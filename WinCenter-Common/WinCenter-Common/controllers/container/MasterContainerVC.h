@@ -26,6 +26,9 @@
 @property (weak, nonatomic) IBOutlet UIView *segmentView;
 
 @property UIPopoverController *popover;
+@property BOOL switchPageVC_withoutAnimation;
+@property BOOL isPageVCDataSourceNil;
+@property BOOL isOrientationVertical;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 

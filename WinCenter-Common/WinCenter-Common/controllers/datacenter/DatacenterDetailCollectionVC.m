@@ -17,6 +17,7 @@
 #import "VmContainerVC.h"
 #import "BusinessContainerVC.h"
 #import "MasterCollectionFooter.h"
+#import "DatacenterDetailCollectionHeader.h"
 
 @implementation DatacenterDetailCollectionVC
 
@@ -30,94 +31,115 @@
             break;
         }
         case Page_Host:{
-            if(self.isMore){
-                [self.poolVO getHostListAsync:^(NSArray *allRemote, NSError *error) {
-                    [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
-                    [self.collectionView reloadData];
-                }];
-            }else{
-                [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
-                    for(PoolVO *poolVO in allRemote){
-                        [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                        NSMutableArray *hosts = [[NSMutableArray alloc] initWithArray:[poolVO getHostLisWithlimit:7 error:nil]];
-                        NSString *needMoreButton = @"FALSE";
-                        
-                        if(hosts.count==7){
-                            needMoreButton = @"TRUE";
-                            [hosts removeObjectAtIndex:6];
+            if(self.poolVO){
+                if(self.isMore){
+                    [self.poolVO getHostListAsync:^(NSArray *allRemote, NSError *error) {
+                        [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
+                        [self.collectionView reloadData];
+                    }];
+                }else{
+                    [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
+                        for(PoolVO *poolVO in allRemote){
+                            [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                            NSMutableArray *hosts = [[NSMutableArray alloc] initWithArray:[poolVO getHostLisWithlimit:7 error:nil]];
+                            NSString *needMoreButton = @"FALSE";
+                            
+                            if(hosts.count==7){
+                                needMoreButton = @"TRUE";
+                                [hosts removeObjectAtIndex:6];
+                            }
+                            
+                            [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                            [self.dataList setValue:hosts forKey:poolVO.resourcePoolName];
                         }
-                        
-                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
-                        [self.dataList setValue:hosts forKey:poolVO.resourcePoolName];
-                    }
+                        [self.collectionView reloadData];
+                    }];
+                }
+            }else{
+                [[RemoteObject getCurrentDatacenterVO] getHostListAsync:^(NSArray *allRemote, NSError *error) {
+                    [self.dataList setValue:allRemote forKey:[RemoteObject getCurrentDatacenterVO].name];
                     [self.collectionView reloadData];
                 }];
             }
             break;
         }
         case Page_Storage:{
-            if(self.isMore){
-                [self.poolVO getStorageListAsync:^(NSArray *allRemote, NSError *error) {
-                    NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
-                    for(StorageVO *item in allRemote){
-                        if([item.shared isEqualToString:@"true"]){
-                            [shareList addObject:item];
-                        }
-                    }
-                    [self.dataList setValue:shareList forKey:self.poolVO.resourcePoolName];
-                    [self.collectionView reloadData];
-                }];
-                
-            }else{
-                [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
-                    for(PoolVO *poolVO in allRemote){
-                        NSArray *storageList = [poolVO getStorageList:nil];
+            if(self.poolVO){
+                if(self.isMore){
+                    [self.poolVO getStorageListAsync:^(NSArray *allRemote, NSError *error) {
                         NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
-                        NSString *needMoreButton = @"FALSE";
-                        int count = 0;
-                        for(StorageVO *item in storageList){
+                        for(StorageVO *item in allRemote){
                             if([item.shared isEqualToString:@"true"]){
-                                count++;
-                                if(count==7){
-                                    needMoreButton = @"TRUE";
-                                    break;
-                                }
                                 [shareList addObject:item];
                             }
                         }
-                        //if(shareList.count>0){
-                        [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
-                        [self.dataList setValue:shareList forKey:poolVO.resourcePoolName];
-                        //}
-                    }
+                        [self.dataList setValue:shareList forKey:self.poolVO.resourcePoolName];
+                        [self.collectionView reloadData];
+                    }];
+                    
+                }else{
+                    [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
+                        for(PoolVO *poolVO in allRemote){
+                            NSArray *storageList = [poolVO getStorageList:nil];
+                            NSMutableArray *shareList = [[NSMutableArray alloc] initWithCapacity:0];
+                            NSString *needMoreButton = @"FALSE";
+                            int count = 0;
+                            for(StorageVO *item in storageList){
+                                if([item.shared isEqualToString:@"true"]){
+                                    count++;
+                                    if(count==7){
+                                        needMoreButton = @"TRUE";
+                                        break;
+                                    }
+                                    [shareList addObject:item];
+                                }
+                            }
+                            //if(shareList.count>0){
+                            [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                            [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                            [self.dataList setValue:shareList forKey:poolVO.resourcePoolName];
+                            //}
+                        }
+                        [self.collectionView reloadData];
+                    }];
+                }
+            }else{
+                [[RemoteObject getCurrentDatacenterVO] getStorageListAsync:^(NSArray *allRemote, NSError *error) {
+                    [self.dataList setValue:allRemote forKey:[RemoteObject getCurrentDatacenterVO].name];
                     [self.collectionView reloadData];
                 }];
             }
             break;
         }
         case Page_VM:{
-            if(self.isMore){
-                [self.poolVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
-                    [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
-                    [self.collectionView reloadData];
-                }];
-            }else{
-                [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
-                    for(PoolVO *poolVO in allRemote){
-                        [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
-                        
-                        NSMutableArray *vms = [[NSMutableArray alloc] initWithArray:[poolVO getVmListWithlimit:7 error:nil]];
-                        NSString *needMoreButton = @"FALSE";
-                        
-                        if(vms.count==7){
-                            needMoreButton = @"TRUE";
-                            [vms removeObjectAtIndex:6];
+            if(self.poolVO){
+                if(self.isMore){
+                    [self.poolVO getVmListAsync:^(NSArray *allRemote, NSError *error) {
+                        [self.dataList setValue:allRemote forKey:self.poolVO.resourcePoolName];
+                        [self.collectionView reloadData];
+                    }];
+                }else{
+                    [[RemoteObject getCurrentDatacenterVO] getPoolListAsync:^(NSArray *allRemote, NSError *error) {
+                        for(PoolVO *poolVO in allRemote){
+                            [self.pools setValue:poolVO forKey:poolVO.resourcePoolName];
+                            
+                            NSMutableArray *vms = [[NSMutableArray alloc] initWithArray:[poolVO getVmListWithlimit:7 error:nil]];
+                            NSString *needMoreButton = @"FALSE";
+                            
+                            if(vms.count==7){
+                                needMoreButton = @"TRUE";
+                                [vms removeObjectAtIndex:6];
+                            }
+                            
+                            [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
+                            [self.dataList setValue:vms forKey:poolVO.resourcePoolName];
                         }
-                        
-                        [self.pools_needMoreButton setValue:needMoreButton forKey:poolVO.resourcePoolName];
-                        [self.dataList setValue:vms forKey:poolVO.resourcePoolName];
-                    }
+                        [self.collectionView reloadData];
+                    }];
+                }
+            }else{
+                [[RemoteObject getCurrentDatacenterVO] getVmListAsync:^(NSArray *allRemote, NSError *error) {
+                    [self.dataList setValue:allRemote forKey:[RemoteObject getCurrentDatacenterVO].name];
                     [self.collectionView reloadData];
                 }];
             }
@@ -219,52 +241,85 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     
     if([kind isEqualToString:UICollectionElementKindSectionHeader]){
-        MasterCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MasterCollectionHeader" forIndexPath:indexPath];
-        
-        if(header){
-            switch (self.pageType) {
-                case Page_Pool:{
-                    header.titleHintView.hidden = YES;
-                    header.titleLabel.hidden = YES;
-                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
-                    break;
+        if(self.isDetailPagePushed){
+            DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterDetailCollectionHeader" forIndexPath:indexPath];
+            
+            if(header){
+                switch (self.pageType) {
+                    case Page_Pool:{
+                        //
+                        break;
+                    }
+                    case Page_Host:{
+                        //
+                        break;
+                    }
+                    case Page_Storage:{
+                        //
+                        break;
+                    }
+                    case Page_VM:{
+                        //
+                        break;
+                    }
+                    case Page_Business:{
+                        //
+                        break;
+                    }
+                    default:
+                        break;
                 }
-                case Page_Host:{
-                    header.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.dataList.allKeys[indexPath.section]];
-                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
-                    header.moreButton.tag = indexPath.section;
-                    break;
-                }
-                case Page_Storage:{
-                    header.titleLabel.text = [NSString stringWithFormat:@"%@下的共享存储列表", self.dataList.allKeys[indexPath.section]];
-                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
-                    header.moreButton.tag = indexPath.section;
-                    break;
-                }
-                case Page_VM:{
-                    header.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.dataList.allKeys[indexPath.section]];
-                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
-                    header.moreButton.tag = indexPath.section;
-                    break;
-                }
-                case Page_Business:{
-                    header.titleHintView.hidden = YES;
-                    header.titleLabel.hidden = YES;
-                    header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
-                    break;
-                }
-                default:
-                    break;
             }
+            
+            return header;
+        }else{
+            MasterCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MasterCollectionHeader" forIndexPath:indexPath];
+            
+            if(header){
+                switch (self.pageType) {
+                    case Page_Pool:{
+                        header.titleHintView.hidden = YES;
+                        header.titleLabel.hidden = YES;
+                        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+                        break;
+                    }
+                    case Page_Host:{
+                        header.titleLabel.text = [NSString stringWithFormat:@"%@下的物理机列表", self.dataList.allKeys[indexPath.section]];
+                        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                        header.moreButton.tag = indexPath.section;
+                        break;
+                    }
+                    case Page_Storage:{
+                        header.titleLabel.text = [NSString stringWithFormat:@"%@下的共享存储列表", self.dataList.allKeys[indexPath.section]];
+                        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                        header.moreButton.tag = indexPath.section;
+                        break;
+                    }
+                    case Page_VM:{
+                        header.titleLabel.text = [NSString stringWithFormat:@"%@下的虚拟机列表", self.dataList.allKeys[indexPath.section]];
+                        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<6);
+                        header.moreButton.tag = indexPath.section;
+                        break;
+                    }
+                    case Page_Business:{
+                        header.titleHintView.hidden = YES;
+                        header.titleLabel.hidden = YES;
+                        header.moreButton.hidden = (((NSArray*)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]]).count<9);
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }
+            
+            if (self.isMore) {
+                header.hidden = YES;
+            }else if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"]isEqualToString:@"true"]){
+                header.moreButton.hidden = NO;
+            }
+            
+            return header;
         }
-        
-        if (self.isMore) {
-            header.hidden = YES;
-        }else if([[[NSUserDefaults standardUserDefaults] stringForKey:@"isDemo"]isEqualToString:@"true"]){
-            header.moreButton.hidden = NO;
-        }
-        
-        return header;
     }else{
         MasterCollectionFooter *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"MasterCollectionFooter" forIndexPath:indexPath];
         
@@ -311,7 +366,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     switch (self.pageType) {
         case Page_Pool:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Pool" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Pool"] instantiateInitialViewController];
             PoolContainerVC *vc;
             if([root isKindOfClass:[PoolContainerVC class]]){
                 vc = (PoolContainerVC*) root;
@@ -319,11 +374,16 @@
                 vc = [[root childViewControllers] firstObject];
             }
             vc.poolVO = (PoolVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:root animated:YES completion:nil];
+            
+            if(self.isDetailPagePushed){
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                [self presentViewController:root animated:YES completion:nil];
+            }
             break;
         }
         case Page_Host:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Host" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Host"] instantiateInitialViewController];
             HostContainerVC *vc;
             if([root isKindOfClass:[HostContainerVC class]]){
                 vc = (HostContainerVC*) root;
@@ -331,11 +391,17 @@
                 vc = [[root childViewControllers] firstObject];
             }
             vc.hostVO = (HostVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:root animated:YES completion:nil];
+
+            
+            if(self.isDetailPagePushed){
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                [self presentViewController:root animated:YES completion:nil];
+            }
             break;
         }
         case Page_Storage:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Storage" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Storage"] instantiateInitialViewController];
             StorageContainerVC *vc;
             if([root isKindOfClass:[StorageContainerVC class]]){
                 vc = (StorageContainerVC*) root;
@@ -343,11 +409,17 @@
                 vc = [[root childViewControllers] firstObject];
             }
             vc.storageVO = (StorageVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:root animated:YES completion:nil];
+
+            if(self.isDetailPagePushed){
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                [self presentViewController:root animated:YES completion:nil];
+            }
+            
             break;
         }
         case Page_VM:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"VM" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"VM"] instantiateInitialViewController];
             VmContainerVC *vc;
             if([root isKindOfClass:[VmContainerVC class]]){
                 vc = (VmContainerVC*) root;
@@ -355,11 +427,17 @@
                 vc = [[root childViewControllers] firstObject];
             }
             vc.vmVO = (VmVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:root animated:YES completion:nil];
+
+            if(self.isDetailPagePushed){
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                [self presentViewController:root animated:YES completion:nil];
+            }
+            
             break;
         }
         case Page_Business:{
-            UIViewController *root = [[UIStoryboard storyboardWithName:@"Business" bundle:nil] instantiateInitialViewController];
+            UIViewController *root = [[UIStoryboard storyboardWithName:@"Business"] instantiateInitialViewController];
             BusinessContainerVC *vc;
             if([root isKindOfClass:[BusinessContainerVC class]]){
                 vc = (BusinessContainerVC*) root;
@@ -367,7 +445,13 @@
                 vc = [[root childViewControllers] firstObject];
             }
             vc.businessVO = (BusinessVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-            [self presentViewController:root animated:YES completion:nil];
+
+            if(self.isDetailPagePushed){
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                [self presentViewController:root animated:YES completion:nil];
+            }
+            
             break;
         }
         default:
@@ -378,12 +462,40 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"toMore"]){
-        DatacenterDetailMoreVC *vc = segue.destinationViewController;
+        UIViewController *root = segue.destinationViewController;
+        DatacenterDetailMoreVC *vc;
+        if([root isKindOfClass:[DatacenterDetailMoreVC class]]){
+            vc = (DatacenterDetailMoreVC*)root;
+        }else{
+            vc = (DatacenterDetailMoreVC*) [[root childViewControllers] firstObject];
+        }
         if(self.pools && self.pools.allKeys.count>0){
             vc.poolVO = [self.pools valueForKey:self.pools.allKeys[((UIButton*)sender).tag]];
         }
         vc.pageType = self.pageType;
     }
 }
+
+
+-(IBAction)showWarningInfoVC:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Warning"] instantiateInitialViewController];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    [self.popover presentPopoverFromBarButtonItem:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
+
+-(IBAction)showControlRecordVC:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    [self.popover presentPopoverFromBarButtonItem:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
+
 
 @end

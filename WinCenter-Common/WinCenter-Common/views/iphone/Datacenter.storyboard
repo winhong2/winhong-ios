@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DatacenterCell" textLabel="rl3-L3-UHs" detailTextLabel="tJs-Pg-8fX" style="IBUITableViewCellStyleValue1" id="5Lh-Kn-aGy">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DatacenterCell" textLabel="rl3-L3-UHs" detailTextLabel="tJs-Pg-8fX" style="IBUITableViewCellStyleSubtitle" id="5Lh-Kn-aGy">
                                 <rect key="frame" x="0.0" y="22" width="300" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Lh-Kn-aGy" id="fkn-LR-DN9">
@@ -24,15 +24,15 @@
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rl3-L3-UHs">
                                             <rect key="frame" x="15" y="11" width="33" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tJs-Pg-8fX">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tJs-Pg-8fX">
                                             <rect key="frame" x="226" y="11" width="59" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -538,7 +538,7 @@
         <scene sceneID="tfs-Wj-ZHM">
             <objects>
                 <collectionViewController storyboardIdentifier="DatacenterDetailCollectionVC" autoresizesArchivedViewToFullSize="NO" id="yJj-B7-ih5" customClass="DatacenterDetailCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="asZ-VA-ubS">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="asZ-VA-ubS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -945,7 +945,7 @@
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <segue destination="tKq-Gv-AXg" kind="modal" identifier="toMore" id="yr8-da-7Wr"/>
+                                        <segue destination="ryb-iU-wb8" kind="modal" identifier="toMore" id="yr8-da-7Wr"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -964,7 +964,7 @@
             </objects>
             <point key="canvasLocation" x="-1422" y="333"/>
         </scene>
-        <!--Datacenter Detail MoreVC-->
+        <!--更多-->
         <scene sceneID="AWR-od-l4Y">
             <objects>
                 <viewController storyboardIdentifier="DatacenterDetailMoreVC" id="tKq-Gv-AXg" customClass="DatacenterDetailMoreVC" sceneMemberID="viewController">
@@ -980,30 +980,42 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifH-Ft-oOd">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="更多" id="0TM-fo-GJg">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="j2k-gG-dzw">
-                                            <connections>
-                                                <segue destination="aoT-nq-E0y" kind="unwind" unwindAction="backToCollectionVC:" id="UHn-bE-s3m"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="更多" id="2hV-ha-r2k">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="pdW-9g-8tY">
+                            <connections>
+                                <segue destination="aoT-nq-E0y" kind="unwind" unwindAction="backToCollectionVC:" id="7on-8h-fLV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pageVCContainer" destination="uo3-fe-Kh3" id="qHW-eg-iBd"/>
-                        <outlet property="titleItem" destination="0TM-fo-GJg" id="kK1-eK-soJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdx-fg-3Dp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aoT-nq-E0y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9WH-Z3-gWZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ryb-iU-wb8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mxy-sx-xDz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tKq-Gv-AXg" kind="relationship" relationship="rootViewController" id="3ji-SR-wLq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xH0-oD-m7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1001" y="704"/>
         </scene>

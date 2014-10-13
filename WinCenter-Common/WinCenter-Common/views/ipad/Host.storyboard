@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SdQ-oO-Giu">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -592,10 +593,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU使用率图表" translatesAutoresizingMaskIntoConstraints="NO" id="c6A-jO-0og">
-                                        <rect key="frame" x="20" y="49" width="918" height="119"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7s-8s-V48">
+                                        <rect key="frame" x="0.0" y="29" width="958" height="159"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CPU使用率图表" translatesAutoresizingMaskIntoConstraints="NO" id="c6A-jO-0og">
+                                                <rect key="frame" x="20" y="20" width="918" height="119"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -608,10 +615,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="内存使用率图表" translatesAutoresizingMaskIntoConstraints="NO" id="pmC-LP-J6Q">
-                                        <rect key="frame" x="20" y="49" width="943" height="123"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOu-IE-8Og">
+                                        <rect key="frame" x="0.0" y="29" width="983" height="163"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="内存使用率图表" translatesAutoresizingMaskIntoConstraints="NO" id="pmC-LP-J6Q">
+                                                <rect key="frame" x="20" y="20" width="943" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -624,10 +637,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="网络使用率图表" translatesAutoresizingMaskIntoConstraints="NO" id="htR-AQ-8bO">
-                                        <rect key="frame" x="20" y="49" width="963" height="123"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O56-Bj-6GQ">
+                                        <rect key="frame" x="0.0" y="29" width="1003" height="163"/>
+                                        <subviews>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="网络使用率图表" translatesAutoresizingMaskIntoConstraints="NO" id="htR-AQ-8bO">
+                                                <rect key="frame" x="20" y="20" width="963" height="123"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -637,6 +656,11 @@
                     <navigationItem key="navigationItem" id="hBz-0c-Jr9"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="cpuPNChartArea" destination="j7s-8s-V48" id="3ra-Ma-9jU"/>
+                        <outlet property="memoryPNChartArea" destination="qOu-IE-8Og" id="Jc0-k5-emW"/>
+                        <outlet property="netPNChartArea" destination="O56-Bj-6GQ" id="Oaz-GA-UTm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgr-Pw-zZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1005,6 +1029,9 @@
                     <navigationItem key="navigationItem" id="bGE-Lo-6zM"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isOrientationVertical" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="btnCreateVM" destination="eku-sN-u80" id="qKZ-HW-vbF"/>
                         <outlet property="buttonTask" destination="Ha1-GX-9xP" id="m0o-9S-roN"/>
@@ -1025,7 +1052,7 @@
         <scene sceneID="A9H-3s-hE9">
             <objects>
                 <collectionViewController storyboardIdentifier="HostNicCollectionVC" autoresizesArchivedViewToFullSize="NO" id="gHu-RT-PBv" customClass="HostNicCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="rwo-5E-UNh">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="rwo-5E-UNh">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1181,7 +1208,7 @@
         <scene sceneID="7vR-A1-cIH">
             <objects>
                 <collectionViewController storyboardIdentifier="HostNetworkCollectionVC" autoresizesArchivedViewToFullSize="NO" id="vRq-a0-JFm" customClass="HostNetworkCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="mZM-2j-Sz1">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="mZM-2j-Sz1">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1299,7 +1326,7 @@
         <scene sceneID="aSf-R7-OwP">
             <objects>
                 <collectionViewController storyboardIdentifier="HostCollectionVC" autoresizesArchivedViewToFullSize="NO" id="jLc-QT-dyk" customClass="HostCollectionVC" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="XRH-44-CYa">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="XRH-44-CYa">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

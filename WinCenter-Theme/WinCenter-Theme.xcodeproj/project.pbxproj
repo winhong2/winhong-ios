@@ -1,0 +1,1283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1886D34F19E97942005E1645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D34E19E97942005E1645 /* main.m */; };
+		1886D35219E97942005E1645 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D35119E97942005E1645 /* AppDelegate.m */; };
+		1886D35D19E97943005E1645 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1886D35B19E97943005E1645 /* LaunchScreen.xib */; };
+		1886D41F19E979F8005E1645 /* BusinessContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D37519E979F8005E1645 /* BusinessContainerVC.m */; };
+		1886D42019E979F8005E1645 /* BusinessDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D37719E979F8005E1645 /* BusinessDetailInfoVC.m */; };
+		1886D42119E979F8005E1645 /* BusinessVmCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D37919E979F8005E1645 /* BusinessVmCollectionCell.m */; };
+		1886D42219E979F8005E1645 /* BusinessVmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D37B19E979F8005E1645 /* BusinessVmCollectionVC.m */; };
+		1886D42319E979F8005E1645 /* MasterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D37E19E979F8005E1645 /* MasterCollectionCell.m */; };
+		1886D42419E979F8005E1645 /* MasterCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38019E979F8005E1645 /* MasterCollectionFooter.m */; };
+		1886D42519E979F8005E1645 /* MasterCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38219E979F8005E1645 /* MasterCollectionHeader.m */; };
+		1886D42619E979F8005E1645 /* MasterCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38419E979F8005E1645 /* MasterCollectionVC.m */; };
+		1886D42719E979F8005E1645 /* MasterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38719E979F8005E1645 /* MasterContainerVC.m */; };
+		1886D42819E979F8005E1645 /* DatacenterContainerTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38A19E979F8005E1645 /* DatacenterContainerTableVC.m */; };
+		1886D42919E979F8005E1645 /* DatacenterContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38C19E979F8005E1645 /* DatacenterContainerVC.m */; };
+		1886D42A19E979F8005E1645 /* DatacenterDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D38E19E979F8005E1645 /* DatacenterDashboardVC.m */; };
+		1886D42B19E979F8005E1645 /* DatacenterDetailCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39019E979F8005E1645 /* DatacenterDetailCollectionHeader.m */; };
+		1886D42C19E979F8005E1645 /* DatacenterDetailCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39219E979F8005E1645 /* DatacenterDetailCollectionVC.m */; };
+		1886D42D19E979F8005E1645 /* DatacenterDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39419E979F8005E1645 /* DatacenterDetailInfoVC.m */; };
+		1886D42E19E979F8005E1645 /* DatacenterDetailMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39619E979F8005E1645 /* DatacenterDetailMoreVC.m */; };
+		1886D42F19E979F8005E1645 /* DatacenterMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39819E979F8005E1645 /* DatacenterMenuVC.m */; };
+		1886D43019E979F8005E1645 /* DatacenterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39A19E979F8005E1645 /* DatacenterTableVC.m */; };
+		1886D43119E979F8005E1645 /* HostCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39D19E979F8005E1645 /* HostCollectionVC.m */; };
+		1886D43219E979F8005E1645 /* HostContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D39F19E979F8005E1645 /* HostContainerVC.m */; };
+		1886D43319E979F8005E1645 /* HostDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3A119E979F8005E1645 /* HostDetailInfoVC.m */; };
+		1886D43419E979F8005E1645 /* HostDetailPerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3A319E979F8005E1645 /* HostDetailPerformanceVC.m */; };
+		1886D43519E979F8005E1645 /* HostNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3A519E979F8005E1645 /* HostNetworkCollectionVC.m */; };
+		1886D43619E979F8005E1645 /* HostNicCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3A719E979F8005E1645 /* HostNicCollectionVC.m */; };
+		1886D43719E979F8005E1645 /* LoginSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3AA19E979F8005E1645 /* LoginSettingVC.m */; };
+		1886D43819E979F8005E1645 /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3AC19E979F8005E1645 /* LoginTableVC.m */; };
+		1886D43919E979F8005E1645 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3AE19E979F8005E1645 /* LoginVC.m */; };
+		1886D43A19E979F8005E1645 /* NetworkCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3B119E979F8005E1645 /* NetworkCollectionCell.m */; };
+		1886D43B19E979F8005E1645 /* NetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3B319E979F8005E1645 /* NetworkCollectionVC.m */; };
+		1886D43C19E979F8005E1645 /* NetworkContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3B519E979F8005E1645 /* NetworkContainerVC.m */; };
+		1886D43D19E979F8005E1645 /* PoolContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3B819E979F8005E1645 /* PoolContainerVC.m */; };
+		1886D43E19E979F8005E1645 /* PoolDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3BA19E979F8005E1645 /* PoolDetailInfoVC.m */; };
+		1886D43F19E979F8005E1645 /* PopOptionLicenseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3BD19E979F8005E1645 /* PopOptionLicenseVC.m */; };
+		1886D44019E979F8005E1645 /* PopOptionsUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3BF19E979F8005E1645 /* PopOptionsUserInfoVC.m */; };
+		1886D44119E979F8005E1645 /* PopOptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3C119E979F8005E1645 /* PopOptionsVC.m */; };
+		1886D44219E979F8005E1645 /* StorageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3C419E979F8005E1645 /* StorageCollectionVC.m */; };
+		1886D44319E979F8005E1645 /* StorageContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3C619E979F8005E1645 /* StorageContainerVC.m */; };
+		1886D44419E979F8005E1645 /* StorageDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3C819E979F8005E1645 /* StorageDetailInfoVC.m */; };
+		1886D44519E979F8005E1645 /* StorageDiskCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3CA19E979F8005E1645 /* StorageDiskCollectionCell.m */; };
+		1886D44619E979F8005E1645 /* StorageDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3CC19E979F8005E1645 /* StorageDiskCollectionVC.m */; };
+		1886D44719E979F8005E1645 /* PopControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3CF19E979F8005E1645 /* PopControlRecordCell.m */; };
+		1886D44819E979F8005E1645 /* PopControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3D119E979F8005E1645 /* PopControlRecordCellForTime.m */; };
+		1886D44919E979F8005E1645 /* PopControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3D319E979F8005E1645 /* PopControlRecordVC.m */; };
+		1886D44A19E979F8005E1645 /* UIStoryboard+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3D519E979F8005E1645 /* UIStoryboard+Theme.m */; };
+		1886D44B19E979F8005E1645 /* VmCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3D819E979F8005E1645 /* VmCollectionVC.m */; };
+		1886D44C19E979F8005E1645 /* VmContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3DA19E979F8005E1645 /* VmContainerVC.m */; };
+		1886D44D19E979F8005E1645 /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3DC19E979F8005E1645 /* VmDetailCPUConfigVC.m */; };
+		1886D44E19E979F8005E1645 /* VmDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3DE19E979F8005E1645 /* VmDetailInfoVC.m */; };
+		1886D44F19E979F8005E1645 /* VmDetailMemryConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3E019E979F8005E1645 /* VmDetailMemryConfigVC.m */; };
+		1886D45019E979F8005E1645 /* VmDetailSnapshootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3E219E979F8005E1645 /* VmDetailSnapshootVC.m */; };
+		1886D45119E979F8005E1645 /* VmDiskCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3E419E979F8005E1645 /* VmDiskCollectionVC.m */; };
+		1886D45219E979F8005E1645 /* VmMigrateSelectHostListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3E619E979F8005E1645 /* VmMigrateSelectHostListCell.m */; };
+		1886D45319E979F8005E1645 /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3E819E979F8005E1645 /* VmMigrateSelectHostListVC.m */; };
+		1886D45419E979F8005E1645 /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3EA19E979F8005E1645 /* VmMigrateVC.m */; };
+		1886D45519E979F8005E1645 /* VmNetworkCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3EC19E979F8005E1645 /* VmNetworkCollectionVC.m */; };
+		1886D45619E979F8005E1645 /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3EE19E979F8005E1645 /* VmNewVC.m */; };
+		1886D45719E979F8005E1645 /* PopWarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3F119E979F8005E1645 /* PopWarningInfoCell.m */; };
+		1886D45819E979F8005E1645 /* PopWarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3F319E979F8005E1645 /* PopWarningInfoCellForTime.m */; };
+		1886D45919E979F8005E1645 /* PopWarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D3F519E979F8005E1645 /* PopWarningInfoVC.m */; };
+		1886D45A19E979F8005E1645 /* BusinessVO.getBusinessVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3F719E979F8005E1645 /* BusinessVO.getBusinessVOAsync.json */; };
+		1886D45B19E979F8005E1645 /* ControlRecordVO.getControlRecordListViaObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3F819E979F8005E1645 /* ControlRecordVO.getControlRecordListViaObject.json */; };
+		1886D45C19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3F919E979F8005E1645 /* DatacenterVO.getBusinessListAsync.json */; };
+		1886D45D19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3FA19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.limit.json */; };
+		1886D45E19E979F8005E1645 /* DatacenterVO.getDatacenterListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3FB19E979F8005E1645 /* DatacenterVO.getDatacenterListAsync.json */; };
+		1886D45F19E979F8005E1645 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3FC19E979F8005E1645 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */; };
+		1886D46019E979F8005E1645 /* DatacenterVO.getHostListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3FD19E979F8005E1645 /* DatacenterVO.getHostListAsync.json */; };
+		1886D46119E979F8005E1645 /* DatacenterVO.getHostListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3FE19E979F8005E1645 /* DatacenterVO.getHostListAsync.limit.json */; };
+		1886D46219E979F8005E1645 /* DatacenterVO.getPoolListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D3FF19E979F8005E1645 /* DatacenterVO.getPoolListAsync.json */; };
+		1886D46319E979F8005E1645 /* DatacenterVO.getPoolListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40019E979F8005E1645 /* DatacenterVO.getPoolListAsync.limit.json */; };
+		1886D46419E979F8005E1645 /* DatacenterVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40119E979F8005E1645 /* DatacenterVO.getStorageListAsync.json */; };
+		1886D46519E979F8005E1645 /* DatacenterVO.getStorageListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40219E979F8005E1645 /* DatacenterVO.getStorageListAsync.limit.json */; };
+		1886D46619E979F8005E1645 /* DatacenterVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40319E979F8005E1645 /* DatacenterVO.getVmListAsync.json */; };
+		1886D46719E979F8005E1645 /* DatacenterVO.getVmListAsync.limit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40419E979F8005E1645 /* DatacenterVO.getVmListAsync.limit.json */; };
+		1886D46819E979F8005E1645 /* HostVO.getHostNetworkExternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40519E979F8005E1645 /* HostVO.getHostNetworkExternalListAsync.json */; };
+		1886D46919E979F8005E1645 /* HostVO.getHostNetworkInternalListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40619E979F8005E1645 /* HostVO.getHostNetworkInternalListAsync.json */; };
+		1886D46A19E979F8005E1645 /* HostVO.getHostNicGroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40719E979F8005E1645 /* HostVO.getHostNicGroupedListAsync.json */; };
+		1886D46B19E979F8005E1645 /* HostVO.getHostNicUngroupedListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40819E979F8005E1645 /* HostVO.getHostNicUngroupedListAsync.json */; };
+		1886D46C19E979F8005E1645 /* HostVO.getHostStatVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40919E979F8005E1645 /* HostVO.getHostStatVOAsync.json */; };
+		1886D46D19E979F8005E1645 /* HostVO.getHostVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40A19E979F8005E1645 /* HostVO.getHostVOAsync.json */; };
+		1886D46E19E979F8005E1645 /* HostVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40B19E979F8005E1645 /* HostVO.getStorageListAsync.json */; };
+		1886D46F19E979F8005E1645 /* HostVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40C19E979F8005E1645 /* HostVO.getVmListAsync.json */; };
+		1886D47019E979F8005E1645 /* LicenseVO.getLicenseVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40D19E979F8005E1645 /* LicenseVO.getLicenseVOAsync.json */; };
+		1886D47119E979F8005E1645 /* PoolVO.getHostListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40E19E979F8005E1645 /* PoolVO.getHostListAsync.json */; };
+		1886D47219E979F8005E1645 /* PoolVO.getHostLisWithlimit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D40F19E979F8005E1645 /* PoolVO.getHostLisWithlimit.json */; };
+		1886D47319E979F8005E1645 /* PoolVO.getPoolElasticAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41019E979F8005E1645 /* PoolVO.getPoolElasticAsync.json */; };
+		1886D47419E979F8005E1645 /* PoolVO.getPoolVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41119E979F8005E1645 /* PoolVO.getPoolVOAsync.json */; };
+		1886D47519E979F8005E1645 /* PoolVO.getStorageList.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41219E979F8005E1645 /* PoolVO.getStorageList.json */; };
+		1886D47619E979F8005E1645 /* PoolVO.getStorageListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41319E979F8005E1645 /* PoolVO.getStorageListAsync.json */; };
+		1886D47719E979F8005E1645 /* PoolVO.getVmListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41419E979F8005E1645 /* PoolVO.getVmListAsync.json */; };
+		1886D47819E979F8005E1645 /* PoolVO.getVmListWithlimit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41519E979F8005E1645 /* PoolVO.getVmListWithlimit.json */; };
+		1886D47919E979F8005E1645 /* StorageVO.getStorageVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41619E979F8005E1645 /* StorageVO.getStorageVOAsync.json */; };
+		1886D47A19E979F8005E1645 /* StorageVO.getStorageVolumnListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41719E979F8005E1645 /* StorageVO.getStorageVolumnListAsync.json */; };
+		1886D47B19E979F8005E1645 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41819E979F8005E1645 /* TemplateIcon2x.png */; };
+		1886D47C19E979F8005E1645 /* UserVO.getUserVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41919E979F8005E1645 /* UserVO.getUserVOAsync.json */; };
+		1886D47D19E979F8005E1645 /* VmVO.getVmNicListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41A19E979F8005E1645 /* VmVO.getVmNicListAsync.json */; };
+		1886D47E19E979F8005E1645 /* VmVO.getVmVOAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41B19E979F8005E1645 /* VmVO.getVmVOAsync.json */; };
+		1886D47F19E979F8005E1645 /* VmVO.getVmVolumnListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41C19E979F8005E1645 /* VmVO.getVmVolumnListAsync.json */; };
+		1886D48019E979F8005E1645 /* WarningInfoVO.getWarningInfoListAsync.json in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41D19E979F8005E1645 /* WarningInfoVO.getWarningInfoListAsync.json */; };
+		1886D48119E979F8005E1645 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1886D41E19E979F8005E1645 /* Images.xcassets */; };
+		1886D48E19E97AAB005E1645 /* Business_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48319E97AAB005E1645 /* Business_Theme.storyboard */; };
+		1886D48F19E97AAB005E1645 /* Datacenter_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48419E97AAB005E1645 /* Datacenter_Theme.storyboard */; };
+		1886D49019E97AAB005E1645 /* Host_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48519E97AAB005E1645 /* Host_Theme.storyboard */; };
+		1886D49119E97AAB005E1645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48619E97AAB005E1645 /* Main.storyboard */; };
+		1886D49219E97AAB005E1645 /* Network_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48719E97AAB005E1645 /* Network_Theme.storyboard */; };
+		1886D49319E97AAB005E1645 /* Pool_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48819E97AAB005E1645 /* Pool_Theme.storyboard */; };
+		1886D49419E97AAB005E1645 /* Setting_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48919E97AAB005E1645 /* Setting_Theme.storyboard */; };
+		1886D49519E97AAB005E1645 /* Storage_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48A19E97AAB005E1645 /* Storage_Theme.storyboard */; };
+		1886D49619E97AAB005E1645 /* Task_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48B19E97AAB005E1645 /* Task_Theme.storyboard */; };
+		1886D49719E97AAB005E1645 /* VM_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48C19E97AAB005E1645 /* VM_Theme.storyboard */; };
+		1886D49819E97AAB005E1645 /* Warning_Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886D48D19E97AAB005E1645 /* Warning_Theme.storyboard */; };
+		1886D50A19E97F5A005E1645 /* BusinessListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4BC19E97F5A005E1645 /* BusinessListResult.m */; };
+		1886D50B19E97F5A005E1645 /* BusinessVmVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4BE19E97F5A005E1645 /* BusinessVmVO.m */; };
+		1886D50C19E97F5A005E1645 /* BusinessVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4C019E97F5A005E1645 /* BusinessVO.m */; };
+		1886D50D19E97F5A005E1645 /* ControlRecordListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4C219E97F5A005E1645 /* ControlRecordListResult.m */; };
+		1886D50E19E97F5A005E1645 /* ControlRecordVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4C419E97F5A005E1645 /* ControlRecordVO.m */; };
+		1886D50F19E97F5A005E1645 /* DatacenterListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4C619E97F5A005E1645 /* DatacenterListResult.m */; };
+		1886D51019E97F5A005E1645 /* DatacenterStatVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4C819E97F5A005E1645 /* DatacenterStatVO.m */; };
+		1886D51119E97F5A005E1645 /* DatacenterStatWinserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4CA19E97F5A005E1645 /* DatacenterStatWinserver.m */; };
+		1886D51219E97F5A005E1645 /* DatacenterVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4CC19E97F5A005E1645 /* DatacenterVO.m */; };
+		1886D51319E97F5A005E1645 /* HostListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4CE19E97F5A005E1645 /* HostListResult.m */; };
+		1886D51419E97F5A005E1645 /* HostNetworkListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4D019E97F5A005E1645 /* HostNetworkListResult.m */; };
+		1886D51519E97F5A005E1645 /* HostNetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4D219E97F5A005E1645 /* HostNetworkVO.m */; };
+		1886D51619E97F5B005E1645 /* HostNicListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4D419E97F5A005E1645 /* HostNicListResult.m */; };
+		1886D51719E97F5B005E1645 /* HostNicVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4D619E97F5A005E1645 /* HostNicVO.m */; };
+		1886D51819E97F5B005E1645 /* HostStatVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4D819E97F5A005E1645 /* HostStatVO.m */; };
+		1886D51919E97F5B005E1645 /* HostVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4DA19E97F5A005E1645 /* HostVO.m */; };
+		1886D51A19E97F5B005E1645 /* LicenseVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4DC19E97F5A005E1645 /* LicenseVO.m */; };
+		1886D51B19E97F5B005E1645 /* LicenseWciVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4DE19E97F5A005E1645 /* LicenseWciVO.m */; };
+		1886D51C19E97F5B005E1645 /* LoginVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4E019E97F5A005E1645 /* LoginVO.m */; };
+		1886D51D19E97F5B005E1645 /* NetworkListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4E219E97F5A005E1645 /* NetworkListResult.m */; };
+		1886D51E19E97F5B005E1645 /* NetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4E419E97F5A005E1645 /* NetworkVO.m */; };
+		1886D51F19E97F5B005E1645 /* PoolElasticInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4E619E97F5A005E1645 /* PoolElasticInfo.m */; };
+		1886D52019E97F5B005E1645 /* PoolListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4E819E97F5A005E1645 /* PoolListResult.m */; };
+		1886D52119E97F5B005E1645 /* PoolVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4EA19E97F5A005E1645 /* PoolVO.m */; };
+		1886D52219E97F5B005E1645 /* RemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4EC19E97F5A005E1645 /* RemoteObject.m */; };
+		1886D52319E97F5B005E1645 /* StorageListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4EE19E97F5A005E1645 /* StorageListResult.m */; };
+		1886D52419E97F5B005E1645 /* StorageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4F019E97F5A005E1645 /* StorageVO.m */; };
+		1886D52519E97F5B005E1645 /* StorageVolumnListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4F219E97F5A005E1645 /* StorageVolumnListResult.m */; };
+		1886D52619E97F5B005E1645 /* StorageVolumnVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4F419E97F5A005E1645 /* StorageVolumnVO.m */; };
+		1886D52719E97F5B005E1645 /* UserListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4F619E97F5A005E1645 /* UserListResult.m */; };
+		1886D52819E97F5B005E1645 /* UserVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4F819E97F5A005E1645 /* UserVO.m */; };
+		1886D52919E97F5B005E1645 /* VmDiskListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4FA19E97F5A005E1645 /* VmDiskListResult.m */; };
+		1886D52A19E97F5B005E1645 /* VmDiskVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4FC19E97F5A005E1645 /* VmDiskVO.m */; };
+		1886D52B19E97F5B005E1645 /* VmListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D4FE19E97F5A005E1645 /* VmListResult.m */; };
+		1886D52C19E97F5B005E1645 /* VmNetworkListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50019E97F5A005E1645 /* VmNetworkListResult.m */; };
+		1886D52D19E97F5B005E1645 /* VmNetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50219E97F5A005E1645 /* VmNetworkVO.m */; };
+		1886D52E19E97F5B005E1645 /* VmVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50419E97F5A005E1645 /* VmVO.m */; };
+		1886D52F19E97F5B005E1645 /* WarningInfoListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50619E97F5A005E1645 /* WarningInfoListResult.m */; };
+		1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50819E97F5A005E1645 /* WarningInfoVO.m */; };
+		8658E52896184EA39528D92A /* libPods-WinCenter-Theme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1886D34919E97942005E1645 /* WinCenter-Theme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WinCenter-Theme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1886D34D19E97942005E1645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1886D34E19E97942005E1645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1886D35019E97942005E1645 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1886D35119E97942005E1645 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1886D35C19E97943005E1645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1886D37419E979F8005E1645 /* BusinessContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessContainerVC.h; sourceTree = "<group>"; };
+		1886D37519E979F8005E1645 /* BusinessContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessContainerVC.m; sourceTree = "<group>"; };
+		1886D37619E979F8005E1645 /* BusinessDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailInfoVC.h; sourceTree = "<group>"; };
+		1886D37719E979F8005E1645 /* BusinessDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailInfoVC.m; sourceTree = "<group>"; };
+		1886D37819E979F8005E1645 /* BusinessVmCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionCell.h; sourceTree = "<group>"; };
+		1886D37919E979F8005E1645 /* BusinessVmCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionCell.m; sourceTree = "<group>"; };
+		1886D37A19E979F8005E1645 /* BusinessVmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmCollectionVC.h; sourceTree = "<group>"; };
+		1886D37B19E979F8005E1645 /* BusinessVmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmCollectionVC.m; sourceTree = "<group>"; };
+		1886D37D19E979F8005E1645 /* MasterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionCell.h; sourceTree = "<group>"; };
+		1886D37E19E979F8005E1645 /* MasterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionCell.m; sourceTree = "<group>"; };
+		1886D37F19E979F8005E1645 /* MasterCollectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionFooter.h; sourceTree = "<group>"; };
+		1886D38019E979F8005E1645 /* MasterCollectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionFooter.m; sourceTree = "<group>"; };
+		1886D38119E979F8005E1645 /* MasterCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionHeader.h; sourceTree = "<group>"; };
+		1886D38219E979F8005E1645 /* MasterCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionHeader.m; sourceTree = "<group>"; };
+		1886D38319E979F8005E1645 /* MasterCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterCollectionVC.h; sourceTree = "<group>"; };
+		1886D38419E979F8005E1645 /* MasterCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterCollectionVC.m; sourceTree = "<group>"; };
+		1886D38619E979F8005E1645 /* MasterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterContainerVC.h; sourceTree = "<group>"; };
+		1886D38719E979F8005E1645 /* MasterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterContainerVC.m; sourceTree = "<group>"; };
+		1886D38919E979F8005E1645 /* DatacenterContainerTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerTableVC.h; sourceTree = "<group>"; };
+		1886D38A19E979F8005E1645 /* DatacenterContainerTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerTableVC.m; sourceTree = "<group>"; };
+		1886D38B19E979F8005E1645 /* DatacenterContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterContainerVC.h; sourceTree = "<group>"; };
+		1886D38C19E979F8005E1645 /* DatacenterContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterContainerVC.m; sourceTree = "<group>"; };
+		1886D38D19E979F8005E1645 /* DatacenterDashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDashboardVC.h; sourceTree = "<group>"; };
+		1886D38E19E979F8005E1645 /* DatacenterDashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDashboardVC.m; sourceTree = "<group>"; };
+		1886D38F19E979F8005E1645 /* DatacenterDetailCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailCollectionHeader.h; sourceTree = "<group>"; };
+		1886D39019E979F8005E1645 /* DatacenterDetailCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailCollectionHeader.m; sourceTree = "<group>"; };
+		1886D39119E979F8005E1645 /* DatacenterDetailCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailCollectionVC.h; sourceTree = "<group>"; };
+		1886D39219E979F8005E1645 /* DatacenterDetailCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailCollectionVC.m; sourceTree = "<group>"; };
+		1886D39319E979F8005E1645 /* DatacenterDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailInfoVC.h; sourceTree = "<group>"; };
+		1886D39419E979F8005E1645 /* DatacenterDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailInfoVC.m; sourceTree = "<group>"; };
+		1886D39519E979F8005E1645 /* DatacenterDetailMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailMoreVC.h; sourceTree = "<group>"; };
+		1886D39619E979F8005E1645 /* DatacenterDetailMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailMoreVC.m; sourceTree = "<group>"; };
+		1886D39719E979F8005E1645 /* DatacenterMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterMenuVC.h; sourceTree = "<group>"; };
+		1886D39819E979F8005E1645 /* DatacenterMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterMenuVC.m; sourceTree = "<group>"; };
+		1886D39919E979F8005E1645 /* DatacenterTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterTableVC.h; sourceTree = "<group>"; };
+		1886D39A19E979F8005E1645 /* DatacenterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterTableVC.m; sourceTree = "<group>"; };
+		1886D39C19E979F8005E1645 /* HostCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostCollectionVC.h; sourceTree = "<group>"; };
+		1886D39D19E979F8005E1645 /* HostCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostCollectionVC.m; sourceTree = "<group>"; };
+		1886D39E19E979F8005E1645 /* HostContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostContainerVC.h; sourceTree = "<group>"; };
+		1886D39F19E979F8005E1645 /* HostContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostContainerVC.m; sourceTree = "<group>"; };
+		1886D3A019E979F8005E1645 /* HostDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailInfoVC.h; sourceTree = "<group>"; };
+		1886D3A119E979F8005E1645 /* HostDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailInfoVC.m; sourceTree = "<group>"; };
+		1886D3A219E979F8005E1645 /* HostDetailPerformanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailPerformanceVC.h; sourceTree = "<group>"; };
+		1886D3A319E979F8005E1645 /* HostDetailPerformanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailPerformanceVC.m; sourceTree = "<group>"; };
+		1886D3A419E979F8005E1645 /* HostNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkCollectionVC.h; sourceTree = "<group>"; };
+		1886D3A519E979F8005E1645 /* HostNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkCollectionVC.m; sourceTree = "<group>"; };
+		1886D3A619E979F8005E1645 /* HostNicCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicCollectionVC.h; sourceTree = "<group>"; };
+		1886D3A719E979F8005E1645 /* HostNicCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicCollectionVC.m; sourceTree = "<group>"; };
+		1886D3A919E979F8005E1645 /* LoginSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSettingVC.h; sourceTree = "<group>"; };
+		1886D3AA19E979F8005E1645 /* LoginSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSettingVC.m; sourceTree = "<group>"; };
+		1886D3AB19E979F8005E1645 /* LoginTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableVC.h; sourceTree = "<group>"; };
+		1886D3AC19E979F8005E1645 /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
+		1886D3AD19E979F8005E1645 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		1886D3AE19E979F8005E1645 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		1886D3B019E979F8005E1645 /* NetworkCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionCell.h; sourceTree = "<group>"; };
+		1886D3B119E979F8005E1645 /* NetworkCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionCell.m; sourceTree = "<group>"; };
+		1886D3B219E979F8005E1645 /* NetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCollectionVC.h; sourceTree = "<group>"; };
+		1886D3B319E979F8005E1645 /* NetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCollectionVC.m; sourceTree = "<group>"; };
+		1886D3B419E979F8005E1645 /* NetworkContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkContainerVC.h; sourceTree = "<group>"; };
+		1886D3B519E979F8005E1645 /* NetworkContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkContainerVC.m; sourceTree = "<group>"; };
+		1886D3B719E979F8005E1645 /* PoolContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolContainerVC.h; sourceTree = "<group>"; };
+		1886D3B819E979F8005E1645 /* PoolContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolContainerVC.m; sourceTree = "<group>"; };
+		1886D3B919E979F8005E1645 /* PoolDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolDetailInfoVC.h; sourceTree = "<group>"; };
+		1886D3BA19E979F8005E1645 /* PoolDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolDetailInfoVC.m; sourceTree = "<group>"; };
+		1886D3BC19E979F8005E1645 /* PopOptionLicenseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionLicenseVC.h; sourceTree = "<group>"; };
+		1886D3BD19E979F8005E1645 /* PopOptionLicenseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionLicenseVC.m; sourceTree = "<group>"; };
+		1886D3BE19E979F8005E1645 /* PopOptionsUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsUserInfoVC.h; sourceTree = "<group>"; };
+		1886D3BF19E979F8005E1645 /* PopOptionsUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsUserInfoVC.m; sourceTree = "<group>"; };
+		1886D3C019E979F8005E1645 /* PopOptionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOptionsVC.h; sourceTree = "<group>"; };
+		1886D3C119E979F8005E1645 /* PopOptionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOptionsVC.m; sourceTree = "<group>"; };
+		1886D3C319E979F8005E1645 /* StorageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageCollectionVC.h; sourceTree = "<group>"; };
+		1886D3C419E979F8005E1645 /* StorageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageCollectionVC.m; sourceTree = "<group>"; };
+		1886D3C519E979F8005E1645 /* StorageContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageContainerVC.h; sourceTree = "<group>"; };
+		1886D3C619E979F8005E1645 /* StorageContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageContainerVC.m; sourceTree = "<group>"; };
+		1886D3C719E979F8005E1645 /* StorageDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailInfoVC.h; sourceTree = "<group>"; };
+		1886D3C819E979F8005E1645 /* StorageDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailInfoVC.m; sourceTree = "<group>"; };
+		1886D3C919E979F8005E1645 /* StorageDiskCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionCell.h; sourceTree = "<group>"; };
+		1886D3CA19E979F8005E1645 /* StorageDiskCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionCell.m; sourceTree = "<group>"; };
+		1886D3CB19E979F8005E1645 /* StorageDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDiskCollectionVC.h; sourceTree = "<group>"; };
+		1886D3CC19E979F8005E1645 /* StorageDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDiskCollectionVC.m; sourceTree = "<group>"; };
+		1886D3CE19E979F8005E1645 /* PopControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCell.h; sourceTree = "<group>"; };
+		1886D3CF19E979F8005E1645 /* PopControlRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCell.m; sourceTree = "<group>"; };
+		1886D3D019E979F8005E1645 /* PopControlRecordCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordCellForTime.h; sourceTree = "<group>"; };
+		1886D3D119E979F8005E1645 /* PopControlRecordCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordCellForTime.m; sourceTree = "<group>"; };
+		1886D3D219E979F8005E1645 /* PopControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopControlRecordVC.h; sourceTree = "<group>"; };
+		1886D3D319E979F8005E1645 /* PopControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopControlRecordVC.m; sourceTree = "<group>"; };
+		1886D3D419E979F8005E1645 /* UIStoryboard+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Theme.h"; sourceTree = "<group>"; };
+		1886D3D519E979F8005E1645 /* UIStoryboard+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Theme.m"; sourceTree = "<group>"; };
+		1886D3D719E979F8005E1645 /* VmCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmCollectionVC.h; sourceTree = "<group>"; };
+		1886D3D819E979F8005E1645 /* VmCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmCollectionVC.m; sourceTree = "<group>"; };
+		1886D3D919E979F8005E1645 /* VmContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmContainerVC.h; sourceTree = "<group>"; };
+		1886D3DA19E979F8005E1645 /* VmContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmContainerVC.m; sourceTree = "<group>"; };
+		1886D3DB19E979F8005E1645 /* VmDetailCPUConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailCPUConfigVC.h; sourceTree = "<group>"; };
+		1886D3DC19E979F8005E1645 /* VmDetailCPUConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailCPUConfigVC.m; sourceTree = "<group>"; };
+		1886D3DD19E979F8005E1645 /* VmDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailInfoVC.h; sourceTree = "<group>"; };
+		1886D3DE19E979F8005E1645 /* VmDetailInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailInfoVC.m; sourceTree = "<group>"; };
+		1886D3DF19E979F8005E1645 /* VmDetailMemryConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailMemryConfigVC.h; sourceTree = "<group>"; };
+		1886D3E019E979F8005E1645 /* VmDetailMemryConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailMemryConfigVC.m; sourceTree = "<group>"; };
+		1886D3E119E979F8005E1645 /* VmDetailSnapshootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailSnapshootVC.h; sourceTree = "<group>"; };
+		1886D3E219E979F8005E1645 /* VmDetailSnapshootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailSnapshootVC.m; sourceTree = "<group>"; };
+		1886D3E319E979F8005E1645 /* VmDiskCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskCollectionVC.h; sourceTree = "<group>"; };
+		1886D3E419E979F8005E1645 /* VmDiskCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskCollectionVC.m; sourceTree = "<group>"; };
+		1886D3E519E979F8005E1645 /* VmMigrateSelectHostListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListCell.h; sourceTree = "<group>"; };
+		1886D3E619E979F8005E1645 /* VmMigrateSelectHostListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListCell.m; sourceTree = "<group>"; };
+		1886D3E719E979F8005E1645 /* VmMigrateSelectHostListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListVC.h; sourceTree = "<group>"; };
+		1886D3E819E979F8005E1645 /* VmMigrateSelectHostListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListVC.m; sourceTree = "<group>"; };
+		1886D3E919E979F8005E1645 /* VmMigrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateVC.h; sourceTree = "<group>"; };
+		1886D3EA19E979F8005E1645 /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
+		1886D3EB19E979F8005E1645 /* VmNetworkCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkCollectionVC.h; sourceTree = "<group>"; };
+		1886D3EC19E979F8005E1645 /* VmNetworkCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkCollectionVC.m; sourceTree = "<group>"; };
+		1886D3ED19E979F8005E1645 /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
+		1886D3EE19E979F8005E1645 /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
+		1886D3F019E979F8005E1645 /* PopWarningInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCell.h; sourceTree = "<group>"; };
+		1886D3F119E979F8005E1645 /* PopWarningInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCell.m; sourceTree = "<group>"; };
+		1886D3F219E979F8005E1645 /* PopWarningInfoCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoCellForTime.h; sourceTree = "<group>"; };
+		1886D3F319E979F8005E1645 /* PopWarningInfoCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoCellForTime.m; sourceTree = "<group>"; };
+		1886D3F419E979F8005E1645 /* PopWarningInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWarningInfoVC.h; sourceTree = "<group>"; };
+		1886D3F519E979F8005E1645 /* PopWarningInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWarningInfoVC.m; sourceTree = "<group>"; };
+		1886D3F719E979F8005E1645 /* BusinessVO.getBusinessVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessVO.getBusinessVOAsync.json; sourceTree = "<group>"; };
+		1886D3F819E979F8005E1645 /* ControlRecordVO.getControlRecordListViaObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ControlRecordVO.getControlRecordListViaObject.json; sourceTree = "<group>"; };
+		1886D3F919E979F8005E1645 /* DatacenterVO.getBusinessListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.json; sourceTree = "<group>"; };
+		1886D3FA19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getBusinessListAsync.limit.json; sourceTree = "<group>"; };
+		1886D3FB19E979F8005E1645 /* DatacenterVO.getDatacenterListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterListAsync.json; sourceTree = "<group>"; };
+		1886D3FC19E979F8005E1645 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getDatacenterStatWinserverVOAsync.json; sourceTree = "<group>"; };
+		1886D3FD19E979F8005E1645 /* DatacenterVO.getHostListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getHostListAsync.json; sourceTree = "<group>"; };
+		1886D3FE19E979F8005E1645 /* DatacenterVO.getHostListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getHostListAsync.limit.json; sourceTree = "<group>"; };
+		1886D3FF19E979F8005E1645 /* DatacenterVO.getPoolListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.json; sourceTree = "<group>"; };
+		1886D40019E979F8005E1645 /* DatacenterVO.getPoolListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getPoolListAsync.limit.json; sourceTree = "<group>"; };
+		1886D40119E979F8005E1645 /* DatacenterVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getStorageListAsync.json; sourceTree = "<group>"; };
+		1886D40219E979F8005E1645 /* DatacenterVO.getStorageListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getStorageListAsync.limit.json; sourceTree = "<group>"; };
+		1886D40319E979F8005E1645 /* DatacenterVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getVmListAsync.json; sourceTree = "<group>"; };
+		1886D40419E979F8005E1645 /* DatacenterVO.getVmListAsync.limit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatacenterVO.getVmListAsync.limit.json; sourceTree = "<group>"; };
+		1886D40519E979F8005E1645 /* HostVO.getHostNetworkExternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkExternalListAsync.json; sourceTree = "<group>"; };
+		1886D40619E979F8005E1645 /* HostVO.getHostNetworkInternalListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNetworkInternalListAsync.json; sourceTree = "<group>"; };
+		1886D40719E979F8005E1645 /* HostVO.getHostNicGroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicGroupedListAsync.json; sourceTree = "<group>"; };
+		1886D40819E979F8005E1645 /* HostVO.getHostNicUngroupedListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostNicUngroupedListAsync.json; sourceTree = "<group>"; };
+		1886D40919E979F8005E1645 /* HostVO.getHostStatVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostStatVOAsync.json; sourceTree = "<group>"; };
+		1886D40A19E979F8005E1645 /* HostVO.getHostVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getHostVOAsync.json; sourceTree = "<group>"; };
+		1886D40B19E979F8005E1645 /* HostVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getStorageListAsync.json; sourceTree = "<group>"; };
+		1886D40C19E979F8005E1645 /* HostVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HostVO.getVmListAsync.json; sourceTree = "<group>"; };
+		1886D40D19E979F8005E1645 /* LicenseVO.getLicenseVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LicenseVO.getLicenseVOAsync.json; sourceTree = "<group>"; };
+		1886D40E19E979F8005E1645 /* PoolVO.getHostListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getHostListAsync.json; sourceTree = "<group>"; };
+		1886D40F19E979F8005E1645 /* PoolVO.getHostLisWithlimit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getHostLisWithlimit.json; sourceTree = "<group>"; };
+		1886D41019E979F8005E1645 /* PoolVO.getPoolElasticAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getPoolElasticAsync.json; sourceTree = "<group>"; };
+		1886D41119E979F8005E1645 /* PoolVO.getPoolVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getPoolVOAsync.json; sourceTree = "<group>"; };
+		1886D41219E979F8005E1645 /* PoolVO.getStorageList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getStorageList.json; sourceTree = "<group>"; };
+		1886D41319E979F8005E1645 /* PoolVO.getStorageListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getStorageListAsync.json; sourceTree = "<group>"; };
+		1886D41419E979F8005E1645 /* PoolVO.getVmListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getVmListAsync.json; sourceTree = "<group>"; };
+		1886D41519E979F8005E1645 /* PoolVO.getVmListWithlimit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PoolVO.getVmListWithlimit.json; sourceTree = "<group>"; };
+		1886D41619E979F8005E1645 /* StorageVO.getStorageVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StorageVO.getStorageVOAsync.json; sourceTree = "<group>"; };
+		1886D41719E979F8005E1645 /* StorageVO.getStorageVolumnListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StorageVO.getStorageVolumnListAsync.json; sourceTree = "<group>"; };
+		1886D41819E979F8005E1645 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		1886D41919E979F8005E1645 /* UserVO.getUserVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserVO.getUserVOAsync.json; sourceTree = "<group>"; };
+		1886D41A19E979F8005E1645 /* VmVO.getVmNicListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmNicListAsync.json; sourceTree = "<group>"; };
+		1886D41B19E979F8005E1645 /* VmVO.getVmVOAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmVOAsync.json; sourceTree = "<group>"; };
+		1886D41C19E979F8005E1645 /* VmVO.getVmVolumnListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VmVO.getVmVolumnListAsync.json; sourceTree = "<group>"; };
+		1886D41D19E979F8005E1645 /* WarningInfoVO.getWarningInfoListAsync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WarningInfoVO.getWarningInfoListAsync.json; sourceTree = "<group>"; };
+		1886D41E19E979F8005E1645 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../WinCenter-Common/WinCenter-Common/Images.xcassets"; sourceTree = "<group>"; };
+		1886D48319E97AAB005E1645 /* Business_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48419E97AAB005E1645 /* Datacenter_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Datacenter_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48519E97AAB005E1645 /* Host_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48619E97AAB005E1645 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1886D48719E97AAB005E1645 /* Network_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Network_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48819E97AAB005E1645 /* Pool_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pool_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48919E97AAB005E1645 /* Setting_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48A19E97AAB005E1645 /* Storage_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storage_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48B19E97AAB005E1645 /* Task_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48C19E97AAB005E1645 /* VM_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VM_Theme.storyboard; sourceTree = "<group>"; };
+		1886D48D19E97AAB005E1645 /* Warning_Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning_Theme.storyboard; sourceTree = "<group>"; };
+		1886D4A719E97C29005E1645 /* WinCenter-Theme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-Theme-Prefix.pch"; sourceTree = "<group>"; };
+		1886D4BB19E97F5A005E1645 /* BusinessListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessListResult.h; sourceTree = "<group>"; };
+		1886D4BC19E97F5A005E1645 /* BusinessListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessListResult.m; sourceTree = "<group>"; };
+		1886D4BD19E97F5A005E1645 /* BusinessVmVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmVO.h; sourceTree = "<group>"; };
+		1886D4BE19E97F5A005E1645 /* BusinessVmVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmVO.m; sourceTree = "<group>"; };
+		1886D4BF19E97F5A005E1645 /* BusinessVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVO.h; sourceTree = "<group>"; };
+		1886D4C019E97F5A005E1645 /* BusinessVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVO.m; sourceTree = "<group>"; };
+		1886D4C119E97F5A005E1645 /* ControlRecordListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordListResult.h; sourceTree = "<group>"; };
+		1886D4C219E97F5A005E1645 /* ControlRecordListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordListResult.m; sourceTree = "<group>"; };
+		1886D4C319E97F5A005E1645 /* ControlRecordVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordVO.h; sourceTree = "<group>"; };
+		1886D4C419E97F5A005E1645 /* ControlRecordVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordVO.m; sourceTree = "<group>"; };
+		1886D4C519E97F5A005E1645 /* DatacenterListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterListResult.h; sourceTree = "<group>"; };
+		1886D4C619E97F5A005E1645 /* DatacenterListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterListResult.m; sourceTree = "<group>"; };
+		1886D4C719E97F5A005E1645 /* DatacenterStatVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterStatVO.h; sourceTree = "<group>"; };
+		1886D4C819E97F5A005E1645 /* DatacenterStatVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterStatVO.m; sourceTree = "<group>"; };
+		1886D4C919E97F5A005E1645 /* DatacenterStatWinserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterStatWinserver.h; sourceTree = "<group>"; };
+		1886D4CA19E97F5A005E1645 /* DatacenterStatWinserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterStatWinserver.m; sourceTree = "<group>"; };
+		1886D4CB19E97F5A005E1645 /* DatacenterVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterVO.h; sourceTree = "<group>"; };
+		1886D4CC19E97F5A005E1645 /* DatacenterVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterVO.m; sourceTree = "<group>"; };
+		1886D4CD19E97F5A005E1645 /* HostListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostListResult.h; sourceTree = "<group>"; };
+		1886D4CE19E97F5A005E1645 /* HostListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostListResult.m; sourceTree = "<group>"; };
+		1886D4CF19E97F5A005E1645 /* HostNetworkListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkListResult.h; sourceTree = "<group>"; };
+		1886D4D019E97F5A005E1645 /* HostNetworkListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkListResult.m; sourceTree = "<group>"; };
+		1886D4D119E97F5A005E1645 /* HostNetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNetworkVO.h; sourceTree = "<group>"; };
+		1886D4D219E97F5A005E1645 /* HostNetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNetworkVO.m; sourceTree = "<group>"; };
+		1886D4D319E97F5A005E1645 /* HostNicListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicListResult.h; sourceTree = "<group>"; };
+		1886D4D419E97F5A005E1645 /* HostNicListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicListResult.m; sourceTree = "<group>"; };
+		1886D4D519E97F5A005E1645 /* HostNicVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNicVO.h; sourceTree = "<group>"; };
+		1886D4D619E97F5A005E1645 /* HostNicVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNicVO.m; sourceTree = "<group>"; };
+		1886D4D719E97F5A005E1645 /* HostStatVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostStatVO.h; sourceTree = "<group>"; };
+		1886D4D819E97F5A005E1645 /* HostStatVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostStatVO.m; sourceTree = "<group>"; };
+		1886D4D919E97F5A005E1645 /* HostVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostVO.h; sourceTree = "<group>"; };
+		1886D4DA19E97F5A005E1645 /* HostVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostVO.m; sourceTree = "<group>"; };
+		1886D4DB19E97F5A005E1645 /* LicenseVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseVO.h; sourceTree = "<group>"; };
+		1886D4DC19E97F5A005E1645 /* LicenseVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseVO.m; sourceTree = "<group>"; };
+		1886D4DD19E97F5A005E1645 /* LicenseWciVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseWciVO.h; sourceTree = "<group>"; };
+		1886D4DE19E97F5A005E1645 /* LicenseWciVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseWciVO.m; sourceTree = "<group>"; };
+		1886D4DF19E97F5A005E1645 /* LoginVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVO.h; sourceTree = "<group>"; };
+		1886D4E019E97F5A005E1645 /* LoginVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVO.m; sourceTree = "<group>"; };
+		1886D4E119E97F5A005E1645 /* NetworkListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkListResult.h; sourceTree = "<group>"; };
+		1886D4E219E97F5A005E1645 /* NetworkListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkListResult.m; sourceTree = "<group>"; };
+		1886D4E319E97F5A005E1645 /* NetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkVO.h; sourceTree = "<group>"; };
+		1886D4E419E97F5A005E1645 /* NetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkVO.m; sourceTree = "<group>"; };
+		1886D4E519E97F5A005E1645 /* PoolElasticInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolElasticInfo.h; sourceTree = "<group>"; };
+		1886D4E619E97F5A005E1645 /* PoolElasticInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolElasticInfo.m; sourceTree = "<group>"; };
+		1886D4E719E97F5A005E1645 /* PoolListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolListResult.h; sourceTree = "<group>"; };
+		1886D4E819E97F5A005E1645 /* PoolListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolListResult.m; sourceTree = "<group>"; };
+		1886D4E919E97F5A005E1645 /* PoolVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolVO.h; sourceTree = "<group>"; };
+		1886D4EA19E97F5A005E1645 /* PoolVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolVO.m; sourceTree = "<group>"; };
+		1886D4EB19E97F5A005E1645 /* RemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteObject.h; sourceTree = "<group>"; };
+		1886D4EC19E97F5A005E1645 /* RemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteObject.m; sourceTree = "<group>"; };
+		1886D4ED19E97F5A005E1645 /* StorageListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageListResult.h; sourceTree = "<group>"; };
+		1886D4EE19E97F5A005E1645 /* StorageListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageListResult.m; sourceTree = "<group>"; };
+		1886D4EF19E97F5A005E1645 /* StorageVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVO.h; sourceTree = "<group>"; };
+		1886D4F019E97F5A005E1645 /* StorageVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageVO.m; sourceTree = "<group>"; };
+		1886D4F119E97F5A005E1645 /* StorageVolumnListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVolumnListResult.h; sourceTree = "<group>"; };
+		1886D4F219E97F5A005E1645 /* StorageVolumnListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageVolumnListResult.m; sourceTree = "<group>"; };
+		1886D4F319E97F5A005E1645 /* StorageVolumnVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageVolumnVO.h; sourceTree = "<group>"; };
+		1886D4F419E97F5A005E1645 /* StorageVolumnVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageVolumnVO.m; sourceTree = "<group>"; };
+		1886D4F519E97F5A005E1645 /* UserListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListResult.h; sourceTree = "<group>"; };
+		1886D4F619E97F5A005E1645 /* UserListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListResult.m; sourceTree = "<group>"; };
+		1886D4F719E97F5A005E1645 /* UserVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVO.h; sourceTree = "<group>"; };
+		1886D4F819E97F5A005E1645 /* UserVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVO.m; sourceTree = "<group>"; };
+		1886D4F919E97F5A005E1645 /* VmDiskListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskListResult.h; sourceTree = "<group>"; };
+		1886D4FA19E97F5A005E1645 /* VmDiskListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskListResult.m; sourceTree = "<group>"; };
+		1886D4FB19E97F5A005E1645 /* VmDiskVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDiskVO.h; sourceTree = "<group>"; };
+		1886D4FC19E97F5A005E1645 /* VmDiskVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDiskVO.m; sourceTree = "<group>"; };
+		1886D4FD19E97F5A005E1645 /* VmListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmListResult.h; sourceTree = "<group>"; };
+		1886D4FE19E97F5A005E1645 /* VmListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmListResult.m; sourceTree = "<group>"; };
+		1886D4FF19E97F5A005E1645 /* VmNetworkListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkListResult.h; sourceTree = "<group>"; };
+		1886D50019E97F5A005E1645 /* VmNetworkListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkListResult.m; sourceTree = "<group>"; };
+		1886D50119E97F5A005E1645 /* VmNetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNetworkVO.h; sourceTree = "<group>"; };
+		1886D50219E97F5A005E1645 /* VmNetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNetworkVO.m; sourceTree = "<group>"; };
+		1886D50319E97F5A005E1645 /* VmVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmVO.h; sourceTree = "<group>"; };
+		1886D50419E97F5A005E1645 /* VmVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmVO.m; sourceTree = "<group>"; };
+		1886D50519E97F5A005E1645 /* WarningInfoListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoListResult.h; sourceTree = "<group>"; };
+		1886D50619E97F5A005E1645 /* WarningInfoListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoListResult.m; sourceTree = "<group>"; };
+		1886D50719E97F5A005E1645 /* WarningInfoVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoVO.h; sourceTree = "<group>"; };
+		1886D50819E97F5A005E1645 /* WarningInfoVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoVO.m; sourceTree = "<group>"; };
+		1886D50919E97F5A005E1645 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Models.h; path = "../../WinCenter-Common/WinCenter-Common/Models.h"; sourceTree = "<group>"; };
+		22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-Theme.xcconfig"; path = "../Pods/Pods-WinCenter-Theme.xcconfig"; sourceTree = "<group>"; };
+		C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-Theme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1886D34619E97942005E1645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8658E52896184EA39528D92A /* libPods-WinCenter-Theme.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1886D34019E97942005E1645 = {
+			isa = PBXGroup;
+			children = (
+				1886D34B19E97942005E1645 /* WinCenter-Theme */,
+				1886D34A19E97942005E1645 /* Products */,
+				22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */,
+				6048A06E81C04DD69CD4D72D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1886D34A19E97942005E1645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1886D34919E97942005E1645 /* WinCenter-Theme.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1886D34B19E97942005E1645 /* WinCenter-Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1886D50919E97F5A005E1645 /* Models.h */,
+				1886D4BA19E97F5A005E1645 /* models */,
+				1886D48219E97AAB005E1645 /* views */,
+				1886D37219E979F8005E1645 /* controllers */,
+				1886D3F619E979F8005E1645 /* datas */,
+				1886D41E19E979F8005E1645 /* Images.xcassets */,
+				1886D35019E97942005E1645 /* AppDelegate.h */,
+				1886D35119E97942005E1645 /* AppDelegate.m */,
+				1886D35B19E97943005E1645 /* LaunchScreen.xib */,
+				1886D34C19E97942005E1645 /* Supporting Files */,
+			);
+			path = "WinCenter-Theme";
+			sourceTree = "<group>";
+		};
+		1886D34C19E97942005E1645 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1886D34D19E97942005E1645 /* Info.plist */,
+				1886D34E19E97942005E1645 /* main.m */,
+				1886D4A719E97C29005E1645 /* WinCenter-Theme-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1886D37219E979F8005E1645 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1886D37319E979F8005E1645 /* business */,
+				1886D37C19E979F8005E1645 /* collection */,
+				1886D38519E979F8005E1645 /* container */,
+				1886D38819E979F8005E1645 /* datacenter */,
+				1886D39B19E979F8005E1645 /* host */,
+				1886D3A819E979F8005E1645 /* login */,
+				1886D3AF19E979F8005E1645 /* network */,
+				1886D3B619E979F8005E1645 /* pool */,
+				1886D3BB19E979F8005E1645 /* setting */,
+				1886D3C219E979F8005E1645 /* storage */,
+				1886D3CD19E979F8005E1645 /* task */,
+				1886D3D419E979F8005E1645 /* UIStoryboard+Theme.h */,
+				1886D3D519E979F8005E1645 /* UIStoryboard+Theme.m */,
+				1886D3D619E979F8005E1645 /* vm */,
+				1886D3EF19E979F8005E1645 /* warning */,
+			);
+			name = controllers;
+			path = "../../WinCenter-Common/WinCenter-Common/controllers";
+			sourceTree = "<group>";
+		};
+		1886D37319E979F8005E1645 /* business */ = {
+			isa = PBXGroup;
+			children = (
+				1886D37419E979F8005E1645 /* BusinessContainerVC.h */,
+				1886D37519E979F8005E1645 /* BusinessContainerVC.m */,
+				1886D37619E979F8005E1645 /* BusinessDetailInfoVC.h */,
+				1886D37719E979F8005E1645 /* BusinessDetailInfoVC.m */,
+				1886D37819E979F8005E1645 /* BusinessVmCollectionCell.h */,
+				1886D37919E979F8005E1645 /* BusinessVmCollectionCell.m */,
+				1886D37A19E979F8005E1645 /* BusinessVmCollectionVC.h */,
+				1886D37B19E979F8005E1645 /* BusinessVmCollectionVC.m */,
+			);
+			path = business;
+			sourceTree = "<group>";
+		};
+		1886D37C19E979F8005E1645 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				1886D37D19E979F8005E1645 /* MasterCollectionCell.h */,
+				1886D37E19E979F8005E1645 /* MasterCollectionCell.m */,
+				1886D37F19E979F8005E1645 /* MasterCollectionFooter.h */,
+				1886D38019E979F8005E1645 /* MasterCollectionFooter.m */,
+				1886D38119E979F8005E1645 /* MasterCollectionHeader.h */,
+				1886D38219E979F8005E1645 /* MasterCollectionHeader.m */,
+				1886D38319E979F8005E1645 /* MasterCollectionVC.h */,
+				1886D38419E979F8005E1645 /* MasterCollectionVC.m */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		1886D38519E979F8005E1645 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				1886D38619E979F8005E1645 /* MasterContainerVC.h */,
+				1886D38719E979F8005E1645 /* MasterContainerVC.m */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
+		1886D38819E979F8005E1645 /* datacenter */ = {
+			isa = PBXGroup;
+			children = (
+				1886D38919E979F8005E1645 /* DatacenterContainerTableVC.h */,
+				1886D38A19E979F8005E1645 /* DatacenterContainerTableVC.m */,
+				1886D38B19E979F8005E1645 /* DatacenterContainerVC.h */,
+				1886D38C19E979F8005E1645 /* DatacenterContainerVC.m */,
+				1886D38D19E979F8005E1645 /* DatacenterDashboardVC.h */,
+				1886D38E19E979F8005E1645 /* DatacenterDashboardVC.m */,
+				1886D38F19E979F8005E1645 /* DatacenterDetailCollectionHeader.h */,
+				1886D39019E979F8005E1645 /* DatacenterDetailCollectionHeader.m */,
+				1886D39119E979F8005E1645 /* DatacenterDetailCollectionVC.h */,
+				1886D39219E979F8005E1645 /* DatacenterDetailCollectionVC.m */,
+				1886D39319E979F8005E1645 /* DatacenterDetailInfoVC.h */,
+				1886D39419E979F8005E1645 /* DatacenterDetailInfoVC.m */,
+				1886D39519E979F8005E1645 /* DatacenterDetailMoreVC.h */,
+				1886D39619E979F8005E1645 /* DatacenterDetailMoreVC.m */,
+				1886D39719E979F8005E1645 /* DatacenterMenuVC.h */,
+				1886D39819E979F8005E1645 /* DatacenterMenuVC.m */,
+				1886D39919E979F8005E1645 /* DatacenterTableVC.h */,
+				1886D39A19E979F8005E1645 /* DatacenterTableVC.m */,
+			);
+			path = datacenter;
+			sourceTree = "<group>";
+		};
+		1886D39B19E979F8005E1645 /* host */ = {
+			isa = PBXGroup;
+			children = (
+				1886D39C19E979F8005E1645 /* HostCollectionVC.h */,
+				1886D39D19E979F8005E1645 /* HostCollectionVC.m */,
+				1886D39E19E979F8005E1645 /* HostContainerVC.h */,
+				1886D39F19E979F8005E1645 /* HostContainerVC.m */,
+				1886D3A019E979F8005E1645 /* HostDetailInfoVC.h */,
+				1886D3A119E979F8005E1645 /* HostDetailInfoVC.m */,
+				1886D3A219E979F8005E1645 /* HostDetailPerformanceVC.h */,
+				1886D3A319E979F8005E1645 /* HostDetailPerformanceVC.m */,
+				1886D3A419E979F8005E1645 /* HostNetworkCollectionVC.h */,
+				1886D3A519E979F8005E1645 /* HostNetworkCollectionVC.m */,
+				1886D3A619E979F8005E1645 /* HostNicCollectionVC.h */,
+				1886D3A719E979F8005E1645 /* HostNicCollectionVC.m */,
+			);
+			path = host;
+			sourceTree = "<group>";
+		};
+		1886D3A819E979F8005E1645 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3A919E979F8005E1645 /* LoginSettingVC.h */,
+				1886D3AA19E979F8005E1645 /* LoginSettingVC.m */,
+				1886D3AB19E979F8005E1645 /* LoginTableVC.h */,
+				1886D3AC19E979F8005E1645 /* LoginTableVC.m */,
+				1886D3AD19E979F8005E1645 /* LoginVC.h */,
+				1886D3AE19E979F8005E1645 /* LoginVC.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		1886D3AF19E979F8005E1645 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3B019E979F8005E1645 /* NetworkCollectionCell.h */,
+				1886D3B119E979F8005E1645 /* NetworkCollectionCell.m */,
+				1886D3B219E979F8005E1645 /* NetworkCollectionVC.h */,
+				1886D3B319E979F8005E1645 /* NetworkCollectionVC.m */,
+				1886D3B419E979F8005E1645 /* NetworkContainerVC.h */,
+				1886D3B519E979F8005E1645 /* NetworkContainerVC.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		1886D3B619E979F8005E1645 /* pool */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3B719E979F8005E1645 /* PoolContainerVC.h */,
+				1886D3B819E979F8005E1645 /* PoolContainerVC.m */,
+				1886D3B919E979F8005E1645 /* PoolDetailInfoVC.h */,
+				1886D3BA19E979F8005E1645 /* PoolDetailInfoVC.m */,
+			);
+			path = pool;
+			sourceTree = "<group>";
+		};
+		1886D3BB19E979F8005E1645 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3BC19E979F8005E1645 /* PopOptionLicenseVC.h */,
+				1886D3BD19E979F8005E1645 /* PopOptionLicenseVC.m */,
+				1886D3BE19E979F8005E1645 /* PopOptionsUserInfoVC.h */,
+				1886D3BF19E979F8005E1645 /* PopOptionsUserInfoVC.m */,
+				1886D3C019E979F8005E1645 /* PopOptionsVC.h */,
+				1886D3C119E979F8005E1645 /* PopOptionsVC.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		1886D3C219E979F8005E1645 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3C319E979F8005E1645 /* StorageCollectionVC.h */,
+				1886D3C419E979F8005E1645 /* StorageCollectionVC.m */,
+				1886D3C519E979F8005E1645 /* StorageContainerVC.h */,
+				1886D3C619E979F8005E1645 /* StorageContainerVC.m */,
+				1886D3C719E979F8005E1645 /* StorageDetailInfoVC.h */,
+				1886D3C819E979F8005E1645 /* StorageDetailInfoVC.m */,
+				1886D3C919E979F8005E1645 /* StorageDiskCollectionCell.h */,
+				1886D3CA19E979F8005E1645 /* StorageDiskCollectionCell.m */,
+				1886D3CB19E979F8005E1645 /* StorageDiskCollectionVC.h */,
+				1886D3CC19E979F8005E1645 /* StorageDiskCollectionVC.m */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		1886D3CD19E979F8005E1645 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3CE19E979F8005E1645 /* PopControlRecordCell.h */,
+				1886D3CF19E979F8005E1645 /* PopControlRecordCell.m */,
+				1886D3D019E979F8005E1645 /* PopControlRecordCellForTime.h */,
+				1886D3D119E979F8005E1645 /* PopControlRecordCellForTime.m */,
+				1886D3D219E979F8005E1645 /* PopControlRecordVC.h */,
+				1886D3D319E979F8005E1645 /* PopControlRecordVC.m */,
+			);
+			path = task;
+			sourceTree = "<group>";
+		};
+		1886D3D619E979F8005E1645 /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3D719E979F8005E1645 /* VmCollectionVC.h */,
+				1886D3D819E979F8005E1645 /* VmCollectionVC.m */,
+				1886D3D919E979F8005E1645 /* VmContainerVC.h */,
+				1886D3DA19E979F8005E1645 /* VmContainerVC.m */,
+				1886D3DB19E979F8005E1645 /* VmDetailCPUConfigVC.h */,
+				1886D3DC19E979F8005E1645 /* VmDetailCPUConfigVC.m */,
+				1886D3DD19E979F8005E1645 /* VmDetailInfoVC.h */,
+				1886D3DE19E979F8005E1645 /* VmDetailInfoVC.m */,
+				1886D3DF19E979F8005E1645 /* VmDetailMemryConfigVC.h */,
+				1886D3E019E979F8005E1645 /* VmDetailMemryConfigVC.m */,
+				1886D3E119E979F8005E1645 /* VmDetailSnapshootVC.h */,
+				1886D3E219E979F8005E1645 /* VmDetailSnapshootVC.m */,
+				1886D3E319E979F8005E1645 /* VmDiskCollectionVC.h */,
+				1886D3E419E979F8005E1645 /* VmDiskCollectionVC.m */,
+				1886D3E519E979F8005E1645 /* VmMigrateSelectHostListCell.h */,
+				1886D3E619E979F8005E1645 /* VmMigrateSelectHostListCell.m */,
+				1886D3E719E979F8005E1645 /* VmMigrateSelectHostListVC.h */,
+				1886D3E819E979F8005E1645 /* VmMigrateSelectHostListVC.m */,
+				1886D3E919E979F8005E1645 /* VmMigrateVC.h */,
+				1886D3EA19E979F8005E1645 /* VmMigrateVC.m */,
+				1886D3EB19E979F8005E1645 /* VmNetworkCollectionVC.h */,
+				1886D3EC19E979F8005E1645 /* VmNetworkCollectionVC.m */,
+				1886D3ED19E979F8005E1645 /* VmNewVC.h */,
+				1886D3EE19E979F8005E1645 /* VmNewVC.m */,
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		1886D3EF19E979F8005E1645 /* warning */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3F019E979F8005E1645 /* PopWarningInfoCell.h */,
+				1886D3F119E979F8005E1645 /* PopWarningInfoCell.m */,
+				1886D3F219E979F8005E1645 /* PopWarningInfoCellForTime.h */,
+				1886D3F319E979F8005E1645 /* PopWarningInfoCellForTime.m */,
+				1886D3F419E979F8005E1645 /* PopWarningInfoVC.h */,
+				1886D3F519E979F8005E1645 /* PopWarningInfoVC.m */,
+			);
+			path = warning;
+			sourceTree = "<group>";
+		};
+		1886D3F619E979F8005E1645 /* datas */ = {
+			isa = PBXGroup;
+			children = (
+				1886D3F719E979F8005E1645 /* BusinessVO.getBusinessVOAsync.json */,
+				1886D3F819E979F8005E1645 /* ControlRecordVO.getControlRecordListViaObject.json */,
+				1886D3F919E979F8005E1645 /* DatacenterVO.getBusinessListAsync.json */,
+				1886D3FA19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.limit.json */,
+				1886D3FB19E979F8005E1645 /* DatacenterVO.getDatacenterListAsync.json */,
+				1886D3FC19E979F8005E1645 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json */,
+				1886D3FD19E979F8005E1645 /* DatacenterVO.getHostListAsync.json */,
+				1886D3FE19E979F8005E1645 /* DatacenterVO.getHostListAsync.limit.json */,
+				1886D3FF19E979F8005E1645 /* DatacenterVO.getPoolListAsync.json */,
+				1886D40019E979F8005E1645 /* DatacenterVO.getPoolListAsync.limit.json */,
+				1886D40119E979F8005E1645 /* DatacenterVO.getStorageListAsync.json */,
+				1886D40219E979F8005E1645 /* DatacenterVO.getStorageListAsync.limit.json */,
+				1886D40319E979F8005E1645 /* DatacenterVO.getVmListAsync.json */,
+				1886D40419E979F8005E1645 /* DatacenterVO.getVmListAsync.limit.json */,
+				1886D40519E979F8005E1645 /* HostVO.getHostNetworkExternalListAsync.json */,
+				1886D40619E979F8005E1645 /* HostVO.getHostNetworkInternalListAsync.json */,
+				1886D40719E979F8005E1645 /* HostVO.getHostNicGroupedListAsync.json */,
+				1886D40819E979F8005E1645 /* HostVO.getHostNicUngroupedListAsync.json */,
+				1886D40919E979F8005E1645 /* HostVO.getHostStatVOAsync.json */,
+				1886D40A19E979F8005E1645 /* HostVO.getHostVOAsync.json */,
+				1886D40B19E979F8005E1645 /* HostVO.getStorageListAsync.json */,
+				1886D40C19E979F8005E1645 /* HostVO.getVmListAsync.json */,
+				1886D40D19E979F8005E1645 /* LicenseVO.getLicenseVOAsync.json */,
+				1886D40E19E979F8005E1645 /* PoolVO.getHostListAsync.json */,
+				1886D40F19E979F8005E1645 /* PoolVO.getHostLisWithlimit.json */,
+				1886D41019E979F8005E1645 /* PoolVO.getPoolElasticAsync.json */,
+				1886D41119E979F8005E1645 /* PoolVO.getPoolVOAsync.json */,
+				1886D41219E979F8005E1645 /* PoolVO.getStorageList.json */,
+				1886D41319E979F8005E1645 /* PoolVO.getStorageListAsync.json */,
+				1886D41419E979F8005E1645 /* PoolVO.getVmListAsync.json */,
+				1886D41519E979F8005E1645 /* PoolVO.getVmListWithlimit.json */,
+				1886D41619E979F8005E1645 /* StorageVO.getStorageVOAsync.json */,
+				1886D41719E979F8005E1645 /* StorageVO.getStorageVolumnListAsync.json */,
+				1886D41819E979F8005E1645 /* TemplateIcon2x.png */,
+				1886D41919E979F8005E1645 /* UserVO.getUserVOAsync.json */,
+				1886D41A19E979F8005E1645 /* VmVO.getVmNicListAsync.json */,
+				1886D41B19E979F8005E1645 /* VmVO.getVmVOAsync.json */,
+				1886D41C19E979F8005E1645 /* VmVO.getVmVolumnListAsync.json */,
+				1886D41D19E979F8005E1645 /* WarningInfoVO.getWarningInfoListAsync.json */,
+			);
+			name = datas;
+			path = "../../WinCenter-Common/WinCenter-Common/datas";
+			sourceTree = "<group>";
+		};
+		1886D48219E97AAB005E1645 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1886D48319E97AAB005E1645 /* Business_Theme.storyboard */,
+				1886D48419E97AAB005E1645 /* Datacenter_Theme.storyboard */,
+				1886D48519E97AAB005E1645 /* Host_Theme.storyboard */,
+				1886D48619E97AAB005E1645 /* Main.storyboard */,
+				1886D48719E97AAB005E1645 /* Network_Theme.storyboard */,
+				1886D48819E97AAB005E1645 /* Pool_Theme.storyboard */,
+				1886D48919E97AAB005E1645 /* Setting_Theme.storyboard */,
+				1886D48A19E97AAB005E1645 /* Storage_Theme.storyboard */,
+				1886D48B19E97AAB005E1645 /* Task_Theme.storyboard */,
+				1886D48C19E97AAB005E1645 /* VM_Theme.storyboard */,
+				1886D48D19E97AAB005E1645 /* Warning_Theme.storyboard */,
+			);
+			name = views;
+			path = "../../WinCenter-Common/WinCenter-Common/views/theme";
+			sourceTree = "<group>";
+		};
+		1886D4BA19E97F5A005E1645 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1886D4BB19E97F5A005E1645 /* BusinessListResult.h */,
+				1886D4BC19E97F5A005E1645 /* BusinessListResult.m */,
+				1886D4BD19E97F5A005E1645 /* BusinessVmVO.h */,
+				1886D4BE19E97F5A005E1645 /* BusinessVmVO.m */,
+				1886D4BF19E97F5A005E1645 /* BusinessVO.h */,
+				1886D4C019E97F5A005E1645 /* BusinessVO.m */,
+				1886D4C119E97F5A005E1645 /* ControlRecordListResult.h */,
+				1886D4C219E97F5A005E1645 /* ControlRecordListResult.m */,
+				1886D4C319E97F5A005E1645 /* ControlRecordVO.h */,
+				1886D4C419E97F5A005E1645 /* ControlRecordVO.m */,
+				1886D4C519E97F5A005E1645 /* DatacenterListResult.h */,
+				1886D4C619E97F5A005E1645 /* DatacenterListResult.m */,
+				1886D4C719E97F5A005E1645 /* DatacenterStatVO.h */,
+				1886D4C819E97F5A005E1645 /* DatacenterStatVO.m */,
+				1886D4C919E97F5A005E1645 /* DatacenterStatWinserver.h */,
+				1886D4CA19E97F5A005E1645 /* DatacenterStatWinserver.m */,
+				1886D4CB19E97F5A005E1645 /* DatacenterVO.h */,
+				1886D4CC19E97F5A005E1645 /* DatacenterVO.m */,
+				1886D4CD19E97F5A005E1645 /* HostListResult.h */,
+				1886D4CE19E97F5A005E1645 /* HostListResult.m */,
+				1886D4CF19E97F5A005E1645 /* HostNetworkListResult.h */,
+				1886D4D019E97F5A005E1645 /* HostNetworkListResult.m */,
+				1886D4D119E97F5A005E1645 /* HostNetworkVO.h */,
+				1886D4D219E97F5A005E1645 /* HostNetworkVO.m */,
+				1886D4D319E97F5A005E1645 /* HostNicListResult.h */,
+				1886D4D419E97F5A005E1645 /* HostNicListResult.m */,
+				1886D4D519E97F5A005E1645 /* HostNicVO.h */,
+				1886D4D619E97F5A005E1645 /* HostNicVO.m */,
+				1886D4D719E97F5A005E1645 /* HostStatVO.h */,
+				1886D4D819E97F5A005E1645 /* HostStatVO.m */,
+				1886D4D919E97F5A005E1645 /* HostVO.h */,
+				1886D4DA19E97F5A005E1645 /* HostVO.m */,
+				1886D4DB19E97F5A005E1645 /* LicenseVO.h */,
+				1886D4DC19E97F5A005E1645 /* LicenseVO.m */,
+				1886D4DD19E97F5A005E1645 /* LicenseWciVO.h */,
+				1886D4DE19E97F5A005E1645 /* LicenseWciVO.m */,
+				1886D4DF19E97F5A005E1645 /* LoginVO.h */,
+				1886D4E019E97F5A005E1645 /* LoginVO.m */,
+				1886D4E119E97F5A005E1645 /* NetworkListResult.h */,
+				1886D4E219E97F5A005E1645 /* NetworkListResult.m */,
+				1886D4E319E97F5A005E1645 /* NetworkVO.h */,
+				1886D4E419E97F5A005E1645 /* NetworkVO.m */,
+				1886D4E519E97F5A005E1645 /* PoolElasticInfo.h */,
+				1886D4E619E97F5A005E1645 /* PoolElasticInfo.m */,
+				1886D4E719E97F5A005E1645 /* PoolListResult.h */,
+				1886D4E819E97F5A005E1645 /* PoolListResult.m */,
+				1886D4E919E97F5A005E1645 /* PoolVO.h */,
+				1886D4EA19E97F5A005E1645 /* PoolVO.m */,
+				1886D4EB19E97F5A005E1645 /* RemoteObject.h */,
+				1886D4EC19E97F5A005E1645 /* RemoteObject.m */,
+				1886D4ED19E97F5A005E1645 /* StorageListResult.h */,
+				1886D4EE19E97F5A005E1645 /* StorageListResult.m */,
+				1886D4EF19E97F5A005E1645 /* StorageVO.h */,
+				1886D4F019E97F5A005E1645 /* StorageVO.m */,
+				1886D4F119E97F5A005E1645 /* StorageVolumnListResult.h */,
+				1886D4F219E97F5A005E1645 /* StorageVolumnListResult.m */,
+				1886D4F319E97F5A005E1645 /* StorageVolumnVO.h */,
+				1886D4F419E97F5A005E1645 /* StorageVolumnVO.m */,
+				1886D4F519E97F5A005E1645 /* UserListResult.h */,
+				1886D4F619E97F5A005E1645 /* UserListResult.m */,
+				1886D4F719E97F5A005E1645 /* UserVO.h */,
+				1886D4F819E97F5A005E1645 /* UserVO.m */,
+				1886D4F919E97F5A005E1645 /* VmDiskListResult.h */,
+				1886D4FA19E97F5A005E1645 /* VmDiskListResult.m */,
+				1886D4FB19E97F5A005E1645 /* VmDiskVO.h */,
+				1886D4FC19E97F5A005E1645 /* VmDiskVO.m */,
+				1886D4FD19E97F5A005E1645 /* VmListResult.h */,
+				1886D4FE19E97F5A005E1645 /* VmListResult.m */,
+				1886D4FF19E97F5A005E1645 /* VmNetworkListResult.h */,
+				1886D50019E97F5A005E1645 /* VmNetworkListResult.m */,
+				1886D50119E97F5A005E1645 /* VmNetworkVO.h */,
+				1886D50219E97F5A005E1645 /* VmNetworkVO.m */,
+				1886D50319E97F5A005E1645 /* VmVO.h */,
+				1886D50419E97F5A005E1645 /* VmVO.m */,
+				1886D50519E97F5A005E1645 /* WarningInfoListResult.h */,
+				1886D50619E97F5A005E1645 /* WarningInfoListResult.m */,
+				1886D50719E97F5A005E1645 /* WarningInfoVO.h */,
+				1886D50819E97F5A005E1645 /* WarningInfoVO.m */,
+			);
+			name = models;
+			path = "../../WinCenter-Common/WinCenter-Common/models";
+			sourceTree = "<group>";
+		};
+		6048A06E81C04DD69CD4D72D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1886D34819E97942005E1645 /* WinCenter-Theme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1886D36C19E97943005E1645 /* Build configuration list for PBXNativeTarget "WinCenter-Theme" */;
+			buildPhases = (
+				34253FC86FA24E1CB9A30111 /* Check Pods Manifest.lock */,
+				1886D34519E97942005E1645 /* Sources */,
+				1886D34619E97942005E1645 /* Frameworks */,
+				1886D34719E97942005E1645 /* Resources */,
+				5A8ED224C62F416CA2CB8F3A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WinCenter-Theme";
+			productName = "WinCenter-Theme";
+			productReference = 1886D34919E97942005E1645 /* WinCenter-Theme.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1886D34119E97942005E1645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = huadi;
+				TargetAttributes = {
+					1886D34819E97942005E1645 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 1886D34419E97942005E1645 /* Build configuration list for PBXProject "WinCenter-Theme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1886D34019E97942005E1645;
+			productRefGroup = 1886D34A19E97942005E1645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1886D34819E97942005E1645 /* WinCenter-Theme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1886D34719E97942005E1645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1886D46319E979F8005E1645 /* DatacenterVO.getPoolListAsync.limit.json in Resources */,
+				1886D49619E97AAB005E1645 /* Task_Theme.storyboard in Resources */,
+				1886D46D19E979F8005E1645 /* HostVO.getHostVOAsync.json in Resources */,
+				1886D46719E979F8005E1645 /* DatacenterVO.getVmListAsync.limit.json in Resources */,
+				1886D46019E979F8005E1645 /* DatacenterVO.getHostListAsync.json in Resources */,
+				1886D47419E979F8005E1645 /* PoolVO.getPoolVOAsync.json in Resources */,
+				1886D47919E979F8005E1645 /* StorageVO.getStorageVOAsync.json in Resources */,
+				1886D49119E97AAB005E1645 /* Main.storyboard in Resources */,
+				1886D47519E979F8005E1645 /* PoolVO.getStorageList.json in Resources */,
+				1886D45A19E979F8005E1645 /* BusinessVO.getBusinessVOAsync.json in Resources */,
+				1886D47119E979F8005E1645 /* PoolVO.getHostListAsync.json in Resources */,
+				1886D45D19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.limit.json in Resources */,
+				1886D47C19E979F8005E1645 /* UserVO.getUserVOAsync.json in Resources */,
+				1886D46A19E979F8005E1645 /* HostVO.getHostNicGroupedListAsync.json in Resources */,
+				1886D35D19E97943005E1645 /* LaunchScreen.xib in Resources */,
+				1886D47319E979F8005E1645 /* PoolVO.getPoolElasticAsync.json in Resources */,
+				1886D46919E979F8005E1645 /* HostVO.getHostNetworkInternalListAsync.json in Resources */,
+				1886D48F19E97AAB005E1645 /* Datacenter_Theme.storyboard in Resources */,
+				1886D47819E979F8005E1645 /* PoolVO.getVmListWithlimit.json in Resources */,
+				1886D46C19E979F8005E1645 /* HostVO.getHostStatVOAsync.json in Resources */,
+				1886D47A19E979F8005E1645 /* StorageVO.getStorageVolumnListAsync.json in Resources */,
+				1886D48E19E97AAB005E1645 /* Business_Theme.storyboard in Resources */,
+				1886D46119E979F8005E1645 /* DatacenterVO.getHostListAsync.limit.json in Resources */,
+				1886D46419E979F8005E1645 /* DatacenterVO.getStorageListAsync.json in Resources */,
+				1886D45F19E979F8005E1645 /* DatacenterVO.getDatacenterStatWinserverVOAsync.json in Resources */,
+				1886D47B19E979F8005E1645 /* TemplateIcon2x.png in Resources */,
+				1886D47F19E979F8005E1645 /* VmVO.getVmVolumnListAsync.json in Resources */,
+				1886D46819E979F8005E1645 /* HostVO.getHostNetworkExternalListAsync.json in Resources */,
+				1886D46619E979F8005E1645 /* DatacenterVO.getVmListAsync.json in Resources */,
+				1886D47619E979F8005E1645 /* PoolVO.getStorageListAsync.json in Resources */,
+				1886D46E19E979F8005E1645 /* HostVO.getStorageListAsync.json in Resources */,
+				1886D47219E979F8005E1645 /* PoolVO.getHostLisWithlimit.json in Resources */,
+				1886D49419E97AAB005E1645 /* Setting_Theme.storyboard in Resources */,
+				1886D47719E979F8005E1645 /* PoolVO.getVmListAsync.json in Resources */,
+				1886D47D19E979F8005E1645 /* VmVO.getVmNicListAsync.json in Resources */,
+				1886D49819E97AAB005E1645 /* Warning_Theme.storyboard in Resources */,
+				1886D47019E979F8005E1645 /* LicenseVO.getLicenseVOAsync.json in Resources */,
+				1886D46219E979F8005E1645 /* DatacenterVO.getPoolListAsync.json in Resources */,
+				1886D46519E979F8005E1645 /* DatacenterVO.getStorageListAsync.limit.json in Resources */,
+				1886D48119E979F8005E1645 /* Images.xcassets in Resources */,
+				1886D45E19E979F8005E1645 /* DatacenterVO.getDatacenterListAsync.json in Resources */,
+				1886D49719E97AAB005E1645 /* VM_Theme.storyboard in Resources */,
+				1886D46B19E979F8005E1645 /* HostVO.getHostNicUngroupedListAsync.json in Resources */,
+				1886D48019E979F8005E1645 /* WarningInfoVO.getWarningInfoListAsync.json in Resources */,
+				1886D49319E97AAB005E1645 /* Pool_Theme.storyboard in Resources */,
+				1886D45C19E979F8005E1645 /* DatacenterVO.getBusinessListAsync.json in Resources */,
+				1886D49019E97AAB005E1645 /* Host_Theme.storyboard in Resources */,
+				1886D49519E97AAB005E1645 /* Storage_Theme.storyboard in Resources */,
+				1886D46F19E979F8005E1645 /* HostVO.getVmListAsync.json in Resources */,
+				1886D47E19E979F8005E1645 /* VmVO.getVmVOAsync.json in Resources */,
+				1886D45B19E979F8005E1645 /* ControlRecordVO.getControlRecordListViaObject.json in Resources */,
+				1886D49219E97AAB005E1645 /* Network_Theme.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34253FC86FA24E1CB9A30111 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A8ED224C62F416CA2CB8F3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-WinCenter-Theme-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1886D34519E97942005E1645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1886D52219E97F5B005E1645 /* RemoteObject.m in Sources */,
+				1886D42319E979F8005E1645 /* MasterCollectionCell.m in Sources */,
+				1886D45919E979F8005E1645 /* PopWarningInfoVC.m in Sources */,
+				1886D43919E979F8005E1645 /* LoginVC.m in Sources */,
+				1886D42F19E979F8005E1645 /* DatacenterMenuVC.m in Sources */,
+				1886D43319E979F8005E1645 /* HostDetailInfoVC.m in Sources */,
+				1886D43819E979F8005E1645 /* LoginTableVC.m in Sources */,
+				1886D42519E979F8005E1645 /* MasterCollectionHeader.m in Sources */,
+				1886D42119E979F8005E1645 /* BusinessVmCollectionCell.m in Sources */,
+				1886D42919E979F8005E1645 /* DatacenterContainerVC.m in Sources */,
+				1886D42419E979F8005E1645 /* MasterCollectionFooter.m in Sources */,
+				1886D44C19E979F8005E1645 /* VmContainerVC.m in Sources */,
+				1886D44B19E979F8005E1645 /* VmCollectionVC.m in Sources */,
+				1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */,
+				1886D44819E979F8005E1645 /* PopControlRecordCellForTime.m in Sources */,
+				1886D51419E97F5A005E1645 /* HostNetworkListResult.m in Sources */,
+				1886D51319E97F5A005E1645 /* HostListResult.m in Sources */,
+				1886D43E19E979F8005E1645 /* PoolDetailInfoVC.m in Sources */,
+				1886D42619E979F8005E1645 /* MasterCollectionVC.m in Sources */,
+				1886D42B19E979F8005E1645 /* DatacenterDetailCollectionHeader.m in Sources */,
+				1886D52619E97F5B005E1645 /* StorageVolumnVO.m in Sources */,
+				1886D43119E979F8005E1645 /* HostCollectionVC.m in Sources */,
+				1886D35219E97942005E1645 /* AppDelegate.m in Sources */,
+				1886D42D19E979F8005E1645 /* DatacenterDetailInfoVC.m in Sources */,
+				1886D51E19E97F5B005E1645 /* NetworkVO.m in Sources */,
+				1886D42019E979F8005E1645 /* BusinessDetailInfoVC.m in Sources */,
+				1886D44019E979F8005E1645 /* PopOptionsUserInfoVC.m in Sources */,
+				1886D45619E979F8005E1645 /* VmNewVC.m in Sources */,
+				1886D51919E97F5B005E1645 /* HostVO.m in Sources */,
+				1886D51519E97F5A005E1645 /* HostNetworkVO.m in Sources */,
+				1886D45319E979F8005E1645 /* VmMigrateSelectHostListVC.m in Sources */,
+				1886D51819E97F5B005E1645 /* HostStatVO.m in Sources */,
+				1886D45419E979F8005E1645 /* VmMigrateVC.m in Sources */,
+				1886D50C19E97F5A005E1645 /* BusinessVO.m in Sources */,
+				1886D50E19E97F5A005E1645 /* ControlRecordVO.m in Sources */,
+				1886D45119E979F8005E1645 /* VmDiskCollectionVC.m in Sources */,
+				1886D44F19E979F8005E1645 /* VmDetailMemryConfigVC.m in Sources */,
+				1886D43619E979F8005E1645 /* HostNicCollectionVC.m in Sources */,
+				1886D45019E979F8005E1645 /* VmDetailSnapshootVC.m in Sources */,
+				1886D42219E979F8005E1645 /* BusinessVmCollectionVC.m in Sources */,
+				1886D34F19E97942005E1645 /* main.m in Sources */,
+				1886D44719E979F8005E1645 /* PopControlRecordCell.m in Sources */,
+				1886D45519E979F8005E1645 /* VmNetworkCollectionVC.m in Sources */,
+				1886D50B19E97F5A005E1645 /* BusinessVmVO.m in Sources */,
+				1886D52819E97F5B005E1645 /* UserVO.m in Sources */,
+				1886D52B19E97F5B005E1645 /* VmListResult.m in Sources */,
+				1886D44119E979F8005E1645 /* PopOptionsVC.m in Sources */,
+				1886D51F19E97F5B005E1645 /* PoolElasticInfo.m in Sources */,
+				1886D44419E979F8005E1645 /* StorageDetailInfoVC.m in Sources */,
+				1886D42719E979F8005E1645 /* MasterContainerVC.m in Sources */,
+				1886D52919E97F5B005E1645 /* VmDiskListResult.m in Sources */,
+				1886D43519E979F8005E1645 /* HostNetworkCollectionVC.m in Sources */,
+				1886D43419E979F8005E1645 /* HostDetailPerformanceVC.m in Sources */,
+				1886D44D19E979F8005E1645 /* VmDetailCPUConfigVC.m in Sources */,
+				1886D45819E979F8005E1645 /* PopWarningInfoCellForTime.m in Sources */,
+				1886D44919E979F8005E1645 /* PopControlRecordVC.m in Sources */,
+				1886D51D19E97F5B005E1645 /* NetworkListResult.m in Sources */,
+				1886D43C19E979F8005E1645 /* NetworkContainerVC.m in Sources */,
+				1886D52719E97F5B005E1645 /* UserListResult.m in Sources */,
+				1886D43019E979F8005E1645 /* DatacenterTableVC.m in Sources */,
+				1886D50D19E97F5A005E1645 /* ControlRecordListResult.m in Sources */,
+				1886D45719E979F8005E1645 /* PopWarningInfoCell.m in Sources */,
+				1886D43A19E979F8005E1645 /* NetworkCollectionCell.m in Sources */,
+				1886D52019E97F5B005E1645 /* PoolListResult.m in Sources */,
+				1886D43219E979F8005E1645 /* HostContainerVC.m in Sources */,
+				1886D51119E97F5A005E1645 /* DatacenterStatWinserver.m in Sources */,
+				1886D43F19E979F8005E1645 /* PopOptionLicenseVC.m in Sources */,
+				1886D52519E97F5B005E1645 /* StorageVolumnListResult.m in Sources */,
+				1886D42E19E979F8005E1645 /* DatacenterDetailMoreVC.m in Sources */,
+				1886D52319E97F5B005E1645 /* StorageListResult.m in Sources */,
+				1886D43D19E979F8005E1645 /* PoolContainerVC.m in Sources */,
+				1886D52419E97F5B005E1645 /* StorageVO.m in Sources */,
+				1886D52A19E97F5B005E1645 /* VmDiskVO.m in Sources */,
+				1886D43B19E979F8005E1645 /* NetworkCollectionVC.m in Sources */,
+				1886D44219E979F8005E1645 /* StorageCollectionVC.m in Sources */,
+				1886D52119E97F5B005E1645 /* PoolVO.m in Sources */,
+				1886D52D19E97F5B005E1645 /* VmNetworkVO.m in Sources */,
+				1886D44E19E979F8005E1645 /* VmDetailInfoVC.m in Sources */,
+				1886D45219E979F8005E1645 /* VmMigrateSelectHostListCell.m in Sources */,
+				1886D42C19E979F8005E1645 /* DatacenterDetailCollectionVC.m in Sources */,
+				1886D51719E97F5B005E1645 /* HostNicVO.m in Sources */,
+				1886D51619E97F5B005E1645 /* HostNicListResult.m in Sources */,
+				1886D50F19E97F5A005E1645 /* DatacenterListResult.m in Sources */,
+				1886D51C19E97F5B005E1645 /* LoginVO.m in Sources */,
+				1886D51B19E97F5B005E1645 /* LicenseWciVO.m in Sources */,
+				1886D42819E979F8005E1645 /* DatacenterContainerTableVC.m in Sources */,
+				1886D44519E979F8005E1645 /* StorageDiskCollectionCell.m in Sources */,
+				1886D44319E979F8005E1645 /* StorageContainerVC.m in Sources */,
+				1886D50A19E97F5A005E1645 /* BusinessListResult.m in Sources */,
+				1886D43719E979F8005E1645 /* LoginSettingVC.m in Sources */,
+				1886D52C19E97F5B005E1645 /* VmNetworkListResult.m in Sources */,
+				1886D44A19E979F8005E1645 /* UIStoryboard+Theme.m in Sources */,
+				1886D42A19E979F8005E1645 /* DatacenterDashboardVC.m in Sources */,
+				1886D51019E97F5A005E1645 /* DatacenterStatVO.m in Sources */,
+				1886D51A19E97F5B005E1645 /* LicenseVO.m in Sources */,
+				1886D41F19E979F8005E1645 /* BusinessContainerVC.m in Sources */,
+				1886D44619E979F8005E1645 /* StorageDiskCollectionVC.m in Sources */,
+				1886D52F19E97F5B005E1645 /* WarningInfoListResult.m in Sources */,
+				1886D51219E97F5A005E1645 /* DatacenterVO.m in Sources */,
+				1886D52E19E97F5B005E1645 /* VmVO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1886D35B19E97943005E1645 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1886D35C19E97943005E1645 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1886D36A19E97943005E1645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1886D36B19E97943005E1645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1886D36D19E97943005E1645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinCenter-Theme/WinCenter-Theme-Prefix.pch";
+				INFOPLIST_FILE = "WinCenter-Theme/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos",
+					"/Users/apple/Documents/xcodes/winhong-ios/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1886D36E19E97943005E1645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinCenter-Theme/WinCenter-Theme-Prefix.pch";
+				INFOPLIST_FILE = "WinCenter-Theme/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Winhong-dvmhodjrothmeaalefhubdoypnlc/Build/Products/Debug-iphoneos",
+					"/Users/apple/Documents/xcodes/winhong-ios/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1886D34419E97942005E1645 /* Build configuration list for PBXProject "WinCenter-Theme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1886D36A19E97943005E1645 /* Debug */,
+				1886D36B19E97943005E1645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1886D36C19E97943005E1645 /* Build configuration list for PBXNativeTarget "WinCenter-Theme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1886D36D19E97943005E1645 /* Debug */,
+				1886D36E19E97943005E1645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1886D34119E97942005E1645 /* Project object */;
+}

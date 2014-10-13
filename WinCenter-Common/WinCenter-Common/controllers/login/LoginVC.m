@@ -19,6 +19,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if(self.themeName!=nil){
+        [[NSUserDefaults standardUserDefaults] setObject:self.themeName forKey:@"Storyboard_Theme"];
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"Storyboard_Theme"];
+    }
     // Do any additional setup after loading the view.
     
     [self.userName becomeFirstResponder];
@@ -68,7 +73,9 @@
 }
 
 - (void) toLogin{
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter" bundle:nil] instantiateInitialViewController];
+
+    
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Datacenter"] instantiateInitialViewController];
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:vc animated:YES completion:nil];
 }

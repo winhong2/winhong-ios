@@ -7,7 +7,7 @@
         <!--LoginVC-->
         <scene sceneID="rgz-nS-qfi">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="ckY-OR-jaX" customClass="LoginVC" sceneMemberID="viewController">
+                <viewController id="ckY-OR-jaX" customClass="LoginVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9ng-XB-MzU"/>
                         <viewControllerLayoutGuide type="bottom" id="XMv-MK-aNS"/>

@@ -31,12 +31,18 @@
     vc.storageVO = self.storageVO;
     [pages addObject:vc];
     
+    if(self.hasDiskPage){
+        StorageDiskCollectionVC *diskCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDiskCollectionVC"];
+        diskCollectionVC.storageVO = self.storageVO;
+        [pages addObject:diskCollectionVC];
+    }
+    
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         StorageDiskCollectionVC *diskCollectionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"StorageDiskCollectionVC"];
         diskCollectionVC.storageVO = self.storageVO;
         [pages addObject:diskCollectionVC];
         
-        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
+        PopControlRecordVC *controlVC = [[UIStoryboard storyboardWithName:@"Task"] instantiateViewControllerWithIdentifier:@"PopControlRecordVC"];
         controlVC.remoteObject = self.storageVO;
         [pages addObject:controlVC];
     }
@@ -50,13 +56,25 @@
     if(self.popover!=nil){
         [self.popover dismissPopoverAnimated:NO];
     }
-    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task" bundle:nil] instantiateInitialViewController];
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
     PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
     controlVC.remoteObject = self.storageVO;
     self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
     UIButton *button = (UIButton*)sender;
     //self.popover.passthroughViews=@[self.buttonTask];
     [self.popover presentPopoverFromRect:button.bounds inView:button permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+}
+
+-(IBAction)showControlRecordVCWithBarItem:(id)sender{
+    if(self.popover!=nil){
+        [self.popover dismissPopoverAnimated:NO];
+    }
+    UINavigationController *nav = [[UIStoryboard storyboardWithName:@"Task"] instantiateInitialViewController];
+    PopControlRecordVC *controlVC = [[nav childViewControllers] firstObject];
+    controlVC.remoteObject = self.storageVO;
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:nav];
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    [self.popover presentPopoverFromBarButtonItem:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 
 @end
