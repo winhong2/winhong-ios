@@ -936,7 +936,7 @@
                             </connections>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterCollectionFooter" id="PqX-pP-YPE" customClass="MasterCollectionFooter">
-                            <rect key="frame" x="0.0" y="854" width="320" height="50"/>
+                            <rect key="frame" x="0.0" y="854" width="320" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itA-qR-O46">
@@ -1009,18 +1009,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-clock-black" width="30" height="30"/>
-        <image name="icon-cpu线程-black" width="20" height="22"/>
-        <image name="icon-ip-black" width="16" height="24"/>
-        <image name="icon-user1-black" width="30" height="30"/>
-        <image name="icon-vm1-black" width="32" height="30"/>
-        <image name="icon-内存-black" width="24" height="24"/>
-        <image name="icon-存储-black" width="20" height="23"/>
-        <image name="icon-虚拟机数-black" width="19" height="18"/>
+        <image name="icon-clock-black" width="15" height="15"/>
+        <image name="icon-cpu线程-black" width="10" height="11"/>
+        <image name="icon-ip-black" width="8" height="12"/>
+        <image name="icon-user1-black" width="15" height="15"/>
+        <image name="icon-vm1-black" width="16" height="15"/>
+        <image name="icon-内存-black" width="12" height="12"/>
+        <image name="icon-存储-black" width="10" height="11"/>
+        <image name="icon-虚拟机数-black" width="9" height="9"/>
         <image name="share" width="29" height="13"/>
         <image name="存储图标" width="36" height="36"/>
         <image name="物理机icon" width="64" height="64"/>
-        <image name="资源池图标-black" width="111" height="79"/>
+        <image name="资源池图标-black" width="55" height="39"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
