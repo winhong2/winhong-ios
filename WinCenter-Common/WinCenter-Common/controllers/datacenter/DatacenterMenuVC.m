@@ -56,7 +56,7 @@
     previousButton.selected = NO;
     self.selectedIndex = index;
     UIButton *currentButton = self.menuItems[self.selectedIndex];
-    currentButton.backgroundColor = [UIColor colorWithRed:35/255.0 green:72/255.0 blue:113/255.0 alpha:1];
+    currentButton.backgroundColor = [UIColor colorWithRed:71/255.0 green:145/255.0 blue:210/255.0 alpha:1];
     currentButton.selected = YES;
     
     

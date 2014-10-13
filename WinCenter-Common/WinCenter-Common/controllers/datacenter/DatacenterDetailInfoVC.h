@@ -16,14 +16,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *businessCount;
 
 @property (weak, nonatomic) IBOutlet UILabel *cpuUnitCount;
-@property (weak, nonatomic) IBOutlet UILabel *cpuUsedInfo;
+@property (weak, nonatomic) IBOutlet UILabel *cpuUsedCount;
+@property (weak, nonatomic) IBOutlet UILabel *cpuUnitUnusedCount;
 @property (weak, nonatomic) IBOutlet UILabel *memerySize;
-@property (weak, nonatomic) IBOutlet UILabel *memeryUsedInfo;
+@property (weak, nonatomic) IBOutlet UILabel *memeryUsedSize;
+@property (weak, nonatomic) IBOutlet UILabel *memoryUnusedSize;
 @property (weak, nonatomic) IBOutlet UILabel *storageSize;
-@property (weak, nonatomic) IBOutlet UILabel *storageUsedInfo;
-@property (weak, nonatomic) IBOutlet UILabel *networkIpCount;
-@property (weak, nonatomic) IBOutlet UILabel *networkIpUsedInfo;
-
+@property (weak, nonatomic) IBOutlet UILabel *storageUsedSize;
+@property (weak, nonatomic) IBOutlet UILabel *storageUnusedSize;
+//@property (weak, nonatomic) IBOutlet UILabel *networkIpCount;
+//@property (weak, nonatomic) IBOutlet UILabel *networkIpUsedCount;
+//@property (weak, nonatomic) IBOutlet UILabel *networkIpUnusedCount;
 
 @property (weak, nonatomic) IBOutlet UIProgressView *cpuProgress;
 @property (weak, nonatomic) IBOutlet UIProgressView *memoryProgress;
