@@ -12,6 +12,8 @@
 
 @interface PoolDetailInfoVC ()
 
+@property (weak, nonatomic) IBOutlet UILabel *name;
+
 @property (weak, nonatomic) IBOutlet UILabel *hostCount;
 @property (weak, nonatomic) IBOutlet UILabel *vmCount;
 @property (weak, nonatomic) IBOutlet UILabel *cpuUnitCount;
@@ -76,9 +78,10 @@
 }
 
 - (void)refreshMainInfo{
+    self.name.text = [NSString stringWithFormat:@"%@", self.poolVO.resourcePoolName];
     self.hostCount.text = [NSString stringWithFormat:@"%d", self.poolVO.hostNumber];
     self.vmCount.text = [NSString stringWithFormat:@"%d", self.poolVO.vmNumber];
-    
+
     self.cpuUnitCount.text = [NSString stringWithFormat:@"%.2fGHz", self.poolVO.totalCpu/1000.0];
     self.cpuUnitUsedCount.text = [NSString stringWithFormat:@"%.2fGHz", (self.poolVO.totalCpu-self.poolVO.availCpu)/1000.0];
     self.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz", self.poolVO.availCpu/1000.0];
