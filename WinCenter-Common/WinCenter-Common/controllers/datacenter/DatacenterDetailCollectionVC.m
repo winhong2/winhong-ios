@@ -182,8 +182,8 @@
             cell.label2.text = [NSString stringWithFormat:@"%d",hostVO.virtualMachineNum ];
             cell.label3.text = [NSString stringWithFormat:@"%.2fGB",hostVO.storage];
             cell.label4.text = [NSString stringWithFormat:@"%d",hostVO.cpuSlots];
-            cell.label5.text = [NSString stringWithFormat:@"%d",hostVO.cpuSpeed];
-            cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory];
+            cell.label5.text = [NSString stringWithFormat:@"%d",hostVO.cpu];
+            cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory/1024.0];
             cell.status.text = [hostVO state_text];
             cell.status.textColor = [hostVO state_color];
             return cell;
@@ -195,6 +195,7 @@
             cell.title.text = storageVO.storagePoolName;
             cell.label1.text = [NSString stringWithFormat:@"%.2fGB剩余,共%.2fGB", storageVO.availStorage, storageVO.totalStorage];
             cell.label2.text = [NSString stringWithFormat:@"%d个", storageVO.volumeNum];
+            cell.label3.text = [NSString stringWithFormat:@"%@", storageVO.location];
             cell.status.text = [storageVO state_text];
             cell.status.textColor = [storageVO state_color];
             cell.share_image.hidden = [storageVO.shared isEqualToString:@"false"];

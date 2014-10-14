@@ -68,6 +68,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.section==2){
+        [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Charts"] instantiateViewControllerWithIdentifier:@"ChartTableVC"] animated:YES];
+    }
+    else if(indexPath.section==3){
         if(indexPath.row==0){
             [self showWarningInfoVC:nil];
         }else if(indexPath.row==1){
