@@ -13,7 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     if([[NSUserDefaults standardUserDefaults] stringForKey:@"SERVER_ROOT"] == nil){
-        [[NSUserDefaults standardUserDefaults] setValue:@"https://192.168.100.146:8090" forKey:@"SERVER_ROOT"];
+        [[NSUserDefaults standardUserDefaults] setValue:@"https://192.168.100.147:8090" forKey:@"SERVER_ROOT"];
     }
     
     return YES;

@@ -31,7 +31,6 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *cpuProgress;
 @property (weak, nonatomic) IBOutlet UIProgressView *memoryProgress;
 @property (weak, nonatomic) IBOutlet UIProgressView *storageProgress;
-@property (weak, nonatomic) IBOutlet UIProgressView *networkProgress;
 
 @property (weak, nonatomic) IBOutlet UIButton *button1;
 @property (weak, nonatomic) IBOutlet UIButton *button2;
@@ -40,6 +39,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *button5;
 @property (weak, nonatomic) IBOutlet UIButton *button6;
 
+@property (weak, nonatomic) IBOutlet UILabel *cpuUsedInfo;
+@property (weak, nonatomic) IBOutlet UILabel *memeryUsedInfo;
+@property (weak, nonatomic) IBOutlet UILabel *storageUsedInfo;
 - (void)refresh;
 - (void)switchButtonSelected:(NSInteger)index;
 
