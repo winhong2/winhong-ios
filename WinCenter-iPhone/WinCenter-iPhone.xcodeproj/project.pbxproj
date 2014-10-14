@@ -238,6 +238,13 @@
 		18DCEC0D19ED757E00ED7BF8 /* HeartLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0919ED757E00ED7BF8 /* HeartLive.m */; };
 		18DCEC0F19ED757E00ED7BF8 /* HeartLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0C19ED757E00ED7BF8 /* HeartLiveVC.m */; };
 		18DCEC1119ED787A00ED7BF8 /* heartLiveData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18DCEC1019ED787A00ED7BF8 /* heartLiveData.txt */; };
+		18DCEC2619ED7CAF00ED7BF8 /* ClickThroughRatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */; };
+		18DCEC2719ED7CAF00ED7BF8 /* Example1.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1619ED7CAE00ED7BF8 /* Example1.m */; };
+		18DCEC2819ED7CAF00ED7BF8 /* Example2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1819ED7CAE00ED7BF8 /* Example2.m */; };
+		18DCEC2919ED7CAF00ED7BF8 /* Example3.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */; };
+		18DCEC2A19ED7CAF00ED7BF8 /* Example4.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */; };
+		18DCEC2D19ED7CAF00ED7BF8 /* GraphCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */; };
+		18DCEC2E19ED7CAF00ED7BF8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */; };
 		472031B77D994FCC9305C962 /* libPods-WinCenter-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */; };
 /* End PBXBuildFile section */
 
@@ -342,8 +349,6 @@
 		180BF6D619ECB0960029D2A4 /* UIBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseClass.m; sourceTree = "<group>"; };
 		180BF6D719ECB0960029D2A4 /* WeekStatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekStatVC.h; sourceTree = "<group>"; };
 		180BF6D819ECB0960029D2A4 /* WeekStatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekStatVC.m; sourceTree = "<group>"; };
-		184AE35F19ECB79D0027DB77 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		184AE36119ECB7A30027DB77 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		185CB33219E7796F00DC8E8A /* BusinessContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessContainerVC.h; sourceTree = "<group>"; };
 		185CB33319E7796F00DC8E8A /* BusinessContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessContainerVC.m; sourceTree = "<group>"; };
 		185CB33419E7796F00DC8E8A /* BusinessDetailInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailInfoVC.h; sourceTree = "<group>"; };
@@ -637,6 +642,20 @@
 		18DCEC0B19ED757E00ED7BF8 /* HeartLiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartLiveVC.h; sourceTree = "<group>"; };
 		18DCEC0C19ED757E00ED7BF8 /* HeartLiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartLiveVC.m; sourceTree = "<group>"; };
 		18DCEC1019ED787A00ED7BF8 /* heartLiveData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heartLiveData.txt; sourceTree = "<group>"; };
+		18DCEC1319ED7CAE00ED7BF8 /* ClickThroughRatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickThroughRatesViewController.h; sourceTree = "<group>"; };
+		18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickThroughRatesViewController.m; sourceTree = "<group>"; };
+		18DCEC1519ED7CAE00ED7BF8 /* Example1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example1.h; sourceTree = "<group>"; };
+		18DCEC1619ED7CAE00ED7BF8 /* Example1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example1.m; sourceTree = "<group>"; };
+		18DCEC1719ED7CAE00ED7BF8 /* Example2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example2.h; sourceTree = "<group>"; };
+		18DCEC1819ED7CAE00ED7BF8 /* Example2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example2.m; sourceTree = "<group>"; };
+		18DCEC1919ED7CAE00ED7BF8 /* Example3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example3.h; sourceTree = "<group>"; };
+		18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example3.m; sourceTree = "<group>"; };
+		18DCEC1B19ED7CAE00ED7BF8 /* Example4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example4.h; sourceTree = "<group>"; };
+		18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example4.m; sourceTree = "<group>"; };
+		18DCEC2119ED7CAE00ED7BF8 /* GraphCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphCalcViewController.h; sourceTree = "<group>"; };
+		18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphCalcViewController.m; sourceTree = "<group>"; };
+		18DCEC2319ED7CAF00ED7BF8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -679,6 +698,7 @@
 				180BF60019ECB0960029D2A4 /* Datagrid */,
 				180BF6BD19ECB0960029D2A4 /* SFGaugeView */,
 				180BF6B119ECB0960029D2A4 /* PNLineChart */,
+				18DCEC1219ED7CAE00ED7BF8 /* FRD3DBarChart */,
 				18DCEC0719ED757E00ED7BF8 /* HeartRateCurve */,
 			);
 			name = charts;
@@ -1325,8 +1345,6 @@
 		18A4D43019B560D400415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				184AE36119ECB7A30027DB77 /* GLKit.framework */,
-				184AE35F19ECB79D0027DB77 /* OpenGLES.framework */,
 				18A4D43119B560D400415896 /* Foundation.framework */,
 				18A4D43319B560D400415896 /* CoreGraphics.framework */,
 				18A4D43519B560D400415896 /* UIKit.framework */,
@@ -1403,6 +1421,27 @@
 				18DCEC0C19ED757E00ED7BF8 /* HeartLiveVC.m */,
 			);
 			path = HeartRateCurve;
+			sourceTree = "<group>";
+		};
+		18DCEC1219ED7CAE00ED7BF8 /* FRD3DBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				18DCEC1319ED7CAE00ED7BF8 /* ClickThroughRatesViewController.h */,
+				18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */,
+				18DCEC1519ED7CAE00ED7BF8 /* Example1.h */,
+				18DCEC1619ED7CAE00ED7BF8 /* Example1.m */,
+				18DCEC1719ED7CAE00ED7BF8 /* Example2.h */,
+				18DCEC1819ED7CAE00ED7BF8 /* Example2.m */,
+				18DCEC1919ED7CAE00ED7BF8 /* Example3.h */,
+				18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */,
+				18DCEC1B19ED7CAE00ED7BF8 /* Example4.h */,
+				18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */,
+				18DCEC2119ED7CAE00ED7BF8 /* GraphCalcViewController.h */,
+				18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */,
+				18DCEC2319ED7CAF00ED7BF8 /* MainViewController.h */,
+				18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */,
+			);
+			path = FRD3DBarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1602,9 +1641,11 @@
 				185CB3D319E7796F00DC8E8A /* MasterCollectionCell.m in Sources */,
 				185CB40119E7796F00DC8E8A /* VmNetworkCollectionVC.m in Sources */,
 				1886D61419E97F82005E1645 /* StorageVolumnVO.m in Sources */,
+				18DCEC2619ED7CAF00ED7BF8 /* ClickThroughRatesViewController.m in Sources */,
 				185CB3E419E7796F00DC8E8A /* LoginSettingVC.m in Sources */,
 				185CB3F619E7796F00DC8E8A /* PopControlRecordVC.m in Sources */,
 				18DCEC0519ED6F4400ED7BF8 /* PCChartsTableViewController.m in Sources */,
+				18DCEC2A19ED7CAF00ED7BF8 /* Example4.m in Sources */,
 				180BF6F819ECB0960029D2A4 /* EPieChartViewController.m in Sources */,
 				185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */,
 				180BF72019ECB0960029D2A4 /* JYRadarChartVC.m in Sources */,
@@ -1618,6 +1659,7 @@
 				180BF73419ECB0960029D2A4 /* RenderView.m in Sources */,
 				185CB3D919E7796F00DC8E8A /* DatacenterContainerVC.m in Sources */,
 				185CB3D419E7796F00DC8E8A /* MasterCollectionFooter.m in Sources */,
+				18DCEC2D19ED7CAF00ED7BF8 /* GraphCalcViewController.m in Sources */,
 				1886D60319E97F82005E1645 /* HostNetworkVO.m in Sources */,
 				1886D61119E97F82005E1645 /* StorageListResult.m in Sources */,
 				180BF6D919ECB0960029D2A4 /* ARLineChartCommon.m in Sources */,
@@ -1637,6 +1679,7 @@
 				180BF72A19ECB0960029D2A4 /* iPadGraphView.m in Sources */,
 				1886D5F819E97F82005E1645 /* BusinessListResult.m in Sources */,
 				185CB3DE19E7796F00DC8E8A /* HostCollectionVC.m in Sources */,
+				18DCEC2719ED7CAF00ED7BF8 /* Example1.m in Sources */,
 				180BF74519ECB0960029D2A4 /* TWRViewController.m in Sources */,
 				185CB3E319E7796F00DC8E8A /* HostNicCollectionVC.m in Sources */,
 				185CB3F219E7796F00DC8E8A /* StorageDiskCollectionCell.m in Sources */,
@@ -1680,16 +1723,19 @@
 				185CB3E119E7796F00DC8E8A /* HostDetailPerformanceVC.m in Sources */,
 				1886D60F19E97F82005E1645 /* PoolVO.m in Sources */,
 				1886D60919E97F82005E1645 /* LicenseWciVO.m in Sources */,
+				18DCEC2919ED7CAF00ED7BF8 /* Example3.m in Sources */,
 				180BF6DB19ECB0960029D2A4 /* ARLineChartView.m in Sources */,
 				1886D61C19E97F82005E1645 /* VmVO.m in Sources */,
 				1886D60E19E97F82005E1645 /* PoolListResult.m in Sources */,
 				185CB3FD19E7796F00DC8E8A /* VmDiskCollectionVC.m in Sources */,
 				18DCEBF019ED139E00ED7BF8 /* RealtimeCurveVC.m in Sources */,
 				180BF6DA19ECB0960029D2A4 /* ARLineChartContentView.m in Sources */,
+				18DCEC2819ED7CAF00ED7BF8 /* Example2.m in Sources */,
 				180BF6DD19ECB0960029D2A4 /* BTSpiderPlotterVC.m in Sources */,
 				1886D60719E97F82005E1645 /* HostVO.m in Sources */,
 				180BF74019ECB0960029D2A4 /* SHRootController.m in Sources */,
 				18DCEBE519ED0DA700ED7BF8 /* JBChartHeaderView.m in Sources */,
+				18DCEC2E19ED7CAF00ED7BF8 /* MainViewController.m in Sources */,
 				1886D61619E97F82005E1645 /* UserVO.m in Sources */,
 				18A4D43E19B560D400415896 /* main.m in Sources */,
 				185CB3F119E7796F00DC8E8A /* StorageDetailInfoVC.m in Sources */,
