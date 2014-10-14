@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbR-Ib-os0">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbR-Ib-os0">
                                 <rect key="frame" x="0.0" y="45" width="1024" height="723"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-LR-ffe">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-LR-ffe">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="45"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="022-34-wcg"/>
@@ -56,8 +56,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zbR-Ib-os0" firstAttribute="leading" secondItem="0pn-UC-Aas" secondAttribute="leadingMargin" constant="-16" id="G4f-u1-7ga"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zbR-Ib-os0" secondAttribute="trailing" constant="-16" id="Ohi-q3-ucr"/>
+                            <constraint firstItem="t7w-LR-ffe" firstAttribute="leading" secondItem="0pn-UC-Aas" secondAttribute="leadingMargin" constant="-16" id="CDk-5Y-meG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t7w-LR-ffe" secondAttribute="trailing" constant="-16" id="yLv-Cc-R9Y"/>
                         </constraints>
                     </view>
                     <toolbarItems>
