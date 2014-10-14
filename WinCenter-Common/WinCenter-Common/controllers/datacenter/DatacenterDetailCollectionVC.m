@@ -246,36 +246,77 @@
     
     if([kind isEqualToString:UICollectionElementKindSectionHeader]){
         if(self.isDetailPagePushed){
-            DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterDetailCollectionHeader" forIndexPath:indexPath];
-            
-            if(header){
+
                 switch (self.pageType) {
                     case Page_Pool:{
-                        //
-                        break;
+                        DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterPoolCollectionHeader" forIndexPath:indexPath];
+                        
+                        header.poolCount.text = [NSString stringWithFormat:@"%d",0];
+                        header.cpuUsedCount.text = [NSString stringWithFormat:@"%.2fGHz",20.0];
+                        header.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz",20.0];
+                        header.memeryUsedSize.text = [NSString stringWithFormat:@"%.2fG",10.00];
+                        header.memoryUnusedSize.text = [NSString stringWithFormat:@"%.2fG",10.00];
+                        header.storageUsedSize.text = [NSString stringWithFormat:@"%.2fT",1.0];
+                        header.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fT",1.0];
+                        
+                        //圈图
+                        PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart.backgroundColor = [UIColor clearColor];
+                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:88.0/255 green:206.0/255 blue:96.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart strokeChart];
+                        [header.cpuChartGroup addSubview:circleChart];
+                        
+                        
+                        PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart2.backgroundColor = [UIColor clearColor];
+                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart2.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:88.0/255 green:206.0/255 blue:96.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart2 strokeChart];
+                        [header.memoryChartGroup addSubview:circleChart2];
+                        
+                        PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:header.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart3.backgroundColor = [UIColor clearColor];
+                        circleChart3.labelColor = [UIColor clearColor];
+                        circleChart3.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart3.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart3.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:88.0/255 green:206.0/255 blue:96.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart3 strokeChart];
+                        [header.storageChartGroup addSubview:circleChart3];
+                        
+                        return header;
                     }
                     case Page_Host:{
-                        //
-                        break;
+                        DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterHostCollectionHeader" forIndexPath:indexPath];
+                        return header;
                     }
                     case Page_Storage:{
+                        DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterStorageCollectionHeader" forIndexPath:indexPath];
                         //
-                        break;
+                        return header;
                     }
                     case Page_VM:{
+                        DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterVmCollectionHeader" forIndexPath:indexPath];
                         //
-                        break;
+                        return header;
                     }
                     case Page_Business:{
+                        DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterBusinessCollectionHeader" forIndexPath:indexPath];
                         //
-                        break;
+                        return header;
                     }
                     default:
                         break;
                 }
-            }
-            
-            return header;
+            return nil;
+
         }else{
             MasterCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MasterCollectionHeader" forIndexPath:indexPath];
             
