@@ -9,6 +9,7 @@
 #import "VmDetailInfoVC.h"
 
 @interface VmDetailInfoVC ()
+@property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *osType;
 @property (weak, nonatomic) IBOutlet UILabel *isInstalledTool;
 @property (weak, nonatomic) IBOutlet UILabel *runningTime;
@@ -163,6 +164,7 @@
     }];
 }
 - (void)refresh{
+    self.name.text = self.vmVO.name;
     self.osType.text = self.vmVO.osType;
     self.isInstalledTool.text = [self.vmVO isInstallTools_text];
     self.runningTime.text = [NSString stringWithFormat:@"%d", self.vmVO.runTime];

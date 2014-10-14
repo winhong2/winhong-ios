@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Owf-eZ-Grc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xma-XD-Uiu">
-                        <rect key="frame" x="0.0" y="0.0" width="773" height="688"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YED-IK-Ohm">
@@ -55,8 +55,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bTK-0K-wHq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="773" height="688"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oq-fB-1Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +66,7 @@
             <objects>
                 <tableViewController id="yK0-Oh-Y7L" customClass="NetworkCollectionVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="exO-N2-Fmu">
-                        <rect key="frame" x="0.0" y="0.0" width="349" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -110,6 +109,7 @@
                         </connections>
                     </tableView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSa-pg-7FG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,7 +120,7 @@
             <objects>
                 <tableViewController id="PwN-TQ-e5f" customClass="NetworkCollectionVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ycy-p6-bkr">
-                        <rect key="frame" x="0.0" y="0.0" width="349" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -163,6 +163,7 @@
                         </connections>
                     </tableView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQe-K1-kky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

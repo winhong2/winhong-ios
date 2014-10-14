@@ -76,14 +76,20 @@
     PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.usedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.storageVO usedRatio]] andClockwise:YES andShadow:YES];
     circleChart.backgroundColor = [UIColor clearColor];
     circleChart.labelColor = [UIColor clearColor];
-    [circleChart setStrokeColor:[self.storageVO usedRatioColor]];
+    circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;
+    circleChart.circle.lineCap = kCALineCapSquare;
+    circleChart.lineWidth = @11.0f;
+    [circleChart setStrokeColor:[UIColor colorWithRed:247.0/255 green:124.0/255 blue:56/255 alpha:1]];
     [circleChart strokeChart];
     [self.usedStorageGroup addSubview:circleChart];
     
     PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.allocatedStorageGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.storageVO allocatedRatio]] andClockwise:YES andShadow:YES];
     circleChart2.backgroundColor = [UIColor clearColor];
     circleChart2.labelColor = [UIColor clearColor];
-    [circleChart2 setStrokeColor:[self.storageVO allocatedRatioColor]];
+    circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;
+    circleChart2.circle.lineCap = kCALineCapSquare;
+    circleChart2.lineWidth = @11.0f;
+    [circleChart2 setStrokeColor:[UIColor colorWithRed:247.0/255 green:124.0/255 blue:56/255 alpha:1]];
     [circleChart2 strokeChart];
     [self.allocatedStorageGroup addSubview:circleChart2];
 }
