@@ -424,8 +424,8 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="虚拟机2" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-d3-YNo">
                                             <rect key="frame" x="17" y="154" width="11" height="12"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-内存-black" translatesAutoresizingMaskIntoConstraints="NO" id="pkE-3Q-tdW">
-                                            <rect key="frame" x="17" y="181" width="12" height="12"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="内存-black" translatesAutoresizingMaskIntoConstraints="NO" id="pkE-3Q-tdW">
+                                            <rect key="frame" x="15" y="180" width="16" height="16"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-存储-black" translatesAutoresizingMaskIntoConstraints="NO" id="FsX-oc-Yec">
                                             <rect key="frame" x="17" y="208" width="12" height="12"/>
