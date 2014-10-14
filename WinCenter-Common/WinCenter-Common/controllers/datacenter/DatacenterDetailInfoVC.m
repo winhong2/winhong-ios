@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIView *cpuChartGroup;
 @property (weak, nonatomic) IBOutlet UIView *memoryChartGroup;
 @property (weak, nonatomic) IBOutlet UIView *storageChartGroup;
-//@property (weak, nonatomic) IBOutlet UIView *ipChartGroup;
 
 @property DatacenterStatWinserver *datacenterStatWinserver;
 
@@ -75,27 +74,23 @@
     self.cpuUnitCount.text = [NSString stringWithFormat:@"%.2fGHz",self.datacenterStatWinserver.totalCpu/1000.0];
     self.cpuUsedCount.text = [NSString stringWithFormat:@"%.2fGHz",(self.datacenterStatWinserver.totalCpu-self.datacenterStatWinserver.availCpu)/1000.0];
     self.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz",self.datacenterStatWinserver.availCpu/1000.0];
-//    self.cpuUsedInfo.text = [NSString stringWithFormat:@"已用%.2fGHz  还剩%.2fGHz",(self.datacenterStatWinserver.totalCpu-self.datacenterStatWinserver.availCpu)/1000.0,self.datacenterStatWinserver.availCpu/1000.0];
-//    self.cpuProgress.progress = self.datacenterStatWinserver.cpuRatio/100.0;
-//    self.cpuProgress.tintColor = [self.datacenterStatWinserver cpuRatioColor];
-//    
+    self.cpuUsedInfo.text = [NSString stringWithFormat:@"已用%.2fGHz  还剩%.2fGHz",(self.datacenterStatWinserver.totalCpu-self.datacenterStatWinserver.availCpu)/1000.0,self.datacenterStatWinserver.availCpu/1000.0];
+    self.cpuProgress.progress = self.datacenterStatWinserver.cpuRatio/100.0;
+    self.cpuProgress.tintColor = [self.datacenterStatWinserver cpuRatioColor];
+    
     self.memerySize.text = [NSString stringWithFormat:@"%.2fG",self.datacenterStatWinserver.totalMemory/1024.0];
     self.memeryUsedSize.text = [NSString stringWithFormat:@"%.2fG",(self.datacenterStatWinserver.totalMemory-self.datacenterStatWinserver.availMemory)/1024.0];
     self.memoryUnusedSize.text = [NSString stringWithFormat:@"%.2fG",self.datacenterStatWinserver.availMemory/1024.0];
-//    self.memeryUsedInfo.text = [NSString stringWithFormat:@"已用%.2fG  还剩%.2fG",(self.datacenterStatWinserver.totalMemory-self.datacenterStatWinserver.availMemory)/1024.0,self.datacenterStatWinserver.availMemory/1024.0];
-//    self.memoryProgress.progress = self.datacenterStatWinserver.memoryRatio/100.0;
-//    self.memoryProgress.tintColor = [self.datacenterStatWinserver memoryRatioColor];
-//    
+    self.memeryUsedInfo.text = [NSString stringWithFormat:@"已用%.2fG  还剩%.2fG",(self.datacenterStatWinserver.totalMemory-self.datacenterStatWinserver.availMemory)/1024.0,self.datacenterStatWinserver.availMemory/1024.0];
+    self.memoryProgress.progress = self.datacenterStatWinserver.memoryRatio/100.0;
+    self.memoryProgress.tintColor = [self.datacenterStatWinserver memoryRatioColor];
+    
     self.storageSize.text = [NSString stringWithFormat:@"%.2fT",self.datacenterStatWinserver.totalStorage/1024.0];
     self.storageUsedSize.text = [NSString stringWithFormat:@"%.2fT",(self.datacenterStatWinserver.totalStorage-self.datacenterStatWinserver.availStorage)/1024.0];
     self.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fT",self.datacenterStatWinserver.availStorage/1024.0];
-//    self.storageUsedInfo.text = [NSString stringWithFormat:@"已用%.2fT  还剩%.2fT",(self.datacenterStatWinserver.totalStorage-self.datacenterStatWinserver.availStorage)/1024.0,self.datacenterStatWinserver.availStorage/1024.0];
-//    self.storageProgress.progress = self.datacenterStatWinserver.storageRatio/100.0;
-//    self.storageProgress.tintColor = [self.datacenterStatWinserver storageRatioColor];
-    
-//    self.networkIpCount.text = [NSString stringWithFormat:@"%@个",self.datacenterStatWinserver.networkIpCount];
-//    self.networkIpUsedInfo.text = [NSString stringWithFormat:@"已用%@个  还剩%@个",self.datacenterStatWinserver.networkIpUsedCount,self.datacenterStatWinserver.networkIpUnusedCount];
-//    self.networkProgress.progress = self.datacenterStatWinserver.networkRatio;
+    self.storageUsedInfo.text = [NSString stringWithFormat:@"已用%.2fT  还剩%.2fT",(self.datacenterStatWinserver.totalStorage-self.datacenterStatWinserver.availStorage)/1024.0,self.datacenterStatWinserver.availStorage/1024.0];
+    self.storageProgress.progress = self.datacenterStatWinserver.storageRatio/100.0;
+    self.storageProgress.tintColor = [self.datacenterStatWinserver storageRatioColor];
     
     //圈图
     PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.datacenterStatWinserver cpuRatio]] andClockwise:YES andShadow:YES];
