@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YED-IK-Ohm">
-                                <rect key="frame" x="20" y="50" width="349" height="591"/>
+                                <rect key="frame" x="20" y="50" width="376" height="678"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="yK0-Oh-Y7L" kind="embed" id="27W-NC-PNI"/>
                                 </connections>
                             </containerView>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtT-s0-skU">
-                                <rect key="frame" x="404" y="50" width="349" height="591"/>
+                                <rect key="frame" x="404" y="50" width="355" height="678"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="PwN-TQ-e5f" kind="embed" id="052-65-Q5S"/>
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oq-fB-1Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1444.5" y="1448"/>
+            <point key="canvasLocation" x="-1445" y="1448"/>
         </scene>
         <!--Network CollectionVC-->
         <scene sceneID="q54-Oc-8ck">
@@ -113,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSa-pg-7FG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-404.5" y="1413.5"/>
+            <point key="canvasLocation" x="-199" y="1448"/>
         </scene>
         <!--Network CollectionVC-->
         <scene sceneID="xos-QC-WGb">
