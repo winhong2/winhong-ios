@@ -1279,7 +1279,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOQ-Rc-KhT">
-                                            <rect key="frame" x="192" y="147" width="66" height="21"/>
+                                            <rect key="frame" x="192" y="147" width="88" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1319,7 +1319,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wja-QX-Jke">
-                                            <rect key="frame" x="192" y="216" width="78" height="21"/>
+                                            <rect key="frame" x="192" y="216" width="88" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1396,11 +1396,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKK-NL-Cmo">
-                                    <rect key="frame" x="376" y="68" width="349" height="138"/>
+                                    <rect key="frame" x="376" y="63" width="349" height="138"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfa-DS-bzF" userLabel="环图">
                                             <rect key="frame" x="20" y="20" width="108" height="98"/>
-                                            <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIL-fl-gBg">
                                             <rect key="frame" x="143" y="49" width="12" height="12"/>
@@ -1436,11 +1435,10 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzw-sa-pAw">
-                                    <rect key="frame" x="701" y="68" width="349" height="138"/>
+                                    <rect key="frame" x="701" y="63" width="349" height="138"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WhR-OB-cxG" userLabel="环图">
                                             <rect key="frame" x="20" y="20" width="108" height="98"/>
-                                            <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-E8-bL0">
                                             <rect key="frame" x="143" y="49" width="12" height="12"/>
@@ -1496,6 +1494,16 @@
                                 <constraint firstAttribute="trailingMargin" secondItem="p9V-tb-obN" secondAttribute="trailing" constant="-8" id="Dpc-tE-u6d"/>
                                 <constraint firstItem="p9V-tb-obN" firstAttribute="leading" secondItem="DFn-Lm-RXe" secondAttribute="leadingMargin" constant="-8" id="a5C-fB-HlK"/>
                             </constraints>
+                            <connections>
+                                <outlet property="hostCount" destination="Oa5-5x-HLm" id="LVs-Gm-WB2"/>
+                                <outlet property="hostStatusChart" destination="WhR-OB-cxG" id="m91-dv-UQM"/>
+                                <outlet property="hostTypeChart" destination="mfa-DS-bzF" id="Fzc-ma-bDq"/>
+                                <outlet property="label1" destination="jWp-FV-fuv" id="D6K-Te-icG"/>
+                                <outlet property="label2" destination="72I-q1-uvO" id="jWv-Sf-o24"/>
+                                <outlet property="label3" destination="YtS-bQ-8YU" id="FUy-2K-Onm"/>
+                                <outlet property="label4" destination="mk7-SZ-7y8" id="ee8-pr-WBk"/>
+                                <outlet property="label5" destination="het-0D-r1R" id="ubr-mR-0sp"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="tNF-5l-310" id="4Yb-Wv-Mk1"/>
@@ -1633,7 +1641,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterStorageCollectionHeader" id="q5I-nu-Sla">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterStorageCollectionHeader" id="q5I-nu-Sla" customClass="DatacenterDetailCollectionHeader">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="304"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -1649,11 +1657,10 @@
                                     <rect key="frame" x="20" y="64" width="198" height="220"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0S-Dg-UfC">
-                                    <rect key="frame" x="293" y="44" width="349" height="138"/>
+                                    <rect key="frame" x="273" y="44" width="349" height="138"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3Y-0r-k7Z" userLabel="环图">
                                             <rect key="frame" x="20" y="20" width="108" height="98"/>
-                                            <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3G-0e-83x">
                                             <rect key="frame" x="143" y="72" width="12" height="12"/>
@@ -1678,7 +1685,7 @@
                                         </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcD-mp-A52">
                                             <rect key="frame" x="143" y="97" width="12" height="12"/>
-                                            <color key="backgroundColor" red="0.34901960780000002" green="0.79607843140000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.97254901960784312" green="0.4823529411764706" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本地存储容量：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wco-qq-FQv">
                                             <rect key="frame" x="159" y="92" width="98" height="21"/>
@@ -1700,13 +1707,13 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT6-b9-lTa">
-                                    <rect key="frame" x="285" y="188" width="102" height="57"/>
+                                    <rect key="frame" x="266" y="188" width="127" height="57"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FC SAN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwP-ug-TJX">
-                                    <rect key="frame" x="291" y="258" width="96" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FC SAN(GB)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwP-ug-TJX">
+                                    <rect key="frame" x="296" y="258" width="100" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -1716,13 +1723,13 @@
                                     <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5P-Bn-QeJ">
-                                    <rect key="frame" x="455" y="188" width="102" height="57"/>
+                                    <rect key="frame" x="430" y="188" width="132" height="57"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ISCSI" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-xt-CVz">
-                                    <rect key="frame" x="461" y="258" width="96" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ISCSI(GB)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-xt-CVz">
+                                    <rect key="frame" x="466" y="258" width="96" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -1732,13 +1739,13 @@
                                     <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpZ-NF-atm">
-                                    <rect key="frame" x="620" y="188" width="102" height="57"/>
+                                    <rect key="frame" x="585" y="188" width="142" height="57"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NFS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-Yv-0MG">
-                                    <rect key="frame" x="626" y="258" width="96" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NFS(GB)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-Yv-0MG">
+                                    <rect key="frame" x="631" y="258" width="96" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -1748,13 +1755,13 @@
                                     <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DE-uP-BHM">
-                                    <rect key="frame" x="775" y="188" width="102" height="57"/>
+                                    <rect key="frame" x="751" y="188" width="132" height="57"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="虚拟容量" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luO-cv-7BJ">
-                                    <rect key="frame" x="781" y="258" width="96" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="虚拟容量(GB)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luO-cv-7BJ">
+                                    <rect key="frame" x="776" y="258" width="108" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -1768,7 +1775,6 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-oF-bC2" userLabel="环图">
                                             <rect key="frame" x="20" y="20" width="108" height="98"/>
-                                            <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7bv-O0-SAg">
                                             <rect key="frame" x="143" y="72" width="12" height="12"/>
@@ -1793,7 +1799,7 @@
                                         </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPX-ai-6Iz">
                                             <rect key="frame" x="143" y="94" width="12" height="12"/>
-                                            <color key="backgroundColor" red="0.34901960780000002" green="0.79607843140000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.97254901959999995" green="0.4823529412" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已用容量：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se5-jd-3H8">
                                             <rect key="frame" x="159" y="90" width="70" height="21"/>
@@ -1820,6 +1826,20 @@
                                 <constraint firstAttribute="trailingMargin" secondItem="5Ly-Bj-HpU" secondAttribute="trailing" constant="-8" id="496-mF-A3C"/>
                                 <constraint firstItem="5Ly-Bj-HpU" firstAttribute="leading" secondItem="q5I-nu-Sla" secondAttribute="leadingMargin" constant="-8" id="wRR-oC-afp"/>
                             </constraints>
+                            <connections>
+                                <outlet property="label1" destination="niD-db-kyK" id="B9Q-jr-O8P"/>
+                                <outlet property="label10" destination="5DE-uP-BHM" id="1c6-Db-I28"/>
+                                <outlet property="label2" destination="ChX-CH-aPh" id="1h4-4C-gc5"/>
+                                <outlet property="label3" destination="Ts3-Dl-pbp" id="RKX-ws-c8S"/>
+                                <outlet property="label4" destination="WMD-v2-QDf" id="Ahy-0r-Htf"/>
+                                <outlet property="label5" destination="EWg-bC-OI1" id="HWN-xY-Xdf"/>
+                                <outlet property="label6" destination="PqY-mM-rxQ" id="gml-0R-zwN"/>
+                                <outlet property="label7" destination="jT6-b9-lTa" id="E1c-l9-qVf"/>
+                                <outlet property="label8" destination="Q5P-Bn-QeJ" id="Qla-CR-ntV"/>
+                                <outlet property="label9" destination="DpZ-NF-atm" id="XA4-AT-4B6"/>
+                                <outlet property="storageShareChart" destination="p3Y-0r-k7Z" id="EGe-vK-8j7"/>
+                                <outlet property="storageUseChart" destination="vvs-oF-bC2" id="RTB-gD-oKc"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="Vdc-u6-N4C" id="Cqo-wY-bJX"/>
@@ -2027,7 +2047,6 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEV-i8-mJ0" userLabel="环图">
                                             <rect key="frame" x="20" y="20" width="108" height="98"/>
-                                            <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1y-mH-LLr">
                                             <rect key="frame" x="143" y="49" width="12" height="12"/>
@@ -2112,7 +2131,6 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-B9-H7N" userLabel="环图">
                                             <rect key="frame" x="20" y="20" width="108" height="98"/>
-                                            <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2J-JO-cUL">
                                             <rect key="frame" x="143" y="49" width="12" height="12"/>
@@ -2172,6 +2190,19 @@
                                 <constraint firstItem="Dh8-yx-RWZ" firstAttribute="leading" secondItem="WuI-Kl-R28" secondAttribute="leadingMargin" constant="-8" id="ASQ-dp-5ag"/>
                                 <constraint firstAttribute="trailingMargin" secondItem="Dh8-yx-RWZ" secondAttribute="trailing" constant="-8" id="PvE-Hr-fY5"/>
                             </constraints>
+                            <connections>
+                                <outlet property="label1" destination="X8V-oV-Q1T" id="4Df-jp-3Xz"/>
+                                <outlet property="label2" destination="YJ9-hH-rJu" id="e1e-ah-zpC"/>
+                                <outlet property="label3" destination="QJB-Hi-C7r" id="dto-dX-Rrl"/>
+                                <outlet property="label4" destination="lMA-21-BTc" id="Vdi-QU-SKb"/>
+                                <outlet property="label5" destination="Rs9-Z9-4JO" id="DEh-W9-VDk"/>
+                                <outlet property="label6" destination="1jm-VL-ugu" id="M9D-f6-bv6"/>
+                                <outlet property="label7" destination="iWa-cJ-2xP" id="bCc-J8-z9U"/>
+                                <outlet property="label8" destination="PMl-Lz-MT5" id="L8X-hQ-NdV"/>
+                                <outlet property="vmCount" destination="tNf-1o-NAo" id="OrQ-vh-Ink"/>
+                                <outlet property="vmOsTypeChart" destination="iEV-i8-mJ0" id="C3U-el-SvI"/>
+                                <outlet property="vmStatusChart" destination="ogf-B9-H7N" id="uxK-6P-T2H"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="8QM-yF-skn" id="Zx3-5O-3qZ"/>
@@ -2398,6 +2429,13 @@
                                 </view>
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <outlet property="businessAllocateChart" destination="1YG-OF-qEx" id="6gi-md-0aA"/>
+                                <outlet property="businessCount" destination="K5Q-sf-N7A" id="g1d-bz-dJB"/>
+                                <outlet property="businessVmCount" destination="eQR-VD-pPB" id="Qwh-48-xKc"/>
+                                <outlet property="label1" destination="0Dd-8l-VPP" id="oXZ-0x-RxF"/>
+                                <outlet property="label2" destination="Z40-aj-XHx" id="oiL-Ez-auh"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="rJv-N2-owX" id="dDG-1E-KZl"/>

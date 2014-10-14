@@ -295,16 +295,111 @@
                     }
                     case Page_Host:{
                         DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterHostCollectionHeader" forIndexPath:indexPath];
+                        
+                        header.hostCount.text = [NSString stringWithFormat:@"%d",0];
+                        header.label1.text = [NSString stringWithFormat:@"%d",0];
+                        header.label2.text = [NSString stringWithFormat:@"%d",0];
+                        header.label3.text = [NSString stringWithFormat:@"%d",0];
+                        header.label4.text = [NSString stringWithFormat:@"%d",0];
+                        header.label5.text = [NSString stringWithFormat:@"%d",0];
+                        
+                        //圈图
+                        PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.hostTypeChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart.backgroundColor = [UIColor clearColor];
+                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:71.0/255 green:145.0/255 blue:210.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart strokeChart];
+                        [header.hostTypeChart addSubview:circleChart];
+                        
+                        
+                        PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.hostStatusChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart2.backgroundColor = [UIColor clearColor];
+                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart2.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:88.0/255 green:206.0/255 blue:96.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart2 strokeChart];
+                        [header.hostStatusChart addSubview:circleChart2];
+                        
                         return header;
                     }
                     case Page_Storage:{
                         DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterStorageCollectionHeader" forIndexPath:indexPath];
-                        //
+                        
+                        header.label1.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label2.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label3.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label4.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label5.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label6.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label7.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label8.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label9.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label10.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        
+                        //圈图
+                        PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.storageShareChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart.backgroundColor = [UIColor clearColor];
+                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:248.0/255 green:123.0/255 blue:56.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart strokeChart];
+                        [header.storageShareChart addSubview:circleChart];
+                        
+                        
+                        PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.storageUseChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart2.backgroundColor = [UIColor clearColor];
+                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart2.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:248.0/255 green:123.0/255 blue:56.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart2 strokeChart];
+                        [header.storageUseChart addSubview:circleChart2];
+                        
                         return header;
                     }
                     case Page_VM:{
                         DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterVmCollectionHeader" forIndexPath:indexPath];
-                        //
+                        
+                        header.vmCount.text =[NSString stringWithFormat:@"%d",0];
+                        header.label1.text =[NSString stringWithFormat:@"%d",0];
+                        header.label2.text =[NSString stringWithFormat:@"%d",0];
+                        header.label3.text =[NSString stringWithFormat:@"%d",0];
+                        header.label4.text =[NSString stringWithFormat:@"%d",0];
+                        header.label5.text =[NSString stringWithFormat:@"%d",0];
+                        header.label6.text =[NSString stringWithFormat:@"%d",0];
+                        header.label7.text =[NSString stringWithFormat:@"%d",0];
+                        header.label8.text =[NSString stringWithFormat:@"%d",0];
+                        
+                        //圈图
+                        PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.vmOsTypeChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart.backgroundColor = [UIColor clearColor];
+                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:71.0/255 green:145.0/255 blue:210.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart strokeChart];
+                        [header.vmOsTypeChart addSubview:circleChart];
+                        
+                        
+                        PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.vmStatusChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart2.backgroundColor = [UIColor clearColor];
+                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart2.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:88.0/255 green:206.0/255 blue:96.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart2 strokeChart];
+                        [header.vmStatusChart addSubview:circleChart2];
+                        
                         return header;
                     }
                     case Page_Business:{
