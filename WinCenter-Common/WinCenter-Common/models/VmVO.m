@@ -24,7 +24,7 @@
     }else if([self.osType rangeOfString:@"hat" options:NSCaseInsensitiveSearch].length>0){
         return @"os-redhat";
     }else{
-        return @"按键";
+        return @"os-others";
     }
     
 }
