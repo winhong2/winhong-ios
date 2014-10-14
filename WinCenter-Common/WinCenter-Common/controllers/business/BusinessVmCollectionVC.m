@@ -43,7 +43,11 @@
     cell.startOrder.text = [NSString stringWithFormat:@"%d", vmvo.startOrder];
     cell.delayInterval.text = [NSString stringWithFormat:@"%d", vmvo.delayInterval];
     cell.state.text = [vmvo state_text];
-    
+    if (indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor colorWithRed:245/255 green:245/255 blue:245/255 alpha:0.08];
+    }else{
+        cell.backgroundColor = [UIColor clearColor];
+    }
     return cell;
 }
 

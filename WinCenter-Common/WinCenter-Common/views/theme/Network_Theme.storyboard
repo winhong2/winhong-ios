@@ -13,18 +13,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Owf-eZ-Grc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xma-XD-Uiu">
-                        <rect key="frame" x="0.0" y="0.0" width="773" height="688"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YED-IK-Ohm">
-                                <rect key="frame" x="20" y="50" width="349" height="591"/>
+                                <rect key="frame" x="20" y="50" width="376" height="678"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="yK0-Oh-Y7L" kind="embed" id="27W-NC-PNI"/>
                                 </connections>
                             </containerView>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtT-s0-skU">
-                                <rect key="frame" x="404" y="50" width="349" height="591"/>
+                                <rect key="frame" x="404" y="50" width="355" height="678"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="PwN-TQ-e5f" kind="embed" id="052-65-Q5S"/>
@@ -55,19 +55,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="bTK-0K-wHq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="773" height="688"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Oq-fB-1Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1444.5" y="1448"/>
+            <point key="canvasLocation" x="-1445" y="1448"/>
         </scene>
         <!--Network CollectionVC-->
         <scene sceneID="q54-Oc-8ck">
             <objects>
                 <tableViewController id="yK0-Oh-Y7L" customClass="NetworkCollectionVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="exO-N2-Fmu">
-                        <rect key="frame" x="0.0" y="0.0" width="349" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -110,17 +109,18 @@
                         </connections>
                     </tableView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSa-pg-7FG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-404.5" y="1413.5"/>
+            <point key="canvasLocation" x="-199" y="1448"/>
         </scene>
         <!--Network CollectionVC-->
         <scene sceneID="xos-QC-WGb">
             <objects>
                 <tableViewController id="PwN-TQ-e5f" customClass="NetworkCollectionVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ycy-p6-bkr">
-                        <rect key="frame" x="0.0" y="0.0" width="349" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -163,6 +163,7 @@
                         </connections>
                     </tableView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQe-K1-kky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

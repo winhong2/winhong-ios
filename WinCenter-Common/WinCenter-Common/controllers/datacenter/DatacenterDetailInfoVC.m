@@ -126,12 +126,6 @@
     [circleChart3 strokeChart];
     [self.storageChartGroup addSubview:circleChart3];
     
-//    PNCircleChart * circleChart4 = [[PNCircleChart alloc] initWithFrame:self.ipChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.datacenterStatWinserver networkRatio]] andClockwise:YES andShadow:YES];
-//    circleChart3.backgroundColor = [UIColor clearColor];
-//    circleChart3.labelColor = [UIColor clearColor];
-//    [circleChart3 setStrokeColor:[self.datacenterStatWinserver storageRatioColor]];
-//    [circleChart3 strokeChart];
-//    [self.ipChartGroup addSubview:circleChart4];
     
 }
 
