@@ -195,6 +195,7 @@
             cell.title.text = storageVO.storagePoolName;
             cell.label1.text = [NSString stringWithFormat:@"%.2fGB剩余,共%.2fGB", storageVO.availStorage, storageVO.totalStorage];
             cell.label2.text = [NSString stringWithFormat:@"%d个", storageVO.volumeNum];
+            cell.label3.text = [NSString stringWithFormat:@"%@", storageVO.location];
             cell.status.text = [storageVO state_text];
             cell.status.textColor = [storageVO state_color];
             cell.share_image.hidden = [storageVO.shared isEqualToString:@"false"];
