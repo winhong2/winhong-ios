@@ -41,6 +41,11 @@
     }else{
         cell.type_image.image = [UIImage imageNamed:@"Network_External"];
     }
+    if (indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor colorWithRed:245/255 green:245/255 blue:245/255 alpha:0.08];
+    }else{
+        cell.backgroundColor = [UIColor clearColor];
+    }
     return cell;
 }
 
