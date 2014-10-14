@@ -182,8 +182,8 @@
             cell.label2.text = [NSString stringWithFormat:@"%d",hostVO.virtualMachineNum ];
             cell.label3.text = [NSString stringWithFormat:@"%.2fGB",hostVO.storage];
             cell.label4.text = [NSString stringWithFormat:@"%d",hostVO.cpuSlots];
-            cell.label5.text = [NSString stringWithFormat:@"%d",hostVO.cpuSpeed];
-            cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory];
+            cell.label5.text = [NSString stringWithFormat:@"%d",hostVO.cpu];
+            cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory/1024.0];
             cell.status.text = [hostVO state_text];
             cell.status.textColor = [hostVO state_color];
             return cell;
