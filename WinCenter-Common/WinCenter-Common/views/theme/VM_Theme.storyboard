@@ -836,7 +836,7 @@
                                     <userLayoutGuide location="453" affinity="minY"/>
                                     <userLayoutGuide location="282" affinity="minY"/>
                                     <userLayoutGuide location="164" affinity="minY"/>
-                                    <userLayoutGuide location="323" affinity="minX"/>
+                                    <userLayoutGuide location="348" affinity="minX"/>
                                 </userGuides>
                                 <subviews>
                                     <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="05虚拟机-详情摘要" translatesAutoresizingMaskIntoConstraints="NO" id="TSh-qT-PYZ">
@@ -991,7 +991,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNt-XV-nTc">
-                                        <rect key="frame" x="177" y="294" width="148" height="62"/>
+                                        <rect key="frame" x="200" y="294" width="148" height="62"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                         <color key="textColor" red="0.27843137254901962" green="0.56862745098039214" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1013,7 +1013,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s-windows" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-C3-IAJ">
-                                        <rect key="frame" x="421" y="190" width="180" height="129"/>
+                                        <rect key="frame" x="419" y="199" width="180" height="129"/>
                                     </imageView>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-h3-0GU">
                                         <rect key="frame" x="546" y="556" width="17" height="21"/>
@@ -1022,7 +1022,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Windows Server 2003 Enterprise Edition" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUi-lo-yL1">
-                                        <rect key="frame" x="635" y="185" width="244" height="77"/>
+                                        <rect key="frame" x="614" y="183" width="244" height="59"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                         <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

@@ -12,11 +12,13 @@
 #import "VmContainerVC.h"
 
 @interface BusinessDetailInfoVC ()
+@property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *managerId;
 @property (weak, nonatomic) IBOutlet UILabel *platform;
 @property (weak, nonatomic) IBOutlet UILabel *createTime;
 @property (weak, nonatomic) IBOutlet UILabel *createUser;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
+@property (weak, nonatomic) IBOutlet UILabel *vmCount;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
@@ -49,6 +51,8 @@
 }
 
 - (void)refresh{
+    self.name.text = self.businessVO.name;
+    self.vmCount.text = [NSString stringWithFormat:@"%d",self.businessVO.vmNum];
     self.managerId.text = self.businessVO.managerId;
     self.platform.text = self.businessVO.sysSrc;
     self.createTime.text = [self.businessVO.createTime stringByReplacingOccurrencesOfString:@" 000" withString:@""];

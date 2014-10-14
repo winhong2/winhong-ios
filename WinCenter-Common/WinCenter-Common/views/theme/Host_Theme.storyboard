@@ -497,8 +497,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="423" affinity="minY"/>
-                            <userLayoutGuide location="32" affinity="minX"/>
-                            <userLayoutGuide location="342" affinity="minX"/>
+                            <userLayoutGuide location="33" affinity="minX"/>
+                            <userLayoutGuide location="323" affinity="minX"/>
                             <userLayoutGuide location="165" affinity="minY"/>
                             <userLayoutGuide location="518" affinity="minY"/>
                             <userLayoutGuide location="282" affinity="minY"/>
@@ -615,7 +615,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd2-cx-xc9">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd2-cx-xc9">
                                         <rect key="frame" x="155" y="56" width="140" height="68"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="60"/>
                                         <color key="textColor" red="1" green="0.84705882352941175" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
