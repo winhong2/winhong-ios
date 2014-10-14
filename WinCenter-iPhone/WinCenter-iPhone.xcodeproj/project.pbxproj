@@ -235,6 +235,9 @@
 		18DCEBF819ED14AE00ED7BF8 /* SimpleLineChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBF719ED14AE00ED7BF8 /* SimpleLineChartVC.m */; };
 		18DCEC0519ED6F4400ED7BF8 /* PCChartsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0219ED6F4400ED7BF8 /* PCChartsTableViewController.m */; };
 		18DCEC0619ED6F4400ED7BF8 /* PCChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0419ED6F4400ED7BF8 /* PCChartViewController.m */; };
+		18DCEC0D19ED757E00ED7BF8 /* HeartLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0919ED757E00ED7BF8 /* HeartLive.m */; };
+		18DCEC0F19ED757E00ED7BF8 /* HeartLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0C19ED757E00ED7BF8 /* HeartLiveVC.m */; };
+		18DCEC1119ED787A00ED7BF8 /* heartLiveData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18DCEC1019ED787A00ED7BF8 /* heartLiveData.txt */; };
 		472031B77D994FCC9305C962 /* libPods-WinCenter-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */; };
 /* End PBXBuildFile section */
 
@@ -629,6 +632,11 @@
 		18DCEC0219ED6F4400ED7BF8 /* PCChartsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCChartsTableViewController.m; sourceTree = "<group>"; };
 		18DCEC0319ED6F4400ED7BF8 /* PCChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCChartViewController.h; sourceTree = "<group>"; };
 		18DCEC0419ED6F4400ED7BF8 /* PCChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCChartViewController.m; sourceTree = "<group>"; };
+		18DCEC0819ED757E00ED7BF8 /* HeartLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartLive.h; sourceTree = "<group>"; };
+		18DCEC0919ED757E00ED7BF8 /* HeartLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartLive.m; sourceTree = "<group>"; };
+		18DCEC0B19ED757E00ED7BF8 /* HeartLiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartLiveVC.h; sourceTree = "<group>"; };
+		18DCEC0C19ED757E00ED7BF8 /* HeartLiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartLiveVC.m; sourceTree = "<group>"; };
+		18DCEC1019ED787A00ED7BF8 /* heartLiveData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heartLiveData.txt; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -671,6 +679,7 @@
 				180BF60019ECB0960029D2A4 /* Datagrid */,
 				180BF6BD19ECB0960029D2A4 /* SFGaugeView */,
 				180BF6B119ECB0960029D2A4 /* PNLineChart */,
+				18DCEC0719ED757E00ED7BF8 /* HeartRateCurve */,
 			);
 			name = charts;
 			path = "../../WinCenter-Common/WinCenter-Common/charts";
@@ -1384,6 +1393,18 @@
 			path = PNChart;
 			sourceTree = "<group>";
 		};
+		18DCEC0719ED757E00ED7BF8 /* HeartRateCurve */ = {
+			isa = PBXGroup;
+			children = (
+				18DCEC1019ED787A00ED7BF8 /* heartLiveData.txt */,
+				18DCEC0819ED757E00ED7BF8 /* HeartLive.h */,
+				18DCEC0919ED757E00ED7BF8 /* HeartLive.m */,
+				18DCEC0B19ED757E00ED7BF8 /* HeartLiveVC.h */,
+				18DCEC0C19ED757E00ED7BF8 /* HeartLiveVC.m */,
+			);
+			path = HeartRateCurve;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1464,6 +1485,7 @@
 				180BF6F119ECB0960029D2A4 /* go_0@2x.png in Resources */,
 				185CB42119E7796F00DC8E8A /* TemplateIcon2x.png in Resources */,
 				185CB41819E7796F00DC8E8A /* PoolVO.getHostLisWithlimit.json in Resources */,
+				18DCEC1119ED787A00ED7BF8 /* heartLiveData.txt in Resources */,
 				180BF74D19ECB0960029D2A4 /* infoLine-200-1.png in Resources */,
 				180BF6EE19ECB0960029D2A4 /* up_white@2x.png in Resources */,
 				185CB46319E8139A00DC8E8A /* DatacenterVO.getVmListAsync.json in Resources */,
@@ -1620,6 +1642,7 @@
 				185CB3F219E7796F00DC8E8A /* StorageDiskCollectionCell.m in Sources */,
 				185CB3E719E7796F00DC8E8A /* NetworkCollectionCell.m in Sources */,
 				18DCEBE419ED0DA700ED7BF8 /* JBBaseChartViewController.m in Sources */,
+				18DCEC0F19ED757E00ED7BF8 /* HeartLiveVC.m in Sources */,
 				1886D61B19E97F82005E1645 /* VmNetworkVO.m in Sources */,
 				185CB3FE19E7796F00DC8E8A /* VmMigrateSelectHostListCell.m in Sources */,
 				180BF73F19ECB0960029D2A4 /* GaugeVC.m in Sources */,
@@ -1677,6 +1700,7 @@
 				180BF6F319ECB0960029D2A4 /* InfoView.m in Sources */,
 				185CB3DC19E7796F00DC8E8A /* DatacenterDetailMoreVC.m in Sources */,
 				180BF74A19ECB0960029D2A4 /* CalendarDateUtil.m in Sources */,
+				18DCEC0D19ED757E00ED7BF8 /* HeartLive.m in Sources */,
 				180BF6E919ECB0960029D2A4 /* PoolDatagridCell.m in Sources */,
 				185CB3ED19E7796F00DC8E8A /* PopOptionsUserInfoVC.m in Sources */,
 				185CB3EB19E7796F00DC8E8A /* PoolDetailInfoVC.m in Sources */,
