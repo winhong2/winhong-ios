@@ -262,7 +262,7 @@
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
-                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.strokeColor = [UIColor clearColor];
                         circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart.lineWidth = @11.0f;//线宽度
@@ -273,7 +273,7 @@
                         
                         PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart2.backgroundColor = [UIColor clearColor];
-                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.strokeColor = [UIColor clearColor];
                         circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart2.lineWidth = @11.0f;//线宽度
@@ -283,7 +283,7 @@
                         
                         PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:header.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart3.backgroundColor = [UIColor clearColor];
-                        circleChart3.labelColor = [UIColor clearColor];
+                        circleChart3.strokeColor = [UIColor clearColor];
                         circleChart3.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart3.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart3.lineWidth = @11.0f;//线宽度
@@ -306,7 +306,7 @@
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.hostTypeChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
-                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.strokeColor = [UIColor clearColor];
                         circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart.lineWidth = @11.0f;//线宽度
@@ -317,7 +317,7 @@
                         
                         PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.hostStatusChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart2.backgroundColor = [UIColor clearColor];
-                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.strokeColor = [UIColor clearColor];
                         circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart2.lineWidth = @11.0f;//线宽度
@@ -344,7 +344,7 @@
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.storageShareChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
-                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.strokeColor = [UIColor clearColor];
                         circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart.lineWidth = @11.0f;//线宽度
@@ -355,7 +355,7 @@
                         
                         PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.storageUseChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart2.backgroundColor = [UIColor clearColor];
-                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.strokeColor = [UIColor clearColor];
                         circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart2.lineWidth = @11.0f;//线宽度
@@ -381,7 +381,7 @@
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.vmOsTypeChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
-                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.strokeColor = [UIColor clearColor];
                         circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart.lineWidth = @11.0f;//线宽度
@@ -392,7 +392,7 @@
                         
                         PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:header.vmStatusChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart2.backgroundColor = [UIColor clearColor];
-                        circleChart2.labelColor = [UIColor clearColor];
+                        circleChart2.strokeColor = [UIColor clearColor];
                         circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart2.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart2.lineWidth = @11.0f;//线宽度
@@ -414,7 +414,7 @@
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.businessAllocateChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
-                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.strokeColor = [UIColor clearColor];
                         circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
                         circleChart.circle.lineCap = kCALineCapSquare;//直角填充
                         circleChart.lineWidth = @11.0f;//线宽度

@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <NSObject+ObjectMap.h>
-#import <UNIRest.h>
-#import <PNChart.h>
+#import <Unirest/UNIRest.h>
+#import <PNChart/PNChart.h>
 
 #ifndef WinCenter_Common_Models_h
 #define WinCenter_Common_Models_h

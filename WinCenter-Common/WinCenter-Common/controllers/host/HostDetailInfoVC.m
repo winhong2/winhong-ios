@@ -105,7 +105,7 @@
     //圈图
     PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:self.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO cpuRatio]] andClockwise:YES andShadow:YES];
     circleChart.backgroundColor = [UIColor clearColor];
-    circleChart.labelColor = [UIColor clearColor];
+    circleChart.strokeColor = [UIColor clearColor];
     circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;
     circleChart.circle.lineCap = kCALineCapSquare;
     circleChart.lineWidth = @7.0f;
@@ -115,7 +115,7 @@
     
     PNCircleChart * circleChart2 = [[PNCircleChart alloc] initWithFrame:self.memoryChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO memoryRatio]] andClockwise:YES andShadow:YES];
     circleChart2.backgroundColor = [UIColor clearColor];
-    circleChart2.labelColor = [UIColor clearColor];
+    circleChart2.strokeColor = [UIColor clearColor];
     circleChart2.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;
     circleChart2.circle.lineCap = kCALineCapSquare;
     circleChart2.lineWidth = @7.0f;
@@ -125,7 +125,7 @@
     
     PNCircleChart * circleChart3 = [[PNCircleChart alloc] initWithFrame:self.storageChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:[self.statVO storageRatio]] andClockwise:YES andShadow:YES];
     circleChart3.backgroundColor = [UIColor clearColor];
-    circleChart3.labelColor = [UIColor clearColor];
+    circleChart3.strokeColor = [UIColor clearColor];
     circleChart3.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;
     circleChart3.circle.lineCap = kCALineCapSquare;
     circleChart3.lineWidth = @7.0f;

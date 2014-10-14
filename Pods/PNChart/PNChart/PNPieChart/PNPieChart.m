@@ -123,7 +123,7 @@
     
 	_currentTotal += currentDataItem.value;
 	
-    NSString *titleText = currentDataItem.description;
+    NSString *titleText = currentDataItem.textDescription;
     if(!titleText){
         titleText = [NSString stringWithFormat:@"%.0f%%",currentDataItem.value/ _total * 100];
     }
@@ -132,7 +132,7 @@
                                  _outterCircleRadius - distance * cos(rad));
     
     CGRect frame;
-    frame.size = CGSizeMake(100, 80);
+    frame = CGRectMake(0, 0, 100, 80);
     
     UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:frame];
     [descriptionLabel setText:titleText];
@@ -143,7 +143,7 @@
     [descriptionLabel setTextAlignment:NSTextAlignmentCenter];
     [descriptionLabel setCenter:center];
     [descriptionLabel setAlpha:0];
-    
+    [descriptionLabel setBackgroundColor:[UIColor clearColor]];
 	
 	return descriptionLabel;
 }
@@ -160,7 +160,7 @@
                                borderColor:(UIColor *)borderColor
                            startPercentage:(CGFloat)startPercentage
                              endPercentage:(CGFloat)endPercentage{
-	CAShapeLayer *circle = [CAShapeLayer layer];
+    CAShapeLayer *circle = [CAShapeLayer layer];
     
     CGPoint center = CGPointMake(CGRectGetMidX(self.bounds),CGRectGetMidY(self.bounds));
     

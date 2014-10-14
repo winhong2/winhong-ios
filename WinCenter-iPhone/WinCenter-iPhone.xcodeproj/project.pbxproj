@@ -233,6 +233,8 @@
 		18DCEBEF19ED139E00ED7BF8 /* RealtimeCurve.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18DCEBEC19ED139E00ED7BF8 /* RealtimeCurve.bundle */; };
 		18DCEBF019ED139E00ED7BF8 /* RealtimeCurveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBEE19ED139E00ED7BF8 /* RealtimeCurveVC.m */; };
 		18DCEBF819ED14AE00ED7BF8 /* SimpleLineChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBF719ED14AE00ED7BF8 /* SimpleLineChartVC.m */; };
+		18DCEC0519ED6F4400ED7BF8 /* PCChartsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0219ED6F4400ED7BF8 /* PCChartsTableViewController.m */; };
+		18DCEC0619ED6F4400ED7BF8 /* PCChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC0419ED6F4400ED7BF8 /* PCChartViewController.m */; };
 		472031B77D994FCC9305C962 /* libPods-WinCenter-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */; };
 /* End PBXBuildFile section */
 
@@ -623,6 +625,10 @@
 		18DCEBEE19ED139E00ED7BF8 /* RealtimeCurveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealtimeCurveVC.m; sourceTree = "<group>"; };
 		18DCEBF619ED14AE00ED7BF8 /* SimpleLineChartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleLineChartVC.h; sourceTree = "<group>"; };
 		18DCEBF719ED14AE00ED7BF8 /* SimpleLineChartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleLineChartVC.m; sourceTree = "<group>"; };
+		18DCEC0119ED6F4400ED7BF8 /* PCChartsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCChartsTableViewController.h; sourceTree = "<group>"; };
+		18DCEC0219ED6F4400ED7BF8 /* PCChartsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCChartsTableViewController.m; sourceTree = "<group>"; };
+		18DCEC0319ED6F4400ED7BF8 /* PCChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCChartViewController.h; sourceTree = "<group>"; };
+		18DCEC0419ED6F4400ED7BF8 /* PCChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCChartViewController.m; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -645,6 +651,7 @@
 			isa = PBXGroup;
 			children = (
 				180BF5FF19ECB0960029D2A4 /* Charts.storyboard */,
+				18DCEC0019ED6F4400ED7BF8 /* PNChart */,
 				180BF68519ECB0960029D2A4 /* MPPlot */,
 				180BF6C519ECB0960029D2A4 /* TWRCharts */,
 				180BF63B19ECB0960029D2A4 /* GraphKit */,
@@ -1366,6 +1373,17 @@
 			path = BEMSimpleLineGraph;
 			sourceTree = "<group>";
 		};
+		18DCEC0019ED6F4400ED7BF8 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				18DCEC0119ED6F4400ED7BF8 /* PCChartsTableViewController.h */,
+				18DCEC0219ED6F4400ED7BF8 /* PCChartsTableViewController.m */,
+				18DCEC0319ED6F4400ED7BF8 /* PCChartViewController.h */,
+				18DCEC0419ED6F4400ED7BF8 /* PCChartViewController.m */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1564,6 +1582,7 @@
 				1886D61419E97F82005E1645 /* StorageVolumnVO.m in Sources */,
 				185CB3E419E7796F00DC8E8A /* LoginSettingVC.m in Sources */,
 				185CB3F619E7796F00DC8E8A /* PopControlRecordVC.m in Sources */,
+				18DCEC0519ED6F4400ED7BF8 /* PCChartsTableViewController.m in Sources */,
 				180BF6F819ECB0960029D2A4 /* EPieChartViewController.m in Sources */,
 				185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */,
 				180BF72019ECB0960029D2A4 /* JYRadarChartVC.m in Sources */,
@@ -1608,6 +1627,7 @@
 				18DCEBEA19ED0DA700ED7BF8 /* JBLineChartViewController.m in Sources */,
 				180BF73319ECB0960029D2A4 /* PieChartView.m in Sources */,
 				180BF73519ECB0960029D2A4 /* RotatedView.m in Sources */,
+				18DCEC0619ED6F4400ED7BF8 /* PCChartViewController.m in Sources */,
 				18DCEBE119ED0DA700ED7BF8 /* JBAreaChartViewController.m in Sources */,
 				1886D61E19E97F82005E1645 /* WarningInfoVO.m in Sources */,
 				180BF6DC19ECB0960029D2A4 /* DoubleYSeriesVC.m in Sources */,

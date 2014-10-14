@@ -7,24 +7,11 @@
 //
 
 #import "PNCircleChart.h"
-#import "UICountingLabel.h"
 
-@interface PNCircleChart () {
-    UICountingLabel *_gradeLabel;
-}
-
+@interface PNCircleChart ()
 @end
 
 @implementation PNCircleChart
-
-- (UIColor *)labelColor
-{
-    if (!_labelColor) {
-        _labelColor = PNDeepGrey;
-    }
-
-    return _labelColor;
-}
 
 
 - (id)initWithFrame:(CGRect)frame andTotal:(NSNumber *)total andCurrent:(NSNumber *)current andClockwise:(BOOL)clockwise andShadow:(BOOL)hasBackgroundShadow
@@ -35,7 +22,8 @@
         _total = total;
         _current = current;
         _strokeColor = PNFreshGreen;
-        _clockwise = clockwise;
+        _duration = 1.0;
+        _chartType = PNChartFormatTypePercent;
 
         CGFloat startAngle = clockwise ? -90.0f : 270.0f;
         CGFloat endAngle = clockwise ? -90.01f : 270.01f;
@@ -62,7 +50,14 @@
         [self.layer addSublayer:_circle];
         [self.layer addSublayer:_circleBG];
 
-        _gradeLabel = [[UICountingLabel alloc] initWithFrame:CGRectMake(0, 0, 50.0, 50.0)];
+        _countingLabel = [[UICountingLabel alloc] initWithFrame:CGRectMake(0, 0, 100.0, 50.0)];
+        [_countingLabel setTextAlignment:NSTextAlignmentCenter];
+        [_countingLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
+        [_countingLabel setTextColor:[UIColor grayColor]];
+        [_countingLabel setBackgroundColor:[UIColor clearColor]];
+        [_countingLabel setCenter:CGPointMake(self.center.x, self.center.y)];
+        _countingLabel.method = UILabelCountingMethodEaseInOut;
+        [self addSubview:_countingLabel];;
     }
 
     return self;
@@ -71,36 +66,96 @@
 
 - (void)strokeChart
 {
-    //Add count label
+    // Add counting label
+    
+    NSString *format;
+    switch (self.chartType) {
+      case PNChartFormatTypePercent:
+        format = @"%d%%";
+        break;
+      case PNChartFormatTypeDollar:
+        format = @"$%d";
+        break;
+      case PNChartFormatTypeNone:
+      default:
+        format = @"%d";
+        break;
+    }
+    self.countingLabel.format = format;
+    [self addSubview:self.countingLabel];
 
-    [_gradeLabel setTextAlignment:NSTextAlignmentCenter];
-    [_gradeLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
-    [_gradeLabel setTextColor:self.labelColor];
-    [_gradeLabel setCenter:CGPointMake(self.center.x, self.center.y)];
-    _gradeLabel.method = UILabelCountingMethodEaseInOut;
-    _gradeLabel.format = @"%d%%";
 
-
-    [self addSubview:_gradeLabel];
-
-    //Add circle params
+    // Add circle params
 
     _circle.lineWidth   = [_lineWidth floatValue];
     _circleBG.lineWidth = [_lineWidth floatValue];
     _circleBG.strokeEnd = 1.0;
     _circle.strokeColor = _strokeColor.CGColor;
 
-    //Add Animation
+    // Add Animation
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = 1.0;
+    pathAnimation.duration = self.duration;
     pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pathAnimation.fromValue = @0.0f;
     pathAnimation.toValue = @([_current floatValue] / [_total floatValue]);
     [_circle addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
     _circle.strokeEnd   = [_current floatValue] / [_total floatValue];
 
-    [_gradeLabel countFrom:0 to:[_current floatValue] / [_total floatValue] * 100 withDuration:1.0];
+    [_countingLabel countFrom:0 to:[_current floatValue] withDuration:1.0];
+    
+    
+    // Check if user wants to add a gradient from the start color to the bar color
+    if (_strokeColorGradientStart) {
+        
+        // Add gradient
+        CAShapeLayer *gradientMask = [CAShapeLayer layer];
+        gradientMask.fillColor = [[UIColor clearColor] CGColor];
+        gradientMask.strokeColor = [[UIColor blackColor] CGColor];
+        gradientMask.lineWidth = _circle.lineWidth;
+        gradientMask.lineCap = kCALineCapRound;
+        CGRect gradientFrame = CGRectMake(0, 0, 2*self.bounds.size.width, 2*self.bounds.size.height);
+        gradientMask.frame = gradientFrame;
+        gradientMask.path = _circle.path;
+        
+        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+        gradientLayer.startPoint = CGPointMake(0.5,1.0);
+        gradientLayer.endPoint = CGPointMake(0.5,0.0);
+        gradientLayer.frame = gradientFrame;
+        UIColor *endColor = (_strokeColor ? _strokeColor : [UIColor greenColor]);
+        NSArray *colors = @[
+                            (id)endColor.CGColor,
+                            (id)_strokeColorGradientStart.CGColor
+                            ];
+        gradientLayer.colors = colors;
+        
+        [gradientLayer setMask:gradientMask];
+        
+        [_circle addSublayer:gradientLayer];
+        
+        gradientMask.strokeEnd = [_current floatValue] / [_total floatValue];
+        
+        [gradientMask addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
+    }
+
 }
 
+
+
+- (void)growChartByAmount:(NSNumber *)growAmount
+{
+    NSNumber *updatedValue = [NSNumber numberWithFloat:[_current floatValue] + [growAmount floatValue]];
+    
+    // Add animation
+    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    pathAnimation.duration = self.duration;
+    pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    pathAnimation.fromValue = @([_current floatValue] / [_total floatValue]);
+    pathAnimation.toValue = @([updatedValue floatValue] / [_total floatValue]);
+    _circle.strokeEnd   = [updatedValue floatValue] / [_total floatValue];
+    [_circle addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
+    
+    [self.countingLabel countFrom:fmin([_current floatValue], [_total floatValue]) to:fmin([_current floatValue] + [growAmount floatValue], [_total floatValue]) withDuration:self.duration];
+    _current = updatedValue;
+}
 
 @end
