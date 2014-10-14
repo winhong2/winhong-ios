@@ -26,18 +26,28 @@ end
 
 target 'WinCenter-iPhone' do
     pod 'PNChart', '~> 0.5'
-    pod 'EChart', '~> 0.1.1'
-    pod 'JBChartView', '~> 2.6.2'
-    pod 'JYRadarChart', '~> 0.3.1'
-    pod 'SFGaugeView', '~> 0.0.7'
-    pod 'SHLineGraphView', '~> 1.0.6'
-    pod 'TWRCharts', '~> 0.1'
-    pod 'BEMSimpleLineGraph', '~> 2.3'
-    pod 'BButton', '~> 4.0.1'
-    pod 'GraphKit', '~> 1.1.0'
     pod 'MPPlot', '~> 0.1.0'
+    pod 'TWRCharts', '~> 0.1'
+    pod 'GraphKit', '~> 1.1.0'
+    pod 'SHLineGraphView', '~> 1.0.6'
+    pod 'EChart', '~> 0.1.1'
+    #MZGraph
+    #BTSpiderPlotterView
+    pod 'JYRadarChart', '~> 0.3.1'
+    #PercentageChart
+    pod 'JBChartView', '~> 2.6.2'
+    #RealtimeCurve
+    #ARLine
+    #DoubleLineChart
+    pod 'BEMSimpleLineGraph', '~> 2.3'
+    #PieChart
+    #weekstat
+    #Datagrid
+    pod 'SFGaugeView', '~> 0.0.7'
+    #PNLine
     pod 'FRD3DBarChart', '~> 1.1.1'
-    
+    #HeartRateCurve
+
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'
  xcodeproj 'WinCenter-iPhone/WinCenter-iPhone.xcodeproj'

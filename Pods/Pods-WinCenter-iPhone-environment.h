@@ -6,12 +6,6 @@
 // project.
 
 
-// BButton
-#define COCOAPODS_POD_AVAILABLE_BButton
-#define COCOAPODS_VERSION_MAJOR_BButton 4
-#define COCOAPODS_VERSION_MINOR_BButton 0
-#define COCOAPODS_VERSION_PATCH_BButton 1
-
 // BEMSimpleLineGraph
 #define COCOAPODS_POD_AVAILABLE_BEMSimpleLineGraph
 #define COCOAPODS_VERSION_MAJOR_BEMSimpleLineGraph 2

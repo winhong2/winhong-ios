@@ -1,5 +1,4 @@
 PODS:
-  - BButton (4.0.1)
   - BEMSimpleLineGraph (2.3)
   - EChart (0.1.1)
   - FrameAccessor (1.3.2)
@@ -23,7 +22,6 @@ PODS:
   - Unirest (1.1.3)
 
 DEPENDENCIES:
-  - BButton (~> 4.0.1)
   - BEMSimpleLineGraph (~> 2.3)
   - EChart (~> 0.1.1)
   - FRD3DBarChart (~> 1.1.1)
@@ -41,7 +39,6 @@ DEPENDENCIES:
   - Unirest (~> 1.1.3)
 
 SPEC CHECKSUMS:
-  BButton: 396a5e59648e3f687b7d8201b88ebdbad6e36b59
   BEMSimpleLineGraph: 5fb192c00c48f8123654e2b943b9227061f0dfd2
   EChart: fd95a66d60043387c440a56acd703bbde35a145d
   FrameAccessor: 5eec95b29b5e9a3afe72a7a2e9ed25b000d3bcc3
