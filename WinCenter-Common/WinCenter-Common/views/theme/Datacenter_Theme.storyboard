@@ -479,7 +479,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UnV-5d-cXR">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
                                     <items>
                                         <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="tfN-0d-7yl"/>
                                         <barButtonItem image="数据中心图标" id="Y4i-uh-Dgk"/>
@@ -490,13 +490,13 @@
                                     <rect key="frame" x="20" y="64" width="202" height="274"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pc-2g-JJe">
-                                    <rect key="frame" x="278" y="73" width="86" height="43"/>
+                                    <rect key="frame" x="281" y="73" width="86" height="43"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="资源池总数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIf-zj-RLE">
-                                    <rect key="frame" x="278" y="124" width="114" height="21"/>
+                                    <rect key="frame" x="278" y="124" width="97" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -514,7 +514,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBL-xn-rvW">
-                                    <rect key="frame" x="781" y="75" width="101" height="43"/>
+                                    <rect key="frame" x="783" y="75" width="101" height="43"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
