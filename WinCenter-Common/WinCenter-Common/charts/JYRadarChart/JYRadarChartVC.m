@@ -13,6 +13,8 @@
 	JYRadarChart *p;
 	JYRadarChart *p2;
 }
+@property (weak, nonatomic) IBOutlet UIView *container1;
+@property (weak, nonatomic) IBOutlet UIView *container2;
 
 @end
 
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	p = [[JYRadarChart alloc] initWithFrame:CGRectMake(60, 20, 200, 200)];
+	p = [[JYRadarChart alloc] initWithFrame:self.container1.bounds];
 
 	NSArray *a1 = @[@(81), @(97), @(87), @(60), @(65), @(77)];
 	NSArray *a2 = @[@(91), @(87), @(33), @(77), @(78), @(96)];
@@ -38,14 +40,14 @@
 	p.showLegend = YES;
 	[p setTitles:@[@"archer", @"footman"]];
 	[p setColors:@[[UIColor yellowColor], [UIColor purpleColor]]];
-	[self.view addSubview:p];
+	[self.container1 addSubview:p];
 
 
 	[NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(updateData) userInfo:nil repeats:YES];
 
 
 
-	p2 = [[JYRadarChart alloc] initWithFrame:CGRectMake(10, 220, 280, 200)];
+	p2 = [[JYRadarChart alloc] initWithFrame:self.container2.bounds];
 	p2.centerPoint = CGPointMake(130, 100);
 	p2.showLegend = YES;
 	[p2 setTitles:@[@"a", @"b", @"c", @"d", @"e", @"f", @"g", @"h", @"i", @"j"]];
@@ -65,7 +67,7 @@
 	p2.dataSeries = @[b1, b2, b3, b4, b5, b6, b7, b8, b9, b10];
 	p2.steps = 2;
 	//p2.backgroundColor = [UIColor grayColor];
-	[self.view addSubview:p2];
+	[self.container2 addSubview:p2];
 }
 
 - (void)updateData {
@@ -90,9 +92,5 @@
 	[p setNeedsDisplay];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
-}
 
 @end

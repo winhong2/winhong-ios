@@ -11,10 +11,12 @@
 
 @interface TWRViewController ()
 
-@property(strong, nonatomic) TWRChartView *chartView;
-@property(weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-
-- (void)switchChart:(UISegmentedControl *)sender;
+@property TWRChartView *lineChart;
+@property TWRChartView *barChart;
+@property TWRChartView *pieChart;
+@property (weak, nonatomic) IBOutlet UIView *lineContainer;
+@property (weak, nonatomic) IBOutlet UIView *barContainer;
+@property (weak, nonatomic) IBOutlet UIView *pieContainer;
 
 @end
 
@@ -22,29 +24,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Charts";
 
-    // Segmented Control
-    [_segmentedControl addTarget:self action:@selector(switchChart:) forControlEvents:UIControlEventValueChanged];
-
-    // Chart View
-    _chartView = [[TWRChartView alloc] initWithFrame:CGRectMake(0, 64, 320, 300)];
-    _chartView.backgroundColor = [UIColor clearColor];
-
-    // User interaction is disabled by default. You can enable it again if you want
-    // _chartView.userInteractionEnabled = YES;
-
-    // Load chart by using a ChartJS javascript file
-    NSString *jsFilePath = [[NSBundle mainBundle] pathForResource:@"TWRViewController" ofType:@"js"];
-    [_chartView setChartJsFilePath:jsFilePath];
-
-    // Add the chart view to the controller's view
-    [self.view addSubview:_chartView];
+    self.lineChart = [[TWRChartView alloc] initWithFrame:self.lineContainer.bounds];
+    self.lineChart.backgroundColor = [UIColor clearColor];
+    [self.lineContainer addSubview:self.lineChart];
+    [self.lineContainer setUserInteractionEnabled:false];
+    
+    self.barChart = [[TWRChartView alloc] initWithFrame:self.barContainer.bounds];
+    self.barChart.backgroundColor = [UIColor clearColor];
+    [self.barContainer addSubview:self.barChart];
+    [self.barContainer setUserInteractionEnabled:false];
+    
+    self.pieChart = [[TWRChartView alloc] initWithFrame:self.pieContainer.bounds];
+    self.pieChart.backgroundColor = [UIColor clearColor];
+    [self.pieContainer addSubview:self.pieChart];
+    [self.pieContainer setUserInteractionEnabled:false];
+    
+    [self refresh:nil];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)refresh:(id)sender {
+    [self loadLineChart];
+    [self loadBarChart];
+    [self loadPieChart];
 }
 
 /**
@@ -65,7 +66,7 @@
                                                   dataSets:@[dataSet1, dataSet2]
                                                   animated:YES];
     // Load data
-    [_chartView loadBarChart:bar];
+    [self.barChart loadBarChart:bar];
 }
 
 /**
@@ -80,9 +81,9 @@
 
     TWRLineChart *line = [[TWRLineChart alloc] initWithLabels:labels
                                                      dataSets:@[dataSet1, dataSet2]
-                                                     animated:NO];
+                                                     animated:YES];
     // Load data
-    [_chartView loadLineChart:line];
+    [self.lineChart  loadLineChart:line];
 }
 
 /**
@@ -106,38 +107,11 @@
                                                                  animated:YES];
 
     // You can even leverage callbacks when chart animation ends!
-    [_chartView loadCircularChart:pieChart withCompletionHandler:^(BOOL finished) {
+    [self.pieChart  loadCircularChart:pieChart withCompletionHandler:^(BOOL finished) {
         if (finished) {
             NSLog(@"Animation finished!!!");
         }
     }];
-}
-
-#pragma mark - UISegmentedController switch methods
-
-- (void)switchChart:(UISegmentedControl *)sender {
-    switch (sender.selectedSegmentIndex) {
-        //Line
-        case 0: {
-            [self loadLineChart];
-        }
-            break;
-
-            //Bar
-        case 1: {
-            [self loadBarChart];
-        }
-            break;
-
-            //Pie
-        case 2: {
-            [self loadPieChart];
-        }
-            break;
-
-        default:
-            break;
-    }
 }
 
 @end

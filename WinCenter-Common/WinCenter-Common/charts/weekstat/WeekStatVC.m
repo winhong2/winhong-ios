@@ -6,24 +6,14 @@
 //  Copyright (c) 2014年 孙悦. All rights reserved.
 //
 
-#define offset 20
-
 #import "WeekStatVC.h"
 
 @interface WeekStatVC ()
+@property (weak, nonatomic) IBOutlet UIView *container;
 
 @end
 
 @implementation WeekStatVC
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -31,8 +21,8 @@
     
     self.title = @"工作计划";
     self.view.backgroundColor = [UIColor whiteColor];
-    _mmMainFX = self.view.bounds.origin.x;
-    _mmMainFY = [[UIBaseClass shareInstance] getViewFramOY]+offset;
+    _mmMainFX = self.container.bounds.origin.x;
+    _mmMainFY = [[UIBaseClass shareInstance] getViewFramOY];
     
     _scrollDate = 0;
     _btnDate = 0;
@@ -64,41 +54,36 @@
     
     _changeWeek = 0;
     _btnSelectDate = 0;
-    _dateView = [[UIView alloc]initWithFrame:CGRectMake(0, 98+offset, 320, 40)];
+    _dateView = [[UIView alloc]initWithFrame:CGRectMake(0, 48, 320, 40)];
     _dateView.backgroundColor = [UIColor clearColor];
-    _changeDateR = [[UIView alloc]initWithFrame:CGRectMake(320, 98+offset, 320, 40)];
-    _changeDateL = [[UIView alloc]initWithFrame:CGRectMake(-320, 98+offset, 320, 40)];
-    _workView = [[UIView alloc]initWithFrame:CGRectMake(0, 196+offset, 320, 460)];
-    _changeWorkR = [[UIView alloc]initWithFrame:CGRectMake(320, 196+offset, 320, 460)];
-    _changeWorkL = [[UIView alloc]initWithFrame:CGRectMake(-320, 196+offset, 320, 460)];
+    _changeDateR = [[UIView alloc]initWithFrame:CGRectMake(320, 48, 320, 40)];
+    _changeDateL = [[UIView alloc]initWithFrame:CGRectMake(-320, 48, 320, 40)];
+    _workView = [[UIView alloc]initWithFrame:CGRectMake(0, 146, 320, 460)];
+    _changeWorkR = [[UIView alloc]initWithFrame:CGRectMake(320, 146, 320, 460)];
+    _changeWorkL = [[UIView alloc]initWithFrame:CGRectMake(-320, 146, 320, 460)];
     
-    _scrollView = [[UIScrollView alloc]initWithFrame:self.view.frame];
+    _scrollView = [[UIScrollView alloc]initWithFrame:self.container.bounds];
     _scrollView.contentSize = CGSizeMake(320, iPhone5?0:500);
     //    _scrollView.pagingEnabled = YES;
     //    _scrollView.userInteractionEnabled = YES; // 是否滑动
     _scrollView.bounces = NO;
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
-    [self.view addSubview:_scrollView];
+    [self.container addSubview:_scrollView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void)initView
 {
     _vFX = _mmMainFX;
-    _vFY = _mmMainFY + 90;
+    _vFY = _mmMainFY + 40;
     
     UIImageView* line1 = [[UIImageView alloc]initWithFrame:CGRectMake(_vFX, _vFY, 320, 1)];
     line1.image = [UIImage imageNamed:@"infoLine-200-1"];
     
     _vFX = _vFX + 0;
     _vFY = _vFY + 55;
-    UIImageView* line2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 165, 320, 1)];
+    UIImageView* line2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 95, 320, 1)];
     line2.image = [UIImage imageNamed:@"infoLine-200-1"];
     
     _vFX = _vFX + 0;
@@ -732,7 +717,7 @@
 {
     for (int i = 0; i < 7; i++)
     {
-        UILabel* lab = [[UILabel alloc]initWithFrame:CGRectMake(320/7*i, 63+offset, 320/7, 15)];
+        UILabel* lab = [[UILabel alloc]initWithFrame:CGRectMake(320/7*i, 13, 320/7, 15)];
         lab.font = [UIFont boldSystemFontOfSize:15];
         lab.textColor = [UIColor colorWithRed:153.0/255 green:153.0/255 blue:153.0/255 alpha:1.0];
         lab.backgroundColor = [UIColor clearColor];
@@ -1135,7 +1120,7 @@
     CGRect changeFrameDate = _changeDateR.frame;
     CGRect changeFrameWork = _changeWorkR.frame;
     
-    [UIView animateWithDuration:0.15f
+    [UIView animateWithDuration:0.75f
                             delay:0
                         options:(UIViewAnimationOptionAllowUserInteraction|
                                     UIViewAnimationOptionBeginFromCurrentState)
@@ -1184,7 +1169,7 @@
     CGRect changeFrameDate = _changeDateL.frame;
     CGRect changeFrameWork = _changeWorkL.frame;
     
-    [UIView animateWithDuration:0.15f
+    [UIView animateWithDuration:0.75f
                             delay:0
                         options:(UIViewAnimationOptionAllowUserInteraction|
                                     UIViewAnimationOptionBeginFromCurrentState)

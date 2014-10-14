@@ -35,6 +35,11 @@
     cell.label5.text = hostNicVO.device;
     cell.type.text = [hostNicVO duplex_text];
     cell.linkState.image = [UIImage imageNamed:[hostNicVO linkState_image]];
+    if (indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor colorWithRed:245/255 green:245/255 blue:245/255 alpha:0.08];
+    }else{
+        cell.backgroundColor = [UIColor clearColor];
+    }
     //连接状态 linkeState
     return cell;
 }

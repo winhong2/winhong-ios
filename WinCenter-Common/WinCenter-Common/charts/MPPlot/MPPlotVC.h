@@ -18,5 +18,8 @@
     MPBarsGraphView *graph5;
     
 }
+@property (weak, nonatomic) IBOutlet UIView *container1;
+@property (weak, nonatomic) IBOutlet UIView *container2;
+@property (weak, nonatomic) IBOutlet UIView *container3;
 
 @end

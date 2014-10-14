@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iPadGraphViewController : UIView
+@interface iPadGraphView : UIView
 
 @property(retain,nonatomic) NSArray                           *fistArray;
 @property(retain,nonatomic) NSArray                           *secondArray;

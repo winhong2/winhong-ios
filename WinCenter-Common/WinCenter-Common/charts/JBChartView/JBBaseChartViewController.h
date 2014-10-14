@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Jawbone. All rights reserved.
 //
 
-#import "JBBaseViewController.h"
-
 // Views
 #import "JBChartTooltipView.h"
 #import "JBChartView.h"
+#import "JBConstants.h"
 
-@interface JBBaseChartViewController : JBBaseViewController
+@interface JBBaseChartViewController : UIViewController
 
 @property (nonatomic, strong, readonly) JBChartTooltipView *tooltipView;
 @property (nonatomic, assign) BOOL tooltipVisible;
+@property (weak, nonatomic) IBOutlet UIView *container;
 
 // Settres
 - (void)setTooltipVisible:(BOOL)tooltipVisible animated:(BOOL)animated atTouchPoint:(CGPoint)touchPoint;

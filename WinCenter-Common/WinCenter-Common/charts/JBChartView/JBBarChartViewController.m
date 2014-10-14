@@ -100,7 +100,6 @@ NSString * const kJBBarChartViewControllerNavButtonViewKey = @"view";
     [super loadView];
     
     self.view.backgroundColor = kJBColorBarChartControllerBackground;
-    self.navigationItem.rightBarButtonItem = [self chartToggleButtonWithTarget:self action:@selector(chartToggleButtonPressed:)];
 
     self.barChartView = [[JBBarChartView alloc] init];
     self.barChartView.frame = CGRectMake(kJBBarChartViewControllerChartPadding, kJBBarChartViewControllerChartPadding, self.view.bounds.size.width - (kJBBarChartViewControllerChartPadding * 2), kJBBarChartViewControllerChartHeight);
@@ -125,9 +124,9 @@ NSString * const kJBBarChartViewControllerNavButtonViewKey = @"view";
     self.barChartView.footerView = footerView;
     
     self.informationView = [[JBChartInformationView alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x, CGRectGetMaxY(self.barChartView.frame), self.view.bounds.size.width, self.view.bounds.size.height - CGRectGetMaxY(self.barChartView.frame) - CGRectGetMaxY(self.navigationController.navigationBar.frame))];
-    [self.view addSubview:self.informationView];
+    [self.container addSubview:self.informationView];
 
-    [self.view addSubview:self.barChartView];
+    [self.container addSubview:self.barChartView];
     [self.barChartView reloadData];
 }
 
@@ -184,7 +183,7 @@ NSString * const kJBBarChartViewControllerNavButtonViewKey = @"view";
 
 #pragma mark - Buttons
 
-- (void)chartToggleButtonPressed:(id)sender
+- (IBAction)chartToggleButtonPressed:(id)sender
 {
     UIView *buttonImageView = [self.navigationItem.rightBarButtonItem valueForKey:kJBBarChartViewControllerNavButtonViewKey];
     buttonImageView.userInteractionEnabled = NO;
