@@ -79,14 +79,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="WinCenter" id="cOH-tF-MKd">
-                        <barButtonItem key="leftBarButtonItem" title="服务器配置" id="jCG-1Q-KJW">
-                            <connections>
-                                <segue destination="0Or-n6-MBI" kind="modal" id="Zaa-2H-KqP"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="游客体验" id="J90-bD-fJu">
+                        <barButtonItem key="leftBarButtonItem" title="游客体验" id="J90-bD-fJu">
                             <connections>
                                 <action selector="enjoyAction:" destination="X78-uY-Zh7" id="iQY-5g-OCc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="服务器配置" id="jCG-1Q-KJW">
+                            <connections>
+                                <segue destination="0Or-n6-MBI" kind="modal" id="Zaa-2H-KqP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

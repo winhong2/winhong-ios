@@ -36,12 +36,10 @@
         [data addObject:model];
     }
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.extendedLayoutIncludesOpaqueBars = NO;
-    self.modalPresentationCapturesStatusBarAppearance = NO;
     NSArray *items = @[@"金额", @"利率", @"期限"];
     PoolDatagridSegement *segment = [[PoolDatagridSegement alloc] initWithItems:items];
-    segment.frame = CGRectMake(0, 0, 320, 40);
+    segment.frame = CGRectMake(0, 64, 320, 40);
+    segment.backgroundColor = [UIColor whiteColor];
     segment.selectedIndex = 0;
     [segment addTarget:self action:@selector(sgAction:) forControlEvents:UIControlEventValueChanged];
     
@@ -69,12 +67,6 @@
     }
     
     [self.tableView reloadData];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

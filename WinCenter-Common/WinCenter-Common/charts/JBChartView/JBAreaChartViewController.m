@@ -1,12 +1,12 @@
 //
-//  JBLineChartViewController.m
+//  JBAreaChartViewController.m
 //  JBChartViewDemo
 //
-//  Created by Terry Worona on 11/5/13.
-//  Copyright (c) 2013 Jawbone. All rights reserved.
+//  Created by Lars Ott on 21.04.14.
+//  Copyright (c) 2014 Jawbone. All rights reserved.
 //
 
-#import "JBLineChartViewController.h"
+#import "JBAreaChartViewController.h"
 
 // Views
 #import "JBLineChartView.h"
@@ -17,30 +17,29 @@
 #define ARC4RANDOM_MAX 0x100000000
 
 typedef NS_ENUM(NSInteger, JBLineChartLine){
-	JBLineChartLineSolid,
-    JBLineChartLineDashed,
+	JBLineChartLineSun,
+    JBLineChartLineMoon,
     JBLineChartLineCount
 };
 
 // Numerics
-CGFloat const kJBLineChartViewControllerChartHeight = 250.0f;
-CGFloat const kJBLineChartViewControllerChartPadding = 10.0f;
-CGFloat const kJBLineChartViewControllerChartHeaderHeight = 75.0f;
-CGFloat const kJBLineChartViewControllerChartHeaderPadding = 20.0f;
-CGFloat const kJBLineChartViewControllerChartFooterHeight = 20.0f;
-CGFloat const kJBLineChartViewControllerChartSolidLineWidth = 6.0f;
-CGFloat const kJBLineChartViewControllerChartDashedLineWidth = 2.0f;
-NSInteger const kJBLineChartViewControllerMaxNumChartPoints = 7;
+CGFloat const kJBAreaChartViewControllerChartHeight = 250.0f;
+CGFloat const kJBAreaChartViewControllerChartPadding = 10.0f;
+CGFloat const kJBAreaChartViewControllerChartHeaderHeight = 75.0f;
+CGFloat const kJBAreaChartViewControllerChartHeaderPadding = 20.0f;
+CGFloat const kJBAreaChartViewControllerChartFooterHeight = 20.0f;
+CGFloat const kJBAreaChartViewControllerChartLineWidth = 2.0f;
+NSInteger const kJBAreaChartViewControllerMaxNumChartPoints = 12;
 
 // Strings
-NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
+NSString * const kJBAreaChartViewControllerNavButtonViewKey = @"view";
 
-@interface JBLineChartViewController () <JBLineChartViewDelegate, JBLineChartViewDataSource>
+@interface JBAreaChartViewController () <JBLineChartViewDelegate, JBLineChartViewDataSource>
 
 @property (nonatomic, strong) JBLineChartView *lineChartView;
 @property (nonatomic, strong) JBChartInformationView *informationView;
 @property (nonatomic, strong) NSArray *chartData;
-@property (nonatomic, strong) NSArray *daysOfWeek;
+@property (nonatomic, strong) NSArray *monthlySymbols;
 
 // Buttons
 - (void)chartToggleButtonPressed:(id)sender;
@@ -51,7 +50,7 @@ NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
 
 @end
 
-@implementation JBLineChartViewController
+@implementation JBAreaChartViewController
 
 #pragma mark - Alloc/Init
 
@@ -93,14 +92,14 @@ NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
     for (int lineIndex=0; lineIndex<JBLineChartLineCount; lineIndex++)
     {
         NSMutableArray *mutableChartData = [NSMutableArray array];
-        for (int i=0; i<kJBLineChartViewControllerMaxNumChartPoints; i++)
+        for (int i=0; i<kJBAreaChartViewControllerMaxNumChartPoints; i++)
         {
-            [mutableChartData addObject:[NSNumber numberWithFloat:((double)arc4random() / ARC4RANDOM_MAX)]]; // random number between 0 and 1
+            [mutableChartData addObject:[NSNumber numberWithFloat:((double)arc4random() / ARC4RANDOM_MAX) * 12]]; // random number between 0 and 12
         }
         [mutableLineCharts addObject:mutableChartData];
     }
     _chartData = [NSArray arrayWithArray:mutableLineCharts];
-    _daysOfWeek = [[[NSDateFormatter alloc] init] shortWeekdaySymbols];
+    _monthlySymbols = [[[NSDateFormatter alloc] init] shortMonthSymbols];
 }
 
 - (NSArray *)largestLineData
@@ -123,44 +122,43 @@ NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
     [super loadView];
     
     self.view.backgroundColor = kJBColorLineChartControllerBackground;
-    self.navigationItem.rightBarButtonItem = [self chartToggleButtonWithTarget:self action:@selector(chartToggleButtonPressed:)];
-        
+    
     self.lineChartView = [[JBLineChartView alloc] init];
-    self.lineChartView.frame = CGRectMake(kJBLineChartViewControllerChartPadding, kJBLineChartViewControllerChartPadding, self.view.bounds.size.width - (kJBLineChartViewControllerChartPadding * 2), kJBLineChartViewControllerChartHeight);
+    self.lineChartView.frame = CGRectMake(kJBAreaChartViewControllerChartPadding, kJBAreaChartViewControllerChartPadding, self.view.bounds.size.width - (kJBAreaChartViewControllerChartPadding * 2), kJBAreaChartViewControllerChartHeight);
     self.lineChartView.delegate = self;
     self.lineChartView.dataSource = self;
-    self.lineChartView.headerPadding = kJBLineChartViewControllerChartHeaderPadding;
+    self.lineChartView.headerPadding =kJBAreaChartViewControllerChartHeaderPadding;
     self.lineChartView.backgroundColor = kJBColorLineChartBackground;
     
-    JBChartHeaderView *headerView = [[JBChartHeaderView alloc] initWithFrame:CGRectMake(kJBLineChartViewControllerChartPadding, ceil(self.view.bounds.size.height * 0.5) - ceil(kJBLineChartViewControllerChartHeaderHeight * 0.5), self.view.bounds.size.width - (kJBLineChartViewControllerChartPadding * 2), kJBLineChartViewControllerChartHeaderHeight)];
-    headerView.titleLabel.text = [kJBStringLabelAverageDailyRainfall uppercaseString];
+    JBChartHeaderView *headerView = [[JBChartHeaderView alloc] initWithFrame:CGRectMake(kJBAreaChartViewControllerChartPadding, ceil(self.view.bounds.size.height * 0.5) - ceil(kJBAreaChartViewControllerChartHeaderHeight * 0.5), self.view.bounds.size.width - (kJBAreaChartViewControllerChartPadding * 2), kJBAreaChartViewControllerChartHeaderHeight)];
+    headerView.titleLabel.text = [kJBStringLabelAverageShineHoursOfSunMoon uppercaseString];
     headerView.titleLabel.textColor = kJBColorLineChartHeader;
     headerView.titleLabel.shadowColor = [UIColor colorWithWhite:1.0 alpha:0.25];
     headerView.titleLabel.shadowOffset = CGSizeMake(0, 1);
-    headerView.subtitleLabel.text = kJBStringLabel2013;
+    headerView.subtitleLabel.text = kJBStringLabel2011;
     headerView.subtitleLabel.textColor = kJBColorLineChartHeader;
     headerView.subtitleLabel.shadowColor = [UIColor colorWithWhite:1.0 alpha:0.25];
     headerView.subtitleLabel.shadowOffset = CGSizeMake(0, 1);
     headerView.separatorColor = kJBColorLineChartHeaderSeparatorColor;
     self.lineChartView.headerView = headerView;
     
-    JBLineChartFooterView *footerView = [[JBLineChartFooterView alloc] initWithFrame:CGRectMake(kJBLineChartViewControllerChartPadding, ceil(self.view.bounds.size.height * 0.5) - ceil(kJBLineChartViewControllerChartFooterHeight * 0.5), self.view.bounds.size.width - (kJBLineChartViewControllerChartPadding * 2), kJBLineChartViewControllerChartFooterHeight)];
+    JBLineChartFooterView *footerView = [[JBLineChartFooterView alloc] initWithFrame:CGRectMake(kJBAreaChartViewControllerChartPadding, ceil(self.view.bounds.size.height * 0.5) - ceil(kJBAreaChartViewControllerChartFooterHeight * 0.5), self.view.bounds.size.width - (kJBAreaChartViewControllerChartPadding * 2), kJBAreaChartViewControllerChartFooterHeight)];
     footerView.backgroundColor = [UIColor clearColor];
-    footerView.leftLabel.text = [[self.daysOfWeek firstObject] uppercaseString];
+    footerView.leftLabel.text = [[self.monthlySymbols firstObject] uppercaseString];
     footerView.leftLabel.textColor = [UIColor whiteColor];
-    footerView.rightLabel.text = [[self.daysOfWeek lastObject] uppercaseString];;
+    footerView.rightLabel.text = [[self.monthlySymbols lastObject] uppercaseString];;
     footerView.rightLabel.textColor = [UIColor whiteColor];
-    footerView.sectionCount = [[self largestLineData] count];
+    footerView.sectionCount = [[self chartData] count];
     self.lineChartView.footerView = footerView;
     
-    [self.view addSubview:self.lineChartView];
+    [self.container addSubview:self.lineChartView];
     
     self.informationView = [[JBChartInformationView alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x, CGRectGetMaxY(self.lineChartView.frame), self.view.bounds.size.width, self.view.bounds.size.height - CGRectGetMaxY(self.lineChartView.frame) - CGRectGetMaxY(self.navigationController.navigationBar.frame))];
     [self.informationView setValueAndUnitTextColor:[UIColor colorWithWhite:1.0 alpha:0.75]];
     [self.informationView setTitleTextColor:kJBColorLineChartHeader];
     [self.informationView setTextShadowColor:nil];
     [self.informationView setSeparatorColor:kJBColorLineChartHeaderSeparatorColor];
-    [self.view addSubview:self.informationView];
+    [self.container addSubview:self.informationView];
     
     [self.lineChartView reloadData];
 }
@@ -181,11 +179,11 @@ NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
 - (void)lineChartView:(JBLineChartView *)lineChartView didSelectLineAtIndex:(NSUInteger)lineIndex horizontalIndex:(NSUInteger)horizontalIndex touchPoint:(CGPoint)touchPoint
 {
     NSNumber *valueNumber = [[self.chartData objectAtIndex:lineIndex] objectAtIndex:horizontalIndex];
-    [self.informationView setValueText:[NSString stringWithFormat:@"%.2f", [valueNumber floatValue]] unitText:kJBStringLabelMm];
-    [self.informationView setTitleText:lineIndex == JBLineChartLineSolid ? kJBStringLabelMetropolitanAverage : kJBStringLabelNationalAverage];
+    [self.informationView setValueText:[NSString stringWithFormat:@"%.1f", [valueNumber floatValue]] unitText:kJBStringLabelHours];
+    [self.informationView setTitleText:lineIndex == JBLineChartLineSun ? kJBStringLabelSun : kJBStringLabelMoon];
     [self.informationView setHidden:NO animated:YES];
     [self setTooltipVisible:YES animated:YES atTouchPoint:touchPoint];
-    [self.tooltipView setText:[[self.daysOfWeek objectAtIndex:horizontalIndex] uppercaseString]];
+    [self.tooltipView setText:[[self.monthlySymbols objectAtIndex:horizontalIndex] uppercaseString]];
 }
 
 - (void)didUnselectLineInLineChartView:(JBLineChartView *)lineChartView
@@ -208,22 +206,22 @@ NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
 
 - (UIColor *)lineChartView:(JBLineChartView *)lineChartView colorForLineAtLineIndex:(NSUInteger)lineIndex
 {
-    return (lineIndex == JBLineChartLineSolid) ? kJBColorLineChartDefaultSolidLineColor: kJBColorLineChartDefaultDashedLineColor;
+    return (lineIndex == JBLineChartLineSun) ? kJBColorAreaChartDefaultSunLineColor: kJBColorAreaChartDefaultMoonLineColor;
+}
+
+- (UIColor *)lineChartView:(JBLineChartView *)lineChartView fillColorForLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return (lineIndex == JBLineChartLineSun) ? kJBColorAreaChartDefaultSunAreaColor : kJBColorAreaChartDefaultMoonAreaColor;
 }
 
 - (UIColor *)lineChartView:(JBLineChartView *)lineChartView colorForDotAtHorizontalIndex:(NSUInteger)horizontalIndex atLineIndex:(NSUInteger)lineIndex
 {
-    return (lineIndex == JBLineChartLineSolid) ? kJBColorLineChartDefaultSolidLineColor: kJBColorLineChartDefaultDashedLineColor;
+    return (lineIndex == JBLineChartLineSun) ? kJBColorAreaChartDefaultSunLineColor: kJBColorAreaChartDefaultMoonLineColor;
 }
 
 - (CGFloat)lineChartView:(JBLineChartView *)lineChartView widthForLineAtLineIndex:(NSUInteger)lineIndex
 {
-    return (lineIndex == JBLineChartLineSolid) ? kJBLineChartViewControllerChartSolidLineWidth: kJBLineChartViewControllerChartDashedLineWidth;
-}
-
-- (CGFloat)lineChartView:(JBLineChartView *)lineChartView dotRadiusForLineAtLineIndex:(NSUInteger)lineIndex
-{
-    return (lineIndex == JBLineChartLineSolid) ? 0.0: (kJBLineChartViewControllerChartDashedLineWidth * 4);
+    return kJBAreaChartViewControllerChartLineWidth;
 }
 
 - (UIColor *)verticalSelectionColorForLineChartView:(JBLineChartView *)lineChartView
@@ -233,39 +231,44 @@ NSString * const kJBLineChartViewControllerNavButtonViewKey = @"view";
 
 - (UIColor *)lineChartView:(JBLineChartView *)lineChartView selectionColorForLineAtLineIndex:(NSUInteger)lineIndex
 {
-    return (lineIndex == JBLineChartLineSolid) ? kJBColorLineChartDefaultSolidSelectedLineColor: kJBColorLineChartDefaultDashedSelectedLineColor;
+    return (lineIndex == JBLineChartLineSun) ? kJBColorAreaChartDefaultSunSelectedLineColor: kJBColorAreaChartDefaultMoonSelectedLineColor;
+}
+
+- (UIColor *)lineChartView:(JBLineChartView *)lineChartView selectionFillColorForLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return (lineIndex == JBLineChartLineSun) ? kJBColorAreaChartDefaultSunSelectedAreaColor : kJBColorAreaChartDefaultMoonSelectedAreaColor;
 }
 
 - (UIColor *)lineChartView:(JBLineChartView *)lineChartView selectionColorForDotAtHorizontalIndex:(NSUInteger)horizontalIndex atLineIndex:(NSUInteger)lineIndex
 {
-    return (lineIndex == JBLineChartLineSolid) ? kJBColorLineChartDefaultSolidSelectedLineColor: kJBColorLineChartDefaultDashedSelectedLineColor;
+    return (lineIndex == JBLineChartLineSun) ? kJBColorAreaChartDefaultSunSelectedLineColor: kJBColorAreaChartDefaultMoonSelectedLineColor;
 }
 
 - (JBLineChartViewLineStyle)lineChartView:(JBLineChartView *)lineChartView lineStyleForLineAtLineIndex:(NSUInteger)lineIndex
 {
-    return (lineIndex == JBLineChartLineSolid) ? JBLineChartViewLineStyleSolid : JBLineChartViewLineStyleDashed;
+    return JBLineChartViewLineStyleSolid;
 }
 
 - (BOOL)lineChartView:(JBLineChartView *)lineChartView showsDotsForLineAtLineIndex:(NSUInteger)lineIndex
 {
-    return lineIndex == JBLineChartViewLineStyleDashed;
+    return NO;
 }
 
 - (BOOL)lineChartView:(JBLineChartView *)lineChartView smoothLineAtLineIndex:(NSUInteger)lineIndex
 {
-    return lineIndex == JBLineChartViewLineStyleSolid;
+    return YES;
 }
 
 #pragma mark - Buttons
 
-- (void)chartToggleButtonPressed:(id)sender
+- (IBAction)chartToggleButtonPressed:(id)sender
 {
-	UIView *buttonImageView = [self.navigationItem.rightBarButtonItem valueForKey:kJBLineChartViewControllerNavButtonViewKey];
+	UIView *buttonImageView = [self.navigationItem.rightBarButtonItem valueForKey:kJBAreaChartViewControllerNavButtonViewKey];
     buttonImageView.userInteractionEnabled = NO;
     
     CGAffineTransform transform = self.lineChartView.state == JBChartViewStateExpanded ? CGAffineTransformMakeRotation(M_PI) : CGAffineTransformMakeRotation(0);
     buttonImageView.transform = transform;
-
+    
     [self.lineChartView setState:self.lineChartView.state == JBChartViewStateExpanded ? JBChartViewStateCollapsed : JBChartViewStateExpanded animated:YES callback:^{
         buttonImageView.userInteractionEnabled = YES;
     }];

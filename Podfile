@@ -35,6 +35,7 @@ target 'WinCenter-iPhone' do
     pod 'BEMSimpleLineGraph', '~> 2.3'
     pod 'BButton', '~> 4.0.1'
     pod 'GraphKit', '~> 1.1.0'
+    pod 'MPPlot', '~> 0.1.0'
     
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'

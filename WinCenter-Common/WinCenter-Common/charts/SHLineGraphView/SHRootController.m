@@ -11,19 +11,11 @@
 #import "SHPlot.h"
 
 @interface SHRootController ()
+@property (weak, nonatomic) IBOutlet UIView *container;
 
 @end
 
 @implementation SHRootController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-  if (self) {
-    // Custom initialization
-  }
-  return self;
-}
 
 - (void)viewDidLoad
 {
@@ -31,7 +23,7 @@
   // Do any additional setup after loading the view.
   
   //initate the graph view
-  SHLineGraphView *_lineGraph = [[SHLineGraphView alloc] initWithFrame:CGRectMake(10, 80, 300, 300)];
+  SHLineGraphView *_lineGraph = [[SHLineGraphView alloc] initWithFrame:self.container.bounds];
   
   //set the main graph area theme attributes
 
@@ -139,14 +131,7 @@
   
   [_lineGraph setupTheView];
   
-  [self.view addSubview:_lineGraph];
+  [self.container addSubview:_lineGraph];
 }
-
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
-}
-
 
 @end

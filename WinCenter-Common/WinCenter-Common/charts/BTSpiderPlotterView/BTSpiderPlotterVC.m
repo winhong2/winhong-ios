@@ -14,14 +14,6 @@
 
 @implementation BTSpiderPlotterVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,14 +28,9 @@
                                       @"Ecosystem": @"4"};
     
     BTSpiderPlotterView *spiderView = [[BTSpiderPlotterView alloc] initWithFrame:self.view.frame valueDictionary:valueDictionary];
-    //spiderView.plotColor = [UIColor colorWithRed:.8 green:.4 blue:.3 alpha:.7];
+    spiderView.plotColor = [UIColor colorWithRed:.8 green:.4 blue:.3 alpha:.7];
     [self.view addSubview:spiderView];
     
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 @end

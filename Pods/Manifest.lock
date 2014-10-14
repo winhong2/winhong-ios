@@ -9,6 +9,7 @@ PODS:
   - JBChartView (2.6.3)
   - JYRadarChart (0.3.1)
   - MKFoundationKit/NSArray (1.2.2)
+  - MPPlot (0.1.0)
   - NSObject-ObjectMap (2.3.1)
   - ObjQREncoder (0.0.1)
   - PNChart (0.5):
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - GraphKit (~> 1.1.0)
   - JBChartView (~> 2.6.2)
   - JYRadarChart (~> 0.3.1)
+  - MPPlot (~> 0.1.0)
   - NSObject-ObjectMap (~> 2.3.1)
   - ObjQREncoder (~> 0.0.1)
   - PNChart (~> 0.5)
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   JBChartView: 0a14c441cd4de963379e0f417b1f6cc685119637
   JYRadarChart: d9a90d435b427d928d576169e8df51fd285fe46a
   MKFoundationKit: f8a268133483c1aa686f208d3944624cc0e68dd2
+  MPPlot: 4f2493c106b1b7c7377d8d25b830f819c1625cca
   NSObject-ObjectMap: b25adb10d18c60930db2c441c2fb7ae6c3d80282
   ObjQREncoder: 9f4ab78eb0b2b1a6e5743a5591d8a14f69c67256
   PNChart: 0d0cf4531de3aa7f2b12434a54845d70d9c9cfe3

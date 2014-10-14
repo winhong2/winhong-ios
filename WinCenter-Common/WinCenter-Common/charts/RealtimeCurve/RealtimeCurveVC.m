@@ -15,15 +15,6 @@
 
 @implementation RealtimeCurveVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     //所有的资源都在source.bundle这个文件夹里
@@ -61,10 +52,7 @@
 {
     return YES;
 }
--(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-{
-    
-}
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     //等webview加载完毕再更新数据
@@ -75,21 +63,5 @@
                                             repeats: YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
