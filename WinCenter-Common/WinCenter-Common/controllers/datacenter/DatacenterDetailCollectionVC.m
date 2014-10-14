@@ -404,7 +404,24 @@
                     }
                     case Page_Business:{
                         DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterBusinessCollectionHeader" forIndexPath:indexPath];
-                        //
+                        BusinessVO *businessVO = (BusinessVO *) [self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
+                        
+                        header.businessCount.text =[NSString stringWithFormat:@"%d",0];
+                        header.businessVmCount.text = [NSString stringWithFormat:@"%d",businessVO.vmNum];
+                        header.label1.text =[NSString stringWithFormat:@"%d",0];
+                        header.label2.text =[NSString stringWithFormat:@"%d",0];
+                        
+                        //圈图
+                        PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.businessAllocateChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
+                        circleChart.backgroundColor = [UIColor clearColor];
+                        circleChart.labelColor = [UIColor clearColor];
+                        circleChart.circleBG.strokeColor = [UIColor colorWithRed:255.0/255 green:216.0/255 blue:0/255 alpha:1].CGColor;//未使用填充颜色
+                        circleChart.circle.lineCap = kCALineCapSquare;//直角填充
+                        circleChart.lineWidth = @11.0f;//线宽度
+                        [circleChart setStrokeColor:[UIColor colorWithRed:0.0/255 green:181.0/255 blue:185.0/255 alpha:1]];//已使用填充颜色
+                        [circleChart strokeChart];
+                        [header.businessAllocateChart addSubview:circleChart];
+                        
                         return header;
                     }
                     default:
