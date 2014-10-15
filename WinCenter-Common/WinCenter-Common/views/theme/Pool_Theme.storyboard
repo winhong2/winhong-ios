@@ -14,15 +14,15 @@
                         <viewControllerLayoutGuide type="bottom" id="osf-2s-RRl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0pn-UC-Aas">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="969" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbR-Ib-os0">
-                                <rect key="frame" x="0.0" y="45" width="1024" height="723"/>
+                                <rect key="frame" x="0.0" y="45" width="969" height="723"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-LR-ffe">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="45"/>
+                                <rect key="frame" x="0.0" y="0.0" width="969" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="022-34-wcg"/>
                                     <barButtonItem title="摘    要" id="UQt-NA-OhQ">
@@ -71,7 +71,8 @@
                     <navigationItem key="navigationItem" id="rPP-h3-GZN"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="969" height="768"/>
                     <connections>
                         <outlet property="pageVCContainer" destination="zbR-Ib-os0" id="1eh-0z-0eK"/>
                     </connections>
