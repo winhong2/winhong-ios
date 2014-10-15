@@ -220,6 +220,8 @@
 		18A4D43C19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D43A19B560D400415896 /* InfoPlist.strings */; };
 		18A4D43E19B560D400415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D43D19B560D400415896 /* main.m */; };
 		18A4D44219B560D400415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44119B560D400415896 /* AppDelegate.m */; };
+		18BBA42019EE43FE00416479 /* F3BarGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41D19EE43FE00416479 /* F3BarGauge.m */; };
+		18BBA42119EE43FE00416479 /* F3BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41F19EE43FE00416479 /* F3BarViewController.m */; };
 		18DCEBE119ED0DA700ED7BF8 /* JBAreaChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */; };
 		18DCEBE219ED0DA700ED7BF8 /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCA19ED0DA700ED7BF8 /* JBBarChartFooterView.m */; };
 		18DCEBE319ED0DA700ED7BF8 /* JBBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCC19ED0DA700ED7BF8 /* JBBarChartViewController.m */; };
@@ -609,6 +611,10 @@
 		18A4D43F19B560D400415896 /* WinCenter-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		18A4D44019B560D400415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D44119B560D400415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18BBA41C19EE43FE00416479 /* F3BarGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarGauge.h; sourceTree = "<group>"; };
+		18BBA41D19EE43FE00416479 /* F3BarGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarGauge.m; sourceTree = "<group>"; };
+		18BBA41E19EE43FE00416479 /* F3BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarViewController.h; sourceTree = "<group>"; };
+		18BBA41F19EE43FE00416479 /* F3BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarViewController.m; sourceTree = "<group>"; };
 		18DCEBC719ED0DA700ED7BF8 /* JBAreaChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBAreaChartViewController.h; sourceTree = "<group>"; };
 		18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBAreaChartViewController.m; sourceTree = "<group>"; };
 		18DCEBC919ED0DA700ED7BF8 /* JBBarChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartFooterView.h; sourceTree = "<group>"; };
@@ -719,6 +725,7 @@
 				18DCEC1219ED7CAE00ED7BF8 /* FRD3DBarChart */,
 				18DCEC0719ED757E00ED7BF8 /* HeartRateCurve */,
 				18DCEC4D19EE20F900ED7BF8 /* MagicPie */,
+				18BBA41B19EE43FE00416479 /* F3BarGauge */,
 			);
 			name = charts;
 			path = "../../WinCenter-Common/WinCenter-Common/charts";
@@ -1400,6 +1407,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18BBA41B19EE43FE00416479 /* F3BarGauge */ = {
+			isa = PBXGroup;
+			children = (
+				18BBA41C19EE43FE00416479 /* F3BarGauge.h */,
+				18BBA41D19EE43FE00416479 /* F3BarGauge.m */,
+				18BBA41E19EE43FE00416479 /* F3BarViewController.h */,
+				18BBA41F19EE43FE00416479 /* F3BarViewController.m */,
+			);
+			path = F3BarGauge;
+			sourceTree = "<group>";
+		};
 		18DCEBEB19ED139E00ED7BF8 /* RealtimeCurve */ = {
 			isa = PBXGroup;
 			children = (
@@ -1659,6 +1677,7 @@
 				1886D60619E97F82005E1645 /* HostStatVO.m in Sources */,
 				180BF6EF19ECB0960029D2A4 /* chatView.m in Sources */,
 				185CB40219E7796F00DC8E8A /* VmNewVC.m in Sources */,
+				18BBA42119EE43FE00416479 /* F3BarViewController.m in Sources */,
 				185CB3FF19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m in Sources */,
 				185CB3E919E7796F00DC8E8A /* NetworkContainerVC.m in Sources */,
 				185CB3F319E7796F00DC8E8A /* StorageDiskCollectionVC.m in Sources */,
@@ -1676,6 +1695,7 @@
 				18DCEBE919ED0DA700ED7BF8 /* JBLineChartFooterView.m in Sources */,
 				180BF72C19ECB0960029D2A4 /* MZViewController.m in Sources */,
 				1886D61D19E97F82005E1645 /* WarningInfoListResult.m in Sources */,
+				18BBA42019EE43FE00416479 /* F3BarGauge.m in Sources */,
 				185CB3D319E7796F00DC8E8A /* MasterCollectionCell.m in Sources */,
 				185CB40119E7796F00DC8E8A /* VmNetworkCollectionVC.m in Sources */,
 				18DCEC4919EE098200ED7BF8 /* SimpleChartViewController.m in Sources */,
