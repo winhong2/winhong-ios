@@ -102,8 +102,14 @@
 }
 
 -(UNIUrlConnection*) asJsonAsync:(UNIHTTPJsonResponseBlock) response {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    self.hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    
     return [UNIHTTPClientHelper requestAsync:self handler:^(UNIHTTPResponse * res, NSError * error) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+            [self.hud hide:YES];
+            
             if (error != nil) {
                 response(nil, error);
             } else {

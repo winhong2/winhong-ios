@@ -27,6 +27,7 @@
 #import "HttpResponse/UNIHTTPBinaryResponse.h"
 #import "HttpResponse/UNIHTTPJsonResponse.h"
 #import "UNIUrlConnection.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 typedef NS_ENUM(NSInteger, UNIHTTPMethod) {
 	GET,
@@ -48,6 +49,8 @@ typedef void (^UNIHTTPJsonResponseBlock)(UNIHTTPJsonResponse* jsonResponse, NSEr
 @property(readwrite, strong) NSString* username;
 @property(readwrite, strong) NSString* password;
 @property(readwrite) UNIHTTPMethod httpMethod;
+
+@property MBProgressHUD *hud;
 
 -(instancetype) initWithSimpleRequest:(UNIHTTPMethod) httpMethod url:(NSString*) url headers:(NSDictionary*) headers username:(NSString*) username password:(NSString*) password;
 
