@@ -222,6 +222,8 @@
 		18A4D44219B560D400415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44119B560D400415896 /* AppDelegate.m */; };
 		18BBA42019EE43FE00416479 /* F3BarGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41D19EE43FE00416479 /* F3BarGauge.m */; };
 		18BBA42119EE43FE00416479 /* F3BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41F19EE43FE00416479 /* F3BarViewController.m */; };
+		18BBA42619EE54DA00416479 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */; };
+		18BBA42719EE54DA00416479 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42519EE54DA00416479 /* UIButton+Badge.m */; };
 		18DCEBE119ED0DA700ED7BF8 /* JBAreaChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */; };
 		18DCEBE219ED0DA700ED7BF8 /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCA19ED0DA700ED7BF8 /* JBBarChartFooterView.m */; };
 		18DCEBE319ED0DA700ED7BF8 /* JBBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCC19ED0DA700ED7BF8 /* JBBarChartViewController.m */; };
@@ -615,6 +617,10 @@
 		18BBA41D19EE43FE00416479 /* F3BarGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarGauge.m; sourceTree = "<group>"; };
 		18BBA41E19EE43FE00416479 /* F3BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarViewController.h; sourceTree = "<group>"; };
 		18BBA41F19EE43FE00416479 /* F3BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarViewController.m; sourceTree = "<group>"; };
+		18BBA42219EE54DA00416479 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		18BBA42419EE54DA00416479 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		18BBA42519EE54DA00416479 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		18DCEBC719ED0DA700ED7BF8 /* JBAreaChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBAreaChartViewController.h; sourceTree = "<group>"; };
 		18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBAreaChartViewController.m; sourceTree = "<group>"; };
 		18DCEBC919ED0DA700ED7BF8 /* JBBarChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartFooterView.h; sourceTree = "<group>"; };
@@ -978,6 +984,10 @@
 		185CB33019E7796F00DC8E8A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18BBA42219EE54DA00416479 /* UIBarButtonItem+Badge.h */,
+				18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */,
+				18BBA42419EE54DA00416479 /* UIButton+Badge.h */,
+				18BBA42519EE54DA00416479 /* UIButton+Badge.m */,
 				185CB45619E7E50800DC8E8A /* UIStoryboard+Theme.h */,
 				185CB45719E7E50800DC8E8A /* UIStoryboard+Theme.m */,
 				185CB33119E7796F00DC8E8A /* business */,
@@ -1779,8 +1789,10 @@
 				185CB3F419E7796F00DC8E8A /* PopControlRecordCell.m in Sources */,
 				180BF74F19ECB0960029D2A4 /* WeekStatVC.m in Sources */,
 				180BF72D19ECB0960029D2A4 /* PercentageChart.m in Sources */,
+				18BBA42719EE54DA00416479 /* UIButton+Badge.m in Sources */,
 				185CB40519E7796F00DC8E8A /* PopWarningInfoVC.m in Sources */,
 				18DCEC5B19EE20F900ED7BF8 /* Example1PieView.m in Sources */,
+				18BBA42619EE54DA00416479 /* UIBarButtonItem+Badge.m in Sources */,
 				185CB3D219E7796F00DC8E8A /* BusinessVmCollectionVC.m in Sources */,
 				185CB3E119E7796F00DC8E8A /* HostDetailPerformanceVC.m in Sources */,
 				1886D60F19E97F82005E1645 /* PoolVO.m in Sources */,
