@@ -487,7 +487,7 @@
                                     </items>
                                 </toolbar>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池色块" translatesAutoresizingMaskIntoConstraints="NO" id="ox6-6Q-GX9">
-                                    <rect key="frame" x="20" y="64" width="202" height="274"/>
+                                    <rect key="frame" x="20" y="64" width="198" height="274"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pc-2g-JJe">
                                     <rect key="frame" x="281" y="73" width="86" height="43"/>
@@ -1369,7 +1369,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="物理机－色块" translatesAutoresizingMaskIntoConstraints="NO" id="Rtp-Hp-3tm">
-                                    <rect key="frame" x="20" y="64" width="202" height="129"/>
+                                    <rect key="frame" x="20" y="64" width="198" height="125"/>
                                 </imageView>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9V-tb-obN">
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
@@ -2507,7 +2507,7 @@
         <image name="存储-色块" width="198" height="220"/>
         <image name="数据中心图标" width="18" height="18"/>
         <image name="物理机" width="12" height="11"/>
-        <image name="物理机－色块" width="202" height="129"/>
+        <image name="物理机－色块" width="198" height="125"/>
         <image name="管理员" width="12" height="12"/>
         <image name="自源池－首页" width="969" height="405"/>
         <image name="虚拟机-色块" width="198" height="125"/>
@@ -2515,7 +2515,7 @@
         <image name="虚拟机总数" width="12" height="11"/>
         <image name="虚拟机－面板" width="288" height="253"/>
         <image name="资源池-摘要-面板" width="288" height="280"/>
-        <image name="资源池色块" width="202" height="274"/>
+        <image name="资源池色块" width="198" height="274"/>
         <image name="资源池－存储池－面板" width="288" height="253"/>
         <image name="资源池－物理机－面板" width="288" height="280"/>
         <image name="进度条-红色" width="59" height="10"/>
