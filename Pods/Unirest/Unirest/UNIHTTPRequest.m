@@ -108,7 +108,7 @@
     return [UNIHTTPClientHelper requestAsync:self handler:^(UNIHTTPResponse * res, NSError * error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-            [self.hud hide:YES];
+            [self.hud hide:NO];
             
             if (error != nil) {
                 response(nil, error);
