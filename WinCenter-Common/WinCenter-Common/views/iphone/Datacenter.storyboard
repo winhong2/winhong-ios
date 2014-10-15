@@ -976,6 +976,19 @@
                     <navigationItem key="navigationItem" id="ZaL-uL-40g"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKe-Vg-mPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="VNI-uF-xV5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-dw-etV">
+                            <rect key="frame" x="137" y="585" width="46" height="30"/>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="-1422" y="333"/>
         </scene>
