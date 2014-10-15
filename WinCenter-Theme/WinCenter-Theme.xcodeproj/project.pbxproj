@@ -159,6 +159,8 @@
 		1886D52E19E97F5B005E1645 /* VmVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50419E97F5A005E1645 /* VmVO.m */; };
 		1886D52F19E97F5B005E1645 /* WarningInfoListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50619E97F5A005E1645 /* WarningInfoListResult.m */; };
 		1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50819E97F5A005E1645 /* WarningInfoVO.m */; };
+		18BBA43219EE54F900416479 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42F19EE54F900416479 /* UIBarButtonItem+Badge.m */; };
+		18BBA43319EE54F900416479 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA43119EE54F900416479 /* UIButton+Badge.m */; };
 		8658E52896184EA39528D92A /* libPods-WinCenter-Theme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */; };
 /* End PBXBuildFile section */
 
@@ -418,6 +420,10 @@
 		1886D50719E97F5A005E1645 /* WarningInfoVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoVO.h; sourceTree = "<group>"; };
 		1886D50819E97F5A005E1645 /* WarningInfoVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoVO.m; sourceTree = "<group>"; };
 		1886D50919E97F5A005E1645 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Models.h; path = "../../WinCenter-Common/WinCenter-Common/Models.h"; sourceTree = "<group>"; };
+		18BBA42E19EE54F900416479 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		18BBA42F19EE54F900416479 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		18BBA43019EE54F900416479 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		18BBA43119EE54F900416479 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-Theme.xcconfig"; path = "../Pods/Pods-WinCenter-Theme.xcconfig"; sourceTree = "<group>"; };
 		C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-Theme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -495,6 +501,10 @@
 				1886D3CD19E979F8005E1645 /* task */,
 				1886D3D419E979F8005E1645 /* UIStoryboard+Theme.h */,
 				1886D3D519E979F8005E1645 /* UIStoryboard+Theme.m */,
+				18BBA42E19EE54F900416479 /* UIBarButtonItem+Badge.h */,
+				18BBA42F19EE54F900416479 /* UIBarButtonItem+Badge.m */,
+				18BBA43019EE54F900416479 /* UIButton+Badge.h */,
+				18BBA43119EE54F900416479 /* UIButton+Badge.m */,
 				1886D3D619E979F8005E1645 /* vm */,
 				1886D3EF19E979F8005E1645 /* warning */,
 			);
@@ -1034,6 +1044,7 @@
 				1886D42119E979F8005E1645 /* BusinessVmCollectionCell.m in Sources */,
 				1886D42919E979F8005E1645 /* DatacenterContainerVC.m in Sources */,
 				1886D42419E979F8005E1645 /* MasterCollectionFooter.m in Sources */,
+				18BBA43219EE54F900416479 /* UIBarButtonItem+Badge.m in Sources */,
 				1886D44C19E979F8005E1645 /* VmContainerVC.m in Sources */,
 				1886D44B19E979F8005E1645 /* VmCollectionVC.m in Sources */,
 				1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */,
@@ -1095,6 +1106,7 @@
 				1886D52319E97F5B005E1645 /* StorageListResult.m in Sources */,
 				1886D43D19E979F8005E1645 /* PoolContainerVC.m in Sources */,
 				1886D52419E97F5B005E1645 /* StorageVO.m in Sources */,
+				18BBA43319EE54F900416479 /* UIButton+Badge.m in Sources */,
 				1886D52A19E97F5B005E1645 /* VmDiskVO.m in Sources */,
 				1886D43B19E979F8005E1645 /* NetworkCollectionVC.m in Sources */,
 				1886D44219E979F8005E1645 /* StorageCollectionVC.m in Sources */,
