@@ -487,7 +487,7 @@
                                     </items>
                                 </toolbar>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="资源池色块" translatesAutoresizingMaskIntoConstraints="NO" id="ox6-6Q-GX9">
-                                    <rect key="frame" x="20" y="64" width="202" height="274"/>
+                                    <rect key="frame" x="20" y="64" width="198" height="274"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pc-2g-JJe">
                                     <rect key="frame" x="281" y="73" width="86" height="43"/>
@@ -698,16 +698,16 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="搜索资源池" id="cHL-qn-Gme"/>
+                        <barButtonItem systemItem="search" id="cHL-qn-Gme"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="4aa-aH-K4Q"/>
                         <barButtonItem title="分类选项" id="h2X-wO-pdD"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="tor-TK-1iw"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="tor-TK-1iw"/>
                         <barButtonItem image="icon-operationLog" id="Y0L-od-91a">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="buB-ce-6JP" id="xO8-QM-MND"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="o3W-qO-An8"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="o3W-qO-An8"/>
                         <barButtonItem image="icon-warning" id="LJy-8Y-jgj">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="buB-ce-6JP" id="9Nd-fg-6BY"/>
@@ -1104,16 +1104,16 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="搜索资源池" id="mvF-2K-1Pp"/>
+                        <barButtonItem systemItem="search" id="mvF-2K-1Pp"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="eEz-Pk-JS8"/>
                         <barButtonItem title="分类选项" id="OCH-9W-dls"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="N2K-rJ-5Rt"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="N2K-rJ-5Rt"/>
                         <barButtonItem image="icon-operationLog" id="F3i-M5-2mW">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="buB-ce-6JP" id="OBb-Gu-6xk"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="vWV-GK-YIj"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="vWV-GK-YIj"/>
                         <barButtonItem image="icon-warning" id="iD6-1i-gFq">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="buB-ce-6JP" id="bWH-QS-Cg4"/>
@@ -1369,7 +1369,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="物理机－色块" translatesAutoresizingMaskIntoConstraints="NO" id="Rtp-Hp-3tm">
-                                    <rect key="frame" x="20" y="64" width="202" height="129"/>
+                                    <rect key="frame" x="20" y="64" width="198" height="125"/>
                                 </imageView>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9V-tb-obN">
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
@@ -1511,16 +1511,16 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="搜索物理机" id="ndD-Q6-cb8"/>
+                        <barButtonItem systemItem="search" id="ndD-Q6-cb8"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="5Lm-PH-T2V"/>
                         <barButtonItem title="分类选项" id="4Zr-if-iJO"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="k9B-Mc-aNn"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="k9B-Mc-aNn"/>
                         <barButtonItem image="icon-operationLog" id="N1h-zB-NDr">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="tNF-5l-310" id="ZnG-EQ-BRo"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Vbj-rO-Gph"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="Vbj-rO-Gph"/>
                         <barButtonItem image="icon-warning" id="b8q-IF-5E0">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="tNF-5l-310" id="Y7p-c2-ewK"/>
@@ -1847,16 +1847,16 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="搜索存储池" id="P9E-XQ-ZWa"/>
+                        <barButtonItem systemItem="search" id="P9E-XQ-ZWa"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="tQv-7A-t93"/>
                         <barButtonItem title="分类选项" id="NHe-7y-NkJ"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="vkj-mS-kr9"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="vkj-mS-kr9"/>
                         <barButtonItem image="icon-operationLog" id="dRJ-54-CHn">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="Vdc-u6-N4C" id="0uK-jN-i4F"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="BEk-Hx-2G3"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="BEk-Hx-2G3"/>
                         <barButtonItem image="icon-warning" id="YQi-84-ZJc">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="Vdc-u6-N4C" id="u4s-8B-cRm"/>
@@ -2210,16 +2210,16 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="搜索虚拟机" id="LBu-DC-Jfa"/>
+                        <barButtonItem systemItem="search" id="LBu-DC-Jfa"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="waZ-PP-DQJ"/>
                         <barButtonItem title="分类选项" id="Dhp-OO-KwD"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="KWr-MG-u6g"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="KWr-MG-u6g"/>
                         <barButtonItem image="icon-operationLog" id="sVu-61-G0q">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="8QM-yF-skn" id="7hs-bG-EgF"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="PIh-W8-2cJ"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="PIh-W8-2cJ"/>
                         <barButtonItem image="icon-warning" id="V3A-xc-8FO">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="8QM-yF-skn" id="2Jb-Tt-RC8"/>
@@ -2401,25 +2401,25 @@
                                             <rect key="frame" x="143" y="72" width="12" height="12"/>
                                             <color key="backgroundColor" red="0.0" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已分配业务域：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkj-dg-MBD">
-                                            <rect key="frame" x="159" y="44" width="98" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已分配业务系统：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkj-dg-MBD">
+                                            <rect key="frame" x="159" y="44" width="112" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" red="1" green="0.43697760390000001" blue="0.34735633240000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="未分配业务域：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pY-DG-KYx">
-                                            <rect key="frame" x="159" y="67" width="98" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="未分配业务系统：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pY-DG-KYx">
+                                            <rect key="frame" x="159" y="67" width="112" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z40-aj-XHx">
-                                            <rect key="frame" x="258" y="66" width="61" height="21"/>
+                                            <rect key="frame" x="268" y="66" width="61" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dd-8l-VPP">
-                                            <rect key="frame" x="258" y="44" width="61" height="23"/>
+                                            <rect key="frame" x="268" y="44" width="61" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -2442,16 +2442,16 @@
                         </connections>
                     </collectionView>
                     <toolbarItems>
-                        <barButtonItem title="搜索业务系统" id="f5i-W0-E3V"/>
+                        <barButtonItem systemItem="search" id="f5i-W0-E3V"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="CJI-ZF-w2K"/>
                         <barButtonItem title="分类选项" id="TxE-hW-U5u"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="mql-PK-Agx"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="mql-PK-Agx"/>
                         <barButtonItem image="icon-operationLog" id="FFh-sP-a3b">
                             <connections>
                                 <action selector="showControlRecordVC:" destination="rJv-N2-owX" id="Bvt-T6-9WD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="v2X-EV-8WD"/>
+                        <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="v2X-EV-8WD"/>
                         <barButtonItem image="icon-warning" id="lJZ-pC-5c2">
                             <connections>
                                 <action selector="showWarningInfoVC:" destination="rJv-N2-owX" id="CNI-kd-bWK"/>
@@ -2507,7 +2507,7 @@
         <image name="存储-色块" width="198" height="220"/>
         <image name="数据中心图标" width="18" height="18"/>
         <image name="物理机" width="12" height="11"/>
-        <image name="物理机－色块" width="202" height="129"/>
+        <image name="物理机－色块" width="198" height="125"/>
         <image name="管理员" width="12" height="12"/>
         <image name="自源池－首页" width="969" height="405"/>
         <image name="虚拟机-色块" width="198" height="125"/>
@@ -2515,7 +2515,7 @@
         <image name="虚拟机总数" width="12" height="11"/>
         <image name="虚拟机－面板" width="288" height="253"/>
         <image name="资源池-摘要-面板" width="288" height="280"/>
-        <image name="资源池色块" width="202" height="274"/>
+        <image name="资源池色块" width="198" height="274"/>
         <image name="资源池－存储池－面板" width="288" height="253"/>
         <image name="资源池－物理机－面板" width="288" height="280"/>
         <image name="进度条-红色" width="59" height="10"/>
