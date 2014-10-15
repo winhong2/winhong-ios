@@ -47,6 +47,7 @@ target 'WinCenter-iPhone' do
     #PNLine
     pod 'FRD3DBarChart', '~> 1.1.1'
     #HeartRateCurve
+    pod 'MagicPie', '~> 1.0.1'
 
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'
