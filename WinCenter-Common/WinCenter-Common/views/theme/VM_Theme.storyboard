@@ -976,7 +976,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.10.115.123" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLJ-09-KdU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLJ-09-KdU">
                                                 <rect key="frame" x="193" y="76" width="110" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -991,7 +991,7 @@
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="状态" translatesAutoresizingMaskIntoConstraints="NO" id="VtH-51-Hv4">
                                                 <rect key="frame" x="328" y="82" width="11" height="11"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="运行中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jch-lt-Y6Y">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jch-lt-Y6Y">
                                                 <rect key="frame" x="393" y="76" width="51" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1046,8 +1046,8 @@
                                         <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s-windows" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-C3-IAJ">
-                                        <rect key="frame" x="419" y="199" width="180" height="129"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="os-others" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-C3-IAJ">
+                                        <rect key="frame" x="419" y="199" width="55" height="55"/>
                                     </imageView>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-h3-0GU">
                                         <rect key="frame" x="546" y="556" width="17" height="21"/>
@@ -1055,8 +1055,8 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Windows Server 2003 Enterprise Edition" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUi-lo-yL1">
-                                        <rect key="frame" x="614" y="183" width="244" height="59"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUi-lo-yL1">
+                                        <rect key="frame" x="599" y="183" width="275" height="79"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                         <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1075,11 +1075,14 @@
                         <outlet property="memory" destination="9aX-3m-jaB" id="67x-XW-2Tk"/>
                         <outlet property="memoryType" destination="HNt-XV-nTc" id="8yj-kS-YAd"/>
                         <outlet property="name" destination="FVM-ZB-Ax7" id="w2e-cP-zvE"/>
-                        <outlet property="osType_image" destination="N9j-3A-q1m" id="X3X-dn-LcH"/>
+                        <outlet property="osType" destination="OUi-lo-yL1" id="xej-E7-I2U"/>
+                        <outlet property="osType_image" destination="Z4A-C3-IAJ" id="zc9-5b-dUA"/>
                         <outlet property="runningTime" destination="c82-x9-Y4P" id="cQ8-rx-kgH"/>
                         <outlet property="scrollView" destination="ozM-bn-Z9B" id="erC-fP-J27"/>
                         <outlet property="snopshotNum" destination="FMw-5D-H9T" id="TfW-DL-fW8"/>
+                        <outlet property="status" destination="jch-lt-Y6Y" id="DEy-Bb-dKk"/>
                         <outlet property="vcpu" destination="hw2-ks-FKy" id="bzE-Ae-QFw"/>
+                        <outlet property="vmIp" destination="dLJ-09-KdU" id="tD1-DX-hvG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRU-Dl-XIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1120,7 +1123,6 @@
         <image name="ip" width="10" height="11"/>
         <image name="ip-蓝色背景" width="10" height="11"/>
         <image name="os-others" width="55" height="55"/>
-        <image name="s-windows" width="180" height="129"/>
         <image name="内存-black" width="15" height="15"/>
         <image name="勾" width="17" height="12"/>
         <image name="时间" width="11" height="11"/>

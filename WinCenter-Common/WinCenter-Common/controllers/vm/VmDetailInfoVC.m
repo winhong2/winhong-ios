@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *memory;
 @property (weak, nonatomic) IBOutlet UILabel *snopshotNum;
 @property (weak, nonatomic) IBOutlet UIImageView *osType_image;
+@property (weak, nonatomic) IBOutlet UILabel *status;
+@property (weak, nonatomic) IBOutlet UILabel *vmIp;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *cpuPNChartArea;
@@ -164,8 +166,17 @@
     }];
 }
 - (void)refresh{
+    self.vmIp.text = self.vmVO.ip;
+    if(self.vmVO.ip == nil){
+        self.vmIp.text = @"(尚未配置ip)";
+    }
     self.name.text = self.vmVO.name;
+    self.status.text = [self.vmVO state_text];
+    self.status.textColor = [self.vmVO state_color];
     self.osType.text = self.vmVO.osType;
+    if(self.vmVO.osType == nil){
+        self.osType.text = @"(尚未安装)";
+    }
     self.isInstalledTool.text = [self.vmVO isInstallTools_text];
     self.runningTime.text = [NSString stringWithFormat:@"%d", self.vmVO.runTime];
     self.vcpu.text = [NSString stringWithFormat:@"%d", self.vmVO.vcpu];
