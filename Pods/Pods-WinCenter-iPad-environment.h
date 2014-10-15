@@ -6,6 +6,12 @@
 // project.
 
 
+// BMFloatingHeaderCollectionViewLayout
+#define COCOAPODS_POD_AVAILABLE_BMFloatingHeaderCollectionViewLayout
+#define COCOAPODS_VERSION_MAJOR_BMFloatingHeaderCollectionViewLayout 1
+#define COCOAPODS_VERSION_MINOR_BMFloatingHeaderCollectionViewLayout 0
+#define COCOAPODS_VERSION_PATCH_BMFloatingHeaderCollectionViewLayout 0
+
 // FastAnimationWithPOP
 #define COCOAPODS_POD_AVAILABLE_FastAnimationWithPOP
 #define COCOAPODS_VERSION_MAJOR_FastAnimationWithPOP 0
@@ -23,6 +29,12 @@
 #define COCOAPODS_VERSION_MAJOR_NSObject_ObjectMap 2
 #define COCOAPODS_VERSION_MINOR_NSObject_ObjectMap 3
 #define COCOAPODS_VERSION_PATCH_NSObject_ObjectMap 1
+
+// PDKTStickySectionHeadersCollectionViewLayout
+#define COCOAPODS_POD_AVAILABLE_PDKTStickySectionHeadersCollectionViewLayout
+#define COCOAPODS_VERSION_MAJOR_PDKTStickySectionHeadersCollectionViewLayout 0
+#define COCOAPODS_VERSION_MINOR_PDKTStickySectionHeadersCollectionViewLayout 1
+#define COCOAPODS_VERSION_PATCH_PDKTStickySectionHeadersCollectionViewLayout 0
 
 // PNChart
 #define COCOAPODS_POD_AVAILABLE_PNChart
