@@ -244,7 +244,8 @@
 		18DCEC2919ED7CAF00ED7BF8 /* Example3.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */; };
 		18DCEC2A19ED7CAF00ED7BF8 /* Example4.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */; };
 		18DCEC2D19ED7CAF00ED7BF8 /* GraphCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */; };
-		18DCEC2E19ED7CAF00ED7BF8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */; };
+		18DCEC4919EE098200ED7BF8 /* SimpleChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC4819EE098200ED7BF8 /* SimpleChartViewController.m */; };
+		18DCEC4C19EE099700ED7BF8 /* Big3RevenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC4B19EE099700ED7BF8 /* Big3RevenueViewController.m */; };
 		472031B77D994FCC9305C962 /* libPods-WinCenter-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */; };
 /* End PBXBuildFile section */
 
@@ -654,8 +655,10 @@
 		18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example4.m; sourceTree = "<group>"; };
 		18DCEC2119ED7CAE00ED7BF8 /* GraphCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphCalcViewController.h; sourceTree = "<group>"; };
 		18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphCalcViewController.m; sourceTree = "<group>"; };
-		18DCEC2319ED7CAF00ED7BF8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		18DCEC4719EE098200ED7BF8 /* SimpleChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleChartViewController.h; sourceTree = "<group>"; };
+		18DCEC4819EE098200ED7BF8 /* SimpleChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleChartViewController.m; sourceTree = "<group>"; };
+		18DCEC4A19EE099700ED7BF8 /* Big3RevenueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Big3RevenueViewController.h; sourceTree = "<group>"; };
+		18DCEC4B19EE099700ED7BF8 /* Big3RevenueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Big3RevenueViewController.m; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1426,20 +1429,22 @@
 		18DCEC1219ED7CAE00ED7BF8 /* FRD3DBarChart */ = {
 			isa = PBXGroup;
 			children = (
-				18DCEC1319ED7CAE00ED7BF8 /* ClickThroughRatesViewController.h */,
-				18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */,
-				18DCEC1519ED7CAE00ED7BF8 /* Example1.h */,
-				18DCEC1619ED7CAE00ED7BF8 /* Example1.m */,
-				18DCEC1719ED7CAE00ED7BF8 /* Example2.h */,
-				18DCEC1819ED7CAE00ED7BF8 /* Example2.m */,
+				18DCEC4719EE098200ED7BF8 /* SimpleChartViewController.h */,
+				18DCEC4819EE098200ED7BF8 /* SimpleChartViewController.m */,
 				18DCEC1919ED7CAE00ED7BF8 /* Example3.h */,
 				18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */,
+				18DCEC4A19EE099700ED7BF8 /* Big3RevenueViewController.h */,
+				18DCEC4B19EE099700ED7BF8 /* Big3RevenueViewController.m */,
 				18DCEC1B19ED7CAE00ED7BF8 /* Example4.h */,
 				18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */,
 				18DCEC2119ED7CAE00ED7BF8 /* GraphCalcViewController.h */,
 				18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */,
-				18DCEC2319ED7CAF00ED7BF8 /* MainViewController.h */,
-				18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */,
+				18DCEC1519ED7CAE00ED7BF8 /* Example1.h */,
+				18DCEC1619ED7CAE00ED7BF8 /* Example1.m */,
+				18DCEC1319ED7CAE00ED7BF8 /* ClickThroughRatesViewController.h */,
+				18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */,
+				18DCEC1719ED7CAE00ED7BF8 /* Example2.h */,
+				18DCEC1819ED7CAE00ED7BF8 /* Example2.m */,
 			);
 			path = FRD3DBarChart;
 			sourceTree = "<group>";
@@ -1640,6 +1645,7 @@
 				1886D61D19E97F82005E1645 /* WarningInfoListResult.m in Sources */,
 				185CB3D319E7796F00DC8E8A /* MasterCollectionCell.m in Sources */,
 				185CB40119E7796F00DC8E8A /* VmNetworkCollectionVC.m in Sources */,
+				18DCEC4919EE098200ED7BF8 /* SimpleChartViewController.m in Sources */,
 				1886D61419E97F82005E1645 /* StorageVolumnVO.m in Sources */,
 				18DCEC2619ED7CAF00ED7BF8 /* ClickThroughRatesViewController.m in Sources */,
 				185CB3E419E7796F00DC8E8A /* LoginSettingVC.m in Sources */,
@@ -1647,6 +1653,7 @@
 				18DCEC0519ED6F4400ED7BF8 /* PCChartsTableViewController.m in Sources */,
 				18DCEC2A19ED7CAF00ED7BF8 /* Example4.m in Sources */,
 				180BF6F819ECB0960029D2A4 /* EPieChartViewController.m in Sources */,
+				18DCEC4C19EE099700ED7BF8 /* Big3RevenueViewController.m in Sources */,
 				185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */,
 				180BF72019ECB0960029D2A4 /* JYRadarChartVC.m in Sources */,
 				185CB3D519E7796F00DC8E8A /* MasterCollectionHeader.m in Sources */,
@@ -1735,7 +1742,6 @@
 				1886D60719E97F82005E1645 /* HostVO.m in Sources */,
 				180BF74019ECB0960029D2A4 /* SHRootController.m in Sources */,
 				18DCEBE519ED0DA700ED7BF8 /* JBChartHeaderView.m in Sources */,
-				18DCEC2E19ED7CAF00ED7BF8 /* MainViewController.m in Sources */,
 				1886D61619E97F82005E1645 /* UserVO.m in Sources */,
 				18A4D43E19B560D400415896 /* main.m in Sources */,
 				185CB3F119E7796F00DC8E8A /* StorageDetailInfoVC.m in Sources */,
