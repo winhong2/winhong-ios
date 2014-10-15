@@ -31,6 +31,7 @@
     cell.label3.text = [NSString stringWithFormat:@"%d",hostVO.cpuSlots];
     cell.label4.text = [NSString stringWithFormat:@"%d",hostVO.cpu];
     cell.label5.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory/1024.0];
+    cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.storage];
     cell.status.text = [hostVO state_text];
     cell.status.textColor = [hostVO state_color];
     
