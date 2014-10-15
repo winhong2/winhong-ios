@@ -37,8 +37,6 @@
 #import <Foundation/Foundation.h>
 #import "FRD3DBarChartViewController.h"
 
-#import <Foundation/Foundation.h>
-
 @interface Example4 : NSObject<FRD3DBarChartViewControllerDelegate>
 
 @end

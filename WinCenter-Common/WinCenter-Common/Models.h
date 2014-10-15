@@ -10,6 +10,8 @@
 #import <NSObject+ObjectMap.h>
 #import <Unirest/UNIRest.h>
 #import <PNChart/PNChart.h>
+#import <pop/POP.h>
+#import <FastAnimationWithPOP/FastAnimationWithPop.h>
 
 #ifndef WinCenter_Common_Models_h
 #define WinCenter_Common_Models_h

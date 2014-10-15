@@ -220,6 +220,8 @@
 		18A4D43C19B560D400415896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D43A19B560D400415896 /* InfoPlist.strings */; };
 		18A4D43E19B560D400415896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D43D19B560D400415896 /* main.m */; };
 		18A4D44219B560D400415896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D44119B560D400415896 /* AppDelegate.m */; };
+		18BBA42019EE43FE00416479 /* F3BarGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41D19EE43FE00416479 /* F3BarGauge.m */; };
+		18BBA42119EE43FE00416479 /* F3BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41F19EE43FE00416479 /* F3BarViewController.m */; };
 		18DCEBE119ED0DA700ED7BF8 /* JBAreaChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */; };
 		18DCEBE219ED0DA700ED7BF8 /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCA19ED0DA700ED7BF8 /* JBBarChartFooterView.m */; };
 		18DCEBE319ED0DA700ED7BF8 /* JBBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCC19ED0DA700ED7BF8 /* JBBarChartViewController.m */; };
@@ -244,7 +246,13 @@
 		18DCEC2919ED7CAF00ED7BF8 /* Example3.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */; };
 		18DCEC2A19ED7CAF00ED7BF8 /* Example4.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */; };
 		18DCEC2D19ED7CAF00ED7BF8 /* GraphCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */; };
-		18DCEC2E19ED7CAF00ED7BF8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */; };
+		18DCEC4919EE098200ED7BF8 /* SimpleChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC4819EE098200ED7BF8 /* SimpleChartViewController.m */; };
+		18DCEC4C19EE099700ED7BF8 /* Big3RevenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC4B19EE099700ED7BF8 /* Big3RevenueViewController.m */; };
+		18DCEC5A19EE20F900ED7BF8 /* Example1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC4F19EE20F900ED7BF8 /* Example1Controller.m */; };
+		18DCEC5B19EE20F900ED7BF8 /* Example1PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC5119EE20F900ED7BF8 /* Example1PieView.m */; };
+		18DCEC5C19EE20F900ED7BF8 /* Example2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC5319EE20F900ED7BF8 /* Example2Controller.m */; };
+		18DCEC5D19EE20F900ED7BF8 /* Example2PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC5519EE20F900ED7BF8 /* Example2PieView.m */; };
+		18DCEC5F19EE20F900ED7BF8 /* MyPieElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEC5919EE20F900ED7BF8 /* MyPieElement.m */; };
 		472031B77D994FCC9305C962 /* libPods-WinCenter-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A170202CD2432BA61AB707 /* libPods-WinCenter-iPhone.a */; };
 /* End PBXBuildFile section */
 
@@ -603,6 +611,10 @@
 		18A4D43F19B560D400415896 /* WinCenter-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinCenter-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		18A4D44019B560D400415896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A4D44119B560D400415896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18BBA41C19EE43FE00416479 /* F3BarGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarGauge.h; sourceTree = "<group>"; };
+		18BBA41D19EE43FE00416479 /* F3BarGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarGauge.m; sourceTree = "<group>"; };
+		18BBA41E19EE43FE00416479 /* F3BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarViewController.h; sourceTree = "<group>"; };
+		18BBA41F19EE43FE00416479 /* F3BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarViewController.m; sourceTree = "<group>"; };
 		18DCEBC719ED0DA700ED7BF8 /* JBAreaChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBAreaChartViewController.h; sourceTree = "<group>"; };
 		18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBAreaChartViewController.m; sourceTree = "<group>"; };
 		18DCEBC919ED0DA700ED7BF8 /* JBBarChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartFooterView.h; sourceTree = "<group>"; };
@@ -654,8 +666,20 @@
 		18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example4.m; sourceTree = "<group>"; };
 		18DCEC2119ED7CAE00ED7BF8 /* GraphCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphCalcViewController.h; sourceTree = "<group>"; };
 		18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphCalcViewController.m; sourceTree = "<group>"; };
-		18DCEC2319ED7CAF00ED7BF8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		18DCEC4719EE098200ED7BF8 /* SimpleChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleChartViewController.h; sourceTree = "<group>"; };
+		18DCEC4819EE098200ED7BF8 /* SimpleChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleChartViewController.m; sourceTree = "<group>"; };
+		18DCEC4A19EE099700ED7BF8 /* Big3RevenueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Big3RevenueViewController.h; sourceTree = "<group>"; };
+		18DCEC4B19EE099700ED7BF8 /* Big3RevenueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Big3RevenueViewController.m; sourceTree = "<group>"; };
+		18DCEC4E19EE20F900ED7BF8 /* Example1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example1Controller.h; sourceTree = "<group>"; };
+		18DCEC4F19EE20F900ED7BF8 /* Example1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example1Controller.m; sourceTree = "<group>"; };
+		18DCEC5019EE20F900ED7BF8 /* Example1PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example1PieView.h; sourceTree = "<group>"; };
+		18DCEC5119EE20F900ED7BF8 /* Example1PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example1PieView.m; sourceTree = "<group>"; };
+		18DCEC5219EE20F900ED7BF8 /* Example2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example2Controller.h; sourceTree = "<group>"; };
+		18DCEC5319EE20F900ED7BF8 /* Example2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example2Controller.m; sourceTree = "<group>"; };
+		18DCEC5419EE20F900ED7BF8 /* Example2PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example2PieView.h; sourceTree = "<group>"; };
+		18DCEC5519EE20F900ED7BF8 /* Example2PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example2PieView.m; sourceTree = "<group>"; };
+		18DCEC5819EE20F900ED7BF8 /* MyPieElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPieElement.h; sourceTree = "<group>"; };
+		18DCEC5919EE20F900ED7BF8 /* MyPieElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPieElement.m; sourceTree = "<group>"; };
 		A4825152B7144FD988BCC1D0 /* Pods-WinCenter-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPhone.xcconfig"; path = "../Pods/Pods-WinCenter-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -700,6 +724,8 @@
 				180BF6B119ECB0960029D2A4 /* PNLineChart */,
 				18DCEC1219ED7CAE00ED7BF8 /* FRD3DBarChart */,
 				18DCEC0719ED757E00ED7BF8 /* HeartRateCurve */,
+				18DCEC4D19EE20F900ED7BF8 /* MagicPie */,
+				18BBA41B19EE43FE00416479 /* F3BarGauge */,
 			);
 			name = charts;
 			path = "../../WinCenter-Common/WinCenter-Common/charts";
@@ -1381,6 +1407,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18BBA41B19EE43FE00416479 /* F3BarGauge */ = {
+			isa = PBXGroup;
+			children = (
+				18BBA41C19EE43FE00416479 /* F3BarGauge.h */,
+				18BBA41D19EE43FE00416479 /* F3BarGauge.m */,
+				18BBA41E19EE43FE00416479 /* F3BarViewController.h */,
+				18BBA41F19EE43FE00416479 /* F3BarViewController.m */,
+			);
+			path = F3BarGauge;
+			sourceTree = "<group>";
+		};
 		18DCEBEB19ED139E00ED7BF8 /* RealtimeCurve */ = {
 			isa = PBXGroup;
 			children = (
@@ -1426,22 +1463,41 @@
 		18DCEC1219ED7CAE00ED7BF8 /* FRD3DBarChart */ = {
 			isa = PBXGroup;
 			children = (
-				18DCEC1319ED7CAE00ED7BF8 /* ClickThroughRatesViewController.h */,
-				18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */,
-				18DCEC1519ED7CAE00ED7BF8 /* Example1.h */,
-				18DCEC1619ED7CAE00ED7BF8 /* Example1.m */,
-				18DCEC1719ED7CAE00ED7BF8 /* Example2.h */,
-				18DCEC1819ED7CAE00ED7BF8 /* Example2.m */,
+				18DCEC4719EE098200ED7BF8 /* SimpleChartViewController.h */,
+				18DCEC4819EE098200ED7BF8 /* SimpleChartViewController.m */,
 				18DCEC1919ED7CAE00ED7BF8 /* Example3.h */,
 				18DCEC1A19ED7CAE00ED7BF8 /* Example3.m */,
+				18DCEC4A19EE099700ED7BF8 /* Big3RevenueViewController.h */,
+				18DCEC4B19EE099700ED7BF8 /* Big3RevenueViewController.m */,
 				18DCEC1B19ED7CAE00ED7BF8 /* Example4.h */,
 				18DCEC1C19ED7CAE00ED7BF8 /* Example4.m */,
 				18DCEC2119ED7CAE00ED7BF8 /* GraphCalcViewController.h */,
 				18DCEC2219ED7CAE00ED7BF8 /* GraphCalcViewController.m */,
-				18DCEC2319ED7CAF00ED7BF8 /* MainViewController.h */,
-				18DCEC2419ED7CAF00ED7BF8 /* MainViewController.m */,
+				18DCEC1519ED7CAE00ED7BF8 /* Example1.h */,
+				18DCEC1619ED7CAE00ED7BF8 /* Example1.m */,
+				18DCEC1319ED7CAE00ED7BF8 /* ClickThroughRatesViewController.h */,
+				18DCEC1419ED7CAE00ED7BF8 /* ClickThroughRatesViewController.m */,
+				18DCEC1719ED7CAE00ED7BF8 /* Example2.h */,
+				18DCEC1819ED7CAE00ED7BF8 /* Example2.m */,
 			);
 			path = FRD3DBarChart;
+			sourceTree = "<group>";
+		};
+		18DCEC4D19EE20F900ED7BF8 /* MagicPie */ = {
+			isa = PBXGroup;
+			children = (
+				18DCEC4E19EE20F900ED7BF8 /* Example1Controller.h */,
+				18DCEC4F19EE20F900ED7BF8 /* Example1Controller.m */,
+				18DCEC5019EE20F900ED7BF8 /* Example1PieView.h */,
+				18DCEC5119EE20F900ED7BF8 /* Example1PieView.m */,
+				18DCEC5219EE20F900ED7BF8 /* Example2Controller.h */,
+				18DCEC5319EE20F900ED7BF8 /* Example2Controller.m */,
+				18DCEC5419EE20F900ED7BF8 /* Example2PieView.h */,
+				18DCEC5519EE20F900ED7BF8 /* Example2PieView.m */,
+				18DCEC5819EE20F900ED7BF8 /* MyPieElement.h */,
+				18DCEC5919EE20F900ED7BF8 /* MyPieElement.m */,
+			);
+			path = MagicPie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1621,6 +1677,7 @@
 				1886D60619E97F82005E1645 /* HostStatVO.m in Sources */,
 				180BF6EF19ECB0960029D2A4 /* chatView.m in Sources */,
 				185CB40219E7796F00DC8E8A /* VmNewVC.m in Sources */,
+				18BBA42119EE43FE00416479 /* F3BarViewController.m in Sources */,
 				185CB3FF19E7796F00DC8E8A /* VmMigrateSelectHostListVC.m in Sources */,
 				185CB3E919E7796F00DC8E8A /* NetworkContainerVC.m in Sources */,
 				185CB3F319E7796F00DC8E8A /* StorageDiskCollectionVC.m in Sources */,
@@ -1638,8 +1695,10 @@
 				18DCEBE919ED0DA700ED7BF8 /* JBLineChartFooterView.m in Sources */,
 				180BF72C19ECB0960029D2A4 /* MZViewController.m in Sources */,
 				1886D61D19E97F82005E1645 /* WarningInfoListResult.m in Sources */,
+				18BBA42019EE43FE00416479 /* F3BarGauge.m in Sources */,
 				185CB3D319E7796F00DC8E8A /* MasterCollectionCell.m in Sources */,
 				185CB40119E7796F00DC8E8A /* VmNetworkCollectionVC.m in Sources */,
+				18DCEC4919EE098200ED7BF8 /* SimpleChartViewController.m in Sources */,
 				1886D61419E97F82005E1645 /* StorageVolumnVO.m in Sources */,
 				18DCEC2619ED7CAF00ED7BF8 /* ClickThroughRatesViewController.m in Sources */,
 				185CB3E419E7796F00DC8E8A /* LoginSettingVC.m in Sources */,
@@ -1647,8 +1706,10 @@
 				18DCEC0519ED6F4400ED7BF8 /* PCChartsTableViewController.m in Sources */,
 				18DCEC2A19ED7CAF00ED7BF8 /* Example4.m in Sources */,
 				180BF6F819ECB0960029D2A4 /* EPieChartViewController.m in Sources */,
+				18DCEC4C19EE099700ED7BF8 /* Big3RevenueViewController.m in Sources */,
 				185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */,
 				180BF72019ECB0960029D2A4 /* JYRadarChartVC.m in Sources */,
+				18DCEC5F19EE20F900ED7BF8 /* MyPieElement.m in Sources */,
 				185CB3D519E7796F00DC8E8A /* MasterCollectionHeader.m in Sources */,
 				185CB3D119E7796F00DC8E8A /* BusinessVmCollectionCell.m in Sources */,
 				180BF72E19ECB0960029D2A4 /* PercentageChartLayer.m in Sources */,
@@ -1719,6 +1780,7 @@
 				180BF74F19ECB0960029D2A4 /* WeekStatVC.m in Sources */,
 				180BF72D19ECB0960029D2A4 /* PercentageChart.m in Sources */,
 				185CB40519E7796F00DC8E8A /* PopWarningInfoVC.m in Sources */,
+				18DCEC5B19EE20F900ED7BF8 /* Example1PieView.m in Sources */,
 				185CB3D219E7796F00DC8E8A /* BusinessVmCollectionVC.m in Sources */,
 				185CB3E119E7796F00DC8E8A /* HostDetailPerformanceVC.m in Sources */,
 				1886D60F19E97F82005E1645 /* PoolVO.m in Sources */,
@@ -1735,12 +1797,12 @@
 				1886D60719E97F82005E1645 /* HostVO.m in Sources */,
 				180BF74019ECB0960029D2A4 /* SHRootController.m in Sources */,
 				18DCEBE519ED0DA700ED7BF8 /* JBChartHeaderView.m in Sources */,
-				18DCEC2E19ED7CAF00ED7BF8 /* MainViewController.m in Sources */,
 				1886D61619E97F82005E1645 /* UserVO.m in Sources */,
 				18A4D43E19B560D400415896 /* main.m in Sources */,
 				185CB3F119E7796F00DC8E8A /* StorageDetailInfoVC.m in Sources */,
 				1886D5FB19E97F82005E1645 /* ControlRecordListResult.m in Sources */,
 				185CB3FA19E7796F00DC8E8A /* VmDetailInfoVC.m in Sources */,
+				18DCEC5A19EE20F900ED7BF8 /* Example1Controller.m in Sources */,
 				185CB3D719E7796F00DC8E8A /* MasterContainerVC.m in Sources */,
 				1886D61719E97F82005E1645 /* VmDiskListResult.m in Sources */,
 				180BF6F319ECB0960029D2A4 /* InfoView.m in Sources */,
@@ -1754,6 +1816,7 @@
 				1886D61219E97F82005E1645 /* StorageVO.m in Sources */,
 				185CB3DD19E7796F00DC8E8A /* DatacenterTableVC.m in Sources */,
 				1886D5F919E97F82005E1645 /* BusinessVmVO.m in Sources */,
+				18DCEC5C19EE20F900ED7BF8 /* Example2Controller.m in Sources */,
 				180BF6EA19ECB0960029D2A4 /* PoolDatagridModel.m in Sources */,
 				180BF6DE19ECB0960029D2A4 /* BTSpiderPlotterView.m in Sources */,
 				180BF72F19ECB0960029D2A4 /* PercentageChartVC.m in Sources */,
@@ -1764,6 +1827,7 @@
 				18DCEBE219ED0DA700ED7BF8 /* JBBarChartFooterView.m in Sources */,
 				185CB3F019E7796F00DC8E8A /* StorageContainerVC.m in Sources */,
 				1886D61A19E97F82005E1645 /* VmNetworkListResult.m in Sources */,
+				18DCEC5D19EE20F900ED7BF8 /* Example2PieView.m in Sources */,
 				185CB3DF19E7796F00DC8E8A /* HostContainerVC.m in Sources */,
 				18DCEBE619ED0DA700ED7BF8 /* JBChartInformationView.m in Sources */,
 				180BF6EB19ECB0960029D2A4 /* PoolDatagridSegement.m in Sources */,

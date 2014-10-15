@@ -44,35 +44,24 @@
 
 @property (nonatomic, strong) Example1 *example1;
 
-@property (nonatomic, strong) FRD3DBarChartViewController *frd3DBarCharVC;
 @end
 
 @implementation GraphCalcViewController
-@synthesize contentView = _contentView;
 
 @synthesize example1 = _example1;
 
-@synthesize frd3DBarCharVC = _frd3DBarCharVC;
-
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
     self.example1 = [[Example1 alloc] init];
+    self.frd3dBarChartDelegate = self.example1;
     
-    UIStoryboard *storyboard = self.storyboard;
-    self.frd3DBarCharVC = [storyboard instantiateViewControllerWithIdentifier:@"FRD3DBarChart"];
-    
-    [self addChildViewController:self.frd3DBarCharVC];
-    self.frd3DBarCharVC.frd3dBarChartDelegate = self.example1;
-    
-    [self.contentView addSubview:self.frd3DBarCharVC.view];
-    
-    [self.frd3DBarCharVC updateChartAnimated:NO animationDuration:0.0 options:0];
+    [super viewDidLoad];
+
+    [self updateChartAnimated:NO animationDuration:0.0 options:0];
 }
 
 - (void)viewDidUnload
 {
-    [self setContentView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -87,27 +76,45 @@
 {
     [super viewDidAppear:animated];
     
-    [self.frd3DBarCharVC updateChartAnimated:YES animationDuration:1.0 options:0];
+    [self updateChartAnimated:YES animationDuration:1.0 options:0];
+}
+- (IBAction)segmentAction:(id)sender {
+    switch (((UISegmentedControl*)sender).selectedSegmentIndex) {
+        case 0:
+            [self pyramidAction:nil];
+            break;
+        case 1:
+            [self domeAction:nil];
+            break;
+        case 2:
+            [self mexHatAction:nil];
+            break;
+        case 3:
+            [self sinAction:nil];
+            break;
+        default:
+            break;
+    }
 }
 
 - (IBAction)pyramidAction:(id)sender {
     self.example1.equationType = EquationTypePyramid;
-   [self.frd3DBarCharVC updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
+   [self updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
 }
 
 - (IBAction)domeAction:(id)sender {
     self.example1.equationType = EquationTypeDome;
-    [self.frd3DBarCharVC updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
+    [self updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
 }
 
 - (IBAction)mexHatAction:(id)sender {
     self.example1.equationType = EquationTypeMexicanHatWavelet;
-    [self.frd3DBarCharVC updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
+    [self updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
 }
 
 - (IBAction)sinAction:(id)sender {
     self.example1.equationType = EquationTypeSin;
-    [self.frd3DBarCharVC updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
+    [self updateChartAnimated:YES animationDuration:1.0 options:kUpdateChartOptionsDoNotUpdateLegends];
 }
 
 

@@ -35,11 +35,9 @@
 
 
 #import <UIKit/UIKit.h>
+#import "FRD3DBarChartViewController.h"
 
-@interface GraphCalcViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-
+@interface GraphCalcViewController : FRD3DBarChartViewController
 
 - (IBAction)pyramidAction:(id)sender;
 - (IBAction)domeAction:(id)sender;

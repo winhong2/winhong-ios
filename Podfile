@@ -12,6 +12,8 @@ platform :ios, '7.1'
 
 target 'WinCenter-iPad' do
     pod 'PNChart', '~> 0.5'
+    
+    pod 'FastAnimationWithPOP', '~> 0.0.2'
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'
  xcodeproj 'WinCenter-iPad/WinCenter-iPad.xcodeproj'
@@ -19,6 +21,8 @@ end
 
 target 'WinCenter-Theme' do
     pod 'PNChart', '~> 0.5'
+    
+    pod 'FastAnimationWithPOP', '~> 0.0.2'
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'
     xcodeproj 'WinCenter-Theme/WinCenter-Theme.xcodeproj'
@@ -47,7 +51,9 @@ target 'WinCenter-iPhone' do
     #PNLine
     pod 'FRD3DBarChart', '~> 1.1.1'
     #HeartRateCurve
+    pod 'MagicPie', '~> 1.0.1'
 
+    pod 'FastAnimationWithPOP', '~> 0.0.2'
     pod 'Unirest', '~> 1.1.3'
     pod 'NSObject-ObjectMap', '~> 2.3.1'
  xcodeproj 'WinCenter-iPhone/WinCenter-iPhone.xcodeproj'
