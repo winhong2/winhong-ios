@@ -24,6 +24,12 @@
 #define COCOAPODS_VERSION_MINOR_FRD3DBarChart 1
 #define COCOAPODS_VERSION_PATCH_FRD3DBarChart 1
 
+// FastAnimationWithPOP
+#define COCOAPODS_POD_AVAILABLE_FastAnimationWithPOP
+#define COCOAPODS_VERSION_MAJOR_FastAnimationWithPOP 0
+#define COCOAPODS_VERSION_MINOR_FastAnimationWithPOP 0
+#define COCOAPODS_VERSION_PATCH_FastAnimationWithPOP 2
+
 // FrameAccessor
 #define COCOAPODS_POD_AVAILABLE_FrameAccessor
 #define COCOAPODS_VERSION_MAJOR_FrameAccessor 1
@@ -107,4 +113,10 @@
 #define COCOAPODS_VERSION_MAJOR_Unirest 1
 #define COCOAPODS_VERSION_MINOR_Unirest 1
 #define COCOAPODS_VERSION_PATCH_Unirest 3
+
+// pop
+#define COCOAPODS_POD_AVAILABLE_pop
+#define COCOAPODS_VERSION_MAJOR_pop 1
+#define COCOAPODS_VERSION_MINOR_pop 0
+#define COCOAPODS_VERSION_PATCH_pop 6
 

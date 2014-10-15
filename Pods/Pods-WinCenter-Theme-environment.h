@@ -6,6 +6,12 @@
 // project.
 
 
+// FastAnimationWithPOP
+#define COCOAPODS_POD_AVAILABLE_FastAnimationWithPOP
+#define COCOAPODS_VERSION_MAJOR_FastAnimationWithPOP 0
+#define COCOAPODS_VERSION_MINOR_FastAnimationWithPOP 0
+#define COCOAPODS_VERSION_PATCH_FastAnimationWithPOP 2
+
 // NSObject-ObjectMap
 #define COCOAPODS_POD_AVAILABLE_NSObject_ObjectMap
 #define COCOAPODS_VERSION_MAJOR_NSObject_ObjectMap 2
@@ -29,4 +35,10 @@
 #define COCOAPODS_VERSION_MAJOR_Unirest 1
 #define COCOAPODS_VERSION_MINOR_Unirest 1
 #define COCOAPODS_VERSION_PATCH_Unirest 3
+
+// pop
+#define COCOAPODS_POD_AVAILABLE_pop
+#define COCOAPODS_VERSION_MAJOR_pop 1
+#define COCOAPODS_VERSION_MINOR_pop 0
+#define COCOAPODS_VERSION_PATCH_pop 6
 
