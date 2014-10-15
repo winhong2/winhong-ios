@@ -13,6 +13,7 @@ platform :ios, '7.1'
 target 'WinCenter-iPad' do
     pod 'PNChart', '~> 0.5'
     
+    pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
     pod 'MBProgressHUD', '~> 0.9'
@@ -25,6 +26,7 @@ end
 target 'WinCenter-Theme' do
     pod 'PNChart', '~> 0.5'
     
+    pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
     pod 'MBProgressHUD', '~> 0.9'
@@ -59,6 +61,7 @@ target 'WinCenter-iPhone' do
     #HeartRateCurve
     pod 'MagicPie', '~> 1.0.1'
 
+    pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
     pod 'MBProgressHUD', '~> 0.9'

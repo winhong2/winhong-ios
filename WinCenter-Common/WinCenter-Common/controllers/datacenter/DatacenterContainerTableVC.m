@@ -30,12 +30,6 @@
     }];
 }
 
-- (void)didFinished:(DatacenterTableVC *)controller{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [self.infoVC refresh];
-    [self refresh];
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"toSelect"]){
@@ -77,6 +71,20 @@
             [self showControlRecordVC:nil];
         }
     }
+}
+
+- (void)didFinished:(DatacenterTableVC *)controller{
+    [self mz_dismissFormSheetControllerAnimated:YES completionHandler:nil];
+    if(self.infoVC){
+        [self.infoVC refresh];
+    }
+    [self refresh];
+}
+- (IBAction)showSelectForm:(id)sender {
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterTableVCNav"];
+    DatacenterTableVC *tableVC = [[vc childViewControllers] firstObject];
+    tableVC.delegate = self;
+    [self mz_presentFormSheetWithViewController:vc animated:YES completionHandler:nil];
 }
 
 -(IBAction)showOptionsVC:(id)sender{
