@@ -252,12 +252,28 @@
                         DatacenterDetailCollectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DatacenterPoolCollectionHeader" forIndexPath:indexPath];
                         
                         header.poolCount.text = [NSString stringWithFormat:@"%d",0];
+                        header.haPoolCount.text = [NSString stringWithFormat:@"%d",0];
+                        header.elasticCalPoolCount.text = [NSString stringWithFormat:@"%d",0];
                         header.cpuUsedCount.text = [NSString stringWithFormat:@"%.2fGHz",20.0];
                         header.cpuUnitUnusedCount.text = [NSString stringWithFormat:@"%.2fGHz",20.0];
                         header.memeryUsedSize.text = [NSString stringWithFormat:@"%.2fG",10.00];
                         header.memoryUnusedSize.text = [NSString stringWithFormat:@"%.2fG",10.00];
                         header.storageUsedSize.text = [NSString stringWithFormat:@"%.2fT",1.0];
                         header.storageUnusedSize.text = [NSString stringWithFormat:@"%.2fT",1.0];
+                        
+                        //缩起
+                        header.label1.text = [NSString stringWithFormat:@"%d",0];
+                        header.label2.text = [NSString stringWithFormat:@"%d",0];
+                        header.label3.text = [NSString stringWithFormat:@"%d",0];
+                        header.label4.text = [NSString stringWithFormat:@"%d",0];
+                        header.label5.text = [NSString stringWithFormat:@"%d",0];
+                        header.label6.text = [NSString stringWithFormat:@"%d",0];
+                        header.label7.text = [NSString stringWithFormat:@"%.2f",20.00];
+                        header.label8.text = [NSString stringWithFormat:@"%.2f",10.00];
+                        header.label9.text = [NSString stringWithFormat:@"%.2f",10.00];
+                        header.label10.text = [NSString stringWithFormat:@"%.2f",2.0];
+                        header.label11.text = [NSString stringWithFormat:@"%.2f",1.0];
+                        header.label12.text = [NSString stringWithFormat:@"%.2f",1.0];
                         
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.cpuChartGroup.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];

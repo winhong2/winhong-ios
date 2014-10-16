@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *vmCount;
 @property (weak, nonatomic) IBOutlet UILabel *businessCount;
 @property (weak, nonatomic) IBOutlet UILabel *businessVmCount;
+@property (weak, nonatomic) IBOutlet UILabel *haPoolCount;
+@property (weak, nonatomic) IBOutlet UILabel *elasticCalPoolCount;
 
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
@@ -26,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *label8;
 @property (weak, nonatomic) IBOutlet UILabel *label9;
 @property (weak, nonatomic) IBOutlet UILabel *label10;
+@property (weak, nonatomic) IBOutlet UILabel *label11;
+@property (weak, nonatomic) IBOutlet UILabel *label12;
 
 @property (weak, nonatomic) IBOutlet UIView *cpuChartGroup;
 @property (weak, nonatomic) IBOutlet UIView *memoryChartGroup;
