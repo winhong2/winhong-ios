@@ -35,40 +35,40 @@
     cell.status.text = [hostVO state_text];
     cell.status.textColor = [hostVO state_color];
     
-    cell.progress_vm.litEffect = NO;
-    cell.progress_vm.numBars = 10;
-    cell.progress_vm.value = 1;
-    cell.progress_vm.backgroundColor = [UIColor clearColor];
-    cell.progress_vm.outerBorderColor = [UIColor clearColor];
-    cell.progress_vm.innerBorderColor = [UIColor clearColor];
+    cell.progress_1.litEffect = NO;
+    cell.progress_1.numBars = 10;
+    cell.progress_1.value = 1;
+    cell.progress_1.backgroundColor = [UIColor clearColor];
+    cell.progress_1.outerBorderColor = [UIColor clearColor];
+    cell.progress_1.innerBorderColor = [UIColor clearColor];
     
-    cell.progress_storage.litEffect = NO;
-    cell.progress_storage.numBars = 10;
-    cell.progress_storage.value = 1;
-    cell.progress_storage.backgroundColor = [UIColor clearColor];
-    cell.progress_storage.outerBorderColor = [UIColor clearColor];
-    cell.progress_storage.innerBorderColor = [UIColor clearColor];
+    cell.progress_2.litEffect = NO;
+    cell.progress_2.numBars = 10;
+    cell.progress_2.value = 1;
+    cell.progress_2.backgroundColor = [UIColor clearColor];
+    cell.progress_2.outerBorderColor = [UIColor clearColor];
+    cell.progress_2.innerBorderColor = [UIColor clearColor];
     
-    cell.progress_CPUCount.litEffect = NO;
-    cell.progress_CPUCount.numBars = 10;
-    cell.progress_CPUCount.value = 1;
-    cell.progress_CPUCount.backgroundColor = [UIColor clearColor];
-    cell.progress_CPUCount.outerBorderColor = [UIColor clearColor];
-    cell.progress_CPUCount.innerBorderColor = [UIColor clearColor];
+    cell.progress_3.litEffect = NO;
+    cell.progress_3.numBars = 10;
+    cell.progress_3.value = 1;
+    cell.progress_3.backgroundColor = [UIColor clearColor];
+    cell.progress_3.outerBorderColor = [UIColor clearColor];
+    cell.progress_3.innerBorderColor = [UIColor clearColor];
     
-    cell.progress_CPUUnit.litEffect = NO;
-    cell.progress_CPUUnit.numBars = 10;
-    cell.progress_CPUUnit.value = 1;
-    cell.progress_CPUUnit.backgroundColor = [UIColor clearColor];
-    cell.progress_CPUUnit.outerBorderColor = [UIColor clearColor];
-    cell.progress_CPUUnit.innerBorderColor = [UIColor clearColor];
+    cell.progress_4.litEffect = NO;
+    cell.progress_4.numBars = 10;
+    cell.progress_4.value = 1;
+    cell.progress_4.backgroundColor = [UIColor clearColor];
+    cell.progress_4.outerBorderColor = [UIColor clearColor];
+    cell.progress_4.innerBorderColor = [UIColor clearColor];
     
-    cell.progress_memory.litEffect = NO;
-    cell.progress_memory.numBars = 10;
-    cell.progress_memory.value = 1;
-    cell.progress_memory.backgroundColor = [UIColor clearColor];
-    cell.progress_memory.outerBorderColor = [UIColor clearColor];
-    cell.progress_memory.innerBorderColor = [UIColor clearColor];
+    cell.progress_5.litEffect = NO;
+    cell.progress_5.numBars = 10;
+    cell.progress_5.value = 1;
+    cell.progress_5.backgroundColor = [UIColor clearColor];
+    cell.progress_5.outerBorderColor = [UIColor clearColor];
+    cell.progress_5.innerBorderColor = [UIColor clearColor];
     
     
     return cell;

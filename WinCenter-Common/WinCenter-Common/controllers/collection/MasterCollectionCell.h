@@ -26,11 +26,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *osType_image;
 @property (weak, nonatomic) IBOutlet UIImageView *linkState;
 @property (weak, nonatomic) IBOutlet UIImageView *type_image;
-@property (weak, nonatomic) IBOutlet F3BarGauge *progress_vm;
-@property (weak, nonatomic) IBOutlet F3BarGauge *progress_storage;
-@property (weak, nonatomic) IBOutlet F3BarGauge *progress_CPUCount;
-@property (weak, nonatomic) IBOutlet F3BarGauge *progress_CPUUnit;
-@property (weak, nonatomic) IBOutlet F3BarGauge *progress_memory;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_1;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_2;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_3;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_4;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_5;
 
 
 @end

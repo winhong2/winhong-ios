@@ -450,7 +450,7 @@
                                         </imageView>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1n-0X-CbU" customClass="F3BarGauge">
                                             <rect key="frame" x="130" y="123" width="68" height="14"/>
-                                            <color key="backgroundColor" red="0.96862745100000003" green="0.48627450979999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.2784313725" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
                                                     <color key="value" red="0.2784313725" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -465,22 +465,22 @@
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Bh-n8-oKe" customClass="F3BarGauge">
                                             <rect key="frame" x="130" y="146" width="68" height="14"/>
-                                            <color key="backgroundColor" red="0.96862745100000003" green="0.48627450979999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
-                                                    <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="0.0" green="0.72941176470000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="warningBarColor">
-                                                    <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="0.0" green="0.72941176470000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="dangerBarColor">
-                                                    <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="0.0" green="0.72941176470000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkA-id-aV2" customClass="F3BarGauge">
                                             <rect key="frame" x="130" y="169" width="68" height="14"/>
-                                            <color key="backgroundColor" red="0.96862745100000003" green="0.48627450979999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
                                                     <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -510,7 +510,7 @@
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TqW-F6-K2d" customClass="F3BarGauge">
                                             <rect key="frame" x="130" y="220" width="68" height="14"/>
-                                            <color key="backgroundColor" red="0.96862745100000003" green="0.48627450979999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
                                                     <color key="value" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -534,11 +534,11 @@
                                     <outlet property="label4" destination="L78-lL-YNq" id="g1L-tb-oAe"/>
                                     <outlet property="label5" destination="HnG-0B-t0j" id="HMY-3J-2bR"/>
                                     <outlet property="label6" destination="d8u-2d-RXh" id="Kw9-hb-U0z"/>
-                                    <outlet property="progress_CPUCount" destination="qkA-id-aV2" id="7h0-9o-jVH"/>
-                                    <outlet property="progress_CPUUnit" destination="Nkj-Vp-jxl" id="bdz-kc-dOn"/>
-                                    <outlet property="progress_memory" destination="TqW-F6-K2d" id="uHj-mU-pcH"/>
-                                    <outlet property="progress_storage" destination="8Bh-n8-oKe" id="bqr-Cd-ya2"/>
-                                    <outlet property="progress_vm" destination="r1n-0X-CbU" id="dFN-jl-oMb"/>
+                                    <outlet property="progress_1" destination="r1n-0X-CbU" id="Xe4-MI-ddQ"/>
+                                    <outlet property="progress_2" destination="8Bh-n8-oKe" id="Z0q-zn-FKS"/>
+                                    <outlet property="progress_3" destination="qkA-id-aV2" id="0oX-uc-jL7"/>
+                                    <outlet property="progress_4" destination="Nkj-Vp-jxl" id="rLU-Rg-h95"/>
+                                    <outlet property="progress_5" destination="TqW-F6-K2d" id="Q2A-i5-OJE"/>
                                     <outlet property="status" destination="MXc-Ug-kZm" id="Ffq-8G-dYf"/>
                                     <outlet property="title" destination="zqp-SO-306" id="axP-WQ-LqB"/>
                                 </connections>
