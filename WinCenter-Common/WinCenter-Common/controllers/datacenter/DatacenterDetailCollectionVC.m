@@ -171,6 +171,42 @@
             cell.label3.text = [NSString stringWithFormat:@"%.2fGHz", poolVO.totalCpu/1000.0];
             cell.label4.text = [NSString stringWithFormat:@"%.2fGB", poolVO.totalMemory/1024.0];
             cell.label5.text = [NSString stringWithFormat:@"%.2fGB", poolVO.totalStorage];
+            
+            cell.progress_1.litEffect = NO;
+            cell.progress_1.numBars = 10;
+            cell.progress_1.value = 1;
+            cell.progress_1.backgroundColor = [UIColor clearColor];
+            cell.progress_1.outerBorderColor = [UIColor clearColor];
+            cell.progress_1.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_2.litEffect = NO;
+            cell.progress_2.numBars = 10;
+            cell.progress_2.value = 1;
+            cell.progress_2.backgroundColor = [UIColor clearColor];
+            cell.progress_2.outerBorderColor = [UIColor clearColor];
+            cell.progress_2.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_3.litEffect = NO;
+            cell.progress_3.numBars = 10;
+            cell.progress_3.value = 1;
+            cell.progress_3.backgroundColor = [UIColor clearColor];
+            cell.progress_3.outerBorderColor = [UIColor clearColor];
+            cell.progress_3.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_4.litEffect = NO;
+            cell.progress_4.numBars = 10;
+            cell.progress_4.value = 1;
+            cell.progress_4.backgroundColor = [UIColor clearColor];
+            cell.progress_4.outerBorderColor = [UIColor clearColor];
+            cell.progress_4.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_5.litEffect = NO;
+            cell.progress_5.numBars = 10;
+            cell.progress_5.value = 1;
+            cell.progress_5.backgroundColor = [UIColor clearColor];
+            cell.progress_5.outerBorderColor = [UIColor clearColor];
+            cell.progress_5.innerBorderColor = [UIColor clearColor];
+            
             return cell;
         }
         case Page_Host:{
@@ -186,6 +222,42 @@
             cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory/1024.0];
             cell.status.text = [hostVO state_text];
             cell.status.textColor = [hostVO state_color];
+            
+            cell.progress_1.litEffect = NO;
+            cell.progress_1.numBars = 10;
+            cell.progress_1.value = 1;
+            cell.progress_1.backgroundColor = [UIColor clearColor];
+            cell.progress_1.outerBorderColor = [UIColor clearColor];
+            cell.progress_1.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_2.litEffect = NO;
+            cell.progress_2.numBars = 10;
+            cell.progress_2.value = 1;
+            cell.progress_2.backgroundColor = [UIColor clearColor];
+            cell.progress_2.outerBorderColor = [UIColor clearColor];
+            cell.progress_2.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_3.litEffect = NO;
+            cell.progress_3.numBars = 10;
+            cell.progress_3.value = 1;
+            cell.progress_3.backgroundColor = [UIColor clearColor];
+            cell.progress_3.outerBorderColor = [UIColor clearColor];
+            cell.progress_3.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_4.litEffect = NO;
+            cell.progress_4.numBars = 10;
+            cell.progress_4.value = 1;
+            cell.progress_4.backgroundColor = [UIColor clearColor];
+            cell.progress_4.outerBorderColor = [UIColor clearColor];
+            cell.progress_4.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_5.litEffect = NO;
+            cell.progress_5.numBars = 10;
+            cell.progress_5.value = 1;
+            cell.progress_5.backgroundColor = [UIColor clearColor];
+            cell.progress_5.outerBorderColor = [UIColor clearColor];
+            cell.progress_5.innerBorderColor = [UIColor clearColor];
+            
             return cell;
         }
         case Page_Storage:{
@@ -224,6 +296,29 @@
             cell.status.text = [vmVO state_text];
             cell.status.textColor = [vmVO state_color];
             cell.osType_image.image = [UIImage imageNamed:[vmVO osType_imageName]];
+            
+            cell.progress_1.litEffect = NO;
+            cell.progress_1.numBars = 10;
+            cell.progress_1.value = 1;
+            cell.progress_1.backgroundColor = [UIColor clearColor];
+            cell.progress_1.outerBorderColor = [UIColor clearColor];
+            cell.progress_1.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_2.litEffect = NO;
+            cell.progress_2.numBars = 10;
+            cell.progress_2.value = 1;
+            cell.progress_2.backgroundColor = [UIColor clearColor];
+            cell.progress_2.outerBorderColor = [UIColor clearColor];
+            cell.progress_2.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_3.litEffect = NO;
+            cell.progress_3.numBars = 10;
+            cell.progress_3.value = 1;
+            cell.progress_3.backgroundColor = [UIColor clearColor];
+            cell.progress_3.outerBorderColor = [UIColor clearColor];
+            cell.progress_3.innerBorderColor = [UIColor clearColor];
+            
+            
             return cell;
         }
         case Page_Business:{

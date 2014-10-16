@@ -463,6 +463,10 @@
 		18C9CE5B19EFAECB000A393C /* MSTimeRowHeaderBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimeRowHeaderBackground.h; sourceTree = "<group>"; };
 		18C9CE5C19EFAECB000A393C /* MSTimeRowHeaderBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTimeRowHeaderBackground.m; sourceTree = "<group>"; };
 		3B7FC4E493804226BD2B7B06 /* Pods-WinCenter-iPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-iPad.xcconfig"; path = "../Pods/Pods-WinCenter-iPad.xcconfig"; sourceTree = "<group>"; };
+		84249DFE19EF5FCE0006BC28 /* F3BarGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarGauge.h; sourceTree = "<group>"; };
+		84249DFF19EF5FCE0006BC28 /* F3BarGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarGauge.m; sourceTree = "<group>"; };
+		84249E0019EF5FCE0006BC28 /* F3BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarViewController.h; sourceTree = "<group>"; };
+		84249E0119EF5FCE0006BC28 /* F3BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarViewController.m; sourceTree = "<group>"; };
 		9316045FEA134B4CA8052DAB /* libPods-WinCenter-iPad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-iPad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -899,6 +903,7 @@
 		18A4D32519B556BA00415896 /* WinCenter-iPad */ = {
 			isa = PBXGroup;
 			children = (
+				84249DFC19EF5FBE0006BC28 /* charts */,
 				1886D58019E97F70005E1645 /* Models.h */,
 				1886D53119E97F6F005E1645 /* models */,
 				185CB31919E7792D00DC8E8A /* views */,
@@ -1107,6 +1112,7 @@
 				185CB2F119E778FD00DC8E8A /* VmMigrateVC.m in Sources */,
 				185CB2F319E778FD00DC8E8A /* VmNewVC.m in Sources */,
 				185CB2F019E778FD00DC8E8A /* VmMigrateSelectHostListVC.m in Sources */,
+				84249E0319EF5FCE0006BC28 /* F3BarViewController.m in Sources */,
 				185CB2DA19E778FD00DC8E8A /* NetworkContainerVC.m in Sources */,
 				18C24BF619E9231800F5479D /* DatacenterDetailCollectionHeader.m in Sources */,
 				185CB2E419E778FD00DC8E8A /* StorageDiskCollectionVC.m in Sources */,
@@ -1179,6 +1185,7 @@
 				1886D59C19E97F70005E1645 /* StorageVolumnListResult.m in Sources */,
 				185CB2EE19E778FD00DC8E8A /* VmDiskCollectionVC.m in Sources */,
 				1886D59A19E97F70005E1645 /* StorageListResult.m in Sources */,
+				84249E0219EF5FCE0006BC28 /* F3BarGauge.m in Sources */,
 				18A4D32C19B556BA00415896 /* main.m in Sources */,
 				1886D59B19E97F70005E1645 /* StorageVO.m in Sources */,
 				18BBA42D19EE54ED00416479 /* UIButton+Badge.m in Sources */,

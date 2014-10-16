@@ -533,7 +533,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpO-xH-Hyc">
-                                                    <rect key="frame" x="160" y="96" width="106" height="21"/>
+                                                    <rect key="frame" x="160" y="93" width="106" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -568,15 +568,6 @@
                                                     <rect key="frame" x="18" y="71" width="16" height="16"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-黄色" translatesAutoresizingMaskIntoConstraints="NO" id="dUo-yq-Rp8">
-                                                    <rect key="frame" x="93" y="99" width="59" height="10"/>
-                                                </imageView>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条-蓝色" translatesAutoresizingMaskIntoConstraints="NO" id="7GO-V7-qgF">
-                                                    <rect key="frame" x="93" y="50" width="59" height="10"/>
-                                                </imageView>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="进度条－绿色" translatesAutoresizingMaskIntoConstraints="NO" id="0R2-2x-J4A">
-                                                    <rect key="frame" x="93" y="74" width="59" height="10"/>
-                                                </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IP：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiX-eD-YIH">
                                                     <rect key="frame" x="39" y="18" width="61" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -592,6 +583,51 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-存储-black" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-7u-S5p">
                                                     <rect key="frame" x="20" y="98" width="12" height="12"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BNE-jK-vw1" customClass="F3BarGauge">
+                                                    <rect key="frame" x="93" y="48" width="68" height="14"/>
+                                                    <color key="backgroundColor" red="0.2784313725" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
+                                                            <color key="value" red="0.2784313725" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="warningBarColor">
+                                                            <color key="value" red="0.2784313725" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="dangerBarColor">
+                                                            <color key="value" red="0.2784313725" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zX-xb-weS" customClass="F3BarGauge">
+                                                    <rect key="frame" x="93" y="72" width="68" height="14"/>
+                                                    <color key="backgroundColor" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
+                                                            <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="warningBarColor">
+                                                            <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="dangerBarColor">
+                                                            <color key="value" red="0.35686274509999999" green="0.83529411760000005" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rpt-Kh-fJa" customClass="F3BarGauge">
+                                                    <rect key="frame" x="93" y="97" width="68" height="14"/>
+                                                    <color key="backgroundColor" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="normalBarColor">
+                                                            <color key="value" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="warningBarColor">
+                                                            <color key="value" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="dangerBarColor">
+                                                            <color key="value" red="1" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
@@ -616,6 +652,9 @@
                                     <outlet property="label4" destination="XpO-xH-Hyc" id="ToV-3N-SCX"/>
                                     <outlet property="osType" destination="Xyd-Hf-vkm" id="3tN-WX-8xh"/>
                                     <outlet property="osType_image" destination="Pxx-6J-1Vx" id="y7k-La-95V"/>
+                                    <outlet property="progress_1" destination="BNE-jK-vw1" id="zAI-gG-8Av"/>
+                                    <outlet property="progress_2" destination="8zX-xb-weS" id="WrQ-Nb-MZv"/>
+                                    <outlet property="progress_3" destination="Rpt-Kh-fJa" id="8Bn-YZ-Yrw"/>
                                     <outlet property="status" destination="Zok-RG-uas" id="pvP-D1-r3b"/>
                                     <outlet property="title" destination="e9y-fO-5Dm" id="3NJ-Md-yjd"/>
                                 </connections>
@@ -1125,9 +1164,6 @@
         <image name="虚拟机－摘要－分配CPU" width="334" height="89"/>
         <image name="虚拟机－摘要－图标" width="95" height="95"/>
         <image name="资源池－虚拟机－面板" width="288" height="253"/>
-        <image name="进度条-蓝色" width="59" height="10"/>
-        <image name="进度条-黄色" width="59" height="10"/>
-        <image name="进度条－绿色" width="59" height="10"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
