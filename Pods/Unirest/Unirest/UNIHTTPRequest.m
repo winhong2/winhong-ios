@@ -103,12 +103,19 @@
 
 -(UNIUrlConnection*) asJsonAsync:(UNIHTTPJsonResponseBlock) response {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    self.hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    if(!self.jgHud){
+        self.jgHud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
+        self.jgHud.textLabel.text = @"Loading";
+    }
+    [self.jgHud showInView:[UIApplication sharedApplication].keyWindow animated:NO];
+    //self.mbHud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    
     
     return [UNIHTTPClientHelper requestAsync:self handler:^(UNIHTTPResponse * res, NSError * error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-            [self.hud hide:NO];
+            [self.jgHud dismissAnimated:NO];
+            //[self.mbHud hide:NO];
             
             if (error != nil) {
                 response(nil, error);
