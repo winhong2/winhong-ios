@@ -172,6 +172,10 @@
 		18C9CE8619EFAED8000A393C /* MSGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE7919EFAED8000A393C /* MSGridline.m */; };
 		18C9CE8719EFAED8000A393C /* MSTimeRowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE7B19EFAED8000A393C /* MSTimeRowHeader.m */; };
 		18C9CE8819EFAED8000A393C /* MSTimeRowHeaderBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE7D19EFAED8000A393C /* MSTimeRowHeaderBackground.m */; };
+		847F61FD19EFC22C000715CC /* F3BarGauge.h in Sources */ = {isa = PBXBuildFile; fileRef = 84249DF619EF5EC50006BC28 /* F3BarGauge.h */; };
+		847F61FE19EFC22C000715CC /* F3BarGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 84249DF719EF5EC50006BC28 /* F3BarGauge.m */; };
+		847F61FF19EFC22C000715CC /* F3BarViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 84249DF819EF5EC50006BC28 /* F3BarViewController.h */; };
+		847F620019EFC22C000715CC /* F3BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84249DF919EF5EC50006BC28 /* F3BarViewController.m */; };
 		8658E52896184EA39528D92A /* libPods-WinCenter-Theme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */; };
 /* End PBXBuildFile section */
 
@@ -1119,13 +1123,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847F61FD19EFC22C000715CC /* F3BarGauge.h in Sources */,
+				847F61FE19EFC22C000715CC /* F3BarGauge.m in Sources */,
+				847F61FF19EFC22C000715CC /* F3BarViewController.h in Sources */,
+				847F620019EFC22C000715CC /* F3BarViewController.m in Sources */,
 				1886D52219E97F5B005E1645 /* RemoteObject.m in Sources */,
 				1886D42319E979F8005E1645 /* MasterCollectionCell.m in Sources */,
 				18C9CE7F19EFAED8000A393C /* MSCurrentTimeGridline.m in Sources */,
 				1886D45919E979F8005E1645 /* PopWarningInfoVC.m in Sources */,
 				1886D43919E979F8005E1645 /* LoginVC.m in Sources */,
 				1886D42F19E979F8005E1645 /* DatacenterMenuVC.m in Sources */,
-				84249DFB19EF5EC50006BC28 /* F3BarViewController.m in Sources */,
 				1886D43319E979F8005E1645 /* HostDetailInfoVC.m in Sources */,
 				1886D43819E979F8005E1645 /* LoginTableVC.m in Sources */,
 				1886D42519E979F8005E1645 /* MasterCollectionHeader.m in Sources */,
@@ -1198,7 +1205,6 @@
 				1886D52519E97F5B005E1645 /* StorageVolumnListResult.m in Sources */,
 				1886D42E19E979F8005E1645 /* DatacenterDetailMoreVC.m in Sources */,
 				1886D52319E97F5B005E1645 /* StorageListResult.m in Sources */,
-				84249DFA19EF5EC50006BC28 /* F3BarGauge.m in Sources */,
 				1886D43D19E979F8005E1645 /* PoolContainerVC.m in Sources */,
 				1886D52419E97F5B005E1645 /* StorageVO.m in Sources */,
 				18BBA43319EE54F900416479 /* UIButton+Badge.m in Sources */,

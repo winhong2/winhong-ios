@@ -1693,7 +1693,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterHostCollectionHeader" id="DFn-Lm-RXe" customClass="DatacenterDetailCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="213"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="270"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="物理机－色块" translatesAutoresizingMaskIntoConstraints="NO" id="Rtp-Hp-3tm">
