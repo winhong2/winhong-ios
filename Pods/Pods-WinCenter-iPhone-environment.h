@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_BMFloatingHeaderCollectionViewLayout 0
 #define COCOAPODS_VERSION_PATCH_BMFloatingHeaderCollectionViewLayout 0
 
+// CupertinoYankee
+#define COCOAPODS_POD_AVAILABLE_CupertinoYankee
+#define COCOAPODS_VERSION_MAJOR_CupertinoYankee 0
+#define COCOAPODS_VERSION_MINOR_CupertinoYankee 1
+#define COCOAPODS_VERSION_PATCH_CupertinoYankee 1
+
 // EChart
 #define COCOAPODS_POD_AVAILABLE_EChart
 #define COCOAPODS_VERSION_MAJOR_EChart 0
@@ -84,6 +90,12 @@
 #define COCOAPODS_VERSION_MINOR_MPPlot 1
 #define COCOAPODS_VERSION_PATCH_MPPlot 0
 
+// MSCollectionViewCalendarLayout
+#define COCOAPODS_POD_AVAILABLE_MSCollectionViewCalendarLayout
+#define COCOAPODS_VERSION_MAJOR_MSCollectionViewCalendarLayout 0
+#define COCOAPODS_VERSION_MINOR_MSCollectionViewCalendarLayout 1
+#define COCOAPODS_VERSION_PATCH_MSCollectionViewCalendarLayout 3
+
 // MZAppearance
 #define COCOAPODS_POD_AVAILABLE_MZAppearance
 #define COCOAPODS_VERSION_MAJOR_MZAppearance 1
@@ -107,6 +119,12 @@
 #define COCOAPODS_VERSION_MAJOR_MagicPie 1
 #define COCOAPODS_VERSION_MINOR_MagicPie 0
 #define COCOAPODS_VERSION_PATCH_MagicPie 1
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 5
+#define COCOAPODS_VERSION_PATCH_Masonry 3
 
 // NSObject-ObjectMap
 #define COCOAPODS_POD_AVAILABLE_NSObject_ObjectMap
@@ -143,6 +161,12 @@
 #define COCOAPODS_VERSION_MAJOR_TWRCharts 0
 #define COCOAPODS_VERSION_MINOR_TWRCharts 1
 #define COCOAPODS_VERSION_PATCH_TWRCharts 0
+
+// UIColor-HexString
+#define COCOAPODS_POD_AVAILABLE_UIColor_HexString
+#define COCOAPODS_VERSION_MAJOR_UIColor_HexString 1
+#define COCOAPODS_VERSION_MINOR_UIColor_HexString 1
+#define COCOAPODS_VERSION_PATCH_UIColor_HexString 0
 
 // UICountingLabel
 #define COCOAPODS_POD_AVAILABLE_UICountingLabel
