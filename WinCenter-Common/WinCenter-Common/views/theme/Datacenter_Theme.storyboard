@@ -1114,10 +1114,12 @@
                         <outlet property="businessCount" destination="dCJ-7W-ucx" id="gpM-JB-Xbn"/>
                         <outlet property="cpuChartGroup" destination="bZr-so-0P9" id="V84-jU-Fyy"/>
                         <outlet property="cpuUnitCount" destination="vLq-Cb-4MO" id="fFB-Lw-lvB"/>
+                        <outlet property="cpuUnitCount2" destination="hBg-U9-Hgg" id="ptZ-Ia-EPs"/>
                         <outlet property="cpuUnitUnusedCount" destination="ppz-ka-GQ0" id="h1X-el-QYW"/>
                         <outlet property="cpuUsedCount" destination="gpV-J5-xkb" id="YGy-SO-6ju"/>
                         <outlet property="hostCount" destination="06P-ic-AGj" id="jmf-hc-1VS"/>
                         <outlet property="memerySize" destination="52a-ZN-NMP" id="dWN-xd-xAx"/>
+                        <outlet property="memerySize2" destination="ecz-Fw-qNq" id="2re-rg-9Th"/>
                         <outlet property="memeryUsedSize" destination="erL-2E-WhP" id="iin-cg-K4l"/>
                         <outlet property="memoryChartGroup" destination="X2m-1d-Q2q" id="ryE-oU-Sao"/>
                         <outlet property="memoryUnusedSize" destination="60A-ua-jKz" id="hEI-yB-MFe"/>
@@ -1125,6 +1127,7 @@
                         <outlet property="scrollView" destination="vq1-ei-cxf" id="fFO-lh-0kc"/>
                         <outlet property="storageChartGroup" destination="C50-vk-uSV" id="6BX-Kr-s8m"/>
                         <outlet property="storageSize" destination="D6W-39-ml1" id="YW1-gb-uda"/>
+                        <outlet property="storageSize2" destination="poX-NF-ibS" id="zfz-hQ-OB6"/>
                         <outlet property="storageUnusedSize" destination="u0o-HO-VrC" id="ZyJ-yA-j8p"/>
                         <outlet property="storageUsedSize" destination="qdy-op-wrk" id="BhD-48-9s2"/>
                         <outlet property="vmCount" destination="iGb-Or-sb8" id="Zpv-NQ-NgB"/>
