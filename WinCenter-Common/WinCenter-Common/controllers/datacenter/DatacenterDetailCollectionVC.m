@@ -186,6 +186,42 @@
             cell.label6.text = [NSString stringWithFormat:@"%.2fGB",hostVO.memory/1024.0];
             cell.status.text = [hostVO state_text];
             cell.status.textColor = [hostVO state_color];
+            
+            cell.progress_vm.litEffect = NO;
+            cell.progress_vm.numBars = 10;
+            cell.progress_vm.value = 1;
+            cell.progress_vm.backgroundColor = [UIColor clearColor];
+            cell.progress_vm.outerBorderColor = [UIColor clearColor];
+            cell.progress_vm.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_storage.litEffect = NO;
+            cell.progress_storage.numBars = 10;
+            cell.progress_storage.value = 1;
+            cell.progress_storage.backgroundColor = [UIColor clearColor];
+            cell.progress_storage.outerBorderColor = [UIColor clearColor];
+            cell.progress_storage.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_CPUCount.litEffect = NO;
+            cell.progress_CPUCount.numBars = 10;
+            cell.progress_CPUCount.value = 1;
+            cell.progress_CPUCount.backgroundColor = [UIColor clearColor];
+            cell.progress_CPUCount.outerBorderColor = [UIColor clearColor];
+            cell.progress_CPUCount.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_CPUUnit.litEffect = NO;
+            cell.progress_CPUUnit.numBars = 10;
+            cell.progress_CPUUnit.value = 1;
+            cell.progress_CPUUnit.backgroundColor = [UIColor clearColor];
+            cell.progress_CPUUnit.outerBorderColor = [UIColor clearColor];
+            cell.progress_CPUUnit.innerBorderColor = [UIColor clearColor];
+            
+            cell.progress_memory.litEffect = NO;
+            cell.progress_memory.numBars = 10;
+            cell.progress_memory.value = 1;
+            cell.progress_memory.backgroundColor = [UIColor clearColor];
+            cell.progress_memory.outerBorderColor = [UIColor clearColor];
+            cell.progress_memory.innerBorderColor = [UIColor clearColor];
+            
             return cell;
         }
         case Page_Storage:{

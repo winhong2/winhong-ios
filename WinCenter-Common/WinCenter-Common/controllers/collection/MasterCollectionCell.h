@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "F3BarGauge.h"
 
 @interface MasterCollectionCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *title;
@@ -25,5 +26,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *osType_image;
 @property (weak, nonatomic) IBOutlet UIImageView *linkState;
 @property (weak, nonatomic) IBOutlet UIImageView *type_image;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_vm;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_storage;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_CPUCount;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_CPUUnit;
+@property (weak, nonatomic) IBOutlet F3BarGauge *progress_memory;
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MasterCollectionVC.h"
+#import "F3BarGauge.h"
 
 @interface DatacenterDetailCollectionVC : MasterCollectionVC
 
@@ -15,5 +16,6 @@
 @property PoolVO *poolVO;
 @property DatacenterDetailPageType pageType;
 @property UIPopoverController *popover;
+
 
 @end

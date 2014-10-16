@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SdQ-oO-Giu">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -1537,7 +1536,7 @@
         <image name="tab-网络适配器-selected" width="39" height="127"/>
         <image name="tab-虚拟机" width="39" height="82"/>
         <image name="tab-虚拟机-selected" width="39" height="82"/>
-        <image name="内存" width="15" height="15"/>
+        <image name="内存" width="11" height="8"/>
         <image name="内存使用率图表" width="943" height="123"/>
         <image name="定点" width="15" height="15"/>
         <image name="灰色圈" width="123" height="123"/>
@@ -1550,6 +1549,6 @@
         <image name="网络连接-断开链接" width="15" height="15"/>
         <image name="网络连接-链接" width="15" height="15"/>
         <image name="背景" width="1024" height="768"/>
-        <image name="虚拟机" width="15" height="15"/>
+        <image name="虚拟机" width="14" height="14"/>
     </resources>
 </document>
