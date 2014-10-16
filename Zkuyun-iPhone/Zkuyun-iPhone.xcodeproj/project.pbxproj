@@ -71,12 +71,12 @@
 		18A4D5EA19B5F78000415896 /* DiskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D5E819B5F78000415896 /* DiskView.m */; };
 		18A4D5F119B6062D00415896 /* ContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D5EC19B6062D00415896 /* ContactView.m */; };
 		18A4D5F219B6062D00415896 /* InfiniteTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D5EE19B6062D00415896 /* InfiniteTreeView.m */; };
-		18A4D5F319B6062D00415896 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D5F019B6062D00415896 /* UIView+ITTAdditions.m */; };
 		18A4D5F919B60E0300415896 /* EScrollerView_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D5F419B60E0300415896 /* EScrollerView_1.jpg */; };
 		18A4D5FA19B60E0300415896 /* EScrollerView_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D5F519B60E0300415896 /* EScrollerView_2.jpg */; };
 		18A4D5FB19B60E0300415896 /* EScrollerView_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18A4D5F619B60E0300415896 /* EScrollerView_3.jpg */; };
 		18A4D5FC19B60E0300415896 /* EScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D5F819B60E0300415896 /* EScrollerView.m */; };
 		18A4D5FF19B60F8C00415896 /* HomeCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4D5FE19B60F8C00415896 /* HomeCollectionHeader.m */; };
+		18C9CE8B19EFB2E3000A393C /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE8A19EFB2E3000A393C /* UIView+ITTAdditions.m */; };
 		4EE5A85B74A8438AB13A648F /* libPods-Zkuyun-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CA54B094B54CDC8327CC56 /* libPods-Zkuyun-iPhone.a */; };
 /* End PBXBuildFile section */
 
@@ -180,8 +180,6 @@
 		18A4D5EC19B6062D00415896 /* ContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactView.m; sourceTree = "<group>"; };
 		18A4D5ED19B6062D00415896 /* InfiniteTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteTreeView.h; sourceTree = "<group>"; };
 		18A4D5EE19B6062D00415896 /* InfiniteTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTreeView.m; sourceTree = "<group>"; };
-		18A4D5EF19B6062D00415896 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
-		18A4D5F019B6062D00415896 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
 		18A4D5F419B60E0300415896 /* EScrollerView_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EScrollerView_1.jpg; sourceTree = "<group>"; };
 		18A4D5F519B60E0300415896 /* EScrollerView_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EScrollerView_2.jpg; sourceTree = "<group>"; };
 		18A4D5F619B60E0300415896 /* EScrollerView_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EScrollerView_3.jpg; sourceTree = "<group>"; };
@@ -189,6 +187,8 @@
 		18A4D5F819B60E0300415896 /* EScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EScrollerView.m; sourceTree = "<group>"; };
 		18A4D5FD19B60F8C00415896 /* HomeCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionHeader.h; sourceTree = "<group>"; };
 		18A4D5FE19B60F8C00415896 /* HomeCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionHeader.m; sourceTree = "<group>"; };
+		18C9CE8919EFB2E3000A393C /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
+		18C9CE8A19EFB2E3000A393C /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
 		50CA54B094B54CDC8327CC56 /* libPods-Zkuyun-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zkuyun-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25678DB0093433AB1DE8E2A /* Pods-Zkuyun-iPhone.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zkuyun-iPhone.xcconfig"; path = "../Pods/Pods-Zkuyun-iPhone.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -353,8 +353,8 @@
 				18A4D5EC19B6062D00415896 /* ContactView.m */,
 				18A4D5ED19B6062D00415896 /* InfiniteTreeView.h */,
 				18A4D5EE19B6062D00415896 /* InfiniteTreeView.m */,
-				18A4D5EF19B6062D00415896 /* UIView+ITTAdditions.h */,
-				18A4D5F019B6062D00415896 /* UIView+ITTAdditions.m */,
+				18C9CE8919EFB2E3000A393C /* UIView+ITTAdditions.h */,
+				18C9CE8A19EFB2E3000A393C /* UIView+ITTAdditions.m */,
 			);
 			path = dashboard;
 			sourceTree = "<group>";
@@ -562,12 +562,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A4D5DC19B5A19100415896 /* HomeCollectionCell.m in Sources */,
-				18A4D5F319B6062D00415896 /* UIView+ITTAdditions.m in Sources */,
 				18A4D5B619B575C600415896 /* WeiboDetailView.m in Sources */,
 				18A4D5B219B575C600415896 /* NoticeView.m in Sources */,
 				18A4D5B319B575C600415896 /* PMView.m in Sources */,
 				18A4D5FC19B60E0300415896 /* EScrollerView.m in Sources */,
 				18A4D5E219B5EFB500415896 /* AboutView.m in Sources */,
+				18C9CE8B19EFB2E3000A393C /* UIView+ITTAdditions.m in Sources */,
 				18A4D5AA19B575C600415896 /* AppView.m in Sources */,
 				18A4D5EA19B5F78000415896 /* DiskView.m in Sources */,
 				18A4D5AE19B575C600415896 /* HomeView.m in Sources */,

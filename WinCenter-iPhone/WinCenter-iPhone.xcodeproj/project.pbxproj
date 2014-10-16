@@ -224,6 +224,17 @@
 		18BBA42119EE43FE00416479 /* F3BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA41F19EE43FE00416479 /* F3BarViewController.m */; };
 		18BBA42619EE54DA00416479 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */; };
 		18BBA42719EE54DA00416479 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42519EE54DA00416479 /* UIButton+Badge.m */; };
+		18C9CE3919EFA0CD000A393C /* MSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2519EFA0CD000A393C /* MSCalendarViewController.m */; };
+		18C9CE3A19EFA0CD000A393C /* MSCurrentTimeGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2719EFA0CD000A393C /* MSCurrentTimeGridline.m */; };
+		18C9CE3B19EFA0CD000A393C /* MSCurrentTimeIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2919EFA0CD000A393C /* MSCurrentTimeIndicator.m */; };
+		18C9CE3C19EFA0CD000A393C /* MSDayColumnHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2B19EFA0CD000A393C /* MSDayColumnHeader.m */; };
+		18C9CE3D19EFA0CD000A393C /* MSDayColumnHeaderBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2D19EFA0CD000A393C /* MSDayColumnHeaderBackground.m */; };
+		18C9CE3E19EFA0CD000A393C /* MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2F19EFA0CD000A393C /* MSEvent.m */; };
+		18C9CE3F19EFA0CD000A393C /* MSEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE3119EFA0CD000A393C /* MSEventCell.m */; };
+		18C9CE4019EFA0CD000A393C /* MSEventData.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C9CE3219EFA0CD000A393C /* MSEventData.json */; };
+		18C9CE4119EFA0CD000A393C /* MSGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE3419EFA0CD000A393C /* MSGridline.m */; };
+		18C9CE4219EFA0CD000A393C /* MSTimeRowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE3619EFA0CD000A393C /* MSTimeRowHeader.m */; };
+		18C9CE4319EFA0CD000A393C /* MSTimeRowHeaderBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE3819EFA0CD000A393C /* MSTimeRowHeaderBackground.m */; };
 		18DCEBE119ED0DA700ED7BF8 /* JBAreaChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */; };
 		18DCEBE219ED0DA700ED7BF8 /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCA19ED0DA700ED7BF8 /* JBBarChartFooterView.m */; };
 		18DCEBE319ED0DA700ED7BF8 /* JBBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEBCC19ED0DA700ED7BF8 /* JBBarChartViewController.m */; };
@@ -621,6 +632,27 @@
 		18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		18BBA42419EE54DA00416479 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		18BBA42519EE54DA00416479 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
+		18C9CE2419EFA0CD000A393C /* MSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCalendarViewController.h; sourceTree = "<group>"; };
+		18C9CE2519EFA0CD000A393C /* MSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCalendarViewController.m; sourceTree = "<group>"; };
+		18C9CE2619EFA0CD000A393C /* MSCurrentTimeGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeGridline.h; sourceTree = "<group>"; };
+		18C9CE2719EFA0CD000A393C /* MSCurrentTimeGridline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCurrentTimeGridline.m; sourceTree = "<group>"; };
+		18C9CE2819EFA0CD000A393C /* MSCurrentTimeIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeIndicator.h; sourceTree = "<group>"; };
+		18C9CE2919EFA0CD000A393C /* MSCurrentTimeIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCurrentTimeIndicator.m; sourceTree = "<group>"; };
+		18C9CE2A19EFA0CD000A393C /* MSDayColumnHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDayColumnHeader.h; sourceTree = "<group>"; };
+		18C9CE2B19EFA0CD000A393C /* MSDayColumnHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDayColumnHeader.m; sourceTree = "<group>"; };
+		18C9CE2C19EFA0CD000A393C /* MSDayColumnHeaderBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDayColumnHeaderBackground.h; sourceTree = "<group>"; };
+		18C9CE2D19EFA0CD000A393C /* MSDayColumnHeaderBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDayColumnHeaderBackground.m; sourceTree = "<group>"; };
+		18C9CE2E19EFA0CD000A393C /* MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEvent.h; sourceTree = "<group>"; };
+		18C9CE2F19EFA0CD000A393C /* MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEvent.m; sourceTree = "<group>"; };
+		18C9CE3019EFA0CD000A393C /* MSEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEventCell.h; sourceTree = "<group>"; };
+		18C9CE3119EFA0CD000A393C /* MSEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEventCell.m; sourceTree = "<group>"; };
+		18C9CE3219EFA0CD000A393C /* MSEventData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MSEventData.json; sourceTree = "<group>"; };
+		18C9CE3319EFA0CD000A393C /* MSGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGridline.h; sourceTree = "<group>"; };
+		18C9CE3419EFA0CD000A393C /* MSGridline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGridline.m; sourceTree = "<group>"; };
+		18C9CE3519EFA0CD000A393C /* MSTimeRowHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimeRowHeader.h; sourceTree = "<group>"; };
+		18C9CE3619EFA0CD000A393C /* MSTimeRowHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTimeRowHeader.m; sourceTree = "<group>"; };
+		18C9CE3719EFA0CD000A393C /* MSTimeRowHeaderBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimeRowHeaderBackground.h; sourceTree = "<group>"; };
+		18C9CE3819EFA0CD000A393C /* MSTimeRowHeaderBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTimeRowHeaderBackground.m; sourceTree = "<group>"; };
 		18DCEBC719ED0DA700ED7BF8 /* JBAreaChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBAreaChartViewController.h; sourceTree = "<group>"; };
 		18DCEBC819ED0DA700ED7BF8 /* JBAreaChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBAreaChartViewController.m; sourceTree = "<group>"; };
 		18DCEBC919ED0DA700ED7BF8 /* JBBarChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartFooterView.h; sourceTree = "<group>"; };
@@ -984,6 +1016,7 @@
 		185CB33019E7796F00DC8E8A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18C9CE2319EFA0CD000A393C /* calendar */,
 				18BBA42219EE54DA00416479 /* UIBarButtonItem+Badge.h */,
 				18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */,
 				18BBA42419EE54DA00416479 /* UIButton+Badge.h */,
@@ -1428,6 +1461,34 @@
 			path = F3BarGauge;
 			sourceTree = "<group>";
 		};
+		18C9CE2319EFA0CD000A393C /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				18C9CE2419EFA0CD000A393C /* MSCalendarViewController.h */,
+				18C9CE2519EFA0CD000A393C /* MSCalendarViewController.m */,
+				18C9CE2619EFA0CD000A393C /* MSCurrentTimeGridline.h */,
+				18C9CE2719EFA0CD000A393C /* MSCurrentTimeGridline.m */,
+				18C9CE2819EFA0CD000A393C /* MSCurrentTimeIndicator.h */,
+				18C9CE2919EFA0CD000A393C /* MSCurrentTimeIndicator.m */,
+				18C9CE2A19EFA0CD000A393C /* MSDayColumnHeader.h */,
+				18C9CE2B19EFA0CD000A393C /* MSDayColumnHeader.m */,
+				18C9CE2C19EFA0CD000A393C /* MSDayColumnHeaderBackground.h */,
+				18C9CE2D19EFA0CD000A393C /* MSDayColumnHeaderBackground.m */,
+				18C9CE2E19EFA0CD000A393C /* MSEvent.h */,
+				18C9CE2F19EFA0CD000A393C /* MSEvent.m */,
+				18C9CE3019EFA0CD000A393C /* MSEventCell.h */,
+				18C9CE3119EFA0CD000A393C /* MSEventCell.m */,
+				18C9CE3219EFA0CD000A393C /* MSEventData.json */,
+				18C9CE3319EFA0CD000A393C /* MSGridline.h */,
+				18C9CE3419EFA0CD000A393C /* MSGridline.m */,
+				18C9CE3519EFA0CD000A393C /* MSTimeRowHeader.h */,
+				18C9CE3619EFA0CD000A393C /* MSTimeRowHeader.m */,
+				18C9CE3719EFA0CD000A393C /* MSTimeRowHeaderBackground.h */,
+				18C9CE3819EFA0CD000A393C /* MSTimeRowHeaderBackground.m */,
+			);
+			path = calendar;
+			sourceTree = "<group>";
+		};
 		18DCEBEB19ED139E00ED7BF8 /* RealtimeCurve */ = {
 			isa = PBXGroup;
 			children = (
@@ -1604,6 +1665,7 @@
 				185CB42719E7796F00DC8E8A /* Images.xcassets in Resources */,
 				180BF74C19ECB0960029D2A4 /* health-80-80.png in Resources */,
 				185CB46019E8139A00DC8E8A /* DatacenterVO.getHostListAsync.limit.json in Resources */,
+				18C9CE4019EFA0CD000A393C /* MSEventData.json in Resources */,
 				180BF6E519ECB0960029D2A4 /* down_white@2x.png in Resources */,
 				185CB41319E7796F00DC8E8A /* HostVO.getHostVOAsync.json in Resources */,
 				185CB41D19E7796F00DC8E8A /* PoolVO.getVmListAsync.json in Resources */,
@@ -1718,7 +1780,9 @@
 				180BF6F819ECB0960029D2A4 /* EPieChartViewController.m in Sources */,
 				18DCEC4C19EE099700ED7BF8 /* Big3RevenueViewController.m in Sources */,
 				185CB3E219E7796F00DC8E8A /* HostNetworkCollectionVC.m in Sources */,
+				18C9CE3D19EFA0CD000A393C /* MSDayColumnHeaderBackground.m in Sources */,
 				180BF72019ECB0960029D2A4 /* JYRadarChartVC.m in Sources */,
+				18C9CE4319EFA0CD000A393C /* MSTimeRowHeaderBackground.m in Sources */,
 				18DCEC5F19EE20F900ED7BF8 /* MyPieElement.m in Sources */,
 				185CB3D519E7796F00DC8E8A /* MasterCollectionHeader.m in Sources */,
 				185CB3D119E7796F00DC8E8A /* BusinessVmCollectionCell.m in Sources */,
@@ -1765,6 +1829,8 @@
 				180BF73319ECB0960029D2A4 /* PieChartView.m in Sources */,
 				180BF73519ECB0960029D2A4 /* RotatedView.m in Sources */,
 				18DCEC0619ED6F4400ED7BF8 /* PCChartViewController.m in Sources */,
+				18C9CE3B19EFA0CD000A393C /* MSCurrentTimeIndicator.m in Sources */,
+				18C9CE4119EFA0CD000A393C /* MSGridline.m in Sources */,
 				18DCEBE119ED0DA700ED7BF8 /* JBAreaChartViewController.m in Sources */,
 				1886D61E19E97F82005E1645 /* WarningInfoVO.m in Sources */,
 				180BF6DC19ECB0960029D2A4 /* DoubleYSeriesVC.m in Sources */,
@@ -1785,6 +1851,7 @@
 				185CB3EC19E7796F00DC8E8A /* PopOptionLicenseVC.m in Sources */,
 				18DCEBE319ED0DA700ED7BF8 /* JBBarChartViewController.m in Sources */,
 				180BF6F619ECB0960029D2A4 /* EColumnChartViewController.m in Sources */,
+				18C9CE3919EFA0CD000A393C /* MSCalendarViewController.m in Sources */,
 				1886D60A19E97F82005E1645 /* LoginVO.m in Sources */,
 				185CB3F419E7796F00DC8E8A /* PopControlRecordCell.m in Sources */,
 				180BF74F19ECB0960029D2A4 /* WeekStatVC.m in Sources */,
@@ -1801,11 +1868,14 @@
 				180BF6DB19ECB0960029D2A4 /* ARLineChartView.m in Sources */,
 				1886D61C19E97F82005E1645 /* VmVO.m in Sources */,
 				1886D60E19E97F82005E1645 /* PoolListResult.m in Sources */,
+				18C9CE3F19EFA0CD000A393C /* MSEventCell.m in Sources */,
 				185CB3FD19E7796F00DC8E8A /* VmDiskCollectionVC.m in Sources */,
 				18DCEBF019ED139E00ED7BF8 /* RealtimeCurveVC.m in Sources */,
+				18C9CE3A19EFA0CD000A393C /* MSCurrentTimeGridline.m in Sources */,
 				180BF6DA19ECB0960029D2A4 /* ARLineChartContentView.m in Sources */,
 				18DCEC2819ED7CAF00ED7BF8 /* Example2.m in Sources */,
 				180BF6DD19ECB0960029D2A4 /* BTSpiderPlotterVC.m in Sources */,
+				18C9CE3C19EFA0CD000A393C /* MSDayColumnHeader.m in Sources */,
 				1886D60719E97F82005E1645 /* HostVO.m in Sources */,
 				180BF74019ECB0960029D2A4 /* SHRootController.m in Sources */,
 				18DCEBE519ED0DA700ED7BF8 /* JBChartHeaderView.m in Sources */,
@@ -1818,6 +1888,7 @@
 				185CB3D719E7796F00DC8E8A /* MasterContainerVC.m in Sources */,
 				1886D61719E97F82005E1645 /* VmDiskListResult.m in Sources */,
 				180BF6F319ECB0960029D2A4 /* InfoView.m in Sources */,
+				18C9CE4219EFA0CD000A393C /* MSTimeRowHeader.m in Sources */,
 				185CB3DC19E7796F00DC8E8A /* DatacenterDetailMoreVC.m in Sources */,
 				180BF74A19ECB0960029D2A4 /* CalendarDateUtil.m in Sources */,
 				18DCEC0D19ED757E00ED7BF8 /* HeartLive.m in Sources */,
@@ -1843,6 +1914,7 @@
 				185CB3DF19E7796F00DC8E8A /* HostContainerVC.m in Sources */,
 				18DCEBE619ED0DA700ED7BF8 /* JBChartInformationView.m in Sources */,
 				180BF6EB19ECB0960029D2A4 /* PoolDatagridSegement.m in Sources */,
+				18C9CE3E19EFA0CD000A393C /* MSEvent.m in Sources */,
 				18DCEBF819ED14AE00ED7BF8 /* SimpleLineChartVC.m in Sources */,
 				1886D60C19E97F82005E1645 /* NetworkVO.m in Sources */,
 				1886D60B19E97F82005E1645 /* NetworkListResult.m in Sources */,
