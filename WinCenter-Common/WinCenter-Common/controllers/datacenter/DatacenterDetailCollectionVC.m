@@ -414,6 +414,14 @@
                         header.label4.text = [NSString stringWithFormat:@"%d",0];
                         header.label5.text = [NSString stringWithFormat:@"%d",0];
                         
+                        //缩起
+                        header.label6.text = [NSString stringWithFormat:@"%d",0];
+                        header.label7.text = [NSString stringWithFormat:@"%d",0];
+                        header.label8.text = [NSString stringWithFormat:@"%d",0];
+                        header.label9.text = [NSString stringWithFormat:@"%d",0];
+                        header.label10.text = [NSString stringWithFormat:@"%d",0];
+                        header.label11.text = [NSString stringWithFormat:@"%d",0];
+                        
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.hostTypeChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
@@ -452,6 +460,17 @@
                         header.label9.text = [NSString stringWithFormat:@"%.2f",0.0];
                         header.label10.text = [NSString stringWithFormat:@"%.2f",0.0];
                         
+                        //缩起
+                        header.label13.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label14.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label15.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label16.text = [NSString stringWithFormat:@"%.2fG",0.0];
+                        header.label20.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label21.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label22.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label23.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        header.label24.text = [NSString stringWithFormat:@"%.2f",0.0];
+                        
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.storageShareChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
@@ -488,6 +507,17 @@
                         header.label6.text =[NSString stringWithFormat:@"%d",0];
                         header.label7.text =[NSString stringWithFormat:@"%d",0];
                         header.label8.text =[NSString stringWithFormat:@"%d",0];
+                        
+                        //缩起
+                        header.label10.text = [NSString stringWithFormat:@"%d",0];
+                        header.label11.text =[NSString stringWithFormat:@"%d",0];
+                        header.label12.text =[NSString stringWithFormat:@"%d",0];
+                        header.label13.text =[NSString stringWithFormat:@"%d",0];
+                        header.label14.text =[NSString stringWithFormat:@"%d",0];
+                        header.label15.text =[NSString stringWithFormat:@"%d",0];
+                        header.label16.text =[NSString stringWithFormat:@"%d",0];
+                        header.label17.text = [NSString stringWithFormat:@"%d",0];
+                        header.label18.text = [NSString stringWithFormat:@"%d",0];
                         
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.vmOsTypeChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
