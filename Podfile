@@ -18,6 +18,7 @@ target 'WinCenter-iPad' do
     pod 'UIColor-HexString', '~> 1.1.0'
     pod 'MSCollectionViewCalendarLayout', '~> 0.1.3'
     
+    pod 'AMScrollingNavbar', '~> 1.0.3'
     pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
@@ -37,6 +38,7 @@ target 'WinCenter-Theme' do
     pod 'UIColor-HexString', '~> 1.1.0'
     pod 'MSCollectionViewCalendarLayout', '~> 0.1.3'
     
+    pod 'AMScrollingNavbar', '~> 1.0.3'
     pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
@@ -78,6 +80,7 @@ target 'WinCenter-iPhone' do
     pod 'UIColor-HexString', '~> 1.1.0'
     pod 'MSCollectionViewCalendarLayout', '~> 0.1.3'
     
+    pod 'AMScrollingNavbar', '~> 1.0.3'
     pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
