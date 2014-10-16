@@ -44,6 +44,27 @@
     cell.status.textColor = [vmVO state_color];
     cell.osType.text = vmVO.osType;
     cell.osType_image.image = [UIImage imageNamed:[vmVO osType_imageName]];
+    cell.progress_1.litEffect = NO;
+    cell.progress_1.numBars = 10;
+    cell.progress_1.value = 1;
+    cell.progress_1.backgroundColor = [UIColor clearColor];
+    cell.progress_1.outerBorderColor = [UIColor clearColor];
+    cell.progress_1.innerBorderColor = [UIColor clearColor];
+    
+    cell.progress_2.litEffect = NO;
+    cell.progress_2.numBars = 10;
+    cell.progress_2.value = 1;
+    cell.progress_2.backgroundColor = [UIColor clearColor];
+    cell.progress_2.outerBorderColor = [UIColor clearColor];
+    cell.progress_2.innerBorderColor = [UIColor clearColor];
+    
+    cell.progress_3.litEffect = NO;
+    cell.progress_3.numBars = 10;
+    cell.progress_3.value = 1;
+    cell.progress_3.backgroundColor = [UIColor clearColor];
+    cell.progress_3.outerBorderColor = [UIColor clearColor];
+    cell.progress_3.innerBorderColor = [UIColor clearColor];
+    
     return cell;
 }
 

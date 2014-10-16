@@ -13,6 +13,7 @@
 #import <pop/POP.h>
 #import <FastAnimationWithPOP/FastAnimationWithPop.h>
 #import <MZFormSheetController/MZFormSheetController.h>
+#import "F3BarGauge.h"
 #import "UIStoryboard+Theme.h"
 #import "UIButton+Badge.h"
 #import "UIBarButtonItem+Badge.h"

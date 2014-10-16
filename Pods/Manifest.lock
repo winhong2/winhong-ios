@@ -10,6 +10,7 @@ PODS:
     - FrameAccessor (~> 1.3.2)
     - MKFoundationKit/NSArray (~> 1.2.2)
   - JBChartView (2.6.3)
+  - JGProgressHUD (1.2.1)
   - JYRadarChart (0.3.1)
   - MagicPie (1.0.1)
   - MBProgressHUD (0.9)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - FRD3DBarChart (~> 1.1.1)
   - GraphKit (~> 1.1.0)
   - JBChartView (~> 2.6.2)
+  - JGProgressHUD (~> 1.2.1)
   - JYRadarChart (~> 0.3.1)
   - MagicPie (~> 1.0.1)
   - MBProgressHUD (~> 0.9)
@@ -66,6 +68,7 @@ SPEC CHECKSUMS:
   FRD3DBarChart: 831be1ade45d172055812caf5113776f6c84d693
   GraphKit: 951cdad6f6fad9f77e06185af3e1c20be349061b
   JBChartView: 0a14c441cd4de963379e0f417b1f6cc685119637
+  JGProgressHUD: f3c0258684f318bc0009e893fdac0701de5cb75b
   JYRadarChart: d9a90d435b427d928d576169e8df51fd285fe46a
   MagicPie: 221e8a2c292a60680be523b26b051cb150327619
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8

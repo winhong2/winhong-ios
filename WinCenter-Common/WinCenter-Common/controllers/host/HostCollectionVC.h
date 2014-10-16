@@ -8,6 +8,7 @@
 
 #import "MasterCollectionVC.h"
 
+
 @interface HostCollectionVC : MasterCollectionVC
 
 @property PoolVO *poolVO;

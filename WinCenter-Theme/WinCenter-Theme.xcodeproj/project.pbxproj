@@ -161,6 +161,8 @@
 		1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50819E97F5A005E1645 /* WarningInfoVO.m */; };
 		18BBA43219EE54F900416479 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42F19EE54F900416479 /* UIBarButtonItem+Badge.m */; };
 		18BBA43319EE54F900416479 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA43119EE54F900416479 /* UIButton+Badge.m */; };
+		84249DFA19EF5EC50006BC28 /* F3BarGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 84249DF719EF5EC50006BC28 /* F3BarGauge.m */; };
+		84249DFB19EF5EC50006BC28 /* F3BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84249DF919EF5EC50006BC28 /* F3BarViewController.m */; };
 		8658E52896184EA39528D92A /* libPods-WinCenter-Theme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */; };
 /* End PBXBuildFile section */
 
@@ -425,6 +427,10 @@
 		18BBA43019EE54F900416479 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		18BBA43119EE54F900416479 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		22DBF89188134987BEBB987B /* Pods-WinCenter-Theme.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinCenter-Theme.xcconfig"; path = "../Pods/Pods-WinCenter-Theme.xcconfig"; sourceTree = "<group>"; };
+		84249DF619EF5EC50006BC28 /* F3BarGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarGauge.h; sourceTree = "<group>"; };
+		84249DF719EF5EC50006BC28 /* F3BarGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarGauge.m; sourceTree = "<group>"; };
+		84249DF819EF5EC50006BC28 /* F3BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3BarViewController.h; sourceTree = "<group>"; };
+		84249DF919EF5EC50006BC28 /* F3BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3BarViewController.m; sourceTree = "<group>"; };
 		C94DD4AC255D40C8A3CFAB64 /* libPods-WinCenter-Theme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinCenter-Theme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -461,6 +467,7 @@
 		1886D34B19E97942005E1645 /* WinCenter-Theme */ = {
 			isa = PBXGroup;
 			children = (
+				84249DF419EF5EB50006BC28 /* charts */,
 				1886D50919E97F5A005E1645 /* Models.h */,
 				1886D4BA19E97F5A005E1645 /* models */,
 				1886D48219E97AAB005E1645 /* views */,
@@ -879,6 +886,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		84249DF419EF5EB50006BC28 /* charts */ = {
+			isa = PBXGroup;
+			children = (
+				84249DF519EF5EC50006BC28 /* F3BarGauge */,
+			);
+			name = charts;
+			sourceTree = "<group>";
+		};
+		84249DF519EF5EC50006BC28 /* F3BarGauge */ = {
+			isa = PBXGroup;
+			children = (
+				84249DF619EF5EC50006BC28 /* F3BarGauge.h */,
+				84249DF719EF5EC50006BC28 /* F3BarGauge.m */,
+				84249DF819EF5EC50006BC28 /* F3BarViewController.h */,
+				84249DF919EF5EC50006BC28 /* F3BarViewController.m */,
+			);
+			path = F3BarGauge;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1038,6 +1064,7 @@
 				1886D45919E979F8005E1645 /* PopWarningInfoVC.m in Sources */,
 				1886D43919E979F8005E1645 /* LoginVC.m in Sources */,
 				1886D42F19E979F8005E1645 /* DatacenterMenuVC.m in Sources */,
+				84249DFB19EF5EC50006BC28 /* F3BarViewController.m in Sources */,
 				1886D43319E979F8005E1645 /* HostDetailInfoVC.m in Sources */,
 				1886D43819E979F8005E1645 /* LoginTableVC.m in Sources */,
 				1886D42519E979F8005E1645 /* MasterCollectionHeader.m in Sources */,
@@ -1104,6 +1131,7 @@
 				1886D52519E97F5B005E1645 /* StorageVolumnListResult.m in Sources */,
 				1886D42E19E979F8005E1645 /* DatacenterDetailMoreVC.m in Sources */,
 				1886D52319E97F5B005E1645 /* StorageListResult.m in Sources */,
+				84249DFA19EF5EC50006BC28 /* F3BarGauge.m in Sources */,
 				1886D43D19E979F8005E1645 /* PoolContainerVC.m in Sources */,
 				1886D52419E97F5B005E1645 /* StorageVO.m in Sources */,
 				18BBA43319EE54F900416479 /* UIButton+Badge.m in Sources */,
