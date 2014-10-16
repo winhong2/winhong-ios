@@ -13,6 +13,11 @@
 #import <pop/POP.h>
 #import <FastAnimationWithPOP/FastAnimationWithPop.h>
 #import <MZFormSheetController/MZFormSheetController.h>
+#define MAS_SHORTHAND
+#import <Masonry/Masonry.h>
+#import <CupertinoYankee/NSDate+CupertinoYankee.h>
+#import <UIColor-HexString/UIColor+HexString.h>
+#import <MSCollectionViewCalendarLayout/MSCollectionViewCalendarLayout.h>
 #import "UIStoryboard+Theme.h"
 #import "UIButton+Badge.h"
 #import "UIBarButtonItem+Badge.h"

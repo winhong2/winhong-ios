@@ -13,6 +13,11 @@ platform :ios, '7.1'
 target 'WinCenter-iPad' do
     pod 'PNChart', '~> 0.5'
     
+    pod 'CupertinoYankee', '~> 0.1.0'
+    pod 'Masonry', '~> 0.5.3'
+    pod 'UIColor-HexString', '~> 1.1.0'
+    pod 'MSCollectionViewCalendarLayout', '~> 0.1.3'
+    
     pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'
@@ -26,6 +31,11 @@ end
 
 target 'WinCenter-Theme' do
     pod 'PNChart', '~> 0.5'
+    
+    pod 'CupertinoYankee', '~> 0.1.0'
+    pod 'Masonry', '~> 0.5.3'
+    pod 'UIColor-HexString', '~> 1.1.0'
+    pod 'MSCollectionViewCalendarLayout', '~> 0.1.3'
     
     pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
@@ -63,6 +73,11 @@ target 'WinCenter-iPhone' do
     #HeartRateCurve
     pod 'MagicPie', '~> 1.0.1'
 
+    pod 'CupertinoYankee', '~> 0.1.0'
+    pod 'Masonry', '~> 0.5.3'
+    pod 'UIColor-HexString', '~> 1.1.0'
+    pod 'MSCollectionViewCalendarLayout', '~> 0.1.3'
+    
     pod 'MZFormSheetController', '~> 2.3.6'
     pod 'BMFloatingHeaderCollectionViewLayout', '~> 1.0.0'
     pod 'PDKTStickySectionHeadersCollectionViewLayout', '~> 0.1'

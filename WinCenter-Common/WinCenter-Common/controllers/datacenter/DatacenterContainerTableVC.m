@@ -8,6 +8,7 @@
 
 #import "DatacenterContainerTableVC.h"
 #import "DatacenterDetailCollectionVC.h"
+#import "MSCalendarViewController.h"
 
 @interface DatacenterContainerTableVC ()
 
@@ -70,6 +71,8 @@
         }else if(indexPath.row==1){
             [self showControlRecordVC:nil];
         }
+    }else if(indexPath.section==4){
+        [self.navigationController pushViewController:[MSCalendarViewController new] animated:YES];
     }
 }
 
