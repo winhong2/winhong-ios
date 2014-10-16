@@ -174,14 +174,14 @@
             
             cell.progress_1.litEffect = NO;
             cell.progress_1.numBars = 10;
-            cell.progress_1.value = 1;
+            cell.progress_1.value = poolVO.hostNumber*16/100.0;
             cell.progress_1.backgroundColor = [UIColor clearColor];
             cell.progress_1.outerBorderColor = [UIColor clearColor];
             cell.progress_1.innerBorderColor = [UIColor clearColor];
             
             cell.progress_2.litEffect = NO;
             cell.progress_2.numBars = 10;
-            cell.progress_2.value = 1;
+            cell.progress_2.value = poolVO.activeVmNumber*16*16/10000.0;
             cell.progress_2.backgroundColor = [UIColor clearColor];
             cell.progress_2.outerBorderColor = [UIColor clearColor];
             cell.progress_2.innerBorderColor = [UIColor clearColor];
