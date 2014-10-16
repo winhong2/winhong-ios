@@ -30,6 +30,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *label10;
 @property (weak, nonatomic) IBOutlet UILabel *label11;
 @property (weak, nonatomic) IBOutlet UILabel *label12;
+@property (weak, nonatomic) IBOutlet UILabel *label13;
+@property (weak, nonatomic) IBOutlet UILabel *label14;
+@property (weak, nonatomic) IBOutlet UILabel *label15;
+@property (weak, nonatomic) IBOutlet UILabel *label16;
+@property (weak, nonatomic) IBOutlet UILabel *label17;
+@property (weak, nonatomic) IBOutlet UILabel *label18;
+@property (weak, nonatomic) IBOutlet UILabel *label19;
+@property (weak, nonatomic) IBOutlet UILabel *label20;
+@property (weak, nonatomic) IBOutlet UILabel *label21;
+@property (weak, nonatomic) IBOutlet UILabel *label22;
+@property (weak, nonatomic) IBOutlet UILabel *label23;
+@property (weak, nonatomic) IBOutlet UILabel *label24;
 
 @property (weak, nonatomic) IBOutlet UIView *cpuChartGroup;
 @property (weak, nonatomic) IBOutlet UIView *memoryChartGroup;
