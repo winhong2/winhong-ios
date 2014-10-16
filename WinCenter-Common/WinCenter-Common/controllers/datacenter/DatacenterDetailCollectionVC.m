@@ -552,6 +552,12 @@
                         header.label1.text =[NSString stringWithFormat:@"%d",0];
                         header.label2.text =[NSString stringWithFormat:@"%d",0];
                         
+                        //缩起
+                        header.label3.text =[NSString stringWithFormat:@"%d",0];
+                        header.label4.text =[NSString stringWithFormat:@"%d",0];
+                        header.label5.text =[NSString stringWithFormat:@"%d",0];
+                        header.label6.text =[NSString stringWithFormat:@"%d",0];
+                        
                         //圈图
                         PNCircleChart * circleChart = [[PNCircleChart alloc] initWithFrame:header.businessAllocateChart.bounds andTotal:@100 andCurrent:[NSNumber numberWithFloat:50] andClockwise:YES andShadow:YES];
                         circleChart.backgroundColor = [UIColor clearColor];
