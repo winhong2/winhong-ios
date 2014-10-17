@@ -14,6 +14,9 @@
 @property NSMutableDictionary *pools_needMoreButton;
 @property NSMutableDictionary *dataList;
 
+@property BOOL isDetailPagePushed;
+
+
 -(void)reloadData;
 
 -(IBAction)backToCollectionVC:(UIStoryboardSegue*)segue;

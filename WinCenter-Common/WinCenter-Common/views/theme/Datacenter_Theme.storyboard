@@ -82,12 +82,14 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyb-aS-OTb">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="首页" image="navIcon-home">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-home-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="q3a-ei-ob6"/>
+                                                        <outletCollection property="gestureRecognizers" destination="aZa-zm-xkD" appends="YES" id="2Wd-0S-ipJ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -102,12 +104,14 @@
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m68-3y-M3S">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="资源池" image="navIcon-pool">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-pool-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="WnT-qv-M3W"/>
+                                                        <outletCollection property="gestureRecognizers" destination="rWi-ZA-NuM" appends="YES" id="Uaa-lJ-ymL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -122,12 +126,14 @@
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-xW-YPY">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="物理机" image="navIcon-host">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-host-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="JW4-ID-kBk"/>
+                                                        <outletCollection property="gestureRecognizers" destination="zq4-ad-8VK" appends="YES" id="3af-fO-WAI"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -142,12 +148,14 @@
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrk-FM-kl2">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="虚拟机" image="navIcon-vm">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-vm-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="dFB-cl-C4g"/>
+                                                        <outletCollection property="gestureRecognizers" destination="Vea-8A-dF7" appends="YES" id="9Hk-1c-gVr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -162,12 +170,14 @@
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-Ac-R0u">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="存储池" image="navIcon-storage">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-storage-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="jhz-0Y-KED"/>
+                                                        <outletCollection property="gestureRecognizers" destination="dgx-dd-hVN" appends="YES" id="b54-A4-AM5"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -182,12 +192,14 @@
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teG-WG-WvM">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="业务" image="navIcon-business">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-business-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="vjd-Sb-NzA"/>
+                                                        <outletCollection property="gestureRecognizers" destination="7dl-hV-76g" appends="YES" id="wXk-zE-F4C"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -202,12 +214,14 @@
                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-yL-Iuk">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="网络" image="navIcon-network">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-network-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="1Rp-NW-3ow"/>
+                                                        <outletCollection property="gestureRecognizers" destination="lhm-br-WvG" appends="YES" id="JyX-MV-Qgi"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -226,12 +240,14 @@
                                                 <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut7-W3-8A8">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="切换" image="navIcon-refresh">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-refresh-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="ecl-2N-0v5"/>
+                                                        <outletCollection property="gestureRecognizers" destination="MSm-kz-9gS" appends="YES" id="CZg-Oe-GYr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -246,12 +262,14 @@
                                                 <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl2-XT-XYc">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="设置" image="navIcon-settings">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-settings-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="dTh-rv-NXF"/>
+                                                        <outletCollection property="gestureRecognizers" destination="LdB-ZM-KjX" appends="YES" id="yJA-pO-wLl"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -266,12 +284,14 @@
                                                 <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRV-yn-KP3">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="58"/>
                                                     <color key="backgroundColor" red="0.098039215690000001" green="0.1137254902" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" title="展开" image="navIcon-arrRight">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="navIcon-arrRight-white"/>
                                                     <connections>
                                                         <action selector="switchTabBar:" destination="teZ-Tc-JZU" eventType="touchUpInside" id="TZ9-KA-dFw"/>
+                                                        <outletCollection property="gestureRecognizers" destination="3YI-fP-b0w" appends="YES" id="gRP-1Q-WeL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -300,6 +320,56 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vA-HE-7fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="aZa-zm-xkD">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="hr3-nc-kAw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="rWi-ZA-NuM">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="MLr-KM-p7e"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="zq4-ad-8VK">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="8FG-wv-B9m"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="Vea-8A-dF7">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="EIY-Gl-xhV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="dgx-dd-hVN">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="l7m-9m-bjb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="7dl-hV-76g">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="QkF-ye-NVD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="lhm-br-WvG">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="hPp-di-Awe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="MSm-kz-9gS">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="q6l-no-gGF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="LdB-ZM-KjX">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="VNW-mY-dIL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="3YI-fP-b0w">
+                    <connections>
+                        <action selector="doubleClickItem:" destination="teZ-Tc-JZU" id="RYX-6E-MvZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-5095.5" y="2071"/>
         </scene>

@@ -99,7 +99,10 @@
         vc = [[root childViewControllers] firstObject];
     }
     vc.vmVO = (VmVO *)[self.dataList valueForKey:self.dataList.allKeys[indexPath.section]][indexPath.row];
-    [self presentViewController:root animated:YES completion:nil];
-}
+    if(self.isDetailPagePushed){
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        [self presentViewController:root animated:YES completion:nil];
+    }}
 
 @end

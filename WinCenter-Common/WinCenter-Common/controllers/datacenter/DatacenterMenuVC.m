@@ -61,6 +61,13 @@
     
     
 }
+- (IBAction)doubleClickItem:(id)sender {
+    NSInteger currentIndex =  ((UIButton*)((UITapGestureRecognizer*)sender).view).tag;
+    UIViewController *nav = [[self.tabBarVC childViewControllers] objectAtIndex:currentIndex];
+    if([nav isKindOfClass:[UINavigationController class]]){
+        [((UINavigationController*)nav) popToRootViewControllerAnimated:YES];
+    }
+}
 
 
 @end

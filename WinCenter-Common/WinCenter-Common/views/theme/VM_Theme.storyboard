@@ -468,7 +468,7 @@
                     <toolbarItems>
                         <barButtonItem title="返回" id="0Ag-or-7ZV">
                             <connections>
-                                <segue destination="xok-Jd-cwb" kind="unwind" unwindAction="backToCollectionVC:" id="9Nw-c5-TvR"/>
+                                <action selector="backAction:" destination="rda-j3-bYj" id="5IN-Dl-lLJ"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -485,7 +485,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDO-Z0-sbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="xok-Jd-cwb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4408" y="187"/>
         </scene>
@@ -667,6 +666,9 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="U7c-Gm-3as"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDetailPagePushed" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4H-YI-xND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

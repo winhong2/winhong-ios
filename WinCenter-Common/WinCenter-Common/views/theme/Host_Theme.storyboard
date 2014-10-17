@@ -282,7 +282,7 @@
                         <barButtonItem title="返回" id="6HX-uc-HcG">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="Nqu-0U-Fib" kind="unwind" unwindAction="backToCollectionVC:" id="ECG-pJ-Ybk"/>
+                                <action selector="backAction:" destination="SdQ-oO-Giu" id="vrE-y0-VyO"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -296,7 +296,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfj-nX-Bm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Nqu-0U-Fib" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4336" y="-2414"/>
         </scene>
@@ -551,6 +550,9 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="zTZ-OS-5Cn"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDetailPagePushed" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAN-o7-pFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

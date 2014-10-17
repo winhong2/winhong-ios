@@ -12,4 +12,6 @@
 
 @property BusinessVO *businessVO;
 @property NSArray *dataList;
+@property BOOL isDetailPagePushed;
+
 @end

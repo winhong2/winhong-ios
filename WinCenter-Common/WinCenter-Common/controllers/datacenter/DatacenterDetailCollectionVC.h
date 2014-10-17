@@ -12,7 +12,6 @@
 @interface DatacenterDetailCollectionVC : MasterCollectionVC
 
 @property BOOL isMore;
-@property BOOL isDetailPagePushed;
 @property PoolVO *poolVO;
 @property DatacenterDetailPageType pageType;
 @property UIPopoverController *popover;

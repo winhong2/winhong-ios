@@ -75,6 +75,10 @@
     vmvo.vmId = businessVmvo.vmId;
     vmvo.name = businessVmvo.name;
     vc.vmVO = vmvo;
-    [self presentViewController:root animated:YES completion:nil];
+    if(self.isDetailPagePushed){
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        [self presentViewController:root animated:YES completion:nil];
+    }
 }
 @end

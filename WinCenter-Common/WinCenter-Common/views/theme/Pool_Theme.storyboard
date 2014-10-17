@@ -64,7 +64,7 @@
                         <barButtonItem title="返回" id="gvA-Yc-pu6">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="dGW-X0-mVo" kind="unwind" unwindAction="backToCollectionVC:" id="Y7b-Az-YTx"/>
+                                <action selector="backAction:" destination="4Ve-tC-ML6" id="iZr-ea-8DR"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -78,7 +78,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAU-x6-Pji" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="dGW-X0-mVo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4408" y="-4161"/>
         </scene>
