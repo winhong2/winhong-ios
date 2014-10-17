@@ -161,6 +161,7 @@
 		1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886D50819E97F5A005E1645 /* WarningInfoVO.m */; };
 		18BBA43219EE54F900416479 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42F19EE54F900416479 /* UIBarButtonItem+Badge.m */; };
 		18BBA43319EE54F900416479 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA43119EE54F900416479 /* UIButton+Badge.m */; };
+		18C5523A19F0AC790009E3DC /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5523919F0AC790009E3DC /* VWWWaterView.m */; };
 		18C9CE7E19EFAED8000A393C /* MSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE6A19EFAED8000A393C /* MSCalendarViewController.m */; };
 		18C9CE7F19EFAED8000A393C /* MSCurrentTimeGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE6C19EFAED8000A393C /* MSCurrentTimeGridline.m */; };
 		18C9CE8019EFAED8000A393C /* MSCurrentTimeIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE6E19EFAED8000A393C /* MSCurrentTimeIndicator.m */; };
@@ -439,6 +440,8 @@
 		18BBA42F19EE54F900416479 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		18BBA43019EE54F900416479 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		18BBA43119EE54F900416479 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
+		18C5523819F0AC790009E3DC /* VWWWaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWWaterView.h; sourceTree = "<group>"; };
+		18C5523919F0AC790009E3DC /* VWWWaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWWaterView.m; sourceTree = "<group>"; };
 		18C9CE6919EFAED8000A393C /* MSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCalendarViewController.h; sourceTree = "<group>"; };
 		18C9CE6A19EFAED8000A393C /* MSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCalendarViewController.m; sourceTree = "<group>"; };
 		18C9CE6B19EFAED8000A393C /* MSCurrentTimeGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeGridline.h; sourceTree = "<group>"; };
@@ -646,6 +649,8 @@
 				1886D3AC19E979F8005E1645 /* LoginTableVC.m */,
 				1886D3AD19E979F8005E1645 /* LoginVC.h */,
 				1886D3AE19E979F8005E1645 /* LoginVC.m */,
+				18C5523819F0AC790009E3DC /* VWWWaterView.h */,
+				18C5523919F0AC790009E3DC /* VWWWaterView.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -1145,6 +1150,7 @@
 				1886D53019E97F5B005E1645 /* WarningInfoVO.m in Sources */,
 				1886D44819E979F8005E1645 /* PopControlRecordCellForTime.m in Sources */,
 				1886D51419E97F5A005E1645 /* HostNetworkListResult.m in Sources */,
+				18C5523A19F0AC790009E3DC /* VWWWaterView.m in Sources */,
 				1886D51319E97F5A005E1645 /* HostListResult.m in Sources */,
 				1886D43E19E979F8005E1645 /* PoolDetailInfoVC.m in Sources */,
 				1886D42619E979F8005E1645 /* MasterCollectionVC.m in Sources */,
