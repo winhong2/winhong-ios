@@ -19,7 +19,15 @@
         [self.collectionView reloadData];
     }];
 }
-
+- (float) formatCountData:(float) num{
+    float Num = 0.0;
+    if (num < 0.1 && num != 0) {
+        Num = 0.1;
+    }else{
+        Num = num;
+    }
+    return Num;
+}
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     MasterCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HostCollectionCell" forIndexPath:indexPath];
@@ -37,35 +45,35 @@
     
     cell.progress_1.litEffect = NO;
     cell.progress_1.numBars = 10;
-    cell.progress_1.value = 1;
+    cell.progress_1.value = [self formatCountData:hostVO.virtualMachineNum/16.0];
     cell.progress_1.backgroundColor = [UIColor clearColor];
     cell.progress_1.outerBorderColor = [UIColor clearColor];
     cell.progress_1.innerBorderColor = [UIColor clearColor];
     
     cell.progress_2.litEffect = NO;
     cell.progress_2.numBars = 10;
-    cell.progress_2.value = 1;
+    cell.progress_2.value = [self formatCountData:hostVO.storage/640.0];
     cell.progress_2.backgroundColor = [UIColor clearColor];
     cell.progress_2.outerBorderColor = [UIColor clearColor];
     cell.progress_2.innerBorderColor = [UIColor clearColor];
     
     cell.progress_3.litEffect = NO;
     cell.progress_3.numBars = 10;
-    cell.progress_3.value = 1;
+    cell.progress_3.value = [self formatCountData:hostVO.cpuSlots/16.0];
     cell.progress_3.backgroundColor = [UIColor clearColor];
     cell.progress_3.outerBorderColor = [UIColor clearColor];
     cell.progress_3.innerBorderColor = [UIColor clearColor];
     
     cell.progress_4.litEffect = NO;
     cell.progress_4.numBars = 10;
-    cell.progress_4.value = 1;
+    cell.progress_4.value = [self formatCountData:hostVO.cpu/(2*8*4.0)];
     cell.progress_4.backgroundColor = [UIColor clearColor];
     cell.progress_4.outerBorderColor = [UIColor clearColor];
     cell.progress_4.innerBorderColor = [UIColor clearColor];
     
     cell.progress_5.litEffect = NO;
     cell.progress_5.numBars = 10;
-    cell.progress_5.value = 1;
+    cell.progress_5.value = [self formatCountData:hostVO.memory/(1024.0*256.0)];
     cell.progress_5.backgroundColor = [UIColor clearColor];
     cell.progress_5.outerBorderColor = [UIColor clearColor];
     cell.progress_5.innerBorderColor = [UIColor clearColor];
