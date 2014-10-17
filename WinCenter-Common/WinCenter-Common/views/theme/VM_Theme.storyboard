@@ -1078,8 +1078,8 @@
                                         <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="os-others" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-C3-IAJ">
-                                        <rect key="frame" x="419" y="199" width="55" height="55"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="os-others-big" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-C3-IAJ">
+                                        <rect key="frame" x="419" y="199" width="110" height="110"/>
                                     </imageView>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-h3-0GU">
                                         <rect key="frame" x="546" y="556" width="17" height="21"/>
@@ -1154,6 +1154,7 @@
         <image name="ip" width="10" height="11"/>
         <image name="ip-蓝色背景" width="10" height="11"/>
         <image name="os-others" width="55" height="55"/>
+        <image name="os-others-big" width="110" height="110"/>
         <image name="内存-black" width="15" height="15"/>
         <image name="勾" width="17" height="12"/>
         <image name="时间" width="11" height="11"/>

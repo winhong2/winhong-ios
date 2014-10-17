@@ -48,7 +48,7 @@
     [lineChart setBackgroundColor:[UIColor clearColor]];
     [lineChart setXLabels:@[@"07-18 16:18",@"07-18 16:18",@"07-18 16:18",@"07-18 16:18",@"07-18 16:18"]];
     
-    // Line Chart No.1
+    // Line Chart No.1F
     NSArray * data01Array = @[@60.1, @160.1, @126.4, @262.2, @186.2];
     PNLineChartData *data01 = [PNLineChartData new];
     data01.color = PNFreshGreen;
@@ -185,7 +185,7 @@
     //self.isDynamicMemWce
     self.memory.text = [NSString stringWithFormat:@"%d", self.vmVO.memory];
     //self.snopshotNum.text
-    self.osType_image.image = [UIImage imageNamed:[self.vmVO osType_imageName]];
+    self.osType_image.image = [UIImage imageNamed:[self.vmVO osType_imageName_big]];
 }
 
 @end

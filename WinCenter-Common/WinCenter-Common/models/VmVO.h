@@ -33,6 +33,7 @@
 
 - (NSString *) isInstallTools_text;
 - (NSString*)osType_imageName;
+- (NSString*)osType_imageName_big;
 - (NSString*)state_text;
 - (UIColor *)state_color;
 - (NSString *)memoryType_text;

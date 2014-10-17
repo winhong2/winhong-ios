@@ -28,7 +28,21 @@
     }
     
 }
-
+- (NSString*)osType_imageName_big{
+    
+    if([self.osType rangeOfString:@"window" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-win-big";
+    }else if([self.osType rangeOfString:@"cent" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-centos-big";
+    }else if([self.osType rangeOfString:@"suse" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-suse-big";
+    }else if([self.osType rangeOfString:@"hat" options:NSCaseInsensitiveSearch].length>0){
+        return @"os-redhat-big";
+    }else{
+        return @"os-others-big";
+    }
+    
+}
 - (NSString*)state_text{
     NSDictionary *stateDict = @{
         @"OK":@"运行中",
