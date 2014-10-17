@@ -3137,7 +3137,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterBusinessCollectionHeader" id="XqT-2E-Wk7" customClass="DatacenterDetailCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="209"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="266"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMK-kq-SeD">
