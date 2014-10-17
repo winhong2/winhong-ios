@@ -10,7 +10,7 @@
 
 @interface VWWWaterView ()
 {    
-    float _currentLinePointY;
+
     
     float a;
     float b;
@@ -34,7 +34,7 @@
         b = 0;
         jia = NO;
         
-        _currentLinePointY = 250;
+
         
         [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(animateWave) userInfo:nil repeats:YES];
         
@@ -60,7 +60,7 @@
     }
     
     
-    b+=0.1;
+    b+=self.speed;
     
     [self setNeedsDisplay];
 }
@@ -76,18 +76,19 @@
     
     //画水
     CGContextSetLineWidth(context, 1);
-    CGContextSetFillColorWithColor(context, [_currentWaterColor CGColor]);
+    CGContextSetFillColorWithColor(context, [self.currentWaterColor CGColor]);
     
     float y=_currentLinePointY;
     CGPathMoveToPoint(path, NULL, 0, y);
-    for(float x=0;x<=320;x++){
-        y= a * sin( x/180*M_PI + 4*b/M_PI ) * 5 + _currentLinePointY;
+    
+    for(float x=0;x<=self.waterWidth;x++){
+        y= a * sin( x/90*M_PI + 8*b/M_PI ) * self.waterHeight + self.currentLinePointY;
         CGPathAddLineToPoint(path, nil, x, y);
     }
     
-    CGPathAddLineToPoint(path, nil, 320, rect.size.height);
+    CGPathAddLineToPoint(path, nil, self.waterWidth, rect.size.height);
     CGPathAddLineToPoint(path, nil, 0, rect.size.height);
-    CGPathAddLineToPoint(path, nil, 0, _currentLinePointY);
+    CGPathAddLineToPoint(path, nil, 0, self.currentLinePointY);
     
     CGContextAddPath(context, path);
     CGContextFillPath(context);

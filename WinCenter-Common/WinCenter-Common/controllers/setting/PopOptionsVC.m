@@ -7,6 +7,7 @@
 //
 
 #import "PopOptionsVC.h"
+#import <TOWebViewController/TOWebViewController.h>
 
 @interface PopOptionsVC ()
 
@@ -42,5 +43,18 @@
 
 - (IBAction)close:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.section==5){
+        if(indexPath.row==1){
+            TOWebViewController *webView = [[TOWebViewController alloc] initWithURLString:@"http://support.winhong.com"];
+            [self.navigationController pushViewController:webView animated:YES];
+        }else if(indexPath.row==2){
+            TOWebViewController *webView = [[TOWebViewController alloc] initWithURLString:@"https://192.168.100.147:8090/pages/help/helpWord.htm"];
+            [self.navigationController pushViewController:webView animated:YES];
+
+        }
+    }
 }
 @end

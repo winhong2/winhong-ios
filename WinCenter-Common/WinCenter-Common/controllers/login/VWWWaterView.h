@@ -11,6 +11,10 @@
 @interface VWWWaterView : UIView
 
 @property UIColor *currentWaterColor;
+@property float currentLinePointY;
+@property int waterWidth;
+@property int waterHeight;
+@property float speed;
 
 
 @end

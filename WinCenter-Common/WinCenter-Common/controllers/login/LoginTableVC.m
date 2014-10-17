@@ -8,9 +8,11 @@
 
 #import "LoginTableVC.h"
 #import "VWWWaterView.h"
+#import <AFViewShaker/AFViewShaker.h>
 
 @interface LoginTableVC ()
 @property NSArray *datacenters;
+@property AFViewShaker *viewShaker;
 @end
 
 @implementation LoginTableVC
@@ -24,13 +26,34 @@
     CGRect rect = [[UIScreen mainScreen] bounds];
     self.tableView.backgroundView = [[UIView alloc] initWithFrame:rect];
     self.tableView.backgroundView.backgroundColor = [UIColor clearColor];
+    
+    //波纹
     VWWWaterView *waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 200, rect.size.width, rect.size.height)];
-    waterView.currentWaterColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#48a8d0"];
+    waterView.currentLinePointY = 250;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 5;
+    waterView.speed = 0.03;
     [self.tableView.backgroundView addSubview:waterView];
     
-    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 230, rect.size.width, rect.size.height)];
-    waterView.currentWaterColor = [UIColor colorWithRed:128/255.0f green:232/255.0f blue:176/255.0f alpha:0.8];
+    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 200, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#6ebedf"];
+    waterView.currentLinePointY = 280;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 7;
+    waterView.speed = -0.045;
     [self.tableView.backgroundView addSubview:waterView];
+    
+    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 200, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#b4e8fe"];
+    waterView.currentLinePointY = 310;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 9;
+    waterView.speed = 0.0375;
+    [self.tableView.backgroundView addSubview:waterView];
+    
+    self.viewShaker = [[AFViewShaker alloc] initWithViewsArray:@[self.userName, self.password]];
+    
 }
 - (IBAction)exitInput:(id)sender {
     [self.userName resignFirstResponder];
@@ -71,8 +94,9 @@
             [alert show];
         }];
     }else{
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alert show];
+        //UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        //[alert show];
+        [self.viewShaker shake];
     }
 }
 
