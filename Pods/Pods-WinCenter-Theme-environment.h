@@ -6,6 +6,12 @@
 // project.
 
 
+// AFViewShaker
+#define COCOAPODS_POD_AVAILABLE_AFViewShaker
+#define COCOAPODS_VERSION_MAJOR_AFViewShaker 0
+#define COCOAPODS_VERSION_MINOR_AFViewShaker 0
+#define COCOAPODS_VERSION_PATCH_AFViewShaker 2
+
 // AMScrollingNavbar
 #define COCOAPODS_POD_AVAILABLE_AMScrollingNavbar
 #define COCOAPODS_VERSION_MAJOR_AMScrollingNavbar 1

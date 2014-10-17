@@ -8,9 +8,11 @@
 
 #import "LoginTableVC.h"
 #import "VWWWaterView.h"
+#import <AFViewShaker/AFViewShaker.h>
 
 @interface LoginTableVC ()
 @property NSArray *datacenters;
+@property AFViewShaker *viewShaker;
 @end
 
 @implementation LoginTableVC
@@ -29,8 +31,11 @@
     [self.tableView.backgroundView addSubview:waterView];
     
     waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 230, rect.size.width, rect.size.height)];
-    waterView.currentWaterColor = [UIColor colorWithRed:128/255.0f green:232/255.0f blue:176/255.0f alpha:0.8];
+    waterView.currentWaterColor = [UIColor colorWithRed:128/255.0f green:232/255.0f blue:176/255.0f alpha:0.8
+                                   ];
     [self.tableView.backgroundView addSubview:waterView];
+    
+    self.viewShaker = [[AFViewShaker alloc] initWithViewsArray:@[self.userName, self.password]];
 }
 - (IBAction)exitInput:(id)sender {
     [self.userName resignFirstResponder];
@@ -71,8 +76,9 @@
             [alert show];
         }];
     }else{
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alert show];
+        //UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        //[alert show];
+        [self.viewShaker shake];
     }
 }
 
