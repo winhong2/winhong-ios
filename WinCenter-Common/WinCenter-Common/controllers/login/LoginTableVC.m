@@ -7,6 +7,7 @@
 //
 
 #import "LoginTableVC.h"
+#import "VWWWaterView.h"
 
 @interface LoginTableVC ()
 @property NSArray *datacenters;
@@ -19,7 +20,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.userName becomeFirstResponder];
+    //[self.userName becomeFirstResponder];
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    self.tableView.backgroundView = [[UIView alloc] initWithFrame:rect];
+    self.tableView.backgroundView.backgroundColor = [UIColor clearColor];
+    VWWWaterView *waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 200, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
+    [self.tableView.backgroundView addSubview:waterView];
+    
+    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 230, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithRed:128/255.0f green:232/255.0f blue:176/255.0f alpha:0.8];
+    [self.tableView.backgroundView addSubview:waterView];
 }
 - (IBAction)exitInput:(id)sender {
     [self.userName resignFirstResponder];

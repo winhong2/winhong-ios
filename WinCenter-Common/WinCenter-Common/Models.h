@@ -18,6 +18,7 @@
 #import <CupertinoYankee/NSDate+CupertinoYankee.h>
 #import <UIColor-HexString/UIColor+HexString.h>
 #import <MSCollectionViewCalendarLayout/MSCollectionViewCalendarLayout.h>
+#import <AMScrollingNavbar/UIViewController+ScrollingNavbar.h>
 #import "UIStoryboard+Theme.h"
 #import "UIButton+Badge.h"
 #import "UIBarButtonItem+Badge.h"

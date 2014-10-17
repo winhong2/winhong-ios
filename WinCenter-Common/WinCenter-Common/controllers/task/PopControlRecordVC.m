@@ -50,7 +50,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PopControlRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCell" forIndexPath:indexPath];
+    PopControlRecordCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ControlRecordCell" forIndexPath:indexPath];
+    
     ControlRecordVO *controlRecordVO = self.dataList[indexPath.row];
     cell.label1.text = controlRecordVO.taskName;
     cell.label2.text = [NSString stringWithFormat:@"%d 时",(controlRecordVO.executeTime)/3600];
