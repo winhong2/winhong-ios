@@ -12,4 +12,5 @@
 
 @property BusinessVO *businessVO;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
 @end

@@ -13,4 +13,5 @@
 
 @property StorageVO *storageVO;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
 @end

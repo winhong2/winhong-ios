@@ -58,6 +58,9 @@
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor clearColor];
+    for(UILabel *label in self.allLabels){
+        label.text = @"";
+    }
     [super viewDidLoad];
     
     [self.hostVO getHostVOAsync:^(id object, NSError *error) {

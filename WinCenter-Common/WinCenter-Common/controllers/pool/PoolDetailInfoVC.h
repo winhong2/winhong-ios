@@ -13,4 +13,6 @@
 @property PoolVO *poolVO;
 @property PoolElasticInfo *elasticInfo;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
+
 @end

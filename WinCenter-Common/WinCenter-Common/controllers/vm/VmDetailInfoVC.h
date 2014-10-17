@@ -12,5 +12,7 @@
 
 @property VmVO *vmVO;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
+
 
 @end

@@ -45,6 +45,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *cpuUsedInfo;
 @property (weak, nonatomic) IBOutlet UILabel *memeryUsedInfo;
 @property (weak, nonatomic) IBOutlet UILabel *storageUsedInfo;
+
+@property PNCircleChart *circleChart;
+@property PNCircleChart *circleChart2;
+@property PNCircleChart *circleChart3;
 - (void)refresh;
 - (void)switchButtonSelected:(NSInteger)index;
 

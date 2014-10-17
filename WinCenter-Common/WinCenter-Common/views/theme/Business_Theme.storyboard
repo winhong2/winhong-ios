@@ -228,6 +228,13 @@
                         <outlet property="name" destination="CHS-DY-5xz" id="QzQ-qe-LJA"/>
                         <outlet property="platform" destination="k5p-vK-o81" id="bRD-L8-K6I"/>
                         <outlet property="vmCount" destination="4UV-Q8-D8B" id="Ovd-M2-P0b"/>
+                        <outletCollection property="allLabels" destination="4UV-Q8-D8B" id="n9q-sE-BAs"/>
+                        <outletCollection property="allLabels" destination="Zh7-vU-bmz" id="FQe-5W-8Cn"/>
+                        <outletCollection property="allLabels" destination="ag6-iv-MQb" id="QrY-Os-L28"/>
+                        <outletCollection property="allLabels" destination="cts-Hp-Jmt" id="QyB-G0-MV0"/>
+                        <outletCollection property="allLabels" destination="k5p-vK-o81" id="QjZ-D2-Vek"/>
+                        <outletCollection property="allLabels" destination="duz-zs-IxL" id="g31-gQ-VHk"/>
+                        <outletCollection property="allLabels" destination="CHS-DY-5xz" id="tcS-Jj-cd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ow-GZ-EdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

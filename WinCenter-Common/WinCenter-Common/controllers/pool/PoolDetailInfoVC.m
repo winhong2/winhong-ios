@@ -61,6 +61,10 @@
 
 - (void)viewDidLoad
 {
+    for(UILabel *label in self.allLabels){
+        label.text = @"";
+    }
+
     self.view.backgroundColor = [UIColor clearColor];
     [super viewDidLoad];
     // Do any additional setup after loading the view.

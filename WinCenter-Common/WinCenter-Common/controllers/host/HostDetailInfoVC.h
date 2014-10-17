@@ -12,5 +12,6 @@
 
 @property HostVO *hostVO;
 @property HostStatVO *statVO;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
 
 @end
