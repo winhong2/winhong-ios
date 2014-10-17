@@ -6,6 +6,12 @@
 // project.
 
 
+// AFViewShaker
+#define COCOAPODS_POD_AVAILABLE_AFViewShaker
+#define COCOAPODS_VERSION_MAJOR_AFViewShaker 0
+#define COCOAPODS_VERSION_MINOR_AFViewShaker 0
+#define COCOAPODS_VERSION_PATCH_AFViewShaker 2
+
 // AMScrollingNavbar
 #define COCOAPODS_POD_AVAILABLE_AMScrollingNavbar
 #define COCOAPODS_VERSION_MAJOR_AMScrollingNavbar 1
@@ -89,6 +95,12 @@
 #define COCOAPODS_VERSION_MAJOR_PNChart 0
 #define COCOAPODS_VERSION_MINOR_PNChart 5
 #define COCOAPODS_VERSION_PATCH_PNChart 0
+
+// TOWebViewController
+#define COCOAPODS_POD_AVAILABLE_TOWebViewController
+#define COCOAPODS_VERSION_MAJOR_TOWebViewController 2
+#define COCOAPODS_VERSION_MINOR_TOWebViewController 0
+#define COCOAPODS_VERSION_PATCH_TOWebViewController 14
 
 // UIColor-HexString
 #define COCOAPODS_POD_AVAILABLE_UIColor_HexString

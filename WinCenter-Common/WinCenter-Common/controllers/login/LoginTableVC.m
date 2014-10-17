@@ -8,9 +8,11 @@
 
 #import "LoginTableVC.h"
 #import "VWWWaterView.h"
+#import <AFViewShaker/AFViewShaker.h>
 
 @interface LoginTableVC ()
 @property NSArray *datacenters;
+@property AFViewShaker *viewShaker;
 @end
 
 @implementation LoginTableVC
@@ -90,8 +92,9 @@
             [alert show];
         }];
     }else{
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        [alert show];
+        //UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        //[alert show];
+        [self.viewShaker shake];
     }
 }
 
