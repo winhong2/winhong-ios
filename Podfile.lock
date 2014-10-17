@@ -37,6 +37,7 @@ PODS:
   - RATreeView (0.2.2)
   - SFGaugeView (0.0.7)
   - SHLineGraphView (1.0.6)
+  - SVProgressHUD (1.0)
   - TOWebViewController (2.0.14)
   - TWRCharts (0.1)
   - UIColor-HexString (1.1.0)
@@ -69,6 +70,7 @@ DEPENDENCIES:
   - RATreeView (~> 0.2.2)
   - SFGaugeView (~> 0.0.7)
   - SHLineGraphView (~> 1.0.6)
+  - SVProgressHUD (~> 1.0)
   - TOWebViewController (~> 2.0.14)
   - TWRCharts (~> 0.1)
   - UIColor-HexString (~> 1.1.0)
@@ -104,6 +106,7 @@ SPEC CHECKSUMS:
   RATreeView: 57c9be7681a469b816b0f9f56ed1816dd8f2f3d7
   SFGaugeView: d2d25bc2a47829e9ebac4bae55276f33b42e7fb5
   SHLineGraphView: ea496febee7a19bef01d5d1c832cf83a5e6a443e
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
   TOWebViewController: d3eee5342e5f8508cc87107c96544f5dff01b802
   TWRCharts: 4da6c4c92df46328e184549176a9bb6bd1f0f511
   UIColor-HexString: a9eabf02c1a2f9036ed6ac9cb2a3ea086f3b39e4

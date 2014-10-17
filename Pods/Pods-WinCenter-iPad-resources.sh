@@ -42,6 +42,7 @@ install_resource()
   esac
 }
 install_resource "JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"
+install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 install_resource "TOWebViewController/TOWebViewController/de.lproj"
 install_resource "TOWebViewController/TOWebViewController/en.lproj"
 install_resource "TOWebViewController/TOWebViewController/es.lproj"

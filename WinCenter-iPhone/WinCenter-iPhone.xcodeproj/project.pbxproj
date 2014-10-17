@@ -225,6 +225,7 @@
 		18BBA42619EE54DA00416479 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42319EE54DA00416479 /* UIBarButtonItem+Badge.m */; };
 		18BBA42719EE54DA00416479 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA42519EE54DA00416479 /* UIButton+Badge.m */; };
 		18C5523419F0AC550009E3DC /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5523319F0AC550009E3DC /* VWWWaterView.m */; };
+		18C5523D19F0ED630009E3DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C5523C19F0ED630009E3DC /* QuartzCore.framework */; };
 		18C9CE3919EFA0CD000A393C /* MSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2519EFA0CD000A393C /* MSCalendarViewController.m */; };
 		18C9CE3A19EFA0CD000A393C /* MSCurrentTimeGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2719EFA0CD000A393C /* MSCurrentTimeGridline.m */; };
 		18C9CE3B19EFA0CD000A393C /* MSCurrentTimeIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE2919EFA0CD000A393C /* MSCurrentTimeIndicator.m */; };
@@ -635,6 +636,7 @@
 		18BBA42519EE54DA00416479 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		18C5523219F0AC550009E3DC /* VWWWaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWWaterView.h; sourceTree = "<group>"; };
 		18C5523319F0AC550009E3DC /* VWWWaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWWaterView.m; sourceTree = "<group>"; };
+		18C5523C19F0ED630009E3DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18C9CE2419EFA0CD000A393C /* MSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCalendarViewController.h; sourceTree = "<group>"; };
 		18C9CE2519EFA0CD000A393C /* MSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCalendarViewController.m; sourceTree = "<group>"; };
 		18C9CE2619EFA0CD000A393C /* MSCurrentTimeGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeGridline.h; sourceTree = "<group>"; };
@@ -729,6 +731,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C5523D19F0ED630009E3DC /* QuartzCore.framework in Frameworks */,
 				18A4D43419B560D400415896 /* CoreGraphics.framework in Frameworks */,
 				18A4D43619B560D400415896 /* UIKit.framework in Frameworks */,
 				18A4D43219B560D400415896 /* Foundation.framework in Frameworks */,
@@ -1419,6 +1422,7 @@
 		18A4D43019B560D400415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18C5523C19F0ED630009E3DC /* QuartzCore.framework */,
 				18A4D43119B560D400415896 /* Foundation.framework */,
 				18A4D43319B560D400415896 /* CoreGraphics.framework */,
 				18A4D43519B560D400415896 /* UIKit.framework */,

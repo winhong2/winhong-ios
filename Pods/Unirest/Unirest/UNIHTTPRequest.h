@@ -29,6 +29,7 @@
 #import "UNIUrlConnection.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <JGProgressHUD/JGProgressHUD.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 typedef NS_ENUM(NSInteger, UNIHTTPMethod) {
 	GET,

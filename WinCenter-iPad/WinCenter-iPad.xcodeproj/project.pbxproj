@@ -165,6 +165,7 @@
 		18C24BF319E905EF00F5479D /* DatacenterDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C24BF219E905EF00F5479D /* DatacenterDashboardVC.m */; };
 		18C24BF619E9231800F5479D /* DatacenterDetailCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C24BF519E9231800F5479D /* DatacenterDetailCollectionHeader.m */; };
 		18C5523719F0AC660009E3DC /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5523619F0AC660009E3DC /* VWWWaterView.m */; };
+		18C5523F19F0ED730009E3DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C5523E19F0ED730009E3DC /* QuartzCore.framework */; };
 		18C9CE5D19EFAECB000A393C /* MSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE4919EFAECB000A393C /* MSCalendarViewController.m */; };
 		18C9CE5E19EFAECC000A393C /* MSCurrentTimeGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE4B19EFAECB000A393C /* MSCurrentTimeGridline.m */; };
 		18C9CE5F19EFAECC000A393C /* MSCurrentTimeIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9CE4D19EFAECB000A393C /* MSCurrentTimeIndicator.m */; };
@@ -446,6 +447,7 @@
 		18C24BF519E9231800F5479D /* DatacenterDetailCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailCollectionHeader.m; sourceTree = "<group>"; };
 		18C5523519F0AC660009E3DC /* VWWWaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWWaterView.h; sourceTree = "<group>"; };
 		18C5523619F0AC660009E3DC /* VWWWaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWWaterView.m; sourceTree = "<group>"; };
+		18C5523E19F0ED730009E3DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18C9CE4819EFAECB000A393C /* MSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCalendarViewController.h; sourceTree = "<group>"; };
 		18C9CE4919EFAECB000A393C /* MSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCalendarViewController.m; sourceTree = "<group>"; };
 		18C9CE4A19EFAECB000A393C /* MSCurrentTimeGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeGridline.h; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C5523F19F0ED730009E3DC /* QuartzCore.framework in Frameworks */,
 				18A4D32219B556BA00415896 /* CoreGraphics.framework in Frameworks */,
 				18A4D32419B556BA00415896 /* UIKit.framework in Frameworks */,
 				18A4D32019B556BA00415896 /* Foundation.framework in Frameworks */,
@@ -899,6 +902,7 @@
 		18A4D31E19B556BA00415896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18C5523E19F0ED730009E3DC /* QuartzCore.framework */,
 				18A4D31F19B556BA00415896 /* Foundation.framework */,
 				18A4D32119B556BA00415896 /* CoreGraphics.framework */,
 				18A4D32319B556BA00415896 /* UIKit.framework */,
