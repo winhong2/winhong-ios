@@ -28,6 +28,9 @@
 -(void)reloadData{
     
 }
+- (void)viewDidAppear:(BOOL)animated{
+    [self.collectionView reloadData];
+}
 - (void)viewDidLoad
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {

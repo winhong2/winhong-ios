@@ -14,4 +14,7 @@
 @property HostStatVO *statVO;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
 
+@property PNCircleChart *circleChart;
+@property PNCircleChart *circleChart2;
+@property PNCircleChart *circleChart3;
 @end

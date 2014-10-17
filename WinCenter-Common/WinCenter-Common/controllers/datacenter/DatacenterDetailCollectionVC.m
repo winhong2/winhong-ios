@@ -19,7 +19,10 @@
 #import "MasterCollectionFooter.h"
 #import "DatacenterDetailCollectionHeader.h"
 
+
 @implementation DatacenterDetailCollectionVC
+
+
 
 -(void)reloadData{
     switch (self.pageType) {

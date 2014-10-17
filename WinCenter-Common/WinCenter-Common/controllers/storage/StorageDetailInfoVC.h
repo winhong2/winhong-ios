@@ -14,4 +14,8 @@
 @property StorageVO *storageVO;
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *allLabels;
+
+@property PNCircleChart *circleChart;
+@property PNCircleChart *circleChart2;
+
 @end

@@ -33,6 +33,8 @@
     [super viewDidAppear:animated];
     
     [self.circleChart strokeChart];
+    [self.circleChart2 strokeChart];
+    [self.circleChart3 strokeChart];
 }
 
 - (void)viewDidLoad{
