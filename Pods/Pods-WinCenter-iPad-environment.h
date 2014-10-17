@@ -96,6 +96,12 @@
 #define COCOAPODS_VERSION_MINOR_PNChart 5
 #define COCOAPODS_VERSION_PATCH_PNChart 0
 
+// TOWebViewController
+#define COCOAPODS_POD_AVAILABLE_TOWebViewController
+#define COCOAPODS_VERSION_MAJOR_TOWebViewController 2
+#define COCOAPODS_VERSION_MINOR_TOWebViewController 0
+#define COCOAPODS_VERSION_PATCH_TOWebViewController 14
+
 // UIColor-HexString
 #define COCOAPODS_POD_AVAILABLE_UIColor_HexString
 #define COCOAPODS_VERSION_MAJOR_UIColor_HexString 1
