@@ -58,12 +58,6 @@
                                             <outlet property="delegate" destination="8Yt-ws-G6p" id="SCr-TV-aof"/>
                                         </connections>
                                     </textField>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn9-JM-4Y0">
-                                        <rect key="frame" x="295" y="456" width="98" height="30"/>
-                                        <state key="normal" title="服务器IP设置">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fc-4k-pFo">
                                         <rect key="frame" x="76" y="415" width="157" height="44"/>
                                         <state key="normal" title="游客体验" backgroundImage="登录游客体验按钮">
