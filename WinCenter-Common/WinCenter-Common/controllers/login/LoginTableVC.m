@@ -52,6 +52,8 @@
     waterView.speed = 0.0375;
     [self.tableView.backgroundView addSubview:waterView];
     
+    self.viewShaker = [[AFViewShaker alloc] initWithViewsArray:@[self.userName, self.password]];
+    
 }
 - (IBAction)exitInput:(id)sender {
     [self.userName resignFirstResponder];
