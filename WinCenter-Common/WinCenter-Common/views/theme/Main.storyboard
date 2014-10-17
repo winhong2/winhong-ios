@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-MI-6za">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="loginbg2" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-MI-6za">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-3f-wmy">
@@ -29,38 +29,30 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkL-nZ-T6c">
-                                <rect key="frame" x="278" y="-7" width="468" height="678"/>
+                                <rect key="frame" x="278" y="-7" width="468" height="775"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" placeholder="用户名" textAlignment="center" minimumFontSize="17" background="账号密码输入框" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="26z-qs-KcS">
-                                        <rect key="frame" x="76" y="316" width="317" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="8Yt-ws-G6p" id="Ba6-lf-n1x"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7id-g4-kvV">
-                                        <rect key="frame" x="240" y="415" width="153" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7id-g4-kvV">
+                                        <rect key="frame" x="73" y="506" width="313" height="43"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="登录" backgroundImage="登录游客体验按钮">
+                                        <state key="normal" image="loginbtn">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="loginAction:" destination="8Yt-ws-G6p" eventType="touchUpInside" id="FMo-rI-DFC"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="passw0rd" placeholder="密码" textAlignment="center" minimumFontSize="17" background="账号密码输入框" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y6j-Dq-EQv">
-                                        <rect key="frame" x="76" y="365" width="317" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="passw0rd" placeholder="密码" textAlignment="center" minimumFontSize="17" background="input-psd" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y6j-Dq-EQv">
+                                        <rect key="frame" x="76" y="425" width="306" height="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="8Yt-ws-G6p" id="SCr-TV-aof"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fc-4k-pFo">
-                                        <rect key="frame" x="76" y="415" width="157" height="44"/>
-                                        <state key="normal" title="游客体验" backgroundImage="登录游客体验按钮">
+                                        <rect key="frame" x="198" y="687" width="72" height="23"/>
+                                        <state key="normal" image="experiential">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -68,6 +60,24 @@
                                             <action selector="enjoyAction:" destination="8Yt-ws-G6p" eventType="touchUpInside" id="FPo-hC-piK"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圆点" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-p1-E7j">
+                                        <rect key="frame" x="227" y="589" width="15" height="72"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.100.147:8090" textAlignment="center" minimumFontSize="17" background="input-ip" translatesAutoresizingMaskIntoConstraints="NO" id="p3f-x6-7zC">
+                                        <rect key="frame" x="76" y="334" width="306" height="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" placeholder="用户名" textAlignment="center" minimumFontSize="17" background="input-user" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="26z-qs-KcS">
+                                        <rect key="frame" x="76" y="379" width="306" height="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="8Yt-ws-G6p" id="Ba6-lf-n1x"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -84,6 +94,7 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="Theme"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="formView" destination="fkL-nZ-T6c" id="20K-qp-NnC"/>
                         <outlet property="password" destination="y6j-Dq-EQv" id="b9y-U5-lKd"/>
                         <outlet property="userName" destination="26z-qs-KcS" id="dtC-zr-g6g"/>
                     </connections>
@@ -99,9 +110,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="loginbg" width="1024" height="768"/>
-        <image name="登录游客体验按钮" width="156" height="43"/>
-        <image name="账号密码输入框" width="317" height="42"/>
+        <image name="experiential" width="72" height="23"/>
+        <image name="input-ip" width="306" height="38"/>
+        <image name="input-psd" width="306" height="38"/>
+        <image name="input-user" width="306" height="38"/>
+        <image name="loginbg2" width="1024" height="768"/>
+        <image name="loginbtn" width="313" height="43"/>
+        <image name="圆点" width="15" height="72"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

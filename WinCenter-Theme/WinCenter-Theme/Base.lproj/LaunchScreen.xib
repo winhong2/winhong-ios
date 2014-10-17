@@ -23,7 +23,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-cK-iyf">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="splash2" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-cK-iyf">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                 </imageView>
             </subviews>
@@ -43,7 +43,7 @@
         </view>
     </objects>
     <resources>
-        <image name="loginbg" width="1024" height="768"/>
+        <image name="splash2" width="1024" height="768"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

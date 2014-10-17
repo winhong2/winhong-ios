@@ -9,6 +9,7 @@
 #import "LoginVC.h"
 #import "UserListResult.h"
 #import "MasterContainerVC.h"
+#import "VWWWaterView.h"
 
 @interface LoginVC ()
 @property NSArray *datacenters;
@@ -27,6 +28,43 @@
     // Do any additional setup after loading the view.
     
     [self.userName becomeFirstResponder];
+    
+    //波纹
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    VWWWaterView *waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 280, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#48a8d0"];
+    waterView.currentLinePointY = 250;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 5;
+    waterView.speed = 0.03;
+    [self.view addSubview:waterView];
+    
+    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 280, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#6ebedf"];
+    waterView.currentLinePointY = 280;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 7;
+    waterView.speed = -0.045;
+    [self.view addSubview:waterView];
+    
+    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 280, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#b4e8fe"];
+    waterView.currentLinePointY = 310;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 9;
+    waterView.speed = 0.0375;
+    [self.view addSubview:waterView];
+    
+    waterView = [[VWWWaterView alloc] initWithFrame:CGRectMake(0, 280, rect.size.width, rect.size.height)];
+    waterView.currentWaterColor = [UIColor colorWithHexString:@"#ffffff"];
+    waterView.currentLinePointY = 350;
+    waterView.waterWidth = 1024;
+    waterView.waterHeight = 11;
+    waterView.speed = -0.04;
+    [self.view addSubview:waterView];
+    
+    [self.view bringSubviewToFront: self.formView];
+    
 }
 - (IBAction)exitInput:(id)sender {
     [self.userName resignFirstResponder];
