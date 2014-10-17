@@ -2085,7 +2085,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterStorageCollectionHeader" id="q5I-nu-Sla" customClass="DatacenterDetailCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="304"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="361"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ly-Bj-HpU">
@@ -2645,7 +2645,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DatacenterVmCollectionHeader" id="WuI-Kl-R28" customClass="DatacenterDetailCollectionHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="209"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="266"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dh8-yx-RWZ">
